@@ -9,7 +9,7 @@
     <item>
       <title>Blogs</title>
       <link>/categories/blogs/</link>
-      <pubDate>Mon, 04 Oct 2021 02:01:59 +0200</pubDate>
+      <pubDate>Sun, 10 Oct 2021 22:20:36 +0200</pubDate>
       
       <guid>/categories/blogs/</guid>
       <description></description>
@@ -18,9 +18,36 @@
     <item>
       <title>Categories</title>
       <link>/categories/</link>
-      <pubDate>Mon, 04 Oct 2021 02:01:59 +0200</pubDate>
+      <pubDate>Sun, 10 Oct 2021 22:20:36 +0200</pubDate>
       
       <guid>/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>/tags/music/</link>
+      <pubDate>Sun, 10 Oct 2021 22:20:36 +0200</pubDate>
+      
+      <guid>/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>/tags/</link>
+      <pubDate>Sun, 10 Oct 2021 22:20:36 +0200</pubDate>
+      
+      <guid>/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>/tags/technology/</link>
+      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
+      
+      <guid>/tags/technology/</guid>
       <description></description>
     </item>
     
@@ -30,15 +57,6 @@
       <pubDate>Mon, 04 Oct 2021 02:01:59 +0200</pubDate>
       
       <guid>/tags/politics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>/tags/</link>
-      <pubDate>Mon, 04 Oct 2021 02:01:59 +0200</pubDate>
-      
-      <guid>/tags/</guid>
       <description></description>
     </item>
     
@@ -84,15 +102,6 @@
       <pubDate>Sun, 04 Oct 2020 05:28:30 +0200</pubDate>
       
       <guid>/tags/science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>/tags/music/</link>
-      <pubDate>Tue, 05 Feb 2019 05:28:30 +0200</pubDate>
-      
-      <guid>/tags/music/</guid>
       <description></description>
     </item>
     

@@ -6,7 +6,28 @@
     <description>Recent content in Blogs on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Oct 2021 02:01:59 +0200</lastBuildDate><atom:link href="/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 22:20:36 +0200</lastBuildDate><atom:link href="/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Music Find Me</title>
+      <link>/post/music-find-me/</link>
+      <pubDate>Sun, 10 Oct 2021 22:20:36 +0200</pubDate>
+      
+      <guid>/post/music-find-me/</guid>
+      <description>Some soundtracks find me. How can this be interpreted, it feels like the world is being a part of what you&amp;#39;re listening to. It becomes very finite part of it when you go deep into the music.
+ Nights will gather sleep Shepherds they will sleep Nights will gather sleep
+Drag me to the deep.
+    </description>
+    </item>
+    
+    <item>
+      <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
+      <link>/post/oracle-the-next-level-of-data-reporting/</link>
+      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
+      
+      <guid>/post/oracle-the-next-level-of-data-reporting/</guid>
+      <description>Sometimes I ask myself why corporates crash all these disputes about whether their DBMS is that safe or not. Users are not safe in any case with a corporate, rather, the DBs (their data) are leaked anyway in the corporate&amp;#39;s reports (which are sold to another users, the advertiser or whoever will use it), of course they won&amp;#39;t leak your metadata but not because you really matter, actually the opposed, you don&amp;#39;t.</description>
+    </item>
+    
     <item>
       <title>Politics Simply Sucks</title>
       <link>/post/politics-sucks/</link>
