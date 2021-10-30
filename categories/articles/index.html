@@ -1,1061 +1,222 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-    <head>
-        <link href="//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular" rel="stylesheet" type="text/css"/>
-        <link href="//db.onlinewebfonts.com/c/941f4a4b33c62f21dfdfbae776f7f3e0?family=Graphik+Regular" rel="stylesheet" type="text/css"/>
-	    <style>
-            img {
-                max-width: 100%
-            }
-            @font-face {font-family: "Tiempos Text Regular"; src: url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot"); src: url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff") format("woff"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.svg#Tiempos Text Regular") format("svg"); }
-@import url(//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular);
-
-
-@import url(//db.onlinewebfonts.com/c/941f4a4b33c62f21dfdfbae776f7f3e0?family=Graphik+Regular);
-@font-face {font-family: "Graphik Regular"; src: url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.eot"); src: url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.woff") format("woff"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.svg#Graphik Regular") format("svg"); }
-
-	    body,h1,h2,h3,h4,h5,h6,div,ul,ol,hr,a,table{
-    text-decoration:none;
-    font-family: san-serif;
-    unicode-bidi: plaintext;
-    text-justify: inter-word;
-    }
-        p{
-    font-family: "Tiempos Text Regular";
-    text-decoration:none;
-    unicode-bidi: plaintext;
-    text-justify: inter-word;
-        }
- header a,header a:visited,footer a,footer a:visited,h1 a,h1 a:visited,h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{
-    text-decoration:none;
-    unicode-bidi: plaintext;
-    font-family: san-serif;
-    text-justify: inter-word;
-
-}
- header a:hover,footer a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{
-    text-decoration:none;
-    font-family: san-serif;
-    text-justify: inter-word;
-
-}
- .footnotes hr, footnote-definition {
-  display: none;
-}
-
-</style>
-        <link href="https://gmpg.org/xfn/11" rel="profile">
-        <meta charset="utf-8">
-        
-        
-        
-
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
-        
-        <meta name="referrer" content="no-referrer">
-
-        <title>
-            
-                Articles ❚ Saleh Muhammed
-            
-        </title>
-        
-        
-        <style>
-         body {
-             margin: 40px auto;
-             max-width: 650px;
-             line-height: 1.6;
-             font-size: 18px;
-             color: #444;
-             padding: 0 10px;
-         }
-         h1, h2, h3 {
-             line-height: 1.2;
-         }
-         .masthead-title {
-             font-size: 40px;
-             font-weight: bold;
-         }
-         .masthead-title a {
-             text-decoration: none;
-         }
-         .masthead-body {
-             font-size: 0.8em;
-         }
-         
-             /* CSS for Pretty Print for Debug (debugprint.html) */
-/* https://github.com/kaushalmodi/hugo-debugprint/blob/master/layouts/partials/debugprint.html */
-/* https://github.com/kaushalmodi/hugo-debugprint/blob/master/layouts/partials/debugprint.css */
-.debugprint_wrap {
-    padding: 20px;
-    display: inline-block;
-    margin: 10px auto;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-}
-.debugprint td, .debugprint th {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-.debugprint th {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-.debugprint tr {
-    padding: 5px 10px;
-}
-.debugprint .key {
-    font-weight: bold;
-}
-.debugprint .type {
-    /* Hide Type columns in debugprint */
-    /* display: none; */
-    font-size: 0.9em;
-    font-family: monospace;
-    font-style: italic;
-}
-.debugprint .value {
-    font-family: monospace;
-}
-.debugprint .true {
-    color: green;
-}
-.debugprint .false {
-    color: red;
-}
-/* Don't touch the table headers */
-.debugprint th.key,
-.debugprint th.type,
-.debugprint th.value {
-    font-family: helvetica, arial, san-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1em;
-    font-style: normal;
-}
-
-         
-          
-         figcaption,
-         .src-block-caption,
-         .table-caption {
-             font-style: italic;
-             text-align: center;
-         }
-         dt {
-             font-weight: bold;
-         }
-         dd {
-             margin-bottom: .5rem;
-         }
-          
-         ul.task-list {
-             list-style-type: none;
-         }
-        </style>
-
-        
-        
- 
-<meta property="og:title" content="Articles" />
-<meta property="og:description"
-      content="" />
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Saleh Muhammed</title>
+  <link rel = 'canonical' href = '/categories/articles/'>
+  <meta name="description" content="![](https://i.imgur.com/lBPxnG8.png) Men make their own history, but they do not make it as they please; they do not make it under self-selected circumstances, but under circumstances existing already, given and transmitted from the past. The tradition of all dead generations weighs like a nightmare on the brains of the living. And just as they seem to be occupied with revolutionizing themselves and things, creating something that did not exist before, precisely in such epochs of revolutionary crisis they anxiously conjure up the spirits of the past to their service, borrowing from them names, battle slogans, and costumes in order to present this new scene in world history in time-honored disguise and borrowed language. *The Eighteenth Brumaire of Louis Bonaparte*.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Articles" />
+<meta property="og:description" content="![](https://i.imgur.com/lBPxnG8.png) Men make their own history, but they do not make it as they please; they do not make it under self-selected circumstances, but under circumstances existing already, given and transmitted from the past. The tradition of all dead generations weighs like a nightmare on the brains of the living. And just as they seem to be occupied with revolutionizing themselves and things, creating something that did not exist before, precisely in such epochs of revolutionary crisis they anxiously conjure up the spirits of the past to their service, borrowing from them names, battle slogans, and costumes in order to present this new scene in world history in time-honored disguise and borrowed language. *The Eighteenth Brumaire of Louis Bonaparte*." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/categories/articles/" />
 
 
-    
-        <meta property="og:updated_time" content="2021-08-14T06:02:23&#43;02:00"/>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Articles"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="![](https://i.imgur.com/lBPxnG8.png) Men make their own history, but they do not make it as they please; they do not make it under self-selected circumstances, but under circumstances existing already, given and transmitted from the past. The tradition of all dead generations weighs like a nightmare on the brains of the living. And just as they seem to be occupied with revolutionizing themselves and things, creating something that did not exist before, precisely in such epochs of revolutionary crisis they anxiously conjure up the spirits of the past to their service, borrowing from them names, battle slogans, and costumes in order to present this new scene in world history in time-honored disguise and borrowed language. *The Eighteenth Brumaire of Louis Bonaparte*."/>
 
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="/css/styles.0b3b0bb24e71a5617fee7801245ec9326a16a7a1b086d93c6810a6735c4bb7a21038e0c198d3c9c1c96aef7820abdce9af43f44ee40a35adb65f541bea5ddf87.css" integrity="sha512-CzsLsk5xpWF/7ngBJF7JMmoWp6Gwhtk8aBCmc1xLt6IQOODBmNPJwclq73ggq9zpr0P0TuQKNa22X1Qb6l3fhw=="> 
 
-        
-        
-    </head>
+  
+   <link rel="stylesheet" href="css/custom.css"> 
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
 
-    <body lang="en">
+  
+<link rel="icon" type="image/png" href="images/favicon.ico" />
 
-        
+  
+  
+</head>
 
-        <div style="float: left;">
-            <small>
-                <span style="font-variant: small-caps;">.Kind</span> (<strong>term</strong>):
-                <span style="font-variant: small-caps;">.Type</span> (<strong>categories</strong>) /
-                <span style="font-variant: small-caps;">.Layout</span> (<strong></strong>)
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
 
-                <br />
-                
-                
-                <span style="font-variant: small-caps;">Bundle</span>: <strong>n/a</strong>
-            </small>
-        </div>
+    <header id="header">
+  <a href="">
+  
 
-        
-            <div style="float: right;">
-                [
-                
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                         <a href="/categories/">categories</a>
-                        
-                    
-                
-                    
-                        | <a href="/tags/">tags</a>
-                        
-                    
-                
-                
-                    | <a href="/search/"><strong>search</strong></a>
-                
-                ]
-            </div>
-            <div style="clear: both;"></div> 
-        
-
-        <div class="masthead-title"><a href="/">Saleh Muhammed</a></div>
-        <div class="masthead-body">
-            
-            
-                <p>This blog is <b>updated automatically after each commit</b> to the <a href="https://github.com/salehmu/blog">
-                    <code>latest_branch</code> repo</a>.
-                    It was last updated on <i>Oct 25, 2021 19:03 EET</i>.
-                </p>
-                <ul>
-                    
-                        <li>The <i>actual <b>source</b></i>.. <a
-					href="https://github.com/salehmu/blog/tree/latest_branch/content/posts">source dir</a></li>
-                        <li><b>Cinema</b>.. <a
-					href="/cinema/">list</a></li>
-                        <li><b>Books</b>.. <a
-					href="/books/">list</a></li>
-                    
-                    
-                    
-                </ul>
-            
-            <hr>
-        </div>
-
-        
-
-        
-
-                       
-
-                     
-
-
-
-
-
-
-
-<section>
-    <ul class="post-list">
-        
-            
-<li>
-    <a href='/posts/mediacontrol/'> Regarding the &#39;Neo-Democracy&#39;, Media, and the Public Opinion in the United States</a>
-    A critique of the propagandized neo-democracy.
-</li>
-
-        
-            
-<li>
-    <a href='/posts/conditioning1/'> On Social Media Neoconditioning or Why Redditor is a NPC?</a>
-    Regarding social media manufacturing consent.
-</li>
-
-        
-            
-<li>
-    <a href='/posts/fuckcapital/'> Why Capitalism is Too Worrisome? (Arabic)</a>
-    Regarding marked saturation and underconsumption.
-</li>
-
-        
-            
-<li>
-    <a href='/posts/desto/'> Book Review: Humiliated and Insulted by Fyodor Dostoevsky</a>
-    Rereading Humiliated and Isulted.
-</li>
-
-        
-            
-<li>
-    <a href='/posts/homosexuality/'> Homosexualiy as a Natural Selection Mechanism (arabic)</a>
-    Handicap principle, homosexuality
-</li>
-
-        
-            
-<li>
-    <a href='/posts/karl/'> Carl Schmidt: Politics, Conflict and War (Arabic)</a>
-    The Political
-</li>
-
-        
-            
-<li>
-    <a href='/posts/psycho/'> Book Review: The Crowd: A Study of the Popular Mind by Gustave Le Bon (Arabic)</a>
-    Bon arrogant.
-</li>
-
-        
-            
-<li>
-    <a href='/posts/mbti/'> On The Critique of MBTI (Arabic)</a>
-    Regarding MBTI
-</li>
-
-        
+  
+  <div id="title">
+    <h1>Saleh Muhammed</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
+      </li>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/tags">Tags</a></li>
+      
+        <li><a href="/categories">Categories</a></li>
+      
+        <li><a href="/cinema">Cinema</a></li>
+      
+        <li><a href="/books">Books</a></li>
+      
     </ul>
-</section>
+  </div>
+</header>
 
 
 
-
-
-
-    <hr>
-    <a id="debug"></a>
-    <h3 id="page-debug">Page (Debug)</h3>
     
+<div id="archive">
+  <ul class="post-list">
+
+  
+  
+
+  
+    
+    
+    
+    <h2>2021</h2>
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2021-08-14 06:02:23 &#43;0200 EET" itemprop="datePublished">2021-08-14</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/mediacontrol/"> Regarding the &#39;Neo-Democracy&#39;, Media, and the Public Opinion in the United States </a>
+      </span>
+    </li>
+    
+    
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2021-08-04 18:49:37 &#43;0200 EET" itemprop="datePublished">2021-08-04</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/conditioning1/"> On Social Media Neoconditioning or Why Redditor is a NPC? </a>
+      </span>
+    </li>
+    
+    
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2021-01-18 05:28:30 &#43;0200 EET" itemprop="datePublished">2021-01-18</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/fuckcapital/"> Why Capitalism is Too Worrisome? (Arabic) </a>
+      </span>
+    </li>
+    
+    
+    
+    
+    <h2>2020</h2>
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2020-12-10 05:28:28 &#43;0200 EET" itemprop="datePublished">2020-12-10</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/desto/"> Book Review: Humiliated and Insulted by Fyodor Dostoevsky </a>
+      </span>
+    </li>
+    
+    
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2020-10-04 05:28:30 &#43;0200 EET" itemprop="datePublished">2020-10-04</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/homosexuality/"> Homosexualiy as a Natural Selection Mechanism (arabic) </a>
+      </span>
+    </li>
+    
+    
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2020-05-09 05:28:07 &#43;0200 EET" itemprop="datePublished">2020-05-09</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/karl/"> Carl Schmidt: Politics, Conflict and War (Arabic) </a>
+      </span>
+    </li>
+    
+    
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2020-03-21 05:28:26 &#43;0200 EET" itemprop="datePublished">2020-03-21</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/psycho/"> Book Review: The Crowd: A Study of the Popular Mind by Gustave Le Bon (Arabic) </a>
+      </span>
+    </li>
+    
+    
+    
+    <li class="post-item">
+      <div class="meta">
+        <time datetime="2020-02-13 05:28:20 &#43;0200 EET" itemprop="datePublished">2020-02-13</time>
+      </div>
+      <span>    
+        <a class="" href="/posts/mbti/"> On The Critique of MBTI (Arabic) </a>
+      </span>
+    </li>
+    
+  </ul>
+  
+</div>
 
 
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    <div class="debugprint_wrap">
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Saleh Muhammed 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
          
-            
-            
-            <table class="debugprint">
-                <tr><th class="key">Page Variable</th><th class="value">Value</th></tr>
-                
-                    <tr><td class="key">Name</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;Articles&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Title</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;Articles&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">ResourceType</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;page&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Kind</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;term&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Section</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;categories&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Draft</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    <span class="debugprint"><span class="false">false</span></span>
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Type</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;categories&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Layout</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Permalink</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;/categories/articles/&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">RelPermalink</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;/categories/articles/&#34;
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                    <tr><td class="key">Data</td><td class="value">
-                    
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-     <div class="debugprint_wrap">
-        <table class="debugprint">
-            <tr><td>page.Data{"Plural":"categories", "Singular":"category", "Term":"Articles", "category":page.WeightedPages{page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc0005fb980), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc000492120), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc0007905a0), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc000493440), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc000457cb0), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc000821950), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc0005fbfb0), owner:(*hugolib.pageState)(0xc000795770)}, page.WeightedPage{Weight:0, Page:(*hugolib.pageState)(0xc0005fabd0), owner:(*hugolib.pageState)(0xc000795770)}}, "pages":(func() page.Pages)(0x55d2cc43c640)} (<i>type:page.Data</i>)</td></tr>
-        </table>
-    </div>
-
-
-
-
-
-
-
-
- 
-                    </td></tr>
-                
-                
-                    <tr><td class="key">NextPage</td><td class="value">None</td></tr>
-                
-                
-                    <tr><td class="key">PrevPage</td><td class="value">None</td></tr>
-                
-                
-                    <tr><td class="key">NextInSection</td><td class="value">None</td></tr>
-                
-                
-                    <tr><td class="key">PrevInSection</td><td class="value">None</td></tr>
-                
-            </table>
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/categories">Categories</a></li>
+         
+        <li><a href="/cinema">Cinema</a></li>
+         
+        <li><a href="/books">Books</a></li>
         
-    </div>
+      </ul>
+    </nav>
+  </div>
+</footer>
 
 
+  </div>
+</body>
 
-
-
-
-
-
-
-    
-        <h3 id="page-params-debug">Page Params (Debug)</h3>
-        
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-        <div class="debugprint_wrap">
-            <table class="debugprint">
-                <tr><th class="key">Key</th><th class="type">Type</th><th class="value">Value</th></tr>
-                
-                    
-                    
-                    
-                        <tr><td class="key">draft</td><td class="type">bool</td><td class="value">
-                        
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    <span class="debugprint"><span class="false">false</span></span>
-
-
-
-
-
-
-
-
- 
-                        </td></tr>
-                    
-                
-                    
-                    
-                    
-                        <tr><td class="key">iscjklanguage</td><td class="type">bool</td><td class="value">
-                        
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    <span class="debugprint"><span class="false">false</span></span>
-
-
-
-
-
-
-
-
- 
-                        </td></tr>
-                    
-                
-                    
-                    
-                    
-                        <tr><td class="key">title</td><td class="type">string</td><td class="value">
-                        
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-    
-    &#34;Articles&#34;
-
-
-
-
-
-
-
-
- 
-                        </td></tr>
-                    
-                
-            </table>
-        </div>
-    
-
-
-
-
-
-
-
-
-
-    
-    
-    <h3 id="file-debug">File Object (Debug)</h3>
-    
-
-
-
-
-        <hr>
-        <small>This site is generated using the
-            
-                <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> package for Emacs/Org-mode +
-            
-            <a href="https://github.com/kaushalmodi/hugo-bare-min-theme"><code>hugo-bare-min-theme</code></a> + Hugo <b>0.88.1</b>
-            .
-        </small>
-        
-        
-    </body>
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
 </html>
-
-

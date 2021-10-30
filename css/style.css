@@ -1,4 +1,6 @@
-img{
-  display: block;
-  max-width:30%;
+.p {
+    text-align: start;
+    unicode-bidi: plaintext;
+    text-align: justify;
 }
+

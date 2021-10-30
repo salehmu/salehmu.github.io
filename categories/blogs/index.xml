@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogs on Saleh Muhammed</title>
+    <title>Blogs on Saleh Muhammed</title>
     <link>/categories/blogs/</link>
-    <description>Recent content in blogs on Saleh Muhammed</description>
+    <description>Recent content in Blogs on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Oct 2021 19:47:37 +0200</lastBuildDate><atom:link href="/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Zamana Zamana.</title>
-      <link>/post/zamana-zamana../</link>
-      <pubDate>Mon, 18 Oct 2021 19:47:37 +0200</pubDate>
-      
-      <guid>/post/zamana-zamana../</guid>
-      <description>Life is ageing me,
-Making me wander..
- Over mountains and valleys,
-bringing me closer to death.
- &amp;#34;hayat beni yaşlandırıyor,
-dağlarda ve vadilerde dolaşmak beni ölüme yaklaştırıyor&amp;#34;.
- Zamani barayé masti asbha (2000) Dir. Bahman Ghobadi.
-  This is the coziest film I ever watched, I&amp;#39;m speechless to describe its context. Perhaps I&amp;#39;ll update this post with some personal analysis (aka review) in the next days right now I&amp;#39;ll just leave this scene right here.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 15 Oct 2021 12:33:10 +0200</lastBuildDate><atom:link href="/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Words on The حناكة</title>
-      <link>/post/hanakah/</link>
+      <link>/posts/hanakah/</link>
       <pubDate>Fri, 15 Oct 2021 12:33:10 +0200</pubDate>
       
-      <guid>/post/hanakah/</guid>
+      <guid>/posts/hanakah/</guid>
       <description>مش بحب أراء المين ستريم في حاجه ومقتنع إنهم غالبًا - لو مش دايمًا - مُغفلين. لو إنت متعمق في أي مجال في الحياة هتكون مؤيد لكلامي خصوصًا لو شيء أكاديمي، علم النفس مثلًا. الحاجات الي مؤمن بيها المين ستريم بتاع الناس مش scientific بتاتًا، مع إنهم بيحبوا يسموه كدا. في الأدب نفس الموضوع. وحتى في العموم، البشر دايمًا أغلبهم بيبقوا مخطئين، يقول تعالى: حَتَّىٰ إِذَا جَاءَ أَمْرُنَا وَفَارَ التَّنُّورُ قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ وَأَهْلَكَ إِلَّا مَن سَبَقَ عَلَيْهِ الْقَوْلُ وَمَنْ آمَنَ ۚ وَمَا آمَنَ مَعَهُ إِلَّا قَلِيلٌ.</description>
     </item>
     
     <item>
       <title>Music Find Me</title>
-      <link>/post/music-find-me/</link>
+      <link>/posts/music-find-me/</link>
       <pubDate>Sun, 10 Oct 2021 22:20:36 +0200</pubDate>
       
-      <guid>/post/music-find-me/</guid>
+      <guid>/posts/music-find-me/</guid>
       <description>Some soundtracks find me. How can this be interpreted, it feels like the world is being a part of what you&amp;#39;re listening to. It becomes very finite part of it when you go deep into the music.
  Nights will gather sleep Shepherds they will sleep Nights will gather sleep
 Drag me to the deep.
@@ -46,19 +30,19 @@ Drag me to the deep.
     
     <item>
       <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
-      <link>/post/oracle-the-next-level-of-data-reporting/</link>
+      <link>/posts/oracle-the-next-level-of-data-reporting/</link>
       <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
       
-      <guid>/post/oracle-the-next-level-of-data-reporting/</guid>
+      <guid>/posts/oracle-the-next-level-of-data-reporting/</guid>
       <description>Sometimes I ask myself why corporates crash all these disputes about whether their DBMS is that safe or not. Users are not safe in any case with a corporate, rather, the DBs (their data) are leaked anyway in the corporate&amp;#39;s reports (which are sold to another users, the advertiser or whoever will use it), of course they won&amp;#39;t leak your metadata but not because you really matter, actually the opposed, you don&amp;#39;t.</description>
     </item>
     
     <item>
       <title>Politics Simply Sucks</title>
-      <link>/post/politics-sucks/</link>
+      <link>/posts/politics-sucks/</link>
       <pubDate>Mon, 04 Oct 2021 02:01:59 +0200</pubDate>
       
-      <guid>/post/politics-sucks/</guid>
+      <guid>/posts/politics-sucks/</guid>
       <description>Politics, political news and anything related to the so-called new world (supposed to be the better one) simply sucks especially if you understand what&amp;#39;s going on. Actually it only sucks if you understand what&amp;#39;s going on, for instance if you&amp;#39;re reading that the U.S. bombarded the Red Cross headquarters in Afghanistan or Aljazira headquarters because they&amp;#39;re position for Al-Qaeda terrorists, well that&amp;#39;s really a good news, Al Jazeera should only blame themselves.</description>
     </item>
     
