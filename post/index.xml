@@ -40,7 +40,7 @@
       <pubDate>Mon, 01 Nov 1999 07:57:03 +0200</pubDate>
       
       <guid>/post/update-about-my-tracking-lists/</guid>
-      <description></description>
+      <description>I figured out that whenever I can&amp;#39;t hide some post from my feed page, because the dumb hugo developers disabled the option `hide` from the meta menu, and because I&amp;#39;m too lazy to implement it by myself.. I can just make the post date to 1900s so it will be in the bottom of the stack or the last page, it is not hidden yeah but who the hell will read the last page in my blog.</description>
     </item>
     
   </channel>
