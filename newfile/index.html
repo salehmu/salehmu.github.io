@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+    <head>
+        <link href="//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/941f4a4b33c62f21dfdfbae776f7f3e0?family=Graphik+Regular" rel="stylesheet" type="text/css"/>
+	    <style>
+            img {
+                max-width: 100%
+            }
+            @font-face {font-family: "Tiempos Text Regular"; src: url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot"); src: url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff") format("woff"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.svg#Tiempos Text Regular") format("svg"); }
+@import url(//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular);
+
+
+@import url(//db.onlinewebfonts.com/c/941f4a4b33c62f21dfdfbae776f7f3e0?family=Graphik+Regular);
+@font-face {font-family: "Graphik Regular"; src: url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.eot"); src: url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.woff") format("woff"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.svg#Graphik Regular") format("svg"); }
+
+	    body,h1,h2,h3,h4,h5,h6,div,ul,ol,hr,a,table{
+    text-decoration:none;
+    font-family: san-serif;
+    unicode-bidi: plaintext;
+    text-justify: inter-word;
+    }
+        p{
+    font-family: "Tiempos Text Regular";
+    text-decoration:none;
+    unicode-bidi: plaintext;
+    text-justify: inter-word;
+        }
+ header a,header a:visited,footer a,footer a:visited,h1 a,h1 a:visited,h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{
+    text-decoration:none;
+    unicode-bidi: plaintext;
+    font-family: san-serif;
+    text-justify: inter-word;
+
+}
+ header a:hover,footer a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{
+    text-decoration:none;
+    font-family: san-serif;
+    text-justify: inter-word;
+
+}
+ .footnotes hr, footnote-definition {
+  display: none;
+}
+
+</style>
+        <link href="https://gmpg.org/xfn/11" rel="profile">
+        <meta charset="utf-8">
+        
+        
+        
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+        
+        <meta name="referrer" content="no-referrer">
+
+        <title>
+            
+                 ❚ Saleh Muhammed
+            
+        </title>
+        
+        
+        <style>
+         body {
+             margin: 40px auto;
+             max-width: 650px;
+             line-height: 1.6;
+             font-size: 18px;
+             color: #444;
+             padding: 0 10px;
+         }
+         h1, h2, h3 {
+             line-height: 1.2;
+         }
+         .masthead-title {
+             font-size: 40px;
+             font-weight: bold;
+         }
+         .masthead-title a {
+             text-decoration: none;
+         }
+         .masthead-body {
+             font-size: 0.8em;
+         }
+         
+             /* CSS for Pretty Print for Debug (debugprint.html) */
+/* https://github.com/kaushalmodi/hugo-debugprint/blob/master/layouts/partials/debugprint.html */
+/* https://github.com/kaushalmodi/hugo-debugprint/blob/master/layouts/partials/debugprint.css */
+.debugprint_wrap {
+    padding: 20px;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+.debugprint td, .debugprint th {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.debugprint th {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.debugprint tr {
+    padding: 5px 10px;
+}
+.debugprint .key {
+    font-weight: bold;
+}
+.debugprint .type {
+    /* Hide Type columns in debugprint */
+    /* display: none; */
+    font-size: 0.9em;
+    font-family: monospace;
+    font-style: italic;
+}
+.debugprint .value {
+    font-family: monospace;
+}
+.debugprint .true {
+    color: green;
+}
+.debugprint .false {
+    color: red;
+}
+/* Don't touch the table headers */
+.debugprint th.key,
+.debugprint th.type,
+.debugprint th.value {
+    font-family: helvetica, arial, san-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-style: normal;
+}
+
+         
+          
+         figcaption,
+         .src-block-caption,
+         .table-caption {
+             font-style: italic;
+             text-align: center;
+         }
+         dt {
+             font-weight: bold;
+         }
+         dd {
+             margin-bottom: .5rem;
+         }
+          
+         ul.task-list {
+             list-style-type: none;
+         }
+        </style>
+
+        
+        
+ 
+<meta property="og:title" content="" />
+<meta property="og:description"
+      content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/newfile/" />
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+         <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+
+
+        
+        
+
+
+<script src="js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+<link rel="stylesheet" href="/css/github_chroma.css" type="text/css" />
+
+    </head>
+
+    <body lang="en">
+
+        
+
+        <div style="float: left;">
+            <small>
+                <span style="font-variant: small-caps;">.Kind</span> (<strong>page</strong>):
+                <span style="font-variant: small-caps;">.Type</span> (<strong>page</strong>) /
+                <span style="font-variant: small-caps;">.Layout</span> (<strong></strong>)
+
+                <br />
+                
+                
+                    
+                        
+                            
+                        
+                    
+                
+                <span style="font-variant: small-caps;">Bundle</span>: <strong>n/a (regular page)</strong>
+            </small>
+        </div>
+
+        
+            <div style="float: right;">
+                [
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                         <a href="/categories/">categories</a>
+                        
+                    
+                
+                    
+                        | <a href="/tags/">tags</a>
+                        
+                    
+                
+                
+                    | <a href="/search/"><strong>search</strong></a>
+                
+                ]
+            </div>
+            <div style="clear: both;"></div> 
+        
+
+        <div class="masthead-title"><a href="/">Saleh Muhammed</a></div>
+        <div class="masthead-body">
+            
+            
+                <p>This blog is <b>updated automatically after each commit</b> to the <a href="https://github.com/salehmu/blog">
+                    <code>latest_branch</code> repo</a>.
+                    It was last updated on <i>Nov 01, 2021 08:15 EET</i>.
+                </p>
+                <ul>
+                    
+                        <li>The <i>actual <b>source</b></i>.. <a
+					href="https://github.com/salehmu/blog/tree/latest_branch/content/posts">source dir</a></li>
+                        <li><b>Cinema</b>.. <a
+					href="/cinema/">list</a></li>
+                        <li><b>Books</b>.. <a
+					href="/books/">list</a></li>
+                    
+                    
+                    
+                </ul>
+            
+            <hr>
+        </div>
+
+         
+            
+            
+                This page was created/modified in commit <a href="https://github.com/salehmu/blog/blob/latest_branch/commit/97dfb845210876110b177a333dffb7c326dfd1dc">97dfb84</a> "commit" on <b>2021-10-10</b>.
+            
+        
+
+        
+            
+                
+                
+                    
+                        <br />
+                        <div style="float: right;">
+                            ✱ <i>Markdown <a href="https://github.com/salehmu/blog/blob/latest_branch/content/newfile.org">
+                            source</a> of this page</i>
+                        </div>
+                        <div style="clear: both;"></div> 
+                    
+                
+            
+        
+
+                       
+
+        
+
+<div class="post">
+    <h1 class="post-title"></h1>
+
+    
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    <p>
+        
+    </p>
+
+    <hr />
+    <h3>Description/Summary</h3>
+    
+        <p>Bold is currently reading
+Italics bold is an outstanding one.
+Literature and Fiction  Prefect   A Streetcar Named Desire
+ The Kite Runner
+ Lolita
+ Suddenly Last Summer
+ The Brothers Karamazov
+ Umm Sa&#39;d
+ Children of the Alley
+ Cat on a Hot Tin Roof\\
+ Crime and Punishment
+ The Idiot
+ Orpheus Descending
+ Marx in Soho: A Play on History
+ One Arm and Other Stories</p>
+    
+    <hr />
+
+    
+
+
+
+    <h3>Content</h3>
+    
+<p><strong>Bold</strong> is currently reading<br>
+<strong><em>Italics bold</em></strong> is an outstanding one.</p>
+<div id="outline-container-literature-and-fiction" class="outline-3">
+<h3 id="literature-and-fiction">
+Literature and Fiction
+</h3>
+<div id="outline-text-literature-and-fiction" class="outline-text-3">
+<div id="outline-container-prefect" class="outline-4">
+<h4 id="prefect">
+Prefect
+</h4>
+<div id="outline-text-prefect" class="outline-text-4">
+<ul>
+<li class="checked">
+<p>A Streetcar Named Desire</p>
+</li>
+<li class="checked">
+<p>The Kite Runner</p>
+</li>
+<li class="checked">
+<p>Lolita</p>
+</li>
+<li class="checked">
+<p>Suddenly Last Summer</p>
+</li>
+<li class="checked">
+<p>The Brothers Karamazov</p>
+</li>
+<li class="checked">
+<p>Umm Sa&#39;d</p>
+</li>
+<li class="checked">
+<p>Children of the Alley</p>
+</li>
+<li class="checked">
+<p>Cat on a Hot Tin Roof\\</p>
+</li>
+<li class="checked">
+<p>Crime and Punishment</p>
+</li>
+<li class="checked">
+<p>The Idiot</p>
+</li>
+<li class="checked">
+<p>Orpheus Descending</p>
+</li>
+<li class="checked">
+<p>Marx in Soho: A Play on History</p>
+</li>
+<li class="checked">
+<p>One Arm and Other Stories</p>
+</li>
+<li class="checked">
+<p>The Misunderstanding/ Camus</p>
+</li>
+<li class="checked">
+<p>القميص المسروق</p>
+</li>
+<li class="checked">
+<p>الزيتون لا يموت</p>
+</li>
+<li class="checked">
+<p>Marx in Soho</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-good" class="outline-4">
+<h4 id="good">
+Good
+</h4>
+<div id="outline-text-good" class="outline-text-4">
+<ul>
+<li class="checked">
+<p>The Dream of a Ridiculous Man</p>
+</li>
+<li class="checked">
+<p>Chronicle of a Death Foretold</p>
+</li>
+<li class="checked">
+<p>The Unbearable Lightness of Being</p>
+</li>
+<li class="checked">
+<p>Poor Folk/ Dostoevsky</p>
+</li>
+<li class="checked">
+<p>In the Penal Colony</p>
+</li>
+<li class="checked">
+<p>Men in the Sun/ Kanafani</p>
+</li>
+<li class="checked">
+<p>Animal Farm\\</p>
+</li>
+<li class="checked">
+<p>Karnak Kafe</p>
+</li>
+<li class="checked">
+<p>The Insulted and Humiliated <a href="/posts/desto/">(Review)</a></p>
+</li>
+<li class="checked">
+<p>Love in the Time of Cholera</p>
+</li>
+<li class="checked">
+<p>One Hundred Years of Solitude <a href="/posts/100year/">(Review)</a></p>
+</li>
+<li class="checked">
+<p>Adrift on the Nile\\</p>
+</li>
+<li class="checked">
+<p>The Overcoat/ Gogol</p>
+</li>
+<li class="checked">
+<p>The Land of Sad Oranges/ Kanafani</p>
+</li>
+<li class="checked">
+<p>The Bet and Other Stories</p>
+</li>
+<li class="checked">
+<p>The Death of Ivan Ilych</p>
+</li>
+<li class="checked">
+<p>The Sorrows of Satan; or, The Strange Experience of One Geoffrey
+Tempest, Millionaire</p>
+</li>
+<li class="checked">
+<p>The Picture of Dorian Gray</p>
+</li>
+<li class="checked">
+<p>1984</p>
+</li>
+<li class="checked">
+<p>The Festival of Insignificance</p>
+</li>
+<li class="checked">
+<p>When Nietzsche Wept</p>
+</li>
+<li class="checked">
+<p>The Death of a Government Clerk</p>
+</li>
+<li class="checked">
+<p>The Silent Patient <a href="/posts/marida/">(Review)</a></p>
+</li>
+<li class="checked">
+<p>The End of the Fucking World (Comics)</p>
+</li>
+<li class="checked">
+<p>Season of Migration to the North</p>
+</li>
+<li class="checked">
+<p>The Inspector General</p>
+</li>
+<li class="checked">
+<p>Oscar And The Lady In Pink</p>
+</li>
+<li class="checked">
+<p>No One Sleeps in Alexandria</p>
+</li>
+<li class="checked">
+<p>يوم غائم في البر الغربي</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sucks" class="outline-4">
+<h4 id="sucks">
+Sucks
+</h4>
+<div id="outline-text-sucks" class="outline-text-4">
+<ul>
+<li class="checked">
+<p>The Metamorphosis</p>
+</li>
+<li class="checked">
+<p>Hidden Figures</p>
+</li>
+<li class="checked">
+<p>War and Peace</p>
+</li>
+<li class="checked">
+<p>Wind, Sand and Stars <a href="/posts/bashr/">(Review)</a></p>
+</li>
+<li class="checked">
+<p>Testaments Betrayed: An Essay in Nine Parts</p>
+</li>
+<li class="checked">
+<p>A Tale of Two Cities</p>
+</li>
+<li class="checked">
+<p>The Hunchback of Notre-Dame</p>
+</li>
+<li class="checked">
+<p>Sundays in August</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-to-read" class="outline-4">
+<h4 id="to-read">
+To Read
+</h4>
+<div id="outline-text-to-read" class="outline-text-4">
+<ul>
+<li class="unchecked">
+<p>Death with Interruptions</p>
+</li>
+<li class="unchecked">
+<p>Perfume: The Story of a Murderer</p>
+</li>
+<li class="unchecked">
+<p>Prljave rukea/ Kazantzakis</p>
+</li>
+<li class="unchecked">
+<p>Christ Recrucified</p>
+</li>
+<li class="unchecked">
+<p>Nausea/ Sartre</p>
+</li>
+<li class="unchecked">
+<p>] Confession/ Gorky</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-philosophy-anthropology-neuroscience-related-evolution" class="outline-3">
+<h3 id="philosophy-anthropology-neuroscience-related-evolution">
+Philosophy &amp; Anthropology/ Neuroscience Related/ Evolution
+</h3>
+<div id="outline-text-philosophy-anthropology-neuroscience-related-evolution" class="outline-text-3">
+<div id="outline-container-read" class="outline-4">
+<h4 id="read">
+Read
+</h4>
+<div id="outline-text-read" class="outline-text-4">
+<ul>
+<li class="checked">
+<p>Your Inner Fish: a Journey into the 3.5-Billion-Year History of
+the Human Body</p>
+</li>
+<li class="checked">
+<p>The Naked Ape <a href="/posts/naked">(Review)</a></p>
+</li>
+<li class="checked">
+<p>Being Mortal: Medicine and What Matters in the End</p>
+</li>
+<li class="checked">
+<p>Life Ascending: The Ten Great Inventions of Evolution</p>
+</li>
+<li class="checked">
+<p>The Ego and the Id</p>
+</li>
+<li class="checked">
+<p>Group Psychology and the Analysis of the Ego</p>
+</li>
+<li class="checked">
+<p>The Crowd: A Study of the Popular Mind by Gustave Le Bon
+<a href="/posts/psycho/">(Review)</a></p>
+</li>
+<li class="checked">
+<p>Thinking, Fast and Slow</p>
+</li>
+<li class="checked">
+<p>The Social Animal/ Aronson</p>
+</li>
+<li class="checked">
+<p>Totem and Taboo <a href="/posts/totm/">(Review)</a></p>
+</li>
+<li class="checked">
+<p>مغامرة العقل الأولى</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-to-read-1" class="outline-4">
+<h4 id="to-read-1">
+To Read
+</h4>
+<div id="outline-text-to-read-1" class="outline-text-4">
+<ul>
+<li class="unchecked">
+<p>Discipline and Punish: The Birth of the Prison</p>
+</li>
+<li class="unchecked">
+<p>Against Method/ Feyerabend</p>
+</li>
+</ul>
+<hr>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-philosophy" class="outline-3">
+<h3 id="philosophy">
+Philosophy
+</h3>
+<div id="outline-text-philosophy" class="outline-text-3">
+<div id="outline-container-read-1" class="outline-4">
+<h4 id="read-1">
+Read
+</h4>
+<div id="outline-text-read-1" class="outline-text-4">
+<ul>
+<li class="checked">
+<p>History of Political Philosophy/ Strauss</p>
+</li>
+<li class="checked">
+<p>Beyond Good and Evil/ Netzsche\\</p>
+</li>
+<li class="checked">
+<p>A Theologico-Political Treatise: A Political Treatise</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-to-read-2" class="outline-4">
+<h4 id="to-read-2">
+To Read
+</h4>
+<div id="outline-text-to-read-2" class="outline-text-4">
+<ul>
+<li class="unchecked">
+<p>The World as Will and Representation, Vol. 2</p>
+</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td>## Politics</td>
+</tr>
+<tr>
+<td>### Read - [x] في الثورة والقابلية للثورة - [x] عن المثقف والثورة - [x] Who is Charlie?: Xenophobia and the New Middle Class <a href="/posts/charlie">(Review)</a> - [x] <strong><em>Media Control: The Spectacular Achievements of Propaganda</em></strong><sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup><a href="/posts/mediacontrol">(Abridgement)</a> - [x] Discourse on Voluntary Servitude - [x] أشياء لن تسمع بها أبدًا - [x] Who Rules The World?/ Chomsky ### To Read - [ ] The Propaganda Model Today: Filtering Perception and Awareness - [ ] The Year 501/ Chomsky - [ ] مقالة في الحرية - عزمي بشارة - [ ] Soft Power: The Means to Success in World Politics - [ ] The Dark Side of Democracy: Explaining Ethnic Cleansing - [ ] Political Psychology: Situations, Individuals, and Cases - [ ] How Democracies Die: What History Reveals About Our Future - [ ] العلمانية الجزئية والعلمانية الشاملة - [ ] أميركا والإبادات الجماعية : حق التضحية بالآخر - [ ] How Fascism Works: The Politics of Us and Them - [ ] Global Culture: Nationalism, Globalization and Modernity - [ ] Desert/ Anonymous</td>
+</tr>
+<tr>
+<td>### Middle East Struggle Related</td>
+</tr>
+<tr>
+<td>#### Read - [x] 9-11/ Chomsky - [x] <strong><em>Engineers of Jihad</em></strong> <sup class="footnote-reference"><a id="footnote-reference-2" href="#footnote-2">2</a></sup> - [x] The Arabs: A History/ Rogan</td>
+</tr>
+<tr>
+<td>#### Sucks - [x] Jihad: the trail of political Islam</td>
+</tr>
+<tr>
+<td>#### To Read - [ ] Middle East Illusions/ Chomsky - [ ] تفكيك الإشتراكية العربية - [ ] هل يستطيع غير الأوروبي التفكير؟ - [ ] في المسألة العربية - [ ] المحنة العربية الدولة ضد الأمة - [ ] أن تكون عربيا في أيامنا - [ ] أزمة الحضارة العربية أم أزمة البرجوازيات العربية؟ - [ ] مدخل إلى نقض الفكر الطائفي/ مهدي عامل - [ ] عروبة مِصر/ غالي شكري</td>
+</tr>
+<tr>
+<td>#### On The Zionism Movement and The Israeli Occupation in Palestine</td>
+</tr>
+<tr>
+<td>##### Read</td>
+</tr>
+<tr>
+<td>- [x] اليد الخفية: دراسة في الحركات اليهودية الهدامة والسرية - [x] The General&#39;s Son: The Journey of an Israeli in Palestine - [x] Out of the Frame: The Struggle for Academic Freedom in Israel - [x] من هو اليهودي</td>
+</tr>
+<tr>
+<td>##### To Read - [ ] State of Terror: How Terrorism Created Modern Israel - [ ] The Only Language They Understand: Forcing Compromise in Israel and Palestine - [ ] On Palestine/ Pappe - [ ] The Ethnic Cleansing of Palestine - [ ] The Israel Lobby and U.S. Foreign Policy - [ ] Gaza in Crisis: Reflections on Israel&#39;s War Against the Palestinians - [ ] The Invention of Ancient Israel: The Silencing of Palestinian History<sup class="footnote-reference"><a id="footnote-reference-3" href="#footnote-3">3</a></sup> - [ ] الاقتصاد السياسي لصناعة التقنية العالية في اسرائيل - [ ] الفكر السياسي الفلسطيني 1964-1974 - [ ] <a href="http://www.almawqef.com/spip.php?article7575&amp;lang=ar">حول التناقض والممارسة في الثورة الفلسطينية</a> - [ ] استراتيجية التحرير الكامل واستراتيجية الحل السياسي - [ ] الهيكل التنظيمي للانتفاضة وأساليب العمل ربعي المهدون - [ ] اتفاق أوسلو وتداعياته</td>
+</tr>
+<tr>
+<td>### Capitalism/ Economics #### To Read - [ ] Capitalism, Socialism and Democracy - [ ] Capitalism and Modern Social Theory - [ ] Capital in the Twenty-First Century - [ ] Studies in Mutualist Political Economy - [ ] Capitalist Nursery Fables - [ ] Socialism Betrayed :Behind the Collapse of the Soviet Union - [ ] Does Capitalism Has a Future? - [ ] الإشتراكية واقتصاد السوق: تجارب الصين - فيتنام - كوبا - [ ] How to Change the World: Marx and Marxism 1840-2011 - [ ] Why Marx Was Right - [ ] A Brief History of Neoliberalism - [ ] The Culture of the New Capitalism (Sennett)</td>
+</tr>
+<tr>
+<td>### Marxism <sup class="footnote-reference"><a id="footnote-reference-4" href="#footnote-4">4</a></sup></td>
+</tr>
+<tr>
+<td>- [ ] What is Marxism?/ Woods - [ ] Dialectical and Historical Materialism/ Stalin - [ ] حول مسائل مرحلة الإنتقال من الرأسمالية الى الأشتراكية و دكتاتورية البروليتاريا - [ ] الماركسية اللينينية ونظرية الحزب - [ ] الدين والصراع الطبقي/ كارل كاوتسكي - [ ] Islam and Capitalism - [ ] النشاط الجنسي وصراع الطبقات - [ ] متى يطلع الفجر؟/ جان بول أوليفييه - [ ] ثورة الزنج - [ ] الصراع الأمريكي السوفياتي في الشرق الأوسط - [ ] اطروحات الماركسية حول العولمة - [ ] في تمرحل التاريخ - [ ] مقدمات نظرية: لدراسة أثر الفكر الاشتراكي في حركة التحرر الوطني - [ ] الاستعمار الجديد/ غوامي نكروما</td>
+</tr>
+<tr>
+<td>#### Struggle</td>
+</tr>
+<tr>
+<td>- [ ] دور العنف/ إنجلز - [ ] الماركسية وحرب العصابات - [ ] كيف تصنع ete ناجحًا - [ ] تجارب ست ثورات عالمية</td>
+</tr>
+<tr>
+<td>#### Hardcore Capitalism</td>
+</tr>
+<tr>
+<td>- [ ] الكتاب الأسود للرأسمالية - [ ] الطب الإمبريالي - [ ] أوروبا والتخلف في أفريقيا - [ ] أمبراطورية الإرهاب، السياسة الأميركية العابرة للقارات في الأمن والاقتصاد ومكافحة الإرهاب - [ ] المثقفون المزيفون، النصر الإعلامي لخبراء الكذب/ باسكال بونيفاس - [ ] Canada in Africa: 300 Years of Aid and Exploitation. - [ ] American War Machine - [ ] Proleratianization and Class Struggle in Africa</td>
+</tr>
+<tr>
+<td>## History and Anthropology</td>
+</tr>
+<tr>
+<td>### Read - [x] <strong><em>The Human Web: A Bird&#39;s-Eye View of World History</em></strong> - [x] The Ottoman Age of Exploration - [x] <strong><em>A People&#39;s History of the United States</em></strong><sup class="footnote-reference"><a id="footnote-reference-5" href="#footnote-5">5</a></sup> - [x] Before Taliban: Genealogies of the Afghan Jihad - [x] The Poetics of Iblis: Narrative Theology in the Qur&#39;an - [x] The Happiness Industry: How the Government and Big Business Sold Us Well-Being</td>
+</tr>
+<tr>
+<td>### To Read</td>
+</tr>
+<tr>
+<td>- [ ] Capital et Idéologie - [ ] 1492: The Debate on Colonialism, Eurocentrism, and History - [ ] Orientalism - [ ] History of Religion, (Sergei Tokarev) - [ ] The History of Sexuality (Foucault) - [ ] The Hero With a Thousand Faces - [ ] 1492: The Debate on Colonialism, Eurocentrism, and History - Colonialism and Neocolonialism (Sartre) - [ ] الإغتيال السياسي في الإسلام - [ ] من قاموس التراث - [ ] الحداثة والامبريالية: الغزو الفرنسي وإشكالية نهضة مصر - [ ] الفكر المصري في القرن الثامن عشر بين الجمود والتجديد</td>
+</tr>
+<tr>
+<td># Nw his</td>
+</tr>
+<tr>
+<td>- [ ] A History of Zionism (Laqueur) - [ ] A Commonwealth of Thieves: The Improbable Birth of Australia - [ ] Who&#39;s Buried in Grant&#39;s Tomb?: A Tour of Presidential Gravesites - [ ] Unfamiliar Fishes (Vowell) - [ ] White Mughals: Love and Betrayal in Eighteenth-Century India - [ ] Uncommon Grounds (Pendergrast) - [ ] Ulysses S. Grant (Paschall) - [ ] Trotsky (Volkogonov,) - [ ] Tories: Fighting for the King in America&#39;s First Civil War - [ ] Theodore Rex (Morris) - [ ] The Wars Against Napoleon: Debunking the Myth of the Napoleonic Wars - [ ] The Warmth of Other Suns: The Epic Story of America&#39;s Great Migration - [ ] The Tudors: The Complete Story of England&#39;s Most Notorious Dynasty - [ ] The Monuments Men: Allied Heroes, Nazi Thieves, and the Greatest Treasure Hunt in History - [ ] The Tin Ticket: The Heroic Journey of Australia&#39;s Convict Women - [ ] The Idea of America: Reflections on the Birth of the United States - [ ] The Fourth Star: Four Generals and the Epic Struggle for the Future of the United States Army - [ ] The First American: The Life and Times of Benjamin Franklin - [ ] The Fabulous History of the Dismal Swamp Company: A Story of George Washington&#39;s Times - [ ] The Endurance: Shackleton&#39;s Legendary Antarctic Expedition - [ ] The Decline and Fall of the British Empire 1781-1997 - [ ] The Atlantic and Its Enemies: A Personal History Of The Cold War - [ ] The Authentic Life of Billy the Kid - [ ] The Ascent of Money: A Financial History of the World - [ ] The American Revolution: A History - [ ] Rubicon: The Triumph and Tragedy of the Roman Republic - [ ] Rome&#39;s Gothic Wars: From the Third Century to Alaric (Key Conflicts of Classical Antiquity) - [ ] Russia Against Napoleon: The True Story of the Campaigns of War and Peace - [ ] Resurrecting Pompeii - [ ] Red Capitalism: The Fragile Financial Foundation of China&#39;s Extraordinary Rise - [ ] Pirates of Barbary: Corsairs, Conquests and Captivity in the Seventeenth-Century Mediterranean - [ ] Pirate Hunter of the Caribbean - [ ] Personal Memoirs of Ulysses S. Grant (The Barnes &amp; Noble Library of Essential Reading Series) - [ ] Pakistan: A Hard Country - [ ] No Bone Unturned: Inside the World of a Top Forensic Scientist and His Work on America&#39;s Most Notorious Crimes and Disasters - [ ] Newton and the Counterfeiter: The Unknown Detective Career of the World&#39;s Greatest Scientist - [ ] Nazi Germany and the Jews, Volume 2: The Years of Extermination - [ ] Neptune&#39;s Inferno: The U.S. Navy at Guadalcanal - [ ] Nazi Germany and the Jews, Volume 01: The Years of Persecution - [ ] Napoleon&#39;s Wars: An International History, 1803-1815 - [ ] Malcolm X: A Life of Reinvention - [ ] Lucrezia Borgia: Life, Love and Death in Renaissance Italy - [ ] Lost to the West: The Forgotten Byzantine Empire That Rescued Western Civilization - [ ] Love and Louis XIV: The Women in the Life of the Sun King - [ ] Lords of the Sea: The Epic Story of the Athenian Navy and the Birth of Democracy - [ ] Lone Survivor: The Eyewitness Account of Operation Redwing and the Lost Heroes of SEAL Team 10 - [ ] Infidels: A History of the Conflict Between Christendom and Islam - [ ] How the Scots Invented the Modern World: The True Story of How Western Europe&#39;s Poorest Nation Created Our World and Everything in It - [ ] Hot Time in the Old Town - [ ] Great Tales from English History - Volume 2 - [ ] The forever war (Filkins) - [ ] Great Soul: Mahatma Gandhi and His Struggle With India - [ ] Going Dutch: How England Plundered Holland&#39;s Glory - [ ] Genghis Khan and the Making of the Modern World - [ ] Freethinkers: A History of American Secularism - [ ] Fannie&#39;s Last Supper: Re-creating One Amazing Meal from Fannie Farmer&#39;s 1896 Cookbook - [ ] Forgotten Wars: Freedom and Revolution in Southeast Asia - [ ] Evicted From Eternity: The Restructuring of Modern Rome - [ ] Europe&#39;s Tragedy: A New History of the Thirty Years War - [ ] Engineers of Dreams: Great Bridge Builders and the Spanning of America - [ ] Edison and the Electric Chair: A Story of Light and Death - [ ] Empire Lost: Britain, the Dominions and the Second World War - [ ] Dreams in a Time of War: A Childhood Memoir - [ ] A Chosen Few (Kurlansky) - [ ] The Waxman Report - [ ] Destiny Disrupted: A History of the World Through Islamic Eyes - [ ] Crimes of Paris: A True Story of Murder, Theft, and Detection - [ ] Crucible of War: The Seven Years&#39; War and the Fate of Empire in British North America, 1754-1766 - [ ] Company: A Short History of a Revolutionary Idea - [ ] Cathedral, Forge, and Waterwheel: Technology and Invention in the Middle Ages - [ ] The Monks of War (Desmond Seward) - [ ] Song of Slaves in the Desert (Cheuse) - [ ] The Empire Project (Darwin) - [ ] Blood and Rage: A Cultural History of Terrorism - [ ] Black Lamb and Grey Falcon: A Journey Through Yugoslavia - [ ] Birth of Britain (Barnes &amp; Noble Library of Essential Reading) - [ ] Americans in Paris: Life and Death Under Nazi Occupation - [ ] Sudden Sea (Scotti) - [ ] After the prophet: the epic story of the Shia-Sunni split in Islam - [ ] Affection and Trust: The Personal Correspondence of Harry S. Truman and Dean Acheson, 1953-1971 - [ ] A Writer at War: Vasily Grossman with the Red Army - [ ] The Indian Ocean (Pearson.) - [ ] The First Battle (Lehrack) - [ ] The Dead Hand (Hoffman) - [ ] The Classical World (Filkins) - [ ] The Balfour Declaration (Schneer) - [ ] Stalingrad (Beevor) - [ ] Slavery by Another Name (Blackmon) - [ ] Proud Tower (Tuchman) - [ ] Practicing History: Selected Essays - [ ] Pox: An American History - [ ] Postwar: A History of Europe Since 1945 - [ ] Pope Joan: A Novel - [ ] Marco Polo (Bergreen) - [ ] London: A Biography (Ackroyd) - [ ] Living Our Language: Ojibwe Tales &amp; Oral Histories - [ ] Life in a Medieval City - [ ] Life in a Medieval Village - [ ] Lies My Teacher Told Me About Christopher Columbus: What Your History Books Got Wrong - [ ] Jerusalem: The Biography (Sebag-Montefiore) - [ ] James Madison (Brookhiser) - [ ] Life After Death (Segal) - [ ] In the Heart of the Sea: The Tragedy of the Whaleship Essex - [ ] In Pharaoh&#39;s Army (Wolff) - [ ] In the Garden of Beasts (Coll) - [ ] God&#39;s Philosophers (Hannam) - [ ] Ghost Wars (Coll) - [ ] Freedom Summer (Watson) - [ ] Founding Brothers (Ellis) - [ ] Europe: A History (Norman Davies) - [ ] Devil at My Heels - [ ] Desert Queen (Wallach) - [ ] Doubt (Hecht) - [ ] China Witness (Xinran) - [ ] Been in the Storm So Long - [ ] Ancient Chinese Warfare - [ ] Batavia&#39;s Graveyard - [ ] Anatomy of an Epidemic - [ ] An Autobiography - [ ] Amazon Kindle US Power Adapter</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>Related with Mind Managers by Herbert Schiller</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-2"><a href="#footnote-reference-2">2</a></sup>
+<div class="footnote-body">
+<p>A very important literature to understand the uprising of Jihad
+       movements between pan-Arabists, ex pan-Arabists in general, and
+       between engineers and the middle class in particular.</p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-3"><a href="#footnote-reference-3">3</a></sup>
+<div class="footnote-body">
+<p>Also watch: <a href="https://youtu.be/YZI5-ovzcQg">Ottoman monuments in
+       Jerusalem</a></p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-4"><a href="#footnote-reference-4">4</a></sup>
+<div class="footnote-body">
+<p>You can find sources
+       <a href="https://arcommunistslib.site123.me/">here</a></p>
+</div>
+</div>
+<div class="footnote-definition">
+<sup id="footnote-5"><a href="#footnote-reference-5">5</a></sup>
+<div class="footnote-body">
+<p>For further reading, see The Roots of The Modern American Empire
+        by William Appleman Williams. See Also A People&#39;s History of
+        American Empire (Zinn)</p>
+</div>
+</div>
+</div>
+</div>
+
+
+    
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+    
+</div>
+
+
+
+        <hr>
+        <small>This site is generated using the
+            
+                <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> package for Emacs/Org-mode +
+            
+            <a href="https://github.com/kaushalmodi/hugo-bare-min-theme"><code>hugo-bare-min-theme</code></a> + Hugo <b>0.88.1</b>
+            .
+        </small>
+        
+        
+    </body>
+</html>
+
+

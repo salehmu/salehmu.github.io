@@ -1,0 +1,2 @@
+/subdir-canonify-true/* https://hugo-sandbox-subdir-canonify-true.netlify.com/:splat 200!
+/subdir-canonify-false/* https://hugo-sandbox-subdir-canonify-false.netlify.com/:splat 200!
