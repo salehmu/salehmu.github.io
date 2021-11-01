@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+    <head>
+        <link href="//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/941f4a4b33c62f21dfdfbae776f7f3e0?family=Graphik+Regular" rel="stylesheet" type="text/css"/>
+	    <style>
+            img {
+                max-width: 100%
+            }
+            @font-face {font-family: "Tiempos Text Regular"; src: url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot"); src: url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.woff") format("woff"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/37b29158c68de167677fa4a3087d7188.svg#Tiempos Text Regular") format("svg"); }
+@import url(//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular);
+
+
+@import url(//db.onlinewebfonts.com/c/941f4a4b33c62f21dfdfbae776f7f3e0?family=Graphik+Regular);
+@font-face {font-family: "Graphik Regular"; src: url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.eot"); src: url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.woff") format("woff"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/941f4a4b33c62f21dfdfbae776f7f3e0.svg#Graphik Regular") format("svg"); }
+
+	    body,h1,h2,h3,h4,h5,h6,div,ul,ol,hr,a,table{
+    text-decoration:none;
+    font-family: san-serif;
+    unicode-bidi: plaintext;
+    text-justify: inter-word;
+
+    }
+        p{
+    font-family: "Tiempos Text Regular";
+    text-decoration:none;
+    unicode-bidi: plaintext;
+    text-justify: inter-word;
+    text-align: justify;
+        }
+        li{
+    font-family: "Tiempos Text Regular";
+        }
+ header a,header a:visited,footer a,footer a:visited,h1 a,h1 a:visited,h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{
+    text-decoration:none;
+    unicode-bidi: plaintext;
+    font-family: san-serif;
+    text-justify: inter-word;
+
+}
+ header a:hover,footer a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{
+    text-decoration:none;
+    font-family: san-serif;
+    text-justify: inter-word;
+
+}
+ .footnotes hr, footnote-definition {
+  display: none;
+}
+
+</style>
+        <link href="https://gmpg.org/xfn/11" rel="profile">
+        <meta charset="utf-8">
+        
+        
+        
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+        
+        <meta name="referrer" content="no-referrer">
+
+        <title>
+            
+                Books ❚ Saleh Muhammed
+            
+        </title>
+        
+        
+        <style>
+         body {
+             margin: 40px auto;
+             max-width: 650px;
+             line-height: 1.6;
+             font-size: 18px;
+             color: #444;
+             padding: 0 10px;
+         }
+         h1, h2, h3 {
+             line-height: 1.2;
+         }
+         .masthead-title {
+             font-size: 40px;
+             font-weight: bold;
+         }
+         .masthead-title a {
+             text-decoration: none;
+         }
+         .masthead-body {
+             font-size: 0.8em;
+         }
+         
+             /* CSS for Pretty Print for Debug (debugprint.html) */
+/* https://github.com/kaushalmodi/hugo-debugprint/blob/master/layouts/partials/debugprint.html */
+/* https://github.com/kaushalmodi/hugo-debugprint/blob/master/layouts/partials/debugprint.css */
+.debugprint_wrap {
+    padding: 20px;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+.debugprint td, .debugprint th {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.debugprint th {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.debugprint tr {
+    padding: 5px 10px;
+}
+.debugprint .key {
+    font-weight: bold;
+}
+.debugprint .type {
+    /* Hide Type columns in debugprint */
+    /* display: none; */
+    font-size: 0.9em;
+    font-family: monospace;
+    font-style: italic;
+}
+.debugprint .value {
+    font-family: monospace;
+}
+.debugprint .true {
+    color: green;
+}
+.debugprint .false {
+    color: red;
+}
+/* Don't touch the table headers */
+.debugprint th.key,
+.debugprint th.type,
+.debugprint th.value {
+    font-family: helvetica, arial, san-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-style: normal;
+}
+
+         
+          
+         figcaption,
+         .src-block-caption,
+         .table-caption {
+             font-style: italic;
+             text-align: center;
+         }
+         dt {
+             font-weight: bold;
+         }
+         dd {
+             margin-bottom: .5rem;
+         }
+          
+         ul.task-list {
+             list-style-type: none;
+         }
+        </style>
+
+        
+        
+ 
+<meta property="og:title" content="Books" />
+<meta property="og:description"
+      content="Tracking my reading progress since March 2021." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/fullbooks/" />
+
+
+    
+    
+        <meta property="article:modified_time" content="2021-11-01T15:17:03&#43;02:00"/>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+         <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Books"/>
+<meta name="twitter:description" content="Tracking my reading progress since March 2021."/>
+
+
+        
+        
+
+
+<script src="js/mathjax-config.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+
+<link rel="stylesheet" href="/css/github_chroma.css" type="text/css" />
+
+    </head>
+
+    <body lang="en">
+
+        
+
+        <div style="float: left;">
+            <small>
+                <span style="font-variant: small-caps;">.Kind</span> (<strong>page</strong>):
+                <span style="font-variant: small-caps;">.Type</span> (<strong>page</strong>) /
+                <span style="font-variant: small-caps;">.Layout</span> (<strong></strong>)
+
+                <br />
+                
+                
+                    
+                        
+                            
+                        
+                    
+                
+                <span style="font-variant: small-caps;">Bundle</span>: <strong>n/a (regular page)</strong>
+            </small>
+        </div>
+
+        
+            <div style="float: right;">
+                [
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                         <a href="/categories/">categories</a>
+                        
+                    
+                
+                    
+                        | <a href="/tags/">tags</a>
+                        
+                    
+                
+                
+                    | <a href="/search/"><strong>search</strong></a>
+                
+                ]
+            </div>
+            <div style="clear: both;"></div> 
+        
+
+        <div class="masthead-title"><a href="/">Saleh Muhammed</a></div>
+        <div class="masthead-body">
+            
+            
+                <p>This blog is <b>updated automatically after each commit</b> to the <a href="https://github.com/salehmu/blog">
+                    <code>latest_branch</code> repo</a>.
+                    It was last updated on <i>Nov 01, 2021 15:17 EET</i>.
+                </p>
+                <ul>
+                    
+                        <li>The <i>actual <b>source</b></i>.. <a
+					href="https://github.com/salehmu/blog/tree/latest_branch/content/posts">source dir</a></li>
+                        <li><b>Cinema</b>.. <a
+					href="/cinema/">list</a></li>
+                        <li><b>Books</b>.. <a
+					href="/books/">list</a></li>
+                    
+                    
+                    
+                </ul>
+            
+            <hr>
+        </div>
+
+         
+            
+            
+                This page was created/modified in commit <a href="https://github.com/salehmu/blog/blob/latest_branch/commit/618b0a12cd4b45ce7cd19ee54e2a192d62dafd1c">618b0a1</a> "update" on <b>2021-11-01</b>.
+            
+        
+
+        
+            
+                
+                
+                    
+                        <br />
+                        <div style="float: right;">
+                            ✱ <i>Markdown <a href="https://github.com/salehmu/blog/blob/latest_branch/content/fullbooks.md">
+                            source</a> of this page</i>
+                        </div>
+                        <div style="clear: both;"></div> 
+                    
+                
+            
+        
+
+                       
+
+        
+
+<div class="post">
+    <h1 class="post-title">Books</h1>
+
+    
+    
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+    <p>
+        
+    </p>
+
+    <hr />
+    <h3>Description/Summary</h3>
+    
+        Tracking my reading progress since March 2021.
+    
+    <hr />
+
+    
+
+
+
+    <h3>Content</h3>
+    <p><strong><a href="/post/update-about-my-tracking-lists/" title="UPDATE">Read: Update About My Tracking Lists</a></strong></p>
+<p><strong>Bold</strong> is currently reading<br>
+<em><strong>Italics bold</strong></em> is an outstanding one.
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#literature-and-fiction">Literature and Fiction</a>
+      <ul>
+        <li><a href="#prefect">Prefect</a></li>
+        <li><a href="#good">Good</a></li>
+        <li><a href="#sucks">Sucks</a></li>
+        <li><a href="#to-read">To Read</a></li>
+      </ul>
+    </li>
+    <li><a href="#philosophy--anthropology">Philosophy &amp; Anthropology</a>
+      <ul>
+        <li><a href="#read">Read</a></li>
+        <li><a href="#to-read-1">To Read</a></li>
+      </ul>
+    </li>
+    <li><a href="#evolution-neuroscience-related">Evolution/ Neuroscience-related</a>
+      <ul>
+        <li><a href="#read-1">Read</a></li>
+      </ul>
+    </li>
+    <li><a href="#politics">Politics</a>
+      <ul>
+        <li><a href="#read-2">Read</a></li>
+        <li><a href="#to-read-2">To Read</a></li>
+        <li><a href="#middle-east-struggle-related">Middle East Struggle Related</a></li>
+        <li><a href="#capitalism-economics">Capitalism/ Economics</a></li>
+        <li><a href="#marxism-3">Marxism </a></li>
+      </ul>
+    </li>
+    <li><a href="#history">History</a>
+      <ul>
+        <li><a href="#read-5">Read</a></li>
+        <li><a href="#to-read-6">To Read</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</p>
+<h2 id="literature-and-fiction">Literature and Fiction</h2>
+<blockquote>
+<p>Probably won&rsquo;t be updated anymore.</p>
+</blockquote>
+<h3 id="prefect">Prefect</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> A Streetcar Named Desire</li>
+<li><input checked="" disabled="" type="checkbox"> The Kite Runner</li>
+<li><input checked="" disabled="" type="checkbox"> Lolita</li>
+<li><input checked="" disabled="" type="checkbox"> Suddenly Last Summer</li>
+<li><input checked="" disabled="" type="checkbox"> The Brothers Karamazov</li>
+<li><input checked="" disabled="" type="checkbox"> Umm Sa&rsquo;d</li>
+<li><input checked="" disabled="" type="checkbox"> Children of the Alley</li>
+<li><input checked="" disabled="" type="checkbox"> Cat on a Hot Tin Roof</li>
+<li><input checked="" disabled="" type="checkbox"> Crime and Punishment</li>
+<li><input checked="" disabled="" type="checkbox"> The Idiot</li>
+<li><input checked="" disabled="" type="checkbox"> Orpheus Descending</li>
+<li><input checked="" disabled="" type="checkbox"> Marx in Soho: A Play on History</li>
+<li><input checked="" disabled="" type="checkbox"> One Arm and Other Stories</li>
+<li><input checked="" disabled="" type="checkbox"> The Misunderstanding (Camus)</li>
+<li><input checked="" disabled="" type="checkbox"> القميص المسروق</li>
+<li><input checked="" disabled="" type="checkbox"> الزيتون لا يموت</li>
+<li><input checked="" disabled="" type="checkbox"> Marx in Soho</li>
+</ul>
+<h3 id="good">Good</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> The Dream of a Ridiculous Man</li>
+<li><input checked="" disabled="" type="checkbox"> Chronicle of a Death Foretold</li>
+<li><input checked="" disabled="" type="checkbox"> The Unbearable Lightness of Being</li>
+<li><input checked="" disabled="" type="checkbox"> Poor Folk (Dostoevsky)</li>
+<li><input checked="" disabled="" type="checkbox"> In the Penal Colony</li>
+<li><input checked="" disabled="" type="checkbox"> Men in the Sun (Kanafani)</li>
+<li><input checked="" disabled="" type="checkbox"> Animal Farm</li>
+<li><input checked="" disabled="" type="checkbox"> Karnak Kafe</li>
+<li><input checked="" disabled="" type="checkbox"> The Insulted and Humiliated <a href="/posts/desto/">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> Love in the Time of Cholera</li>
+<li><input checked="" disabled="" type="checkbox"> One Hundred Years of Solitude <a href="/posts/100year/">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> Adrift on the Nile</li>
+<li><input checked="" disabled="" type="checkbox"> The Overcoat (Gogol)</li>
+<li><input checked="" disabled="" type="checkbox"> The Land of Sad Oranges (Kanafani)</li>
+<li><input checked="" disabled="" type="checkbox"> The Bet and Other Stories</li>
+<li><input checked="" disabled="" type="checkbox"> The Death of Ivan Ilych</li>
+<li><input checked="" disabled="" type="checkbox"> The Sorrows of Satan; or, The Strange Experience of One Geoffrey Tempest, Millionaire</li>
+<li><input checked="" disabled="" type="checkbox"> The Picture of Dorian Gray</li>
+<li><input checked="" disabled="" type="checkbox"> 1984</li>
+<li><input checked="" disabled="" type="checkbox"> The Festival of Insignificance</li>
+<li><input checked="" disabled="" type="checkbox"> When Nietzsche Wept</li>
+<li><input checked="" disabled="" type="checkbox"> The Death of a Government Clerk</li>
+<li><input checked="" disabled="" type="checkbox"> The Silent Patient <a href="/posts/marida/">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> The End of the Fucking World (Comics)</li>
+<li><input checked="" disabled="" type="checkbox"> Season of Migration to the North</li>
+<li><input checked="" disabled="" type="checkbox"> The Inspector General</li>
+<li><input checked="" disabled="" type="checkbox"> Oscar And The Lady In Pink</li>
+<li><input checked="" disabled="" type="checkbox"> No One Sleeps in Alexandria</li>
+<li><input checked="" disabled="" type="checkbox"> يوم غائم في البر الغربي</li>
+</ul>
+<h3 id="sucks">Sucks</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> The Metamorphosis</li>
+<li><input checked="" disabled="" type="checkbox"> Hidden Figures</li>
+<li><input checked="" disabled="" type="checkbox"> War and Peace</li>
+<li><input checked="" disabled="" type="checkbox"> Wind, Sand and Stars <a href="/posts/bashr/">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> Testaments Betrayed: An Essay in Nine Parts</li>
+<li><input checked="" disabled="" type="checkbox"> A Tale of Two Cities</li>
+<li><input checked="" disabled="" type="checkbox"> The Hunchback of Notre-Dame</li>
+<li><input checked="" disabled="" type="checkbox"> Sundays in August</li>
+</ul>
+<h3 id="to-read">To Read</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Death with Interruptions</li>
+<li><input disabled="" type="checkbox"> Perfume: The Story of a Murderer</li>
+<li><input disabled="" type="checkbox"> Prljave rukea (Kazantzakis)</li>
+<li><input disabled="" type="checkbox"> Christ Recrucified</li>
+<li><input disabled="" type="checkbox"> Nausea (Sartre)</li>
+<li><input disabled="" type="checkbox"> Confession (Gorky)</li>
+</ul>
+<hr>
+<h2 id="philosophy--anthropology">Philosophy &amp; Anthropology</h2>
+<h3 id="read">Read</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> The Ego and the Id</li>
+<li><input checked="" disabled="" type="checkbox"> Group Psychology and the Analysis of the Ego</li>
+<li><input checked="" disabled="" type="checkbox"> The Crowd: A Study of the Popular Mind by Gustave Le Bon <a href="/posts/psycho/">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> The Social Animal (Aronson)</li>
+<li><input checked="" disabled="" type="checkbox"> Totem and Taboo <a href="/posts/totm/">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> Thinking, Fast and Slow</li>
+<li><input checked="" disabled="" type="checkbox"> مغامرة العقل الأولى</li>
+<li><input checked="" disabled="" type="checkbox"> History of Political Philosophy (Strauss)</li>
+<li><input checked="" disabled="" type="checkbox"> Beyond Good and Evil (Netzsche)</li>
+<li><input checked="" disabled="" type="checkbox"> A Theologico-Political Treatise: A Political Treatise</li>
+</ul>
+<h3 id="to-read-1">To Read</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Discipline and Punish: The Birth of the Prison</li>
+<li><input disabled="" type="checkbox"> Against Method (Feyerabend)</li>
+<li><input disabled="" type="checkbox"> The World as Will and Representation, Vol. 2</li>
+</ul>
+<h2 id="evolution-neuroscience-related">Evolution/ Neuroscience-related</h2>
+<h3 id="read-1">Read</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Your Inner Fish: a Journey into the 3.5-Billion-Year History of the Human Body</li>
+<li><input checked="" disabled="" type="checkbox"> The Naked Ape <a href="/posts/naked">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> Being Mortal: Medicine and What Matters in the End</li>
+<li><input checked="" disabled="" type="checkbox"> Life Ascending: The Ten Great Inventions of Evolution</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="politics">Politics</h2>
+<h3 id="read-2">Read</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> في الثورة والقابلية للثورة</li>
+<li><input checked="" disabled="" type="checkbox"> عن المثقف والثورة</li>
+<li><input checked="" disabled="" type="checkbox"> Who is Charlie?: Xenophobia and the New Middle Class <a href="/posts/charlie">(Review)</a></li>
+<li><input checked="" disabled="" type="checkbox"> <em><strong>Media Control: The Spectacular Achievements of Propaganda</strong></em><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><a href="/posts/mediacontrol">(Abridgement)</a></li>
+<li><input checked="" disabled="" type="checkbox"> Discourse on Voluntary Servitude</li>
+<li><input checked="" disabled="" type="checkbox"> أشياء لن تسمع بها أبدًا</li>
+<li><input checked="" disabled="" type="checkbox"> Who Rules The World? (Chomsky)</li>
+</ul>
+<h3 id="to-read-2">To Read</h3>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>The Propaganda Model Today: Filtering Perception and Awareness</strong></li>
+<li><input disabled="" type="checkbox"> The Great Delusion: Liberal Dreams And International Realities.</li>
+<li><input disabled="" type="checkbox"> The Year 501  (Chomsky)</li>
+<li><input disabled="" type="checkbox"> مقالة في الحرية - عزمي بشارة</li>
+<li><input disabled="" type="checkbox"> Soft Power: The Means to Success in World Politics</li>
+<li><input disabled="" type="checkbox"> The Dark Side of Democracy: Explaining Ethnic Cleansing</li>
+<li><input disabled="" type="checkbox"> Political Psychology: Situations, Individuals, and Cases</li>
+<li><input disabled="" type="checkbox"> How Democracies Die: What History Reveals About Our Future</li>
+<li><input disabled="" type="checkbox"> العلمانية الجزئية والعلمانية الشاملة</li>
+<li><input disabled="" type="checkbox"> أميركا والإبادات الجماعية : حق التضحية بالآخر</li>
+<li><input disabled="" type="checkbox"> How Fascism Works: The Politics of Us and Them</li>
+<li><input disabled="" type="checkbox"> Global Culture: Nationalism, Globalization and Modernity</li>
+<li><input disabled="" type="checkbox"> Desert (Anonymous)</li>
+</ul>
+<h3 id="middle-east-struggle-related">Middle East Struggle Related</h3>
+<h4 id="read-3">Read</h4>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 9-11 (Chomsky)</li>
+<li><input checked="" disabled="" type="checkbox"> <em><strong>Engineers of Jihad</strong></em> <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li><input checked="" disabled="" type="checkbox"> The Arabs: A History (Rogan)</li>
+</ul>
+<h4 id="sucks-1">Sucks</h4>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Jihad: the trail of political Islam</li>
+</ul>
+<h4 id="to-read-3">To Read</h4>
+<ul>
+<li><input disabled="" type="checkbox"> Middle East Illusions (Chomsky)</li>
+<li><input disabled="" type="checkbox"> تفكيك الإشتراكية العربية</li>
+<li><input disabled="" type="checkbox"> هل يستطيع غير الأوروبي التفكير؟</li>
+<li><input disabled="" type="checkbox"> في المسألة العربية</li>
+<li><input disabled="" type="checkbox"> المحنة العربية الدولة ضد الأمة</li>
+<li><input disabled="" type="checkbox"> أن تكون عربيا في أيامنا</li>
+<li><input disabled="" type="checkbox"> أزمة الحضارة العربية أم أزمة البرجوازيات العربية؟</li>
+<li><input disabled="" type="checkbox"> مدخل إلى نقض الفكر الطائفي (مهدي عامل)</li>
+<li><input disabled="" type="checkbox"> عروبة مِصر  (غالي شكري)</li>
+</ul>
+<h4 id="on-the-zionism-movement-and-the-israeli-occupation-in-palestine">On The Zionism Movement and The Israeli Occupation in Palestine</h4>
+<h5 id="read-4">Read</h5>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> اليد الخفية: دراسة في الحركات اليهودية الهدامة والسرية</li>
+<li><input checked="" disabled="" type="checkbox"> The General’s Son: The Journey of an Israeli in Palestine</li>
+<li><input checked="" disabled="" type="checkbox"> Out of the Frame: The Struggle for Academic Freedom in Israel</li>
+<li><input checked="" disabled="" type="checkbox"> من هو اليهودي</li>
+</ul>
+<h5 id="to-read-4">To Read</h5>
+<ul>
+<li><input disabled="" type="checkbox"> State of Terror: How Terrorism Created Modern Israel</li>
+<li><input disabled="" type="checkbox"> The Only Language They Understand: Forcing Compromise in Israel and Palestine</li>
+<li><input disabled="" type="checkbox"> On Palestine (Pappe)</li>
+<li><input disabled="" type="checkbox"> The Ethnic Cleansing of Palestine</li>
+<li><input disabled="" type="checkbox"> The Israel Lobby and U.S. Foreign Policy</li>
+<li><input disabled="" type="checkbox"> Gaza in Crisis: Reflections on Israel&rsquo;s War Against the Palestinians</li>
+<li><input disabled="" type="checkbox"> The Invention of Ancient Israel: The Silencing of Palestinian History<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+<li><input disabled="" type="checkbox"> الاقتصاد السياسي لصناعة التقنية العالية في اسرائيل</li>
+<li><input disabled="" type="checkbox"> الفكر السياسي الفلسطيني 1964-1974</li>
+<li><input disabled="" type="checkbox"> <a href="http://www.almawqef.com/spip.php?article7575&amp;lang=ar">حول التناقض والممارسة في الثورة الفلسطينية</a></li>
+<li><input disabled="" type="checkbox"> استراتيجية التحرير الكامل واستراتيجية الحل السياسي</li>
+<li><input disabled="" type="checkbox"> الهيكل التنظيمي للانتفاضة وأساليب العمل ربعي المهدون</li>
+<li><input disabled="" type="checkbox"> اتفاق أوسلو وتداعياته</li>
+</ul>
+<h3 id="capitalism-economics">Capitalism/ Economics</h3>
+<h4 id="to-read-5">To Read</h4>
+<ul>
+<li><input disabled="" type="checkbox"> Capitalism, Socialism and Democracy</li>
+<li><input disabled="" type="checkbox"> Capitalism and Modern Social Theory</li>
+<li><input disabled="" type="checkbox"> Capital in the Twenty-First Century</li>
+<li><input disabled="" type="checkbox"> Studies in Mutualist Political Economy</li>
+<li><input disabled="" type="checkbox"> Capitalist Nursery Fables</li>
+<li><input disabled="" type="checkbox"> Socialism Betrayed :Behind the Collapse of the Soviet Union</li>
+<li><input disabled="" type="checkbox"> Does Capitalism Has a Future?</li>
+<li><input disabled="" type="checkbox"> الإشتراكية واقتصاد السوق: تجارب الصين - فيتنام - كوبا</li>
+<li><input disabled="" type="checkbox"> How to Change the World: Marx and Marxism 1840-2011</li>
+<li><input disabled="" type="checkbox"> Why Marx Was Right</li>
+<li><input disabled="" type="checkbox"> A Brief History of Neoliberalism</li>
+<li><input disabled="" type="checkbox"> The Culture of the New Capitalism (Sennett)</li>
+</ul>
+<h3 id="marxism-3">Marxism <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></h3>
+<ul>
+<li><input disabled="" type="checkbox"> What is Marxism? Woods</li>
+<li><input disabled="" type="checkbox"> Dialectical and Historical Materialism (Stalin)</li>
+<li><input disabled="" type="checkbox"> حول مسائل مرحلة الإنتقال من الرأسمالية الى الأشتراكية و دكتاتورية البروليتاريا</li>
+<li><input disabled="" type="checkbox"> الماركسية اللينينية ونظرية الحزب</li>
+<li><input disabled="" type="checkbox"> الدين والصراع الطبقي (كارل كاوتسكي)</li>
+<li><input disabled="" type="checkbox"> Islam and Capitalism</li>
+<li><input disabled="" type="checkbox"> النشاط الجنسي وصراع الطبقات</li>
+<li><input disabled="" type="checkbox"> متى يطلع الفجر؟ (جان بول أوليفييه)</li>
+<li><input disabled="" type="checkbox"> ثورة الزنج</li>
+<li><input disabled="" type="checkbox"> الصراع الأمريكي السوفياتي في الشرق الأوسط</li>
+<li><input disabled="" type="checkbox"> اطروحات الماركسية حول العولمة</li>
+<li><input disabled="" type="checkbox"> في تمرحل التاريخ</li>
+<li><input disabled="" type="checkbox"> مقدمات نظرية: لدراسة أثر الفكر الاشتراكي في حركة التحرر الوطني</li>
+<li><input disabled="" type="checkbox"> الاستعمار الجديد (غوامي نكروما)</li>
+</ul>
+<h4 id="struggle">Struggle</h4>
+<ul>
+<li><input disabled="" type="checkbox"> دور العنف (إنجلز)</li>
+<li><input disabled="" type="checkbox"> الماركسية وحرب العصابات</li>
+<li><input disabled="" type="checkbox"> كيف تصنع ete ناجحًا</li>
+<li><input disabled="" type="checkbox"> تجارب ست ثورات عالمية</li>
+</ul>
+<h4 id="hardcore-capitalism">Hardcore Capitalism</h4>
+<ul>
+<li><input disabled="" type="checkbox"> الكتاب الأسود للرأسمالية</li>
+<li><input disabled="" type="checkbox"> الطب الإمبريالي</li>
+<li><input disabled="" type="checkbox"> أوروبا والتخلف في أفريقيا</li>
+<li><input disabled="" type="checkbox"> أمبراطورية الإرهاب، السياسة الأميركية العابرة للقارات في الأمن والاقتصاد ومكافحة الإرهاب</li>
+<li><input disabled="" type="checkbox"> المثقفون المزيفون، النصر الإعلامي لخبراء الكذب (باسكال بونيفاس)</li>
+<li><input disabled="" type="checkbox"> Canada in Africa: 300 Years of Aid and Exploitation.</li>
+<li><input disabled="" type="checkbox"> American War Machine</li>
+<li><input disabled="" type="checkbox"> Proleratianization and Class Struggle in Africa</li>
+</ul>
+<h2 id="history">History</h2>
+
+
+<p style="text-align: center; font-size: 110% "><strong><span style="color: #0000ff; --darkreader-inline-color: #337dff;" data-darkreader-inline-color="">"There's a good reason why nobody studies history, it just teaches you too much".<br /></span></strong><strong><span style="color: #0000ff; --darkreader-inline-color: #337dff;" data-darkreader-inline-color=""> <span style="color: #ff0000;" data-darkreader-inline-color="">- Noam Chomsky.</span> <br /></span></strong></p>
+<p style="text-align: center; font-size: 110%"><strong><span style="color: #0000ff;" data-darkreader-inline-color="">إنّ التَارْيخَ فيْ ظَاهِرهِ لا يّزْيدُ عَنِ الإِخْبَار، ولَكِنْ فْي بَاطِنهِ نَظَرٌ وتَحْقيق.</span> <br /><span style="color: #ff0000; --darkreader-inline-color: #337dff;" data-darkreader-inline-color="">- إبن خَلْدُون.</span></strong></p>
+
+
+<hr>
+<h3 id="read-5">Read</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <em><strong>The Human Web: A Bird&rsquo;s-Eye View of World History</strong></em></li>
+<li><input checked="" disabled="" type="checkbox"> The Ottoman Age of Exploration</li>
+<li><input checked="" disabled="" type="checkbox"> <em><strong>A People&rsquo;s History of the United States</strong></em><sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></li>
+<li><input checked="" disabled="" type="checkbox"> Before Taliban: Genealogies of the Afghan Jihad</li>
+<li><input checked="" disabled="" type="checkbox"> The Poetics of Iblis: Narrative Theology in the Qur&rsquo;an</li>
+<li><input checked="" disabled="" type="checkbox"> The Happiness Industry: How the Government and Big Business Sold Us Well-Being</li>
+</ul>
+<h3 id="to-read-6">To Read</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Siege of Uthman</li>
+<li><input disabled="" type="checkbox"> How the West Stole Democracy from the Arabs: The Syrian Congress of 1920 and the Destruction of its Historic Liberal-Islamic Alliance</li>
+<li><input disabled="" type="checkbox"> Capital et Idéologie</li>
+<li><input disabled="" type="checkbox"> 1492: The Debate on Colonialism, Eurocentrism, and History</li>
+<li><input disabled="" type="checkbox"> Orientalism</li>
+<li><input disabled="" type="checkbox"> History of Religion (Sergei Tokarev)</li>
+<li><input disabled="" type="checkbox"> The History of Sexuality (Foucault)</li>
+<li><input disabled="" type="checkbox"> The Hero With a Thousand Faces</li>
+<li><input disabled="" type="checkbox"> 1492: The Debate on Colonialism, Eurocentrism, and History</li>
+<li><input disabled="" type="checkbox"> Colonialism and Neocolonialism (Sartre)</li>
+<li><input disabled="" type="checkbox"> الإغتيال السياسي في الإسلام</li>
+<li><input disabled="" type="checkbox"> من قاموس التراث</li>
+<li><input disabled="" type="checkbox"> الحداثة والامبريالية: الغزو الفرنسي وإشكالية نهضة مصر</li>
+<li><input disabled="" type="checkbox"> الفكر المصري في القرن الثامن عشر بين الجمود والتجديد</li>
+<li><input disabled="" type="checkbox"> A History of Zionism (Laqueur)</li>
+<li><input disabled="" type="checkbox"> A Commonwealth of Thieves: The Improbable Birth of Australia</li>
+<li><input disabled="" type="checkbox"> Who&rsquo;s Buried in Grant&rsquo;s Tomb?: A Tour of Presidential Gravesites</li>
+<li><input disabled="" type="checkbox"> Unfamiliar Fishes (Vowell)</li>
+<li><input disabled="" type="checkbox"> White Mughals: Love and Betrayal in Eighteenth-Century India</li>
+<li><input disabled="" type="checkbox"> Uncommon Grounds (Pendergrast)</li>
+<li><input disabled="" type="checkbox"> Ulysses S. Grant (Paschall)</li>
+<li><input disabled="" type="checkbox"> Trotsky (Volkogonov,)</li>
+<li><input disabled="" type="checkbox"> Tories: Fighting for the King in America&rsquo;s First Civil War</li>
+<li><input disabled="" type="checkbox"> Theodore Rex (Morris)</li>
+<li><input disabled="" type="checkbox"> The Wars Against Napoleon: Debunking the Myth of the Napoleonic Wars</li>
+<li><input disabled="" type="checkbox"> The Warmth of Other Suns: The Epic Story of America&rsquo;s Great Migration</li>
+<li><input disabled="" type="checkbox"> The Tudors: The Complete Story of England&rsquo;s Most Notorious Dynasty</li>
+<li><input disabled="" type="checkbox"> The Monuments Men: Allied Heroes, Nazi Thieves, and the Greatest Treasure Hunt in History</li>
+<li><input disabled="" type="checkbox"> The Tin Ticket: The Heroic Journey of Australia&rsquo;s Convict Women</li>
+<li><input disabled="" type="checkbox"> The Idea of America: Reflections on the Birth of the United States</li>
+<li><input disabled="" type="checkbox"> The Fourth Star: Four Generals and the Epic Struggle for the Future of the United States Army</li>
+<li><input disabled="" type="checkbox"> The First American: The Life and Times of Benjamin Franklin</li>
+<li><input disabled="" type="checkbox"> The Fabulous History of the Dismal Swamp Company: A Story of George Washington&rsquo;s Times</li>
+<li><input disabled="" type="checkbox"> The Endurance: Shackleton&rsquo;s Legendary Antarctic Expedition</li>
+<li><input disabled="" type="checkbox"> The Decline and Fall of the British Empire 1781-1997</li>
+<li><input disabled="" type="checkbox"> The Atlantic and Its Enemies: A Personal History Of The Cold War</li>
+<li><input disabled="" type="checkbox"> The Authentic Life of Billy the Kid</li>
+<li><input disabled="" type="checkbox"> The Ascent of Money: A Financial History of the World</li>
+<li><input disabled="" type="checkbox"> The American Revolution: A History</li>
+<li><input disabled="" type="checkbox"> Rubicon: The Triumph and Tragedy of the Roman Republic</li>
+<li><input disabled="" type="checkbox"> Rome&rsquo;s Gothic Wars: From the Third Century to Alaric (Key Conflicts of Classical Antiquity)</li>
+<li><input disabled="" type="checkbox"> Russia Against Napoleon: The True Story of the Campaigns of War and Peace</li>
+<li><input disabled="" type="checkbox"> Resurrecting Pompeii</li>
+<li><input disabled="" type="checkbox"> Red Capitalism: The Fragile Financial Foundation of China&rsquo;s Extraordinary Rise</li>
+<li><input disabled="" type="checkbox"> Pirates of Barbary: Corsairs, Conquests and Captivity in the Seventeenth-Century Mediterranean</li>
+<li><input disabled="" type="checkbox"> Pirate Hunter of the Caribbean</li>
+<li><input disabled="" type="checkbox"> Personal Memoirs of Ulysses S. Grant (The Barnes &amp; Noble Library of Essential Reading Series)</li>
+<li><input disabled="" type="checkbox"> Pakistan: A Hard Country</li>
+<li><input disabled="" type="checkbox"> No Bone Unturned: Inside the World of a Top Forensic Scientist and His Work on America&rsquo;s Most Notorious Crimes and Disasters</li>
+<li><input disabled="" type="checkbox"> Newton and the Counterfeiter: The Unknown Detective Career of the World&rsquo;s Greatest Scientist</li>
+<li><input disabled="" type="checkbox"> Nazi Germany and the Jews, Volume 2: The Years of Extermination</li>
+<li><input disabled="" type="checkbox"> Neptune&rsquo;s Inferno: The U.S. Navy at Guadalcanal</li>
+<li><input disabled="" type="checkbox"> Nazi Germany and the Jews, Volume 01: The Years of Persecution</li>
+<li><input disabled="" type="checkbox"> Napoleon&rsquo;s Wars: An International History, 1803-1815</li>
+<li><input disabled="" type="checkbox"> Malcolm X: A Life of Reinvention</li>
+<li><input disabled="" type="checkbox"> Lucrezia Borgia: Life, Love and Death in Renaissance Italy</li>
+<li><input disabled="" type="checkbox"> Lost to the West: The Forgotten Byzantine Empire That Rescued Western Civilization</li>
+<li><input disabled="" type="checkbox"> Love and Louis XIV: The Women in the Life of the Sun King</li>
+<li><input disabled="" type="checkbox"> Lords of the Sea: The Epic Story of the Athenian Navy and the Birth of Democracy</li>
+<li><input disabled="" type="checkbox"> Lone Survivor: The Eyewitness Account of Operation Redwing and the Lost Heroes of SEAL Team 10</li>
+<li><input disabled="" type="checkbox"> Infidels: A History of the Conflict Between Christendom and Islam</li>
+<li><input disabled="" type="checkbox"> How the Scots Invented the Modern World: The True Story of How Western Europe&rsquo;s Poorest Nation Created Our World and Everything in It</li>
+<li><input disabled="" type="checkbox"> Hot Time in the Old Town</li>
+<li><input disabled="" type="checkbox"> Great Tales from English History - Volume 2</li>
+<li><input disabled="" type="checkbox"> The forever war (Filkins)</li>
+<li><input disabled="" type="checkbox"> Great Soul: Mahatma Gandhi and His Struggle With India</li>
+<li><input disabled="" type="checkbox"> Going Dutch: How England Plundered Holland&rsquo;s Glory</li>
+<li><input disabled="" type="checkbox"> Genghis Khan and the Making of the Modern World</li>
+<li><input disabled="" type="checkbox"> Freethinkers: A History of American Secularism</li>
+<li><input disabled="" type="checkbox"> Fannie&rsquo;s Last Supper: Re-creating One Amazing Meal from Fannie Farmer&rsquo;s 1896 Cookbook</li>
+<li><input disabled="" type="checkbox"> Forgotten Wars: Freedom and Revolution in Southeast Asia</li>
+<li><input disabled="" type="checkbox"> Evicted From Eternity: The Restructuring of Modern Rome</li>
+<li><input disabled="" type="checkbox"> Europe&rsquo;s Tragedy: A New History of the Thirty Years War</li>
+<li><input disabled="" type="checkbox"> Engineers of Dreams: Great Bridge Builders and the Spanning of America</li>
+<li><input disabled="" type="checkbox"> Edison and the Electric Chair: A Story of Light and Death</li>
+<li><input disabled="" type="checkbox"> Empire Lost: Britain, the Dominions and the Second World War</li>
+<li><input disabled="" type="checkbox"> Dreams in a Time of War: A Childhood Memoir</li>
+<li><input disabled="" type="checkbox"> A Chosen Few (Kurlansky)</li>
+<li><input disabled="" type="checkbox"> The Waxman Report</li>
+<li><input disabled="" type="checkbox"> Destiny Disrupted: A History of the World Through Islamic Eyes</li>
+<li><input disabled="" type="checkbox"> Crimes of Paris: A True Story of Murder, Theft, and Detection</li>
+<li><input disabled="" type="checkbox"> Crucible of War: The Seven Years' War and the Fate of Empire in British North America, 1754-1766</li>
+<li><input disabled="" type="checkbox"> Company: A Short History of a Revolutionary Idea</li>
+<li><input disabled="" type="checkbox"> Cathedral, Forge, and Waterwheel: Technology and Invention in the Middle Ages</li>
+<li><input disabled="" type="checkbox"> The Monks of War (Desmond Seward)</li>
+<li><input disabled="" type="checkbox"> Song of Slaves in the Desert (Cheuse)</li>
+<li><input disabled="" type="checkbox"> The Empire Project (Darwin)</li>
+<li><input disabled="" type="checkbox"> Blood and Rage: A Cultural History of Terrorism</li>
+<li><input disabled="" type="checkbox"> Black Lamb and Grey Falcon: A Journey Through Yugoslavia</li>
+<li><input disabled="" type="checkbox"> Birth of Britain (Barnes &amp; Noble Library of Essential Reading)</li>
+<li><input disabled="" type="checkbox"> Americans in Paris: Life and Death Under Nazi Occupation</li>
+<li><input disabled="" type="checkbox"> Sudden Sea (Scotti)</li>
+<li><input disabled="" type="checkbox"> After the prophet: the epic story of the Shia-Sunni split in Islam</li>
+<li><input disabled="" type="checkbox"> Affection and Trust: The Personal Correspondence of Harry S. Truman and Dean Acheson, 1953-1971</li>
+<li><input disabled="" type="checkbox"> A Writer at War: Vasily Grossman with the Red Army</li>
+<li><input disabled="" type="checkbox"> The Indian Ocean (Pearson.)</li>
+<li><input disabled="" type="checkbox"> The First Battle (Lehrack)</li>
+<li><input disabled="" type="checkbox"> The Dead Hand (Hoffman)</li>
+<li><input disabled="" type="checkbox"> The Classical World (Filkins)</li>
+<li><input disabled="" type="checkbox"> The Balfour Declaration (Schneer)</li>
+<li><input disabled="" type="checkbox"> Stalingrad (Beevor)</li>
+<li><input disabled="" type="checkbox"> Slavery by Another Name (Blackmon)</li>
+<li><input disabled="" type="checkbox"> Proud Tower (Tuchman)</li>
+<li><input disabled="" type="checkbox"> Practicing History: Selected Essays</li>
+<li><input disabled="" type="checkbox"> Pox: An American History</li>
+<li><input disabled="" type="checkbox"> Postwar: A History of Europe Since 1945</li>
+<li><input disabled="" type="checkbox"> Pope Joan: A Novel</li>
+<li><input disabled="" type="checkbox"> Marco Polo (Bergreen)</li>
+<li><input disabled="" type="checkbox"> London: A Biography (Ackroyd)</li>
+<li><input disabled="" type="checkbox"> Living Our Language: Ojibwe Tales &amp; Oral Histories</li>
+<li><input disabled="" type="checkbox"> Life in a Medieval City</li>
+<li><input disabled="" type="checkbox"> Life in a Medieval Village</li>
+<li><input disabled="" type="checkbox"> Lies My Teacher Told Me About Christopher Columbus: What Your History Books Got Wrong</li>
+<li><input disabled="" type="checkbox"> Jerusalem: The Biography (Sebag-Montefiore)</li>
+<li><input disabled="" type="checkbox"> James Madison (Brookhiser)</li>
+<li><input disabled="" type="checkbox"> Life After Death (Segal)</li>
+<li><input disabled="" type="checkbox"> In the Heart of the Sea: The Tragedy of the Whaleship Essex</li>
+<li><input disabled="" type="checkbox"> In Pharaoh&rsquo;s Army (Wolff)</li>
+<li><input disabled="" type="checkbox"> In the Garden of Beasts (Coll)</li>
+<li><input disabled="" type="checkbox"> God&rsquo;s Philosophers (Hannam)</li>
+<li><input disabled="" type="checkbox"> Ghost Wars (Coll)</li>
+<li><input disabled="" type="checkbox"> Freedom Summer  (Watson)</li>
+<li><input disabled="" type="checkbox"> Founding Brothers (Ellis)</li>
+<li><input disabled="" type="checkbox"> Europe: A History (Norman Davies)</li>
+<li><input disabled="" type="checkbox"> Devil at My Heels</li>
+<li><input disabled="" type="checkbox"> Desert Queen (Wallach)</li>
+<li><input disabled="" type="checkbox"> Doubt (Hecht)</li>
+<li><input disabled="" type="checkbox"> China Witness (Xinran)</li>
+<li><input disabled="" type="checkbox"> Been in the Storm So Long</li>
+<li><input disabled="" type="checkbox"> Ancient Chinese Warfare</li>
+<li><input disabled="" type="checkbox"> Batavia&rsquo;s Graveyard</li>
+<li><input disabled="" type="checkbox"> Anatomy of an Epidemic</li>
+</ul>
+<hr>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Related with Mind Managers by Herbert Schiller&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>A very important literature to understand the uprising of Jihad movements between pan-Arabists, ex pan-Arabists in general, and between engineers and the middle class in particular.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Also watch: <a href="https://youtu.be/YZI5-ovzcQg">Ottoman monuments in Jerusalem</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>You can find sources <a href="https://arcommunistslib.site123.me/">here</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>For further reading, see The Roots of The Modern American Empire by William Appleman Williams. See Also A People&rsquo;s History of American Empire (Zinn)&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+    
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+    
+</div>
+
+
+
+        <hr>
+        <small>This site is generated using the
+            
+                <a href="https://github.com/kaushalmodi/ox-hugo"><b>ox-hugo</b></a> package for Emacs/Org-mode +
+            
+            <a href="https://github.com/kaushalmodi/hugo-bare-min-theme"><code>hugo-bare-min-theme</code></a> + Hugo <b>0.88.1</b>
+            .
+        </small>
+        
+        
+    </body>
+</html>
+
+
