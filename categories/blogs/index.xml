@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogs on Saleh Muhammed</title>
+    <title>Blogs on Saleh Muhammed</title>
     <link>/categories/blogs/</link>
-    <description>Recent content in blogs on Saleh Muhammed</description>
+    <description>Recent content in Blogs on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Oct 2021 12:33:10 +0200</lastBuildDate><atom:link href="/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Words on The حناكة</title>
-      <link>/post/hanakah/</link>
-      <pubDate>Fri, 15 Oct 2021 12:33:10 +0200</pubDate>
-      
-      <guid>/post/hanakah/</guid>
-      <description>مش بحب أراء المين ستريم في حاجه ومقتنع إنهم غالبًا - لو مش دايمًا - مُغفلين. لو إنت متعمق في أي مجال في الحياة هتكون مؤيد لكلامي خصوصًا لو شيء أكاديمي، علم النفس مثلًا. الحاجات الي مؤمن بيها المين ستريم بتاع الناس مش scientific بتاتًا، مع إنهم بيحبوا يسموه كدا. في الأدب نفس الموضوع. وحتى في العموم، البشر دايمًا أغلبهم بيبقوا مخطئين، يقول تعالى: حَتَّىٰ إِذَا جَاءَ أَمْرُنَا وَفَارَ التَّنُّورُ قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ وَأَهْلَكَ إِلَّا مَن سَبَقَ عَلَيْهِ الْقَوْلُ وَمَنْ آمَنَ ۚ وَمَا آمَنَ مَعَهُ إِلَّا قَلِيلٌ.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 07 Oct 2021 04:08:00 +0200</lastBuildDate><atom:link href="/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
       <link>/post/oracle-the-next-level-of-data-reporting/</link>
@@ -26,21 +17,21 @@
     </item>
     
     <item>
-      <title>Politics Simply Sucks</title>
-      <link>/post/politics-sucks/</link>
-      <pubDate>Mon, 04 Oct 2021 02:01:59 +0200</pubDate>
-      
-      <guid>/post/politics-sucks/</guid>
-      <description>Politics, political news and anything related to the so-called new world (supposed to be the better one) simply sucks especially if you understand what&amp;#39;s going on. Actually it only sucks if you understand what&amp;#39;s going on, for instance if you&amp;#39;re reading that the U.S. bombarded the Red Cross headquarters in Afghanistan or Aljazira headquarters because they&amp;#39;re position for Al-Qaeda terrorists, well that&amp;#39;s really a good news, Al Jazeera should only blame themselves.</description>
-    </item>
-    
-    <item>
       <title>Beyond Decliamists and Intellectuals</title>
       <link>/posts/kalam/</link>
       <pubDate>Tue, 28 Sep 2021 11:13:00 +0200</pubDate>
       
       <guid>/posts/kalam/</guid>
       <description>I thought that maybe &amp;lsquo;intellectuals&amp;rsquo; is not the best word to describe them, there is an old Arabic word &amp;ldquo;Al Mutakalimin المتكلمين&amp;rdquo; that might be better for such a demonstration. Mutkalmin means, idiomatically, the people who -probably Muslims- talked about the qualities of god (e.g. Can he smell or speak just like his creature?), however, the word &amp;ldquo;Mutkalim&amp;rdquo; in Arabic has nothing to do with the attributes of god the but it means &amp;ldquo;the people who talk&amp;rdquo;, I think the best translation for it is the &amp;ldquo;declaimists&amp;rdquo;, as Sa&amp;rsquo;adeldin Al Taftazani said once: Al Mutkalim were named after their statements that were starting with &amp;ldquo;Al Kalam on *some topic.</description>
+    </item>
+    
+    <item>
+      <title>Politics, Politicians and What everybody knows</title>
+      <link>/post/politics-sucks/</link>
+      <pubDate>Wed, 04 Aug 2021 02:01:59 +0200</pubDate>
+      
+      <guid>/post/politics-sucks/</guid>
+      <description>Politics, political news and anything related to the so-called new world (supposed to be the better one) simply suck especially if you understand what&amp;#39;s going on. Actually it only sucks if you understand what&amp;#39;s going on, for instance if you&amp;#39;re reading that the U.S. bombarded the Red Cross headquarters in Afghanistan or Aljazira headquarters because they&amp;#39;re position for Al-Qaeda terrorists, well that&amp;#39;s really a good news, Al Jazeera should only blame themselves.</description>
     </item>
     
     <item>
