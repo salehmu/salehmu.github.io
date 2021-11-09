@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
+    <lastmod>2021-11-09T13:44:55+02:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>/tags/books/</loc>
@@ -34,7 +34,7 @@
     <lastmod>2021-10-10T22:34:01+02:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2021-11-02T17:13:43+02:00</lastmod>
+    <lastmod>2021-11-09T13:44:55+02:00</lastmod>
   </url><url>
     <loc>/tags/technology/</loc>
     <lastmod>2021-10-10T22:34:01+02:00</lastmod>
@@ -66,16 +66,7 @@
     <loc>/posts/conection/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
-    <loc>/posts/fuckcapital/</loc>
-    <lastmod>2021-10-10T09:34:22+02:00</lastmod>
-  </url><url>
     <loc>/posts/desto/</loc>
-    <lastmod>2021-10-10T09:34:22+02:00</lastmod>
-  </url><url>
-    <loc>/posts/marida/</loc>
-    <lastmod>2021-10-10T09:34:22+02:00</lastmod>
-  </url><url>
-    <loc>/posts/homosexuality/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
     <loc>/posts/karl/</loc>
@@ -110,6 +101,9 @@
   </url><url>
     <loc>/fullbooks/</loc>
     <lastmod>2021-11-09T10:57:46+02:00</lastmod>
+  </url><url>
+    <loc>/post/poetry/</loc>
+    <lastmod>2021-11-09T13:44:55+02:00</lastmod>
   </url><url>
     <loc>/search/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>

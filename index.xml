@@ -2,134 +2,220 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saleh Muhammed</title>
-    <link>/index.html</link>
+    <link>/</link>
     <description>Recent content on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Nov 2021 02:03:39 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Books</title>
-      <link>/tags/books/</link>
+      <title>Pervez Hoodbhoy&#39;s Islam and Science: How Not to Read History</title>
+      <link>/posts/islam-and-science/</link>
       <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
       
-      <guid>/tags/books/</guid>
-      <description></description>
+      <guid>/posts/islam-and-science/</guid>
+      <description>Introduction There is that Quranic expression from Bara&amp;rsquo;ah: He layeth his foundation [constructing] on an undermined sand-cliff, it is ready to crumble to pieces with him (Arabic: أَسَّسَ بُنْيَانَهُ عَلَىٰ شَفَا جُرُفٍ هَارٍ فَانْهَارَ بِهِ فِي نَارِ جَهَنَّمَ), a lot of arguments are based on such an &amp;ldquo;undermined sand cliff&amp;rdquo; which is really ready to crumble but the &amp;lsquo;argumenter&amp;rsquo; doesn&amp;rsquo;t give a lot of attention of this, and he prolongs, decorates and fortifies his argument until the point it becomes a book: hundreds of page based on some inexact arguments.</description>
     </item>
     
     <item>
-      <title>History</title>
-      <link>/tags/history/</link>
-      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
-      
-      <guid>/tags/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Science</title>
-      <link>/tags/science/</link>
-      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
-      
-      <guid>/tags/science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>/tags/</link>
-      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
-      
-      <guid>/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blogs</title>
-      <link>/categories/blogs/</link>
+      <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
+      <link>/post/oracle-the-next-level-of-data-reporting/</link>
       <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
       
-      <guid>/categories/blogs/</guid>
-      <description></description>
+      <guid>/post/oracle-the-next-level-of-data-reporting/</guid>
+      <description>Sometimes I ask myself why corporates crash all these disputes about whether their DBMS is that safe or not. Users are not safe in any case with a corporate, rather, the DBs (their data) are leaked anyway in the corporate&amp;#39;s reports (which are sold to another users, the advertiser or whoever will use it), of course they won&amp;#39;t leak your metadata but not because you really matter, actually the opposed, you don&amp;#39;t.</description>
     </item>
     
     <item>
-      <title>Categories</title>
-      <link>/categories/</link>
-      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
-      
-      <guid>/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Technology</title>
-      <link>/tags/technology/</link>
-      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
-      
-      <guid>/tags/technology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Media</title>
-      <link>/tags/media/</link>
+      <title>Beyond Decliamists and Intellectuals</title>
+      <link>/posts/kalam/</link>
       <pubDate>Tue, 28 Sep 2021 11:13:00 +0200</pubDate>
       
-      <guid>/tags/media/</guid>
-      <description></description>
+      <guid>/posts/kalam/</guid>
+      <description>I thought that maybe &amp;lsquo;intellectuals&amp;rsquo; is not the best word to describe them, there is an old Arabic word &amp;ldquo;Al Mutakalimin المتكلمين&amp;rdquo; that might be better for such a demonstration. Mutkalmin means, idiomatically, the people who -probably Muslims- talked about the qualities of god (e.g. Can he smell or speak just like his creature?), however, the word &amp;ldquo;Mutkalim&amp;rdquo; in Arabic has nothing to do with the attributes of god the but it means &amp;ldquo;the people who talk&amp;rdquo;, I think the best translation for it is the &amp;ldquo;declaimists&amp;rdquo;, as Sa&amp;rsquo;adeldin Al Taftazani said once: Al Mutkalim were named after their statements that were starting with &amp;ldquo;Al Kalam on *some topic.</description>
     </item>
     
     <item>
-      <title>Articles</title>
-      <link>/categories/articles/</link>
+      <title>Regarding the &#39;Neo-Democracy&#39;, Media, and the Public Opinion in the United States</title>
+      <link>/posts/mediacontrol/</link>
       <pubDate>Sat, 14 Aug 2021 06:02:23 +0200</pubDate>
       
-      <guid>/categories/articles/</guid>
-      <description></description>
+      <guid>/posts/mediacontrol/</guid>
+      <description>Based on Chomsky&amp;rsquo;s Media Control.
+Democracy and Spectator Democracy The role of the media in contemporary politics forces us to ask what kind of a world and what kind of a society we want to live in, and in particular in what sense of democracy do we want this to be a democratic society? Let me begin by counter-posing two different conceptions of democracy. One conception of democracy has it that a democratic society is one in which the public has the means to participate in some meaningful way in the management of their own affairs and the means of information are open and free.</description>
     </item>
     
     <item>
-      <title>Politics</title>
-      <link>/tags/politics/</link>
-      <pubDate>Sat, 14 Aug 2021 06:02:23 +0200</pubDate>
-      
-      <guid>/tags/politics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Psychology</title>
-      <link>/tags/psychology/</link>
+      <title>On Social Media Neoconditioning or Why Redditor is a NPC?</title>
+      <link>/posts/conditioning1/</link>
       <pubDate>Wed, 04 Aug 2021 18:49:37 +0200</pubDate>
       
-      <guid>/tags/psychology/</guid>
-      <description></description>
+      <guid>/posts/conditioning1/</guid>
+      <description>I hope I&amp;rsquo;m not updogging the definition of “NPCs” but I think that nothing can explain what does it mean (even what the words that it stands for) more than reddit users or the so-called, “the redditors” actually I think that designation supports the argument I&amp;rsquo;m about to make.
+Classical Conditioning This is not a science post, but I&amp;rsquo;ve to declare some terms, the most important one to me right now is “conditioning”, it&amp;rsquo;s a subdivision of big scoop called behaviorism, some scientists don&amp;rsquo;t consider conditioning or behaviorism as a real &amp;lsquo;science&amp;rsquo; (which doesn&amp;rsquo;t mean they treat it as pseudoscience, It is an epistemological problem) but it&amp;rsquo;s very empirical anyway.</description>
     </item>
     
     <item>
-      <title>&lt;Link Rel=&#34;apple-Touch-Icon&#34; Sizes=&#34;180x180&#34; Href=&#34;/Apple-Touch-Icon.png&#34;&gt;
-&lt;Link Rel=&#34;icon&#34; Type=&#34;image/Png&#34; Sizes=&#34;32x32&#34; Href=&#34;/Favicon-32x32.png&#34;&gt;
-&lt;Link Rel=&#34;icon&#34; Type=&#34;image/Png&#34; Sizes=&#34;16x16&#34; Href=&#34;/Favicon-16x16.png&#34;&gt;
-&lt;Link Rel=&#34;manifest&#34; Href=&#34;/Manifest.json&#34;&gt;
-&lt;Link Rel=&#34;mask-Icon&#34; Href=&#34;/Safari-Pinned-Tab.svg&#34; Color=&#34;#5bbad5&#34;&gt;
-&lt;Meta Name=&#34;theme-Color&#34; Content=&#34;#ffffff&#34;&gt;
-</title>
-      <link>/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Politics, Politicians and What everybody knows</title>
+      <link>/post/politics-sucks/</link>
+      <pubDate>Wed, 04 Aug 2021 02:01:59 +0200</pubDate>
       
-      <guid>/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</guid>
-      <description></description>
+      <guid>/post/politics-sucks/</guid>
+      <description>Politics, political news and anything related to the so-called new world (supposed to be the better one) simply suck especially if you understand what&amp;#39;s going on. Actually it only sucks if you understand what&amp;#39;s going on, for instance if you&amp;#39;re reading that the U.S. bombarded the Red Cross headquarters in Afghanistan or Aljazira headquarters because they&amp;#39;re position for Al-Qaeda terrorists, well that&amp;#39;s really a good news, Al Jazeera should only blame themselves.</description>
     </item>
     
     <item>
-      <title>&lt;P&gt;
-  [&lt;A Href=&#34;/&#34;&gt;Get Back to Home&lt;/A&gt;]
-&lt;/P&gt;
-</title>
-      <link>/p-a-href/get-back-to-home/a-/p-/</link>
+      <title>“Connection” and “Meant-To-Be”</title>
+      <link>/posts/conection/</link>
+      <pubDate>Fri, 21 May 2021 05:28:30 +0200</pubDate>
+      
+      <guid>/posts/conection/</guid>
+      <description>2 concepts that seem really nice and agreeable, but I find are psychically terrible, are “connection” and “meant-to-be”.
+My issue with the concept of connection is that it requires equally the notion of disconnection, which I find logically leads to mass-extinction-production as suicide-bomber-ideology. The idea we are disconnected - which is different from the perspective that we are alienated (with connection/disconnection being a mode of alienation) - and must acquire connection, religious or spiritual or technological, I find to be a psychic trap, like a hamster wheel that never goes anywhere.</description>
+    </item>
+    
+    <item>
+      <title>Book Review: Humiliated and Insulted by Fyodor Dostoevsky</title>
+      <link>/posts/desto/</link>
+      <pubDate>Thu, 10 Dec 2020 05:28:28 +0200</pubDate>
+      
+      <guid>/posts/desto/</guid>
+      <description>The Insulted and Humiliated by Fyodor Dostoyevsky
+My rating: 4 of 5 stars
+This is my re-reading of &amp;ldquo;The Insulted and Injured&amp;rdquo; as part of my attempt to complete the complete work of Feydor Dostoyevsky. I had read the novel for a very long time, when I began reading Dostoevsky, and at that time I did not have the literary interest that makes me search about this novel, and I get enough for saying: It is a good novel.</description>
+    </item>
+    
+    <item>
+      <title>Carl Schmidt: Politics, Conflict and War (Arabic)</title>
+      <link>/posts/karl/</link>
+      <pubDate>Sat, 09 May 2020 05:28:07 +0200</pubDate>
+      
+      <guid>/posts/karl/</guid>
+      <description>لخيص حياة كارل شميدت الطويلة سوف يبدو من الضرورة أن نتوّخى الحذر بخصوص الدعاية السياسية لخصومه ومؤيّديه والتعامل معها أيضا، هذا على الأقل بخصوص حياته المثيرة للجدل. وُلِد شميدت بضواحي مدينة بليتنبارغ الألمانية في 11 جويلية 1888 لعائلة فرانكو-ألمانية كاثوليكية تنحدر من وادي موسيل ((The Moselle Valley، درس القانون بجامعات برلين، ميونيخ وستراسبورغ، متخرِّجا سنة 1915. في سنة 1921 صار أستاذا بغريفسفالد، وهنا نشر كتابه “الدكتاتورية”(Die Diktatur)، تبعه عمل مؤثّر حول موضوع “الثيولوجيا السياسية” سنة 1922، وذلك حينما انتقل شميدت إلى جامعة بون.</description>
+    </item>
+    
+    <item>
+      <title>Book Review: The Crowd: A Study of the Popular Mind by Gustave Le Bon (Arabic)</title>
+      <link>/posts/psycho/</link>
+      <pubDate>Sat, 21 Mar 2020 05:28:26 +0200</pubDate>
+      
+      <guid>/posts/psycho/</guid>
+      <description>سيكولوجية الجماهير by Gustave Le Bon
+My rating: 1 of 5 stars
+فرويد، مارتين شاركو، هما الاتنين فقط الي كتاباتهم البدائية في السيكولوجي لسا عايشة لحد دلوقتي، قدرت أخد - مع الوقت - نظرة تخيلية لشكل المجتمع العلمي القديم (القرن الثامن-التاسع عشر) قبل ما تتقلس الـclasses الكبرى وتتيح للطبقات المتوسطة إنها تشارك في الانتاج العلمي (بعد توزْع نسبة من الثروات)..
+المهم إن كريجولار ريدير تفرعت من الاتنين دول لباقي كبار المنتجين في البحث العلمي في القرن ده، جيمس فريزر، سبنسر، لانج، وأكيد لوبون.</description>
+    </item>
+    
+    <item>
+      <title>On The Critique of MBTI (Arabic)</title>
+      <link>/posts/mbti/</link>
+      <pubDate>Thu, 13 Feb 2020 05:28:20 +0200</pubDate>
+      
+      <guid>/posts/mbti/</guid>
+      <description>**عن اختبار الشخصية.. On critique of the MBTI
+من سنتين شوفت أول ظهور لاختبار ماري بريجز (MBTI) في إحدى الندوات الي بيحضرها طبيب مشهور على اليوتيوب، وكان بيروج للاختبار بإنه طريقة حَسِنة لإختيار الناس الي بتتعامل معاهم ودليل جيد للتعامل مع الناس دول (عن طريق إنك تعرف نوع شخصيتهم وتعرف سمات الشخصية دي وبالتالي تقدر تحايلهم).. وطبعًا الاختبار بما إنه بالإنجلش وبيقدم نتايج زي INPT وما شابه، وهي أشياء محتاجه دراسة قليلة علشان تفهمها، أغلب الجمهور (وأغلب دي تزيد عن 99%) شافو إن الاختبار دا أكيد مستند لـ &amp;ldquo;علم&amp;rdquo;، وأصبحت لما بقول لصديق إن الكلام دا هبل وإنه مش INTJ ولا حاجه، يقولي إني غلطان أكيد وإن الاختبار دا معمول عليه دراسات ومنتشر في أمريكا وبلا بلا بلا.</description>
+    </item>
+    
+    <item>
+      <title>Cinema</title>
+      <link>/cinema/</link>
+      <pubDate>Sun, 16 Jun 2019 10:53:16 +1000</pubDate>
+      
+      <guid>/cinema/</guid>
+      <description>Read: Update About My Tracking Lists
+BOLD TEXT: Currently Watching. If title is check-boxed, it is already watched. \ lists: check: https://letterboxd.com/8chanfilm/list/film-top-250/
+Iran: https://letterboxd.com/lise/list/iran/
+Narrative: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/page/2/
+Asian:https://letterboxd.com/duabelas/list/100-greatest-korean-films-ever-koreanscreen/
+Hannibal-like https://letterboxd.com/l_eden_l/list/films-that-influenced-nbc-hannibal-2013-2015/
+Prefect  Zamani barayé masti asbha (2000) (Review) Au Revoir les Enfants (1987) Three Colors (1993) Being There (1979) Amadeus (1984) Amiele (2001) Cinema Paradiso (1988) 3-Iron (2004) 12 Angry Men (1954) Exotica (1994) In the Name of the Father (1993) The Two Popes (2019) V for Vendetta (2005) Lolita (1955)  Good  Room (2015) The Best Offer (2013) The Words (2012) The King’s Speech (2010) 127 Hours (2010) Incendies (2010) Inception (2010) Oldboy (2003) Fargo (1996) Scent of a Woman (1992) Trumbo (2017) The Last King of Scotland (2006) The Intouchables (2017) Anna Karenina (1997) Portrait of a Lady on Fire (2019) A Dangerous Method (2011) A Beautiful Mind (2001) Memories of Murder (2003) I Saw the Devil (2010) The Handmaiden (2016) Captain Fantastic (2016) Joker (2019) American Psycho (2001) No Country For Old Man (2007) The Shawshank Redemption (1994) Léon: The Professional (1994) The Wolf of Wall Street (2013) Catch Me If You Can (2002) Parasite (2019) Forgotten (2017) The White Tiger (2021) The Dark Knight (2008) Requiem for a Dream (2000) American Beauty (1999) God on Trial (2008) Lost in translation (2003) Godfather (1991) Homes 99 (2014) The Platform (2019) The Yacoubian Building (2006) Greenbook (2018) The Piano (1993) Spring, Summer, Fall, Winter&amp;hellip; and Spring (2003) Sympathy for Mr.</description>
+    </item>
+    
+    <item>
+      <title>Cinema</title>
+      <link>/fullcinema/</link>
+      <pubDate>Sun, 16 Jun 2019 10:53:16 +1000</pubDate>
+      
+      <guid>/fullcinema/</guid>
+      <description>Read: Update About My Tracking Lists
+BOLD TEXT: Currently Watching. If title is check-boxed, it is already watched. \ lists: check: https://letterboxd.com/8chanfilm/list/film-top-250/
+Iran: https://letterboxd.com/lise/list/iran/
+Narrative: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/page/2/
+Asian:https://letterboxd.com/duabelas/list/100-greatest-korean-films-ever-koreanscreen/
+Hannibal-like https://letterboxd.com/l_eden_l/list/films-that-influenced-nbc-hannibal-2013-2015/
+Prefect  Zamani barayé masti asbha (2000) (Review) Au Revoir les Enfants (1987) Three Colors (1993) Being There (1979) Amadeus (1984) Amiele (2001) Cinema Paradiso (1988) 3-Iron (2004) 12 Angry Men (1954) Exotica (1994) In the Name of the Father (1993) The Two Popes (2019) V for Vendetta (2005) Lolita (1955)  Good  Room (2015) The Best Offer (2013) The Words (2012) The King’s Speech (2010) 127 Hours (2010) Incendies (2010) Inception (2010) Oldboy (2003) Fargo (1996) Scent of a Woman (1992) Trumbo (2017) The Last King of Scotland (2006) The Intouchables (2017) Anna Karenina (1997) Portrait of a Lady on Fire (2019) A Dangerous Method (2011) A Beautiful Mind (2001) Memories of Murder (2003) I Saw the Devil (2010) The Handmaiden (2016) Captain Fantastic (2016) Joker (2019) American Psycho (2001) No Country For Old Man (2007) The Shawshank Redemption (1994) Léon: The Professional (1994) The Wolf of Wall Street (2013) Catch Me If You Can (2002) Parasite (2019) Forgotten (2017) The White Tiger (2021) The Dark Knight (2008) Requiem for a Dream (2000) American Beauty (1999) God on Trial (2008) Lost in translation (2003) Godfather (1991) Homes 99 (2014) The Platform (2019) The Yacoubian Building (2006) Greenbook (2018) The Piano (1993) Spring, Summer, Fall, Winter&amp;hellip; and Spring (2003) Sympathy for Mr.</description>
+    </item>
+    
+    <item>
+      <title>Update About My Tracking Lists</title>
+      <link>/post/update-about-my-tracking-lists/</link>
+      <pubDate>Mon, 01 Nov 1999 07:57:03 +0200</pubDate>
+      
+      <guid>/post/update-about-my-tracking-lists/</guid>
+      <description>I figured out that whenever I can&amp;#39;t hide some post from my feed page, because the dumb hugo developers disabled the option `hide` from the meta menu, and because I&amp;#39;m too lazy to implement it by myself.. I can just make the post date to 1900s so it will be in the bottom of the stack or the last page, it is not hidden yeah but who the hell will read the last page in my blog.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/newfile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/p-a-href/get-back-to-home/a-/p-/</guid>
-      <description></description>
+      <guid>/newfile/</guid>
+      <description>Bold is currently reading
+Italics bold is an outstanding one.
+Literature and Fiction  Prefect   A Streetcar Named Desire
+ The Kite Runner
+ Lolita
+ Suddenly Last Summer
+ The Brothers Karamazov
+ Umm Sa&amp;#39;d
+ Children of the Alley
+ Cat on a Hot Tin Roof\\
+ Crime and Punishment
+ The Idiot
+ Orpheus Descending
+ Marx in Soho: A Play on History
+ One Arm and Other Stories</description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>/books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/books/</guid>
+      <description>Read: Update About My Tracking Lists
+The Full List
+Italics bold is an outstanding one.
+Literature and Fiction  I don&amp;rsquo;t like people to read fiction. It&amp;rsquo;s sorta useless and waste of time in the most cases, it&amp;rsquo;s very nice, but I think we shouldn&amp;rsquo;t need it. My dad once told me that &amp;ldquo;The Young Of a defeated Ummah&amp;rdquo; should read only what only feeds their intellectuality (which of course is not fiction) to help advancing the Ummah (People rise nations!</description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>/fullbooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/fullbooks/</guid>
+      <description>Read: Update About My Tracking Lists
+Bold is currently reading
+Italics bold is an outstanding one.  Table Of Contents  Literature and Fiction  Prefect Good Sucks To Read   Philosophy &amp;amp; Anthropology  Read To Read   Evolution/ Neuroscience-related  Read   Politics  Read To Read Middle East Struggle Related Capitalism/ Economics Marxism    History  Read To Read      Literature and Fiction  Probably won&amp;rsquo;t be updated anymore.</description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>/post/poetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/poetry/</guid>
+      <description> YOU ARE GOING TO BE REDIRECTED TO [POETRY DIRECTORY] IN 3 SECONDS, PLEASE WAIT.     </description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/search/</guid>
+      <description>Results from static site search implemented using Fusejs, jquery and mark.js. &amp;ndash; Source</description>
     </item>
     
   </channel>

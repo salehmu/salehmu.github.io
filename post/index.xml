@@ -34,5 +34,14 @@
       <description>I figured out that whenever I can&amp;#39;t hide some post from my feed page, because the dumb hugo developers disabled the option `hide` from the meta menu, and because I&amp;#39;m too lazy to implement it by myself.. I can just make the post date to 1900s so it will be in the bottom of the stack or the last page, it is not hidden yeah but who the hell will read the last page in my blog.</description>
     </item>
     
+    <item>
+      <title>Poetry</title>
+      <link>/post/poetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/poetry/</guid>
+      <description> YOU ARE GOING TO BE REDIRECTED TO [POETRY DIRECTORY] IN 3 SECONDS, PLEASE WAIT.     </description>
+    </item>
+    
   </channel>
 </rss>
