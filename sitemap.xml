@@ -3,8 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2021-11-02T17:13:43+02:00</lastmod>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>/tags/books/</loc>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
+  </url><url>
+    <loc>/tags/history/</loc>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
+  </url><url>
+    <loc>/posts/islam-and-science/</loc>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
+  </url><url>
+    <loc>/tags/science/</loc>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-11-09T11:00:46+02:00</lastmod>
   </url><url>
     <loc>/categories/blogs/</loc>
     <lastmod>2021-11-02T17:13:43+02:00</lastmod>
@@ -18,9 +36,6 @@
     <loc>/post/</loc>
     <lastmod>2021-11-02T17:13:43+02:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-11-02T17:13:43+02:00</lastmod>
-  </url><url>
     <loc>/tags/technology/</loc>
     <lastmod>2021-10-10T22:34:01+02:00</lastmod>
   </url><url>
@@ -28,9 +43,6 @@
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
     <loc>/tags/media/</loc>
-    <lastmod>2021-10-10T09:34:22+02:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
     <loc>/categories/articles/</loc>
@@ -60,16 +72,10 @@
     <loc>/posts/desto/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
-    <loc>/tags/books/</loc>
-    <lastmod>2021-10-10T09:34:22+02:00</lastmod>
-  </url><url>
     <loc>/posts/marida/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
     <loc>/posts/homosexuality/</loc>
-    <lastmod>2021-10-10T09:34:22+02:00</lastmod>
-  </url><url>
-    <loc>/tags/science/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
     <loc>/posts/karl/</loc>
