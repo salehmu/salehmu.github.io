@@ -89,12 +89,12 @@
   </url><url>
     <loc>/index.html</loc>
   </url><url>
-    <loc>/books/</loc>
-    <priority>0</priority>
-  </url><url>
     <loc>/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</loc>
   </url><url>
     <loc>/p-a-href/get-back-to-home/a-/p-/</loc>
+  </url><url>
+    <loc>/books/</loc>
+    <lastmod>2021-11-05T02:00:02+02:00</lastmod>
   </url><url>
     <loc>/fullbooks/</loc>
     <lastmod>2021-11-22T17:46:17+02:00</lastmod>
