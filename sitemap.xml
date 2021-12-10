@@ -3,20 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2021-11-29T09:11:45+02:00</lastmod>
+    <lastmod>2021-11-29T09:06:56+02:00</lastmod>
     <priority>0</priority>
-  </url><url>
-    <loc>/categories/blog/</loc>
-    <lastmod>2021-11-29T09:11:45+02:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-11-29T09:11:45+02:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-11-29T09:11:45+02:00</lastmod>
-  </url><url>
-    <loc>/posts/unaceeptable/</loc>
-    <lastmod>2021-11-29T09:11:45+02:00</lastmod>
   </url><url>
     <loc>/tags/books/</loc>
     <lastmod>2021-11-09T15:36:59+02:00</lastmod>
@@ -27,6 +15,9 @@
     <loc>/posts/islam-and-science/</loc>
     <lastmod>2021-11-09T15:36:59+02:00</lastmod>
   </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-11-09T15:36:59+02:00</lastmod>
+  </url><url>
     <loc>/tags/science/</loc>
     <lastmod>2021-11-09T15:36:59+02:00</lastmod>
   </url><url>
@@ -34,6 +25,9 @@
     <lastmod>2021-11-29T09:06:56+02:00</lastmod>
   </url><url>
     <loc>/categories/blogs/</loc>
+    <lastmod>2021-11-29T09:06:56+02:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
     <lastmod>2021-11-29T09:06:56+02:00</lastmod>
   </url><url>
     <loc>/post/oracle-the-next-level-of-data-reporting/</loc>
@@ -85,7 +79,7 @@
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
   </url><url>
     <loc>/cinema/</loc>
-    <lastmod>2021-12-10T06:33:17+02:00</lastmod>
+    <lastmod>2021-12-10T13:13:31+02:00</lastmod>
   </url><url>
     <loc>/fullcinema/</loc>
     <lastmod>2021-11-01T15:17:03+02:00</lastmod>
@@ -103,7 +97,7 @@
     <lastmod>2021-11-25T05:14:05+02:00</lastmod>
   </url><url>
     <loc>/fullbooks/</loc>
-    <lastmod>2021-12-09T15:59:10+02:00</lastmod>
+    <lastmod>2021-12-10T13:13:31+02:00</lastmod>
   </url><url>
     <loc>/post/poetry/</loc>
     <lastmod>2021-11-09T13:44:55+02:00</lastmod>
