@@ -1,19 +1,19 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.9.18)  29 NOV 2021 09:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.30)  18 DEC 2021 19:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**unaceeptable.md.tex
+**"Non Theoritical Computational Geometry.org.tex"
 
 ! Emergency stop.
-<*> unaceeptable.md.tex
-                       
+<*> ...Theoritical Computational Geometry.org.tex"
+                                                  
 *** (job aborted, file error in nonstop mode)
 
  
 Here is how much of TeX's memory you used:
  3 strings out of 478994
- 122 string characters out of 5864751
+ 151 string characters out of 5864750
  283044 words of memory out of 5000000
  17591 multiletter control sequences out of 15000+600000
  403430 words of font info for 27 fonts, out of 8000000 for 9000

@@ -2,55 +2,139 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saleh Muhammed</title>
-    <link>/</link>
+    <link>/index.html</link>
     <description>Recent content on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 07 Nov 2021 02:03:39 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pervez Hoodbhoy&#39;s Islam and Science: How Not to Read History</title>
-      <link>/posts/islam-and-science/</link>
+      <title>Books</title>
+      <link>/tags/books/</link>
       <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
       
-      <guid>/posts/islam-and-science/</guid>
-      <description>Introduction There is that Quranic expression from Bara&amp;rsquo;ah: He layeth his foundation [constructing] on an undermined sand-cliff, it is ready to crumble to pieces with him (Arabic: أَسَّسَ بُنْيَانَهُ عَلَىٰ شَفَا جُرُفٍ هَارٍ فَانْهَارَ بِهِ فِي نَارِ جَهَنَّمَ), a lot of arguments are based on such an &amp;ldquo;undermined sand cliff&amp;rdquo; which is really ready to crumble but the &amp;lsquo;argumenter&amp;rsquo; doesn&amp;rsquo;t give a lot of attention of this, and he prolongs, decorates and fortifies his argument until the point it becomes a book: hundreds of page based on some inexact arguments.</description>
+      <guid>/tags/books/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
-      <link>/post/oracle-the-next-level-of-data-reporting/</link>
+      <title>History</title>
+      <link>/tags/history/</link>
+      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
+      
+      <guid>/tags/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Science</title>
+      <link>/tags/science/</link>
+      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
+      
+      <guid>/tags/science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>/tags/</link>
+      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
+      
+      <guid>/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogs</title>
+      <link>/categories/blogs/</link>
       <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
       
-      <guid>/post/oracle-the-next-level-of-data-reporting/</guid>
-      <description>Sometimes I ask myself why corporates crash all these disputes about whether their DBMS is that safe or not. Users are not safe in any case with a corporate, rather, the DBs (their data) are leaked anyway in the corporate&amp;#39;s reports (which are sold to another users, the advertiser or whoever will use it), of course they won&amp;#39;t leak your metadata but not because you really matter, actually the opposed, you don&amp;#39;t.</description>
+      <guid>/categories/blogs/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Beyond Decliamists and Intellectuals</title>
-      <link>/posts/kalam/</link>
+      <title>Categories</title>
+      <link>/categories/</link>
+      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
+      
+      <guid>/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>/tags/technology/</link>
+      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
+      
+      <guid>/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media</title>
+      <link>/tags/media/</link>
       <pubDate>Tue, 28 Sep 2021 11:13:00 +0200</pubDate>
       
-      <guid>/posts/kalam/</guid>
-      <description>I thought that maybe &amp;lsquo;intellectuals&amp;rsquo; is not the best word to describe them, there is an old Arabic word &amp;ldquo;Al Mutakalimin المتكلمين&amp;rdquo; that might be better for such a demonstration. Mutkalmin means, idiomatically, the people who -probably Muslims- talked about the qualities of god (e.g. Can he smell or speak just like his creature?), however, the word &amp;ldquo;Mutkalim&amp;rdquo; in Arabic has nothing to do with the attributes of god the but it means &amp;ldquo;the people who talk&amp;rdquo;, I think the best translation for it is the &amp;ldquo;declaimists&amp;rdquo;, as Sa&amp;rsquo;adeldin Al Taftazani said once: Al Mutkalim were named after their statements that were starting with &amp;ldquo;Al Kalam on *some topic.</description>
+      <guid>/tags/media/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Regarding the &#39;Neo-Democracy&#39;, Media, and the Public Opinion in the United States</title>
-      <link>/posts/mediacontrol/</link>
+      <title>Articles</title>
+      <link>/categories/articles/</link>
       <pubDate>Sat, 14 Aug 2021 06:02:23 +0200</pubDate>
       
-      <guid>/posts/mediacontrol/</guid>
-      <description>Based on Chomsky&amp;rsquo;s Media Control.
-Democracy and Spectator Democracy The role of the media in contemporary politics forces us to ask what kind of a world and what kind of a society we want to live in, and in particular in what sense of democracy do we want this to be a democratic society? Let me begin by counter-posing two different conceptions of democracy. One conception of democracy has it that a democratic society is one in which the public has the means to participate in some meaningful way in the management of their own affairs and the means of information are open and free.</description>
+      <guid>/categories/articles/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>On Social Media Neoconditioning or Why Redditor is a NPC?</title>
-      <link>/posts/conditioning1/</link>
+      <title>Politics</title>
+      <link>/tags/politics/</link>
+      <pubDate>Sat, 14 Aug 2021 06:02:23 +0200</pubDate>
+      
+      <guid>/tags/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychology</title>
+      <link>/tags/psychology/</link>
       <pubDate>Wed, 04 Aug 2021 18:49:37 +0200</pubDate>
       
-      <guid>/posts/conditioning1/</guid>
-      <description>I hope I&amp;rsquo;m not updogging the definition of “NPCs” but I think that nothing can explain what does it mean (even what the words that it stands for) more than reddit users or the so-called, “the redditors” actually I think that designation supports the argument I&amp;rsquo;m about to make.
+      <guid>/tags/psychology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;Link Rel=&#34;apple-Touch-Icon&#34; Sizes=&#34;180x180&#34; Href=&#34;/Apple-Touch-Icon.png&#34;&gt;
+&lt;Link Rel=&#34;icon&#34; Type=&#34;image/Png&#34; Sizes=&#34;32x32&#34; Href=&#34;/Favicon-32x32.png&#34;&gt;
+&lt;Link Rel=&#34;icon&#34; Type=&#34;image/Png&#34; Sizes=&#34;16x16&#34; Href=&#34;/Favicon-16x16.png&#34;&gt;
+&lt;Link Rel=&#34;manifest&#34; Href=&#34;/Manifest.json&#34;&gt;
+&lt;Link Rel=&#34;mask-Icon&#34; Href=&#34;/Safari-Pinned-Tab.svg&#34; Color=&#34;#5bbad5&#34;&gt;
+&lt;Meta Name=&#34;theme-Color&#34; Content=&#34;#ffffff&#34;&gt;
+</title>
+      <link>/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;P&gt;
+  [&lt;A Href=&#34;/&#34;&gt;Get Back to Home&lt;/A&gt;]
+&lt;/P&gt;
+</title>
+      <link>/p-a-href/get-back-to-home/a-/p-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/p-a-href/get-back-to-home/a-/p-/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
+ or the so-called, “the redditors” actually I think that designation supports the argument I&amp;rsquo;m about to make.
 Classical Conditioning This is not a science post, but I&amp;rsquo;ve to declare some terms, the most important one to me right now is “conditioning”, it&amp;rsquo;s a subdivision of big scoop called behaviorism, some scientists don&amp;rsquo;t consider conditioning or behaviorism as a real &amp;lsquo;science&amp;rsquo; (which doesn&amp;rsquo;t mean they treat it as pseudoscience, It is an epistemological problem) but it&amp;rsquo;s very empirical anyway.</description>
     </item>
     
