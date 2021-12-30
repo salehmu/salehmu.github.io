@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/categories/blogs/</link>
+    <description>Recent content in Blogs on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Oct 2021 04:08:00 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
+      <link>https://salehmu.github.io/posts/oracle-the-next-level-of-data-reporting/</link>
+      <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/oracle-the-next-level-of-data-reporting/</guid>
+      <description>Sometimes I ask myself why corporates crash all these disputes about whether their DBMS is that safe or not. Users are not safe in any case with a corporate, rather, the DBs (their data) are leaked anyway in the corporate&amp;#39;s reports (which are sold to another users, the advertiser or whoever will use it), of course they won&amp;#39;t leak your metadata but not because you really matter, actually the opposed, you don&amp;#39;t.</description>
+    </item>
+    
+    <item>
+      <title>Beyond Decliamists and Intellectuals</title>
+      <link>https://salehmu.github.io/posts/kalam/</link>
+      <pubDate>Tue, 28 Sep 2021 11:13:00 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/kalam/</guid>
+      <description>I thought that maybe &amp;lsquo;intellectuals&amp;rsquo; is not the best word to describe them, there is an old Arabic word &amp;ldquo;Al Mutakalimin المتكلمين&amp;rdquo; that might be better for such a demonstration. Mutkalmin means, idiomatically, the people who -probably Muslims- talked about the qualities of god (e.g. Can he smell or speak just like his creature?), however, the word &amp;ldquo;Mutkalim&amp;rdquo; in Arabic has nothing to do with the attributes of god the but it means &amp;ldquo;the people who talk&amp;rdquo;, I think the best translation for it is the &amp;ldquo;declaimists&amp;rdquo;, as Sa&amp;rsquo;adeldin Al Taftazani said once: Al Mutkalim were named after their statements that were starting with &amp;ldquo;Al Kalam on *some topic.</description>
+    </item>
+    
+    <item>
+      <title>Politics, Politicians and What everybody knows</title>
+      <link>https://salehmu.github.io/posts/politics-sucks/</link>
+      <pubDate>Wed, 04 Aug 2021 02:01:59 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/politics-sucks/</guid>
+      <description>Politics, political news and anything related to the so-called new world (supposed to be the better one) simply suck especially if you understand what&amp;#39;s going on. Actually it only sucks if you understand what&amp;#39;s going on, for instance if you&amp;#39;re reading that the U.S. bombarded the Red Cross headquarters in Afghanistan or Aljazira headquarters because they&amp;#39;re position for Al-Qaeda terrorists, well that&amp;#39;s really a good news, Al Jazeera should only blame themselves.</description>
+    </item>
+    
+    <item>
+      <title>“Connection” and “Meant-To-Be”</title>
+      <link>https://salehmu.github.io/posts/conection/</link>
+      <pubDate>Fri, 21 May 2021 05:28:30 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/conection/</guid>
+      <description>2 concepts that seem really nice and agreeable, but I find are psychically terrible, are “connection” and “meant-to-be”.
+My issue with the concept of connection is that it requires equally the notion of disconnection, which I find logically leads to mass-extinction-production as suicide-bomber-ideology. The idea we are disconnected - which is different from the perspective that we are alienated (with connection/disconnection being a mode of alienation) - and must acquire connection, religious or spiritual or technological, I find to be a psychic trap, like a hamster wheel that never goes anywhere.</description>
+    </item>
+    
+  </channel>
+</rss>
