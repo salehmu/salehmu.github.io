@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/post/</link>
+    <description>Recent content in Posts on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Oct 2021 12:33:10 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Words on The حناكة</title>
+      <link>https://salehmu.github.io/post/hanakah/</link>
+      <pubDate>Fri, 15 Oct 2021 12:33:10 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/post/hanakah/</guid>
+      <description>مش بحب أراء المين ستريم في حاجه ومقتنع إنهم غالبًا - لو مش دايمًا - مُغفلين. لو إنت متعمق في أي مجال في الحياة هتكون مؤيد لكلامي خصوصًا لو شيء أكاديمي، علم النفس مثلًا. الحاجات الي مؤمن بيها المين ستريم بتاع الناس مش scientific بتاتًا، مع إنهم بيحبوا يسموه كدا. في الأدب نفس الموضوع. وحتى في العموم، البشر دايمًا أغلبهم بيبقوا مخطئين، يقول تعالى: حَتَّىٰ إِذَا جَاءَ أَمْرُنَا وَفَارَ التَّنُّورُ قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ وَأَهْلَكَ إِلَّا مَن سَبَقَ عَلَيْهِ الْقَوْلُ وَمَنْ آمَنَ ۚ وَمَا آمَنَ مَعَهُ إِلَّا قَلِيلٌ.</description>
+    </item>
+    
+    <item>
+      <title>Self-Pity (Arabic)</title>
+      <link>https://salehmu.github.io/post/rpsaleh/</link>
+      <pubDate>Tue, 05 Feb 2019 05:28:30 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/post/rpsaleh/</guid>
+      <description>انا من الناس الي بيقدسوا المزيكا، مبحبش اقطاع حد بيسمع مزيكا ابدا ابدا حتى لو كانت مهرجان لأني عارف الايفكت الي في دماغه وحاسس بيه، علشان كدا بتضايق اوي لما اعرف اني بعت اغنية لحد ومسمعهاش بتضايق عموما اما ابعت حاجه لحد ويتجاهلها - قليل اما ببعت حاجه لمجرد اني ابعتها بس الناس اغبيه هنقول ايه يعني ههه
+المهم
+إني لو بحب اغنية بجد ف انا بحبها علشان كلماتها، كسم المزيكا انا بسمع شوبين 24/7، علشان كدا ممكن حد يستغرب اني بحب اغنية زي Hard killing floor، ما تسمع الشيخ إمام يبني!</description>
+    </item>
+    
+    <item>
+      <title>Update About My Tracking Lists</title>
+      <link>https://salehmu.github.io/post/update-about-my-tracking-lists/</link>
+      <pubDate>Mon, 01 Nov 1999 07:57:03 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/post/update-about-my-tracking-lists/</guid>
+      <description>I figured out that whenever I can&amp;#39;t hide some post from my feed page, because the dumb hugo developers disabled the option `hide` from the meta menu, and because I&amp;#39;m too lazy to implement it by myself.. I can just make the post date to 1900s so it will be in the bottom of the stack or the last page, it is not hidden yeah but who the hell will read the last page in my blog.</description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>https://salehmu.github.io/post/poetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/post/poetry/</guid>
+      <description> YOU ARE GOING TO BE REDIRECTED TO [POETRY DIRECTORY] IN 3 SECONDS, PLEASE WAIT.     </description>
+    </item>
+    
+  </channel>
+</rss>
