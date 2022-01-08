@@ -124,17 +124,5 @@ My rating: 1 of 5 stars
 من سنتين شوفت أول ظهور لاختبار ماري بريجز (MBTI) في إحدى الندوات الي بيحضرها طبيب مشهور على اليوتيوب، وكان بيروج للاختبار بإنه طريقة حَسِنة لإختيار الناس الي بتتعامل معاهم ودليل جيد للتعامل مع الناس دول (عن طريق إنك تعرف نوع شخصيتهم وتعرف سمات الشخصية دي وبالتالي تقدر تحايلهم).. وطبعًا الاختبار بما إنه بالإنجلش وبيقدم نتايج زي INPT وما شابه، وهي أشياء محتاجه دراسة قليلة علشان تفهمها، أغلب الجمهور (وأغلب دي تزيد عن 99%) شافو إن الاختبار دا أكيد مستند لـ &amp;ldquo;علم&amp;rdquo;، وأصبحت لما بقول لصديق إن الكلام دا هبل وإنه مش INTJ ولا حاجه، يقولي إني غلطان أكيد وإن الاختبار دا معمول عليه دراسات ومنتشر في أمريكا وبلا بلا بلا.</description>
     </item>
     
-    <item>
-      <title>PostgreSQL Minimal Toturial</title>
-      <link>https://salehmu.github.io/posts/sql/</link>
-      <pubDate>Fri, 30 Aug 2019 13:45:48 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/posts/sql/</guid>
-      <description>I wrote this old note a while ago while reading the PostgreSQL docs release, I used it then as a mini-reference or a tiny cheat sheet for SQL problems using PostgreSQL. It might (0.3%) be useful to someone so I decided to publish it here.
-Note: SQL commands is not case sensitive, therefore SELECT = select = SeLeCt
-Selecting # Regular Selection # Select syntax is being like this:
-SELECT*-- Everything FROMreal_person-- Table Name LIMIT10;-- Getting only they very first 5 IDs.</description>
-    </item>
-    
   </channel>
 </rss>
