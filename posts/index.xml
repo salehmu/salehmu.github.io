@@ -124,5 +124,24 @@ My rating: 1 of 5 stars
 من سنتين شوفت أول ظهور لاختبار ماري بريجز (MBTI) في إحدى الندوات الي بيحضرها طبيب مشهور على اليوتيوب، وكان بيروج للاختبار بإنه طريقة حَسِنة لإختيار الناس الي بتتعامل معاهم ودليل جيد للتعامل مع الناس دول (عن طريق إنك تعرف نوع شخصيتهم وتعرف سمات الشخصية دي وبالتالي تقدر تحايلهم).. وطبعًا الاختبار بما إنه بالإنجلش وبيقدم نتايج زي INPT وما شابه، وهي أشياء محتاجه دراسة قليلة علشان تفهمها، أغلب الجمهور (وأغلب دي تزيد عن 99%) شافو إن الاختبار دا أكيد مستند لـ &amp;ldquo;علم&amp;rdquo;، وأصبحت لما بقول لصديق إن الكلام دا هبل وإنه مش INTJ ولا حاجه، يقولي إني غلطان أكيد وإن الاختبار دا معمول عليه دراسات ومنتشر في أمريكا وبلا بلا بلا.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://salehmu.github.io/posts/c_sharp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/c_sharp/</guid>
+      <description>title: &amp;ldquo;C#&amp;rdquo; date: 2022-01-08T05:28:26+02:00 tags: [&amp;quot;.NET&amp;quot;] categories: [&amp;ldquo;Computer Science&amp;rdquo;] description: C# Notebook # Chapter Notes # Chapter 2: Speaking C# # Discover Your C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
+To discover your compiler version, you can go to your terminal and run the command:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://salehmu.github.io/posts/graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/graphs/</guid>
+      <description>title: &amp;ldquo;Representations, Implementations and Searching of Graphs&amp;rdquo; date: 2022-01-03T14:56:42+02:00 categories: [&amp;ldquo;Computer Science&amp;rdquo;] tags: [&amp;ldquo;Grahps&amp;rdquo;, &amp;ldquo;Algorithms&amp;rdquo;] description: A simplified introduction into graph theory applications. draft: true # Terminology # A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\).</description>
+    </item>
+    
   </channel>
 </rss>

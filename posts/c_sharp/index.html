@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ronalds Vilcins - https://salehmu.github.io">
+  <title> | Saleh Muhammed</title>
+  <meta name="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="title: &ldquo;C#&rdquo; date: 2022-01-08T05:28:26&#43;02:00 tags: [&quot;.NET&quot;] categories: [&ldquo;Computer Science&rdquo;] description: C# Notebook # Chapter Notes # Chapter 2: Speaking C# # Discover Your C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
+To discover your compiler version, you can go to your terminal and run the command:"/>
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="title: &ldquo;C#&rdquo; date: 2022-01-08T05:28:26&#43;02:00 tags: [&quot;.NET&quot;] categories: [&ldquo;Computer Science&rdquo;] description: C# Notebook # Chapter Notes # Chapter 2: Speaking C# # Discover Your C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
+To discover your compiler version, you can go to your terminal and run the command:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salehmu.github.io/posts/c_sharp/" /><meta property="article:section" content="posts" />
+
+<meta property="article:modified_time" content="2022-01-10T11:44:33+02:00" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="title: &ldquo;C#&rdquo; date: 2022-01-08T05:28:26&#43;02:00 tags: [&quot;.NET&quot;] categories: [&ldquo;Computer Science&rdquo;] description: C# Notebook # Chapter Notes # Chapter 2: Speaking C# # Discover Your C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
+To discover your compiler version, you can go to your terminal and run the command:">
+<meta itemprop="dateModified" content="2022-01-10T11:44:33+02:00" />
+<meta itemprop="wordCount" content="2428">
+<meta itemprop="keywords" content="" />
+  <link rel="canonical" href="https://salehmu.github.io/posts/c_sharp/">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="Saleh Muhammed" href="https://salehmu.github.ioatom.xml" />
+  <link rel="alternate" type="application/json" title="Saleh Muhammed" href="https://salehmu.github.iofeed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeSpeed;text-align:start;unicode-bidi:plaintext}.posts hr{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:none;border-bottom:1px #353535;flex:1 0 1rem;text-align:start;unicode-bidi:plaintext}main{max-width:70ch;padding:2ch;margin:auto;text-align:start;unicode-bidi:plaintext}a,body{color:#353535;text-align:start;unicode-bidi:plaintext;text-align:start;unicode-bidi:plaintext}::selection,a:focus,a:hover{background-color:#353535;color:#fff;text-align:start;unicode-bidi:plaintext}.meta{margin:0 0 2.5rem;text-align:start;unicode-bidi:plaintext}.tags::before{content:"\2022";margin-left:1rem;text-align:start;unicode-bidi:plaintext}code,pre{color:#353535;font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;border:1px solid #353535;font-size:small}code{padding:.1rem;border:none}pre{padding:.5rem;overflow-x:auto}pre code{border:none}img{max-width:100%;border:1px solid #353535}hr{background:#353535;height:1px;border:0;text-align:start;unicode-bidi:plaintext}ul{list-style-type:square}ul,ol{padding-left:1.2rem}header li,footer li{display:inline;text-transform:uppercase;text-align:start;unicode-bidi:plaintext}header a,footer a{text-decoration:none;text-align:start;unicode-bidi:plaintext}header ul,footer ul{justify-content:space-between;display:flex;text-align:start;unicode-bidi:plaintext}[aria-current=page]{text-decoration:line-through}header,section,footer{padding:1rem 0;text-align:start;unicode-bidi:plaintext}blockquote{border-left:5px solid #353535;padding-left:1rem;text-align:start;unicode-bidi:plaintext}.posts ul,header ul,footer ul{list-style:none;text-align:start;unicode-bidi:plaintext}.posts,header ul,footer ul{padding:0;text-align:start;unicode-bidi:plaintext}.posts li{align-items:center;display:flex;justify-content:space-between;margin-bottom:.7rem;text-align:start;unicode-bidi:plaintext}.posts li a,.posts li div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;text-align:start;unicode-bidi:plaintext}.posts li time{padding-left:1rem;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:start;unicode-bidi:plaintext}.hash{opacity:.25;text-decoration:none;text-align:start;unicode-bidi:plaintext}table{border-collapse:collapse;text-align:left;width:100%;text-align:start;unicode-bidi:plaintext}table tr{background:#fff;border-bottom:1px solid}table th,table td{padding:10px 20px}p{text-align:justify;unicode-bidi:plaintext}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "",
+    "headline": "",
+    "alternativeHeadline": "",
+    "description": "title: \u0026ldquo;C#\u0026rdquo; date: 2022-01-08T05:28:26\u002b02:00 tags: [\u0026quot;.NET\u0026quot;] categories: [\u0026ldquo;Computer Science\u0026rdquo;] description: C# Notebook # Chapter Notes # Chapter 2: Speaking C# # Discover Your C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.\nTo discover your compiler version, you can go to your terminal and run the command:",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/salehmu.github.io\/posts\/c_sharp\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "[salehmu]"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "[salehmu]"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "[salehmu]"
+    },
+    "copyrightHolder" : "Saleh Muhammed",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "2022-01-10T11:44:33.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Saleh Muhammed",
+        "url": "https://salehmu.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/salehmu.github.io",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://salehmu.github.io",
+    "url" : "https:\/\/salehmu.github.io\/posts\/c_sharp\/",
+    "wordCount" : "2428",
+    "genre" : [ ],
+    "keywords" : [ ]
+}
+</script>
+
+
+</head>
+
+<body>
+<main>
+      <header>
+    <nav>
+      
+  <ul>
+    <li>
+      
+      
+      
+      
+      <a href="/" aria-current="page">Index</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/fullbooks" >BOOKS</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/cinema" >CINEMA</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="mailto:ghd@keemail.me" >EMAIL</a>
+    </li>
+  
+  </ul>
+    </nav>
+  </header>
+  <hr>
+
+
+
+  <section>
+
+      
+      <h2 itemprop="name headline"></h2>
+      <p class="meta">
+        <time itemprop="datePublished" datetime="0001-01-01"> January 01, 0001</time> &bull; 
+        
+        </p>
+      
+
+      <span itemprop="articleBody">
+      <hr>
+<h2 id="description-c-notebook">title: &ldquo;C#&rdquo;
+date: 2022-01-08T05:28:26+02:00
+tags: [&quot;.NET&quot;]
+categories: [&ldquo;Computer Science&rdquo;]
+description: C# Notebook <a href="#description-c-notebook" class="hash">#</a></h2>
+<h2 id="chapter-notes">Chapter Notes <a href="#chapter-notes" class="hash">#</a></h2>
+<h3 id="chapter-2-speaking-c">Chapter 2: Speaking C# <a href="#chapter-2-speaking-c" class="hash">#</a></h3>
+<h4 id="discover-your-c-compiler-version">Discover Your C# Compiler Version <a href="#discover-your-c-compiler-version" class="hash">#</a></h4>
+<p>With the C# 7.x generation, Microsoft decided to increase the cadence of language
+releases, releasing minor version numbers, also known as point releases, for the first
+time since C# 1.1.</p>
+<p>To discover your compiler version, you can go to your terminal and run the command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">dotnet --version
+</code></pre></div><p>To determine which versions of the C# compiler you have available, enter
+the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">csc -langversion:?
+</code></pre></div><!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Choose a Specific Language Version</p>
+<p>Developer tools like Visual Studio Code and the dotnet command-line interface assume that
+you want to use the latest major version of a C# language compiler by default. So before C#
+8.0 was released, C# 7.0 was the latest major version and was used by default.</p>
+<p>To use the improvements in a C# point release like 7.1, 7.2, or 7.3, you had to add a
+configuration element to the project file, as shown in the following markup:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">LangVersion</span><span class="p">&gt;</span>7.3<span class="p">&lt;/</span><span class="nt">LangVersion</span><span class="p">&gt;</span>
+</code></pre></div><p>The parameter between <code>Langversion</code> should be one of the following:</p>
+<table>
+<thead>
+<tr>
+<th>LangVersion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>7, 7.2, 8</code></td>
+<td>A specific version number will use that compiler.</td>
+</tr>
+<tr>
+<td><code>latestmajor</code></td>
+<td>Uses the highest major version. (7.0 in 2019, 8.0 in 2020).</td>
+</tr>
+<tr>
+<td><code>latest</code></td>
+<td>uses the highest major and minor version (7.3) in 2018.</td>
+</tr>
+<tr>
+<td><code>preview</code></td>
+<td>use the highest available prevew version.</td>
+</tr>
+</tbody>
+</table>
+<p>After creating a new project with the dotnet command-line tool, you can edit the
+csproj file and add the <code>&lt;LangVersion&gt;</code> element, as shown highlighted in the
+following markup:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">Project</span> <span class="na">Sdk</span><span class="o">=</span><span class="s">&#34;Microsoft.NET.Sdk&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">PropertyGroup</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">OutputType</span><span class="p">&gt;</span>Exe<span class="p">&lt;/</span><span class="nt">OutputType</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">TargetFramework</span><span class="p">&gt;</span>netcoreapp3.0<span class="p">&lt;/</span><span class="nt">TargetFramework</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">LangVersion</span><span class="p">&gt;</span>preview<span class="p">&lt;/</span><span class="nt">LangVersion</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">PropertyGroup</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">Project</span><span class="p">&gt;</span>
+</code></pre></div><p>Your projects must target either <code>netcoreapp3.0</code> or <code>netstandard2.1</code> to use the full</p>
+<p>features of C# 8.0.</p>
+</li>
+</ul>
+<h4 id="c-basics">C# Basics <a href="#c-basics" class="hash">#</a></h4>
+<p>C# indicates the end of a statement with a semicolon. A statement can be composed of
+multiple variables and expressions. For example, in the following statement, <code>totalPrice</code> is a
+variable and <code>subtotal + salesTax</code> is an expression:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="n">var</span> <span class="n">totalPrice</span> <span class="o">=</span> <span class="n">subtotal</span> <span class="o">+</span> <span class="n">salesTax</span><span class="p">;</span>
+</code></pre></div><!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Comments</p>
+<p>When writing your code, you&rsquo;re able to add comments to explain your code using a double
+slash, //. By inserting it the compiler will ignore everything after the until the end of
+the line, as shown in the following code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="cm">/*
+</span><span class="cm">This is a multi-line
+</span><span class="cm">comment.
+</span><span class="cm">*/</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Blocks</p>
+<p>In English, we indicate a paragraph by starting a new line. C# indicates a block of
+code with the use of curly brackets, { }. Blocks start with a declaration to indicate
+what it is being defined. For example, a block can define a namespace, class, method,
+or a statement, something we will learn more about later.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">arg</span> <span class="k">in</span> <span class="n">Args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">arg</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Methods</p>
+<p>In English, verbs are doing or action words, like run and jump. In C#, doing or action
+words are called methods. There are hundreds of thousands of methods available to
+C#. In English, verbs change how they are written based on when in time the action
+happens. For example, Amir was jumping in the past, Beth jumps in the present, they
+jumped in the past, and Charlie will jump in the future.</p>
+<p>In C#, methods such as WriteLine change how they are called or executed based
+on the specifics of the action.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Types</p>
+<p>In English, nouns are names that refer to things. For example, Fido is the name of
+a dog. The word &ldquo;dog&rdquo; tells us the type of thing that Fido is, and so in order for Fido
+to fetch a ball, we would use his name.</p>
+<p>In C#, their equivalents are types, fields, and variables. For example, Animal and
+Car are types; that is, they are nouns for categorizing things. Head and Engine
+are fields, that is, nouns that belong to Animal and Car. Whilst Fido and Bob are
+variables, that is, nouns for referring to a specific thing.</p>
+<p>There are tens of thousands of types available to C#, though have you noticed how
+I didn&rsquo;t say, &ldquo;There are tens of thousands of types in C#?&rdquo; The difference is subtle
+but important. The language of C# only has a few keywords for types, such as
+string and int, and strictly speaking, C# doesn&rsquo;t define any types. Keywords such
+as string that look like types are aliases, which represent types provided by the
+platform on which C# runs.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Sorting Basic Types</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Text</p>
+<p>Use <code>string</code> to store long text, and <code>char</code> to store a letter:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">string</span> <span class="n">x</span> <span class="p">=</span> <span class="s">&#34;World&#34;</span><span class="p">;</span>
+<span class="kt">char</span>   <span class="n">c</span> <span class="p">=</span> <span class="sc">&#39;W&#39;</span><span class="p">;</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Numbers</p>
+<p>Use <code>int</code> to store an integer, <code>uint</code> to store an unsigned integer:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="p">-</span><span class="m">32</span><span class="p">;</span>
+<span class="kt">uint</span> <span class="n">ii</span> <span class="p">=</span> <span class="m">1412</span><span class="p">;</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Whole Numbers</p>
+<p>The decimal number system, also known as Base 10, has 10 as its base, meaning there
+are ten digits, from 0 to 9. Although it is the number base most commonly used by
+human civilizations, other number-base systems are popular in science, engineering,
+and computing. The binary number system also known as Base 2 has two as its base,
+meaning there are two digits, 0 and 1.</p>
+<p>The following table shows how computers store the decimal number 10. Take note of
+the bits with the value 1 in the 8 and the 2 columns; 8 + 2 = 10:</p>
+<table>
+<thead>
+<tr>
+<th>128</th>
+<th>64</th>
+<th>32</th>
+<th>16</th>
+<th>8</th>
+<th>4</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<p>So, 10 in decimal is <code>00001010</code> in binary.</p>
+<p>Two of the improvements seen in C# 7.0 and later are the use of the underscore
+character, _, as a digit separator and support for binary literals. You can insert
+underscores anywhere into the digits of a number literal, including decimal, binary,
+or hexadecimal notation, to improve legibility. For example, you could write the
+value for one million in decimal notation, that is, Base 10, as <code>1_000_000</code></p>
+<p>Check if does it works, first initialize 3 values, and then check the equivalence</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">int</span> <span class="n">dcml</span>    <span class="p">=</span> <span class="m">2_000_000</span><span class="p">;</span> <span class="c1">// Two millions in dicimal;
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">binary</span>  <span class="p">=</span> <span class="m">0</span><span class="n">b_0001_1110_1000_0100_1000_0000</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">hexadecimal</span> <span class="p">=</span> <span class="m">0</span><span class="n">x_001E8480</span><span class="p">;</span>
+<span class="c1">// Check the equivalence and print it
+</span><span class="c1"></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span> <span class="n">dcml</span> <span class="p">==</span> <span class="n">binary</span>  <span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span> <span class="n">dcml</span> <span class="p">==</span> <span class="n">hexadecimal</span>  <span class="p">);</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><code>object</code></p>
+<p>There is a special type named object which can store any type of data, but its
+flexibility comes at the cost of messier code and possibly poor performance, thuse you
+should consider avoid using them as possible.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">object</span> <span class="n">height</span> <span class="p">=</span> <span class="m">1.88</span><span class="p">;</span> <span class="c1">// storing a double in an object
+</span><span class="c1"></span><span class="kt">object</span> <span class="n">name</span> <span class="p">=</span> <span class="s">&#34;Amir&#34;</span><span class="p">;</span> <span class="c1">// storing a string in an object
+</span><span class="c1"></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{name} is {height} metres tall.&#34;</span><span class="p">);</span>
+<span class="c1">// int length1 = name.Length; // gives compile error!
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">length2</span> <span class="p">=</span> <span class="p">((</span><span class="kt">string</span><span class="p">)</span><span class="n">name</span><span class="p">).</span><span class="n">Length</span><span class="p">;</span> <span class="c1">// tell compiler it&#39;s a string
+</span><span class="c1"></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{name} has {length2} characters.&#34;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p><code>dynamic</code></p>
+<p>There is another special type named dynamic that can also store any type of data, but
+even more than object, its flexibility comes at the cost of performance. The dynamic
+keyword was introduced in C# 4.0. However, unlike an object, the value stored in
+the variable can have its members invoked without an explicit cast.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="c1">// storing a string in a dynamic object
+</span><span class="c1"></span><span class="kt">dynamic</span> <span class="n">anotherName</span> <span class="p">=</span> <span class="s">&#34;Ahmed&#34;</span><span class="p">;</span>
+<span class="c1">// this compiles but would throw an exception at run-time
+</span><span class="c1">// if you later store a data type that does not have a
+</span><span class="c1">// property named Length
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">length</span> <span class="p">=</span> <span class="n">anotherName</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span>
+</code></pre></div><p>The following is a comparison between <code>object</code> and <code>dynamic</code> types:</p>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dyanmic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>It can store any value because &ldquo;object&rdquo; is the base class of all types in the .NET framework.</td>
+<td>It can store any type of variable, similar to how Visual Basic handles a variable.</td>
+</tr>
+<tr>
+<td>Compiler has little information about the type.</td>
+<td>It is not type-safe, i.e., the compiler doesn&rsquo;t have any information about the type of variable.</td>
+</tr>
+<tr>
+<td>We can pass the object type as a method argument, and the method also can return the object type.</td>
+<td>A method can both accept a Dynamic type as an argument and return it.</td>
+</tr>
+<tr>
+<td>We need to cast object variables to the original type to use it and to perform desired operations.</td>
+<td>Casting is not required, but you need to know the properties and methods related to stored type.</td>
+</tr>
+<tr>
+<td>Object can cause problems at run time if the stored value is not converted or cast to the underlying data type.</td>
+<td>The Dynamic type can cause problems if the wrong properties or methods are accessed because all the information about the stored value is resolved at run time, compared to at compilation.</td>
+</tr>
+<tr>
+<td>Useful when we don&rsquo;t have more information about the data type.</td>
+<td>Useful when we need to code using reflection or dynamic languages or with the COM objects due to writing less code.</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Comparing Double &amp; Decimal Types</p>
+<p><code>0.1</code> doesn&rsquo;t always equal to <code>(double) 0.1</code>. This is a common confusion point in
+programming languages, try to run the following code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">double</span> <span class="n">a</span> <span class="p">=</span> <span class="m">0.1</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">b</span> <span class="p">=</span> <span class="m">0.2</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">+</span> <span class="n">b</span> <span class="p">==</span> <span class="m">0.3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{a} + {b} is equal to  0.3&#34;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{a} + {b} is not equal to  0.3&#34;</span><span class="p">);</span>
+
+<span class="p">}</span>
+</code></pre></div><p>The <code>double</code> type is not guaranteed to be accurate because some numbers
+literally cannot be represented as floating-point values.</p>
+<p>This is because that most decimals have infinite representations in binary. Take 0.1 for
+example. It’s one of the simplest decimals you can think of, and yet it looks so complicated
+in binary:</p>
+<figure><img src="/ox-hugo/2022-01-07_20-44-12_screenshot.png"/>
+</figure>
+
+<p>The bits go on forever; no matter how many of those bits you store in a computer, you will
+never end up with the binary equivalent of decimal 0.1.</p>
+<p>Depending on how many bits of precision are used, the floating-point approximation of 0.1
+could be less than 0.1. For example, in half-precision, which uses 11 significant bits, 0.1
+rounds to 0.0001100110011 in binary, which is 0.0999755859375 in decimal.</p>
+<p>You can just forget about all of that and take the rule of thumb, use <code>double</code> when accuracy
+especially when you compare the equality of two numbers is not important, for example, when
+you&rsquo;re measuring a person&rsquo;s height.</p>
+<p>A good practice is to never compare <code>double</code> values using <code>==</code>.</p>
+<p>However, a work around is to use the <code>decimal</code> type with <code>M</code> suffix, which tells the
+compiler that we&rsquo;re dealing with a decimal literal value:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">decimal</span> <span class="n">a</span> <span class="p">=</span> <span class="m">0.1</span><span class="n">M</span><span class="p">;</span>
+<span class="kt">decimal</span> <span class="n">b</span> <span class="p">=</span> <span class="m">0.2</span><span class="n">M</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="p">+</span> <span class="n">b</span> <span class="p">==</span> <span class="m">0.3</span><span class="n">M</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{a} + {b} is equal to  0.3&#34;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{a} + {b} is not equal to  0.3&#34;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>The decimal type is accurate because it stores the number as <strong>a large integer and shifts</strong>
+the decimal point. For example, 0.1 is stored as 1, with a note to shift the decimal point
+one place to the left. 12.75 is stored as 1275, with a note to shift the
+decimal point two places to the left.</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Getting Default Types</p>
+<p>Most of the primitive types except <code>string</code> are value types, which means that
+they must have a value. You can determine the default value of a type using the
+<code>default()</code> operator.</p>
+<p>The <code>string</code> type is a <strong>reference type</strong>. This means that <code>string</code> variables contain the
+memory address of a value, not the value itself. A reference type variable can have
+a <code>null</code> value, which is a literal that indicates that the variable does not reference
+anything (yet). <code>null</code> is the default for all reference types. We shall talk about this in
+detail later.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;default(int) = {default(int)}&#34;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;default(bool) = {default(bool)}&#34;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;default(DateTime) = {default(DateTime)}&#34;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;default(string) = {default(string)}&#34;</span><span class="p">);</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Storing Multiple Values</p>
+<p>When you need to store multiple values of the same type, you can declare an array.
+For example, you may do this when you need to store four names in a string array:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">string</span><span class="p">[]</span> <span class="n">names</span><span class="p">;</span> <span class="c1">// can reference any array of strings
+</span><span class="c1">// allocating memory for four strings in an array
+</span><span class="c1"></span><span class="n">names</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[</span><span class="m">4</span><span class="p">];</span>
+<span class="c1">// storing
+</span><span class="c1"></span><span class="n">names</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Kate&#34;</span><span class="p">;</span>
+<span class="n">names</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Jack&#34;</span><span class="p">;</span>
+<span class="n">names</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Rebecca&#34;</span><span class="p">;</span>
+<span class="n">names</span><span class="p">[</span><span class="m">3</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;Tom&#34;</span><span class="p">;</span>
+
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">names</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Making a Type &lsquo;nullable&rsquo;</p>
+<p>You have now seen how to store primitive values like numbers in variables. But what
+if a variable does not yet have a value? How can we indicate that? C# has the concept
+of a null value, which can be used to indicate that a variable has not been set.</p>
+<p>By default, value types like int and <code>DateTime</code> must always have a value, hence their
+name. Sometimes, for example, when reading values stored in a database that allows
+empty, missing, or null values, it is convenient to allow a value type to be null, we
+call this a nullable value type.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">int</span> <span class="n">thisCannotBeNull</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+<span class="c1">// thisCannotBeNull = null; // compile error!
+</span><span class="c1"></span><span class="kt">int?</span> <span class="n">thisCouldBeNull</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">thisCouldBeNull</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">thisCouldBeNull</span><span class="p">.</span><span class="n">GetValueOrDefault</span><span class="p">());</span>
+<span class="n">thisCouldBeNull</span> <span class="p">=</span> <span class="m">7</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">thisCouldBeNull</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">thisCouldBeNull</span><span class="p">.</span><span class="n">GetValueOrDefault</span><span class="p">());</span>
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>Make it Un-nullable</p>
+<p>In some special cases we need to use <code>null</code>, in more special cases we need to make sure that
+there will be no <code>null</code> in our program. The most significant change to the language in C#
+8.0 is the introduction of nullable and non-nullable reference types.</p>
+<p>In C# 8.0, reference types can be configured to no longer allow the null value by setting a
+file- or project-level option to enable this useful new feature. Since this is a big change
+for C#, Microsoft decided to make the feature opt-in.</p>
+<p>It will take multiple years for this new C# language feature to make an impact since
+there are thousands of existing library packages and apps that will expect the old
+behavior. Even Microsoft has not had time to fully implement this new feature in
+all the core .NET packages. During the transition, you can choose between several
+approaches for your own projects:</p>
+<ul>
+<li>Default: No changes needed. Non-nullable references types not supported.</li>
+<li>Opt-in files: Only enable the feature for individual files.</li>
+<li>Opt-in project, opt-out files: Enable the feature at the project level and for any files that need to remain compatible with old behavior, opt out. This is the approach Microsoft is using internally while it updates its own packages to use this new feature.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="chapter-3-controlling-flow-and-converting-types">Chapter 3: Controlling Flow and Converting Types <a href="#chapter-3-controlling-flow-and-converting-types" class="hash">#</a></h3>
+<p><code>Operators</code> apply simple operations such as addition and multiplication to operands
+such as variables and literal values. They usually return a new value that is the result
+of the operation that can be assigned to a variable.</p>
+<p>Most operators are binary, meaning that they work on two operands, as shown in the
+following pseudocode:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="n">firstOperand</span> <span class="k">operator</span> <span class="n">secondOperand</span><span class="p">;</span>
+</code></pre></div><p>Some operators are unary, meaning they work on a single operand, and can apply
+before or after the operand, as shown in the following pseudocode:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="kt">var</span> <span class="n">resultOfOperation</span> <span class="p">=</span> <span class="n">onlyOperand</span> <span class="k">operator</span><span class="p">;</span>
+<span class="kt">var</span> <span class="n">resultOfOperation2</span> <span class="p">=</span> <span class="k">operator</span> <span class="n">onlyOperand</span><span class="p">;</span>
+</code></pre></div><h4 id="note-on-foreach">Note on <code>foreach</code> <a href="#note-on-foreach" class="hash">#</a></h4>
+<!-- raw HTML omitted -->
+<ul>
+<li>qwr</li>
+</ul>
+<h2 id="exercises">Exercises <a href="#exercises" class="hash">#</a></h2>
+<h3 id="exercise-2-dot-1">Exercise 2.1 <a href="#exercise-2-dot-1" class="hash">#</a></h3>
+<ol>
+<li><code>string</code>. Since a telephone number might exceed the limit of <code>int</code> and <code>long</code>.</li>
+<li><code>double</code></li>
+<li><code>int</code></li>
+<li><code>string</code></li>
+<li><code>double</code></li>
+<li><code>double</code></li>
+<li><code>int</code></li>
+<li><code>string</code></li>
+<li><code>int[]</code></li>
+</ol>
+<h3 id="exercise-2-dot-2"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Exercise 2.2 <a href="#exercise-2-dot-2" class="hash">#</a></h3>
+<p>p68</p>
+<h2 id="take-a-look">Take a Look <a href="#take-a-look" class="hash">#</a></h2>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines">Naming Guidelines</a></li>
+</ul>
+<h2 id="suffix"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Suffix <a href="#suffix" class="hash">#</a></h2>
+
+      </span>
+       
+
+    </section>
+    <hr>
+<footer>
+	  <nav>
+      
+  <ul>
+    <li>
+      © 2022
+    </li>
+  
+  </ul>
+    </nav>
+</footer>
+
+  </main>
+</body>
+</html>
