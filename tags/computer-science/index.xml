@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer science on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/tags/computer-science/</link>
+    <description>Recent content in computer science on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jan 2022 14:56:42 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Representations, Implementations and Searching of Graphs</title>
+      <link>https://salehmu.github.io/notes/graphs/</link>
+      <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/graphs/</guid>
+      <description>Terminology # A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\). \(|E|\) can range from zero to a maximum of \(|V|^{2} - |V|\). A graph with relatively few edges is called sparse, while a graph with many edges is called dense.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Non-theoretical Computational Geometry</title>
+      <link>https://salehmu.github.io/notes/gemtry/</link>
+      <pubDate>Fri, 17 Dec 2021 19:57:19 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/gemtry/</guid>
+      <description>Based on TopCoder&amp;rsquo;s thrive and Computational Geometry (252-1425-00L) HS13 lecture notes. (Problems mostly from LeetCode)
+Introduction # I&amp;rsquo;m not sure how to properly introduce this long plain text —or even how to put it—. You can easily consider it as a small handbook that contains some computational problems solutions, or like Nietzsche says in his Dawn of Day:
+ &amp;ldquo;A DIGRESSION.—A book like this is not intended to be read through at once, or to be read aloud.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL notes</title>
+      <link>https://salehmu.github.io/notes/psql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/psql/</guid>
+      <description>Introduction into PostgreSQL # Notes:
+ SQL commands is not case sensitive, therefore SELECT = select = SeLeCt  Selecting # Regular Selection # Select syntax is being like this:
+SELECT*-- Everything FROMreal_person-- Table Name LIMIT10;-- Getting only they very first 5 IDs. This will print all email (s) from the customer table.
+Select distinct rows using distinct operator # DISTINCT clause is used to remove duplicates rows from the result output, it keeps only one row for each group if duplicated.</description>
+    </item>
+    
+    <item>
+      <title>Problem Solving Tracking Map</title>
+      <link>https://salehmu.github.io/notes/ps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/ps/</guid>
+      <description>Problem in built directory are either not completed or wrong answers. The Main OJ is leetcode, all CF problems from the last reposotiery are removed.
+   Problem Tags Difficulty Judge Statue     4. Find First and Last Position of Element in Sorted Array Binary Search Medium LC Accepted   36. Valid Sudoku Matrix Medium LC Accepted   39. Combination Sum Backtracking Medium LC Accepted   53.</description>
+    </item>
+    
+  </channel>
+</rss>
