@@ -16,5 +16,16 @@
       <description>Terminology # A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\). \(|E|\) can range from zero to a maximum of \(|V|^{2} - |V|\). A graph with relatively few edges is called sparse, while a graph with many edges is called dense.</description>
     </item>
     
+    <item>
+      <title>Introduction to Non-theoretical Computational Geometry</title>
+      <link>https://salehmu.github.io/notes/gemtry/</link>
+      <pubDate>Fri, 17 Dec 2021 19:57:19 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/gemtry/</guid>
+      <description>Based on TopCoder&amp;rsquo;s thrive and Computational Geometry (252-1425-00L) HS13 lecture notes. (Problems mostly from LeetCode)
+Introduction # I&amp;rsquo;m not sure how to properly introduce this long plain text —or even how to put it—. You can easily consider it as a small handbook that contains some computational problems solutions, or like Nietzsche says in his Dawn of Day:
+ &amp;ldquo;A DIGRESSION.—A book like this is not intended to be read through at once, or to be read aloud.</description>
+    </item>
+    
   </channel>
 </rss>
