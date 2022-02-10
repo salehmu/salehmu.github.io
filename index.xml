@@ -1,216 +1,1161 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    
     <title>Saleh Muhammed</title>
-    <link>https://salehmu.github.io/index.html</link>
-    <description>Recent content on Saleh Muhammed</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://salehmu.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>.NET</title>
-      <link>https://salehmu.github.io/tags/.net/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/.net/</guid>
-      <description></description>
-    </item>
+    <description></description>
+    <link>https://salehmu.github.io</link>
+    
+    <language>en</language>
+    <copyright>Copyright 2022, Ronalds Vilcins</copyright>
+    <lastBuildDate>Sat, 08 Jan 2022 05:28:26 +0200</lastBuildDate>
+    <generator>Hugo - gohugo.io</generator>
+    <docs>http://cyber.harvard.edu/rss/rss.html</docs>
+    <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
     
     <item>
-      <title>Computer Science</title>
-      <link>https://salehmu.github.io/tags/computer-science/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/computer-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>https://salehmu.github.io/tags/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithms</title>
-      <link>https://salehmu.github.io/tags/algorithms/</link>
-      <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/algorithms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grahps</title>
-      <link>https://salehmu.github.io/tags/grahps/</link>
-      <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/grahps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Books</title>
-      <link>https://salehmu.github.io/tags/books/</link>
+      <title>Pervez Hoodbhoy&#39;s Islam and Science: How Not to Read History</title>
+      <link>https://salehmu.github.io/posts/islam-and-science/</link>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction &lt;a href=&#34;#introduction&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There is that Quranic expression from Bara&amp;rsquo;ah: He layeth his foundation [constructing] on an
+undermined sand-cliff, it is ready to crumble to pieces with him (Arabic:  أَسَّسَ بُنْيَانَهُ عَلَىٰ
+شَفَا جُرُفٍ هَارٍ فَانْهَارَ بِهِ فِي نَارِ جَهَنَّمَ), a lot of arguments are based on such an &amp;ldquo;undermined sand
+cliff&amp;rdquo; which is really ready to crumble but the &amp;lsquo;argumenter&amp;rsquo; doesn&amp;rsquo;t give a lot of attention
+of this, and he prolongs, decorates and fortifies his argument until the point it becomes a
+book: hundreds of page based on some inexact arguments. There are a lot of examples of this,
+American creationists exert a lot of efforts based on false beliefs, they even created a
+fully so called &amp;lsquo;scientific journal&amp;rsquo; called &lt;em&gt;&lt;a href=&#34;https://bio-complexity.org/ojs/index.php/main&#34;&gt;biocomplexity&lt;/a&gt;&lt;/em&gt; which tries to prove that
+bio-objects are too complicated to be created by a blind watchmaker. This is led by the
+misunderstanding to every evolutionary fact, all the creationists claims however in how
+many pages it is descried, it is probably can be refuted in a few paragraphs which might
+sounds insanity to someone who watching this happens from afar.&lt;/p&gt;
+&lt;p&gt;Some chapters in Dr. Hoodbhoy&amp;rsquo;s, a Pakistani nuclear physicist, book are very
+applicable to this.&lt;/p&gt;
+&lt;h2 id=&#34;methodology&#34;&gt;Methodology &lt;a href=&#34;#methodology&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hoodbhoy&amp;rsquo;s book consists of 12 chapters:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;1. Islam and Science: Are They Compatible?
+2. Science: Its Nature and Origins
+3. The War Between Science and Medieval Christianity
+4. The State of Science in Islamic Countries Today
+5. Three Muslim Responses to Underdevelopment
+      - The Restorationist
+      - The Reconstructionist Line
+      - The Pragmatist Line
+6. Bucaille, Nasr and Sardar - Three Exponents of Islamic
+7. Can There Be An Islamic Science?
+8. The Rise of Muslim Science
+9. Religious Orthodoxy Confronts Muslim Science
+10. Five Great &amp;#39;Heretics&amp;#39;
+      - AI-Kindi (801-873)
+      - AI-Razi (865-925)
+      - Ibn Sina (980-1037)
+      - Ibn Rushd (1126-1198)
+      - Ibn-Khaldun (1332-1406)
+11. Why Didn&amp;#39;t the Scientific Revolution Happen in Islam?
+12. Some Thoughts for the Future
+      - Appendix: They Call It Islamic Science
+      - The Scientific Miracles Conference
+      - The Amazing Conclusions of Islamic Science
+      - Is This Science?
+      - Falsifiability: A Criterion for Science
+      - What Islamic Science Actually Is
+      - Its Political Roots
+      - A Reponse S. Bashiruddin Mahmood
+      - My Reply to Mr Mahmood
+      - Comments from the Wall Street Journal
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;They can be categorized by 5 kinds:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The nature of science and the history of the definition of science (Chapters 2, 3).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &amp;ldquo;state&amp;rdquo; of the &amp;ldquo;Islamic&amp;rdquo; science in the new world (Chapters 4, 12 and 5)&lt;/p&gt;
+&lt;p&gt;Which in he ignores the political turmoil behind anything that happens in the Middle
+East (the overwhelming of what he calls the Islamic World).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A historical background (Chapter 10).&lt;/p&gt;
+&lt;p&gt;Or More precisely, a horrible historical background in which he tries to establish a
+constructing for the phantom war between &amp;ldquo;Science and Islam&amp;rdquo; by claiming that this war
+has been forever between the top Islamic scientist, the figures of the Islamic
+Renaissance: Ibn Rushd, Ibn Sina, Al-Kindi, AL Razi and Ibn-Khaldoun, he ignores
+every historical event in their lives.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mockery on many ignorants who claim to do science (and he designate it to Islamic Science) (Chapter 12)&lt;/p&gt;
+&lt;p&gt;Hoodbohy makes a very good use of straw man arguments, for instance in chapter 5
+&amp;ldquo;Three Muslims Responses to Underdevelopment&amp;rdquo; he chooses carefully the most lunatic
+responses to laugh on and refute.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sterile discussion on the nature of Islamic science (Chapters 1, 7 and 9)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This article probably will not be another response from the Islamic science proponents, but
+a critique of facts Hoodbhoy ignored especially the historical facts in chapter 10 &lt;em&gt;Five
+Great Heretics&lt;/em&gt;. I will try to put on my views of faith and science in a conclusion.&lt;/p&gt;
+&lt;h2 id=&#34;the-forth-muslim-response-to-underdevelopment&#34;&gt;The Forth Muslim Response to Underdevelopment &lt;a href=&#34;#the-forth-muslim-response-to-underdevelopment&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The mushrooming of fundamentalist Islamic movements in the 1970s and 1980s is its most
+concrete manifestation. From nominally secular Egypt to the Wahabi Islamic Kingdom of Saudi
+Arabia, from the revolutionary Shi&amp;rsquo;ite state of Ayatollah Khomenei to the Islamic Republic
+of Pakistan, &lt;strong&gt;the trumpets call incessantly for Holy War!&lt;/strong&gt;. &lt;em&gt;Holy War&lt;/em&gt; against the &lt;!-- raw HTML omitted --&gt;secular&lt;!-- raw HTML omitted --&gt;,
+rationalist and universalist ideal. &lt;em&gt;Holy War&lt;/em&gt; against capitalism, socialism, and communism
+alike. &lt;em&gt;Holy War&lt;/em&gt; to establish one or other vision of an ideal Islamic state. &lt;em&gt;Holy War&lt;/em&gt; to
+fight against the principle - first enunciated by the Arab (and Muslim) philosopher &lt;strong&gt;Ibn
+Rushd&lt;/strong&gt; some 800 years ago - that human reason is the only instrument which should be allowed
+to guide human society. And Holy War against the foundations of modern, secular, scientific
+thought and method.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This proem states the main problem with the book: the complete historical frame of all these
+events is being ignored. For instance the slump of the Arabic nationality and secular
+movements in the Arab world, which always had been on a feud with the Muslims Brotherhood
+(MB henceforth), one of the main causes of the re-rise of Islamic fundamentalism in the Arab
+world, and it&amp;rsquo;s also one of the most influential on Jamaat e-Islami&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; which Hoodbhoy
+designates as partition of the &amp;lsquo;restorationism line&amp;rsquo;, who knows how it would go if Israel
+did not exist to kill the core of Arab secularism in Egypt (Gamal Abdelnasser&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;) so he
+could continue to put pressure on them, or even if there were no Saddat to fund Islamists in
+Egypt to defend communism and left-wing, if the U.S. didn&amp;rsquo;t fund all these pro-wahhabi
+movements in the 80s-90s, Saudi Arabia alike, we wouldn&amp;rsquo;t see a lot of figures of neo-Sahwa
+by the day, as well a lot of people that helped to establish the sick Islamic modern
+awareness.&lt;/p&gt;
+&lt;p&gt;There is a lot of consequential events that led to where we are today, all of it is not
+really related to Islam rather than the Middle East and its political unrest, actually we
+will observe that this is mostly the main reason [speaking of political issues] of the
+phantom war between science and Islam in the following paragraphs.&lt;/p&gt;
+&lt;p&gt;Dr. Hoodbhoy used in his book what I can name the most lunatic &amp;lsquo;responses&amp;rsquo; to refute from
+Jammat e-Islam, which thinks that &amp;ldquo;All modernist ideologies are characterized by man
+worship. Man worship most often appears under the guise of science. Modernists are convinced
+that progress in scientific knowledge will eventually confer upon them the powers
+of Divinity.&amp;quot;&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; as Maryam Jameelah, a spokesperson of it, puts. Also, its founder thinks
+that &amp;ldquo;geography, physics, chemistry, biology, zoology. Geology and economics are taught
+without reference to Allah and his Messenger and are hence a source of gumrahi (straying
+from the truth)&amp;quot;&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;So I&amp;rsquo;m going to skip the three &lt;em&gt;restorationist, reconstructionist, pragmatist&lt;/em&gt; lines, because
+they don&amp;rsquo;t really represent a response to the underdevelopment.&lt;/p&gt;
+&lt;h4 id=&#34;jamal-al-din-al-afghani-and-hussine-fahmy&#34;&gt;Jamal al-Din al-Afghani and Hussine Fahmy &lt;a href=&#34;#jamal-al-din-al-afghani-and-hussine-fahmy&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;However, Hoodbhoy began to establish the phantom war between science and Islam in this
+chapter, in The Prgamist line speaking of Shiekh Gamal El Dine Al Afghani&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In 1870 Afghani was expelled from Istanbul under pressure from the clergy. His crime was the
+advocacy of a Darul-Funun, a new university devoted to the teaching of modern science.&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hoodbhoy quotes this event from An Islamic Response to Imperialism Political and Religious
+Writings of Sayyid Jamal ad-Din al-Afghani by Nikki R. Keddie, which is not really a
+biography, however Keddie himself said about this event that &amp;ldquo;no text of the talk seems to
+exist&amp;rdquo;&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt; and he refuses to take Muhammad Abdo&amp;rsquo;s, who had been there, testimony because
+it is &amp;lsquo;possibly doctored&amp;rsquo; he says [Note that Keddie wrote this in a similar context to
+Hoodbhoy&amp;rsquo;s. Possible bias]. Here is the story from a copy of Abdo&amp;rsquo;s testimony&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;And after sex months in AlMa&amp;rsquo;raef Majles, Afghani had been straightforward and righteous, and
+he sought to the popularization of Al Maraef, which would &lt;strong&gt;deduct&lt;/strong&gt; a lot from &lt;em&gt;Hussin Fahmy&amp;rsquo;s&lt;/em&gt;,
+&lt;!-- raw HTML omitted --&gt;Imam of Istanbul&lt;!-- raw HTML omitted --&gt; then, money, so &lt;strong&gt;he was mad on Afghani&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;And in Ramadan 1287 hāʾ, Dar Al Funoon president asked Afghani to give a speech to talk
+about industries, Afghani refused because his Turkey wasn&amp;rsquo;t good enough, but Tahseen Afandy
+insisted, so Afghani wrote the speech and showed it to Sawfat Basha, the minister of Al
+Ma&amp;rsquo;araef then and a lot of other representatives of Istanbul [See all the names in the
+original text] and all of them liked it.&lt;/p&gt;
+&lt;p&gt;Afghani compared industry with some biological organs and faith, and in somehow Hussein
+Fahmy, the Imam who had in fuel with Afghani before, interpreted it as Afghani was saying
+that &amp;ldquo;Al Nubwa&amp;rdquo; (means Allah&amp;rsquo;s revelation) is a kind of industry so in somehow he says that
+the Prophet was just a cleaver literal and the result is he must be Kafer.&lt;/p&gt;
+&lt;p&gt;Fahmy went to the preachers in Istanbul, and as powerful cleric he threatened them to spear
+the publicity that Afghani spears disbelief and blasphemy.&lt;/p&gt;
+&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
+&lt;p&gt;I think it&amp;rsquo;s clear now why Fahmy was the only one to be mad of Afghani&amp;rsquo;s speech however the
+overwhelming of Istanbul representatives liked it, because he was mad on him since the
+popularization of Al Maraef, it was not a muslim response to Afghani because he talked about
+science otherwise he would have been expelled from all countries he had visited.&lt;/p&gt;
+&lt;h4 id=&#34;underdevelopment-in-the-new-arab-world&#34;&gt;Underdevelopment in The New Arab World &lt;a href=&#34;#underdevelopment-in-the-new-arab-world&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Lots of modern literature tried to re-explain the underdevelopment in the Arab world (e.g.
+Cammett, Melani. 2018) to a lot of reasons like the modern colonial heritage or even
+corruption. The question of underdevelopment might be discussed further in the future in this
+blog, however, I&amp;rsquo;d like to talk in brief about it.&lt;/p&gt;
+&lt;p&gt;Hoodbhoy believes, like me, that the overwhelming majority of people in the Islamic world are
+being satisfied by the belief of the pragmatist line: &amp;ldquo;pragmatist Muslims still form the
+majority. The electoral defeats of the fundamentalist parties in several Muslim countries
+strongly suggest that most Muslims will not accept fundamentalist versions of the Faith
+when there is an alternative&amp;rdquo;&lt;sup id=&#34;fnref:9&#34;&gt;&lt;a href=&#34;#fn:9&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;. However, this put him in a contradiction: as the most people are not fundamentalists, and there are some countries without an underdevelopment
+issues (The U.A.E., Qater, etc…), why we can&amp;rsquo;t remark science in these countries?&lt;/p&gt;
+&lt;p&gt;We can give a lot of arbitrary social reasons, for example, the majority of people that live
+in a country like the U.A.E. might not be interested even in doing science, the U.A.E. people
+have been in tribes to the last century, they are new to things like schools and university,
+it&amp;rsquo;s very discursive that they won&amp;rsquo;t be interested in science like other peoples. These
+countries are just out from either long colonial eras or a long marginalization: even during
+the Abbasid and Ottoman Caliphate, these countries wasn&amp;rsquo;t an interest to any of the ruling
+powers.&lt;/p&gt;
+&lt;p&gt;This is applicable to any of what Abdul Rahman Munif calls &amp;ldquo;Cities of Salt&amp;rdquo;, for instance,
+try to guess when the first university in Saudi Arabia was established? It is not even more
+than 100 years ago, it was about in 1950, U.A.E. had its first university in 1976.&lt;/p&gt;
+&lt;p&gt;In the other side, the countries with more articulate history in science (e.g. Egypt, Syria,
+Lebanon and Iraq) are suffering from political upheavals in the daily basis Lebanon is going
+through an endless crisis, and it does not emerge from one war unless it enters another.
+Egypt and Iraq are going through two phases that are the worst in their history. 30% of
+people are under poverty threshold in the official statements in Egypt, such a people
+shouldn&amp;rsquo;t be every interested in doing science.&lt;/p&gt;
+&lt;h2 id=&#34;five-great-heretics&#34;&gt;Five Great &amp;lsquo;Heretics&amp;rsquo; &lt;a href=&#34;#five-great-heretics&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In this chapter Hoodbhoy gives us examples of the &lt;em&gt;holy&lt;/em&gt; insane war between Islamic
+fundamentalists and science, he gives five examples, five heretics: Al-Kindi AI-Kindi
+(801-873), AI-Razi (865-925), Ibn Sina (980-1037), Ibn Rushd (1126-1198) and Ibn-Khaldun
+(1332-1406). I have not studied Islamic philosophy before, but I&amp;rsquo;m pretty sure Hoodbhoy
+doesn&amp;rsquo;t know a lot of those philosophers&#39; history nor their history.&lt;/p&gt;
+&lt;p&gt;The main argument in this chapter here is that the following scientists had been accused of
+disbelief.&lt;/p&gt;
+&lt;h3 id=&#34;al-kindi--801-873&#34;&gt;Al-Kindi (801-873) &lt;a href=&#34;#al-kindi--801-873&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;m glad that Hoodbhoy started with Al-Kindi, because his story is the most retable to my
+argument that most of Islamic philosophers and scientists who had been accused by disbelief,
+wasn&amp;rsquo;t accused of a religious view rather a political issue with the governor (Khalifa).&lt;/p&gt;
+&lt;p&gt;Hoodbhoy designates Al-Kindi to be a one of Mu&amp;rsquo;tazilite, which is inaccurate, there is no
+any evidence that Al-Kindi was one of them, in fact, there is very rare books about him in
+the current time, Islamic historian are not even sure about his previous religion before he
+converted to Islam as the Islamic historian Abu&amp;rsquo;l-Hasan Bayhaqi says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And they weren&amp;rsquo;t sure of Al-Kindi, some people said he was a Jewish then he converted to
+Islam, and others said he was christian.&lt;sup id=&#34;fnref:10&#34;&gt;&lt;a href=&#34;#fn:10&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;10&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can find a lot of funny stories about Al-Kindi with Abu Tamam and other writers, but
+there is a story that you will find only in Hoodbhoy&amp;rsquo;s book:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the court of AI-Mamun, AI-Kindi was a star who shone bright in the
+foremost cultural centre of the world. His academic pursuits maintained their
+vigour in the subsequent reign of the rationalist Caliph al-Mutassim, and then
+of al-Wathiq. But then came the ascendancy of the orthodox Sunni Caliph
+AI-Mutawwakil, and with it the end of a long period of liberalism. It was not
+hard for the ulema to convince the ruler that the philosopher had very
+dangerous beliefs. Mutawwakil soon ordered the confiscation of the scholar&amp;rsquo;s
+personal library, known to all Baghdad as al-Kindiyah. But that was not
+enough. The sixty-year-old Muslim philosopher also received fifty lashes
+before a large crowd which had assembled. Observers who recorded the event
+say the crowd roared approval with each stroke.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What a sad fake story, sadly I couldn&amp;rsquo;t examine Hoodbhoy&amp;rsquo;s reference here, he says in the
+footnotes that it is &lt;em&gt;The Genius of Arab Civilization&lt;/em&gt; by J. R. Hayes, which is not
+available at all, however, after I searched in mostly all Islamic historic book that
+mentioned AL-Kindi, I can insure by 99% that this is an inaccurate story.&lt;/p&gt;
+&lt;p&gt;At least not the part of that the fundamentalist Mutawwakil that order to give the
+philosopher 50 lashes because he had been a very bad philosopher.&lt;/p&gt;
+&lt;p&gt;Nevertheless, the part about his issue with Al Mutawwakil and specially the classification of
+his library did happen, but not for the reasons that Hoodbhoy assumes. The Islamic
+historian  Ibn Abi Usaybi&amp;rsquo;a tells us the full story in his book Lives of the Physicians
+[&amp;lsquo;Eyoun Al Inbaa&amp;rsquo; fi Tabiqt Al Atibaa&#39;]&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;11&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;Al-Kindi had been on feud with Banū Mūsā, a family group of scientists and engineers who served the
+caliphs on the royal court alongside with Al-Kindi, however, Al-kindi was the most one of
+them to be closer to the Caliphate which Banū Mūsa didn&amp;rsquo;t like very much, so they told him
+that Al kinndy &amp;ldquo;criticizes you politically and spreads disbelief&amp;rdquo; then, Al-Mutwakkel ordered
+to classify all of Al-Kindi books and put it somewhere called &amp;ldquo;Al Maktaba Al Kindiah&amp;rdquo; where
+Banū Mūsā studied it.&lt;/p&gt;
+&lt;p&gt;The way that some friend of Al-Kindy manged to get back his library happened as the
+following: Al Mutawkel wanted to build a Dam, he ordered Banū Mūsā to take the responsibility
+of it, unfortunately they failed him and all of them were about to die (as they destroyed
+many resources and materials, they were sure that Al Mutawkeel was going to kill them
+all), so they rushed to Sanad ibn Ali, one of the best engineers ever in the Islamic world
+and Al-Kindi best friend then. Ali was aware of Banū Mūsā&amp;rsquo;s plan to bring Al-Kindi down, so
+he required them to bring Al-kendy&amp;rsquo;s library back again to him otherwise he wouldn&amp;rsquo;t help.
+And this is how Al-Kindy got his library back.&lt;/p&gt;
+&lt;p&gt;Thankfully some historians had written about how Al-Kindy dead, and it doesn&amp;rsquo;t have anything
+to do with the sad fiction story that he &amp;ldquo;couldn&amp;rsquo;t recover from the ordeal of the public
+flogging&amp;rdquo;. ‘Alī ibn Yūsuf al-Qifṭī says in his popular book &amp;ldquo;The biographies and the books
+of the great philosophers&amp;rdquo;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And Abu &amp;lsquo;Yaqoub [Refers to al-Kindi] had a problem with drinking, and he had repented of it
+lately and started to drink Sharab Al Asal [means the honey drink, I&amp;rsquo;m not sure what is it],
+which clotted in his blood, so he dead&lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;12&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is all about Al-Kindi, as I said there was no evidence that he was one of Mu&amp;rsquo;tazilite,
+actually Hoodbhoy gives an example of his Mu&amp;rsquo;tazilitism by saying that he interpret a verse
+from Quran &amp;lsquo;rationally&amp;rsquo;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To give an example of the allegorical reasoning that AI-Kindi believed in,
+consider verse L V5 of the Qur&amp;rsquo;an. In this passage, the believer is told that the
+sun, moon, stars, mountains, trees and beasts &amp;lsquo;bow themselves&amp;rsquo; before God.
+For the unsophisticated, this invokes an image wherein all creation literally
+bends in prayer. But AI-Kindi gave an elaborate linguistic argument that the
+Arabic word for &amp;lsquo;bow&amp;rsquo; should be understood as meaning &amp;lsquo;obey&amp;rsquo;. Thus, the
+naive picture of universal worship should instead be understood as the
+universal obedience to God&amp;rsquo;s will.&lt;sup id=&#34;fnref:13&#34;&gt;&lt;a href=&#34;#fn:13&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;13&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m not sure where Hoodbhoy read this, as I said I couldn&amp;rsquo;t a digital format of his source,
+but anyway this is not a rational interpretation at all rather a regular one. Give a look at
+Al-Baghawi&amp;rsquo;s Taffsir, and hi is a one of the top fundamentalists in Islam:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The prostration was said that it was in the sense of obedience, for there is no inanimate
+object that isnot obedient to God, submissive, and has a glorifying one for him&lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;14&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;averroes-ibn-rushed--1126-1189&#34;&gt;Averroes, &lt;em&gt;Ibn Rushed&lt;/em&gt; (1126-1189) &lt;a href=&#34;#averroes-ibn-rushed--1126-1189&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Hoodbhoy says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ibn Rushd, as Qazi of Seville and later Cordova, became the victim of political
+intrigues and a target for the orthodoxy. When the Caliph Abu Yaqub died in
+1184, and was succeeded by his son Abu Yusuf, Ibn Rushd soon fell out of
+favour. A prohibition was issued against the study oflogic and science by order
+of the Caliph. Ibn Rushd was eventually banned from Cordova and was
+unceremoniously carted off to a small provincial town together with other
+students of philosophy. All his books, except for some strictly scientific ones,
+were ordered burnt. It was only towards the end of the 12th century that he was
+restored to favour, and returned to Marrakesh to die&lt;sup id=&#34;fnref:15&#34;&gt;&lt;a href=&#34;#fn:15&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;15&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m speechless in correcting this, I have no choice, so I&amp;rsquo;ll translate subchapter from Ibn
+Rušd biography&lt;sup id=&#34;fnref:16&#34;&gt;&lt;a href=&#34;#fn:16&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;16&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A lot of translated books tried to guess the reasons of Averroes&amp;rsquo; catastrophe, and all of it
+is nothing but guesses attempt to discover the real accusation that Averroes was sued for.
+It was &amp;ldquo;Things in his books, it was said that it was written by his own hands&amp;rdquo; and one of
+these &amp;ldquo;things&amp;rdquo; is that he descried the giraffe in his book &amp;ldquo;The Animal&amp;rdquo; and said &amp;ldquo;I&amp;rsquo;ve seen
+it in the royal court of Barber kind&amp;rdquo; which frustrated Khalifa Abd al-Muʾmin al-Manṣūr of
+him, and this funny story continues and make up that Averroes tried to apologist for that,
+and he said to al-Manṣūr that he meant king of Birin&lt;sup id=&#34;fnref:17&#34;&gt;&lt;a href=&#34;#fn:17&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;17&lt;/a&gt;&lt;/sup&gt; not of Barber but the reader
+confused it with barbar.&lt;/p&gt;
+&lt;p&gt;And this is completely false story, as The Animal Book was written in Sevilla in 565 hāʾ, as
+Averroes said himself, it was when he was a judge for Abi Youssef Y&amp;rsquo;qoub, about 6 years
+before al-Manṣūr governess, and 15 years before the court.&lt;/p&gt;
+&lt;p&gt;[&amp;hellip;]&lt;/p&gt;
+&lt;p&gt;However, the writer of Mu&amp;rsquo;jab&lt;sup id=&#34;fnref:18&#34;&gt;&lt;a href=&#34;#fn:18&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;18&lt;/a&gt;&lt;/sup&gt; that we made a use of before, suggested two reasons: one great
+and the other cryptic, and it is the main reason, he says &amp;ldquo;It was the great antagonism of
+al-Manṣūr because Averroes didn&amp;rsquo;t serve him in the best way that a Khalifa used to be
+served with&amp;rdquo; and he mentions the giraffe story which, as we mentioned above, is very
+inaccurate and has a lot of contradictions. And the &amp;lsquo;cryptic&amp;rsquo; reason (the main one) is
+because Averroes said that Venus is a god, and we excluded this possibility because it isn&amp;rsquo;t
+relatable to him at all.&lt;/p&gt;
+&lt;p&gt;We have only two possibilities try to understand the reason of the catastrophe:&lt;/p&gt;
+&lt;p&gt;One of them is that it was a pretext, and the main reason —indirect reason— is Manṣūr&amp;rsquo;s
+aversion to Averroes because Averroes used to tell him that his behaviour is not
+inappropriate to a king, and what was said the Córdoba philosopher wasn&amp;rsquo;t complimenting him
+enough, instead he used to talk to him like &amp;ldquo;listen to me, my brother!&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;And the second one is what historians were unanimous on, that people of Córdoba didn&amp;rsquo;t like
+Averroes at all because he had been better than them, they envied and competed with him in
+the proximity to the Khalifa. [&amp;hellip;]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Al-Jabri after that continues to explain the reason that he think is the real one, and it is
+a book on politics, in which Ibn Rushd appears criticize the rule of al-Mansur. You can
+observe the following: There is no any exist of a war between orthodox fundamentalists
+and a rationalist Averroes but three possibilities:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Averroes criticized al-Manṣūr policy in his book of politics.&lt;/li&gt;
+&lt;li&gt;People of Córdoba made up an affliction between Ibn Rushd and al-Manṣūr by deliberately misunderstanding his words on Venus.&lt;/li&gt;
+&lt;li&gt;The Caliph punished Ibn Rushd because he did not praise him well.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;ibn-khaldun--1332-1406&#34;&gt;Ibn Khaldun (1332-1406) &lt;a href=&#34;#ibn-khaldun--1332-1406&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Hoodbhoy says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It is a sad commentary on the state of Muslim scholarship that Ibn Khaldun
+remained a virtual nonentity until he was discovered by Orientalists. Now that
+he has their stamp of recognition, many scholars - excepting Arab racialists
+and the extreme orthodox - have entered into a competition to see whose
+encomiums are the loudest.&lt;sup id=&#34;fnref:19&#34;&gt;&lt;a href=&#34;#fn:19&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;19&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It seems that Hoodboy couldn&amp;rsquo;t find anything about the infidelity of Ibn Khaldoun, as he was
+loved by most people in his ages, even by fundamentalists in our days, I don&amp;rsquo;t know who
+are the Arab racialists and the extreme orthodox that he talks about, however he
+gives us an example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Taha Husain, the modernist Egyptian scholar, describes Ibn Khaldun as a man with an obnoxiously inflated ego and a dishonest rationalist who merely masqueraded as a Muslim.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So, Taha Husain The biggest enemy of Azhar and the fundamentalists in the 1990s, who
+criticized political Islam in such a way that Muslims themselves doubted his faith.. is one
+of the Arab racialists and the extreme orthodox. I&amp;rsquo;ve no comment on that.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion &lt;a href=&#34;#conclusion&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;the-holy-war&#34;&gt;The Holy War &lt;a href=&#34;#the-holy-war&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You might notice that I didn&amp;rsquo;t give a response to Hoodbhoy&amp;rsquo;s claims about Avicenna and
+al-Razi, and that&amp;rsquo;s because: I couldn&amp;rsquo;t find any relabel biography for al-Razi, I didn&amp;rsquo;t
+find also any reference that talked about Hoodbhoy&amp;rsquo;s claim about his blindness, however I
+found that one of the greatest fundamentalists in Islam, Imam Zahbi, Praises Abu Bakr
+Al-Razi, which means he couldn&amp;rsquo;t be a heretic.&lt;/p&gt;
+&lt;p&gt;And the reason for skipping Avicenna (Ibn Sina) is that he is the one that could be named a
+&amp;lsquo;heretic&amp;rsquo;, I&amp;rsquo;m not the one to talk about his, but the main point is that the mean reason
+that made a lot of fundamentalists accuse him of infidelity is his issues with sufi
+metaphysics (Arabic: وِحْدَّة الوُجودِ) it was not related to his science at all, even Ibn
+Taymiyyah, the godfather of Sahwa, fundamentalists and even terrorists movements, absolved
+him of infidelity after he had read in ibn Khallikān&amp;rsquo;s biography about him that he &amp;ldquo;have
+repented of all of his late heresy&amp;rdquo;&lt;sup id=&#34;fnref:20&#34;&gt;&lt;a href=&#34;#fn:20&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;20&lt;/a&gt;&lt;/sup&gt;, however Hoodbhoy prefers to believe that they just
+didn&amp;rsquo;t like that he was doing science and medicine, which is insanity.&lt;/p&gt;
+&lt;h3 id=&#34;underdevelopment&#34;&gt;Underdevelopment &lt;a href=&#34;#underdevelopment&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I do have a problem with Hoodbhoy&amp;rsquo;s presumed causes of underdevelopment in the Islamic
+world, as I said before, the Islamic Its presentation was and is still vulnerable to
+colonial and imperial movements and political upheavals, all of this affect the whole
+educational process. As I said before, people of Syria won&amp;rsquo;t probably think about doing
+science while Israel bombs Damascus.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://salehmu.github.io/images/sand.jpg&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hoodbhoy, P. (1991). Islam and Science: Religious Orthodoxy and the Battle for Rationality. Zed Books.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Liu, J. (2010, September 15). Muslim Brotherhood and Jama’at-i Islami. Pew Research Center’s Religion &amp;amp; Public Life Project. &lt;a href=&#34;https://www.pewforum.org/2010/09/15/muslim-networks-and-movements-in-western-europe-muslim-brotherhood-and-jamaat-i-islami/&#34;&gt;https://www.pewforum.org/2010/09/15/muslim-networks-and-movements-in-western-europe-muslim-brotherhood-and-jamaat-i-islami/&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Chomsky, N. (2004). On Religion and Politics, Noam Chomsky interviewed by Amina Chaudary. Islamica Magazine. &lt;a href=&#34;https://chomsky.info/200704%5F%5F/&#34;&gt;https://chomsky.info/200704%5F%5F/&lt;/a&gt;: The attitude toward Islam is quite complex. The U.S. has always supported the most extreme fundamentalist Islamic movements and still does. The oldest and most valued ally of the U.S. in the Arab world is Saudi Arabia, which is also the most extremist fundamentalist state. By comparison, Iran looks like a free democratic society – but Saudi Arabia was doing its job. The enemy for most of this period has been secular nationalism. U.S.-Israeli relations, for example, really firmed up in 1967 when Israel performed a real service for the U.S. and Saudi Arabia. Namely, it smashed the main center of secular nationalism, (Gamal Abdul) Nasser’s Egypt, which was considered a threat and more or less at war with Saudi Arabia at the time. It was threatening to use the huge resources of the region for the benefit of the population of the countries of the region, and not to fill the pockets of some rich tyrant while vast profits flowed to Western corporations.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hoodbhoy, P. (1991), ibid, pp. 52&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Ibid, pp. 53.&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hoodbhoy, P. (1991), ibid, pp. 53.&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Keddie, N. R. (1983). An Islamic Response to Imperialism: Political and Religious Writings of Sayyid Jamal ad-Din “al-Afghani” (Volume 21) (Near Eastern Center, UCLA) (First ed.). University of California Press, pp. 17.&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;الأعمال الكاملة للإمام الشّيْخ محمَّد عَبْده: ترجمة جمال الدين الأفغاني. (ca. 1899). Quran Link. &lt;a href=&#34;https://www.quran.link/books/89/101/&#34;&gt;https://www.quran.link/books/89/101/&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:9&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hoodbhoy, P. (1991), ibid, pp. 63.&amp;#160;&lt;a href=&#34;#fnref:9&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:10&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Bayhaqi, A. ’.-H. (1154). Tarikh Hokmaa Al Islam [Bayhaqi’s history]. مطبة الترقي. &lt;a href=&#34;https://shamela.ws/book/273/5&#34;&gt;https://shamela.ws/book/273/5&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:10&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Usaybi’Ah, I. A., van Gelder, J. G., &amp;amp; Cockrell, S. H. (2020). Anecdotes and Antidotes: A Medieval Arabic History of Physicians (Oxford World’s Classics) (Abridged ed.). Oxford University Press. &lt;a href=&#34;http://islamport.com/w/tkh/Web/340/199.htm&#34;&gt;http://islamport.com/w/tkh/Web/340/199.htm&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:11&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:12&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Al-Qifṭī, ‘Alī ibn Yūsuf (2005). Shams al-Dīn, Ibrāhīm (ed.). Ikhbār al-‘Ulamā’ bi-akhbār al-ḥukamā’ (tr. The biographies and the books of the great philosophers) (in Arabic) (1st ed.). Lebanon: Dar al-kotob al-Ilmiyah. &lt;a href=&#34;http://islamport.com/w/trj/Web/295/161.htm&#34;&gt;http://islamport.com/w/trj/Web/295/161.htm&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:12&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:13&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hoodbhoy, P. (1991), ibid, pp. 111.&amp;#160;&lt;a href=&#34;#fnref:13&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:14&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Al-Baghawi, A. ū. M. ḥ. (1100). The Interpretation of al Hajj: 18. Tafisr Qura’n. &lt;a href=&#34;https://quran4all.net/ar/tafsir/4/22/18&#34;&gt;https://quran4all.net/ar/tafsir/4/22/18&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:14&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:15&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Hoodbhoy, P. (1991), ibid, pp. 114.&amp;#160;&lt;a href=&#34;#fnref:15&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:16&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This biography is from &lt;em&gt;Al-Jabri, Muhammad Abed (1998). Ibn Rushd: Sīra wa-Fikr (ابن رشد: سيرة وفكر) [Ibn Rushd: life and thought]. Center for Arab Unity Studies. pp. 62-64&lt;/em&gt; Al-Jabri is one of the contemporary philosophers and thinkers, and he devoted a part of his research to the study of Ibn Rushd&amp;#160;&lt;a href=&#34;#fnref:16&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:17&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Birin (Arabic: بِرِين) means the two lands in Arabic, refering to the Land of Morocco and Andalusia.&amp;#160;&lt;a href=&#34;#fnref:17&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:18&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Refering to Abdel Wahid al-Marrakushi, The history of the Almohades, preceded by a sketch of the history of Spain from the time of the conquest till the reign of Yúsof ibn-Téshúfin, and of the history of the Almoravides, ed. R.P.A. Dozy, 1968 (reprint of the second edition, Leyden 1881; first edition Leyden 1847)&amp;#160;&lt;a href=&#34;#fnref:18&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:19&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Ibid, pp. 116.&amp;#160;&lt;a href=&#34;#fnref:19&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:20&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;تيمية, ب. أ., &amp;amp; العيساوي, أ. (2020). ‫مجموع الفتاوى: العقيدة الجزء الرابع كتاب مفصل الاعتقاد‬ (Arabic Edition). Ketab.&amp;#160;&lt;a href=&#34;#fnref:20&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/islam-and-science/</guid>
       <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/books/</guid>
-      <description></description>
     </item>
     
     <item>
-      <title>History</title>
-      <link>https://salehmu.github.io/tags/history/</link>
-      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/history/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Science</title>
-      <link>https://salehmu.github.io/tags/science/</link>
-      <pubDate>Sun, 07 Nov 2021 02:03:39 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blogs</title>
-      <link>https://salehmu.github.io/categories/blogs/</link>
-      <pubDate>Fri, 15 Oct 2021 12:33:10 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/categories/blogs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Categories</title>
-      <link>https://salehmu.github.io/categories/</link>
-      <pubDate>Fri, 15 Oct 2021 12:33:10 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cinema</title>
-      <link>https://salehmu.github.io/tags/cinema/</link>
-      <pubDate>Fri, 15 Oct 2021 12:33:10 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/cinema/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Technology</title>
-      <link>https://salehmu.github.io/tags/technology/</link>
+      <title>Oracle: The Next Level of Data Reporting (or Abu Noaf Forums)</title>
+      <link>https://salehmu.github.io/posts/oracle-the-next-level-of-data-reporting/</link>
+      <description>&lt;p&gt;
+Sometimes I ask myself why corporates crash all these disputes about whether their
+DBMS is that safe or not. Users are not safe in any case with a corporate,
+rather, the DBs (their data) are leaked anyway in the corporate&amp;#39;s reports (which
+are sold to another users, the advertiser or whoever will use it), of course
+they won&amp;#39;t leak your metadata but not because you really matter, actually the
+opposed, you don&amp;#39;t.. your metadata are useless for anyone and they just need
+reports about people like you.&lt;/p&gt;
+&lt;p&gt;
+Anyway, I wanted to build a RDBMS infrastructure this week, which is painful
+task for me, not for I don&amp;#39;t like working with databases the but I needed to run
+an Oracle software (I&amp;#39;m pretty sure that the &amp;#39;suckness&amp;#39; and the process of making
+something so painful to use is a main feature in the proprietary software
+industry) but I got used to something like this.. It wasn&amp;#39;t a big deal.&lt;/p&gt;
+&lt;p&gt;
+But, and here is a big but, Oracle had another opinion, back in the time there
+was what we called Abut Noaf Forum, the real front of the internet in the Middle
+East, if there is something I do remember very well about that infamous period
+of my life in which I used to visit this place as one of my top sites, it won&amp;#39;t
+be all the Good Morning I7baa photos I created in my cringe PhotoShopCS setup
+nor gulf e-hooker who tried to virtual seduce me (a Sheikh) but: that you have
+to login to literally do anything includes seeing the photos I made or
+downloading it.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://salehmu.github.io/images/BjeBUBQCUAEERG_.jpg&#34;/&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+That was very annoying especially when I was outdoor with my friend and wanted
+to download some fancy wallpapers for his obsolete cell phone. But it wasn&amp;#39;t a
+problem since there wasn&amp;#39;t even an email verification so we used to sign up with
+wiqejoi@irwaojr.com. The thing here that made Abu Noaf to require us to sign up
+is that he wanted us to join his amazing community (which is tempting if you
+know what I mean). But this is not the case with the Oracle shit.&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://salehmu.github.io/images/fuck-oracle.jpg&#34;/&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Oracle has upgraded itself to the next level of data collecting, you&amp;#39;re not out
+of the game if you&amp;#39;re a developer (actually sometimes I notice that most
+developers are not &amp;#39;programmers&amp;#39; anymore, they&amp;#39;re technologies users) the but
+there are VScode (Microsoft&amp;#39;s proprietary distribution of Code text editor) and
+gdeveloper (and whatever JetBrains has for you) out there to spy on you too..
+Facebook has facebook developer products as well.. and Oracle, well, Oracle
+itself spies on you.&lt;/p&gt;
+&lt;p&gt;
+Here what happens when you need to download (and sometimes, to read) something
+with the Oracle registered trademark: you have to tell Oracle who are you, what
+are you working for, why you need the &amp;#39;thing&amp;#39;? what organization told you to use
+it and please give us its address (and patiently yours), its phone number, and
+of course the rest of your personal information.&lt;/p&gt;
+&lt;p&gt;
+Of course they store whatever they can of your fingerprints from your browser
+(e.g. screen size and the operating system), they don&amp;#39;t response to my &lt;code&gt;don&amp;#39;t
+track&lt;/code&gt; flag. But, after all of this.. would you give me a good services please?
+No.
+&lt;figure&gt;&lt;img src=&#34;https://salehmu.github.io/images/meme.jpg&#34;/&gt;
+&lt;/figure&gt;
+
+Exactly. You receive nothing worthful(at least if you&amp;#39;re using freeBSD like me
+or any other non-normie friendly usable operating system). You receive a
+non-documented software, go wiled and do your best with it. Got some errors?
+Well connect our support. Oh I forgot, you can&amp;#39;t. And that&amp;#39;s the funny part: &lt;strong&gt;You&lt;/strong&gt;
+&lt;strong&gt;can&amp;#39;t even see other&amp;#39;s solved issues to get help&lt;/strong&gt;, the but you should tell
+oracle first who are you, what&amp;#39;s your organization etc.. and no, it doesn&amp;#39;t end
+up here you have to pay to &amp;#39;subscribe&amp;#39; in a support plan, to get support in an
+issue in their made software. Imagine making money from your own bugs. lmao.
+&lt;figure&gt;&lt;img src=&#34;https://salehmu.github.io/images/kosomoracle.png&#34;/&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I feel very repent that I even thought it might be a good experience with Oracle.
+I gave up with learning pSQL after wasting one week trying to get Oracle works.
+Wish me luck.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/oracle-the-next-level-of-data-reporting/</guid>
       <pubDate>Thu, 07 Oct 2021 04:08:00 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/technology/</guid>
-      <description></description>
     </item>
     
     <item>
-      <title>Media</title>
-      <link>https://salehmu.github.io/tags/media/</link>
+      <title>Beyond Decliamists and Intellectuals</title>
+      <link>https://salehmu.github.io/posts/kalam/</link>
+      <description>&lt;p&gt;I thought that maybe &amp;lsquo;intellectuals&amp;rsquo; is not the best word to describe them,
+there is an old Arabic word &amp;ldquo;Al Mutakalimin المتكلمين&amp;rdquo; that might be better for
+such a demonstration. Mutkalmin means, idiomatically, the people who -probably
+Muslims- talked about the qualities of god (e.g. Can he smell or speak just like
+his creature?), however, the word &amp;ldquo;Mutkalim&amp;rdquo; in Arabic has nothing to do with
+the attributes of god the but it means &amp;ldquo;the people who talk&amp;rdquo;, I think the best
+translation for it is the &amp;ldquo;declaimists&amp;rdquo;, as Sa&amp;rsquo;adeldin Al Taftazani said once:
+Al Mutkalim were named after their statements that were starting with &amp;ldquo;Al Kalam
+on *some topic.&amp;quot;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;There is a common ground between the meaning of a &amp;lsquo;declaimist&amp;rsquo; and a
+non-intellectual that you see on daily basis especially in average social media
+site, I don&amp;rsquo;t want to single out a live example but let&amp;rsquo;s take \(x\) and \(let\)
+\(x\) be right-wing social media intellectual who has more than 100k loyal
+follower of his medieval instructions about miscarriage or the sexual
+orientations, if one day \(x\) figured out, or even less revolutionary, let&amp;rsquo;s
+say he&amp;rsquo;d found that some of his beliefs are either wrong or obsolete, what would
+he do? I can tell the answer is cognitive dissonance tends to be ended by denial
+of facts, trying to stick to what he already believes (just like Chatelier&amp;rsquo;s
+principle object), he is not only required to comprehend whatever he believes in, but his loyal fellows also are waiting for his directive, he won&amp;rsquo;t let them
+down. It&amp;rsquo;s getting worse in cases in which x has already a lot of bestselling
+publications which in he insures his points. Of course, within time numerous
+intellectuals are getting a cognitive flexibility enables them to change their
+thoughts smoothly, however, the majority won&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why I don&amp;rsquo;t like either to have that little audience that adapts what I
+think because I seem like a smart guy to them or to get into a discussion with
+anyone of such a kind because I know he will use all the fallacies he can use
+before he rethinks about any argument. Wise man once side:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before getting into a debate, ask your opponent, what kind of argument might can
+change your mind (in other words, ask if his beliefs are falsifiable), if he
+couldn&amp;rsquo;t tell, then such a debate is a waste of time.&lt;/p&gt;
+&lt;p&gt;&amp;ndash; I don&amp;rsquo;t know who said this.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also read &lt;a href=&#34;https://salehmu.github.io/posts/conditioning1/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Kalam on something means a statement on it.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/kalam/</guid>
       <pubDate>Tue, 28 Sep 2021 11:13:00 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/media/</guid>
-      <description></description>
     </item>
     
     <item>
-      <title>Articles</title>
-      <link>https://salehmu.github.io/categories/articles/</link>
+      <title>Regarding the &#39;Neo-Democracy&#39;, Media, and the Public Opinion in the United States</title>
+      <link>https://salehmu.github.io/posts/mediacontrol/</link>
+      <description>&lt;p&gt;Based on Chomsky&amp;rsquo;s Media Control.&lt;/p&gt;
+&lt;h2 id=&#34;democracy-and-spectator-democracy&#34;&gt;Democracy and Spectator Democracy &lt;a href=&#34;#democracy-and-spectator-democracy&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The role of the media
+in contemporary politics forces us to ask what
+kind of a world and what kind of a society we
+want to live in, and in particular in what sense
+of democracy do we want this to be a democratic society? Let me begin by counter-posing
+two different conceptions of democracy. One
+conception of democracy has it that a democratic society is one in which the public has the
+means to participate in some meaningful way
+in the management of their own affairs and the
+means of information are open and free. If you
+look up democracy in the dictionary you&amp;rsquo;ll get
+a definition something like that.&lt;/p&gt;
+&lt;p&gt;An alternative conception of democracy is
+that the public must be barred from managing
+of their own affairs and the means of information must be kept narrowly and rigidly con-
+trolled. That may sound like an odd conception
+of democracy, but it&amp;rsquo;s important to understand
+that it is the prevailing conception. In fact, it
+has long been, not just in operation, but even
+in theory. There&amp;rsquo;s a long history that goes back
+to the earliest modern democratic revolutions
+in seventeenth century England which largely
+expresses this point of view. I&amp;rsquo;m just going to
+keep to the modern period and say a few words
+about how that notion of democracy develops
+and why and how the problem of media and dis-
+information enters within that context.&lt;/p&gt;
+&lt;p&gt;Another group that was impressed by these
+successes was liberal democratic theorists and
+leading media figures, like, for example, Walter Lippmann, who was the dean of American
+journalists, a major foreign and domestic pol-
+icy critic and also a major theorist of liberal
+democracy. If you take a look at his collected
+essays, you&amp;rsquo;ll see that they&amp;rsquo;re subtitled some-
+thing like &amp;ldquo;A Progressive Theory of Liberal
+Democratic Thought.&amp;rdquo; Lippmann was
+involved in these propaganda commissions and
+recognized their achievements. He argued that
+what he called a &amp;ldquo;revolution in the art of
+democracy,&amp;rdquo; could be used to &amp;ldquo;manufacture
+consent, &amp;quot; that is, to bring about agreement on
+the part of the public for things that they didn&amp;rsquo;t want by the new techniques of propaganda.
+He also thought that this was a good idea, in
+fact, necessary. It was necessary because, as he
+put it, &lt;strong&gt;&amp;ldquo;the common interests elude public
+opinion entirely&amp;rdquo; and can only be understood
+and managed by a &amp;ldquo;specialized class &amp;ldquo;of
+&amp;lsquo;responsible men&amp;rsquo; who are smart enough to figure things out.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This &amp;lsquo;democracy&amp;rsquo; asserts that only a small elite, the intellectual community that
+the Deweyites were talking about, can understand the common interests, what all of us
+care about, and that these things &amp;ldquo;elude the
+general public.&amp;rdquo;&lt;/p&gt;
+&lt;h3 id=&#34;election-as-a-democracy&#34;&gt;Election as a &amp;lsquo;Democracy&amp;rsquo; &lt;a href=&#34;#election-as-a-democracy&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lippmann backed this up by a pretty elaborated theory of progressive democracy. He
+argued that in a properly functioning democracy there are classes of citizens. There is first
+of all the class of citizens who have to take
+some active role in running general affairs.
+That&amp;rsquo;s the specialized class. They are the people who analyze, execute, make decisions, and
+run things in the political, economic, and ideological systems. That&amp;rsquo;s a small percentage of
+the population. Naturally, anyone who puts
+these ideas forth is always part of that small
+group, and they&amp;rsquo;re talking about what to do
+about those others. Those others, who are out
+of the small group, the big majority of the population, they are what Lippmann called &lt;em&gt;&amp;ldquo;the
+bewildered herd.&lt;/em&gt;&amp;rdquo; We have to protect ourselves
+from &amp;ldquo;the trampling and roar of a bewildered
+herd&amp;rdquo;. Now there are two &amp;ldquo;functions&amp;rdquo; in a
+democracy: &lt;strong&gt;The specialized class,&lt;/strong&gt; the responsible men, carry out the executive function,
+which means they do the thinking and planning and understand the common interests.
+Then, there is the bewildered herd, and they
+have a function in democracy too. Their function in a democracy, he said, is to be &amp;ldquo;spectators,&amp;rdquo; not participants in action. But they have
+more of a function than that, because it&amp;rsquo;s a democracy. &lt;strong&gt;Occasionally they are allowed to
+lend their weight to one or another member of
+the specialized class. In other words, they&amp;rsquo;re
+allowed to say, &amp;ldquo;We want you to be our leader&amp;rdquo;
+or &amp;ldquo;We want you to be our leader.&amp;rdquo; That&amp;rsquo;s
+because it&amp;rsquo;s a democracy and not a totalitarian
+state. That&amp;rsquo;s called an election. But once
+they&amp;rsquo;ve lent their weight to one or another
+member of the specialized class they&amp;rsquo;re sup-
+posed to sink back and become spectators of
+action, but not participants. That&amp;rsquo;s in a properly functioning democracy.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;support-our-troops-and-abandon-the-wicked-socialists&#34;&gt;&amp;lsquo;Support our troops&amp;rsquo; and Abandon the Wicked Socialists &lt;a href=&#34;#support-our-troops-and-abandon-the-wicked-socialists&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In 1937.
+There was a major strike, the Steel strike in
+western Pennsylvania at Johnstown. Business
+tried out a new technique of labor destruction,
+which worked very well. Not through goon
+squads and breaking knees. That wasn&amp;rsquo;t working very well any more, but through the more
+subtle and effective means of propaganda. The
+idea was to figure out ways to turn the public
+against the strikers, to present the strikers as
+disruptive, harmful to the public and against
+the common interests. The common interests
+are those of &amp;ldquo;us,&amp;rdquo; the businessman, the
+worker, the housewife. That&amp;rsquo;s all &amp;ldquo;us.&amp;rdquo; We
+want to be together and have things like harmony and Americanism and working together.
+Then there&amp;rsquo;s those bad strikers out there who
+are disruptive and causing trouble and breaking harmony and violating Americanism.
+We&amp;rsquo;ve got to stop them so we can all live
+together. The corporate executive and the guy
+who cleans the floors all have the same interests. We can all work together and work for
+Americanism in harmony, liking each other.&lt;/p&gt;
+&lt;p&gt;That was essentially the message. A huge
+amount of effort was put into presenting it.
+This is, after all, the business community, so
+they control the media and have massive
+resources. And it worked, very effectively. It
+was later called the &amp;ldquo;Mohawk Valley formula&amp;rdquo;
+and applied over and over again to break
+strikes. They were called &amp;ldquo;scientific methods
+of strike-breaking,&amp;rdquo; and worked very effectively by mobilizing community opinion in
+favor of vapid, empty concepts like American-
+ism. Who can be against that? Or harmony.
+Who can be against that? Or, as in the Persian
+Gulf War, &amp;ldquo;Support our troops.&amp;rdquo; Who can be
+against that? Or yellow ribbons. Who can be
+against that? Anything that&amp;rsquo;s totally vacuous.&lt;/p&gt;
+&lt;p&gt;In fact, what does it mean if somebody
+asks you, Do you support the people in Iowa?
+Can you say, Yes, I support them, or No, I don&amp;rsquo;t
+support them? It&amp;rsquo;s not even a question. It doesn&amp;rsquo;t mean anything. That&amp;rsquo;s the point. The point
+of public relations slogans like &amp;ldquo;Support our
+troops&amp;rdquo; is that &lt;strong&gt;they don&amp;rsquo;t mean anything. They
+mean as much as whether you support the people in Iowa Of course, there was an issue. The
+issue was, Do you support our policy? But you
+don&amp;rsquo;t want people to think about that issue.
+That&amp;rsquo;s the whole point of good propaganda.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are no political parties or organizations.
+It&amp;rsquo;s a long way toward the ideal, at least structurally. The media are a corporate monopoly. They have the same point of view. The two par-
+ties are two factions of the business party. Most
+of the population doesn&amp;rsquo;t even bother voting
+because it looks meaningless. They&amp;rsquo;re marginalized and properly distracted. At least that&amp;rsquo;s the goal. The leading figure in the public relations industry, Edward Bernays, actually came
+out of the Creel Commission. He was part of
+it, learned his lessons there and went on to
+develop what he called the &amp;ldquo;engineering of con-
+sent,&amp;rdquo; which he described as &amp;ldquo;the essence of democracy.&amp;rdquo; &lt;strong&gt;The people who are able to engineer consent are the ones who have the
+resources and the power to do it—the business
+community—and that&amp;rsquo;s who you work for.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;it-works&#34;&gt;It Works &lt;a href=&#34;#it-works&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;One indication
+of how much efficient is our propaganda was revealed in a study done at the University of Massachusetts on attitudes toward
+the current Gulf crisis—a study of beliefs and
+attitudes in television watching. One of the
+questions asked in that study was, How many
+Vietnamese casualties would you estimate
+that there were during the Vietnam war? The
+average response on the part of Americans today
+is about &lt;em&gt;100,000.&lt;/em&gt; The official figure is about two
+million. The actual figure is probably three to
+four million. The people who conducted the
+study raised an appropriate question: What
+would we think about German political culture
+if, when you asked people today how many Jews
+died in the Holocaust, they estimated about
+300,000? What would that tell us about German
+political culture? They leave the question
+unanswered, but you can pursue it. What does
+it tell us about our culture? It tells us quite a
+bit.&lt;/p&gt;
+&lt;p&gt;Another example happened in May 1986 the memoirs of the released Cuban
+prisoner, Armando Valladares, came out. They
+quickly became a media sensation. I&amp;rsquo;ll give you
+a couple of quotes. The media described his
+revelations as &amp;ldquo;the definitive account of the
+vast system of torture and prison by which Castro punishes and obliterates political opposition.&amp;rdquo; It was &amp;ldquo;an inspiring and unforgettable
+account&amp;rdquo; of the &amp;ldquo;bestial prisons,&amp;rdquo; inhuman torture, [and] record of state violence [under] yet
+another of this century&amp;rsquo;s mass murderers, who
+we learn, at last, from this book &amp;ldquo;has created
+a new despotism that has institutionalized torture as a mechanism of social control&amp;rdquo; in &amp;ldquo;the
+hell that was the Cuba that [Valladares] lived
+in.&amp;rdquo; That&amp;rsquo;s the Washington Post and New York
+Times in repeated reviews.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s say it&amp;rsquo;s all true. Let&amp;rsquo;s raise no questions about what happened to the one man who
+says he was tortured. At a White House ceremony marking Human Rights Day, he was singled out by Ronald Reagan for his courage in
+enduring the horrors and sadism of this bloody
+Cuban tyrant. &lt;strong&gt;He was then appointed the U.S.
+representative at the U.N. Human Rights
+Commission, where he has been able to per-
+form signal services defending the Salvadoran
+and Guatemalan governments against charges
+that they conduct atrocities so massive that
+they make anything he suffered look pretty
+minor. That&amp;rsquo;s the way things stand.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;That was May 1986. It was interesting, and
+it tells you something about the manufacture
+of consent. The same month, the surviving
+members of the Human Rights Group of El Salvador—the leaders had been killed—were
+arrested and tortured, including Herbert Anaya,
+who was the director. They were sent to a
+prison—La Esperanza (hope) Prison. While they
+were in prison they continued their human
+rights work. They were lawyers, they continued
+taking affidavits. There were 432 prisoners in
+that prison. They got signed affidavits from 430
+of them in which they described, under oath,
+the torture that they had received: electrical torture and other atrocities, &lt;strong&gt;including, in one case, torture by a North American U.S. major in uni-
+form, who is described in some detail.&lt;/strong&gt; This is
+an unusually explicit and comprehensive testimony, probably unique in its detail about
+what&amp;rsquo;s going on in a torture chamber. This
+160-page report of the prisoners&#39; sworn testimony was sneaked out of prison, along with a
+videotape which was taken showing people testifying in prison about their torture. It was dis-
+tributed by the Marin County Interfaith Task
+Force. The national press refused to cover it.
+The TV stations refused to run it. There was an
+article in the local Marin County newspaper,
+the San Francisco Examiner, and I think that&amp;rsquo;s
+all. No one else would touch it. This was a time
+when there was more than a few &amp;ldquo;light-headed
+and cold-blooded Western intellectuals&amp;rdquo; who
+were singing the praises of Jose Napoleon
+Duarte and of Ronald Reagan. &lt;strong&gt;Anaya was not
+the subject of any tributes. He didn&amp;rsquo;t get on
+Human Rights Day. He wasn&amp;rsquo;t appointed to
+anything. He was released in a prisoner
+exchange and then assassinated, apparently by
+the U.S.-backed security forces. Very little information about that ever appeared. The media
+never asked whether exposure of the atrocities—instead of sitting on them and silencing
+them—might have saved his life.&lt;/strong&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Another example is the Israeli terrorism even out of Palestine, perceived during the Gulf War. In February 1991,
+right in the middle of the bombing campaign,
+the government of Lebanon requested Israel to
+observe U.N. Security Council Resolution
+425, which called on it to withdraw immediately and unconditionally from Lebanon. That
+resolution dates from March 1978. There have
+since been two subsequent resolutions calling
+for the immediate and unconditional with-
+drawal of Israel from Lebanon. Of course it
+doesn&amp;rsquo;t observe them because the United
+States backs it in maintaining that occupation.
+Meanwhile southern Lebanon is terrorized.
+There are big torture-chambers with horrifying
+things going on. It&amp;rsquo;s used as a base for attacking other parts of Lebanon. Since 1978,
+Lebanon was invaded, the city of Beirut was
+bombed, &lt;strong&gt;about 20,000 people were killed, about
+80 percent of them civilians, hospitals were
+destroyed, and more terror, looting, and robbery
+was inflicted.&lt;/strong&gt; All fine, the United States
+backed it. &lt;strong&gt;That&amp;rsquo;s just one case. You didn&amp;rsquo;t see
+anything in the media about it or any discussion about whether Israel and the United States
+should observe U.N. Security Council Resolution 425 or any of the other resolutions, nor did
+anyone call for the bombing of Tel Aviv,
+although by the principles upheld by two-thirds
+of the population, we should. After all, that&amp;rsquo;s
+illegal occupation and severe human rights
+abuses. That&amp;rsquo;s just one case. There are much
+worse ones. The Indonesian invasion of East
+Timor knocked off about 200,000 people. They
+all look minor by that one. That was strongly
+backed by the United States and is still going
+on with major United States diplomatic and
+military support. We can go on and on.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Do you remember the University of Massachusetts study that I mentioned before? It has some interesting
+conclusions. In the study people were asked
+whether they thought that the United States
+should intervene with force to &lt;em&gt;reverse illegal
+occupation or serious human rights abuses.&lt;/em&gt; By
+about two to one, people in the United States
+thought we should. They should use force in the
+case of illegal occupation of land and severe
+human rights abuses. If the United States was
+to follow that advice, they would bomb El Salvador, Guatemala, Indonesia, Damascus, Tel
+Aviv, Capetown, Turkey, Washington, and a
+whole list of other states.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Regarding this story, you may not find a lot of information about this story, it was not covered at all by any of these propagandists, however, you may find this &lt;a href=&#34;https://web.archive.org/web/20210814044017/https://unfinishedsentences.org/reports/torture-in-el-salvador/&#34;&gt;page&lt;/a&gt; useful.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/mediacontrol/</guid>
       <pubDate>Sat, 14 Aug 2021 06:02:23 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/categories/articles/</guid>
-      <description></description>
     </item>
     
     <item>
-      <title>Politics</title>
-      <link>https://salehmu.github.io/tags/politics/</link>
-      <pubDate>Sat, 14 Aug 2021 06:02:23 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/politics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Psychology</title>
-      <link>https://salehmu.github.io/tags/psychology/</link>
+      <title>On Social Media Neoconditioning or Why Redditor is a NPC?</title>
+      <link>https://salehmu.github.io/posts/conditioning1/</link>
+      <description>&lt;p&gt;I hope I&amp;rsquo;m not updogging the definition of “NPCs” but I think that nothing can explain what does it mean (even what the words that it stands for) more than reddit users or the so-called, “the redditors” actually I think that designation supports the argument I&amp;rsquo;m about to make.&lt;/p&gt;
+&lt;h3 id=&#34;classical-conditioning&#34;&gt;Classical Conditioning &lt;a href=&#34;#classical-conditioning&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This is not a science post, but I&amp;rsquo;ve to declare some terms, the most important one to me right now is “conditioning”, it&amp;rsquo;s a subdivision of big scoop called behaviorism, some scientists don&amp;rsquo;t consider conditioning or behaviorism as a real &amp;lsquo;science&amp;rsquo; (which doesn&amp;rsquo;t mean they treat it as pseudoscience, It is an epistemological problem) but it&amp;rsquo;s very empirical anyway.&lt;/p&gt;
+&lt;p&gt;There are two main types of conditioning, classical conditioning, and operant conditioning, you perhaps have heard about Pavlov&amp;rsquo;s dog. Ivan Pavlov was a deft Russian physiologist, his experiment is not very unparalleled in classical conditioning, but you can say it was exclusive to the psychology communities then.&lt;/p&gt;
+&lt;p&gt;Pavlov redirected a dog&amp;rsquo;s fluids to measure how the digestive is influenced by any external tutelage. In short, the experience was to bring food to the restrained dogs every day, and study how much saliva was produced when the worker who brought the food came for them. Day after day, Pavlov began to observe what he called the &lt;em&gt;&lt;strong&gt;Psychic secretion&lt;/strong&gt;&lt;/em&gt;, the classical condition pivot: an anticipatory salivation happened to the dogs, it was at first like salivation happens when the food door is opened, and it ends with the dogs&#39; digestive worked to bring out saliva as soon as the dogs hear the sound of the worker&amp;rsquo;s feet coming.
+&lt;img src=&#34;https://salehmu.github.io/pavlov_dog.png&#34; alt=&#34;Pavlov dog&#34; loading=&#34;lazy&#34; /&gt;
+
+&lt;em&gt;Pavlov&amp;rsquo;s dog experiment&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Indeed, it&amp;rsquo;s an interesting experiment, it may seem outdated to many psychologists today, but I think it is a very appropriate introduction to talk about conditioning in general, especially operant conditioning, which is the main method behind social media websites.&lt;/p&gt;
+&lt;h3 id=&#34;operant-conditioning&#34;&gt;Operant conditioning &lt;a href=&#34;#operant-conditioning&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Operant conditioning is not much different from classic in its core. Approximately, we can tell that the main difference is about the behavior, nevertheless, the classical condition modifies learning procedure behavior (like saliva in the main experiment), operant can modify the behavior itself.&lt;/p&gt;
+&lt;p&gt;Cursorially, BF Skinner managed to change/create some new behaviors when some actions occur to a mouth. For example, after exposing a mouse to electrical charge when it hears the sound of sea waves for serval times, the mouse involuntarily develops a new behavior of running and take fright just to hear the sound of sea waves.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://salehmu.github.io/bf.png&#34; alt=&#34;BF&amp;amp;rsquo;s mouse&#34; loading=&#34;lazy&#34; /&gt;
+
+&lt;em&gt;BF Skinner&amp;rsquo;s mouse&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Some might see that this is a very outdated definition, there are many developments in this definition today, some scientists have discovered that this behavior may be passed on to later generations, and some have created new forms of operant conditioning like Richard Thaler&amp;rsquo;s libertarian paternalism, which is a simply conditioning, but the lib mice think that they are the ones who chose how to behave, it is a common social engineering method most social media sites use it.&lt;/p&gt;
+&lt;h3 id=&#34;social-media-social-engineering&#34;&gt;Social Media Social Engineering &lt;a href=&#34;#social-media-social-engineering&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;ve used any social media site, you perhaps have been conditioned already, and you&amp;rsquo;re going to be a “redditor” very soon. Social media sites have their own rewards &lt;em&gt;aka likes/upvotes/shares/etc..&lt;/em&gt; And this is not necessarily bad for you it might give you nice feelings that people love your posts, but this is not the bad part, actually this part may occur in real life when someone tells you that he likes your words.&lt;/p&gt;
+&lt;p&gt;The problem is with the other parts that social media use to social engineer you, the punishment and alcoholism parts. Alcoholism happens when you really care about reactions in your posts, you will sooner or later seek to have more likes in your posts till point you will be ready to change your own views to be the same as the others who get more likes than you. This is bad, but anyway, if you&amp;rsquo;re already a jerk to pay attention to some virtual reacts, social media social engineering won&amp;rsquo;t make it worse.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://salehmu.github.io/rdm.jpg&#34; alt=&#34;NPCs&#34; loading=&#34;lazy&#34; /&gt;
+
+&lt;em&gt;NPCs&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The awful part is the punishment, not only can this part change all idiots&#39; thoughts and make them think the same way, but it can also affect smart people and turn them into NPC&amp;rsquo;s or “redditors”. Many of these sites didn&amp;rsquo;t have a way to punish, in fact, they didn&amp;rsquo;t have rewards in the beginning (until Zock created likes), if I disagree with your post then, I won&amp;rsquo;t be able to punish you, the most I can do is argue with you in the comments, now there are many ways like quoted tweets, HAHA reactions on Facebook, youtube dislikes, and worst of all: reddit downvotes.&lt;/p&gt;
+&lt;h3 id=&#34;reddit-herd-creation-methodology&#34;&gt;Reddit Herd Creation Methodology &lt;a href=&#34;#reddit-herd-creation-methodology&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Unlike Facebook and Twitter, the content shown on Reddit is strictly governed by what the majority sees as right or wrong (that&amp;rsquo;s a shame if you ask me), if someone makes a new post and gets a third downvote when it&amp;rsquo;s posted, they will probably never see it again [because Reddit It has a minimum amount of karma to keep posts “unhidden”, plus most users ask Reddit to automatically sort content for them by upvotes], the worst part is the discussions, having many downvotes will completely hide your comment, and of course, it will be embarrassing for commoners to get into a conversation with someone and get many downvotes while the other gets hundreds of upvotes and rewards, what happens, in the end, is that the person deletes his comment, enter any old argument between two people on Reddit, and you will most likely find that comment with a lot of downvotes is deleted by the user, redditors would rather delete their thoughts and not express them than get downvotes!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://salehmu.github.io/reddit.jpg&#34; alt=&#34;reddit&#34; loading=&#34;lazy&#34; /&gt;
+&lt;/p&gt;
+&lt;p&gt;Actually, it became a meme there to ask &amp;ldquo;How the hack is the user &lt;strong&gt;deleted&lt;/strong&gt;?! He is everywhere&amp;rdquo;, deleted comments by users became very ubiquitous till some people really think that there is a user named deleted comment with &amp;ldquo;deleted&amp;rdquo; word.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s the same, and it might actually happen on any other social media site, however, I&amp;rsquo;ve never seen retards like the retards on Reddit, they are all a part from the same person, even in &amp;lsquo;intellectual&amp;rsquo; conversational subreddits, they&amp;rsquo;re all the same person because any new idea that will appear, which is opposed to the ideas of the herd or even a part of them, will be suppressed and will either disappear or be altogether eliminated by its owner.&lt;/p&gt;
+&lt;p&gt;Of course there are bigger and bigger problems in that the users of these sites allow the site owners to constitute their thoughts, and this is related to Richard Thaler&amp;rsquo;s libertarian paternalism, they make you feel that it is your decision, it is not at all. The owner has the power to choose which posts appear and which ones disappear, and he may even ban many people just because they talked about topics he didn&amp;rsquo;t like. Or, if he wants to make the majority of his users think one way he chooses, he can simply do so by erasing anything related to those who think differently that he doesn&amp;rsquo;t like so that only the herd will be left.&lt;/p&gt;
+&lt;p&gt;Personally, I usually prevent myself from falling into these traps by using rss feeds instead of reddit/facebook/twitter front-ends. rss is so simple, it doesn&amp;rsquo;t care either how many people have seen this post or how many likes it have, the first post I&amp;rsquo;ll see in my rss feeds is just the most recent post.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/conditioning1/</guid>
       <pubDate>Wed, 04 Aug 2021 18:49:37 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/psychology/</guid>
-      <description></description>
     </item>
     
     <item>
-      <title>Music</title>
-      <link>https://salehmu.github.io/tags/music/</link>
-      <pubDate>Tue, 05 Feb 2019 05:28:30 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/music/</guid>
-      <description></description>
+      <title>Politics, Politicians and What everybody knows</title>
+      <link>https://salehmu.github.io/posts/politics-sucks/</link>
+      <description>&lt;p&gt;Politics, political news and anything related to the so-called new world
+(supposed to be the better one) simply suck especially if you
+understand what&amp;#39;s going on. Actually it only sucks if you understand what&amp;#39;s
+going on, for instance if you&amp;#39;re reading that the U.S. bombarded the Red Cross
+headquarters in Afghanistan or Aljazira headquarters because they&amp;#39;re position
+for Al-Qaeda terrorists, well that&amp;#39;s really a good news, Al Jazeera should only
+blame themselves.&lt;/p&gt;
+&lt;p&gt;
+But if you&amp;#39;re understanding what was really going on, you will understand that
+what was happening is an endeavor to restrain any support for Taliban (or
+whatever resistance that will help fighting the occupation) no matter what this
+might cause in a poor country like Afghanistan, white bombers shouldn&amp;#39;t give
+much attention for kids or the poor who was getting their medical treatment
+there.&lt;/p&gt;
+&lt;p&gt;
+Actually this remains me of Al-Shifa plant attack in 1998, the CIA claimed that
+Al-Shifa, which was a national Sudanese pharmaceutical factory that provided
+medications for millions of Sudanese kids, was manufacturing chemical
+internationally banned weapons (just like it that the U.S. used against Iraqi
+civilians in Al-Falouja) for Osama Bin Ladin (which was too ridiculous then,
+even if such a developing and poor country like Sudan wants to manufacture
+chemical weapons, they simply can&amp;#39;t. They&amp;#39;re incapable).&lt;/p&gt;
+&lt;p&gt;
+However many human right activists warned Clinton&amp;#39;s administration (CA
+henceforward) that the bombardment would probably cause a humanitarian crisis,
+and there was no enough intelligence information to confirm that accusation
+(actually, even after the bombardment, the U.S. didn&amp;#39;t give any evidences confirm
+their accusations) CA didn&amp;#39;t give a lot of attention, it is not a big deal if
+that would cause hundreds of thousands of kids being dead because of treatable
+diseases that they couldn&amp;#39;t afford its medications.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;They and their apologists regarded Africans much as we do the ants we crush&lt;/em&gt;
+&lt;em&gt;while walking down a street. We are aware that it is likely to happen (if we&lt;/em&gt;
+&lt;em&gt;bother to think about it), but we do not intend to kill them because they are&lt;/em&gt;
+&lt;em&gt;not worthy of such consideration.&lt;/em&gt; - Noam Chomsky, &lt;a href=&#34;https://apjjf.org/-Noam-Chomsky/2675/article.html&#34;&gt;The Most Wanted List&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://salehmu.github.io/2021-10-04_03-41-26_screenshot.png&#34; alt=&#34;/2021-10-04_03-41-26_screenshot.png&#34; title=&#34;/2021-10-04_03-41-26_screenshot.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+Anyway, what I&amp;#39;m to talk about the &amp;#39;politicians&amp;#39; does anybody know even what
+this world supposed to mean? What does it mean to work and gain your sustenance
+by being a politician? It means to know and ignore all above, everybody knows
+the empty argument of &amp;#39;human shield&amp;#39; that occupiers used in Vietnam,
+Afghanistan, Iraq and now in Palestine to justify genocides. Everybody knows
+that the bombardment of Aljazira, AP and other news agencies either in Afghanistan
+or like what happened in the last war in Gaza, it has nothing to do with
+the real war, it just the endeavour to keep the information flow out, every
+politician knows that.&lt;/p&gt;
+&lt;p&gt;
+&lt;img src=&#34;https://salehmu.github.io/2021-10-04_03-42-25_screenshot.png&#34; alt=&#34;/2021-10-04_03-42-25_screenshot.png&#34; title=&#34;/2021-10-04_03-42-25_screenshot.png&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Everybody knows that the dice are loaded&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;Everybody rolls with their fingers crossed&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;Everybody knows the war is over&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;Everybody knows the good guys lost&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;Everybody knows the fight was fixed&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;The poor stay poor, the rich get rich&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;That&amp;#39;s how it goes&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;Everybody knows&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+That&amp;#39;s why it&amp;#39;s being painful and unbearable to me to follow politics any more,
+I can see nothing but a world getting much worse every day and every second.
+Injustice, dictatorship, internationally-supported terrorism, murder, everything
+is in its wrong place and more and more propagandists telling people that
+everything is fine, we&amp;#39;re just killing some terrorists that don&amp;#39;t like freedom
+and democracy. That reminds me of one of my Dad&amp;#39;s uneducated pastoral friends, I
+was setting in his car while he was listing to the radio when the presenter said
+something about Israel. You know most people (I can tell more than 90%) of the
+Egyptian countryside are stupidly anti-Semitics (due to the old anti-Israel
+propaganda in the 50s that used to confuse the word Zionist with Jewish) so I
+was expecting something like &amp;#34;Oh, May Allah curse the Israeli Jews&amp;#34; then I figured
+out that I have been too far for a long time when he told me, &amp;#34;Do you know what?
+We shouldn&amp;#39;t hate Israel that much, we have made a &amp;#39;peace treaty&amp;#39; with them&amp;#34; I
+thought for a moment he was joking until he showed me some videos for a Saudi
+hypocritical journalist. He was purely propagandized.&lt;/p&gt;
+&lt;p&gt;
+Sigh. That&amp;#39;s all for today, I&amp;#39;ve to get back to work. Listen to &lt;a href=&#34;https://www.youtube.com/watch?v=Lin-a2lTelg&#34;&gt;this beautiful
+song&lt;/a&gt;. I hope there will be some revolutionary day which in I will sing:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;And everybody knows that it&amp;#39;s now or never&lt;/strong&gt; &lt;br&gt;
+&lt;strong&gt;Everybody knows that it&amp;#39;s me or you&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/politics-sucks/</guid>
+      <pubDate>Wed, 04 Aug 2021 02:01:59 +0200</pubDate>
     </item>
     
     <item>
-      <title>shitpostting</title>
-      <link>https://salehmu.github.io/categories/shitpostting/</link>
-      <pubDate>Tue, 05 Feb 2019 05:28:30 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/categories/shitpostting/</guid>
-      <description></description>
+      <title>“Connection” and “Meant-To-Be”</title>
+      <link>https://salehmu.github.io/posts/conection/</link>
+      <description>&lt;p&gt;2 concepts that seem really nice and agreeable, but I find are psychically terrible, are “connection” and “meant-to-be”.&lt;/p&gt;
+&lt;p&gt;My issue with the concept of connection is that it requires equally the notion of disconnection, which I find logically leads to mass-extinction-production as suicide-bomber-ideology. The idea we are disconnected - which is different from the perspective that we are alienated (with connection/disconnection being a mode of alienation) - and must acquire connection, religious or spiritual or technological, I find to be a psychic trap, like a hamster wheel that never goes anywhere. The destruction of connection-disconnection is the eco-egoism of finding the oneness of individuality as the oneness of the world - which is why connectivity thought is so disastrous for environmental thought, which is embracing ever more the connectivity-techno-logic of alienation.&lt;/p&gt;
+&lt;p&gt;My issue with the idea of meant-to-be is primarily that the notion insists upon there being a right way for the world to be and a wrong way for the world to be. This first of all takes a Gods-eye-view upon the world and assumes a level of gnostic-awareness that I don’t believe anyone can authentically actually hold, from the perspective of the stupid earth level badger I am. This also constructs the duality of right and wrong, with people constantly bickering over which is which. My perspective is that the world is neither right nor wrong, but just is - as is my desires regarding the world, with my desire being part of the world, and it being my responsibility to actualise my desires. My feeling is that if individuals sympathetic to environmental thought were to talk in terms of desire (in other words, honestly/sincerely) they might be heard more - the statement “the badger cull is wrong” requires epistemological justification, whereas “I don’t want to see badgers abused” doesn’t, as experience is immediate.&lt;/p&gt;
+&lt;p&gt;I personally encounter the world as more beautiful when I destroy these (human, all too human) concepts for myself!&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/conection/</guid>
+      <pubDate>Fri, 21 May 2021 05:28:30 +0200</pubDate>
     </item>
     
     <item>
-      <title>&lt;Link Rel=&#34;apple-Touch-Icon&#34; Sizes=&#34;180x180&#34; Href=&#34;/Apple-Touch-Icon.png&#34;&gt;
-&lt;Link Rel=&#34;icon&#34; Type=&#34;image/Png&#34; Sizes=&#34;32x32&#34; Href=&#34;/Favicon-32x32.png&#34;&gt;
-&lt;Link Rel=&#34;icon&#34; Type=&#34;image/Png&#34; Sizes=&#34;16x16&#34; Href=&#34;/Favicon-16x16.png&#34;&gt;
-&lt;Link Rel=&#34;manifest&#34; Href=&#34;/Manifest.json&#34;&gt;
-&lt;Link Rel=&#34;mask-Icon&#34; Href=&#34;/Safari-Pinned-Tab.svg&#34; Color=&#34;#5bbad5&#34;&gt;
-&lt;Meta Name=&#34;theme-Color&#34; Content=&#34;#ffffff&#34;&gt;
-</title>
-      <link>https://salehmu.github.io/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/link-relapple-touch-icon-sizes180x180-href/apple-touch-icon.png-link-relicon-typeimage/png-sizes32x32-href/favicon-32x32.png-link-relicon-typeimage/png-sizes16x16-href/favicon-16x16.png-link-relmanifest-href/manifest.json-link-relmask-icon-href/safari-pinned-tab.svg-color#5bbad5-meta-nametheme-color-content%23ffffff-/</guid>
-      <description></description>
+      <title>Book Review: Humiliated and Insulted by Fyodor Dostoevsky</title>
+      <link>https://salehmu.github.io/posts/desto/</link>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/329803.The_Insulted_and_Humiliated&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/329803.The_Insulted_and_Humiliated&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/329803.The_Insulted_and_Humiliated&#34;&gt;&lt;img src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347466262l/329803._SX98_.jpg&#34; alt=&#34;The Insulted and Humiliated&#34; loading=&#34;lazy&#34; /&gt;
+&lt;/a&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/329803.The_Insulted_and_Humiliated&#34;&gt;The Insulted and Humiliated&lt;/a&gt; by &lt;a href=&#34;https://www.goodreads.com/author/show/3137322.Fyodor_Dostoyevsky&#34;&gt;Fyodor Dostoyevsky&lt;br&gt;
+&lt;/a&gt;My rating: &lt;a href=&#34;https://www.goodreads.com/review/show/3579864792&#34;&gt;4 of 5 stars&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is my re-reading of &amp;ldquo;The Insulted and Injured&amp;rdquo; as part of my attempt to complete the complete work of Feydor Dostoyevsky. I had read the novel for a very long time, when I began reading Dostoevsky, and at that time I did not have the literary interest that makes me search about this novel, and I get enough for saying: It is a good novel.&lt;/p&gt;
+&lt;p&gt;I definitely knew that studying such a novel would require preparation. I did not begin it until I had finished with Henry Trouba&amp;rsquo;s book “Dostoevsky: His Life - His Works,” which gives a good biography of Dostoyevsky&amp;rsquo;s life and the politics of the Russian Messenger Journal, which apparently played a major role in his method, Which should have been boring when it was detailed, but it was beautiful, expressive, full of emotion and humanity.&lt;/p&gt;
+&lt;p&gt;I also benefited greatly from the study of Nicholas Trail, the literary critic, of Raskolnikov&amp;rsquo;s character from Dostoyevsky&amp;rsquo;s novel Crime and Punishment as well, Nicholas &amp;lsquo;view that Dostoevsky&amp;rsquo;s character with epilepsy dominated his work, and whoever reads the crime and punishment will not ask me for clarification of Nicholas&amp;rsquo; opinion, Raskolnikov is a fickle hero Strange as it sounds, he has seizures in every event, but Dostoevsky does not describe these seizures as epilepsy more than what he describes as fever, fatigue and exhaustion, except that they always come in the form of epileptic freaks.&lt;/p&gt;
+&lt;p&gt;As for this novel, it also applies to the concept of Nicholas, as the hero not only has seizures (and by the way, this time the protagonist himself has verbally confessed those seizures) but also lives the life of Dostoevsky completely and suffers from the same problems, I must mention here that Dostoevsky began This work (I mean the novel) with the beginning of his serious work after his release from prison, he had written before him the village of Stepanchikovo and its inhabitants, and it was really one of his worst works, and by his own saying, it was a vulgar comic whose only goal is to collect money after his release from prison, as well as return to the world of writing.&lt;/p&gt;
+&lt;p&gt;Our novel carried a certain seriousness that made Dostoevsky himself a hero in it. The problem of the protagonist is very similar to the problem of Raskolnikov, as well as the problem of &amp;ldquo;Basement Man&amp;rdquo;, a poor, proud writer looking for a way out to get rid of his misery and misery, and in fact I see that Dostoevsky in this novel was influenced by the Victorians most influenced Especially the later ones: the coincidences he put in the novel only occur in a Victorian / classic novel, such as Oliver Dickens or Hugo&amp;rsquo;s Hunchback, and this is what made Russian critics (who were very real at the time) describe the novel as &amp;ldquo;extremely fictional.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;As I mentioned at the beginning, the policy of Russian magazines, especially the magazine &amp;ldquo;The Russian Messenger&amp;rdquo; and &amp;ldquo;Time&amp;rdquo; magazine has greatly influenced Dostoevsky&amp;rsquo;s writings. The novel is long and not in excess. Dostoyevsky takes whole pages in some descriptions that could have been reduced to one or two words, In some absolutely insignificant dialogues he takes an entire chapter, yet (and this is what distinguishes Dostoyevsky from Tolstoy in lengthening) Dostoevsky&amp;rsquo;s lengthening was a little more than a filler.&lt;/p&gt;
+&lt;p&gt;Dostoevsky&amp;rsquo;s epileptic personality is reflected in the main characters: Ilyosha, Ivan, and Helen, and the three are psychologically misfits due to their occasional seizures, and the main character, Ivan, features Dostoyevsky&amp;rsquo;s defiant character at the time. Vissarion Belinsky, a great Russian critic at the time, after Fedor wrote his first book &amp;ldquo;The Poor,&amp;rdquo; which was the most beautiful opening by a writer at the time, his subsequent writing came like a dream of Uncle and others until his imprisonment, and no one expected him to produce something of value, especially Belinsky.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/review/list/91979266-saleh-muhammed&#34;&gt;View all my reviews&lt;/a&gt;&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/desto/</guid>
+      <pubDate>Thu, 10 Dec 2020 05:28:28 +0200</pubDate>
     </item>
     
     <item>
-      <title>&lt;P&gt;
-  [&lt;A Href=&#34;/&#34;&gt;Get Back to Home&lt;/A&gt;]
-&lt;/P&gt;
-</title>
-      <link>https://salehmu.github.io/p-a-href/get-back-to-home/a-/p-/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/p-a-href/get-back-to-home/a-/p-/</guid>
-      <description></description>
+      <title>Carl Schmidt: Politics, Conflict and War (Arabic)</title>
+      <link>https://salehmu.github.io/posts/karl/</link>
+      <description>&lt;p&gt;لخيص حياة كارل شميدت الطويلة سوف يبدو من الضرورة أن نتوّخى الحذر بخصوص الدعاية السياسية لخصومه ومؤيّديه والتعامل معها أيضا، هذا على الأقل بخصوص حياته المثيرة للجدل. وُلِد شميدت بضواحي مدينة بليتنبارغ الألمانية في 11 جويلية 1888 لعائلة فرانكو-ألمانية كاثوليكية تنحدر من وادي موسيل ((The Moselle Valley، درس القانون بجامعات برلين، ميونيخ وستراسبورغ، متخرِّجا سنة 1915. في سنة 1921 صار أستاذا بغريفسفالد، وهنا نشر كتابه “الدكتاتورية”(Die Diktatur)، تبعه عمل مؤثّر حول موضوع “الثيولوجيا السياسية” سنة 1922، وذلك حينما انتقل شميدت إلى جامعة بون.&lt;/p&gt;
+&lt;p&gt;لقد شهدت عشرينيات القرن العشرين دخول شميدت في نقاشات قانونية وسياسية تصاعدت وتيرتها مع الأزمات المختلفة لجهورية فايمار، عارض فيها الممارسة الشكلية والمعيارية القانونية كما يبدو ذلك واضحا في أعماله ككتاب “النظرية الدستورية (Verfassungslehre) سنة 1928. تنقّل شميدت بشكل متكرّر بين مؤسّساتٍ أكاديمية عدّة كما درّس بجامعة العلوم السياسية في برلين، لينتقل أخيرا إلى جامعة كولون أين نشر سنة 1932 نسخة موسّعة لكتيبه الذّي خطّه سنة 1927 والذّي حمل عنوان “مفهوم السياسي” (Der Begriff des Politischen).&lt;/p&gt;
+&lt;p&gt;عند الحديث عن دعم جمهورية فايمار، فقد إدّعى شميدت سنة 1931-1932 أنّ حزب العمّال الاشتراكي الوطني الألماني “النازي” قد تمّ قمعه كما تمّ الضغط على الرئيس الجمهوري بول هيندنبارغ حتّى يقوم بسجن قياداته، فلم يكن يصدّق كغيره من ممثلي حزب المركز الكاثوليكي الذّي ينتسب إليه أنّه بالإمكان احتواء النازيين داخل حدود حكومة ائتلافية في الوقت الذّي كان فيه الوسط الأكاديمي محقّا في إدانة عضوية شميدت في الحزب النازي شهر ماي 1933، وكذا محاولته في جعل نفسه الفقيه السامي “رجل القانون” للرايخ الثالث، بالإضافة أيضا إلى معاداته للسامية التّي تبدو جليّة في كتاباته، فقد كان النازيون أنفسهم يشكّون به، فمنذ سنة 1935 صارت نشاطاته وتدريسه مراقبا، وفي سنة 1935 قام الناطق الرسمي “للفيلق الأسود”The SS / Das schwarze Korps)) باستدعائه لمهمّة ما ترتبط بكاثوليكيته وانتقاداته المبكّرة للنظريات الراديكالية للحزب. أوقِف شميدت بين سبتمبر 1945 وماي 1947 لفترة وجيزة من قِبل السوفيات ثمّ من طرف القوات الأمريكية المحتلّة، وقد تمّ منعه من العودة إلى التدريس لِيُعاد بعدها إلى مدينته الأمّ بليتنبارغ.&lt;/p&gt;
+&lt;p&gt;في هذه الحقبة من حياته التّي أنتج فيها مؤلّفات مهمّة في السياسة والقانون الدولي على غرار كتابه “نوموس الأرض في القانون الدولي للقواعد الأوروبية العامة” سنة 1950 (Der Nomos der Erde im Völkerrecht des Jus Publicum Europaeum)، وكذا عمله اللاحق “النظرية الحزبية” (Theorie des Partisanen) سنة 1963. واصل شميدت السفر، الكتابة والنشر ليُشكّل بكامل مؤلّفاته ما يُمكن اعتباره الأرضية المؤثرّة لعدد من مفكري ما بعد الحرب على غرار رينهارد كوسليك، هانز مورغانثو، هانو كيستينغ ورومان شنار، بالإضافة إلى عدد من الوجوه الفكرية والثقافية البارزة للقرن العشرين كأرنيست يونغار، والتر بينجامين، ليو شتراوس، جاكوب توبيس وألكسندر كوجيف.&lt;/p&gt;
+&lt;p&gt;وصف شميدت نفسه بالفقيه القانوني والباحث الأكاديمي في مجالي علم القانون: القانون الدستوري والقانون الدولي، ويعّد كلاهما جزءا من القانون العام وكلاهما مثلما حاجج بذلك شميدت مُعرّضٌ للخطر القادم ممّا هو سياسي. بالنسبة له فإنّ هذا التعرّض يعني أنّه من غير الممكن أن يتّم فصل النظرية القانونية عن النظرية السياسية وبنفس الطريقة فإنّ فهم القانون الدولي لا يمكن أن ينفصل عن فهم التحليلات السياسية الدولية، هذا ما يمكن تسميته اليوم بالنظرية الدولية. في الحقيقة فإنّ فهم شميدت للقانون مختلفٌ جذرياً عن الفهم الوضعي والشكلي له والذّي يمكن القول إنّه هيمن على القرن العشرين بتيّاراته التعميمية التجريدية والتّي قدّمت تحليلات تجريدية للقانون الدستوري والدولي لا تحمل في النهاية أيّ معنى، إنّها خالية من الاشتباك الجوهري مع مواضيع حقيقية واقعية للسياسة الداخلية والدولية.&lt;/p&gt;
+&lt;h2 id=&#34;الفكر-السياسي-والدولي-عند-شميدت&#34;&gt;الفكر السياسي والدولي عند شميدت &lt;a href=&#34;#%d8%a7%d9%84%d9%81%d9%83%d8%b1-%d8%a7%d9%84%d8%b3%d9%8a%d8%a7%d8%b3%d9%8a-%d9%88%d8%a7%d9%84%d8%af%d9%88%d9%84%d9%8a-%d8%b9%d9%86%d8%af-%d8%b4%d9%85%d9%8a%d8%af%d8%aa&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;يعدّ الإنتاج الفكري لشميدت إنتاجا جدّ واسع وغزير النطاق، يمتد من القانون إلى الفكر السياسي إلى الفلسفة فالثيولوجيا، التاريخ فالجماليات. ويمكن أن تُصنّف كتاباته ضمن ثلاث محاور أساسية: الطبيعة الفلسفية للسياسة والسيادة، نظرية الدولة وأشكالها الحكومية، تاريخ ونظرية القانون الدولي. من المؤسف أنّه في الوقت الذّي كانت فيه كتابات شميدت السياسية والقانونية أثناء السنوات الأخيرة لجمهورية فايمار ذات تأثير واضح ومتنامي على النظرية القانونية والسياسية المعاصرة في العالم “المتحدّث بالإنجليزية”، قليلا ما أُشير لفكر شميدت الدولي في قارة أوروبا باعتباره تُحفة إنتاجه الفكري، فقد تمّ تجاهله من قِبل باحثي العلاقات الدولية إلى وقت متأخّر.&lt;/p&gt;
+&lt;p&gt;بالمناسبة فإنّ هذا الأمر يشرح جزئيا كيف أنّ أعمال شميدت المحورية بما فيها تلك المركِّزة على الجانب الدولي “نوموس الأرض” و”النظرية الحزبية” صارت مؤخّرا فقط متاحة بالإنجليزية. لكن هناك موضوع مشترك يربط هذه التحليلات ويُمثّل تصوّرات شميدت المركزية مثلما حاجج بذلك كارلو غالي سنة 1996، وهذا بالبحث عن نظام قانوني، داخليا ودوليا، قادر على الإجابة عن تساؤلات “مأساة الحداثة”، بعبارة أخرى نهاية الأساس غير القابل للجدل لشرعية الوحدة المسيحية القروسطية، وضرورة افتراض التعدّدية، النزاع والفوضى -السياسة كتعدّد- باعتبارها معطى أنطولوجي.&lt;/p&gt;
+&lt;h2 id=&#34;السيادة-والسياسي&#34;&gt;السيادة و”السياسي” &lt;a href=&#34;#%d8%a7%d9%84%d8%b3%d9%8a%d8%a7%d8%af%d8%a9-%d9%88%d8%a7%d9%84%d8%b3%d9%8a%d8%a7%d8%b3%d9%8a&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;في بداية العشرينيات، طرح شميدت في كتابه “الثيولوجيا السياسية” ما تمّ اعتباره كنظرية “تقريرية” للسيادة ((As a ‘decisionist’ theory of sovereignty تتلخّص فيما صار اليوم قولا مأثورا مألوفا: “من يحظى بالسيادة هو ذلك الذّي يقرّر أثناء الوضع الاستثنائي”. على عكس تنظيرات السيادة في العلاقات الدولية التّي تتماشى مع هذا الأمر بهدف التحكّم في الشعب، الإقليم وكذا الاعتراف الخارجي، فقد تجنّب شميدت أن ينسب محتوى ثابت لمفهوم السيادة.&lt;/p&gt;
+&lt;p&gt;ومثلما سجّل تراسي.ب. سترونغ في تصديره لطبعة 2005: “طبيعة السيد أو صاحب السيادة.. هي صناعة قرار حقيقي صريح إذا تعلّق الأمر بمسألة استثنائية”. تؤكد الاستثناءات اليوم من جديد القاعدة حينما يتّم تعليقها ووقفها: أو بالأحرى إنّها “تخلق نظاما قانونيا” خاصّة في اللحظة التّي يتّم تعليقها فيها. بعبارة سترونغ مرّة أخرى: “يجب أن يقرّر صاحب السيادة كلاًّ من الحالة الاستثنائية وماذا يجب أن نفعل بخصوص الاستثناء لنكون قادرين على خلق نظام قانوني أو استعادته حينما تُهدّد الفوضى ما هو موجود”. هذا ما يُطلق عليه جيورجيو أغامبين تسمية: “حالة ملئ وتعبئة القانون”. ومثلما يحاول هانز كيلسين تخليص القانون من وسائله الذاتية فإنّ شميدت يؤمن بشدّة أنّ “كلّ قانون هو قانون ظرفي”.&lt;/p&gt;
+&lt;p&gt;ولهذا، علاوة على ذلك: {ينتج صاحب السيادة ويتحكّم في زمام الوضع في شكله المطلق. إنّ له احتكارا على هذا القرار الأخير “المتعلّق بالحالة الاستثنائية” يقيم بذلك جوهر الدولة صاحبة السيادة “والتّي ينبغي أن تكون مُعرّفة قانونيا بشكل صحيح، ليس كمحتكر لأجل الإكراه أو التحكّم ولكن كمحتكر لأجل التقرير… إنّ القرار في هذه الحالة هو جزء من المعيار الشرعي. ولأجل “صياغة نقيضه” تثبت السلطة هنا أنّنا “لسنا بحاجة إلى الاستناد على القانون” حتّى ننتج قانونا “أي لأجل خلق نظام قانوني”}.&lt;/p&gt;
+&lt;p&gt;كان شميدت يهدف في دراسة “مفهوم السياسي” إلى توفير عبارات واضحة بخصوص مسألة التمييز والتّي تصف معنى “السياسي”، حيث يعتقد أنّ هذا التمييز قد ضمر بسبب هيمنة الفكر الليبرالي والممارسة الدولية في السنوات التّي أعقبت الحرب العالمية الأولى. فحسب شميدت: “فإنّ التمييز السياسي الأدّق الذّي يمكن من خلاله أن تكون الأفعال والدوافع السياسية قليلة هو ذلك الذّي يكون بين الصديق والعدو”. على الرغم من اعتماد كلّ تمييز على التمايزات الأخرى لأجل تقوية ذاته، فإنّ هذا التمييز: الصديق/العدو، عبر تحوّلاته السياسية، من الممكن أن يتأكّد بدون اللجوء إلى الاعتبارات الأخلاقية، الجمالية، الاقتصادية أو الاعتبارات الدينية، أيّا ما كان هذا العدو فهو ذلك الذّي يمكن أن يُقرَّر فقط عبر الحُكم إذا كان الآخر ينوي إلغاء نمط حياة خصمه، ولهذا السبب يجب أن يتّم صدّه”.&lt;/p&gt;
+&lt;p&gt;لقد تمنّى شميدت أن يدحض إمكانية تجاوز الحرب في العلاقات الدولية عبر إعادة مكانة ما هو سياسي من خلال تأكيد فهم السياسي “أي ما هو سياسي” في علاقته بالقرار 2005. أعاد شميدت تأكيده على القرار السياسي والذّي شعر أنّه يجب أن يبقي محافظا على تمايزاته النهائية حتّى تستطيع كلّ الأفعال ذات المعنى السياسي بشكلٍ خاصّ أن تُسَطّر من خلالها. يشير هذا التمايز: صديق/عدو، إلى درجة قصوى من الكثافة للوحدة أو الانفصال، من الارتباط “التلاحم” أو عدم الارتباط، وحدها تستطيع الجماعات السياسية التاريخية أو الراهنة بشكلٍ مهّم أن تُعدّ كأعداء إذا ما نُظر إليها بعين الحاضر كتهديد وجودي.&lt;/p&gt;
+&lt;p&gt;هذا ما يُقيّد ويحدّ من السياسي في هذه الآونة حينما يكون القرار السياسي بخصوص التمييز بين الصديق والعدو قد تمّ إعداده من قبل. إنّ التمييز بين الصديق والعدو لا يُقرَّر إلاّ في الحالة الشاذة المتطرّفة. وهذا الأمر يُعّد استثناء أكثر من كونه معيارا تقييميا. مرجعية شميدت لتحديد العدو العام – عدائي، ليس عدائي– تُقرَّر بواسطة قيادة الدولة (التّي تمتلك افتراضا مسبقا بمفهوم السياسي) حيث تقود إلى تجنّب أيّ ادعاءات هوياتية بخصوص العدو: “على أقل تقدير، يوجد العدو فقط حينما يقف أحدهم مقاتلا لجمعٍ من الناس، يواجه جمعا مماثلا”، فيُواجَهُ بإمكانية الموت أو القتل، بهذا المفهوم لا يمكن أن يكون الخصوم السياسيين أعداءً في أيّ يوم من الأيّام.&lt;/p&gt;
+&lt;p&gt;فمن خلال السماح للسياسي “ما هو سياسي” بأن يتحوّل عبر القرار بين صديق وعدو في الحالة الشاذة، يتحدّى شميدت بشكل كبير قدرة الممارسة الليبرالية للقانون واستقرار المؤسّسات الدولية على تعزيز السلام ومنع الحرب، وكذا تحسين وضع القيمة الإنسانية العالمية كثيرا. إذا كان التجاوز والتعالي ممكنا فإنّ السياسي “ما هو سياسي” سيكون مهدِّدا. الأمر الأكثر أهمية أنّ القرارات إذا لم تكن ممكنة، فلا يستطيع النظام القانوني، السياسي وكذا الدولي أن يكون مُنتجا أو مستداما. هذه هي حجج شميدت بخصوص استحالة أو في الحقيقة أخطار السياسة، التّي تهدف إلى “التخلّص من السياسة ذاتها”، والتّي أثّرت بدورها على محاولات كلّ من واقعية القرن العشرين وكذا ما بعد الماركسية مؤخّرا الهادفة للتفكير من جديد في مسألة العداوة الاجتماعية ((Social antagonism أو النزعة الأغونيزمية (Agonism) (التّي تحاجج بأهمية النزاع في السياسية وترى بإمكانية وجود جانب إيجابي في النزاعات أيضا) إضافة إلى إعادة التفكير في إطار المضمون السياسي للنيوليبرالية.&lt;/p&gt;
+&lt;h2 id=&#34;التأريخ-لويستفاليا&#34;&gt;التأريخ لويستفاليا &lt;a href=&#34;#%d8%a7%d9%84%d8%aa%d8%a3%d8%b1%d9%8a%d8%ae-%d9%84%d9%88%d9%8a%d8%b3%d8%aa%d9%81%d8%a7%d9%84%d9%8a%d8%a7&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;لقد كتب شميدت “نوموس الأرض” في الوقت الذّي كان يؤمن أنّ “ويستفاليا” (هذا النظام القانوني والسياسي العالمي أو “نوموس الأرض” الذّي تجسّد في القواعد القانونية الأوروبية العامة) يعّدُ تجربة بالغة الأهمية. وبالنسبة له فإنّ عملية التداعي والسقوط المؤسف يُؤرَّخ لها حقيقةً منذ نهاية عقد القرن التاسع عشر إلى بدايات الحرب العالمية الأولى. بدلا من ذلك فقد توّقع شميدت نشوء أخطار عديدة ناجمة عن التحوّل تجاه “النزعة التدخّلية الكونية” من قِبل الولايات المتحدة الأمريكية كالتأثيرات المتعلّقة بتجريد وعولمة القانون الدولي “نظام دون أرضية مكانية واضحة”، تراجع وتضائل النزعة التعددية في النظام الدولي على غرار تصاعد الحرب الحزبية الطائفية والإرهاب.&lt;/p&gt;
+&lt;p&gt;بالنسبة لشميدت “النوموس” هو الفعل التأسيسي الذّي يخلق نظاما إقليميا محدّدا كنظام “شرعي” موحّد وكتوجّه مكاني. لم يكن بوسع مفهوم النوموس أن يفعل شيئا كبيرا مع فكرة الوضعيين عن القانون كأمر مجرّد، كترجمة حرفية سطحية يمكن أن تُقترح. بدلا من ذلك فقد اقترح مفهوم النوموس الذّي وضعه شميدت أنّ كلّ نظام قانوني هو أوّلا وقبل كلّ شيء نظام مكاني أُسّس من قِبل فعلٍ أو عملية استيلاء مكانية على الأرض”، لذلك “فكل قانون يكون قانونا فقط في وضعية محدّدة”.&lt;/p&gt;
+&lt;p&gt;علاوة على ذلك، فإنّ التنظيم المكاني للأرض يمكن أن يحدث فقط مع ظهور وبروز “التفكير العالمي الخطّي”، خصوصا مقاربة الحداثيين للمجال، التوّجه والقياس. فوحدها القواعد القانونية العامة الأوروبية بإمكانها أن تظهر كأوّل نوموس للأرض، فالتنظيم الأول للأرض صار في الأفق ممكنا عبر الاكتشاف والاستيلاء القسري على العالم الجديد.&lt;/p&gt;
+&lt;p&gt;لقد ارتكز “تنظيم وإدارة” الأرض – قانونيا ومكانيا – بالضرورة على حدثٍ تاريخي مرتبط بالاستيلاء على الأرض، يبدو الآن كفعل مؤسِّس للقوة والذّي أنتج القواعد والقانون، فإذا كانت ويستفاليا تبدو كنظام جيوبوليتيكي فهي أيضا “مجتمع من الكيانات السياسية الموّحدة بقواعد مشتركة.. أُعِدّت لتكون ارتباطا ملزما متبادلا لإدارة الشؤون الدولية”. مثل هذا المفهوم وضع تصوّرا للمجتمع الأوروبي الدولي الحديث، حسب الوصف الواسع للعقلانيين وتقاليد المدرسة الإنجليزية في العلاقات الدولية، إنّها إمكانية لبداية فهم ما كان يجول بذهن شميدت. لقد عرّف هيدلي بول في الحقيقة مجتمع الدول “كمجموعة دول تُقدِّم وتُصوّر نفسها لتكون ملتزمة بمجموعة معيّنة من القواعد في علاقاتها ببعضها البعض”.&lt;/p&gt;
+&lt;p&gt;وبينما فهم كلّ من بول وآدام واتسون توسِعة المجتمع الأوروبي الدولي باعتباره الذروة من حيث عالميته في القرن العشرين، فإنّ ويستفاليا بالنسبة لشميدت لهي نظام عالمي في مراحله الأولى، لأنّ أصوله والشروط الجدّ متاحة التّي يوّفرها قد ارتبطت باكتشاف عهد جديد لعالم جديد “كفضاء أو مجال” حرّ، نطاقٌ قد بدا مفتوحا أمام التوسّع والاحتلال الأوروبي.&lt;/p&gt;
+&lt;p&gt;بعد سنة 1492 بقليل، وفي الوقت الذّي خُطّت فيه الخرائط والعوالم الأولى، فقد رُسمت أيضا الخطوط الأولى من طرف القوى الأوروبية المستولية لتوزيع وتقاسم المجال العالمي الجديد. كشف شميدت كيف أنّ الخطوط العالمية الأولى، المملكة الإسبانية-البرتغالية (معاهدة تورديسيلاس 1494) كيف كانت توّزع وتقسّم الغايات ممّا يعني أنّها كانت تهدف إلى إحداث تقسيم داخلي للأراضي الجديدة إلى قسمين من الأراضي المستولَى عليها من قِبل الأمراء المسيحيين بما فيها النظام المكاني للجماعة المسيحية. وقد كانت مصونة من قِبل السلطة المشتركة للبابا كزعيم للكنيسة الكاثوليكية بروما. لقد استقرت “خطوط الصداقة” الفرنسة-الإنجليزية اللاحقة مع معاهدة كاتو كامبريسيس 1559، حيث ارتكزت على أسس متباينة كلّيا مجسِّدةً وثيقة محتضرة. لقد وضعت جانبا مساحتين متمايزتين اعتبرتا كفضاءات حرّة أو مفتوحة: الكتلة الأرضية للعالم الجديد من جهة والتّي لم تُعتبر كملكية للسكان الأصليين، ومن جهة أخرى ترسيم الخرائط الجديدة للمياه أي البحار الصالحة للملاحة، وفي كلتا أنماط “الفضاء المفتوح” بإمكان القوى الأوروبية المستولية أن تستعمل القوة البحرية وعبر القهر أيضا، حيث كانت هذه المساحات مخصّصة لاختبارات حاسمة للقوة.&lt;/p&gt;
+&lt;p&gt;على هذا المنحى انتهت أوروبا وبدأ العالم الجديد. على كلّ حال انتهى هنا القانون الأوروبي أي القانون الأوروبي العام.. فيما وراء ذلك، كانت هناك منطقة “فيما وراء البحار”، ونظرا لعدم وجود أيّ حدود قانونية للحرب، فقد كان قانون القوي لوحده ساري المفعول، كما يقول شميدت.&lt;/p&gt;
+&lt;p&gt;لقد شرح شميدت بوضوح كيف برزت الحاجة للتبرير الشرعي القانوني والسماح بالاستيلاء على هذه الأراضي فيما وراء “الأفق” على غرار تنظيم البحار، والتّي قادت إلى خلق ويستفاليا، النوموس الأوروبي الأوّل والذّي يُعّد بحقّ الميزة الجيوبوليتيكية العالمية الأولى.&lt;/p&gt;
+&lt;p&gt;حاجج شميدت بعدها لأجل تاريخٍ للسياسة الدولية الحديثة والذّي لا تنفصل بدايته عن صعود النزعة العقلانية العلمية وحسب، ولا حتّى عن تاريخ انتشار الرأسمالية كما تؤكّد الروايات الأكثر شيوعا للحداثة، ولكن أوّلا وقبل كلّ شيء فإنّ هذا التاريخ لا ينفصل عن بداية عملية الاستيلاء على أرض العالم الجديد من قِبل القوى الأوروبية. لكن وخلافا لذلك، فإنّ الأراضي الويستفالية المستولى عليها وعملية التحكّم في المياه الصالحة للملاحة وما خلقته من مركز (الأرض الأوروبية) وهامش (الفضاء الحرّ للعالم الجديد)، هي أمور أساسية لفهمنا لويسفاليا كنظام للعلاقات وأيضا لفهمنا تلك الإمكانية الكبيرة المرتبطة بصعود هذا النظام.&lt;/p&gt;
+&lt;p&gt;بتسليط الضوء على النوموس بما يتضمنّه من مسارات ظهور الدولة الأوروبية الحديثة كوسيلة حاملة للعلمنة وعالميتها الجيوبوليتيكي وصفتها المناسبة أيضا، كلّها مسائل أتاحت لشميدت بأن يحدّد كيف أنّ هذا النظام البيني “بين الدول” كان قادرا على الحدّ من الحرب وكذا عقلنتها و”أنسنتها” على هذا النحو. لقد عنى شميدت بذلك أنّ ويستفاليا كانت ناجحة في الحدّ من الحرب مؤسّساتيا خاصّة على أساس ترسيم التمايزات الجيوبوليتيكية بين الفضاء الأوروبي والغير أوروبي. فلنفتح قوسين، حسب المعنى الواضح لهيجينغ Hegung)) لم يكن ترسيم حدود الحرب وحسب بل أيضا حفظ مستمر للحرب، تماما كأن يُقلّم أحدهم حدود زهرة ما في بستان، فإنّ السياسة بالأحرى أكثر من مجرّد فعل قانوني مذهل وفريد.&lt;/p&gt;
+&lt;p&gt;لقد قيّم شميدت هذا الحدث باعتباره إنجازا سياسيا وقانونيا كبيرا بفضله تمّ المحافظة على مسافة أمان من الحرب على التراب الأوروبي، يقول شميدت:&lt;/p&gt;
+&lt;p&gt;“بالمقارنة مع الحروب الدينية والطائفية الوحشية، والتّي تعدّ بطبيعتها حروب إبادة حيثُ يُعامل العدو كمجرم وكقرصان، وبالمقارنة مع حروب الاستعمار التّي تُخاض ضدّ الشعوب ‘الوحشية البربرية’، فإنّ الحرب الأوروبية بهذا الشكل دلّت على الإمكانية الأكثر قوّة لعقلنة وأنسنة الحرب”.&lt;/p&gt;
+&lt;p&gt;بالنسبة لشميدت، فإنّ هذا هو المكسب الأساسي “لويستفاليا” النظام البيني (فيما بين الدول) الذّي وُجد في أوروبا حتّى سنة 1914 تمّ بحثه من خلال قانونه الدولي “للحؤول دون حروب الإبادة، أي إلى حدّ اعتبار أنّ الحرب كانت أمرا حتميا لا مفرّ منه”. لم تسعَ ويستفاليا لإنهاء الحرب – كتلك المحاولات التّي هدفت مثلا لإلغائها، إبطالها أو إبعادها عن العلاقات الدولية– مثل تلك المحاولات التّي عُرضت بهدف إحداث أنماط جديدة أو ربّما حتّى بائسة للحرب كالارتداد إلى الحرب الأهلية وكذا أنماط حروب الإبادة الأخرى. لقد سعت بدلاً من ذلك لإيجاد طرق تتمكّن بواسطتها من قياس قوّة الخصم وذلك من خلال السعي عادة للاستيلاء على الأراضي في العالم الجديد أو من خلال خوض حروب محدودة على التراب الأوروبي، وأيضا من خلال الاعتراف بخصم الدولة الأوروبية كعدو يقف على قدم المساواة مع الآخرين.&lt;/p&gt;
+&lt;p&gt;لقد كان تطّور مفهوم العدو العادل&lt;a href=&#34;https://www.blogger.com/blog/post/edit/4674972331562386416/8363027388488613934#&#34;&gt;&lt;!-- raw HTML omitted --&gt;·&lt;!-- raw HTML omitted --&gt;&lt;/a&gt; والمتساوي (The just and equal enemy/ justus hostis) مفتاحاً لمثل هذا الإنجاز، إذ تطوّر المصطلح جنبا إلى جنب مع توحيد الدولة الحديثة، لأنّه ومع هيمنة هذا النمط من الكيان السياسي وكذا ضعف السُلطة الأخلاقية للكنيسة فإنّ الحرب صارت غير تمييزية عنصرية، وقد انفصل بذلك من الأسباب الموضوعية الحقيقية للعدالة: “باعتبارات النتائج والمخرجات، فقد جاءت الحرب حتّى تكون منصفةً عادلة”، وأن تصير شكلا من أشكال العلاقات السياسية بين الدول كما يقول شميدت.&lt;/p&gt;
+&lt;p&gt;إنّ أيّ عدو كان له شكل دولة ما اعتبر عدوا عادلا، وبالتالي فبإمكان الحرب أن تُشّن ضدّه. لقد تفادى هذا التطّور حروبا تُشّن عن قناعة إيمان راسخ، عن مذهب ما أو عن دين، (يرتكز هذا الأمر على سبب عادل)، والتّي أنزلت تاريخيا الدمار وسمحت بإبادة العدو. بالنسبة لشميدت الذّي كان يعتقد أنّ الحرب كانت شيئا حتميا لا مفّر منه في الحياة السياسية للعالم، نظام الحرب هذا من دون سبب موضوعي حقيقي كان يعني ويتطلب “عقلنة، أنسنة وشرعنة الحرب”. إنّ رؤية العدو كشريك منصف ومساوي كان يعني أنّ هناك إمكانية لصنع السلام مع هذا العدو: “لا يتّم السعي إلى دماره النهائي المطلق ولكن كان النزاع معه نزاعا ممكنا ومنظّما”.&lt;/p&gt;
+&lt;p&gt;كنتيجة لذلك، فقد صارت الحرب “حربا مُهيّئة” كما يقول شميدت، بموجبه فإنّ العدالة لم تكن مُحدّدة لمدّة طويلة من خلال أسباب الحرب، ولكن من خلال صيغة ملائمة للأطراف المتحاربة، بعبارة أخرى فقد صارت الحرب شيئا شبيها بالمبارزة، نزاعا مسلحا بين أقاليم تميّز روح الجماعة الشخصية بما فيها ملامح القانون الأوروبي العام على حدّ تعبير شميدت. وقد رأى شميدت في مثل هذه الحروب نقيضا جدّ عكسيٍ للاختلال وللإنظام.&lt;/p&gt;
+&lt;p&gt;علاوة على ذلك، فإنّ مفهوم العدو العادل ((The just enemy يعني أنّ مثل هذا النظام من الحرب قد سمح لفعل المقاومة، الدفاع الذاتي وكذا الوازن، يجعلنا ذلك نقول إنّه بالقضاء على السبب العادل فإنّ العدو يكون عادلا بداهةً، كما يكون حقّه في الدفاع الذاتي والمقاومة معروفا. لقد أتاح هذا الأمر تنمية المؤسّسات الحيادية لطرف ثالث من الدول في القانون الدولي. تبقى حالة اللادولة والحرب الخاصّة لوحدها شيئا جائراً غير عادلٍ، فالمتمردون، القراصنة، الخارجون عن القانون، مثيرو المشاكل ومن ماثلهم، من الممكن أن يُتعامل معهم عبر إجراءات عقابية جزائية بالمعنى الذّي يشير إليه القانون الجنائي الحديث أو إجراءات التنظيم. بالإضافة إلى ذلك فقد أتاحت القواعد القانونية الأوروبية بناء وحفظ التوازن، كما يُحاجج شميدت، والذّي عُرف في العلاقات الدولية “بتوازن القوى”. يرتبط ذلك بتجنّب حروب الدمار لأنّه وإذا كان التوازن هدفا سياسيا وعسكريا فمن الممكن أن تقّل الحروب لأجل المحافظة عليه. خلافا لحروب الأسباب العادلة التّي تتطّلب إمّا إذعان الخصم أو إعادة تمدينه إمّا معياريا وإمّا بالقوة. لقد مثلّت مؤتمرات السلام التّي أُبرمت تحت إشراف القوى الكبرى مسألة المَأسَسَة الشرعية لصرح القانون الدولي الأوروبي، وقد بُني توازن القوى على مبدأين أساسيين، أوّلا كلّ حرب ذات أهميّة بين الدول الأوروبية تُمثّل قلقا مشروعا لجميع أعضاء مجتمع الدول الأوروبية. وثانيا، يقع على كاهل القوى الكبرى مهمّة ضمان الانتظام المكاني الأوروبي بهدف إدراك التغيّرات الإقليمية ذات الصلة، مثلما يُحاجج شميدت.&lt;/p&gt;
+&lt;h2 id=&#34;أزمات-ما-بعد-ويستفاليا-العدو-النظام-والحرب&#34;&gt;أزمات ما بعد ويستفاليا: العدو، النظام والحرب &lt;a href=&#34;#%d8%a3%d8%b2%d9%85%d8%a7%d8%aa-%d9%85%d8%a7-%d8%a8%d8%b9%d8%af-%d9%88%d9%8a%d8%b3%d8%aa%d9%81%d8%a7%d9%84%d9%8a%d8%a7-%d8%a7%d9%84%d8%b9%d8%af%d9%88-%d8%a7%d9%84%d9%86%d8%b8%d8%a7%d9%85-%d9%88%d8%a7%d9%84%d8%ad%d8%b1%d8%a8&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;في أواخر عقود القرن التاسع عشر دخلت القواعد القانونية الأوروبية العامة سنواتها الأخيرة، لقد شخّص شميدت نهاية النوموس الأوّل للأرض في ثلاث عمليات أساسية: تطوّر القواعد القانونية الأوربية العامة إلى قانون دولي عام هُلامي، وكذا تمّ مأسسته في نظام عصبة الأمم، تحوّل مغزى الحرب، الدور الجديد للولايات المتحدة وبروز مجال النصف الغربي من العالم كمجال مركزي بالنسبة لخطابه المتعلّق بالسياسة الخارجية. نضيف إلى جانب كلّ هذه العمليات التّي قادت إلى تحوّلات تاريخية أساسية وصنعت عهدا جديدا: نهاية أوروبا كمركز للأرض. ففي القرون الماضية قامت المؤتمرات الأوروبية بتحديد معالم النظام المكاني للعالم بعد الحرب العالمية الأولى ومثلما حدث في مؤتمر باريس للسلام، لأوّل مرّة كان العالم هو الذّي قرّر بشأن النظام المكاني لأوروبا.&lt;/p&gt;
+&lt;p&gt;حسب شميدت، فقد فشل نظام عصبة الأمم في تعويض القواعد القانونية الأوربية العامة نظرا لكونه بُني على حالة قصوى من الاختلال غير المستقر، صُنع بشكلٍ واضح جليّ من قبل الجميع فيما يخصّ طريقة تعامله مع موضوع الحدّ من الحرب، ذلك المقصد المركزي من أيّ قانون دولي. لقد صار هدفه المركزي هو القضاء على الحرب بدلاً من الحدّ منها، من خلال تقديم المصطلحات الجديدة للحرب العنصرية-التمييزية والنظر إلى الحرب باعتبارها جُرما. كانت هذه محاولات لأجل تجريم حروب الاعتداء، لأجل خلق محكمة دولية والمطالبة بإصلاح الأضرار الناشئة عن المسؤولية الشرعية لشن حرب عدوانية غير عادلة، إنّ كلّ ذلك يؤشر لحدوث تحوّل تاريخي فيما يخّص مفهوم الحرب والعدو. كما يشير ذلك بما لا يدع مجالا للشك إلى نهاية عهد نوموس الأرض القديم. لقد صارت النتائج واضحة في بروز حروب القرن العشرين المطلقة، حروبٌ طائفيةٌ تُخاض باسم الإنسانية، والتّي كان لها أن تكون شاكرة لوسائل الدمار الحديثة “كالقوة الجوية”، متحوّلةً إلى “إجراءِ شُرطة تدخّلي”&lt;a href=&#34;https://www.blogger.com/blog/post/edit/4674972331562386416/8363027388488613934#&#34;&gt;&lt;!-- raw HTML omitted --&gt;·&lt;!-- raw HTML omitted --&gt;&lt;/a&gt; (Police action) في مواجهة “مروّجي” السلام، المجرمين وكذا الخارجين عن القانون.&lt;/p&gt;
+&lt;p&gt;هذا التحوّل من الحرب إلى إجراءِ شرطة تدخّليٍ، صار موضوعا متناقشا حوله كثيرا اليوم في إطار مضمون الحرب العالمية على الإرهاب، لم يكن هذا الأمر متاحا وممكنا لولا الدور التأسيسي الجديد للولايات المتحدة الأمريكية، والذّي حللّه شميدت من خلال النظر إلى مجال نصف الغربي للعالم باعتباره مجالا مركزيا لخطاب سياستها الخارجية، لقد مثّل النصف الغربي للكرة الأرضية الفضاء الأمريكي العظيم منذ الصيغة الشهيرة لمبدأ مونرو الشهير سنة 1823 “الغروسروم/المجال الكبير بتعبير شميدت Grosraum))، معرِّفا القارة الأمريكية كمجال حيوي مكاني للولايات المتحدة الأمريكية. بمفهوم “التفكير الخطّي العالمي”، فإنّ خطّ نصف الكرة الغربي يعتبر خطّا دفاعيا حول منطقة أمنية وخطّا للعزلة الذاتية، كما أنّه أيضا خطٌّ مناهضٌ للأوروبيانية ارتكز على ازدراء أمريكي لأوروبا القديمة “المعطوبة”. لكن وخلال سنوات الحروب البينية والتّي انتقلت فيها الطبيعة الأصلية الانعزالية لنصف الكرة الغربي (أي الولايات المتحدة) بشكلٍ متدرج إلى النزعة التدخلّية الإنسانية العالمية، والتّي سعت لتبرير التدخّل الأمريكي في كلّ الشؤون السياسية، الاجتماعية والاقتصادية الراهنة للعالم، والتّي بُنيت على أساس العودة إلى النظرة القديمة لتقليد الحرب العادلة.&lt;/p&gt;
+&lt;p&gt;في سياق هذا المعنى لنهاية ويستفاليا ينبغي أن تُفهم تصوّرات شميدت عن الحرب الحزبية. لقد خطّ كتاب شميدت “نظرية الحزبي” (Theory of The Partisan) تاريخيا مسألة بروز الحرب الحزبية مع الحرب الأهلية الإسبانية (1808-1813). على الرغم من إنظاميه المقاتل ومرونته العالية في التحرّك، وفقا لمعايير القوات النظامية، فقد فُهمت الحزبية بشكل أحسن من خلال “التزامه السياسي الشديد”، تجاه مجموعات نشطة سياسيا أو جماعات ذات نشاط قتالي ميداني. ويرى شميدت أن “لا قدرة طويلة للدول على دمج أعضائها وأتباعها بشكل مطلقٍ كحزب ثوري بمقاتليه النشطاء”. كما أنّ هذه الحزبية كانت فاعلا سياسيا جديدا “قادرا على إعادة جدّية الحرب وخطورتها” الأمر الذّي يُدمّر ويُفقد قبضة الدولة على السياسة والحرب. إنّ عدم تصوّر حدوث الحرب بين الدول لا يَعِدُ بالتالي بالسلام، أو بالأحرى، تدفّق العنف وخروجه عن السيطرة التّي تتجاوز الدولة.&lt;/p&gt;
+&lt;p&gt;هذا الالتزام الشديد بالهدف والمبتغى السياسي يرتبط أيضا بالخاصية النامية للحزبي، والتّي يعني شميدت من خلالها أنّه مرتبط بإقليم محدّد باعتباره المدافع عن “الديار أو أرض الوطن”.. بالنسبة لشميدت فإنّ الحزبي موجود في وضعية دفاعية جوهرية، والتّي تجعل نشاطاته السياسية محدودة مكانيا، تجعلها خاصّة ومجسدّة بدلا من صفة العالمية والتجريد. علاوة على ذلك فإنّ العدالة ذات أهمية، وهذا يعني بقاء الحزبي التقليدي مرتبطا عمليا بفكرة تقويض العدو والحدّ منه -ارتبط ذلك بمفهوم الاعتداء العادل- مقوَّضا برغبته في الدفاع والتّي تحفظه من “مطلقيه” العدالة المجرّدة. إنّ التخلّي عن العداء المحدود في الحرب كان من بين أكثر التغيّرات الملحوظة بمجرّد أن يبدأ الحزبي في تحديد –علاقته- “بالعدوانية المطلقة للإيديولوجية الثورية العالمية أو التكنولوجية”. حقيقةً، فقد استوعب شميدت هذا التطوّر من العدوانية المحدودة إلى العدوانية المطلقة من خلال تفحّص التحوّلات التّي قادت إلى شكل الحزبي انطلاقا من القتال الدفاعي اللانظامي للحرب الأهلية الإسبانية “1808-1813” عبر تنظيراتها التّي رُسمت بواسطة لينين ثم ماو تسي تونغ فيما بعد.&lt;/p&gt;
+&lt;p&gt;بالنسبة للينين، فقد حاجج شميدت بأنّ العدو المطلق كان “العدو الطبقي، البرجوازية، الرأسماليين الغرب ونظامهم الاجتماعي في كلِّ دولة حكموها”، وبالتالي فإنّ الصراع مع هؤلاء كان يجب أن يرتبط بالحضور الذاتي العالمي للعدو. وبالنسبة للحرب العالمية ضدّ عدوٍ مطلق فلم يبق التقويض والمحدودية أمرا ممكنا. كذلك فإنّ تصوّر لينين للحرب الحزبية باعتبارها منتمية “لنطاق أساليب الحرب الأهلية”، فما شغَله مسبقا كان “تساؤلات تكتيكية أو استراتيجية محضة مرتبطة بالحالة الملموسة على أرض الواقع”، لكنّه شعر بأنّ الحرب الحزبية يجب أن تستخدم أيّ طرق “شرعية أو غير شرعية، سلمية أو عنيفة، نظامية أو غير نظامية” لتحقيق مبتغاها، التّي كانت هي الثورة الاشتراكية في كلّ دول العالم، “فكل ما يخدم هذا المبتغى يعدّ شيئا جيّدا وعادلا أيضا”.&lt;/p&gt;
+&lt;p&gt;إنّ تصوّرات شميدت لمنتصف القرن العشرين حول النظام الذّي برز “ما بعد ويستفاليا”، وعن أشكال الحرب التّي سنحت لها صفاتها المعيارية الجيوبوليتيكية بالبروز، كلّها كانت مرتبطة بسؤاله المبكّر بخصوص التمييز بين الصديق والعدو، تُصاغ اليوم بقوة أكثر كسؤال الأنماط الجديدة المتوقّعة للعداوة التّي ظهرت للوجود. إذا أعدنا القول أنّ محور تعريف شميدت للسياسي “لما هو سياسي” هو التمييز بين الصديق والعدو، علاوة على الافتراض المسبق لكلّ من الصديق والعدو أنفسهم، وحينما نكون خارج الإجراءات المعيارية الويستفالية، فإنّ العداوة المحدودة “الحقيقية” المرتبطة بمصطلح الاعتداء العادل، تنزلق إلى العداوة المطلقة أثناء تحوّلها من صيغة العدو إلى الخصم اللدود متأصّل العداوة (From enemy to foe)، هذا يسمح للخصوم بأن يُودع كلّ منهم الآخر في هاوية التقويض المطلق، ويجعل دمارهم المادي والقضاء عليهم أمرا ممكنا متاحا، إنّها إبادة وخراب تصير مجرّدة مطلقة بشكل كلّي، على حدّ تعبير شميدت. تستهدف الإبادة المُفنية شبح العدو المطلق والذّي يجب أن يكون مُنتَجا وأن يبقى أيضا مجرداً أو بعيد المنال. إنّ تجريديتها هذه هي التّي تتيح النبذ المطلق للعدو. ومثلما يحاجج جون بيسلي موراي فإنّه خارج الأقواس الأوروبية للحرب: “في صفقة الموت هذه، ما كان يُعدّ أمرا غائبا هو التبادل أو حتّى العلاقة بين مواضيع من الممكن أن تنظّم بعضها البعض، تواجه كلّ الأطراف على الأرض أو في السماء خصما مجهولا… يصبح العدو مجرّدا في كلّ الحالات والمناحي”.&lt;/p&gt;
+&lt;p&gt;مثل هذه الإبادة والخراب لا تستهدف بالضرورة العدو الحقيقي ولكنّها تخدم فقط -شيئا- آخر، تحقيق الهدف الظاهري للقيم العليا، والتّي في سبيلها لا يوجد ثمن مرتفع كمُقابل. إنّها التخلّي عن العداوة الحقيقية والتّي تفتح الباب لأجل عمل الإبادة والخراب الذّي تمارسه العداوة المطلقة؛ كما يقول شميدت. يسمح الحضور الشبحي والصعوبة التّي يُمارسها العدو المطلق بصياغة وتحيين “القيم العليا”.&lt;/p&gt;
+&lt;p&gt;بزوغ التصنيفات المطلقة للعداوة والتّي يمكن أن تكون مدمّرة “للقيم العليا” يقود إلى حدوث تغيّر في كلّ من شكل، نمط ومجال الحرب ذاتها وأيضا إلى السؤال الأساسي المرتبط بالبحث عن نوموس –نظام- جديد للأرض، هو موضوع كرّس لأجله شميدت شيئا ضئيلا من التصوّرات في أواخر كتاباته. لكن بالنسبة لتلك التّي جادل واقتنع بها فقد كان من المبكّر جدّا الاستجابة والرّد عليها. مثل هذه المخاوف تسبق وربّما تُنبؤ بأكثر التحليلات راهنية والمتعلقة بالسِمة الجيوبوليتيكية لصعود النظام العالمي المعاصر، وكذا النطاق اللامحدود والمدّة التّي تستغرقها حروبه. راهنية الفكر الدولي لشميدت تتجلّى بقوة حينما ننظر إلى التقارب –التلاقي- المعاصر الذّي يثير مفارقة متجلّية بوضوح لأصحاب النزعة العسكرية الانفرادية وكذا المواضيع الإنسانية ذات النزعة الليبرالية على مستوى الخطاب والممارسة في الحرب العالمية على الإرهاب. يذّكرنا هذا مباشرة بالإدانة القويّة لشميدت حينما قال: “أيّا كان هذا الذّي يتحجّج بما هو إنساني فإنّه يريد أن يخادع ويغّش”. مثلما هو الحال بالنسبة لملاحظاته المميّزة لكلتا جوانب الطبيعة السياسية لمفهوم الإنساني. بموجبه فإنّ القتال باسم الإنسانية يعني رفض وإنكار فكرة أن يصير العدو إنسانيا. لقد كانت إمكانية عودة ظهور حروب الدمار والإبادة قد بُنيت على تحوّل مفهوماتي راديكالي لمفهوم السبب والحجّة العادلة والذّي دفع الفكر “الهرطقي” الدولي لشميدت لإعادة سرد تاريخي للإنجازات المتضاربة لويستفاليا فيما يخصّ مسألة تعيين حدود الحرب وتحديدها بين الدول الأوروبية والانتباه في الوقت ذاته للمخاطر التّي يسبّبها التخلّي عن وضع الحدود كمتابعة سياسية لتنظيم العالم.&lt;/p&gt;
+&lt;p&gt;من المؤسف أنّ “المصير الدولي” لشميدت كان قد خُتم بتأويل خاطئ لمفهومه المتداول كثيرا عن السياسي (أي ما هو سياسي) باعتباره تمايزا بين صديق وعدو، والذّي يحصر فكره ويُصنّفه كما يبدو دون أدنى شكّ ضمن المنظور الواقعي للتنظير الدولي المعاصر، مقدّما هذا غالبا كتمثيل جدّ ممتاز ومتكامل لطبيعة العلاقات الدولية باعتبارها سياسة القوة. لكن بالنسبة لشميدت فإنّ المفتاح الأساسي لأيّ مصطلح متعلق بالسياسي “ليس العدو في حدّ ذاته ولكن التمايز والتمييز بين الصديق والعدو”. بعبارة أخرى يرتكز السياسي على حقيقة الاختلاف والتعدّدية وكذا على إمكانية تسيسه وقابليته لذلك. انطلاقا من ذلك، فإنّ التركيز الأساسي للبناء الكامل لشميدت، من كتاباته القانونية الفايمارية (نسبة لعهد حكومة فايمار) إلى كتاباته الأصيلة عن نوموس الأرض، لم يكن تركيزا على العداوة أو النزاع ولكن بدلاً من ذلك كان بحثا عن جوهور النظام “الشرعي”. لهذا السبب تحدّث كولومبو بطريقة استفزازية عن “الواقعية المؤسّساتية” لشميدت كمجهود مستمر يهدف للتوفيق والتوليف، يقول:&lt;/p&gt;
+&lt;p&gt;“الصيغة والقرار، القوة الفاعلة والقانونية في محاولة تمييز الكيفية التّي تكون عليها القوة دائما (القوة أي القدرة المحضة والبسيطة لفرض إرادة طرف على الآخرين) عن الكيفية التّي تصير إليها هذه القوة عبر القانون (أو القوة الكابحة كمّا عرّفها شميدت) مستعيرا عن المفكر بولين (Pauline) مصطلح الكاتيشون الإنجيلي katechon المُعبِّر عن قوة الكبح وضبط النفس، ليُعبّر عن قدرةٍ راهنةٍ تهدف إلى تحويل عدم ضبط النفس الذي لا يقهر المميّز للسياسي إلى شكل قانوني ما”.&lt;/p&gt;
+&lt;h2 id=&#34;لمزيد-من-القراءات&#34;&gt;لمزيد من القراءات &lt;a href=&#34;#%d9%84%d9%85%d8%b2%d9%8a%d8%af-%d9%85%d9%86-%d8%a7%d9%84%d9%82%d8%b1%d8%a7%d8%a1%d8%a7%d8%aa&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dyzenhaus, David (ed.) (1998) Law as Politics: Carl Schmitt’s critique ofliberalism, Durham, NC: Duke University Press. Accessible and widely read edited collection of essays on Schmitt’s engagement with liberalism.Odysseos, Louiza and Petito, Fabio (eds) (2007) The International PoliticalThought of Carl Schmitt: Terror, Liberal War and the Crisis of Global Order,London: Routledge. A recent collection of essays engaging with the heterodoxinternational thought of Schmitt and critically utilizing his thought for acritique of contemporary war and order.Schmitt, Carl (1986) Political Romanticism, trans. G. Oakes, Cambridge:MIT Press. Schmitt’s engagement and critique of the romantic movement inwhich he outlines the emergence of the private individual of bourgeois societyout of the movement’s drive for secularization, subjectification and privatization.Schmitt, Carl (1993) ‘The age of neutralizations and depoliticizations’,trans. J. McCormick and M. Konzett, Telos 96: 130–42. Influential essaybased on a lecture from 1939 outlining Schmitt’s view of Western history asthe successive search for neutral compromize and peace within the epochalcentral spheres of contention.Schmitt, Carl (2005) Political Theology: Four Chapters on the Concept ofSovereignty, trans. G. Schwab, Chicago: University of Chicago Press.Schmitt’s influential text on sovereignty, which is today extensively used incontemporary political philosophy, as in for example the work of GiorgioAgamben.Strauss, Leo (1996) ‘Notes to The Concept of the Political’ in Schmitt(1996a). Strauss’s influential and widely read critique of Schmitt’s major text.&lt;/p&gt;
+&lt;h2 id=&#34;نبذة-عن-الكاتب&#34;&gt;نبذة عن الكاتب &lt;a href=&#34;#%d9%86%d8%a8%d8%b0%d8%a9-%d8%b9%d9%86-%d8%a7%d9%84%d9%83%d8%a7%d8%aa%d8%a8&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;لويزا أوديسيوس: أستاذة محاضرة في العلاقات الدولية بجامعة ساسيكس، تتمحور اهتماماتها البحثية حول النظرية الدولية، الأخلاق وكذا الفلسفة ما بعد البنيوية. هي مؤلفة كتاب بعنوان مسألة التعايش المشترك: الغيرية (أي الآخرون) في العلاقات الدولية (جامعة مينيسوتا، 2007)، كتاب معالجة نقدية مطولة لعمل مارتن هايدغر في العلاقات الدولية، مثلما كانت محرِّرة مشاركة مع فابيو بيتيتو لكتاب عن الفكر السياسي الدولي لكارل شميدت: الخوف، الحرب الليبرالية وأزمة النظام العالمي (روتليدج، 2007)، وأيضا محرِّرة مشاركة لهاكان سِكينلجين لكتاب “جندرة الدولي” (بالغراف ماكميلان، 2002). شاركت أيضا كمحرّرة ظيفة في مسائل خاصّة متعلّقة بموضوعات الجندر والعلاقات الدولية في مجلة الألفية: مجلة الدراسات الدولية (27، 4، 1998)، وكذا موضوعات مرتبطة بالنظرية الدولية لكارل شميدت في مجلة ليدن للقانون الدولي (19، 1، 2006).&lt;/p&gt;
+&lt;p&gt;فابيو بيتيتو: أستاذ محاضر في العلاقات الدولية بجامعة ساسيكس، تتمحور اهتماماته البحثية حول نظرية السياسة الدولية والسياسة الدولية للبحر الأبيض المتوسط. هو محرِّر مشارك (مع لويزا أوديسيوس) لكتاب الفكر السياسي الدولي لكارل شميدت: الخوف، الحرب الليبرالية وأزمة النظام العالمي (روتليدج، 2007)، كما أنّه مشارك أيضا في تأليف كتاب (مع بافلوف هاتزوبولوس) حمل عنوان: الدين في العلاقات الدولية: العودة من المنفى (بالغراف، 2003).&lt;/p&gt;
+&lt;p&gt;ورد هذا البحث المترجم ضمن أعمال كتاب جماعي بعنوان:&lt;/p&gt;
+&lt;p&gt;Critical Theorists and International Relations, Edited by Jenny Edkins and Nick Vaughan-Williams, First published 2009, Routledge Publications, P: 263-305-316.&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.blogger.com/blog/post/edit/4674972331562386416/8363027388488613934#&#34;&gt;&lt;!-- raw HTML omitted --&gt;[1]&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/karl/</guid>
+      <pubDate>Sat, 09 May 2020 05:28:07 +0200</pubDate>
     </item>
     
     <item>
-      <title>C&#43;&#43;</title>
-      <link>https://salehmu.github.io/tags/c&#43;&#43;/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/c&#43;&#43;/</guid>
-      <description></description>
+      <title>Book Review: The Crowd: A Study of the Popular Mind by Gustave Le Bon (Arabic)</title>
+      <link>https://salehmu.github.io/posts/psycho/</link>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/12091888&#34;&gt;&lt;img src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1311337803l/12091888._SX98_.jpg&#34; alt=&#34;سيكولوجية الجماهير&#34; loading=&#34;lazy&#34; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/12091888&#34;&gt;سيكولوجية الجماهير&lt;/a&gt; by &lt;a href=&#34;https://www.goodreads.com/author/show/313118.Gustave_Le_Bon&#34;&gt;Gustave Le Bon&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My rating: &lt;a href=&#34;https://www.goodreads.com/review/show/3337533094&#34;&gt;1 of 5 stars&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;فرويد، مارتين شاركو، هما الاتنين فقط الي كتاباتهم البدائية في السيكولوجي لسا عايشة لحد دلوقتي، قدرت أخد - مع الوقت - نظرة تخيلية لشكل المجتمع العلمي القديم (القرن الثامن-التاسع عشر) قبل ما تتقلس الـclasses الكبرى وتتيح للطبقات المتوسطة إنها تشارك في الانتاج العلمي (بعد توزْع نسبة من الثروات)..&lt;/p&gt;
+&lt;p&gt;المهم إن كريجولار ريدير تفرعت من الاتنين دول لباقي كبار المنتجين في البحث العلمي في القرن ده، جيمس فريزر، سبنسر، لانج، وأكيد لوبون..&lt;/p&gt;
+&lt;p&gt;في بعض الكتابات زي مستقبل وهم أو سيكولوجيا الجماهير [الخاص بفرويد مش جوستاف] كانت بتظهر بوضوح شخصيات العلماء دول في خطابهم النقدي لفرويد، نفس الأمر في كتاباتهم، فريزر وهو بيدرس القبائل الاسترالية البدائية كان بيعاملهم باحتقار ملهوش مثيل، كأنه عايز يطلع من الكتاب ويقتلهم واحد واحد، سبنسر مش بيذكر أي قبيلة افريقية إلا لما يتبعها بكلمة &amp;ldquo;subnormal&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;الي بحاول أقوله، إن الكُتاب دول كلهم لعلهم كانوا متأثرين بطبقيتهم المرتفعة عن الشعوب والقبائل الي كانوا بيدرسوها، ودا انعكس على كتاباتهم ودراستهم للشعوب دي وجعل دراستها أشبه بدراسة مجموعة من القرود[ويمكن دا من أهم الأسباب الي جعلت رؤيتهم غير دقيقة]، لكن يمكن أكتر حد اتأثر بطبقيته أو سياسته هو لوبون في سيكولوجيا الجماهير.&lt;/p&gt;
+&lt;p&gt;يمكن نقدر نلخص كل الي قاله لوبون في جمل زي &amp;ldquo;الجماهير دول ولاد متناكه&amp;rdquo;.. &amp;ldquo;مبيفهموش حرف&amp;rdquo;، &amp;ldquo;خخخخ حمير نيك&amp;rdquo;، &amp;ldquo;انت تمسك الواحد منهم وتزعق فيه لو مستنيه يسمع كلامك&amp;rdquo;.. الخ..&lt;/p&gt;
+&lt;p&gt;هل هو درس &amp;ldquo;سيكولوجي&amp;rdquo; خاصة بالجمهور؟ هل فسرلنا ليه سلوك المرء بيختلف عند وجوده في مستوى متجمهر على عكس المرء لما يكون لوحده؟ هل قال اي ابن متناكه غير الي أي حد يقدر يلاحظه وهو بيتفرج على عركة بين اهلاوية وزملكاوية؟ لأ.&lt;/p&gt;
+&lt;p&gt;لوبون نشر كتابه في عصر الـpost-revolution of france؛ لما كانت كل ممالك أوروبا على شفا جرفٍ من الاشتراكية والثورات المتجمهرة، كل الارستقراطيين كانوا مرعوبين من حدوث تجربة مشابهة للي حدثت في فرنسا، كلمة &amp;ldquo;اشتراكية-ديموقراطية&amp;rdquo; كانت بتبث الرعب في نفس أي ارستقراطي أوروبي، وبالأخص لوبون كأحد كبار معاديين الديموقراطية في تاريخها [أتذكر إنه قال لثيودور روزفلت (أوه وبالمناسبة روزفلت كان من قراءه وكان بيقابله كتير.. ودا بيفسرلنا ليه أمريكا ديموقراطية أوي لول) قاله ما معناه &amp;ldquo;كسم الديموقراطية&amp;rdquo; Damn democracy]..&lt;/p&gt;
+&lt;p&gt;زي ما قولت محتوى الكتاب: &amp;ldquo;الجماهير شراميط&amp;rdquo;.. &amp;ldquo;علشان تتعامل مع الشراميط دول زعق فيهم وأعمل كذا كذا&amp;rdquo;.. يمكن الجزء التاني &amp;ldquo;ازاي تتعامل مع الجماهير&amp;rdquo; هو الي بيفسر ليه كل قُراء جوستاف كانو راديكال-ديكتاتوريين: هتلر، موسولوني، حتى لينين كان بيقراله.&lt;/p&gt;
+&lt;p&gt;كشخص شارك في الجيش الفرنسي، لوبون كان بيذكر كل مثال يتقال عن الجمهور في حدث من الثورة الفرنسية، لدرجة إني متذكر إنه ذكر شيء يخص الـBastille breaking ساعت ما الثوار حرروا المساجين وانضموا ليهم، قال شيء عن قد ايه ممكن الجمهور يجلب منضمين جدد حتى لو كانوا على سبيل المثال (مثلًا يعني) ناس لسا طالعين من سجن في باريس اسمه الباستيل.&lt;/p&gt;
+&lt;p&gt;الخلاصة عمومًا، ان الكتاب دا ميستحقش قراءة دقائق معدودة، ويمكن انت عرفت محتواه كله عامل ازاي من البوست دا.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.goodreads.com/review/list/91979266-saleh-muhammed&#34;&gt;View all my reviews&lt;/a&gt;&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/psycho/</guid>
+      <pubDate>Sat, 21 Mar 2020 05:28:26 +0200</pubDate>
     </item>
     
     <item>
-      <title>Databases</title>
-      <link>https://salehmu.github.io/tags/databases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/tags/databases/</guid>
-      <description></description>
+      <title>On The Critique of MBTI (Arabic)</title>
+      <link>https://salehmu.github.io/posts/mbti/</link>
+      <description>&lt;p&gt;**عن اختبار الشخصية.. On critique of the MBTI&lt;/p&gt;
+&lt;p&gt;من سنتين شوفت أول ظهور لاختبار ماري بريجز (MBTI) في إحدى الندوات الي بيحضرها طبيب مشهور على اليوتيوب، وكان بيروج للاختبار بإنه طريقة حَسِنة لإختيار الناس الي بتتعامل معاهم ودليل جيد للتعامل مع الناس دول (عن طريق إنك تعرف نوع شخصيتهم وتعرف سمات الشخصية دي وبالتالي تقدر تحايلهم).. وطبعًا الاختبار بما إنه بالإنجلش وبيقدم نتايج زي INPT وما شابه، وهي أشياء محتاجه دراسة قليلة علشان تفهمها، أغلب الجمهور (وأغلب دي تزيد عن 99%) شافو إن الاختبار دا أكيد مستند لـ &amp;ldquo;علم&amp;rdquo;، وأصبحت لما بقول لصديق إن الكلام دا هبل وإنه مش INTJ ولا حاجه، يقولي إني غلطان أكيد وإن الاختبار دا معمول عليه دراسات ومنتشر في أمريكا وبلا بلا بلا.&lt;/p&gt;
+&lt;p&gt;كتبت بهذا الصدد مقال&lt;a href=&#34;&#34;&gt;[1]&lt;/a&gt; اتنشر من أقل من إسبوع إلا إنه من الواضح إنه مكانش مُفصل بما فيه الكفاية في الحديث عن موضوع زي دا (بالأخص مع إصرار فانز الاختبار على معاملته على أساس إنه أصعب من فيزيا نظرية) وتبيين علاقته بالتحليل النفسي psychoanalysis ونظرية كارل يانغ الفاشلة.. هحاول هنا – وبلغة أبسط وأوضح – إني أبين مشاكل الاختبار كاملةً، وعلاقته بكارل يانغ، وازاي بينتشر بالسرعة دي.&lt;/p&gt;
+&lt;p&gt;الاختبار أولًا مش معقد – بالنسبة للمستخدمين – زي ما بيروجله أغلب الـINTJ لكنه في أصله (آلية عمله وتصميمة) معقد حبتين، بريجز (وهستخدم الإسم دا للإشارة لكاثرين وإيزابيل بريجز الي عملوا الاختبار فيما بعد) كانت قارية كويس علوم إنسانية وبعض الخرافات الي كان الناس فاكرينها علم وقتها، زي التحليل النفسي والنماذج الأولية [ودي نظرية يانج الي عمل بيها الـpsychological types الي هتستخدمه بريجز في اختبارها].. طريقة عمل الاختبار السهلة والمعروفة هي كالتالي: الاختبار بيبقى 92 سؤال عن حياة الفرد بعضهم بيضعوه في مواقف ويخيروه بين حاجتين يعملهم (مثلًا: وانت ف حفلة تحب تلعب مع اصحابك ولا تقرا كتاب ف هدوء بعيد) وعلى الأساس ده وبحسبه بسيطة بيصنف الواحد ضمن 8 سمات متناظرة وهي لو صحت ترجمتي:&lt;/p&gt;
+&lt;p&gt;الانبساط(E)/الانطواء(I)&lt;/p&gt;
+&lt;p&gt;الشعور(S)/الحدس(N)&lt;/p&gt;
+&lt;p&gt;التفكير(T)/الإحساس(F)&lt;/p&gt;
+&lt;p&gt;القيادة(J)/الإدراك(P)&lt;/p&gt;
+&lt;p&gt;الأسئلة بتحدد لكل شخص سمة واحدة بين كل سمتين متناظرين، أي إنه إما يكون شخص ريادي (J) أو شخص مدرك (P) وبالتالي كل شخص له 4 حروف فقط، وبكدا نسبة الاحتمالات الكلية هتكون 16 نوع.. ودا عدد الشخصيات في النموذج، 16 شخصية.&lt;/p&gt;
+&lt;p&gt;يانج كان أول شخص (منهجيًا) بدأ في تصنيف الناس ضمن نماذج شخصية بتدل على شخصياتهم في كتابة &amp;ldquo;الأنواع النفسية – psychological types&amp;rdquo; والي درسته بريجز كويس، وعلى عكس بريجز، يانج بدأ بتصنيف الناس ضمن 4 سمات فقط، وبيُختزلوا لـ2 في تصنيف الشخص وهما برضو موجودين في نموذج بريجز:&lt;/p&gt;
+&lt;p&gt;الشعور(S)/الحدس(N)&lt;/p&gt;
+&lt;p&gt;التفكير(T)/الإحساس(F)&lt;/p&gt;
+&lt;p&gt;إزاي بتشتغل النظرية أصلًا بقا؟ ويل، دا معقد حبتين ومحتاج مقدمة كويسه عن الـ psychoanalysisوالـ Archetypeولكن كتبسيط (غير دقيق على الإطلاق): النظرية بتعتمد على إن الدماغ بينقسم لقسمين، وهو الوعي واللاوعي (Unconscious) ودي مبادئ فرويد أو مارتن شاركو – أيًا كان – اللاوعي دا دماغ أخرى في دماغنا بتفكر معانا (ويُفترض إنها الجزء الأكبر من العقل) وهي شغالة دايمًا لكن احنا مش بنحس بيها، ورغم دا هي الي بتوجهنا لأغلب تصرفاتنا، عند يانج بقى (ودا مش موجود في مدارس التحليل الفرويدية التانية) فيه حاجه اسمها اللاوعي الجمعي (Collective Unconscious).. ودا حاجه زي لاوعي مشترك بين جميع الناس [ودا الأساس العلمي الArchetype]، اللاوعي المشترك دا بيتصف بسمات معينه، هي السمات الي لخصها يانج..&lt;/p&gt;
+&lt;p&gt;يانج كان شايف إن تأثرنا باللاوعي بيكون أكبر (في بعض الحالات) من تأثرنا بالوعي، والوعي بتاعنا بيتخذ بعض السمات واللاوعي بيتخذ سمات معارضة ليها كان بيقول عليها &amp;ldquo;auxiliary function&amp;rdquo; [مش هينفع نترجمها سمة مساعدة لأنها مينفعش &amp;ldquo;تساعد&amp;rdquo; السمة الواعية] لو انت الوعي بتاعك مثلًا مُفكر (T) فاللاوعي مينفعش الـ auxiliary عنده يبقى شعوري (S) لأن السمتين دول بيساعدوا بعض بالفعل، ف لازم تبقى سمة معارضة، زي الإحساس (F).. ودا تم تجاهله تمامًا في نموذج بريجز وبقت بتحط الـ auxiliaryمع الـ principal function ف مهلبية كدا.&lt;/p&gt;
+&lt;p&gt;طيب ليه يانج معملش الاختبار دا بنفسه؟ مش هو الي كان مقسم الشخصيات كدا؟ في الواقع عزيزي القارئ، يانج لو كان شاف بريجز وهي بتقول إن اختبارها based on archetypes كان قتل نفسه، يانج في كتابه psychological types ودا الكتاب الي قدم فيه النظرية قال إن الشخصيات الي بيعرضها ف مقدمته (أي الشخصية S مثلًا أو ما شابه) هي &amp;quot; represent extreme cases of personality types&amp;quot; أي إنه لا وجود للشخصيات دي إلا في الخيال، وإن الشخص عادة ما بيكون ما بين شخصية من الشخصيتين، يعني S أو N لكنه مستحيل يكون S أو N، وبالمناسبة قال بهذا الصدد مقولة مشهورة للغاية إلا إن بريجز تجاهلتها كذلك:&lt;/p&gt;
+&lt;p&gt;“There is no such thing as a pure introvert or extrovert. Such a person would be in the lunatic asylum.” – &amp;ldquo;مفيش حد introvert (I) ولا extrovert (E) بشكل تام، أشخاص زي دول مكانهم هيكون مستشفى المجانين&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;وعلى الرغم من إن نظرية يانج، والتحليل النفسي وفرويد ما هو إلا هبده كبيرة، إلا إن كلامه في النقطة دي تحديدًا كان صائب، إن مفيش E حقيقي أو I حقيقي، بل دي مجرد نسب متفاوته في الشخصيات، وعلى فكره دا بيفسر دراسه عملها ديفد بيتينجر سنة 1993، لما جاب مجموعة من الناس وخلاهم يعملوا الاختبار، وبعد فترة معينة خلاهم يعملوا نفس الاختبار، الناس الي كانت بتبقى INTP كانت بتلاقي نفسها ENTJ بنسبة 50%! إنت متخيل إن الاختبار مش ثابت&lt;a href=&#34;&#34;&gt;[2]&lt;/a&gt; بنسبة 50%؟ يعني إنت لو فاكر انك الشخصية الفلانية لما عملت الاختبار، ممكن لو عدته مره تانية تلاقيك شخصية تانية.. هسيبلكم صورة من الدراسة ف الكومنتس.&lt;/p&gt;
+&lt;p&gt;دا معناه إيه أيًا يكن؟ دا معناه إن الاختبار ملوش لازمه، لأنه ملوش نتيجة ثابته أو موثوقة بل نتيجته هتفضل مجهولة لينا، وبالتالي مش هتقدر انك تبني استنتاجات عليها، 50% من المستخدمين نتايجهم بتتغير، ف انت لو هتقرا عن شخصية زميلك علشان تعرف تتعامل معاها، صاحبك ممكن أصلًا متكونش دي نتيجته الحقيقية ومتكونش دي شخصيته.&lt;/p&gt;
+&lt;p&gt;دي أهم المشاكل الجوهرية في الاختبار، لكن في مشاكل أسوء منها بتسمى مشاكل التسجيل، ودي أبسط في شرحها.. الأول زي ما قولنا الاختبار بيعتمد على 92 سؤال، بيحددوا اتجاه الواحد وذوقه، مثلًا: لو أصحابك بيفكرو انهم يروحو رحله، هل هتقترح عليهم أماكن ولا هتشوف اقتراحتهم؟ لو انت اخترت الاختيار الأول دا هيصنف شخصيتك على إنها شخصية ريادية (J) ولو اخترت الاختيار التاني هتتصنف على إنك شخصية ادراكية (P) وطبعًا دا بالاستعانة لمجموعة الأسئلة التانية.. المشكلة بتظهر هنا في إن السؤال دا مش بيدل على شيء بالفعل، يانج كان بيستخدم في نظريته أساليب التحليل النفسي في إنه يعرف معلومات عن الناس لكن بريجز استخدمت الأسئلة.&lt;/p&gt;
+&lt;p&gt;مشكلة الأسئلة دي إنها مش بتحدد شيء، يعني إجابتك على السؤال الي فات دا بالاختيار التاني، مش بالضرورة بتعني إنك مبتحبش تقترح وان معندكش شخصية ريادية، ممكن يكون سببها إنك متعرفش أماكن كتير أو مش بتحب الرحلات أو غيره أو غيره، لكن الاختبار بيعاملها على أساس إنها سمة شخصية.&lt;/p&gt;
+&lt;p&gt;المشكلة التانية، هي مشكلة النتيجة المتطرفة، ودي الي عارضها يانج زي ما وضحنا، الاختبار بيقولك إنك infp، تعرف إنك ممكن تكون بينك وبين الـinfj سؤال واحد فقط! يعني نقاطك في شخصية الـp 11 مثلًا لكن نقاطك في الـj 10 فقط، ف الاختبار بيقولك إنك p، مش بيقولك حتى إنك p بنسبة 80% أو أي حاجه، لأ، بيدي نتيجة غير واضحة وغير معبرة تمامًا.&lt;/p&gt;
+&lt;p&gt;طبعًا المشكلتين دول بيوقعوا الاختبار، فهو ولا بيدي نتيجة واضحة للمشاركين، ولا بيتوقع أفعالهم كويس، يعني: المفروض لو انا شخصيتي ريادية زي ما الاختبار ما بيقول، فالمفروض لو انا وقعت ف موقف زي الي كان في السؤال فوق، فالمفروض اتصرف كريادي، إلا إن دا مش بيحصل، مفيش ولا دراسة علمية واحدة قدرت تتوقع أي نتائج للمشاركين.&lt;/p&gt;
+&lt;p&gt;طيب هل الاختبار علمي أصلًا؟ هل في أوراق علمية عنه أو هل هو موثوق في الوسط العلمي؟ لأ.&lt;/p&gt;
+&lt;p&gt;الاختبار ملوش أي علاقة من قريب أو بعيد بالعلم، بريجز وبنتها ملهمش أي علاقة بعلم النفس حتى، الأم كانت مهندسة زراعية والبنت كانت طالبة سياسة، حتى استعانتهم بنظرية يانج كان استخدام غلط، ونظرية يانج كلها هبد أصلًا، لحد النهاردة مفيش ولا دراسة علمية واحدة (وأقصد بده دراسة peer-reviewd مش دراسة منشورة في مجلة مشبوهة) بتتكلم عن الـmbti لو جربت تدخل دلوقتي على الـapa pyscnet والي هي تُعد أكبر موسوعة على النت في السيكولوجي، مستحيل تلاقي نتيجة واحدة بتتكلم عن الـmbti كشيء علمي أبدًا.&lt;/p&gt;
+&lt;p&gt;على الجانب الأخر بقى، فيه دراسات مضحكة للغاية بتنشرها مجلة اسمها Journal of Psychological Type، وللصدفة الغريبة أوي المجلة مملوكة في الأصل لشركة مايرز-بريجز الي هي صاحبة الاختبار أصلًا (عارف لما تدي لنفسك 10 من 10 في امتحانك؟).. وبالمناسبة برضو فيه إحصائية عملها باحث اسمه كوسلي كوفيلد&lt;a href=&#34;&#34;&gt;[3]&lt;/a&gt; على الأبحاث والمؤتمرات والبرامج الي متعلقة بالاختبار دا، وجد إن 80% منها الشركة صاحبة الاختبار هي الي بتموله بنفسها علشان الاختبار ينتشر.. هيكسبو ايه من كدا؟ أحب أقولك إن إيرادات الشركة من الهبل دا السنة الي فاتت عدت الـ20 مليون دولار &lt;a href=&#34;https://www.washingtonpost.com/national/on-leadership/myers-briggs-does-it-pay-to-know-your-type/2012/12/14/eaed51ae-3fcc-11e2-bca3-aadc9b7e29c5_story.html&#34;&gt;وفقًا&lt;/a&gt; للواشنطن بوست.&lt;/p&gt;
+&lt;p&gt;وبس.. نت مش INTJ ولا حاجه يصحبي انت بس الي بيتهيألك.&lt;/p&gt;
+&lt;p&gt;مصادر:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://www.arageek.com/2020/10/01/mtbi-test-pseudoscience.html&#34;&gt;https://www.arageek.com/2020/10/01/mtbi-test-pseudoscience.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;[2]&lt;/a&gt; Pittenger, David J. (November 1993). “Measuring the MBTI … And Coming Up Short” (PDF). Journal of Career Planning and Employment. 54 (1): 48–52.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;a href=&#34;&#34;&gt;[3]&lt;/a&gt; Coffield F, Moseley D, Hall E, Ecclestone K (2004). “Learning styles and pedagogy in post-16 learning: A systematic and critical review”. Learning and Skills Research Centre.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/mbti/</guid>
+      <pubDate>Thu, 13 Feb 2020 05:28:20 +0200</pubDate>
     </item>
     
   </channel>
