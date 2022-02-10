@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.NET on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/tags/.net/</link>
+    <description>Recent content in .NET on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 05:28:26 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C#</title>
+      <link>https://salehmu.github.io/notes/csharp/</link>
+      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/csharp/</guid>
+      <description>Speaking C# # Discover C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
+To discover your compiler version, you can go to your terminal and run the command:
+dotnet --version To determine which versions of the C# compiler you have available, enter the following command:</description>
+    </item>
+    
+  </channel>
+</rss>
