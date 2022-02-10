@@ -7,7 +7,7 @@
     
     <language>en</language>
     <copyright>Copyright 2022, Ronalds Vilcins</copyright>
-    <lastBuildDate>Sun, 07 Nov 2021 02:03:39 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 17 Dec 2021 19:57:19 +0200</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
@@ -1156,6 +1156,30 @@ song&lt;/a&gt;. I hope there will be some revolutionary day which in I will sing
       <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
       <guid>https://salehmu.github.io/posts/mbti/</guid>
       <pubDate>Thu, 13 Feb 2020 05:28:20 +0200</pubDate>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://salehmu.github.io/posts/readme/</link>
+      <description>&lt;h2 id=&#34;notes&#34;&gt;Notes &lt;a href=&#34;#notes&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;Algorithms/&#34;&gt;Algorithms&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;Algorithms/Computational%20Geometry/&#34;&gt;Computational Geometry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Algorithms/Dynamic%20Programming%20/&#34;&gt;Dynamic Programming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Algorithms/Convex%20Hull/&#34;&gt;Convex Hull&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Algorithms/Graphs/&#34;&gt;Graphs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;C#%20Notes/&#34;&gt;C# Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;STD/&#34;&gt;C++ STD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Problem%20Solving/&#34;&gt;Problem Solving&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;PostgreSQL%20Notebook/&#34;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/readme/</guid>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
     </item>
     
   </channel>
