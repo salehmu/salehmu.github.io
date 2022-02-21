@@ -18,13 +18,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://salehmu.github.io/notes/gemtry/" /><meta property="article:section" content="notes" />
 <meta property="article:published_time" content="2021-12-17T19:57:19+02:00" />
-<meta property="article:modified_time" content="2022-02-10T19:54:17+02:00" />
+<meta property="article:modified_time" content="2022-02-21T18:09:33+02:00" />
 
 
 <meta itemprop="name" content="Introduction to Non-theoretical Computational Geometry">
 <meta itemprop="description" content="The ultimate computational geometry for computer science tutorial"><meta itemprop="datePublished" content="2021-12-17T19:57:19+02:00" />
-<meta itemprop="dateModified" content="2022-02-10T19:54:17+02:00" />
-<meta itemprop="wordCount" content="4848">
+<meta itemprop="dateModified" content="2022-02-21T18:09:33+02:00" />
+<meta itemprop="wordCount" content="5247">
 <meta itemprop="keywords" content="Computer Science,Algorithms," />
   <link rel="canonical" href="https://salehmu.github.io/notes/gemtry/">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
@@ -69,7 +69,7 @@
     "copyrightYear" : "2021",
     "dateCreated": "2021-12-17T19:57:19.00Z",
     "datePublished": "2021-12-17T19:57:19.00Z",
-    "dateModified": "2022-02-10T19:54:17.00Z",
+    "dateModified": "2022-02-21T18:09:33.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "Saleh Muhammed",
@@ -83,7 +83,7 @@
     },
     "image": "https://salehmu.github.io",
     "url" : "https:\/\/salehmu.github.io\/notes\/gemtry\/",
-    "wordCount" : "4848",
+    "wordCount" : "5247",
     "genre" : [ "Computer Science" , "Algorithms" ],
     "keywords" : [ "Computer Science" , "Algorithms" ]
 }
@@ -295,11 +295,15 @@ a form: \(A_{x} + B_{y} = C\) where \(A\), \(B\), and \(C\), are the numbers whi
 We can generate any equation between two points easily. Say we are given two different
 points \((x_{1}, y{1})\) and \((x_{2}, y{2})\) and we what to find \(A\), \(B\) and \(C\) for the
 equation above, we can easily say:</p>
-<p>\begin{equation*}</p>
-<p>$A = y_{2}-y_{1}$</p>
-<p>$B = x_{1}-x_{2}$</p>
-<p>$C = Ax_{1}+By_{1}$</p>
-<p>\end{equation*}</p>
+<p>\begin{equation*}
+a= y_2 - y_1
+\end{equation*}</p>
+<p>\begin{equation*}
+b= x_1 - x_2
+\end{equation*}</p>
+<p>\begin{equation*}
+c= ax_1+by_1
+\end{equation*}</p>
 <p>Since this is one of the most problems I noticed people have trouble with, let&rsquo;s try to
 simplify more than that, consider the following equation:</p>
 <p>\begin{equation}
@@ -400,7 +404,43 @@ intersection point using the mentioned formulas.</p>
   <span class="kt">double</span> <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">B2</span> <span class="o">*</span> <span class="n">C1</span> <span class="o">-</span> <span class="n">B1</span> <span class="o">*</span> <span class="n">C2</span><span class="p">)</span> <span class="o">/</span> <span class="n">det</span>
   <span class="kt">double</span> <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">A1</span> <span class="o">*</span> <span class="n">C2</span> <span class="o">-</span> <span class="n">A2</span> <span class="o">*</span> <span class="n">C1</span><span class="p">)</span> <span class="o">/</span> <span class="n">det</span>
 <span class="p">}</span>
-</code></pre></div><h2 id="finding-a-circle-from-3-points">Finding a Circle From 3 Points <a href="#finding-a-circle-from-3-points" class="hash">#</a></h2>
+</code></pre></div><h2 id="finding-the-equation-of-a-line-for-a-segment">Finding The Equation of a Line for a Segment <a href="#finding-the-equation-of-a-line-for-a-segment" class="hash">#</a></h2>
+<p>Let the given segment be \(PQ\)  i.e. the known coordinates of its ends \(P_x, P_y, Q_x, Q_y\)</p>
+<p>It is necessary to construct the equation of a line in the plane passing through this
+segment, i.e. find the coefficients  \(A_x + B_y + C = 0\)  in the equation of a line:</p>
+<p>Note that for the required triples  there are infinitely many solutions which describe the
+given segment: you can multiply all three coefficients by an arbitrary non-zero number and
+get the same straight line. Therefore, our task is to find one of these triples.</p>
+<p>It is easy to verify (by substitution of these expressions and the coordinates of the points
+and  into the equation of a straight line) that the following set of coefficients fits:</p>
+<p>\begin{align}
+A &amp;= P_y - Q_y, \\
+B &amp;= Q_x - P_x, \\
+C &amp;= - A P_x - B P_y.
+\end{align}</p>
+<h3 id="real-case-vs-dot-integer-case"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Real Case vs. Integer Case <a href="#real-case-vs-dot-integer-case" class="hash">#</a></h3>
+<h2 id="orientation-of-3-points">Orientation of 3 Points <a href="#orientation-of-3-points" class="hash">#</a></h2>
+<p>To get the intuition of what is left and what is right turn, consider an example shown below.</p>
+<figure><img src="/ox-hugo/2022-02-10_21-33-40_screenshot.png"/>
+</figure>
+
+<p>Given two points \(p_1(x1,y1)\) and \(p_2(x2,y2)\), we need to first determine whether point
+\(p_1\) is clockwise or is anti-clockwise from point \(p2\) with respect to origin. One way of
+solving this problem is by calculating the angle made by both \(\overline{p_1}\) and
+\(\overline{p_2}\) with x-axis and the difference in the angle can tell whether one point is
+clockwise or anti-clockwise from other. There is an easier and efficient solution to this
+than finding the angle which is calculating the cross product of the vector \(\overline{p_1}\)
+and \(\overline{p_2}\) Mathematically the cross product of two vectors \(\overline{p_1}\) and
+\(\overline{p_2}\) is given by</p>
+<p>\(p_1 \times p_2 = x_1 y_2 - x_2 y_1\)</p>
+<p>If the value of \(p_1 \times p_2\) is positive then \(p_1\) is clockwise from \(p_2\) with respect
+to origin.</p>
+<p>Similarly, if \(p_1 \times p_2\) is negative then p1 is anti-clockwise from \(p_2\) with respect to origin and
+if the value is 0 then points \(p_1, p_2\) and origin are collinear.</p>
+<p>respectively. In order to calculate the cross product of two segments, we need to convert
+them into the vectors. This can be done in the following way.</p>
+<p>\(\overline{p_1p_2} = (x_2 - x_1 , y_2 - y_1)\)</p>
+<h2 id="finding-a-circle-from-3-points">Finding a Circle From 3 Points <a href="#finding-a-circle-from-3-points" class="hash">#</a></h2>
 <p>Given 3 points which are not colinear (all on the same line) those three points uniquely
 define a circle. But, how do you find the center and radius of that circle? This task turns
 out to be a simple application of line intersection. We want to find the perpendicular
@@ -474,28 +514,26 @@ think about a convex hull is to imagine that each of the points is a peg stickin
 a board. Take a rubber band and stretch it around all of the points. The polygon formed by
 the rubber band is a convex hull.</p>
 <h3 id="jarvi-s-algorithm">Jarvi&rsquo;s algorithm <a href="#jarvi-s-algorithm" class="hash">#</a></h3>
+<p>\(O(n^2)\)
+\(O(n \cdot h)\)</p>
 <p>There is two approaches to solve this problem, <em>Jarvi&rsquo;s algorithm</em> and <em>Graham Scan</em>, in
 this article I&rsquo;m going to use Jarvi&rsquo;s algorithm here, if you are autistic enough you can
 check <a href="http://www.dcs.gla.ac.uk/~pat/52233/slides/Hull1x1.pdf">Grahm Scan</a>.</p>
-<p>The core of Jarvi&rsquo;s algorithm is described in the following points:</p>
+<p>he core of Jarvi&rsquo;s algorithm is described in the following points:</p>
 <ol>
 <li>Initialize \(p\) as leftmost point</li>
 <li>Do the following as long as we don&rsquo;t come back to the leftmost point again:
 <ol>
 <li>
-<p>The next point \(q\) is the point such that the triple \((p,\ q,\ r)\) is counterclockwise for any other point \(r\).</p>
+<p>The next point \(q\) is the point such that the triple \((p,\ r,\ q)\) is counterclockwise for any other point \(r\).</p>
 <p>To find this we simply initialize \(q\) as the next point, then we traverse through the
 all points. For any point \(i\), if \(i\) is more counterclockwise, then we update \(q =
-i\). How to check if point is more counterclockwise? We can use orientation checker:</p>
+i\).
+How to check if point is more counterclockwise? We can use orientation checker:</p>
 <figure><img src="/ox-hugo/2022-01-19_05-00-40_screenshot.png"/>
 </figure>
 
-</li>
-</ol>
-</li>
-</ol>
-<p>(in this figure, clockwise triplet \(ABC\): cross product of \(AB\) and \(AC\) vectors is
-\(&gt; 0\) anticlockwise triplet \(ACD\): cross product of \(AC\) and \(AD\) is negative.)</p>
+<p>(in this figure, clockwise triplet \(ABC\): cross product of \(AB\) and \(AC\) vectors is \(&gt; 0\) anticlockwise triplet \(ACD\): cross product of \(AC\) and \(AD\) is negative.)</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="kt">int</span> <span class="nf">orientation</span><span class="p">(</span><span class="n">Point</span> <span class="n">p</span><span class="p">,</span> <span class="n">Point</span> <span class="n">q</span><span class="p">,</span> <span class="n">Point</span> <span class="n">r</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="n">q</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">p</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">q</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span>
@@ -510,9 +548,15 @@ more distance, using a distance utility</p>
     <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span>   <span class="n">pow</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">q</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span>
                     <span class="n">pow</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">-</span> <span class="n">q</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.0</span> <span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div><ol>
-<li>next[p] = q (store \(q\) as next of \(p\) in the output convex hull)</li>
-<li>\(p = q\) (Set p as q for the next iteration)</li>
+</code></pre></div></li>
+<li>
+<p>next[p] = q (store \(q\) as next of \(p\) in the output convex hull)</p>
+</li>
+<li>
+<p>\(p = q\) (Set p as q for the next iteration)</p>
+</li>
+</ol>
+</li>
 </ol>
 <p>Now, let&rsquo;s repeat in C(++):</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C++" data-lang="C++"><span class="cp">#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
@@ -531,7 +575,7 @@ more distance, using a distance utility</p>
 <span class="p">}</span>
 
 <span class="kt">float</span> <span class="nf">dis</span><span class="p">(</span><span class="n">point</span> <span class="n">p</span><span class="p">,</span> <span class="n">point</span> <span class="n">q</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span>   <span class="n">pow</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">q</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span>
+    <span class="k">return</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">pow</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">q</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span>
                     <span class="n">pow</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="o">-</span> <span class="n">q</span><span class="p">[</span><span class="n">y</span><span class="p">]</span> <span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.0</span> <span class="p">);</span>
 <span class="p">}</span>
 
@@ -666,6 +710,7 @@ the complexity also depends on the number of output.</p>
 <li>Mount, D. M. (n.d.). CMSC 754 Computational Geometry. Lecture. Retrieved August 23, 2018, from <a href="https://www.cs.umd.edu/class/spring2012/cmsc754/Lects/cmsc754-lects.pdf">https://www.cs.umd.edu/class/spring2012/cmsc754/Lects/cmsc754-lects.pdf</a></li>
 </ul>
 <h3 id="grahm-scan">Grahm Scan <a href="#grahm-scan" class="hash">#</a></h3>
+<p>\(O(n \cdot log(n))\)</p>
 <p>Graham scan is an algorithm to compute a convex hull of a given set of points in \(O(n\log n)\)
 time. This algorithm first sorts the set of points according to their polar angle and scans
 the points to find the convex hull vertices.</p>
@@ -812,7 +857,9 @@ y_2 - y_1), \overline{p_1p_3} = (x_3 - x_1, y_3 - y_1)\]</p>
             <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sorted_polar</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
             <span class="n">stack_size</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">stack</span>
-</code></pre></div>
+</code></pre></div><h3 id="monotone-chain-algorithm"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Monotone chain Algorithm <a href="#monotone-chain-algorithm" class="hash">#</a></h3>
+<p>\(O(n \cdot log(n))\)</p>
+
       </span>
        
 
@@ -823,7 +870,7 @@ y_2 - y_1), \overline{p_1p_3} = (x_3 - x_1, y_3 - y_1)\]</p>
       
   <ul>
     <li>
-      © 2022
+ لَا إِلٰهَ إِلَّا ٱلله
     </li>
   
   </ul>
