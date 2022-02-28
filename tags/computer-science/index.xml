@@ -8,18 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Jan 2022 05:28:26 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>C# &amp; .NET Notes</title>
+      <title>.NET Notes in C#</title>
       <link>https://salehmu.github.io/notes/csharp/</link>
       <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
       
       <guid>https://salehmu.github.io/notes/csharp/</guid>
-      <description>Speaking C# # Discover C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
-To discover your compiler version, you can go to your terminal and run the command:
-dotnet --version To determine which versions of the C# compiler you have available, enter the following command:</description>
+      <description>Resoruces #  Textbooks:  Andrew Lock - ASP.NET Core in Action-Manning (2018). Concurrency in C# Cookbook: Asynchronous, Parallel, and Multithreaded Programming. LINQ in Action by Fabrice Marguerie, Steve Eichert, Jim Wooley.   Websites:  Npgsql Docs    Speaking C# # Discover C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.</description>
     </item>
     
     <item>
-      <title>Representations, Implementations and Searching of Graphs</title>
+      <title>Representations, Implementations and Algorithms of Graphs (and Trees)</title>
       <link>https://salehmu.github.io/notes/graphs/</link>
       <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
       
@@ -56,8 +54,8 @@ Select distinct rows using distinct operator # DISTINCT clause is used to remove
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://salehmu.github.io/notes/ps/</guid>
-      <description>Problem in built directory are either not completed or wrong answers. The Main OJ is leetcode, all CF problems from the last reposotiery are removed.
-   Problem Tags Difficulty Judge Statue     4. Find First and Last Position of Element in Sorted Array Binary Search Medium LC Accepted   36. Valid Sudoku Matrix Medium LC Accepted   39. Combination Sum Backtracking Medium LC Accepted   53.</description>
+      <description>Map # Problem in built directory are either not completed or wrong answers. The Main OJ is leetcode, all CF problems from the last reposotiery are removed.
+   Problem Tags Difficulty Judge Statue     116. Populating Next Right Pointers in Each Node Tree Medium LC Accepted   628. Maximum Product of Three Numbers Math Easy LC Accepted   268. Missing Number Math Easy LC Accepted   20.</description>
     </item>
     
     <item>

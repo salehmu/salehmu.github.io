@@ -7,24 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Ronalds Vilcins - https://salehmu.github.io">
-  <title>Representations, Implementations and Searching of Graphs | Saleh Muhammed</title>
+  <title>Representations, Implementations and Algorithms of Graphs (and Trees) | Saleh Muhammed</title>
   <meta name="description" content="A simplified introduction into graph theory applications.">
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Representations, Implementations and Searching of Graphs"/>
+<meta name="twitter:title" content="Representations, Implementations and Algorithms of Graphs (and Trees)"/>
 <meta name="twitter:description" content="A simplified introduction into graph theory applications."/>
 
-<meta property="og:title" content="Representations, Implementations and Searching of Graphs" />
+<meta property="og:title" content="Representations, Implementations and Algorithms of Graphs (and Trees)" />
 <meta property="og:description" content="A simplified introduction into graph theory applications." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://salehmu.github.io/notes/graphs/" /><meta property="article:section" content="notes" />
 <meta property="article:published_time" content="2022-01-03T14:56:42+02:00" />
-<meta property="article:modified_time" content="2022-02-10T17:46:16+02:00" />
+<meta property="article:modified_time" content="2022-02-28T17:34:12+02:00" />
 
 
-<meta itemprop="name" content="Representations, Implementations and Searching of Graphs">
+<meta itemprop="name" content="Representations, Implementations and Algorithms of Graphs (and Trees)">
 <meta itemprop="description" content="A simplified introduction into graph theory applications."><meta itemprop="datePublished" content="2022-01-03T14:56:42+02:00" />
-<meta itemprop="dateModified" content="2022-02-10T17:46:16+02:00" />
-<meta itemprop="wordCount" content="4601">
+<meta itemprop="dateModified" content="2022-02-28T17:34:12+02:00" />
+<meta itemprop="wordCount" content="4615">
 <meta itemprop="keywords" content="Grahps,Algorithms,Computer Science," />
   <link rel="canonical" href="https://salehmu.github.io/notes/graphs/">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
@@ -43,8 +43,8 @@
     "@context": "http://schema.org",
     "@type": "BlogPosting",
     "articleSection": "notes",
-    "name": "Representations, Implementations and Searching of Graphs",
-    "headline": "Representations, Implementations and Searching of Graphs",
+    "name": "Representations, Implementations and Algorithms of Graphs (and Trees)",
+    "headline": "Representations, Implementations and Algorithms of Graphs (and Trees)",
     "alternativeHeadline": "",
     "description": "A simplified introduction into graph theory applications.",
     "inLanguage": "en-us",
@@ -69,7 +69,7 @@
     "copyrightYear" : "2022",
     "dateCreated": "2022-01-03T14:56:42.00Z",
     "datePublished": "2022-01-03T14:56:42.00Z",
-    "dateModified": "2022-02-10T17:46:16.00Z",
+    "dateModified": "2022-02-28T17:34:12.00Z",
     "publisher":{
         "@type":"Organization",
         "name": "Saleh Muhammed",
@@ -83,7 +83,7 @@
     },
     "image": "https://salehmu.github.io",
     "url" : "https:\/\/salehmu.github.io\/notes\/graphs\/",
-    "wordCount" : "4601",
+    "wordCount" : "4615",
     "genre" : [ "Grahps" , "Algorithms" , "Computer Science" ],
     "keywords" : [ "Grahps" , "Algorithms" , "Computer Science" ]
 }
@@ -329,7 +329,7 @@ weighted graph. The linked list can slightly be changed to even store the weight
 edge, it looks like this in memory:</p>
 <p><img src="/ox-hugo/2022-01-03_20-25-56_screenshot.png" alt="" loading="lazy" />
 
-<em>a is the Adjacency List representation of the graph a</em></p>
+<em>a is the adjacency List representation of the graph a</em></p>
 <p>However, such a representation is not always efficient, at least from complexity
 perspective, if we need to know the relation between two nodes, we can&rsquo;t ever know that in
 constant time since we have to traverse the whole list to check if a node is included on it
@@ -337,7 +337,7 @@ or node (so we can tell what is the relation between them), it&rsquo;s \(O(N)\) 
 <p>In the other hand, the adjacency matrix represent looks like this:</p>
 <p><img src="/ox-hugo/2022-01-03_20-31-26_screenshot.png" alt="" loading="lazy" />
 
-<em>a is the Adjacency Matrix representation of the graph a</em></p>
+<em>b is the Adjacency Matrix representation of the graph a</em></p>
 <p>Can we know the relation between any two nodes in a constant time? Yes. We just have to
 check which node in the other&rsquo;s list, i.e. if we want to know the relationship between W and
 T, we have to check \(W[T]\) and \(T[W]\), and we are done. It&rsquo;s very efficient from complexity
@@ -758,7 +758,7 @@ The output of the DFS traverse should be: <code>0, 3, 4, 2, 1</code>, so the sta
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div><h4 id="tarjan-s-algorithm"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Tarjan&rsquo;s Algorithm <a href="#tarjan-s-algorithm" class="hash">#</a></h4>
-<h2 id="detecting-cycles"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Detecting Cycles <a href="#detecting-cycles" class="hash">#</a></h2>
+<h2 id="detecting-cycles">Detecting Cycles <a href="#detecting-cycles" class="hash">#</a></h2>
 <p><em>Hint: Review cycle definition in the <a href="#sheet">definition sheet</a> above</em></p>
 <h3 id="directed-graphs">Directed Graphs <a href="#directed-graphs" class="hash">#</a></h3>
 <h4 id="using-depth-first-search">Using Depth First Search <a href="#using-depth-first-search" class="hash">#</a></h4>
@@ -890,13 +890,17 @@ component graph.</p>
 </code></pre></div><p>There is many ways to resolve the same problem if we want to get more than 1 mother
 vertex, for example we can tack the last \(n\) visited points in the DFS process and check
 them.</p>
-<h2 id="todos-topics">TODOs Topics <a href="#todos-topics" class="hash">#</a></h2>
+<h2 id="todos-topics">TODOs Topics <!-- raw HTML omitted -->[0/10]<!-- raw HTML omitted --> <a href="#todos-topics" class="hash">#</a></h2>
 <h3 id="bfs"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> BFS <a href="#bfs" class="hash">#</a></h3>
 <h3 id="handling-disconnected-graphs"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Handling Disconnected graphs <a href="#handling-disconnected-graphs" class="hash">#</a></h3>
 <h3 id="bellman-ford-algorithm"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Bellman–Ford algorithm <a href="#bellman-ford-algorithm" class="hash">#</a></h3>
 <h3 id="floyd-warshall-algorithm"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Floyd–Warshall algorithm <a href="#floyd-warshall-algorithm" class="hash">#</a></h3>
 <h3 id="union-find-algorithm"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Union-Find Algorithm <a href="#union-find-algorithm" class="hash">#</a></h3>
 <h3 id="tarjan-s-strongly-connected-components-algorithm"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Tarjan&rsquo;s strongly connected components algorithm <a href="#tarjan-s-strongly-connected-components-algorithm" class="hash">#</a></h3>
+<h3 id="shortest-path"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Shortest Path <a href="#shortest-path" class="hash">#</a></h3>
+<h3 id="longest-path"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Longest Path <a href="#longest-path" class="hash">#</a></h3>
+<h3 id="tree"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Tree <a href="#tree" class="hash">#</a></h3>
+<h3 id="tree-diamteter--aka-dot-logest-path"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Tree Diamteter <em>(aka. Logest Path)</em> <a href="#tree-diamteter--aka-dot-logest-path" class="hash">#</a></h3>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
