@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ronalds Vilcins - https://salehmu.github.io">
+  <title>Dynamic Programming | Saleh Muhammed</title>
+  <meta name="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dynamic Programming"/>
+<meta name="twitter:description" content="Introduction # Follows: Roofgarden, T. (2019). Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming (Illustrated ed.). Soundlikeyourself Publishing, LLC. Channel @ YouTube.com
+Objectives #  Understanding functions (from memory perspective). Optimal Substructure. Overlapping Subproblems. Memoization. Understanding Dynamic Programming.  Strategies for DP problems   Solving DP problems.  Memory And Functions # Consider the following C code:
+int g = 5; int main() { static int a; int b; int *p; p = (int*) malloc (sizeof(int)); *p = 10; } The process of compiling this file should look like this using a standard C compiler:"/>
+
+<meta property="og:title" content="Dynamic Programming" />
+<meta property="og:description" content="Introduction # Follows: Roofgarden, T. (2019). Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming (Illustrated ed.). Soundlikeyourself Publishing, LLC. Channel @ YouTube.com
+Objectives #  Understanding functions (from memory perspective). Optimal Substructure. Overlapping Subproblems. Memoization. Understanding Dynamic Programming.  Strategies for DP problems   Solving DP problems.  Memory And Functions # Consider the following C code:
+int g = 5; int main() { static int a; int b; int *p; p = (int*) malloc (sizeof(int)); *p = 10; } The process of compiling this file should look like this using a standard C compiler:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salehmu.github.io/notes/dp/" /><meta property="article:section" content="notes" />
+
+<meta property="article:modified_time" content="2022-03-02T15:19:10+02:00" />
+
+
+<meta itemprop="name" content="Dynamic Programming">
+<meta itemprop="description" content="Introduction # Follows: Roofgarden, T. (2019). Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming (Illustrated ed.). Soundlikeyourself Publishing, LLC. Channel @ YouTube.com
+Objectives #  Understanding functions (from memory perspective). Optimal Substructure. Overlapping Subproblems. Memoization. Understanding Dynamic Programming.  Strategies for DP problems   Solving DP problems.  Memory And Functions # Consider the following C code:
+int g = 5; int main() { static int a; int b; int *p; p = (int*) malloc (sizeof(int)); *p = 10; } The process of compiling this file should look like this using a standard C compiler:">
+<meta itemprop="dateModified" content="2022-03-02T15:19:10+02:00" />
+<meta itemprop="wordCount" content="1679">
+<meta itemprop="keywords" content="Computer Science," />
+  <link rel="canonical" href="https://salehmu.github.io/notes/dp/">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="Saleh Muhammed" href="https://salehmu.github.ioatom.xml" />
+  <link rel="alternate" type="application/json" title="Saleh Muhammed" href="https://salehmu.github.iofeed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeSpeed;text-align:start;unicode-bidi:plaintext}.posts hr{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:none;border-bottom:1px #353535;flex:1 0 1rem;text-align:start;unicode-bidi:plaintext}main{max-width:70ch;padding:2ch;margin:auto;text-align:start;unicode-bidi:plaintext}a,body{color:#353535;text-align:start;unicode-bidi:plaintext;text-align:start;unicode-bidi:plaintext}::selection,a:focus,a:hover{background-color:#353535;color:#fff;text-align:start;unicode-bidi:plaintext}.meta{margin:0 0 2.5rem;text-align:start;unicode-bidi:plaintext}.tags::before{content:"\2022";margin-left:1rem;text-align:start;unicode-bidi:plaintext}code,pre{color:#353535;font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;border:1px solid #353535;font-size:small}code{padding:.1rem;border:none}pre{padding:.5rem;overflow-x:auto}pre code{border:none}img{max-width:100%;border:1px solid #353535}hr{background:#353535;height:1px;border:0;text-align:start;unicode-bidi:plaintext}ul{list-style-type:square}ul,ol{padding-left:1.2rem}header li,footer li{display:inline;text-transform:uppercase;text-align:start;unicode-bidi:plaintext}header a,footer a{text-decoration:none;text-align:start;unicode-bidi:plaintext}header ul,footer ul{justify-content:space-between;display:flex;text-align:start;unicode-bidi:plaintext}[aria-current=page]{text-decoration:line-through}header,section,footer{padding:1rem 0;text-align:start;unicode-bidi:plaintext}blockquote{border-left:5px solid #353535;padding-left:1rem;text-align:start;unicode-bidi:plaintext}.posts ul,header ul,footer ul{list-style:none;text-align:start;unicode-bidi:plaintext}.posts,header ul,footer ul{padding:0;text-align:start;unicode-bidi:plaintext}.posts li{align-items:center;display:flex;justify-content:space-between;margin-bottom:.7rem;text-align:start;unicode-bidi:plaintext}.posts li a,.posts li div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;text-align:start;unicode-bidi:plaintext}.posts li time{padding-left:1rem;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:start;unicode-bidi:plaintext}.hash{opacity:.25;text-decoration:none;text-align:start;unicode-bidi:plaintext}table{border-collapse:collapse;text-align:left;width:100%;text-align:start;unicode-bidi:plaintext}table tr{background:#fff;border-bottom:1px solid}table th,table td{padding:10px 20px}p{text-align:justify;unicode-bidi:plaintext}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "notes",
+    "name": "Dynamic Programming",
+    "headline": "Dynamic Programming",
+    "alternativeHeadline": "",
+    "description": "Introduction # Follows: Roofgarden, T. (2019). Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming (Illustrated ed.). Soundlikeyourself Publishing, LLC. Channel @ YouTube.com\nObjectives #  Understanding functions (from memory perspective). Optimal Substructure. Overlapping Subproblems. Memoization. Understanding Dynamic Programming.  Strategies for DP problems   Solving DP problems.  Memory And Functions # Consider the following C code:\nint g = 5; int main() { static int a; int b; int *p; p = (int*) malloc (sizeof(int)); *p = 10; } The process of compiling this file should look like this using a standard C compiler:",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/salehmu.github.io\/notes\/dp\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "copyrightHolder" : "Saleh Muhammed",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "2022-03-02T15:19:10.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Saleh Muhammed",
+        "url": "https://salehmu.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/salehmu.github.io",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://salehmu.github.io",
+    "url" : "https:\/\/salehmu.github.io\/notes\/dp\/",
+    "wordCount" : "1679",
+    "genre" : [ "Computer Science" ],
+    "keywords" : [ "Computer Science" ]
+}
+</script>
+
+
+</head>
+
+<body>
+<main>
+      <header>
+    <nav>
+      
+  <ul>
+    <li>
+      
+      
+      
+      
+      <a href="/" >Index</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/fullbooks" >BOOKS</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/cinema" >CINEMA</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="mailto:ghd@keemail.me" >EMAIL</a>
+    </li>
+  
+  </ul>
+    </nav>
+  </header>
+  <hr>
+
+
+
+  <section>
+
+      
+
+      <span itemprop="articleBody">
+      <h2 id="introduction">Introduction <a href="#introduction" class="hash">#</a></h2>
+<p>Follows:
+Roofgarden, T. (2019). <em>Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic
+Programming</em> (Illustrated ed.). Soundlikeyourself Publishing, LLC. <a href="https://www.youtube.com/channel/UCcH4Ga14Y4ELFKrEYM1vXCg/videos">Channel @ YouTube.com</a></p>
+<h2 id="objectives">Objectives <a href="#objectives" class="hash">#</a></h2>
+<ul>
+<li>Understanding functions (from memory perspective).</li>
+<li>Optimal Substructure.</li>
+<li>Overlapping Subproblems.</li>
+<li>Memoization.</li>
+<li>Understanding Dynamic Programming.
+<ul>
+<li>Strategies for DP problems</li>
+</ul>
+</li>
+<li>Solving DP problems.</li>
+</ul>
+<h2 id="memory-and-functions">Memory And Functions <a href="#memory-and-functions" class="hash">#</a></h2>
+<p>Consider the following C code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="kt">int</span> <span class="n">g</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">static</span> <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">b</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">)</span> <span class="n">malloc</span> <span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+    <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+ <span class="p">}</span>
+</code></pre></div><p>The process of compiling this file should look like this using a standard C compiler:</p>
+<figure><img src="/ox-hugo/2021-12-06_14-19-10_screenshot.png"/>
+</figure>
+
+<p>After this we get the standard executable file. Once you run it, first it is loaded into the
+random access memory -&gt; process address space, which includes memory segmentation. It has
+the following segments:</p>
+<h3 id="code-segment">Code Segment <a href="#code-segment" class="hash">#</a></h3>
+<ul>
+<li>Contains the machine code of the executable file.</li>
+<li>Read-Only segment.</li>
+</ul>
+<h3 id="data-segment">Data Segment <a href="#data-segment" class="hash">#</a></h3>
+<ul>
+<li>Contains all global and static data variable (henceforward <em>load-time</em> variables).</li>
+<li>Loaded before <code>main</code> function is called.</li>
+<li>It has also two data areas:
+<ul>
+<li>Initialized data variables: includes all pre-initialized (e.g <code>static int i = 8</code>)
+<ul>
+<li>uninitialized data variable: which is going to be initialized by zero.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="stack-segment">Stack Segment <a href="#stack-segment" class="hash">#</a></h3>
+<ul>
+<li>Contains an <em>Activation Records</em> of all active functions</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="kt">void</span> <span class="nf">function_II</span><span class="p">();</span>
+<span class="kt">void</span> <span class="nf">functions_I</span><span class="p">();</span>
+<span class="kt">void</span> <span class="nf">functions_II</span><span class="p">();</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">fucntion_I</span><span class="p">();</span>
+ <span class="p">}</span>
+<span class="kt">void</span> <span class="nf">functions_I</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">function_II</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="kt">void</span> <span class="nf">functions_II</span><span class="p">()</span> <span class="p">{</span>
+<span class="p">}</span>
+</code></pre></div><p>When the program is executed, <code>main()</code> is the only active function, when main call
+<code>function_I</code>, both <code>main()</code> and <code>function_I</code> are active, and so on when it calls
+<code>function_II</code> they are all active and their activation records are in stack.</p>
+<figure><img src="/ox-hugo/2021-12-06_15-05-44_New%20Project.png"/>
+</figure>
+
+<p>When <code>function_II</code> returns, its activation record is popped from the stack, and the
+execution is back in <code>function_I</code>, and so on with <code>function_II</code>.</p>
+<ul>
+<li>The size of the stack keeps change as the program is running and calling new functions.</li>
+<li><code>SP register</code> Keeps track of the top of the stack.</li>
+</ul>
+<h3 id="heap-segment">Heap Segment <a href="#heap-segment" class="hash">#</a></h3>
+<ul>
+<li>This is where new memory is allocated (using either <code>new</code> in C++ or C&rsquo;s <code>malloc()</code>), it&rsquo;s
+also called <em>dynamic memory</em> and <em>run-time memory</em>.</li>
+</ul>
+<h3 id="running">Running <a href="#running" class="hash">#</a></h3>
+<p>Consider the following code:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">int</span> <span class="n">total</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">square</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">squareOfsum</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Function is called %d times&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span><span class="mi">2</span><span class="p">;</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">squareOfsum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Square of Sum = %d&#34;</span><span class="p">,</span> <span class="n">total</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>After running the executable file of this program and loading it into your RAM, the main
+function is not called yet and the memory looks like this:</p>
+<figure><img src="/ox-hugo/2021-12-06_16-28-23_screenshot.png"/>
+</figure>
+
+<p>The load variables are loaded in the Data Segment area. Then after <code>main()</code> functions is
+called, the memory looks as follows:</p>
+<figure><img src="/ox-hugo/2021-12-06_16-31-52_screenshot.png"/>
+</figure>
+
+<p>When a function is called:</p>
+<ol>
+<li>
+<p>State (register values, Instruction Pointer value, etc.) of calling function is saved&quot;)
+in the memory.</p>
+</li>
+<li>
+<p>Activation record of called function is created and pushed on the top of Stack. Local
+variables of called function are allocated memory inside the AR.</p>
+</li>
+<li>
+<p>Instruction pointer (IP register) moves to the first executable instruction of called function.</p>
+</li>
+<li>
+<p>Execution of the called function begins.</p>
+</li>
+</ol>
+<p>Similarly when the called function returns back (to the calling function), following work is
+done:</p>
+<ol>
+<li>
+<p>Return value of the function is stored in some register.</p>
+</li>
+<li>
+<p>AR of called function is popped from the memory (Stack size is reduced and freed memory
+gets added to the free pool, which can be used by either the stack or heap).</p>
+</li>
+<li>
+<p>State of the calling function is restored back to what it was before the function call
+(Point-1 in function call process above).</p>
+</li>
+<li>
+<p>Instruction pointer moves back to the instruction where it was before calling the</p>
+</li>
+</ol>
+<p>function and execution of calling function begins from the point at which it was
+paused&quot;.</p>
+<ol>
+<li>Value returned from called function is replaced at the point of call in calling</li>
+</ol>
+<p>function.</p>
+<p>(This can be optimized using <code>inline functions</code> in some compilers)</p>
+<h3 id="conclusion">Conclusion <a href="#conclusion" class="hash">#</a></h3>
+<p>Function call is a lot of overhead in both terms of time and memory. This is why macros
+using is ubiquitous in C.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="cp">#incldue &lt;vector&gt;
+</span><span class="cp"></span><span class="kt">void</span> <span class="nf">it</span><span class="p">(){</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="n">i</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">};</span>
+    <span class="c1">// for (int i = 0 ; i &lt; i.size(); i++ )
+</span><span class="c1"></span>    <span class="c1">//{
+</span><span class="c1"></span>    <span class="c1">//         do something
+</span><span class="c1"></span>    <span class="c1">//}
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">size</span><span class="o">=</span><span class="n">i</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">)</span>
+   <span class="p">{</span>
+       <span class="c1">// do something
+</span><span class="c1"></span>    <span class="p">}</span>
+
+ <span class="p">}</span>
+</code></pre></div><p>Consider the following recursive and iterative solutions to calculate the factorial of n:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">sum</span> <span class="o">+=</span><span class="n">i</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">sum</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">else</span> <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="p">(</span><span class="n">sum</span> <span class="n">n</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>for the recursive solution, when we call it for 3 as sum(3); It will call <code>sum(2)</code>; which
+will in-turn call sum(1).</p>
+<p>At this point, the memory stack will have three activation records of function sum, each of
+them having a local variable n:</p>
+<figure><img src="/ox-hugo/2021-12-07_08-18-54_screenshot.png"/>
+</figure>
+
+<p>In the iterative solution, there is only one function call to <code>sum(3)</code> and three local
+variables:</p>
+<figure><img src="/ox-hugo/2021-12-07_08-19-55_screenshot.png"/>
+</figure>
+
+<h2 id="optimal-substructure">Optimal Substructure <a href="#optimal-substructure" class="hash">#</a></h2>
+<p>Optimal substructure means, that optimal solution to a problem of size n (having n elements)
+is based on an optimal solution to the same problem of smaller size (less than n elements).
+i.e while building the solution for a problem of size n, define it in terms of similar
+problems of smaller size, say, k (k &lt; n). We find optimal solutions of less elements and
+combine the solutions to get final result.</p>
+<p>Consider finding the shortest path for traveling between two cities by car. A person want to
+drive from city A to city C, city B lies in between the two cities.</p>
+<figure><img src="/ox-hugo/2021-12-07_13-59-52_screenshot.png"/>
+</figure>
+
+<p>The shortest path of going from A to C (30 km) will involve both, taking the shortest path
+from A to B and shortest path from B to C.</p>
+<h2 id="overlapping-subproblems">Overlapping Subproblems <a href="#overlapping-subproblems" class="hash">#</a></h2>
+<p>Here is a new kind of problems, in which subproblems are not solved just once (not like
+singular recursion). Consider the example of finding the \(n^{th}\) from a Fibonacci series
+like: [1, 2, 3, 5, 8, 13, 12 ..].</p>
+<p>Fibonacci(1) = Fibonacci(2) = 1                   For \(n=1, \text{\ } n=2\)
+Fibonacci(n) = Fibonacci (n-1) + Fibonacci (n-2). For \(n&gt;2\)</p>
+<p>The simplest algorithm to compute \(n^{th}\) term of Fibonacci is a direct translation of the
+mathematical definition using recursion function:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span> <span class="o">||</span> <span class="n">n</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">return</span>
+             <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><p>This is an equation for exponential time. The reason why it is taking exponential time for
+such a simple algorithm is because it is solving the subproblems (computing kth term, k&lt;n)
+multiple times.</p>
+<figure><img src="/ox-hugo/2021-12-07_14-24-11_screenshot.png"/>
+</figure>
+
+<p>The function fib(n), where n=5, call itself twice with n=4 and n=3.  Function with n=4 will
+in turn call fib function twice with n=3 and n=2.  Note that fib (3) is called twice, from
+fib(4) and fib (5) respectively (see Picture 4.2). In fact fib (2) is called three times.</p>
+<p>The following code shows non-recursive solution that uses the first two terms to compute the
+third one:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">cnt</span> <span class="mi">3</span><span class="p">;</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="n">cnt</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">cnt</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">cnt</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">ci</span>
+<span class="p">}</span>
+</code></pre></div><p>This is \(O(n)\) solution.</p>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>10</th>
+<th>20</th>
+<th>40</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recursive</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>9</td>
+<td>109</td>
+<td>13529</td>
+<td>204668309</td>
+</tr>
+<tr>
+<td>Iterative</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="memoization">Memoization <a href="#memoization" class="hash">#</a></h2>
+<p>Consider the <a href="https://leetcode.com/problems/climbing-stairs/">Climbing Stairs</a> problem.</p>
+<p>In memoization we store the solution of a subproblems in some sort of a cache when it is
+solved for the first time. When the same subproblem is encountered again, then the problem
+is not solved from scratch, rather, it&rsquo;s already solved result is returned from the cache.</p>
+<p>Recursion itself is bad in terms of execution time and memory. In the Fibonacci problem, the
+problem gets worse when we compute value of fib(x) from scratch again even when it was
+computed earlier (overlapping subproblems).  When fib (10) is calculated for the first time
+we can just remember the result and store it a cache. Next time when a call is made for
+fib(10) we just look into the cache and return the stored result in 0(1) time rather than
+making 109 recursive calls all over again.</p>
+<p>This approach is called Memoization. In memoization we store the solution of a subproblems
+in some sort of a cache when it is solved for the first time. When the same subproblem is
+encountered again, then the problem is not solved from scratch, rather, it&rsquo;s already solved
+result is returned from the cache</p>
+<figure><img src="/ox-hugo/2021-12-07_15-39-27_screenshot.png"/>
+</figure>
+
+<p>Consider computing nth Fibonacci term again, let us add an integer array, memo of size n
+that will act as cache to store result of subproblems (N = max value of n that need to be
+computed).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="cp">#define MAX 100
+</span><span class="cp"></span><span class="kt">int</span> <span class="n">memo</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
+<span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span> <span class="o">||</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span> <span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+<span class="p">}</span>
+<span class="c1">// O(N)
+</span></code></pre></div><table>
+<thead>
+<tr>
+<th>n</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>10</th>
+<th>20</th>
+<th>40</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recursive</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>9</td>
+<td>109</td>
+<td>13529</td>
+<td>204668309</td>
+</tr>
+<tr>
+<td>Iterative</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Memoization</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>7</td>
+<td>17</td>
+<td>37</td>
+<td>77</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dynamic-programming">Dynamic Programming <a href="#dynamic-programming" class="hash">#</a></h2>
+<p>Dynamic programming is &ldquo;A method for solving a complex problem by breaking
+it down into a collection of simpler subproblems, solving each of those subproblems just
+once, and storing their solutions - ideally, using a memory- based data structure.”</p>
+<p>By this definition, memoization is also dynamic programming. Some authors in fact use the
+term “Memoized Dynamic Programming' or &lsquo;Top-Down dynamic programming for Memoization and
+they use &ldquo;Bottom-up dynamic programming&rsquo; to describe what we are calling Dynamic Programming
+here. We use the terms &lsquo;Memoization&rsquo; and &lsquo;Dynamic Programming, to refer
+to top-down and bottom-up approaches of problem solving where a subproblem is solved only
+once.</p>
+<p>In other words, dynamic programming unroll the recursion. Consider the following dynamic
+solution to the Fibonacci problem:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="kt">int</span> <span class="nf">fib</span> <span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">100</span> <span class="cm">/* MAX */</span><span class="p">];</span>
+    <span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">arr</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span> <span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h2 id="problems">Problems <!-- raw HTML omitted -->[1/4]<!-- raw HTML omitted --> <a href="#problems" class="hash">#</a></h2>
+<h3 id="int-replacement"><!-- raw HTML omitted -->[X]<!-- raw HTML omitted --> <a href="https://leetcode.com/problems/integer-replacement/">INT replacement</a> <a href="#int-replacement" class="hash">#</a></h3>
+<h3 id="https-leetcode-dot-com-problems-longest-increasing-subsequence"><!-- raw HTML omitted -->[ ]<!-- raw HTML omitted --> <a href="https://leetcode.com/problems/longest-increasing-subsequence/">https://leetcode.com/problems/longest-increasing-subsequence/</a> <a href="#https-leetcode-dot-com-problems-longest-increasing-subsequence" class="hash">#</a></h3>
+<h3 id="https-leetcode-dot-com-problems-is-subsequence"><!-- raw HTML omitted -->[ ]<!-- raw HTML omitted --> <a href="https://leetcode.com/problems/is-subsequence/">https://leetcode.com/problems/is-subsequence/</a> <a href="#https-leetcode-dot-com-problems-is-subsequence" class="hash">#</a></h3>
+<h3 id="https-leetcode-dot-com-problems-maximum-subarray"><!-- raw HTML omitted -->[ ]<!-- raw HTML omitted --> <a href="https://leetcode.com/problems/maximum-subarray/">https://leetcode.com/problems/maximum-subarray/</a> <a href="#https-leetcode-dot-com-problems-maximum-subarray" class="hash">#</a></h3>
+
+      </span>
+       
+
+    </section>
+    <hr>
+<footer>
+	  <nav>
+      
+  <ul>
+    <li>
+ لَا إِلٰهَ إِلَّا ٱلله
+    </li>
+  
+  </ul>
+    </nav>
+</footer>
+
+  </main>
+</body>
+</html>

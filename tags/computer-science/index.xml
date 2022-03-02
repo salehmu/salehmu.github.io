@@ -37,6 +37,17 @@ Introduction # I&amp;rsquo;m not sure how to properly introduce this long plain 
     </item>
     
     <item>
+      <title>Dynamic Programming</title>
+      <link>https://salehmu.github.io/notes/dp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/dp/</guid>
+      <description>Introduction # Follows: Roofgarden, T. (2019). Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming (Illustrated ed.). Soundlikeyourself Publishing, LLC. Channel @ YouTube.com
+Objectives #  Understanding functions (from memory perspective). Optimal Substructure. Overlapping Subproblems. Memoization. Understanding Dynamic Programming.  Strategies for DP problems   Solving DP problems.  Memory And Functions # Consider the following C code:
+int g = 5; int main() { static int a; int b; int *p; p = (int*) malloc (sizeof(int)); *p = 10; } The process of compiling this file should look like this using a standard C compiler:</description>
+    </item>
+    
+    <item>
       <title>PostgreSQL Notes</title>
       <link>https://salehmu.github.io/notes/psql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
