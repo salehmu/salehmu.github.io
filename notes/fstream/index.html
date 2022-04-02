@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ronalds Vilcins - https://salehmu.github.io">
+  <title>Working With Files and Streams in C# | Saleh Muhammed</title>
+  <meta name="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Working With Files and Streams in C#"/>
+<meta name="twitter:description" content="Introduction # I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I&rsquo;m sure I will not ever solve such a problem using C# (don&rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&rsquo;t know it)."/>
+
+<meta property="og:title" content="Working With Files and Streams in C#" />
+<meta property="og:description" content="Introduction # I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I&rsquo;m sure I will not ever solve such a problem using C# (don&rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&rsquo;t know it)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salehmu.github.io/notes/fstream/" /><meta property="article:section" content="notes" />
+
+<meta property="article:modified_time" content="2022-04-02T11:32:02+02:00" />
+
+
+<meta itemprop="name" content="Working With Files and Streams in C#">
+<meta itemprop="description" content="Introduction # I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I&rsquo;m sure I will not ever solve such a problem using C# (don&rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&rsquo;t know it).">
+<meta itemprop="dateModified" content="2022-04-02T11:32:02+02:00" />
+<meta itemprop="wordCount" content="2142">
+<meta itemprop="keywords" content="Computer Science,.NET," />
+  <link rel="canonical" href="https://salehmu.github.io/notes/fstream/">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="Saleh Muhammed" href="https://salehmu.github.ioatom.xml" />
+  <link rel="alternate" type="application/json" title="Saleh Muhammed" href="https://salehmu.github.iofeed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeSpeed;text-align:start;unicode-bidi:plaintext}.posts hr{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:none;border-bottom:1px #353535;flex:1 0 1rem;text-align:start;unicode-bidi:plaintext}main{max-width:70ch;padding:2ch;margin:auto;text-align:start;unicode-bidi:plaintext}a,body{color:#353535;text-align:start;unicode-bidi:plaintext;text-align:start;unicode-bidi:plaintext}::selection,a:focus,a:hover{background-color:#353535;color:#fff;text-align:start;unicode-bidi:plaintext}.meta{margin:0 0 2.5rem;text-align:start;unicode-bidi:plaintext}.tags::before{content:"\2022";margin-left:1rem;text-align:start;unicode-bidi:plaintext}code,pre{color:#353535;font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;border:1px solid #353535;font-size:small}code{padding:.1rem;border:none}pre{padding:.5rem;overflow-x:auto}pre code{border:none}img{max-width:100%;border:1px solid #353535}hr{background:#353535;height:1px;border:0;text-align:start;unicode-bidi:plaintext}ul{list-style-type:square}ul,ol{padding-left:1.2rem}header li,footer li{display:inline;text-transform:uppercase;text-align:start;unicode-bidi:plaintext}header a,footer a{text-decoration:none;text-align:start;unicode-bidi:plaintext}header ul,footer ul{justify-content:space-between;display:flex;text-align:start;unicode-bidi:plaintext}[aria-current=page]{text-decoration:line-through}header,section,footer{padding:1rem 0;text-align:start;unicode-bidi:plaintext}blockquote{border-left:5px solid #353535;padding-left:1rem;text-align:start;unicode-bidi:plaintext}.posts ul,header ul,footer ul{list-style:none;text-align:start;unicode-bidi:plaintext}.posts,header ul,footer ul{padding:0;text-align:start;unicode-bidi:plaintext}.posts li{align-items:center;display:flex;justify-content:space-between;margin-bottom:.7rem;text-align:start;unicode-bidi:plaintext}.posts li a,.posts li div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;text-align:start;unicode-bidi:plaintext}.posts li time{padding-left:1rem;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:start;unicode-bidi:plaintext}.hash{opacity:.25;text-decoration:none;text-align:start;unicode-bidi:plaintext}table{border-collapse:collapse;text-align:left;width:100%;text-align:start;unicode-bidi:plaintext}table tr{background:#fff;border-bottom:1px solid}table th,table td{padding:10px 20px}p{text-align:justify;unicode-bidi:plaintext}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "notes",
+    "name": "Working With Files and Streams in C#",
+    "headline": "Working With Files and Streams in C#",
+    "alternativeHeadline": "",
+    "description": "Introduction # I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I\u0026rsquo;m sure I will not ever solve such a problem using C# (don\u0026rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn\u0026rsquo;t know it).",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/salehmu.github.io\/notes\/fstream\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "copyrightHolder" : "Saleh Muhammed",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "2022-04-02T11:32:02.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Saleh Muhammed",
+        "url": "https://salehmu.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/salehmu.github.io",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://salehmu.github.io",
+    "url" : "https:\/\/salehmu.github.io\/notes\/fstream\/",
+    "wordCount" : "2142",
+    "genre" : [ "Computer Science" , ".NET" ],
+    "keywords" : [ "Computer Science" , ".NET" ]
+}
+</script>
+
+
+</head>
+
+<body>
+<main>
+      <header>
+    <nav>
+      
+  <ul>
+    <li>
+      
+      
+      
+      
+      <a href="/" >Index</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/fullbooks" >BOOKS</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/cinema" >CINEMA</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="mailto:ghd@keemail.me" >EMAIL</a>
+    </li>
+  
+  </ul>
+    </nav>
+  </header>
+  <hr>
+
+
+
+  <section>
+
+      
+
+      <span itemprop="articleBody">
+      <h2 id="introduction">Introduction <a href="#introduction" class="hash">#</a></h2>
+<p>I was thinking in the first place to make this file just a part of the major C# note file,
+but I believe that I might and will face a lot of filesystem topics, however I&rsquo;m sure I will
+not ever solve such a problem using C# (don&rsquo;t shout, microsoft kid), but surely it will be
+useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&rsquo;t know
+it).</p>
+<h2 id="managing-files-and-directories">Managing Files and Directories <a href="#managing-files-and-directories" class="hash">#</a></h2>
+<h3 id="check-if-a-file-exist">Check if a File Exist <a href="#check-if-a-file-exist" class="hash">#</a></h3>
+<p>Sometimes when we&rsquo;re processing a file, we don&rsquo;t want to process a file that doesn&rsquo;t exist,
+so before we start processing anything, let&rsquo;s check if the user really knows the statue of
+the file he/she passed. This should be very straight forward using the <code>file</code> class:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">void</span> <span class="n">Process</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Begin process of {InputFilePath}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">InputFilePath</span><span class="p">))</span> <span class="k">throw</span> <span class="k">new</span> <span class="n">FileNotFoundException</span><span class="p">(</span><span class="s">&#34;Couldn&#39;t find input file at&#34;</span><span class="p">,</span> <span class="n">InputFilePath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span> <span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;File is found successfully.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You can also check if the path is qualified or not<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> before passing it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(!</span><span class="n">Path</span><span class="p">.</span><span class="n">IsPathFullyQualified</span><span class="p">(</span><span class="n">filePath</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;The path&#34;</span> <span class="p">+</span> <span class="n">filePath</span> <span class="p">+</span> <span class="s">&#34;is not fully qualified, please enter a qualified path.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">args</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="p">(</span><span class="n">filePath</span> <span class="p">=</span> <span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="getting-the-parent-directory">Getting the Parent Directory <a href="#getting-the-parent-directory" class="hash">#</a></h3>
+<p>The application we&rsquo;re building is going to make use of a specific directory structure. We&rsquo;ve
+already seen that we&rsquo;ve got this in directory. This is a child directory in this case of the
+directory. So we can think of this directory as the root directory that the
+processing will take place
+As part of the processing of a file, it&rsquo;s going
+to be copied and moved around. To be able to do this, we want to get the root data
+directory.</p>
+<p>What we want to do is calculate the parent directory of this in directory. So
+let&rsquo;s start off by creating a new variable of type string called rootDirectoryPath:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">rootDirectoryPath</span> <span class="p">=</span> <span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Exists</span><span class="p">)</span> <span class="p">?</span> <span class="n">info</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">FullName</span> <span class="p">:</span> <span class="n">info</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">FullName</span><span class="p">;</span>
+</span></span></code></pre></div><p>We&rsquo;re going to be able to use this rootDirectoryPath later in this module. What we&rsquo;re going
+to do is create an instance of this DirectoryInfo class. When we create an instance of a
+DirectoryInfo class, we specify the initial path. In our case, it&rsquo;s the InputFilePath
+property. So now we&rsquo;ve got this DirectoryInfo instance, we can make use of its properties
+and methods, one of which is this Parent property. This Parent property also returns an
+instance of DirectoryInfo. So if we access this Parent property, it gives us a new
+DirectoryInfo instance, this time representing the parent of the InputFilePath. And then we
+can use the FullName property here to get the full path to this parent directory.</p>
+<h3 id="checking-if-a-directory-exist-and-creating-new-ones">Checking if a Directory Exist and Creating New Ones <a href="#checking-if-a-directory-exist-and-creating-new-ones" class="hash">#</a></h3>
+<p>As part of the processing of a file, this application is going to make a backup copy of the
+original file in case something goes wrong during processing. So here we are in the
+FileProcessor&rsquo;s Process method and we&rsquo;ve got the rootDirectoryPath now. What we want to do
+is create the backup directory under the root directory if it doesn&rsquo;t already exist. So the
+first thing we&rsquo;re going to do is check if the backup directory already exists.</p>
+<p>While I&rsquo;m here, I&rsquo;m also going to create a constant representing an InProgressDirectoryName
+and a CompletedDirectoryName constant. We&rsquo;ll be making use of these other two constants
+shortly. Let&rsquo;s come back down here and we&rsquo;ll add a string variable called
+backupDirectoryPath. What we want to do now is use the rootDirectoryPath that we&rsquo;ve already
+calculated and append to it the BackupDirectoryName held in the constant. So we could do
+something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">BackupDirectoryName</span> <span class="p">=</span> <span class="n">rootDirectoryPath</span> <span class="p">+</span> <span class="s">&#34;\+ + BackUpPath&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>And use basic string manipulation, <strong>do not do this</strong>, your program will not compile in other
+platforms that uses relative pathing or other pathing methods. There&rsquo;s actually a better
+way, and that&rsquo;s to use the Path class. Instead reference the Path class that we&rsquo;ve already
+used:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">BackUpDirPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">rootDirectoryPath</span><span class="p">,</span> <span class="n">BackUpDirName</span><span class="p">);</span>
+</span></span></code></pre></div><p>If you have fragments representing a path that you want to join together, rather than
+using basic string manipulation in C#, you can instead call the Combine method of the Path
+class. We can provide the Combine method with a number of individual strings representing
+the path that we want to create. In our case here, we want to combine the ~rootDirectoryPath
+that we just calculated with the string held in the BackupDirectoryName constant.</p>
+<p>Now we have a path that represents where the backup directory should be, we can write an if
+statement to check if it exists or not. To check if a directory exists, we can make use of
+the Directory class and call its Exists method. As a parameter to this method, we can
+provide the path to the directory we want to check. In this case, it&rsquo;s the
+backupDirectoryPath that we just calculated using the Path.Combine method. If the directory
+doesn&rsquo;t already exist, we want to go and create it.</p>
+<p>We can make use of the Directory class and call the CreateDirectory method. As a parameter
+to the CreateDirectory method, we provide the path.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">dir</span> <span class="k">in</span> <span class="n">PathsToCreat</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">var</span> <span class="n">newPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">rootDirectoryPath</span><span class="p">,</span> <span class="n">dir</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(!</span><span class="n">Directory</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">newPath</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Directory</span><span class="p">.</span><span class="n">CreateDirectory</span><span class="p">(</span><span class="n">newPath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">WriteLine</span><span class="p">(</span><span class="n">dir</span> <span class="p">+</span> <span class="s">&#34;directory is created&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">WriteLine</span><span class="p">(</span><span class="n">dir</span> <span class="p">+</span> <span class="s">&#34;directory already exists&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="copying-a-file">Copying a File <a href="#copying-a-file" class="hash">#</a></h3>
+<p>So now we&rsquo;ve got our backup directory created, we can go and copy the original input file to
+it. In this way, we&rsquo;re going to make sure we have a backup copy of the original file in case
+it gets corrupted during processing. The first thing we can do is actually get just the file
+name component of the original path.</p>
+<p>To do this, once again we&rsquo;re going to make use of the extremely helpful Path class, and
+we&rsquo;re going to call the GetFileName method. There&rsquo;s also a similar method called GetFileName
+without extension that just returns the file name without the extension such as .txt. But in
+this case, we actually want to keep the extension, so we&rsquo;ll just call GetFileName.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">inputFileName</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetFileName</span><span class="p">(</span><span class="n">InputFilePath</span><span class="p">);</span>
+</span></span></code></pre></div><p>As a parameter to this method, we pass the path. In this case, it&rsquo;s the full path to the
+input file. So now we&rsquo;ve just got the file name components of the InputFilePath.</p>
+<p>Now we can make use of the File class and call the Copy method. This overload of the Copy method
+requires the source file name and the destination file name. In our case, the source file
+name is the original input file specified at the command line, and the destination file name
+is this backupFilePath.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">private</span> <span class="k">void</span> <span class="n">BackUpFile</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">var</span> <span class="n">backUpFilePath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">UtilityPaths</span><span class="p">[</span><span class="s">&#34;Backup&#34;</span><span class="p">],</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetFileName</span><span class="p">(</span><span class="n">InputFilePath</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">backUpFilePath</span><span class="p">))</span> <span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Updating existing path...&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Created a new backup at &#34;</span> <span class="p">+</span> <span class="n">UtilityPaths</span><span class="p">[</span><span class="s">&#34;Backup&#34;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">File</span><span class="p">.</span><span class="n">Copy</span><span class="p">(</span><span class="n">InputFilePath</span><span class="p">,</span> <span class="n">backUpFilePath</span><span class="p">,</span><span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The <code>true</code> parameter is necessary to prevent the FileAlreadyExistsException exception from
+being thrown.</p>
+<h3 id="moving-a-file">Moving a File <a href="#moving-a-file" class="hash">#</a></h3>
+<p>Moving files is just like copying, the but you only need to change &ldquo;copy&rdquo; to &ldquo;move&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(!</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">UtilityPaths</span><span class="p">[</span><span class="m">_</span><span class="n">processingDir</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">File</span><span class="p">.</span><span class="n">Move</span><span class="p">(</span><span class="n">InputFilePath</span><span class="p">,</span> <span class="n">UtilityPaths</span><span class="p">[</span><span class="m">_</span><span class="n">processingDir</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Processing file already exist.&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><h3 id="getting-the-file-extension-from-a-file-name">Getting the File Extension from a File Name <a href="#getting-the-file-extension-from-a-file-name" class="hash">#</a></h3>
+<p>We may want to process files differently depending on their file extension. For example, we
+might want to process .txt files differently from .csv files. To do so, use the
+GetFileNameWithoutExtension method from the Path class, we&rsquo;re not going to do this, however,
+because what we&rsquo;re going to do instead is append a GUID to the file name. This is going to
+mean that if we process the same named input file twice, we&rsquo;ll have a unique file name
+output to the completed directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">completedFileName</span> <span class="p">=</span> <span class="s">$&#34;{Path.GetFileNameWithoutExtension(InputFilePath)}-{Guid.NewGuid()}{extension}&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="deleting-a-directory">Deleting a Directory <a href="#deleting-a-directory" class="hash">#</a></h3>
+<p>The final thing we&rsquo;re going to do in this process method is to delete the
+inProgressDirectory once the processing of the file is complete.</p>
+<p>To delete a file you use the <code>Delete</code> method in the <code>Directory</code> class, add a boolean value,
+<code>true</code> to prevent exception, since the <code>Delete</code> method requires the directory to be empty.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">Delete</span><span class="p">(</span><span class="n">inProgressDirectoryPath</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+</span></span></code></pre></div><h2 id="monitoring-the-file-system-for-changes">Monitoring the File System for Changes <a href="#monitoring-the-file-system-for-changes" class="hash">#</a></h2>
+<h3 id="the-filesystemwatcher-class">The <code>FileSystemWatcher</code> Class <a href="#the-filesystemwatcher-class" class="hash">#</a></h3>
+<p>The Microsoft documentation says that the FileSystemWatcher class listens to the file system
+change notifications and raises events when a directory or file in a directory changes. So
+for example, say we have a directory, say, for example the input directory for our console
+app, we can create a FileSystemWatcher instance and monitor this directory for changes. The
+FileSystemWatcher listens for low‑level operating system file operations. And then in our
+application code, we can respond to events raised by the FileSystemWatcher instance.</p>
+<p>There&rsquo;s a number of different events that we can subscribe to. There&rsquo;s the created event,
+which is raised when a file or directory is created. We have the changed event, which is
+raised when a file or directory is modified. The renamed event, which occurs when a file or
+directory is renamed. The deleted event, which allows us to respond to file or directory
+deletions. And also, the error event, which we can subscribe to get notified when the
+FileSystemWatcher is no longer able to continue monitoring changes or its internal buffer
+overflows. We&rsquo;ll talk about the buffer in just a moment. One crucial thing to remember about
+the FileSystemWatcher is that a single file operation may result in multiple events being
+raised. This has ramifications if we want to prevent single files being processed multiple
+times.</p>
+<h3 id="buffer-and-buffersize">Buffer and <code>BufferSize</code> <a href="#buffer-and-buffersize" class="hash">#</a></h3>
+<p>Internally, the FileSystemWatcher makes use of a buffer. When file or directory operations
+are detected by the FileSystemWatcher instance, they go into this buffer, and then the
+FileSystemWatcher raises its events. The purpose of this buffer is to allow the
+FileSystemWatcher enough time to raise its events, even if we have a lot of operations
+happening on disk. We can configure the size of this buffer by setting the
+InternalBufferSize property. The InternalBufferSize property is of type int, and we can
+specify a buffer size from 4 KB all the way up to 64 KB. If we don&rsquo;t specify a value for the
+InternalBufferSize property, it defaults to 8 K. Each individual operation in the file
+system that&rsquo;s detected requires 16 bytes in the buffer plus an additional number of bytes
+depending on the file name.</p>
+<p>Microsoft also recommends that this InternalBufferSize property
+is set to a multiple of 4 K on Intel‑based systems. To quote from the Microsoft
+documentation, if there are many changes in a short time, the buffer can overflow. This
+causes the component to lose track of changes in the directory. Increasing the size of the
+buffer can prevent missing file system change events. Increasing buffer size is expensive
+because it comes from non‑paged memory that cannot be swapped out to disk, so keep the
+buffer as small as possible. Exactly what buffer size you&rsquo;ll need to set for your
+application will depend on the frequency of file operations that happen to the watched,
+directory or file. So for example, if you only have one or two files every day dropped into
+a watched directory, you probably won&rsquo;t need to modify the default buffer size property. At
+the other end of the spectrum, if you expect hundreds or thousands of operations to occur in
+a short space of time, you may want to increase the size of the buffer. One way to reduce
+the number of events that occur, and thus help prevent buffer overflows, is to configure
+notification filters.</p>
+<h3 id="notification-filters">Notification Filters <a href="#notification-filters" class="hash">#</a></h3>
+<p>We can configure the types of changes that we want to receive notifications for. To do this,
+we set the NotifyFilter property on the FileSystemWatcher object. This NotifyFilter property
+is an enum of type NotifyFilters. This enum contains a number of values, allowing us to
+specify that we want notifications for attribute changes,</p>
+<ul>
+<li>Changes in the creation time.</li>
+<li>Changes in the name of the director.</li>
+<li>Changes in the name of the file.</li>
+<li>Changes in the file or directory&rsquo;s last opened date.</li>
+<li>Changes in the last write date.</li>
+<li>Changes in the file or directory security settings.</li>
+<li>Changes in the file or directory size.</li>
+</ul>
+<p>We can also combine multiple NotifyFilters together if we want to be notified of multiple
+change types.</p>
+<h3 id="other-properties">Other Properties <a href="#other-properties" class="hash">#</a></h3>
+<p>There&rsquo;s a number of additional properties that we can make use of on the FileSystemWatcher.
+The first is the Path property. This allows us to specify a path to a directory or file to
+be watched. The Filter property allows us to restrict the type of files that cause change
+notifications. So, for example, we could specify <code>*.txt</code>, and we&rsquo;d only get notifications for
+changes in text files.</p>
+<p>And we also have the EnableRaisingEvents property. By default, this
+is false, which means that the specified path is not being watched. When we&rsquo;re ready to
+start receiving events from the FileSystemWatcher, we simply set this property to true.</p>
+<h3 id="refactoring-to-use-a-filesystemwatcher"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> Refactoring to Use a FileSystemWatcher <a href="#refactoring-to-use-a-filesystemwatcher" class="hash">#</a></h3>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>fully qualified name is an unambiguous name that specifies which object, function,
+or variable a call refers to without regard to the context of the call.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+      </span>
+       
+
+    </section>
+    <hr>
+<footer>
+	  <nav>
+      
+  <ul>
+    <li>
+ لَا إِلٰهَ إِلَّا ٱلله
+    </li>
+  
+  </ul>
+    </nav>
+</footer>
+
+  </main>
+</body>
+</html>
