@@ -7,10 +7,50 @@
     
     <language>en</language>
     <copyright>Copyright 2022, Ronalds Vilcins</copyright>
-    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Apr 2022 22:59:16 +0200</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
+    
+    <item>
+      <title>Did You Know That Saying World Wide Web Is Actually Quicker Than WWW?</title>
+      <link>https://salehmu.github.io/posts/asp.net/</link>
+      <description>&lt;p&gt;What the most unbearable thing to be right after running a javascript program? Yeah, that&amp;rsquo;s
+right, it&amp;rsquo;s writing a javascript program. I&amp;rsquo;ve made a terrible decision in the beginning of
+this year, that is, I started to rethink about Microsoft&amp;rsquo;s new technology aka .NET Core. I
+thought that it&amp;rsquo;s going to be the game changer ohh yeaah finally C# framework will run
+everywhere sooo fast tHaT&amp;rsquo;s cRaZyyy&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://salehmu.github.io/ox-hugo/2022-04-05_23-12-47_screenshot.png&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Something I did not realize sadfully is: Microsoft sucks, whatever it makes. Just like any
+other corporate, it sucks. C# is a horrible slow ambiguit language, most of its frameworks
+are complicated as fuck. The deploying pattern of 99% of its packages are designed to be
+work with a shitty OS with no package manager component (like MS Windows lol). It is just
+bad. I&amp;rsquo;ve been writing C# for 5 months yet. And just yesterday when I wrote a small program
+in C++ to finish some job, then I just realized how slow C# was. It is too slow.&lt;/p&gt;
+&lt;p&gt;But I&amp;rsquo;m not to complain anymore. The reason of why I&amp;rsquo;ve been through this since the
+beginning wasn&amp;rsquo;t the .NET Core propaganda (ok not much at least), the but I wanted to create
+a very simple, very minimal, web blog. And I told myself, ASP.NET Froms has been out there
+for, I don&amp;rsquo;t know, maybe 20 years? Microsoft should be the most expert/old web framework
+publisher. Oh I can&amp;rsquo;t even describe how much it&amp;rsquo;s painful to understand the web binding in
+ASP.NET.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s go further back, the reason behind creating a web blog is that I didn&amp;rsquo;t like how I
+manage this static HTML website, I wished if I can do more fancy things; mainly having a
+well-structured list for the books &amp;amp; cinema sections. Make it just more readable, nicer but
+not just a plain text. Everything else should render as it is. But since it is not that easy
+at all with .NET (at least so far with the problems I&amp;rsquo;m facing), and since I will have to
+write HTML and shit to design the end-user front, I gave up (or suspend) this project. But
+you know what I&amp;rsquo;m thinking of; I can do the fancy structure using Hugo. I think there are a
+functionality called hugo script or something that can replace text-tag with html tag in the
+rendering process (exporting to html), So I&amp;rsquo;m thinking of surfing a simple API that gives
+the movie/book data, and retrieve it in the section. I&amp;rsquo;m not sure how exactly I&amp;rsquo;m going to
+implement that but it is on my mind for this month. Wish me luck.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/asp.net/</guid>
+      <pubDate>Tue, 05 Apr 2022 22:59:16 +0200</pubDate>
+    </item>
     
     <item>
       <title>Game and Pornography and Instant Gratification</title>
