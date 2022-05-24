@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://salehmu.github.io/</loc>
-    <lastmod>2022-05-19T00:03:48+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -15,7 +15,7 @@
   
   <url>
     <loc>https://salehmu.github.io/categories/</loc>
-    <lastmod>2022-05-19T00:03:48+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
@@ -35,7 +35,7 @@
   
   <url>
     <loc>https://salehmu.github.io/tags/</loc>
-    <lastmod>2022-05-19T00:03:48+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
@@ -120,12 +120,12 @@
   
   <url>
     <loc>https://salehmu.github.io/tags/computer-science/</loc>
-    <lastmod>2022-04-02T11:33:18+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/notes/</loc>
-    <lastmod>2022-04-02T11:33:18+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
@@ -255,7 +255,7 @@
   
   <url>
     <loc>https://salehmu.github.io/cinema/</loc>
-    <lastmod>2022-05-17T03:21:52+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
@@ -316,8 +316,18 @@
   </url>
   
   <url>
+    <loc>https://salehmu.github.io/categories/computer-science/</loc>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salehmu.github.io/tags/databases/</loc>
     <lastmod>2022-04-02T11:32:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/notes/rest/</loc>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>

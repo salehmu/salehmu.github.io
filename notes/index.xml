@@ -37,6 +37,15 @@ Introduction # I&amp;rsquo;m not sure how to properly introduce this long plain 
     </item>
     
     <item>
+      <title>Designing RESTful APIs</title>
+      <link>https://salehmu.github.io/notes/rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/rest/</guid>
+      <description>Representational State Transfer APIs: Basics to Design # Introduction and History # I&amp;rsquo;m not going to talk about how to implement these web APIs, but talk about the design aspects of how to design them so that they&amp;rsquo;re easier to use and easier to maintain. The goal here is for you to understand REST&amp;rsquo;s role in creation of this API, not to simply adhere to the dogma that surrounds REST. I want to introduce you to a way of designing APIs that&amp;rsquo;s pragmatic and simple.</description>
+    </item>
+    
+    <item>
       <title>Dynamic Programming</title>
       <link>https://salehmu.github.io/notes/dp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
