@@ -12,10 +12,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://salehmu.github.io/notes/psql/</guid>
-      <description>Introduction into PostgreSQL # Notes:
-SQL commands is not case sensitive, therefore SELECT = select = SeLeCt Selecting # Regular Selection # Select syntax is being like this:
+      <description>Introduction into PostgreSQL Notes:
+SQL commands is not case sensitive, therefore SELECT = select = SeLeCt Selecting Regular Selection Select syntax is being like this:
 SELECT * -- Everything FROM real_person -- Table Name LIMIT 10; -- Getting only they very first 5 IDs. This will print all email (s) from the customer table.
-Select distinct rows using distinct operator # DISTINCT clause is used to remove duplicates rows from the result output, it keeps only one row for each group if duplicated.</description>
+Select distinct rows using distinct operator DISTINCT clause is used to remove duplicates rows from the result output, it keeps only one row for each group if duplicated.</description>
     </item>
     
   </channel>

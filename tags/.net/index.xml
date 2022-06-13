@@ -13,7 +13,8 @@
       <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
       
       <guid>https://salehmu.github.io/notes/csharp/</guid>
-      <description>Resources # Textbooks: Andrew Lock - ASP.NET Core in Action-Manning (2018). Concurrency in C# Cookbook: Asynchronous, Parallel, and Multithreaded Programming. LINQ in Action by Fabrice Marguerie, Steve Eichert, Jim Wooley. Websites: Npgsql Docs Speaking C# # Discover C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.</description>
+      <description>Resources Textbooks: Andrew Lock - ASP.NET Core in Action-Manning (2018). Concurrency in C# Cookbook: Asynchronous, Parallel, and Multithreaded Programming. LINQ in Action by Fabrice Marguerie, Steve Eichert, Jim Wooley. Websites: Npgsql Docs Speaking C# Discover C# Compiler Version With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.1.
+To discover your compiler version, you can go to your terminal and run the command:</description>
     </item>
     
     <item>
@@ -23,7 +24,7 @@
       
       <guid>https://salehmu.github.io/notes/json/</guid>
       <description>One of the most popular .NET libraries for working with the JSON serialization format is Newtonsoft.Json, known as Json.NET. It is mature and powerful.
-Introduction # Let&amp;rsquo;s start by defining what JSON is. JSON stands for JavaScript Object Notation. It is a data interchange format that is used to transmit and store serialized information. One example can be from a web page to a server, or to store data in a large object repository.</description>
+Introduction Let&amp;rsquo;s start by defining what JSON is. JSON stands for JavaScript Object Notation. It is a data interchange format that is used to transmit and store serialized information. One example can be from a web page to a server, or to store data in a large object repository.</description>
     </item>
     
     <item>
@@ -32,7 +33,7 @@ Introduction # Let&amp;rsquo;s start by defining what JSON is. JSON stands for J
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://salehmu.github.io/notes/fstream/</guid>
-      <description>Introduction # I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I&amp;rsquo;m sure I will not ever solve such a problem using C# (don&amp;rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&amp;rsquo;t know it).</description>
+      <description>Introduction I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I&amp;rsquo;m sure I will not ever solve such a problem using C# (don&amp;rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&amp;rsquo;t know it).</description>
     </item>
     
   </channel>
