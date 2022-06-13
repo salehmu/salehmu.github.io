@@ -24,7 +24,7 @@
 <meta itemprop="name" content="Introduction to Non-theoretical Computational Geometry">
 <meta itemprop="description" content="The ultimate computational geometry for computer science tutorial"><meta itemprop="datePublished" content="2021-12-17T19:57:19+02:00" />
 <meta itemprop="dateModified" content="2022-04-02T11:32:02+02:00" />
-<meta itemprop="wordCount" content="5243">
+<meta itemprop="wordCount" content="5248">
 <meta itemprop="keywords" content="Computer Science,Algorithms," />
   <link rel="canonical" href="https://salehmu.github.io/notes/gemtry/">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
@@ -83,7 +83,7 @@
     },
     "image": "https://salehmu.github.io",
     "url" : "https:\/\/salehmu.github.io\/notes\/gemtry\/",
-    "wordCount" : "5243",
+    "wordCount" : "5248",
     "genre" : [ "Computer Science" , "Algorithms" ],
     "keywords" : [ "Computer Science" , "Algorithms" ]
 }
@@ -530,7 +530,7 @@ all points. For any point \(i\), if \(i\) is more counterclockwise, then we upda
 i\).
 How to check if point is more counterclockwise? We can use orientation checker:</p>
 <figure><img src="/ox-hugo/2022-01-19_05-00-40_screenshot.png"/>
-</figure>
+        </figure>
 
 <p>(in this figure, clockwise triplet \(ABC\): cross product of \(AB\) and \(AC\) vectors is \(&gt; 0\) anticlockwise triplet \(ACD\): cross product of \(AC\) and \(AD\) is negative.)</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">orientation</span><span class="p">(</span><span class="n">Point</span> <span class="n">p</span><span class="p">,</span> <span class="n">Point</span> <span class="n">q</span><span class="p">,</span> <span class="n">Point</span> <span class="n">r</span><span class="p">)</span>
@@ -721,7 +721,7 @@ the points to find the convex hull vertices.</p>
 <li>
 <p>Sort the points based on the polar angle i.e. the angle made by the line with the \(x\) -axis. While implementing, we don’t calculate the angle, instead, we calculate the relative orientation of two points to find out which point makes the larger angle. This can be explained with the help of a figure shown below.</p>
 <figure><img src="/ox-hugo/2022-01-19_05-03-08_screenshot.png"/>
-</figure>
+    </figure>
 
 </li>
 </ol>

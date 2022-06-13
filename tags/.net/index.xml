@@ -13,7 +13,7 @@
       <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
       
       <guid>https://salehmu.github.io/notes/csharp/</guid>
-      <description>Resources #  Textbooks:  Andrew Lock - ASP.NET Core in Action-Manning (2018). Concurrency in C# Cookbook: Asynchronous, Parallel, and Multithreaded Programming. LINQ in Action by Fabrice Marguerie, Steve Eichert, Jim Wooley.   Websites:  Npgsql Docs    Speaking C# # Discover C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.</description>
+      <description>Resources # Textbooks: Andrew Lock - ASP.NET Core in Action-Manning (2018). Concurrency in C# Cookbook: Asynchronous, Parallel, and Multithreaded Programming. LINQ in Action by Fabrice Marguerie, Steve Eichert, Jim Wooley. Websites: Npgsql Docs Speaking C# # Discover C# Compiler Version # With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.</description>
     </item>
     
     <item>

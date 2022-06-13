@@ -17,16 +17,6 @@
     </item>
     
     <item>
-      <title>&#34;Did You Know That Saying World Wide Web Is Actually Quicker Than WWW?&#34;</title>
-      <link>https://salehmu.github.io/post/did-you-know-that-saying-world-wide-web-is-actually-quicker-than-www/</link>
-      <pubDate>Tue, 05 Apr 2022 22:59:16 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/post/did-you-know-that-saying-world-wide-web-is-actually-quicker-than-www/</guid>
-      <description>What the most unbearable thing to be right after running a javascript program? Yeah, that&amp;#39;s right, it&amp;#39;s writing a javascript program. I&amp;#39;ve made a terrible decision in the beginning of this year, that is, I started to rethink about Microsoft&amp;#39;s new technology aka .NET Core. I thought that it&amp;#39;s going to be the game changer ohh yeaah finally C# framework will run everywhere sooo fast tHaT&amp;#39;s cRaZyyy
-  Something I did not realize sadfully is: Microsoft sucks, whatever it makes.</description>
-    </item>
-    
-    <item>
       <title>&#34;Game and Pornography and Instant Gratification&#34;</title>
       <link>https://salehmu.github.io/post/game-and-pornography-and-instant-gratification/</link>
       <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
@@ -62,7 +52,7 @@
       <description>I wrote this old note a while ago while reading the PostgreSQL docs release, I used it then as a mini-reference or a tiny cheat sheet for SQL problems using PostgreSQL. It might (0.3%) be useful to someone so I decided to publish it here.
 Note: SQL commands is not case sensitive, therefore SELECT = select = SeLeCt
 Selecting # Regular Selection # Select syntax is being like this:
-SELECT*-- Everything FROMreal_person-- Table Name LIMIT10;-- Getting only they very first 5 IDs.</description>
+SELECT * -- Everything FROM real_person -- Table Name LIMIT 10; -- Getting only they very first 5 IDs.</description>
     </item>
     
     <item>
@@ -91,7 +81,7 @@ SELECT*-- Everything FROMreal_person-- Table Name LIMIT10;-- Getting only they v
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://salehmu.github.io/post/poetry/</guid>
-      <description> YOU ARE GOING TO BE REDIRECTED TO [POETRY DIRECTORY] IN 3 SECONDS, PLEASE WAIT.     </description>
+      <description> YOU ARE GOING TO BE REDIRECTED TO [POETRY DIRECTORY] IN 3 SECONDS, PLEASE WAIT. </description>
     </item>
     
   </channel>
