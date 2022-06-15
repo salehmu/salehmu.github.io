@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +9,11 @@
   <meta name="description" content="">
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="STD Notes"/>
-<meta name="twitter:description" content="C/STD Notes # Sorting # Sorting Custom Objects # You can sort array of custom objects using the std::sort like this:
+<meta name="twitter:description" content="C/STD Notes #Sorting #Sorting Custom Objects #You can sort array of custom objects using the std::sort like this:
 struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::string&amp; s) : key(k), stringValue(s) {} }; struct less_than_key { inline bool operator() (const MyStruct&amp; struct1, const MyStruct&amp; struct2) { return (struct1.key &lt; struct2.key); } }; std::vector &lt; MyStruct &gt; vec; vec.push_back(MyStruct(4, &#34;test&#34;)); vec.push_back(MyStruct(3, &#34;a&#34;)); vec.push_back(MyStruct(2, &#34;is&#34;)); vec.push_back(MyStruct(1, &#34;this&#34;)); std::sort(vec."/>
 
 <meta property="og:title" content="STD Notes" />
-<meta property="og:description" content="C/STD Notes # Sorting # Sorting Custom Objects # You can sort array of custom objects using the std::sort like this:
+<meta property="og:description" content="C/STD Notes #Sorting #Sorting Custom Objects #You can sort array of custom objects using the std::sort like this:
 struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::string&amp; s) : key(k), stringValue(s) {} }; struct less_than_key { inline bool operator() (const MyStruct&amp; struct1, const MyStruct&amp; struct2) { return (struct1.key &lt; struct2.key); } }; std::vector &lt; MyStruct &gt; vec; vec.push_back(MyStruct(4, &#34;test&#34;)); vec.push_back(MyStruct(3, &#34;a&#34;)); vec.push_back(MyStruct(2, &#34;is&#34;)); vec.push_back(MyStruct(1, &#34;this&#34;)); std::sort(vec." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://salehmu.github.io/notes/std/" /><meta property="article:section" content="notes" />
@@ -24,7 +22,7 @@ struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::s
 
 
 <meta itemprop="name" content="STD Notes">
-<meta itemprop="description" content="C/STD Notes # Sorting # Sorting Custom Objects # You can sort array of custom objects using the std::sort like this:
+<meta itemprop="description" content="C/STD Notes #Sorting #Sorting Custom Objects #You can sort array of custom objects using the std::sort like this:
 struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::string&amp; s) : key(k), stringValue(s) {} }; struct less_than_key { inline bool operator() (const MyStruct&amp; struct1, const MyStruct&amp; struct2) { return (struct1.key &lt; struct2.key); } }; std::vector &lt; MyStruct &gt; vec; vec.push_back(MyStruct(4, &#34;test&#34;)); vec.push_back(MyStruct(3, &#34;a&#34;)); vec.push_back(MyStruct(2, &#34;is&#34;)); vec.push_back(MyStruct(1, &#34;this&#34;)); std::sort(vec.">
 <meta itemprop="dateModified" content="2022-02-28T17:34:12+02:00" />
 <meta itemprop="wordCount" content="978">
@@ -49,7 +47,7 @@ struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::s
     "name": "STD Notes",
     "headline": "STD Notes",
     "alternativeHeadline": "",
-    "description": "C\/STD Notes # Sorting # Sorting Custom Objects # You can sort array of custom objects using the std::sort like this:\nstruct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::string\u0026amp; s) : key(k), stringValue(s) {} }; struct less_than_key { inline bool operator() (const MyStruct\u0026amp; struct1, const MyStruct\u0026amp; struct2) { return (struct1.key \u0026lt; struct2.key); } }; std::vector \u0026lt; MyStruct \u0026gt; vec; vec.push_back(MyStruct(4, \u0026#34;test\u0026#34;)); vec.push_back(MyStruct(3, \u0026#34;a\u0026#34;)); vec.push_back(MyStruct(2, \u0026#34;is\u0026#34;)); vec.push_back(MyStruct(1, \u0026#34;this\u0026#34;)); std::sort(vec.",
+    "description": "C\/STD Notes #\rSorting #\rSorting Custom Objects #\rYou can sort array of custom objects using the std::sort like this:\nstruct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::string\u0026amp; s) : key(k), stringValue(s) {} }; struct less_than_key { inline bool operator() (const MyStruct\u0026amp; struct1, const MyStruct\u0026amp; struct2) { return (struct1.key \u0026lt; struct2.key); } }; std::vector \u0026lt; MyStruct \u0026gt; vec; vec.push_back(MyStruct(4, \u0026#34;test\u0026#34;)); vec.push_back(MyStruct(3, \u0026#34;a\u0026#34;)); vec.push_back(MyStruct(2, \u0026#34;is\u0026#34;)); vec.push_back(MyStruct(1, \u0026#34;this\u0026#34;)); std::sort(vec.",
     "inLanguage": "en-us",
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
@@ -94,7 +92,6 @@ struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::s
 
 
 </head>
-
 <body>
 <main>
       <header>
@@ -398,7 +395,7 @@ However, I suspect that the difference, if any, is negligible.</p>
       
   <ul>
     <li>
- لَا إِلٰهَ إِلَّا ٱلله
+      © 2022
     </li>
   
   </ul>

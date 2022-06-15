@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&#34;blog&#34; on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/categories/blog/</link>
+    <description>Recent content in &#34;blog&#34; on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Apr 2022 22:59:16 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/categories/blog/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#34;Did You Know That Saying World Wide Web Is Actually Quicker Than WWW?&#34;</title>
+      <link>https://salehmu.github.io/post/did-you-know-that-saying-world-wide-web-is-actually-quicker-than-www/</link>
+      <pubDate>Tue, 05 Apr 2022 22:59:16 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/post/did-you-know-that-saying-world-wide-web-is-actually-quicker-than-www/</guid>
+      <description>What the most unbearable thing to be right after running a javascript program? Yeah, that&amp;#39;s right, it&amp;#39;s writing a javascript program. I&amp;#39;ve made a terrible decision in the beginning of this year, that is, I started to rethink about Microsoft&amp;#39;s new technology aka .NET Core. I thought that it&amp;#39;s going to be the game changer ohh yeaah finally C# framework will run everywhere sooo fast tHaT&amp;#39;s cRaZyyy
+Something I did not realize sadfully is: Microsoft sucks, whatever it makes.</description>
+    </item>
+    
+  </channel>
+</rss>

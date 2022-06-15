@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grahps on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/tags/grahps/</link>
+    <description>Recent content in Grahps on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jan 2022 14:56:42 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/grahps/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Representations, Implementations and Algorithms of Graphs (and Trees)</title>
+      <link>https://salehmu.github.io/notes/graphs/</link>
+      <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/graphs/</guid>
+      <description>Terminology #A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\). \(|E|\) can range from zero to a maximum of \(|V|^{2} - |V|\). A graph with relatively few edges is called sparse, while a graph with many edges is called dense.</description>
+    </item>
+    
+  </channel>
+</rss>
