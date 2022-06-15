@@ -2,21 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://salehmu.github.io/youtube/</loc>
+    <lastmod>2022-06-15T03:19:31+02:00</lastmod>
+  </url><url>
     <loc>https://salehmu.github.io/</loc>
-    <lastmod>2022-06-15T03:16:59+02:00</lastmod>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
     <priority>0</priority>
-  </url><url>
-    <loc>https://salehmu.github.io/categories/</loc>
-    <lastmod>2022-06-15T03:16:59+02:00</lastmod>
-  </url><url>
-    <loc>https://salehmu.github.io/categories/lists/</loc>
-    <lastmod>2022-06-15T03:16:59+02:00</lastmod>
-  </url><url>
-    <loc>https://salehmu.github.io/youtube-list/</loc>
-    <lastmod>2022-06-15T03:16:59+02:00</lastmod>
   </url><url>
     <loc>https://salehmu.github.io/categories/blogs/</loc>
     <lastmod>2022-05-19T00:03:48+02:00</lastmod>
+  </url><url>
+    <loc>https://salehmu.github.io/categories/</loc>
+    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url><url>
     <loc>https://salehmu.github.io/posts/colonalization-memo/</loc>
     <lastmod>2022-05-19T00:03:48+02:00</lastmod>
