@@ -3,24 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://salehmu.github.io/youtube/</loc>
-    <lastmod>2022-06-15T22:50:17+02:00</lastmod>
+    <loc>https://salehmu.github.io/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
-    <priority>0</priority>
+    <loc>https://salehmu.github.io/categories/articles/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/categories/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/post/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/tags/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/tags/technology/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/post/%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%AD%D8%B8%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/youtube/</loc>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/categories/blogs/</loc>
     <lastmod>2022-05-19T00:03:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/categories/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
@@ -39,22 +64,12 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/tags/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salehmu.github.io/posts/deathofshireen/</loc>
     <lastmod>2022-05-17T03:27:44+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/post/about-twitter-api-v2-perplexity/</loc>
-    <lastmod>2022-04-27T10:26:43+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/post/</loc>
     <lastmod>2022-04-27T10:26:43+02:00</lastmod>
   </url>
   
@@ -189,22 +204,12 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/tags/technology/</loc>
-    <lastmod>2021-10-07T04:08:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salehmu.github.io/posts/kalam/</loc>
     <lastmod>2022-03-13T01:09:25+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/tags/media/</loc>
-    <lastmod>2022-03-13T01:09:25+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/categories/articles/</loc>
     <lastmod>2022-03-13T01:09:25+02:00</lastmod>
   </url>
   
@@ -260,7 +265,7 @@
   
   <url>
     <loc>https://salehmu.github.io/cinema/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
   </url>
   
   <url>
@@ -316,7 +321,7 @@
   
   <url>
     <loc>https://salehmu.github.io/fullbooks/</loc>
-    <lastmod>2022-06-15T22:50:17+02:00</lastmod>
+    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
   </url>
   
   <url>
