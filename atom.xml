@@ -13,6 +13,58 @@
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
     
     <item>
+      <title>مشكلة المواقع المحظورة في مصر</title>
+      <link>https://salehmu.github.io/posts/%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%AD%D8%B8%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/</link>
+      <description>&lt;p&gt;كذب الي قال إن الحظر مش بيُجدي وإن الناس هتجري على الممنوع المرغوب وتفتح VPN؛ ويكأن الـVPN هو
+أمر سلس، بسيط، سريع، إيفيشنت والذي منه، يقدر يعمله عم سعد وهو قاعد على المصطبه بعد ما فتح
+لينك الجزيرة الوثائقية بتاع عالم الحيوان ومشتغلش معاه.. حتى لو هو أعلم بتيكنولوجي الفيرشوال
+بريايفت نيتورك، مثلي، محدش هيروح يعمل مشوار الاتصال بالبروكسي علشان يتفرج على مشهد من عالم
+الحيوان أو يقرا سطرين لمعارضة فارغة.&lt;/p&gt;
+&lt;p&gt;وفي الواقع مشكلة الحظر في مصر تتخطى المشاكل السياسية، هي عملية غير منضبطة تمامًا راح فيها
+مواقع كتير بشكل غير مفهوم، إضاءات ظل محظور لفترة طويلة في مصر (وعلى ما أعتقد فُك الحظر) بدون
+سبب واضح (على الأغلب أحد العاملين بأجهزة الحظر شاف مقال معجبهوش) وفي إحدى المرات موقع bit.ly
+فضل محظور لفترة, تقريبًا عشان موقع معارض كان بيستخدمه كshortening service؛ فلما اتحظر الموقع
+اتحظر bit.ly معاه.&lt;/p&gt;
+&lt;p&gt;ما علينا من كل هذا، المشكلة الي كنت بعاني منها هي إني لو في يوم ما احتجت إني أفتح إضاءات أو
+القدس العربي وهما محظورين، كنت بروح مشاور كبير لحد ما الاقي vpn شغال يقدر يفتحهم ويconnect
+معايا. وكان فيه طريق تاني وهو إني استخدم tor browser عشان افتحهم بس كنت بكسل أستنى الtor
+connection لحد ما يتم, فلقيت طريقة لطيفة من حوالي سنتين تسهل البروسيس دي, وهي foxy proxy.&lt;/p&gt;
+&lt;p&gt;فوكسي بروكسي عندهم تول جميلة بتعمل VPN management, كل الي بيحصل إنك بتكتب wildcard أو regex
+إكسبرشن وبتديلهم البروكسي بتاعك (هيكون تور إن شاء الله). وبس. في أي مره هتدخل على URL
+بيmatch مع الإكسبرشن الي انت حطيته, هيستخدم تلقائيًا البروكسي بتاعك, وانت مش هتحس ان فيه اي
+حاجه حصلت. بس منين هنجيب البروكسي؟ صعب تلاقي static free proxy تستخدمه على طول ومتحتجش
+تغيره.. وكمان فري. فعشان كدا ممكن تستخدم Tor كproxy services.&lt;/p&gt;
+&lt;h2 id=&#34;configuring-tor-as-proxy-services-on-unix&#34;&gt;Configuring Tor as Proxy Services on Unix &lt;a href=&#34;#configuring-tor-as-proxy-services-on-unix&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;هتحتاج تنزل tor و torsocks من الpackage manager بتاعك، بعدين هتفعل التور سيرفيس:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     $ sudo systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; --now tor.service
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;اتأكد إنها اشتغلت:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     $ systemctl status tor.service
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;جرب تشوف الأي بي بتاعك حاليا من التيرمنال:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     $ wget -qO - https://api.ipify.org&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;جرب دلوقتي تشوف نفس الأي بي لكن من خلال tor:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     $ torsocks wget -qO - https://api.ipify.org&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;لازم يطلع أي بي مختلف.&lt;/p&gt;
+&lt;p&gt;كدا كفاية هنا لو هنستخدم البورت 9050, لو عايز تعمل كونترول بورت تقدر تغيره من
+&lt;code&gt;/etc/tor/torrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ControlPort &lt;span class=&#34;m&#34;&gt;9051&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configure-tor-as-a-proxy-services-on-windows&#34;&gt;Configure Tor as a Proxy Services on Windows &lt;a href=&#34;#configure-tor-as-a-proxy-services-on-windows&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;هتدخل على موقع تور بروجكت وتنزل Expert Bundle exe, وتحطها في C:/Tor. بعدين أفتح PowerShell
+وأعمل:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;C:&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Tor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exe&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;-service&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configure-foxyproxy-to-use-tor&#34;&gt;Configure FoxyProxy To Use Tor &lt;a href=&#34;#configure-foxyproxy-to-use-tor&#34; class=&#34;hash&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;أفتح الextension وأعمل add new proxy، حط في الHost: 127.0.0.1:9050 وأعمله socks 5؛ طبعًا لو
+غير ت البورت فهتكتب البورت المختلف بدل 9050، بعدين هتروح على الURL Patrerns وتحط الباترن الي
+عايز يطبق عليها الكلام الي قولناه. ممكن تنزل الملف ده
+&lt;a href=&#34;https://raw.githubusercontent.com/salehmu/emacs-windows-config/main/local_storage_FoxyProxy%20Standard.json&#34;&gt;https://raw.githubusercontent.com/salehmu/emacs-windows-config/main/local_storage_FoxyProxy%20Standard.json&lt;/a&gt;
+وتستخدمه بدل ما تقعد تعمل كونفيج بنفسك, انا حاطط فيه أغلب المواقع الي مكانتش بتفتح معايا
+مباشرة. بس لازم عشان تستخدمه تبص بصه على التول دي &lt;a href=&#34;https://chrome.google.com/webstore/detail/storage-area-explorer/ocfjjjjhkpapocigimmppepjgfdecjkb&#34;&gt;https://chrome.google.com/webstore/detail/storage-area-explorer/ocfjjjjhkpapocigimmppepjgfdecjkb&lt;/a&gt;&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%AD%D8%B8%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/</guid>
+      <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
       <title>Colonial Memory (Arabic)</title>
       <link>https://salehmu.github.io/posts/colonalization-memo/</link>
       <description>&lt;p&gt;أكثر الأشياء التي تستفزني في مآلات الذاكرة الاستعمارية، عند الشعوب المُستضعفة عمومًا، العرب
