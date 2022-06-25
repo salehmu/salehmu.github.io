@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://salehmu.github.io/</loc>
-    <lastmod>2022-06-23T09:24:14+02:00</lastmod>
+    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -25,7 +25,7 @@
   
   <url>
     <loc>https://salehmu.github.io/post/</loc>
-    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
   </url>
   
   <url>
@@ -365,7 +365,7 @@
   
   <url>
     <loc>https://salehmu.github.io/post/poetry/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
   </url>
   
   <url>
@@ -382,6 +382,11 @@
     <loc>https://salehmu.github.io/search/</loc>
     <lastmod>2021-10-10T09:34:22+02:00</lastmod>
     <priority>0.1</priority>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/post/spirit/</loc>
+    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
   </url>
   
   <url>
