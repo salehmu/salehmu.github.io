@@ -7,10 +7,27 @@
     
     <language>en</language>
     <copyright>Copyright 2022, Ronalds Vilcins</copyright>
-    <lastBuildDate>Sat, 02 Jul 2022 13:03:49 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:54 +0200</lastBuildDate>
     <generator>Hugo - gohugo.io</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
+    
+    <item>
+      <title>I Want</title>
+      <link>https://salehmu.github.io/posts/i-want/</link>
+      <description>&lt;p&gt;
+I want to stop using hugo. I think this is enough, I will try today to move all the blog
+content to use only emacs.&lt;/p&gt;
+&lt;p&gt;
+تحديث, اكتشفت قد إيه فيه ديبينداسيز على هوجو ومش هينفع أنقل بشكل سهل, أنا معرفتش أغير الثيم
+حتى
+بلوج بالبساطة دي كانت تستحق تتعمل بالكامل بشيل سكريبت أو إي-ليسب. مش عارف إزاي فكرت ف هوجو
+كحل.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/i-want/</guid>
+      <pubDate>Wed, 06 Jul 2022 00:00:54 +0200</pubDate>
+    </item>
     
     <item>
       <title>How to Tell if a Programming Language Is Good or Bad</title>

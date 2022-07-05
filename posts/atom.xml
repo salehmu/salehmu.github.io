@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2022 13:03:49 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 00:00:54 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I Want</title>
+      <link>https://salehmu.github.io/posts/i-want/</link>
+      <pubDate>Wed, 06 Jul 2022 00:00:54 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/posts/i-want/</guid>
+      <description>I want to stop using hugo. I think this is enough, I will try today to move all the blog content to use only emacs.
+تحديث, اكتشفت قد إيه فيه ديبينداسيز على هوجو ومش هينفع أنقل بشكل سهل, أنا معرفتش أغير الثيم حتى بلوج بالبساطة دي كانت تستحق تتعمل بالكامل بشيل سكريبت أو إي-ليسب. مش عارف إزاي فكرت ف هوجو كحل.</description>
+    </item>
+    
     <item>
       <title>How to Tell if a Programming Language Is Good or Bad</title>
       <link>https://salehmu.github.io/posts/how-to-tell-if-a-programming-language-is-good-or-bad/</link>
