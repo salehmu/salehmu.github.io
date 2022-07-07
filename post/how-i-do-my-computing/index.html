@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ronalds Vilcins - https://salehmu.github.io">
+  <title>How I do My Computing | Saleh Muhammed</title>
+  <meta name="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How I do My Computing"/>
+<meta name="twitter:description" content="forked from stallman.org/stallman-computing Computer &amp; OS I use my own-built computer along side with an Ideapad gaming laptop. Currently OpenBSD , before writing this post I used to have a windows OS dual-booted in my machine for work purpose1, today alhamdulilah I&#39;ve quit this shit so I deleted Windows permanently, and inshallah I will not download it forevermore.
+There is lots of reasons for me to prefer BSDs over Linux."/>
+
+<meta property="og:title" content="How I do My Computing" />
+<meta property="og:description" content="forked from stallman.org/stallman-computing Computer &amp; OS I use my own-built computer along side with an Ideapad gaming laptop. Currently OpenBSD , before writing this post I used to have a windows OS dual-booted in my machine for work purpose1, today alhamdulilah I&#39;ve quit this shit so I deleted Windows permanently, and inshallah I will not download it forevermore.
+There is lots of reasons for me to prefer BSDs over Linux." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salehmu.github.io/post/how-i-do-my-computing/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-07-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-07T19:09:45+02:00" />
+
+
+<meta itemprop="name" content="How I do My Computing">
+<meta itemprop="description" content="forked from stallman.org/stallman-computing Computer &amp; OS I use my own-built computer along side with an Ideapad gaming laptop. Currently OpenBSD , before writing this post I used to have a windows OS dual-booted in my machine for work purpose1, today alhamdulilah I&#39;ve quit this shit so I deleted Windows permanently, and inshallah I will not download it forevermore.
+There is lots of reasons for me to prefer BSDs over Linux."><meta itemprop="datePublished" content="2022-07-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-07-07T19:09:45+02:00" />
+<meta itemprop="wordCount" content="872">
+<meta itemprop="keywords" content="" />
+  <link rel="canonical" href="https://salehmu.github.io/post/how-i-do-my-computing/">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="Saleh Muhammed" href="https://salehmu.github.ioatom.xml" />
+  <link rel="alternate" type="application/json" title="Saleh Muhammed" href="https://salehmu.github.iofeed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeSpeed;text-align:start;unicode-bidi:plaintext}.posts hr{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:none;border-bottom:1px #353535;flex:1 0 1rem;text-align:start;unicode-bidi:plaintext}main{max-width:70ch;padding:2ch;margin:auto;text-align:start;unicode-bidi:plaintext}a,body{color:#353535;text-align:start;unicode-bidi:plaintext}::selection,a:focus,a:hover{background-color:#353535;color:#fff}.meta{margin:0 0 2.5rem}.tags::before{content:"\2022";margin-left:1rem}code,pre{color:#353535;font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;border:1px solid #353535;font-size:small}code{padding:.1rem;border:none}pre{padding:.5rem;overflow-x:auto;text-align:start;unicode-bidi:plaintext}pre code{border:none}img{max-width:100%;border:1px solid #353535}hr{background:#353535;height:1px;border:0;text-align:start;unicode-bidi:plaintext}ul{list-style-type:square;text-align:start;unicode-bidi:plaintext}ul,ol{padding-left:1.2rem;text-align:start;unicode-bidi:plaintext}header li,footer li{display:inline;text-transform:uppercase}header a,footer a{text-decoration:none;text-align:start;unicode-bidi:plaintext}header ul,footer ul{justify-content:space-between;display:flex;text-align:start;unicode-bidi:plaintext}[aria-current=page]{text-decoration:line-through;text-align:start;unicode-bidi:plaintext}header,section,footer{padding:1rem 0;text-align:start;unicode-bidi:plaintext}blockquote{border-left:5px solid #353535;padding-left:1rem;text-align:start;unicode-bidi:plaintext}.posts ul,header ul,footer ul{list-style:none;text-align:start;unicode-bidi:plaintext}.posts,header ul,footer ul{padding:0;text-align:start;unicode-bidi:plaintext}.posts li{align-items:center;display:flex;justify-content:space-between;margin-bottom:.7rem;text-align:start;unicode-bidi:plaintext}.posts li a,.posts li div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;text-align:start;unicode-bidi:plaintext}.posts li time{padding-left:1rem;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:start;unicode-bidi:plaintext}.hash{opacity:.25;text-decoration:none;text-align:start;unicode-bidi:plaintext}table{border-collapse:collapse;text-align:left;width:100%;text-align:start;unicode-bidi:plaintext}table tr{background:#fff;border-bottom:1px solid;text-align:start;unicode-bidi:plaintext}table th,table td{padding:10px 20px;text-align:start;unicode-bidi:plaintext}p{text-align:justify;unicode-bidi:plaintext}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "How I do My Computing",
+    "headline": "How I do My Computing",
+    "alternativeHeadline": "",
+    "description": "forked from stallman.org\/stallman-computing Computer \u0026amp; OS I use my own-built computer along side with an Ideapad gaming laptop. Currently OpenBSD , before writing this post I used to have a windows OS dual-booted in my machine for work purpose1, today alhamdulilah I\u0026#39;ve quit this shit so I deleted Windows permanently, and inshallah I will not download it forevermore.\nThere is lots of reasons for me to prefer BSDs over Linux.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/salehmu.github.io\/post\/how-i-do-my-computing\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Saleh Muhammed"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Saleh Muhammed"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Saleh Muhammed"
+    },
+    "copyrightHolder" : "Saleh Muhammed",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-07-07T00:00:00.00Z",
+    "datePublished": "2022-07-07T00:00:00.00Z",
+    "dateModified": "2022-07-07T19:09:45.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Saleh Muhammed",
+        "url": "https://salehmu.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/salehmu.github.io",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://salehmu.github.io",
+    "url" : "https:\/\/salehmu.github.io\/post\/how-i-do-my-computing\/",
+    "wordCount" : "872",
+    "genre" : [ ],
+    "keywords" : [ ]
+}
+</script>
+
+
+</head>
+<body>
+<main>
+      <header>
+    <nav>
+      
+  <ul>
+    <li>
+      
+      
+      
+      
+      <a href="/" >Index</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/fullbooks" >BOOKS</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/cinema" >CINEMA</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="mailto:ghd@keemail.me" >EMAIL</a>
+    </li>
+  
+  </ul>
+    </nav>
+  </header>
+  <hr>
+
+
+
+  <section>
+
+      
+
+      <span itemprop="articleBody">
+      
+<div class="src src-txt">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">forked from stallman.org/stallman-computing</span></span></code></pre></div>
+</div>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Computer &amp; OS
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+I use my own-built computer along side with an Ideapad gaming laptop. <br>
+Currently OpenBSD , before writing this post I used to
+have a windows OS dual-booted in my machine for work purpose<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>, today alhamdulilah I&#39;ve
+quit this shit so I deleted Windows permanently, and inshallah I will not download it
+forevermore.</p>
+<p>
+There is lots of reasons for me to prefer BSDs over Linux. Being a minimalist, I see that
+the BSD implementation of the UNIX utilities is optimal, readable, less bloated, compatible,
+and works harmonically in a captivating way with the monolithic kernel. I never had a
+compatibility issue using a BSD. Unlike Linux, I had to recompile my kernel twice to get
+Bluetooth to work fine. Also BSD docs rocks. Without being minimalist, the real reason not
+to get back to Linux is that it would be arduous for me to migrate.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Software
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Window Manager
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>I run X11 with suckless&#39; dynamic window manager, which is an optimal window manager written
+in C so it is easy for me to read, patch and maintain. It&#39;s less than 500KB, so it&#39;s
+immovable &amp; efficient as hell. I use many patches with it but I don&#39;t recall names.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+File Manager
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>I use LF, a terminal-based file manager written in go. In the past days I used to use a GUI
+file manager, mainly Xfce&#39;s Thunar and the idea of using a terminal file manager looked like
+an antiquated thing to do. Then I had an issue with dbus,the message bus system, I had to
+wait ~4 minutes to get any gtk-based program to run, includes thunar. Thus, I had to use lf,
+it was arduous at the beginning, but after while I automated my file management to the
+maximum level, and now I can&#39;t bear using a GUI file manager. Here is some pics;</p>
+<p>
+<img src="Software/2022-07-07_18-05-22_screenshot.png" alt="Software/2022-07-07_18-05-22_screenshot.png" title="Software/2022-07-07_18-05-22_screenshot.png" /></p>
+<p>
+<img src="Software/2022-07-07_18-05-59_screenshot.png" alt="Software/2022-07-07_18-05-59_screenshot.png" title="Software/2022-07-07_18-05-59_screenshot.png" /></p>
+<p><img src="Software/2022-07-07_18-07-08_screenshot.png" alt="Software/2022-07-07_18-07-08_screenshot.png" title="Software/2022-07-07_18-07-08_screenshot.png" /></p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+dmenu
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>I don&#39;t use suckless&#39; dmenu, instead I use rofi, which is written in C as well. The nice
+thing about rofi is that I don&#39;t have to do a lot with it to get it work. And it looks nicer
+than dmenu. However, it&#39;s a lot bloated if compared to dmenu.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Web Browser
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>I hate all web browser, yet I&#39;ve never found a reliable web browser, never. my  current web
+browser is Brave, a bloated web browser, but like they say, to browse a bloated web, you
+need a bloated web browser. I even bloat it more, to satisfy my needs, with the following
+web packages;</p>
+<ul>
+<li>
+<p><a href="https://nodetics.com/feedbro/">Feebro</a>, a social media &amp; RSS feeds reader. I use it to browse the internet feeds instead
+of opening the network website services, which mostly sucks and not even retrieve the
+posts I&#39;m waiting for. Feedbro once sees a new post, it saves it locally on my machine.
+and I can read it whenever I want.</p>
+<p><img src="Software/2022-07-07_18-15-39_screenshot.png" alt="Software/2022-07-07_18-15-39_screenshot.png" title="Software/2022-07-07_18-15-39_screenshot.png" /></p>
+</li>
+<li><a href="https://getfoxyproxy.org/">FoxyProxy</a>
+I mentioned my usage for it before <a href="https://salehmu.github.io/posts/%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%AD%D8%B8%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/">here</a>, in Arabic.</li>
+<li><a href="https://chrome.google.com/webstore/detail/linux-scroll-speed-fix/mlboohjioameadaedfjcpemcaangkkbp?hl=en">Linux Scroll Speed Fix</a>
+Unix like scroll functionality sucks.</li>
+<li><a href="https://chrome.google.com/webstore/detail/modern-scrollbar/bgfofngpplpmpijncjegfdgilpgamhdk">Modern scrollbar</a>
+I don&#39;t like the way scrollbars look like.</li>
+<li><a href="https://chrome.google.com/webstore/detail/no-history/ljamgkbcojbnmcaonjokopmcblmmpfch?hl=ar">No History</a>
+Very simple. Do NOT store history. If I want to save something, I will bookmark it,
+otherwise pleaasse don&#39;t save my history. Why even anyone would like to have a web
+history? Such a concept is annoying to me.</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd?hl=en">Quran Tab</a>
+&#34;Quran Tab is an Islamic new tab page that will keep you inspired by a verse from the
+Quran every time you open a new tab. &#34;</p>
+<p><img src="Software/2022-07-07_18-22-51_screenshot.png" alt="Software/2022-07-07_18-22-51_screenshot.png" title="Software/2022-07-07_18-22-51_screenshot.png" /></p>
+</li>
+<li><a href="https://www.printfriendly.com/">Print Friendly &amp; PDF</a>
+The right way to save &amp; print webpages.</li>
+<li><a href="https://github.com/jusio/storage-area-explorer">Storage Area Explorer</a>
+Storage editor.</li>
+<li>
+<p><a href="https://chrome.google.com/webstore/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid?hl=en">Unhook</a>
+A youtube cleaner.</p>
+<p><img src="Software/2022-07-07_18-27-52_screenshot.png" alt="Software/2022-07-07_18-27-52_screenshot.png" title="Software/2022-07-07_18-27-52_screenshot.png" />
+So I can watch videos peacefully.</p>
+</li>
+<li><a href="https://github.com/philc/vimium">vimium</a>
+The extension that makes me feel home in web browsers.</li>
+</ul>
+<p>
+The web browses I tried before Brave:</p>
+<ul>
+<li>ungoogled chromium</li>
+<li>Firefox</li>
+<li>Edge</li>
+<li>Vivaldi</li>
+<li>qutebrowser</li>
+<li>surf</li>
+<li>vimb</li>
+<li>Links</li>
+<li>epiphany</li>
+<li>Nyxt (I loved it)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">
+Terminal Emulator
+</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<p>Kitty is my terminal. I used to use suckless&#39; ST, but I noticed that kitty is much faster.
+Of course, compared to ST, it&#39;s bloated.</p>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">
+Status Bar
+</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<p>I used to use the official suckless&#39; status bar, but I found one written in rust &amp; much
+easier to configure and git it work. <a href="https://github.com/MustafaSalih1993/rsblocks">rsblocks.</a></p>
+<p><img src="Software/2022-07-07_18-36-49_screenshot.png" alt="Software/2022-07-07_18-36-49_screenshot.png" title="Software/2022-07-07_18-36-49_screenshot.png" /></p>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">
+Media Player, Image Viewer
+</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<p>MPV is a great video player, I think that MPV is the 2nd best written software in my
+machine. I patched it with subliminal so it downloads subtitles for movies automatically
+when I play movie with it.  Also I use it as an image viewer.</p>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
+<h3 id="headline-10">
+Music Player
+</h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<p><a href="https://musikcube.com/">musikcube</a> &#34;is a fully functional terminal-based music player, library, and streaming audio
+server that runs natively on Windows, macOS, and Linux. it also runs well on a Raspberry Pi
+with a custom DAC (e.g. IQaudIO DAC+, HiFiBerry DAC+ and others), and can output 24bit/192k
+audio comfortably.&#34;</p>
+<p><img src="Software/2022-07-07_18-40-44_screenshot.png" alt="Software/2022-07-07_18-40-44_screenshot.png" title="Software/2022-07-07_18-40-44_screenshot.png" /></p>
+<p><img src="Software/2022-07-07_18-41-42_screenshot.png" alt="Software/2022-07-07_18-41-42_screenshot.png" title="Software/2022-07-07_18-41-42_screenshot.png" /></p>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">
+PDF Reader
+</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<p>Sadly PDF readers suck just like web browsers. I use emacs as my pdf reader, zathura as a
+viewer</p>
+<p><img src="Software/2022-07-07_18-43-55_screenshot.png" alt="Software/2022-07-07_18-43-55_screenshot.png" title="Software/2022-07-07_18-43-55_screenshot.png" /></p>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">
+Emacs
+</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<p>I will write my emacs config in org someday, but now I will just talk about my emacs
+packages, if you can understand elisp, please have a look at <a href="https://github.com/salehmu/emacs-windows-config/blob/main/.doom.d/config.el">config.el</a></p>
+<p>
+I just have a look at my packages. For god sake I can&#39;t write about all this. Maybe I will
+resume soon. I didn&#39;t mention all my software yet.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-2">
+<h2 id="headline-13">
+Footnotes
+</h2>
+</div>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>This is mentioned right <a href="https://github.com/salehmu/emacs-windows-config">here</a> before.</p>
+</div>
+</div>
+</div>
+</div>
+
+      </span>
+       
+
+    </section>
+    <hr>
+<footer>
+	  <nav>
+      
+  <ul>
+    <li>
+      لَا إِلٰهَ إِلَّا ٱلله
+    </li>
+  
+  </ul>
+    </nav>
+</footer>
+
+  </main>
+</body>
+</html>

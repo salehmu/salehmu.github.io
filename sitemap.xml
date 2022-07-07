@@ -4,17 +4,52 @@
   
   <url>
     <loc>https://salehmu.github.io/</loc>
-    <lastmod>2022-07-06T00:41:18+02:00</lastmod>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/posts/i-want/</loc>
-    <lastmod>2022-07-06T00:41:18+02:00</lastmod>
+    <loc>https://salehmu.github.io/categories/blogs/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/categories/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/tags/computer-science/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/post/how-i-do-my-computing/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/posts/how-i-do-my-computing/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/posts/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/post/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/tags/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/posts/i-want/</loc>
     <lastmod>2022-07-06T00:41:18+02:00</lastmod>
   </url>
   
@@ -25,32 +60,22 @@
   
   <url>
     <loc>https://salehmu.github.io/categories/articles/</loc>
-    <lastmod>2022-06-23T09:24:14+02:00</lastmod>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/categories/</loc>
-    <lastmod>2022-06-23T09:24:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/post/</loc>
-    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/tags/</loc>
-    <lastmod>2022-06-23T09:24:14+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/tags/technology/</loc>
-    <lastmod>2022-06-23T09:24:14+02:00</lastmod>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%AD%D8%B8%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/</loc>
-    <lastmod>2022-06-23T09:22:16+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/%D9%85%D8%B4%D9%83%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%A7%D9%84%D9%85%D8%AD%D8%B8%D9%88%D8%B1%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -61,11 +86,6 @@
   <url>
     <loc>https://salehmu.github.io/youtube/</loc>
     <lastmod>2022-07-02T13:06:43+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/categories/blogs/</loc>
-    <lastmod>2022-05-19T00:03:48+02:00</lastmod>
   </url>
   
   <url>
@@ -84,8 +104,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/about-twitter-api-v2-perplexity/</loc>
-    <lastmod>2022-04-27T10:26:43+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/about-twitter-api-v2-perplexity/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -94,7 +114,7 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/did-you-know-that-saying-world-wide-web-is-actually-quicker-than-www/</loc>
+    <loc>https://salehmu.github.io/org/did-you-know-that-saying-world-wide-web-is-actually-quicker-than-www/</loc>
     <lastmod>2022-04-05T22:59:16+02:00</lastmod>
   </url>
   
@@ -104,8 +124,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/game-and-pornography-and-instant-gratification/</loc>
-    <lastmod>2022-04-04T20:50:19+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/game-and-pornography-and-instant-gratification/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -114,8 +134,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/war-on-islam/</loc>
-    <lastmod>2022-04-02T12:15:34+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/war-on-islam/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -151,11 +171,6 @@
   <url>
     <loc>https://salehmu.github.io/notes/csharp/</loc>
     <lastmod>2022-04-02T11:33:18+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/tags/computer-science/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
   </url>
   
   <url>
@@ -205,12 +220,12 @@
   
   <url>
     <loc>https://salehmu.github.io/tags/cinema/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/hanakah/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/hanakah/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -274,8 +289,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/sql/</loc>
-    <lastmod>2022-01-08T06:52:32+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/sql/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -295,22 +310,22 @@
   
   <url>
     <loc>https://salehmu.github.io/tags/music/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/rpsaleh/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/rpsaleh/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/categories/shitpostting/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/update-about-my-tracking-lists/</loc>
-    <lastmod>2022-01-01T12:03:27+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/update-about-my-tracking-lists/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -374,8 +389,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/poetry/</loc>
-    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/poetry/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
@@ -395,8 +410,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/post/spirit/</loc>
-    <lastmod>2022-06-25T04:27:06+02:00</lastmod>
+    <loc>https://salehmu.github.io/org/spirit/</loc>
+    <lastmod>2022-07-07T19:09:45+02:00</lastmod>
   </url>
   
   <url>
