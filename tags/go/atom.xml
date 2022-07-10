@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GO on Saleh Muhammed</title>
+    <link>https://salehmu.github.io/tags/go/</link>
+    <description>Recent content in GO on Saleh Muhammed</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 05:28:26 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/go/atom.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GO Notes</title>
+      <link>https://salehmu.github.io/notes/go/</link>
+      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/go/</guid>
+      <description>Introduction #GO programming language notes. Reading Adam Freeman&amp;rsquo;s Pro Go.
+get-go #Open a command prompt, navigate to a convenient location, and create a folder named partyinvites. Navigate to the partyinvites folder and run the command shown in Listing 1-2 to start a new Go project.
+go mod init partyinvites The go command is used for almost every development task. This command creates a file named go.mod, which is used to keep track of the packages a project depends on and can also be used to publish the project, if required.</description>
+    </item>
+    
+  </channel>
+</rss>

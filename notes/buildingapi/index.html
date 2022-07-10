@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ronalds Vilcins - https://salehmu.github.io">
+  <title>Building a RESTful API with ASP.NET Core | Saleh Muhammed</title>
+  <meta name="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building a RESTful API with ASP.NET Core"/>
+<meta name="twitter:description" content="Check: Designing RESTful APIs
+Introduction, The Richardson Maturity Model #The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you will, APIs by the their RESTful maturity. So it&rsquo;s interesting to look at it, as it shows us how we can go from a simple API that doesn&rsquo;t really care about protocol, nor standards. To an API, that can be considered RESTful.
+The first level is level 0, the Swamp of POX, or Plain Old XML."/>
+
+<meta property="og:title" content="Building a RESTful API with ASP.NET Core" />
+<meta property="og:description" content="Check: Designing RESTful APIs
+Introduction, The Richardson Maturity Model #The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you will, APIs by the their RESTful maturity. So it&rsquo;s interesting to look at it, as it shows us how we can go from a simple API that doesn&rsquo;t really care about protocol, nor standards. To an API, that can be considered RESTful.
+The first level is level 0, the Swamp of POX, or Plain Old XML." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://salehmu.github.io/notes/buildingapi/" /><meta property="article:section" content="notes" />
+
+<meta property="article:modified_time" content="2022-07-10T20:57:48+02:00" />
+
+
+<meta itemprop="name" content="Building a RESTful API with ASP.NET Core">
+<meta itemprop="description" content="Check: Designing RESTful APIs
+Introduction, The Richardson Maturity Model #The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you will, APIs by the their RESTful maturity. So it&rsquo;s interesting to look at it, as it shows us how we can go from a simple API that doesn&rsquo;t really care about protocol, nor standards. To an API, that can be considered RESTful.
+The first level is level 0, the Swamp of POX, or Plain Old XML.">
+<meta itemprop="dateModified" content="2022-07-10T20:57:48+02:00" />
+<meta itemprop="wordCount" content="3004">
+<meta itemprop="keywords" content="Computer Science,.NET," />
+  <link rel="canonical" href="https://salehmu.github.io/notes/buildingapi/">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <link rel="alternate" type="application/atom+xml" title="Saleh Muhammed" href="https://salehmu.github.ioatom.xml" />
+  <link rel="alternate" type="application/json" title="Saleh Muhammed" href="https://salehmu.github.iofeed.json" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  
+  <style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeSpeed;text-align:start;unicode-bidi:plaintext}.posts hr{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:none;border-bottom:1px #353535;flex:1 0 1rem;text-align:start;unicode-bidi:plaintext}main{max-width:70ch;padding:2ch;margin:auto;text-align:start;unicode-bidi:plaintext}a,body{color:#353535;text-align:start;unicode-bidi:plaintext}::selection,a:focus,a:hover{background-color:#353535;color:#fff}.meta{margin:0 0 2.5rem}.tags::before{content:"\2022";margin-left:1rem}code,pre{color:#353535;font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;border:1px solid #353535;font-size:small}code{padding:.1rem;border:none}pre{padding:.5rem;overflow-x:auto;text-align:start;unicode-bidi:plaintext}pre code{border:none}img{max-width:100%;border:1px solid #353535}hr{background:#353535;height:1px;border:0;text-align:start;unicode-bidi:plaintext}ul{list-style-type:square;text-align:start;unicode-bidi:plaintext}ul,ol{padding-left:1.2rem;text-align:start;unicode-bidi:plaintext}header li,footer li{display:inline;text-transform:uppercase}header a,footer a{text-decoration:none;text-align:start;unicode-bidi:plaintext}header ul,footer ul{justify-content:space-between;display:flex;text-align:start;unicode-bidi:plaintext}[aria-current=page]{text-decoration:line-through;text-align:start;unicode-bidi:plaintext}header,section,footer{padding:1rem 0;text-align:start;unicode-bidi:plaintext}blockquote{border-left:5px solid #353535;padding-left:1rem;text-align:start;unicode-bidi:plaintext}.posts ul,header ul,footer ul{list-style:none;text-align:start;unicode-bidi:plaintext}.posts,header ul,footer ul{padding:0;text-align:start;unicode-bidi:plaintext}.posts li{align-items:center;display:flex;justify-content:space-between;margin-bottom:.7rem;text-align:start;unicode-bidi:plaintext}.posts li a,.posts li div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none;text-align:start;unicode-bidi:plaintext}.posts li time{padding-left:1rem;white-space:nowrap;font-variant-numeric:tabular-nums;text-align:start;unicode-bidi:plaintext}.hash{opacity:.25;text-decoration:none;text-align:start;unicode-bidi:plaintext}table{border-collapse:collapse;text-align:left;width:100%;text-align:start;unicode-bidi:plaintext}table tr{background:#fff;border-bottom:1px solid;text-align:start;unicode-bidi:plaintext}table th,table td{padding:10px 20px;text-align:start;unicode-bidi:plaintext}p{text-align:justify;unicode-bidi:plaintext}</style>
+
+  
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "notes",
+    "name": "Building a RESTful API with ASP.NET Core",
+    "headline": "Building a RESTful API with ASP.NET Core",
+    "alternativeHeadline": "",
+    "description": "Check: Designing RESTful APIs\nIntroduction, The Richardson Maturity Model #\rThe Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you will, APIs by the their RESTful maturity. So it\u0026rsquo;s interesting to look at it, as it shows us how we can go from a simple API that doesn\u0026rsquo;t really care about protocol, nor standards. To an API, that can be considered RESTful.\nThe first level is level 0, the Swamp of POX, or Plain Old XML.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/salehmu.github.io\/notes\/buildingapi\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "[ghd]"
+    },
+    "copyrightHolder" : "Saleh Muhammed",
+    "copyrightYear" : "0001",
+    "dateCreated": "0001-01-01T00:00:00.00Z",
+    "datePublished": "0001-01-01T00:00:00.00Z",
+    "dateModified": "2022-07-10T20:57:48.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Saleh Muhammed",
+        "url": "https://salehmu.github.io",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/salehmu.github.io",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://salehmu.github.io",
+    "url" : "https:\/\/salehmu.github.io\/notes\/buildingapi\/",
+    "wordCount" : "3004",
+    "genre" : [ "Computer Science" , ".NET" ],
+    "keywords" : [ "Computer Science" , ".NET" ]
+}
+</script>
+
+
+</head>
+<body>
+<main>
+      <header>
+    <nav>
+      
+  <ul>
+    <li>
+      
+      
+      
+      
+      <a href="/" >Index</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/fullbooks" >BOOKS</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="/cinema" >CINEMA</a>
+    </li>
+  
+    <li>
+      
+      
+      
+      
+      <a href="mailto:ghd@keemail.me" >EMAIL</a>
+    </li>
+  
+  </ul>
+    </nav>
+  </header>
+  <hr>
+
+
+
+  <section>
+
+      
+
+      <span itemprop="articleBody">
+      <p>Check: <a href="https://github.com/salehmu/leet/blob/main/API/Designing%20RESTful%20API.org">Designing RESTful APIs</a></p>
+<h2 id="introduction-the-richardson-maturity-model">Introduction, The Richardson Maturity Model <a href="#introduction-the-richardson-maturity-model" class="hash">#</a></h2>
+<p>The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you
+will, APIs by the their RESTful maturity. So it&rsquo;s interesting to look at it, as it shows us
+how we can go from a simple API that doesn&rsquo;t really care about protocol, nor standards. To
+an API, that can be considered RESTful.</p>
+<p>The first level is level 0, the Swamp of POX, or Plain Old XML. This level states that the
+implementing protocol, HTTP, is used for remote interaction, but we just use it as that, and
+we don&rsquo;t use anything else from the protocol correctly. So, for example, to get some author
+data, you send over a POST request to some basic entry point URI, like <code>host/myapi</code>. In the
+body, you send some XML that contains info on the data you want. You then get back the data
+you asked for in the response. To create an author, you create another POST request with
+some data in the body to that same entry point URI, and so on. In other words, you use HTTP,
+<strong>but only as a transport protocol</strong>. An example of this is SOAP<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> , or other typical remote
+procedure call implementations. It&rsquo;s not a completely correct statement, but you see a lot
+of these RPC-style implementations when building services with Windows Communication
+Foundation.</p>
+<p>Then we have a level 1, Resources.  From this moment on, you use multiple URIs,
+and each URI is mapped to a specific resource.  So it extends on level 0, where there was
+only 1 URI. For example, we now have URI host/api/authors to get a list of authors,
+api/authors/id for an author with a specific id, and so on. However, only one method, like
+POST, is still used for all interactions. So, HTTP methods aren&rsquo;t used as they should be,
+according to the standard. This is already a little part of the uniform interface constraint
+we see here, by the way. From a software design point of view, this means reducing
+complexity by working with different end points instead of one large service end point.</p>
+<p>Then
+we have level 2, Verbs. To reach a level 2 API, the correct HTTP verbs like GETS, POST, PUT,
+PATCH, and DELETE are used as they are intended by the protocol. In the example, we see a
+GET request to get a list of authors, and a POST request containing a resource for
+presentation in the body for creating an author. The correct status codes are also included
+in this level. For example, use a 200 OK after a successful GET, a 201 Created after a
+successful POST, and so on.</p>
+<p>This again adds to
+that uniform interface constraint. And from a software design point of view, we have just
+removed unnecessary variation. We are using the same verbs to handle the same types of
+situations. Level 3, or Hypermedia controls. This means that the API supports HATEOAS,
+another part of that uniform interface constraint. A sample GET request to the authors
+resource would then return not only the list of authors, but also links, hypermedia, that
+drive application state. From a software design point of view, this means we&rsquo;ve introduced
+discoverability and self documentation. What is important to know is that according to Roy
+Fielding, a level 3 API is a precondition to be able to talk about the RESTful API. So, this
+maturity model does not mean there&rsquo;s such a thing as a level 1 RESTful API, a level 2
+RESTful API, and a level 3 RESTful API. It means that there are APIs of 3 different levels,
+and only when you reach level 3, you can start talking about the RESTful API.</p>
+<h2 id="structuring-outer-facing-contract">Structuring Outer Facing Contract <a href="#structuring-outer-facing-contract" class="hash">#</a></h2>
+<p>It consists of three big concept consumer of an API uses to interact with that API. First,
+resource identifiers, ie. the URIs where the resources can be found. That&rsquo;s combined with
+HTTP methods like get to get resources, post to create them, and all the ones we&rsquo;ll look
+into. These methods are part of the HTTP standard. Third, an optional payload. When creating
+a resource, the HTTP request will have to contain representation of the resource you want to
+create. When getting a resource, the http response will contain a resource representation in
+its body. The format of those representations is what media types are used for like
+application Json.</p>
+<p>The uniform interface constraint does cover the fact that resources are identified by URIs.
+Each resource has its own URI, but as far as naming of resources is concerned, there isn&rsquo;t a
+standard that describes that. There are, however, best practices for this.</p>
+<p><strong>Resource naming in the URI should always be a noun</strong>. In other words, a RESTful URI should
+refer to a resource that is a thing, instead of referring to an action. The action, that&rsquo;s
+the HTTP method. So we shouldn&rsquo;t create a <em>getauthors</em> resource. That&rsquo;s an action, getting
+the authors. We should create an author for resource. That&rsquo;s a thing conveyed by a noun and
+use the Get method to get it to get one specific author with a dependent with a forward
+slash and the authorId. Using these nouns conveys meaning, it describes the resource so we
+shouldn&rsquo;t call resource authors when it&rsquo;s, in fact, about authors. This principle should be
+followed throughout the API for predictability. It helps a consumer understand the API
+structure. If you have another non-hierarchical resource, say employees, we shouldn&rsquo;t name
+it api/something/somethingelse/employees. We should name it api/employees. A single employee
+shouldn&rsquo;t be named id/employees, it should be named employees/employeeId. This helps keep
+the API contract predictable and consistent.</p>
+<p>There is quite a bit of debate going on on whether or not we should pluralize these nouns. I
+prefer to pluralize them as it helps to convey meaning again. When I see an authors
+resource, that tells us it&rsquo;s a collection of authors and not one author, but good APIs that
+don&rsquo;t pluralize nouns exists as well. If you prefer that, you can, but do make sure you stay
+consistent. Either all resources should be pluralized nouns or all should be singular nouns
+and not a mix.</p>
+<p>Another important thing you&rsquo;d want represented in an API contract is hierarchy. Our data or
+models have structure, for example, in all the REST courses. That should be represented in
+the API contract. So if we want to define an authors courses where the course is in the
+model hierarchy or children of an author, we should represent them as
+<code>api/authors/authorId/courses</code>. A single course by an author should then be defined as
+API/authors/authorId/courses/courseID. APIs often expose additional capabilities like
+allowing filtering resources or ordering them. Those parameters should be passed through via
+the credit string. So we shouldn&rsquo;t write something along the lines of
+api/authors/orderby/name. There is a few contract smiles in that your URI. A plural noun
+should always be followed by an id and not by another noun or word. Orderby isn&rsquo;t a noun and
+a URI like that would mean we&rsquo;d have defined three different resources, authors,
+authors/orderby, and authors/orderby/name. That&rsquo;s not what we wanted to do. We don&rsquo;t want to
+define new resources, we want to order our already-existing authors resource. So
+api/authors?orderby=name is a better fit.</p>
+<p>There always has to be an exception. Life would be too easy without it. Sometimes there is
+these RPC-style calls like calculate total that don&rsquo;t easily map to resources. Most
+RPC-style calls do map to resources as we&rsquo;ve just proven. We don&rsquo;t have a get authors by
+name procedure, we have api/orders? orderby=name, but what if we need to calculate, say, the
+total amount of pages in order wrote in these courses? And let&rsquo;s assume for the sake of the
+example that it&rsquo;s a very productive author, calculating this would take quite a bit of time
+and we don&rsquo;t want to send it over together with every author by default.  It&rsquo;s not that easy
+to create resource from that using pluralized nouns. We&rsquo;d end up with something like you see
+on screen now, but then what? A resource like this means we&rsquo;d expect it to return a
+collection and not a number. We can go for something like api pagetotals/id where the
+backend would then have to map that id to an authorId or it could even be the same Id and
+that would work, but it does feel a bit out of place. So this is one of those exceptional
+cases where I&rsquo;d suggest to take a bit of a pragmatic approach. Api/authors/ the
+authorId/totalamountofpages isn&rsquo;t according to the best practices we&rsquo;ve just looked into,
+but as long as it&rsquo;s an exceptional case, it doesn&rsquo;t mean you&rsquo;ve suddenly got a bad API
+contract. Remember, there is no standard for this. These are just guidelines. There are
+other approaches possible as well, by the way, for example, implementing a system where you
+can choose which author fields are returned in a resource.</p>
+<h3 id="status-codes">Status Codes <a href="#status-codes" class="hash">#</a></h3>
+<p>We know by now that REST isn&rsquo;t a standard, but it does use standards. Status codes and when
+to use them are part of the HTTP standard. It&rsquo;s really important to get this right because
+these status codes are the only thing a consumer of an API, like a client-side web app, can
+inspect to know if a request worked out as expected or if something went wrong and, if
+something went wrong, whether it&rsquo;s the fault of the consumer or of the API itself. We&rsquo;re
+currently returning JSON result in our code, which sends back a 200 status code by default.
+But if we keep on sending back 200 OK status codes for each and every request, the consumer
+of the API would assume the request worked out as expected even if it went wrong. Remember
+that consumers of the API are typically non-human. All they can inspect is that status code,
+and they can&rsquo;t read out and interpret error messages.</p>
+<p>From time to time, problems arise.  Something goes wrong. If we only send back a 500
+Internal Server Error in all those cases, the consumer would never know if it&rsquo;s his fault
+that something went wrong. In the example in the code we just wrote, we&rsquo;re trying to get an
+author that doesn&rsquo;t exist. That&rsquo;s a client mistake. It also means that the client can
+correct it and try the request again. Other times, it&rsquo;s the server&rsquo;s responsibility, for
+example the database is unavailable. The consumer of the API cannot correct this because the
+mistake isn&rsquo;t his. There&rsquo;s a lot of status codes, and an API doesn&rsquo;t necessarily have to
+support all of them. But let&rsquo;s have a look at a few common ones.</p>
+<p>There&rsquo;s five levels of status codes. Level 100 status codes are informational and weren&rsquo;t
+part of the HTTP1 standard. These are currently not used by APIs.  The level 200 status
+codes mean the request went well. The most common ones are 200 for a successful request, 201
+for a successful request that resulted in the creation of new resource, and 204 for a
+successful request that shouldn&rsquo;t return anything, like when you delete something.</p>
+<p>Level 300 status codes are used for redirection, for example to tell a search engine a page
+that&rsquo;s permanently moved. Most APIs don&rsquo;t have a need for these.</p>
+<p>Then there&rsquo;s the status codes that tell the consumer he did something wrong. Level 400,
+Client Mistakes. 400 means a bad request. The request you, as a consumer of the API sent to
+the server is wrong. For example, the JSON the consumer provided can&rsquo;t be parsed. 401
+Unauthorized means that no or invalid authentication details were provided. 403 Forbidden
+means that authentication succeeded, but the authenticated user doesn&rsquo;t have access to the
+requested resource. 404 Not Found means that the requested resource doesn&rsquo;t exist.</p>
+<p>And there&rsquo;s more. 405 means method not allowed. This happens when we try to send a request
+to a resource with an HTTP method that isn&rsquo;t allowed. For example, we try to send a POST
+request to api/authors when only GET is implemented on that resource. Another interesting
+one is 406 Not Acceptable. Now we&rsquo;re diving into the presentation media types. This status
+code means that the consumer of the API requested representation in a format that isn&rsquo;t
+supported by the API. And the API doesn&rsquo;t supply a default representation. For example, a
+consumer might request the application/xml media type, while the API only supports
+application/json and doesn&rsquo;t provide that as default representation.</p>
+<p>Another interesting one is 409 Conflict.  That means that there&rsquo;s a conflict with the
+request versus the current state of the resource the request is sent to. It&rsquo;s often used
+when you&rsquo;re trying to edit version of the resource that hasn&rsquo;t been renewed since you
+started editing it. But it&rsquo;s also used when trying to create a resource that already exists.
+This is one of the status codes used for concurrency issues. 415 means unsupported media
+type. That&rsquo;s the other way around from the 406 status code. Sometimes we have to provide
+data to our API in the request body, when creating a resource for example. That data also
+has a specific media type. If the API doesn&rsquo;t support this, a 415 status code is returned.
+And then the last one we&rsquo;ll cover is 422. That stands for Unprocessable Entity. It&rsquo;s part of
+the WebDAV HTTP extension standard, so it wasn&rsquo;t in the basic standard. It&rsquo;s an interesting
+one though because this one means that the server understands the content type of the
+request entity, which means 415 is inappropriate. Next to that, the syntax of the request
+entity is correct.  So a 400 is inappropriate. But still, the server was unable to process
+the contained instructions. So it&rsquo;s typically used for semantic mistakes. And semantic
+mistakes, that&rsquo;s what we get when working with validation. So if a validation rule fails, a
+422 is what should be returned. And lastly, there&rsquo;s level 500 server mistakes. Often, only a
+500 Internal Server Error is supported. This means that the server made a mistake, and the
+client can&rsquo;t do anything about it other than trying again later. That&rsquo;s a lot of status
+codes, but there&rsquo;s no reason to learn them by heart. We&rsquo;ll look into them when we encounter
+them.</p>
+<h4 id="level-200">Level 200 <a href="#level-200" class="hash">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>A suceessful request</td>
+</tr>
+<tr>
+<td>201</td>
+<td>A successful creation of a resource</td>
+</tr>
+<tr>
+<td>204</td>
+<td>A successful request that shouldn&rsquo;t return anything (such as delete)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="level-400">Level 400 <a href="#level-400" class="hash">#</a></h4>
+<table>
+<thead>
+<tr>
+<th>Status Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>A bad request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized request</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found Resource</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method not allowed. This happens when we try to send a request to a resource with an HTTP method that isn&rsquo;t allowed. For example, we try to send a POST request to api/authors when only GET is implemented on that resource</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Consumer of the API requested representation in a format that isn&rsquo;t supported by the API</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Conflict.   That means that there&rsquo;s a conflict with the request versus the current state of the resource the request is sent to. It&rsquo;s often used when you&rsquo;re trying to edit version of the resource that hasn&rsquo;t been renewed since you started editing it</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors-vs-dot-faults">Errors vs. Faults <a href="#errors-vs-dot-faults" class="hash">#</a></h3>
+<p>So, mistakes happen. These mistakes are then categorized in two categories, errors and
+faults. Errors are defined as a consumer of an API, like a web application, passing invalid
+data to the API, and the API correctly rejecting that data. Examples include invalid
+credentials, incorrect parameters, unknown version IDs, or similar. In other words, these
+are level 400 status codes, and they are the result of a client passing incorrect or invalid
+data to the API. Errors do not contribute to overall API availability. Faults are defined as
+the API failing to correctly return a response to a valid request by a consumer. In other
+words, the API made a mistake. These are level 500 status codes, and they do contribute to
+the overall API availability.</p>
+<h2 id="getting-resources">Getting Resources <a href="#getting-resources" class="hash">#</a></h2>
+<p>When we design the outer-facing contract, we already learned that REST stops at that level.
+What lies underneath that outer-facing contract is of no importance to REST. From that, we
+already know that the entity model, in our case used by Entity Framework Core as a means to
+represent database rows as object, should be different from the outer-facing model. Those
+model classes represent what&rsquo;s sent over the wire. Sometimes you see these models referred
+to as your DTOs (Data-Transfer Object) or even ViewModels. But that also leads to
+possibilities. Take an author, for example. We can see some pseudocode for that.
+An author is stored in our database with a DateOfBirth. But that DateOfBirth, well, that
+might not be what we want to offer up to the consumers of the API. They might be better off
+with the Age. Another example might be concatenation, concatenating FirstName and LastName
+from an entity into one name field in the resource representation. And sometimes data might
+come from different places.  An author could have a field, say Royalties, that comes from
+another API our API must interact with. That alone leads to issues when using entity classes
+for the outer-facing contract as they don&rsquo;t contain that field. Keeping these models
+separate leads to more robust reliably evolvable code.</p>
+<p>Imagine having to change a database table. That would lead to a change of the entity class.
+If we&rsquo;re using that same entity class to directly expose data via the API, our clients might
+run into problems because they&rsquo;re not expecting an additional renamed or removed field.
+We&rsquo;re essentially making versioning very hard because by reusing those entity classes, the
+database can&rsquo;t evolve separately from the API. So when developing, it&rsquo;s very important to
+keep these separate.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>SOAP is a standard communication protocol system that permits processes using different operating systems like Linux and Windows to communicate via HTTP and its XML. SOAP based APIs are designed to create, recover, update and delete records like accounts, passwords, leads, and custom objects&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </span>
+       
+
+    </section>
+    <hr>
+<footer>
+	  <nav>
+      
+  <ul>
+    <li>
+      لَا إِلٰهَ إِلَّا ٱلله
+    </li>
+  
+  </ul>
+    </nav>
+</footer>
+
+  </main>
+</body>
+</html>
