@@ -10,19 +10,10 @@
     <item>
       <title>  &#34;Representations, Implementations and Algorithms of Graphs (and Trees)&#34;
   </title>
-      <link>https://salehmu.github.io/notes/graph/</link>
+      <link>https://salehmu.github.io/notes/representations-implementations-and-algorithms-of-graphs-and-trees/</link>
       <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
       
-      <guid>https://salehmu.github.io/notes/graph/</guid>
-      <description>Terminology #A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\). \(|E|\) can range from zero to a maximum of \(|V|^{2} - |V|\). A graph with relatively few edges is called sparse, while a graph with many edges is called dense.</description>
-    </item>
-    
-    <item>
-      <title>Representations, Implementations and Algorithms of Graphs (and Trees)</title>
-      <link>https://salehmu.github.io/notes/graphs/</link>
-      <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/graphs/</guid>
+      <guid>https://salehmu.github.io/notes/representations-implementations-and-algorithms-of-graphs-and-trees/</guid>
       <description>Terminology #A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\). \(|E|\) can range from zero to a maximum of \(|V|^{2} - |V|\). A graph with relatively few edges is called sparse, while a graph with many edges is called dense.</description>
     </item>
     

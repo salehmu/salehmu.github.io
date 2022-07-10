@@ -4,13 +4,13 @@
   
   <url>
     <loc>https://salehmu.github.io/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/tags/computer-science/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
@@ -35,7 +35,7 @@
   
   <url>
     <loc>https://salehmu.github.io/tags/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
@@ -159,28 +159,13 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/notes/csharp/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/concurrency/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/mvc/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/linq/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salehmu.github.io/tags/.net/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://salehmu.github.io/notes/csharp/</loc>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
@@ -214,8 +199,13 @@
   </url>
   
   <url>
+    <loc>https://salehmu.github.io/notes/linq/</loc>
+    <lastmod>2022-01-08T05:28:26+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://salehmu.github.io/notes/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
@@ -229,33 +219,23 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/notes/graph/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <loc>https://salehmu.github.io/notes/representations-implementations-and-algorithms-of-graphs-and-trees/</loc>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/tags/algorithms/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/tags/grahps/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/graphs/</loc>
-    <lastmod>2022-04-02T11:32:02+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://salehmu.github.io/notes/introduction-to-non-theoretical-computational-geometry/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/gemtry/</loc>
-    <lastmod>2022-04-02T11:32:02+02:00</lastmod>
+    <lastmod>2022-07-10T21:11:32+02:00</lastmod>
   </url>
   
   <url>
@@ -430,11 +410,6 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/categories/computer-science/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salehmu.github.io/notes/ptrn/</loc>
     <lastmod>2022-07-10T20:57:48+02:00</lastmod>
   </url>
@@ -445,18 +420,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/notes/rest/</loc>
-    <lastmod>2022-05-24T05:56:27+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salehmu.github.io/notes/dp/</loc>
     <lastmod>2022-03-02T15:19:10+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/dynamic-programming/</loc>
-    <lastmod>2022-07-10T20:57:48+02:00</lastmod>
   </url>
   
   <url>
@@ -495,18 +460,8 @@
   </url>
   
   <url>
-    <loc>https://salehmu.github.io/notes/std/</loc>
-    <lastmod>2022-02-28T17:34:12+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://salehmu.github.io/notes/files/</loc>
     <lastmod>2022-07-10T20:57:48+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://salehmu.github.io/notes/fstream/</loc>
-    <lastmod>2022-04-02T11:32:02+02:00</lastmod>
   </url>
   
 </urlset>
