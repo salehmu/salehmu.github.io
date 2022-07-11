@@ -13,6 +13,24 @@
     <atom:link href="https://ronaldsvilcins.com/atom.xml" rel="self" type="application/atom+xml"/>
     
     <item>
+      <title>Stack Posting</title>
+      <link>https://salehmu.github.io/posts/stack-posting/</link>
+      <description>&lt;p&gt;The only thing I like about the design of platforms like facebook &amp;amp; twitter, is the
+timeline, I still remember when timeline was first introduced into facebook in ~2012, a game
+changer. The thing that distinguishes them from a vintage blog, is that it is lots more
+easier to &amp;lsquo;blog&amp;rsquo;, you don&amp;rsquo;t have to create a blog written in markdown or org-mode, give it a
+title, and then write. You just write. I found this a very nice feature and I&amp;rsquo;ve thought a
+lot of forking hugo to make act more like these platforms. Unfortunately I barely have
+enough time to keep my health alright. But, I was thinking today, why not just make it &amp;lsquo;just
+works&amp;rsquo;? I can create a new blog post, having all my posts bottles on it, like a stack? I
+will consider that and I may build it all upon this post.&lt;/p&gt;
+</description>
+      <author>ronalds.vilcins@gmail.com (Ronalds Vilcins)</author>
+      <guid>https://salehmu.github.io/posts/stack-posting/</guid>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+    </item>
+    
+    <item>
       <title>How to Tell if a Programming Language Is Good or Bad</title>
       <link>https://salehmu.github.io/posts/how-to-tell-if-a-programming-language-is-good-or-bad/</link>
       <description>&lt;p&gt;
