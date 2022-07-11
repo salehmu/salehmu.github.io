@@ -60,6 +60,15 @@ Select distinct rows using distinct operator #DISTINCT clause is used to remove
     </item>
     
     <item>
+      <title>System Analysis &amp; Design</title>
+      <link>https://salehmu.github.io/notes/s-a-d/</link>
+      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
+      
+      <guid>https://salehmu.github.io/notes/s-a-d/</guid>
+      <description>Introduction #The systems development life cycle (SDLC), contains the fundamental four- phase model (planning, analysis, design, and implementation) common to all information systems development projects. It describes the evolution of system development method- ologies and discusses the roles and skills required of a systems analyst. Th e chapter then overviews the basic characteristics of object-oriented systems and the fundamentals of object-oriented systems analysis and design and closes with a description of the Unified Process and its extentions and Unified Modeling Language</description>
+    </item>
+    
+    <item>
       <title>  &#34;Representations, Implementations and Algorithms of Graphs (and Trees)&#34;
   </title>
       <link>https://salehmu.github.io/notes/representations-implementations-and-algorithms-of-graphs-and-trees/</link>
