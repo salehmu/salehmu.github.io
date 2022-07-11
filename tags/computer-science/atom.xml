@@ -6,17 +6,7 @@
     <description>Recent content in Computer Science on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://salehmu.github.io/tags/computer-science/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How I do My Computing</title>
-      <link>https://salehmu.github.io/posts/how-i-do-my-computing/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/posts/how-i-do-my-computing/</guid>
-      <description>forked from stallman.org/stallman-computing Computer &amp;amp; OS #I use my own-built computer along side with an Ideapad gaming laptop. Currently OpenBSD , before writing this post I used to have a windows OS dual-booted in my machine for work purpose1, today alhamdulilah I&amp;rsquo;ve quit this shit so I deleted Windows permanently, and inshallah I will not download it forevermore.
-There is lots of reasons for me to prefer BSDs over Linux.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 08 Jan 2022 05:28:26 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/computer-science/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.NET Notes in C#</title>
       <link>https://salehmu.github.io/notes/csharp/</link>

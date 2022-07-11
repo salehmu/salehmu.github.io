@@ -6,27 +6,7 @@
     <description>Recent content in Posts on Saleh Muhammed</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://salehmu.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How I do My Computing</title>
-      <link>https://salehmu.github.io/posts/how-i-do-my-computing/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/posts/how-i-do-my-computing/</guid>
-      <description>forked from stallman.org/stallman-computing Computer &amp;amp; OS #I use my own-built computer along side with an Ideapad gaming laptop. Currently OpenBSD , before writing this post I used to have a windows OS dual-booted in my machine for work purpose1, today alhamdulilah I&amp;rsquo;ve quit this shit so I deleted Windows permanently, and inshallah I will not download it forevermore.
-There is lots of reasons for me to prefer BSDs over Linux.</description>
-    </item>
-    
-    <item>
-      <title>I Want</title>
-      <link>https://salehmu.github.io/posts/i-want/</link>
-      <pubDate>Wed, 06 Jul 2022 00:00:54 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/posts/i-want/</guid>
-      <description>I want to stop using hugo. I think this is enough, I will try today to move all the blog content to use only emacs.
-تحديث, اكتشفت قد إيه فيه ديبينداسيز على هوجو ومش هينفع أنقل بشكل سهل, أنا معرفتش أغير الثيم حتى بلوج بالبساطة دي كانت تستحق تتعمل بالكامل بشيل سكريبت أو إي-ليسب. مش عارف إزاي فكرت ف هوجو كحل.</description>
-    </item>
-    
+    <lastBuildDate>Sat, 02 Jul 2022 13:03:49 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Tell if a Programming Language Is Good or Bad</title>
       <link>https://salehmu.github.io/posts/how-to-tell-if-a-programming-language-is-good-or-bad/</link>
