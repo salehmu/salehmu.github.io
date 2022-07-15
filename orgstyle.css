@@ -175,7 +175,7 @@ pre.example {
 /*   .src .org-constant, */
 /*   .src .org-highlight-numbers-number { */
 /*     color: var(--code-const); } */
-p {
-    text-align:justify;
-    unicode-bidi:plaintext;
-}
+/* p { */
+    /* text-align:justify; */
+    /* unicode-bidi:plaintext; */
+/* } */
