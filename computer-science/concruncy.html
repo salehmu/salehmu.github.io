@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Concurrency in C#</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Concurrency in C#</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf660c82">Introduction</a>
+<ul>
+<li><a href="#org869a9c3">Asyncronous Programming</a></li>
+</ul>
+</li>
+<li><a href="#org0093c1a">Async: Problems &amp; Solutions</a></li>
+</ul>
+</div>
+</div>
+<div class="PREVIEW" id="org9a302ad">
+<p>
+The following text is based on <i>Concurrency in C# Cookbook: Asynchronous, Parallel, and
+Multithreaded Programming</i> by Stephen Cleary
+</p>
+
+</div>
+
+
+<div id="outline-container-orgf660c82" class="outline-2">
+<h2 id="orgf660c82">Introduction</h2>
+<div class="outline-text-2" id="text-orgf660c82">
+<p>
+Before Starting, I’d like to clear up some terminology that I’ll be using throughout
+this book. Let’s start with concurrency.
+</p>
+
+
+<blockquote>
+<p>
+<b>Concurrency</b>: Doing more than one thing at a time.
+</p>
+</blockquote>
+
+<p>
+I hope it’s obvious how concurrency is helpful. End-user applications use concurrency
+to respond to user input while writing to a database. Server applications use concurrency
+to respond to a second request while finishing the first request. You need concurrency
+any time you need an application to do one thing while it’s working on something else.
+Almost every software application in the world can benefit from concurrency.
+</p>
+
+<p>
+Most developers hearing the term “concurrency” immediately think of “multithreading.” I’d
+like to draw a distinction between these two.
+</p>
+
+<blockquote>
+<p>
+<b>Multithreading</b>: A form of concurrency that uses multiple threads of execution.
+</p>
+</blockquote>
+
+
+<p>
+Multithreading literally refers to using multiple threads. Multithreading is one form of
+concurrency, but certainly not the only one. In fact, direct use of the low-level threading
+types has almost no purpose in a modern application; higher-level abstractions are more
+powerful and more efficient than old- school multithreading.
+</p>
+
+<blockquote>
+<p>
+<b>Parallel Processing</b>: Doing lots of work by dividing it up among multiple threads that run
+concurrently.
+</p>
+</blockquote>
+
+<p>
+Parallel processing (or parallel programming) uses multithreading to maximize the use
+of multiple processors. Modern CPUs have multiple cores, and if there’s a lot of work
+to do, then it makes no sense to just make one core do all the work while the others sit
+idle. Parallel processing will split up the work among multiple threads, which can each
+run independently on a different core.
+</p>
+
+
+<blockquote>
+<p>
+<b>Asynchronous Programming</b>
+A form of concurrency that uses futures or callbacks to avoid unnecessary threads.
+</p>
+</blockquote>
+
+
+<p>
+A future (or promise) is a type that represents some operation that will complete in the
+future. The modern future types in .NET are Task and Task&lt;TResult&gt;. Older asyn‐
+chronous APIs use callbacks or events instead of futures. Asynchronous programming
+is centered around the idea of an asynchronous operation: some operation that is started
+that will complete some time later. While the operation is in progress, it does not block
+the original thread; the thread that starts the operation is free to do other work. When
+the operation completes, it notifies its future or invokes its completion callback event
+to let the application know the operation is finished.
+</p>
+
+<p>
+Another form of concurrency is reactive programming. Asynchronous programming implies that
+the application will start an operation that will complete once at a later time. Reactive
+programming is closely related to asynchronous programming, but is built on asynchronous
+events instead of asynchronous operations. Asynchronous events may not have an actual
+“start,” may happen at any time, and may be raised multiple times.
+</p>
+
+<blockquote>
+<p>
+<b>Reactive Programming</b>: A declarative style of programming where the application reacts to
+events.
+</p>
+</blockquote>
+
+<p>
+If you consider an application to be a <i>massive state machine,</i> the application’s behavior
+can be described as reacting to a series of events by updating its state at each event. This
+is not as abstract or theoretical as it sounds; modern frameworks make this approach
+quite useful in real-world applications. Reactive programming is not necessarily con
+current, but it is closely related to concurrency.
+book.
+</p>
+</div>
+<div id="outline-container-org869a9c3" class="outline-3">
+<h3 id="org869a9c3">Asyncronous Programming</h3>
+<div class="outline-text-3" id="text-org869a9c3">
+<p>
+Asynchronous programming has two primary benefits. The first benefit is for end-user GUI
+programs: asynchronous programming enables responsiveness. We’ve all used a program that
+temporarily locks up while it’s working; an asynchronous program can remain responsive to
+user input while it’s working. The second benefit is for server-side programs: asynchronous
+programming enables scalability. A server application can scale somewhat just by using the
+thread pool, but an asynchronous server application can usually scale an order of magnitude
+better than that.
+</p>
+
+<p>
+Modern asynchronous .NET applications use two keywords: <code>async</code> and <code>await</code>. The async keyword
+is added to a method declaration, and its primary purpose is to enable the await keyword
+within that method (the keywords were introduced as a pair for backward-compatibility
+reasons). An async method should return <code>Task&lt;T&gt;</code> if it returns a value, or <code>Task</code> if it does
+not return a value. These task types represent futures; they notify the calling code when
+the async method completes.
+</p>
+
+<p>
+<b>Note</b>: Avoid <code>async void</code>! It is possible to have an <code>async</code> method return
+void, but you should only do this if you’re writing an async event
+handler. A regular async method without a return value should
+return <code>Task</code>, not <code>void</code>.
+</p>
+
+
+<p>
+With that background, let’s take a quick look at an example:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">async Task DoSomethingAsync()
+{
+  int val = 13;
+  // Asynchronously wait 1 second.
+  await Task.Delay(TimeSpan.FromSeconds(1));
+  val *= 2;
+  // Asynchronously wait 1 second.
+  await Task.Delay(TimeSpan.FromSeconds(1));
+  Trace.WriteLine(val);
+}
+</pre>
+</div>
+
+<p>
+The await keyword is not limited to working with tasks; it can work with any kind of
+awaitable that follows a certain pattern. As one example, the Windows Runtime API
+defines its own interfaces for asynchronous operations. These are not convertible to
+Task, but they do follow the awaitable pattern, so you can directly await them. These
+awaitables are more common in Windows Store applications, but most of the time await
+will take a Task or <code>Task&lt;T&gt;</code>.
+</p>
+
+<p>
+Error handling is natural with async and await. In the following code snippet, Possi
+bleExceptionAsync may throw a NotSupportedException, but TrySomethingAsync
+can catch the exception naturally. The caught exception has its stack trace properly
+preserved and is not artificailly wrapped in a TargetInvocationException or Aggre
+gateException:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">async Task TrySomethingAsync()
+{
+  try
+  {
+    await PossibleExceptionAsync();
+  }
+  catch (NotSupportedException ex)
+  {
+    LogException(ex);
+    throw;
+    }
+  }
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0093c1a" class="outline-2">
+<h2 id="org0093c1a">Async: Problems &amp; Solutions</h2>
+<div class="outline-text-2" id="text-org0093c1a">
+<p>
+<b>Problems</b>
+</p>
+
+<p>
+You need to (asynchronously) wait for a period of time. This can be useful when unit
+testing or implementing retry delays. This solution can also be useful for simple time‐
+</p>
+
+<p>
+<b>Solution</b>
+</p>
+
+<p>
+The Task type has a static method Delay that returns a task that completes after the
+specified time
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-01-09 Sun 00:00</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LINQ Notes</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">LINQ Notes</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge474580">Motivation</a></li>
+<li><a href="#orgcb99628">Hello LINQ to Object</a></li>
+<li><a href="#orgf4555e2">LINQ to SQL</a></li>
+<li><a href="#org8c7db3a">LINQ in Depth <code>[22/49]</code></a>
+<ul>
+<li><a href="#org8929eb2"><span class="done DONE">DONE</span> <code>IEnumerable</code> and <code>IQueryable</code></a></li>
+<li><a href="#org57177d3"><span class="done DONE">DONE</span> Differences between <code>IEnumerable</code> and <code>IQueryable</code></a></li>
+<li><a href="#org48dfdfa"><span class="done DONE">DONE</span> <code>OfType</code></a></li>
+<li><a href="#org41968aa"><span class="done DONE">DONE</span> <code>Distinct</code></a></li>
+<li><a href="#orge35144e"><span class="done DONE">DONE</span> <code>Except</code></a></li>
+<li><a href="#org7c63345"><span class="done DONE">DONE</span> <code>Intersect</code></a></li>
+<li><a href="#orgadbd6f9"><span class="done DONE">DONE</span> <code>Union</code></a></li>
+<li><a href="#org8ad2c15"><span class="done DONE">DONE</span> <code>SelectMany</code></a></li>
+<li><a href="#orgeab9989"><span class="done DONE">DONE</span> <code>Concat</code></a></li>
+<li><a href="#org0c264ae"><span class="done DONE">DONE</span> <code>OrderBy</code></a></li>
+<li><a href="#org5899a67"><span class="done DONE">DONE</span> <code>OrderByDescending</code></a></li>
+<li><a href="#org2e62dc1"><span class="done DONE">DONE</span> <code>ThenBy</code> and <code>ThenByDescending</code></a></li>
+<li><a href="#org8c81f1e"><span class="done DONE">DONE</span> <code>Reverse</code></a></li>
+<li><a href="#orgf8b9e2f"><span class="done DONE">DONE</span> <code>Aggregate</code></a></li>
+<li><a href="#org630d63b"><span class="done DONE">DONE</span> <code>All</code></a></li>
+<li><a href="#org3703b85"><span class="done DONE">DONE</span> <code>Any</code></a></li>
+<li><a href="#org90bf43e"><span class="done DONE">DONE</span> <code>Contains</code></a></li>
+<li><a href="#orgf06d225"><span class="done DONE">DONE</span> <code>Contains</code> or <code>Any</code>?</a></li>
+<li><a href="#org34db34e"><span class="done DONE">DONE</span> <code>GroupBy</code></a></li>
+<li><a href="#org8930294"><span class="done DONE">DONE</span> <code>Zip</code></a></li>
+<li><a href="#orgf361fe2"><span class="todo TODO">TODO</span> <code>GroupBy</code> By Multiple Keys</a></li>
+<li><a href="#orgc326b3b"><span class="done DONE">DONE</span> Deferred Execution vs Immediate Execution</a>
+<ul>
+<li><a href="#orgca7d719">Deferred Execution</a></li>
+<li><a href="#orgfd90e0e">Immediate Execution</a></li>
+</ul>
+</li>
+<li><a href="#org5ad3e0b"><span class="done DONE">DONE</span> <code>ToLookup</code></a></li>
+<li><a href="#orgce67970"><span class="todo TODO">TODO</span> Inner Join</a></li>
+<li><a href="#org496d93d"><span class="todo TODO">TODO</span> Join with Multiple Data Sources</a></li>
+<li><a href="#orgbd426ec"><span class="todo TODO">TODO</span> Group Join</a></li>
+<li><a href="#org8e54003"><span class="todo TODO">TODO</span> Left Join</a></li>
+<li><a href="#orge82a4bb"><span class="todo TODO">TODO</span> Cross Join</a></li>
+<li><a href="#org9ca1335"><span class="todo TODO">TODO</span> <code>ElementAt</code> and <code>ElementAtOrDefault</code></a></li>
+<li><a href="#orga467163"><span class="todo TODO">TODO</span> <code>First</code> and <code>FirstOrDefault</code></a></li>
+<li><a href="#org37f5805"><span class="todo TODO">TODO</span> <code>Last</code> and <code>LastOrDefault</code></a></li>
+<li><a href="#orgdec7f8c"><span class="todo TODO">TODO</span> <code>Single</code> and <code>SingleOrDefault</code></a></li>
+<li><a href="#org47a1d81"><span class="todo TODO">TODO</span> <code>DefaultIfEmpty</code></a></li>
+<li><a href="#org22f7656"><span class="todo TODO">TODO</span> <code>SequenceEqual</code></a></li>
+<li><a href="#orgf0c19bb"><span class="todo TODO">TODO</span> <code>Partitioning</code></a></li>
+<li><a href="#org814260b"><span class="todo TODO">TODO</span> <code>Take</code></a></li>
+<li><a href="#org37015b1"><span class="todo TODO">TODO</span> <code>TakeWhile</code></a></li>
+<li><a href="#org0e72e72"><span class="todo TODO">TODO</span> <code>Skip</code></a></li>
+<li><a href="#org6cc129a"><span class="todo TODO">TODO</span> <code>SkipWhile</code></a></li>
+<li><a href="#orgd606f9c"><span class="todo TODO">TODO</span> Paging Using Skip and Take</a></li>
+<li><a href="#org9cfffb4"><span class="todo TODO">TODO</span> <code>Range</code></a></li>
+<li><a href="#org1a77e89"><span class="todo TODO">TODO</span> <code>Repeat</code></a></li>
+<li><a href="#org5d51d18"><span class="todo TODO">TODO</span> <code>Empty</code></a></li>
+<li><a href="#org56bfda0"><span class="todo TODO">TODO</span> <code>Append</code></a></li>
+<li><a href="#orge9273d6"><span class="todo TODO">TODO</span> <code>Prepend</code></a></li>
+<li><a href="#orgf4db2e4"><span class="todo TODO">TODO</span> <code>ToList</code> and <code>ToArray</code></a></li>
+<li><a href="#orga6bedcd"><span class="todo TODO">TODO</span> <code>ToDictionary</code></a></li>
+<li><a href="#orge9fff85"><span class="todo TODO">TODO</span> Cast Operator</a></li>
+<li><a href="#org6acef79"><span class="todo TODO">TODO</span> Difference between Cast and OfType Operators</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge474580" class="outline-2">
+<h2 id="orge474580">Motivation</h2>
+<div class="outline-text-2" id="text-orge474580">
+<p>
+<b>What is LINQ?</b>
+</p>
+
+
+<p>
+Suppose you are writing an application using .NET. Chances are high that at
+some point you’ll need to persist objects to a database, query the database, and load the
+results back into objects. The problem is that in most cases, at least with relational
+databases, there is a gap between your programming language and the database. Good attempts
+have been made to provide object-oriented databases, which would be closer to
+object-oriented platforms and imperative programming lan- guages such as C# and VB.NET.
+However, after all these years, relational databases are still pervasive, and you still have
+to struggle with data access and persistence in all of your programs.
+</p>
+
+<div class="PREVIEW" id="org487a100">
+<p>
+The original motivation behind LINQ was to address the conceptual and tech- nical
+difficulties encountered when using databases with .NET programming lan- guages. With LINQ,
+Microsoft’s intention was to provide a solution for the problem of object-relational
+mapping, as well as to simplify the interaction between objects and data sources. LINQ
+eventually evolved into a general-purpose language-integrated querying toolset. This toolset
+can be used to access data com- ing from in-memory objects (LINQ to Objects), databases
+(LINQ to SQL), XML documents (LINQ to XML), a file-system, or any other source.
+</p>
+
+</div>
+
+
+
+<p>
+sions to these languages: LINQ means Language-INtegrated Query.
+ Before LINQ, we had to juggle different languages like SQL, XML, or XPath
+along with various technologies and APIs like ADO.NET or System.Xml in every
+application written using general-purpose languages such as C# or VB.NET. It goes
+without saying that this approach had several drawbacks.1 LINQ glues several
+worlds together. It helps us avoid the bumps we would usually find on the road
+from one world to another: using XML with objects, objects with relational data,
+and relational data with XML are some of the tasks that LINQ will simplify.
+</p>
+
+<p>
+ One of the key aspects of LINQ is that it was designed to be used against any
+type of object or data source and to provide a consistent programming model for
+doing so. The syntax and concepts are the same across all of its uses: Once you
+learn how to use LINQ against an array or a collection, you also know most of the
+concepts needed to take advantage of LINQ with a database or an XML file.
+</p>
+
+<p>
+<b>Why Do We Need LINQ?</b>
+</p>
+
+<p>
+We have just provided you with an overview of LINQ. The big questions at this point are: Why
+do we want a tool like LINQ? What makes the previous tools incon- venient? Was LINQ created
+only to make working with programming languages, relational data, and XML at the same time
+more convenient?
+</p>
+
+
+<p>
+At the origin of the LINQ project is a simple fact: The vast majority of applica- tions that
+are developed access data or talk to a relational database. Consequently, in order to
+program applications, learning a language such as C# is not enough. You also have to learn
+another language such as SQL, and the APIs that tie it together with C# to form your full
+application.
+</p>
+
+<p>
+ We’ll start by taking a look at a piece of data-access code that uses the standard
+.NET APIs. This will allow us to point out the common problems that are encoun-
+tered in this kind of code. We will then extend our analysis by showing how these
+problems exist with other kinds of data such as XML. You’ll see that LINQ
+addresses a general impedance mismatch between data sources and programming
+languages. Finally, a short code sample will give you a glimpse at how LINQ is a
+solution to the problem.
+</p>
+
+<p>
+The frequent use of databases in applications requires that the .NET Framework
+address the need for APIs that can access the data stored within. Of course, this
+has been the case since the first appearance of .NET. The .NET Framework Class
+Library (FCL) includes ADO.NET, which provides an API to access relational data-
+bases and to represent relational data in memory. This API consists of classes such
+as SqlConnection, SqlCommand, SqlReader, DataSet, and DataTable, to name a
+few. The problem with these classes is that they force the developer to work explic-
+itly with tables, records, and columns, while modern languages such as C# and
+VB.NET use object-oriented paradigms.
+</p>
+
+<p>
+Now that the object-oriented paradigm is the prevailing model in software
+development, developers incur a large amount of overhead in mapping it to other
+abstractions, specifically relational databases and XML. The result is that a lot of
+time is spent on writing plumbing code.3 Removing this burden would increase
+productivity in data-intensive programming, which LINQ helps us do.
+</p>
+
+<p>
+But it’s not only about productivity! It also impacts quality. Writing tedious
+and fragile plumbing code can lead to insidious defects in software or degraded
+performance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb99628" class="outline-2">
+<h2 id="orgcb99628">Hello LINQ to Object</h2>
+<div class="outline-text-2" id="text-orgcb99628">
+<div class="org-src-container">
+<pre class="src src-csharp">string[] words = new string[] { "Hello", "Wonderful", "Linq", "Beatiful", "World" };
+var shortWords =
+    from word in words
+    where word.Length &lt;= 5
+    select word;
+foreach (var word in shortWords) Console.WriteLine(word);
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Hello</td>
+</tr>
+
+<tr>
+<td class="org-left">Linq</td>
+</tr>
+
+<tr>
+<td class="org-left">World</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+<p>
+As is evident from the results, we have filtered a list of words to select only the
+ones whose length is less than or equal to five characters.
+</p>
+
+<p>
+We could argue that the same result could be achieved without LINQ using the following code:
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">string[] words = new string[] {
+  "hello", "wonderful", "linq", "beautiful", "world" };
+foreach (string word in words)
+  if (word.Length &lt;= 5)
+   Console.WriteLine(word);
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf4555e2" class="outline-2">
+<h2 id="orgf4555e2">LINQ to SQL</h2>
+<div class="outline-text-2" id="text-orgf4555e2">
+<p>
+The time has come to look at some code using LINQ to SQL. As you saw in our
+Hello LINQ example, we are able to write queries against a collection of objects.
+The following C# code snippet filters an in-memory collection of contacts based
+on their city:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sql"><span style="font-weight: bold;">from</span> contact <span style="font-weight: bold;">in</span> contacts
+<span style="font-weight: bold;">where</span> contact.City == "Paris"
+<span style="font-weight: bold;">select</span> contact;
+</pre>
+</div>
+
+<p>
+The good news is that thanks to LINQ to SQL, doing the same on data from a relational
+database is direct:
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">from contact in db.GetTable&lt;Contact&gt;()
+where contact.City == "Paris"
+select contact;
+</pre>
+</div>
+
+<p>
+This query works on a list of contacts from a database. Notice how subtle the dif-
+ference is between the two queries. Only the object on which we are working is
+different; the query syntax is exactly the same. This shows how we’ll be able to
+work the same way with multiple types of data.
+</p>
+
+<p>
+Let’s walk through a simple complete example. To begin with,
+you’re probably wondering what <code>db.GetTable&lt;Contact&gt;()</code> means in our LINQ to SQL.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c7db3a" class="outline-2">
+<h2 id="org8c7db3a">LINQ in Depth <code>[22/49]</code></h2>
+<div class="outline-text-2" id="text-org8c7db3a">
+<p>
+After being familiar with LINQ basic syntax, you should be able to write queries using old
+knowledge in querying any quaring language (i.e SQL) and use it with LINQ intuitively,
+therefore I will not include the banal basic querying methods.
+</p>
+
+<p>
+You may want to read <a href="https://salehmu.github.io/notes/psql/">Introduction into PostgreSQL</a>.
+</p>
+</div>
+<div id="outline-container-org8929eb2" class="outline-3">
+<h3 id="org8929eb2"><span class="done DONE">DONE</span> <code>IEnumerable</code> and <code>IQueryable</code></h3>
+<div class="outline-text-3" id="text-org8929eb2">
+<p>
+Consider the following program:
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; integerList = new List&lt;int&gt;()
+            {
+                1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+            };
+
+            var QuerySyntax = from obj in integerList
+                              where obj &gt; 5
+                              select obj;
+
+            foreach (var item in QuerySyntax)
+            {
+                Console.Write(item + " ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+
+<p>
+we use the var keyword to create the variable and store the result of the LINQ query. So
+let’s check what is the type of the variable? In order to check this, just mouseover the
+pointer on to the QuerySynntax variable and you will see that the type is <code>IEnumerable&lt;int&gt;</code>
+which is a generic type. So it is important to understand what is <code>IEnumerable</code>?
+</p>
+
+<p>
+<code>IEnumerable</code> is an interface that is available in <code>System.Collection</code> namespace. The
+<code>IEnumerable</code> interface is a type of iteration design pattern. It means we can iterate on the
+collection of the type <code>IEnumerable</code>. As you can see in the above definition, the <code>IEnumerable</code>
+interface has one method called <code>GetEnumerator</code> which will return an <code>IEnumerator</code> that iterates
+through a collection.
+</p>
+
+<p>
+The most important point that you need to remember is, in C#, all the collection classes
+(both generic and non-generic) implements the <code>IEnumerable</code> interface.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;Student&gt; studentList = new List&lt;Student&gt;()
+            {
+                new Student(){ID = 1, Name = "James", Gender = "Male"},
+                new Student(){ID = 2, Name = "Sara", Gender = "Female"},
+                new Student(){ID = 3, Name = "Steve", Gender = "Male"},
+                new Student(){ID = 4, Name = "Pam", Gender = "Female"}
+            };
+
+            //Linq Query to Fetch all students with Gender Male
+            IEnumerable&lt;Student&gt; QuerySyntax = from std in studentList
+                                               where std.Gender == "Male"
+                                               select std;
+            //Iterate through the collection
+            foreach (var student in QuerySyntax)
+            {
+                Console.WriteLine( $"ID : {student.ID}  Name : {student.Name}");
+            }
+
+            Console.ReadKey();
+        }
+    }
+
+    public class Student
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+    }
+}
+</pre>
+</div>
+
+<p>
+<b>IQueryable</b>
+</p>
+
+<p>
+<code>IQueryable</code> is an interface and it is available in <code>System.Linq</code> namespace. The <code>IQuerable</code>
+interface is a child of the <code>IEnumerable</code> interface. So we can store <code>IQuerable</code> in a variable
+of type IEnumerable. The <code>IQuerable</code> interface has a property called Provider which is of type
+<code>IQueryProvider</code> interface:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;Student&gt; studentList = new List&lt;Student&gt;()
+            {
+                new Student(){ID = 1, Name = "James", Gender = "Male"},
+                new Student(){ID = 2, Name = "Sara", Gender = "Female"},
+                new Student(){ID = 3, Name = "Steve", Gender = "Male"},
+                new Student(){ID = 4, Name = "Pam", Gender = "Female"}
+            };
+
+            //Linq Query to Fetch all students with Gender Male
+            IQueryable&lt;Student&gt; MethodSyntax = studentList.AsQueryable()
+                                .Where(std =&gt; std.Gender == "Male");
+
+            //Iterate through the collection
+            foreach (var student in MethodSyntax)
+            {
+                Console.WriteLine( $"ID : {student.ID}  Name : {student.Name}");
+            }
+
+            Console.ReadKey();
+        }
+    }
+
+    public class Student
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org57177d3" class="outline-3">
+<h3 id="org57177d3"><span class="done DONE">DONE</span> Differences between <code>IEnumerable</code> and <code>IQueryable</code></h3>
+<div class="outline-text-3" id="text-org57177d3">
+<p>
+The <code>IEnumerable</code> and <code>IQueryable</code> are used to hold a collection of data and also used to
+perform data manipulation operations such as filtering, Ordering, Grouping, etc.
+</p>
+
+
+<div id="org3fb9543" class="figure">
+<p><img src="LINQ_in_Depth/2022-03-14_00-56-04_screenshot.png" alt="2022-03-14_00-56-04_screenshot.png" />
+</p>
+</div>
+
+
+<p>
+Here in this demo, we will create a console application that will retrieve the data from the
+SQL Server database using Entity Framework database first approach. We are going to fetch
+the following Student information from the Student table.
+</p>
+
+
+
+<div id="org317a57a" class="figure">
+<p><img src="LINQ_in_Depth/2022-03-14_00-57-20_c-users-pranaya-pictures-student-data-png.png" alt="2022-03-14_00-57-20_c-users-pranaya-pictures-student-data-png.png" />
+</p>
+</div>
+
+
+<p>
+Here is my scheme:
+</p>
+<div class="org-src-container">
+<pre class="src src-sql"><span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Create the required Student table</span>
+<span style="font-weight: bold;">CREATE</span> <span style="font-weight: bold;">TABLE</span> <span style="font-weight: bold;">Student</span>
+(
+     ID <span style="font-weight: bold; text-decoration: underline;">INT</span> <span style="font-weight: bold;">PRIMARY</span> <span style="font-weight: bold;">KEY</span>,
+     FirstName <span style="font-weight: bold; text-decoration: underline;">VARCHAR</span>(50),
+     LastName <span style="font-weight: bold; text-decoration: underline;">VARCHAR</span>(50),
+     Gender <span style="font-weight: bold; text-decoration: underline;">VARCHAR</span>(50)
+)
+<span style="font-weight: bold;">GO</span>
+
+<span style="font-weight: bold; font-style: italic;">-- </span><span style="font-weight: bold; font-style: italic;">Insert the required test data</span>
+<span style="font-weight: bold;">INSERT</span> <span style="font-weight: bold;">INTO</span> Student <span style="font-weight: bold;">VALUES</span> (101, <span style="font-style: italic;">'Steve'</span>, <span style="font-style: italic;">'Smith'</span>, <span style="font-style: italic;">'Male'</span>)
+<span style="font-weight: bold;">INSERT</span> <span style="font-weight: bold;">INTO</span> Student <span style="font-weight: bold;">VALUES</span> (102, <span style="font-style: italic;">'Sara'</span>, <span style="font-style: italic;">'Pound'</span>, <span style="font-style: italic;">'Female'</span>)
+<span style="font-weight: bold;">INSERT</span> <span style="font-weight: bold;">INTO</span> Student <span style="font-weight: bold;">VALUES</span> (103, <span style="font-style: italic;">'Ben'</span>, <span style="font-style: italic;">'Stokes'</span>, <span style="font-style: italic;">'Male'</span>)
+<span style="font-weight: bold;">INSERT</span> <span style="font-weight: bold;">INTO</span> Student <span style="font-weight: bold;">VALUES</span> (104, <span style="font-style: italic;">'Jos'</span>, <span style="font-style: italic;">'Butler'</span>, <span style="font-style: italic;">'Male'</span>)
+<span style="font-weight: bold;">INSERT</span> <span style="font-weight: bold;">INTO</span> Student <span style="font-weight: bold;">VALUES</span> (105, <span style="font-style: italic;">'Pam'</span>, <span style="font-style: italic;">'Semi'</span>, <span style="font-style: italic;">'Female'</span>)
+<span style="font-weight: bold;">GO</span>
+</pre>
+</div>
+
+<p>
+Let us modify the Program class as shown below.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StudentDBContext dBContext = new StudentDBContext();
+            IEnumerable&lt;Student&gt; listStudents = dBContext.Students.Where(x =&gt; x.Gender == "Male");
+            listStudents = listStudents.Take(2);
+
+            foreach(var std in listStudents)
+            {
+                Console.WriteLine(std.FirstName + " " + std.LastName);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+
+<p>
+Here we create the LINQ Query using <code>IEnumerable</code>. Please use SQL Profiler to log the SQL
+Script. Now run the application and you will see the following SQL Script is generated and
+executed.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sql"><span style="font-weight: bold;">SELECT</span>
+    [Extent1].[ID] <span style="font-weight: bold;">AS</span> [ID],
+    [Extent1].[FirstName] <span style="font-weight: bold;">AS</span> [FirstName],
+    [Extent1].[LastName] <span style="font-weight: bold;">AS</span> [LastName],
+    [Extent1].[Gender] <span style="font-weight: bold;">AS</span> [Gender]
+    <span style="font-weight: bold;">FROM</span> [dbo].[Student] <span style="font-weight: bold;">AS</span> [Extent1]
+    <span style="font-weight: bold;">WHERE</span> <span style="font-style: italic;">'Male'</span> = [Extent1].[Gender]
+</pre>
+</div>
+
+<p>
+As shown in the above SQL Script, it will not use the TOP clause. So here it will fetch the
+data from SQL Server to in-memory and then it will filter the data.
+</p>
+
+<p>
+Let's check it again using <code>IQuerable</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StudentDBContext dBContext = new StudentDBContext();
+            IQueryable&lt;Student&gt; listStudents = dBContext.Students
+                                .AsQueryable()
+                                .Where(x =&gt; x.Gender == "Male");
+            listStudents = listStudents.Take(2);
+
+            foreach(var std in listStudents)
+            {
+                Console.WriteLine(std.FirstName + " " + std.LastName);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+
+<p>
+Check the SQL Script:
+</p>
+<div class="org-src-container">
+<pre class="src src-sql"><span style="font-weight: bold;">SELECT</span> TOP (2)
+    [Extent1].[ID] <span style="font-weight: bold;">AS</span> [ID],
+    [Extent1].[FirstName] <span style="font-weight: bold;">AS</span> [FirstName],
+    [Extent1].[LastName] <span style="font-weight: bold;">AS</span> [LastName],
+    [Extent1].[Gender] <span style="font-weight: bold;">AS</span> [Gender]
+    <span style="font-weight: bold;">FROM</span> [dbo].[Student] <span style="font-weight: bold;">AS</span> [Extent1]
+    <span style="font-weight: bold;">WHERE</span> <span style="font-style: italic;">'Male'</span> = [Extent1].[Gender]
+</pre>
+</div>
+
+<p>
+As you can see it includes the TOP clause in the SQL Script and then fetches the data from
+the database.
+</p>
+
+<p>
+<b>Main differences:</b>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left"><code>IEnumerable</code></th>
+<th scope="col" class="org-left"><code>IQuerable</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>While querying the data from the database, the <code>IEnumerable</code> executes the “select statement” on the server-side (i.e. on the database), loads data into memory on the client-side, and then only applied the filters on the retrieved data.</b></td>
+<td class="org-left">While querying the data from a database, the <code>IQueryable</code> executes the “select query” with the applied filter on the server-side i.e. on the database, and then retrieves data.</td>
+</tr>
+
+<tr>
+<td class="org-left">So you need to use the <code>IEnumerable</code> when you need to query the data from in-memory collections like List, Array, and so on.</td>
+<td class="org-left">So you need to use the <code>IQueryable</code> when you want to query the data from out-memory such as remote database, service, etc.</td>
+</tr>
+
+<tr>
+<td class="org-left">The <code>IEnumerable</code> is mostly used for LINQ to Object and LINQ to XML queries.</td>
+<td class="org-left"><code>IQueryable</code> is mostly used for LINQ to SQL and LINQ to Entities queries.</td>
+</tr>
+
+<tr>
+<td class="org-left">The <code>IEnumerable</code> collection is of type forward only. That means it can only move in forward, it can’t move backward and between the items.</td>
+<td class="org-left">The collection of type IQueryable can move only forward, it can’t move backward and between the items.</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>IEnumerable</code> supports deferred execution.</td>
+<td class="org-left"><code>IQueryable</code> supports deferred execution.</td>
+</tr>
+
+<tr>
+<td class="org-left">It doesn’t support custom queries.</td>
+<td class="org-left">It also supports custom queries using <code>CreateQuery</code> and Executes methods.</td>
+</tr>
+
+<tr>
+<td class="org-left">The <code>IEnumerable</code> doesn’t support lazy loading. Hence, it is not suitable for paging like scenarios.</td>
+<td class="org-left"><code>IQueryable</code> supports lazy loading and hence it is suitable for paging like scenarios.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org48dfdfa" class="outline-3">
+<h3 id="org48dfdfa"><span class="done DONE">DONE</span> <code>OfType</code></h3>
+<div class="outline-text-3" id="text-org48dfdfa">
+<p>
+The <code>OfType</code> Operator in LINQ is used to filter specific type data from a data source based on
+the data type we passed to this operator. For example, if we have a collection that stores
+both integer and string values and if we need to fetch either only the integer values or
+only the string values from that collection then we need to use the <code>OfType</code> operator.
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;object&gt; dataSource = new List&lt;object&gt;()
+            {
+                "Tom", "Mary", 50, "Prince", "Jack", 10, 20, 30, 40, "James"
+            };
+
+            List&lt;int&gt; intData = dataSource.OfType&lt;int&gt;().ToList();
+
+            foreach (int number in intData)
+            {
+                Console.Write(number + " ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+
+<p>
+In querying syntax:
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">var stringData = (from name in dataSource
+               where name is string
+               select name).ToList();
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org41968aa" class="outline-3">
+<h3 id="org41968aa"><span class="done DONE">DONE</span> <code>Distinct</code></h3>
+<div class="outline-text-3" id="text-org41968aa">
+<p>
+The LINQ Distinct Method in C# is used to return the distinct elements from a single data
+source.
+</p>
+
+<p>
+The one and the only difference between these two methods is the second overloaded version
+takes an <code>IEqualityComparer</code> as input that means the Distinct Operator can also be used with
+Comparer also. If this is not clear at the moment, don’t worry we will cover the use of the
+Comparer in this article also.
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; intCollection = new List&lt;int&gt;()
+            {
+                1,2,3,2,3,4,4,5,6,3,4,5
+            };
+
+            //Using Method Syntax
+            var MS = intCollection.Distinct();
+
+            //Using Query Syntax
+            var QS = (from num in intCollection
+                      select num).Distinct();
+            foreach (var item in MS)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge35144e" class="outline-3">
+<h3 id="orge35144e"><span class="done DONE">DONE</span> <code>Except</code></h3>
+<div class="outline-text-3" id="text-orge35144e">
+<p>
+The LINQ Except Method in C# is used to return the elements which are present in the first data source but not in the second data source.
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; dataSource1 = new List&lt;int&gt;() { 1, 2, 3, 4, 5, 6 };
+            List&lt;int&gt; dataSource2 = new List&lt;int&gt;() { 1, 3, 5, 8, 9, 10 };
+
+            //Method Syntax
+            var MS = dataSource1.Except(dataSource2).ToList();
+
+            //Query Syntax
+            var QS = (from num in dataSource1
+                      select num)
+                      .Except(dataSource2).ToList();
+
+            foreach (var item in QS)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7c63345" class="outline-3">
+<h3 id="org7c63345"><span class="done DONE">DONE</span> <code>Intersect</code></h3>
+<div class="outline-text-3" id="text-org7c63345">
+<p>
+The LINQ Intersect Method in C# is used to return the common elements from both the
+collections. The elements that are present in both the data sources.
+</p>
+
+<p>
+The one and the only difference between the above two LINQ Intersect methods is that the
+second overloaded version takes IEqualityComparer as an argument. That means the Intersect
+Method is also used for Comparer.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System.Collections.Generic;
+using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; dataSource1 = new List&lt;int&gt;() { 1, 2, 3, 4, 5, 6 };
+            List&lt;int&gt; dataSource2 = new List&lt;int&gt;() { 1, 3, 5, 8, 9, 10 };
+
+            //Method Syntax
+            var MS = dataSource1.Intersect(dataSource2).ToList();
+
+            //Query Syntax
+            var QS = (from num in dataSource1
+                      select num)
+                      .Intersect(dataSource2).ToList();
+
+            foreach (var item in MS)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgadbd6f9" class="outline-3">
+<h3 id="orgadbd6f9"><span class="done DONE">DONE</span> <code>Union</code></h3>
+<div class="outline-text-3" id="text-orgadbd6f9">
+<p>
+The LINQ Union Method in C# is used to combine the multiple data sources into one data
+source by removing the duplicate elements.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System.Collections.Generic;
+using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; dataSource1 = new List&lt;int&gt;() { 1, 2, 3, 4, 5, 6 };
+            List&lt;int&gt; dataSource2 = new List&lt;int&gt;() { 1, 3, 5, 8, 9, 10 };
+
+            //Method Syntax
+            var MS = dataSource1.Union(dataSource2).ToList();
+
+            //Query Syntax
+            var QS = (from num in dataSource1
+                      select num)
+                      .Union(dataSource2).ToList();
+
+            foreach (var item in MS)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8ad2c15" class="outline-3">
+<h3 id="org8ad2c15"><span class="done DONE">DONE</span> <code>SelectMany</code></h3>
+<div class="outline-text-3" id="text-org8ad2c15">
+<p>
+The <code>SelectMany</code> in LINQ is used to project each element of a sequence to an IEnumerable&lt;T&gt;
+and then flatten the resulting sequences into one sequence. That means the <code>SelectMany</code>
+operator combines the records from a sequence of results and then converts it into one
+result. If this is not clear at the moment, then don’t worry we will see it in practice.
+</p>
+
+<p>
+#+begin<sub>src</sub> csharp
+List&lt;string&gt; nameList =new List&lt;string&gt;(){"Pranaya", "Kumar" }; IEnumerable&lt;char&gt;
+methodSyntax = nameList.SelectMany(x =&gt; x); foreach(char c in methodSyntax) {
+Console.Write(c + " "); } #+end<sub>src</sub>
+</p>
+
+<pre class="example">
+P r a n a y a K u m a r
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgeab9989" class="outline-3">
+<h3 id="orgeab9989"><span class="done DONE">DONE</span> <code>Concat</code></h3>
+<div class="outline-text-3" id="text-orgeab9989">
+<p>
+The Linq Concat Method in C# is used to concatenate two sequences into one sequence.
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">using System.Linq;
+using System;
+using System.Collections.Generic;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; sequence1 = new List&lt;int&gt; { 1, 2, 3, 4 };
+            List&lt;int&gt; sequence2 = new List&lt;int&gt; { 2, 4, 6, 8 };
+
+            var result = sequence1.Concat(sequence2);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0c264ae" class="outline-3">
+<h3 id="org0c264ae"><span class="done DONE">DONE</span> <code>OrderBy</code></h3>
+<div class="outline-text-3" id="text-org0c264ae">
+<p>
+The Linq OrderBy method in C# is used to sort the data in ascending order. The most
+important point that you need to keep in mind is this method is not going to change the data
+rather it is just changing the order of the data.
+</p>
+
+<p>
+You can use the OrderBy method on any data type i.e. you can use character, string, decimal,
+integer, etc. Let us understand the use of the LINQ OrderBy method in C# using both query
+syntax and method syntax.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; intList = new List&lt;int&gt;() { 10, 45, 35, 29, 100, 69, 58, 50 };
+
+            Console.WriteLine("Before Sorting : ");
+            foreach (var item in intList)
+            {
+                Console.Write(item + " ");
+            }
+
+            //Sorting the data in Ascending Order
+            //Using Method Syntax
+            var MS = intList.OrderBy(num =&gt; num);
+
+            //Using Query Syntax
+            var QS = (from num in intList
+                      orderby num
+                      select num).ToList();
+
+            Console.WriteLine();
+            Console.WriteLine("After Sorting : ");
+            foreach (var item in QS)
+            {
+                Console.Write(item + " ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5899a67" class="outline-3">
+<h3 id="org5899a67"><span class="done DONE">DONE</span> <code>OrderByDescending</code></h3>
+<div class="outline-text-3" id="text-org5899a67">
+<p>
+The LINQ OrderByDescending method in C# is used to sort the data in descending order. The
+point that you need to remember is, the OrderByDescending method is not going to change the
+data, it is just changing the order of the data.
+</p>
+
+<p>
+Like the OrderBy method, you can also use the OrderByDescending method on any data type such
+as string, character, float, integer, etc. Let us understand how to use the
+OrderByDescending method in C# using both query and method syntax.
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List&lt;int&gt; intList = new List&lt;int&gt;() { 10, 45, 35, 29, 100, 69, 58, 50 };
+
+            Console.WriteLine("Before Sorting the Data: ");
+            foreach (var item in intList)
+            {
+                Console.Write(item + " ");
+            }
+
+            //Sorting the data in Descending Order
+            //Using Method Syntax
+            var MS = intList.OrderByDescending(num =&gt; num);
+
+            //Using Query Syntax
+            var QS = (from num in intList
+                      orderby num descending
+                      select num).ToList();
+
+            Console.WriteLine();
+            Console.WriteLine("After Sorting the Data in Descending Order: ");
+            foreach (var item in QS)
+            {
+                Console.Write(item + " ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2e62dc1" class="outline-3">
+<h3 id="org2e62dc1"><span class="done DONE">DONE</span> <code>ThenBy</code> and <code>ThenByDescending</code></h3>
+<div class="outline-text-3" id="text-org2e62dc1">
+<p>
+The LINQ OrderBy or OrderByDescending method works fine when you want to sort the data based
+on a single value or a single expression. But if you want to sort the data based on multiple
+values or multiple expressions then you need to use the LINQ <code>ThenBy</code> and <code>ThenByDescending</code>
+Method along with <code>OrderBy</code> or <code>OrderByDescending</code> Method.
+</p>
+
+<p>
+The Linq ThenBy Method in C# is
+used to sort the data in ascending order from the second level onwards. On the other hand,
+the  Linq <code>ThenByDescending</code> Method in C# is used to sort the data in descending order also
+from the second level onwards.
+</p>
+
+<p>
+These two methods are used along with OrderBy or OrderByDescending method. You can use the
+ThenBy or ThenByDescending method more than once in the same LINQ query.
+</p>
+
+<p>
+The OrderBy or OrderByDescending method is generally used for primary sorting. ThenBy or
+ThenByDescending are used for secondary sorting and so on. For example, first, sort the
+student by First Name and then sort the student by the Last Name.
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System.Collections.Generic;
+using System;
+using System.Linq;
+namespace LINQDemo
+{
+    public class Student
+    {
+        public int ID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Branch { get; set; }
+
+        public static List&lt;Student&gt; GetAllStudents()
+        {
+            List&lt;Student&gt; listStudents = new List&lt;Student&gt;()
+            {
+                new Student{ID= 101,FirstName = "Preety",LastName = "Tiwary",Branch = "CSE"},
+                new Student{ID= 102,FirstName = "Preety",LastName = "Agrawal",Branch = "ETC"},
+                new Student{ID= 103,FirstName = "Priyanka",LastName = "Dewangan",Branch = "ETC"},
+                new Student{ID= 104,FirstName = "Hina",LastName = "Sharma",Branch = "ETC"},
+                new Student{ID= 105,FirstName = "Anugrag",LastName = "Mohanty",Branch = "CSE"},
+                new Student{ID= 106,FirstName = "Anurag",LastName = "Sharma",Branch = "CSE"},
+                new Student{ID= 107,FirstName = "Pranaya",LastName = "Kumar",Branch = "CSE"},
+                new Student{ID= 108,FirstName = "Manoj",LastName = "Kumar",Branch = "ETC"},
+                new Student{ID= 109,FirstName = "Pranaya",LastName = "Rout",Branch = "ETC"},
+                new Student{ID= 110,FirstName = "Saurav",LastName = "Rout",Branch = "CSE"}
+            };
+
+            return listStudents;
+        }
+    }
+}
+
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Method Syntax
+            var MS = Student.GetAllStudents()
+                              .OrderBy(x =&gt; x.FirstName)
+                              .ThenBy(y =&gt; y.LastName)
+                              .ToList();
+
+            foreach (var student in MS)
+            {
+                Console.WriteLine( "First Name :" + student.FirstName + ", Last Name : " + student.LastName);
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8c81f1e" class="outline-3">
+<h3 id="org8c81f1e"><span class="done DONE">DONE</span> <code>Reverse</code></h3>
+<div class="outline-text-3" id="text-org8c81f1e">
+<p>
+The LINQ Reverse method is used to reverse the data stored in a data source. That means this
+method will not change the data rather it simple reverse the data stored in the data source.
+So, as a result, we will get the output in reverse order.
+</p>
+
+<p>
+The Reverse Method is implemented in two different namespaces such as System.LInq and
+System.Collections.Generic namespaces.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System.Collections.Generic;
+using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] intArray = new int[] { 10, 30, 50, 40,60,20,70,100 };
+            Console.WriteLine("Before Reverse the Data");
+            foreach (var number in intArray)
+            {
+                Console.Write(number + " ");
+            }
+            Console.WriteLine();
+
+            IEnumerable&lt;int&gt; ArrayReversedData = intArray.Reverse();
+            Console.WriteLine("After Reverse the Data");
+            foreach (var number in ArrayReversedData)
+            {
+                Console.Write(number + " ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf8b9e2f" class="outline-3">
+<h3 id="orgf8b9e2f"><span class="done DONE">DONE</span> <code>Aggregate</code></h3>
+<div class="outline-text-3" id="text-orgf8b9e2f">
+<p>
+The Linq Aggregate extension method performs an accumulative operation.
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] skills = { "C#.NET", "MVC", "WCF", "SQL", "LINQ", "ASP.NET" };
+
+            string result = skills.Aggregate((s1, s2) =&gt; s1 + ", " + s2);
+
+            Console.WriteLine(result);
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org630d63b" class="outline-3">
+<h3 id="org630d63b"><span class="done DONE">DONE</span> <code>All</code></h3>
+<div class="outline-text-3" id="text-org630d63b">
+<p>
+The Linq All Operator in C# is used to check whether all the elements of a data source
+satisfy a given condition or not. If all the elements satisfy the condition, then it returns
+true else return false.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] IntArray = { 11, 22, 33, 44, 55 };
+            var Result = IntArray.All(x =&gt; x &gt; 10);
+            Console.WriteLine("Is All Numbers are greater than 10 : " + Result);
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3703b85" class="outline-3">
+<h3 id="org3703b85"><span class="done DONE">DONE</span> <code>Any</code></h3>
+<div class="outline-text-3" id="text-org3703b85">
+<p>
+The C# Linq Any Operator is used to check whether at least one of the elements of a data
+source satisfies a given condition or not. If any of the elements satisfy the given
+condition, then it returns true else return false.
+</p>
+
+<p>
+It is also used to check whether a collection contains some data or not. That means it
+checks the length of the collection also. If it contains any data then it returns true else
+return false.
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] IntArray = { 11, 22, 33, 44, 55 };
+
+            //Using Method Syntax
+            var ResultMS = IntArray.Any();
+
+            //Using Query Syntax
+            var ResultQS = (from num in IntArray
+                            select num).Any();
+
+            Console.WriteLine("Is there any element in the collection : " + ResultMS);
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org90bf43e" class="outline-3">
+<h3 id="org90bf43e"><span class="done DONE">DONE</span> <code>Contains</code></h3>
+<div class="outline-text-3" id="text-org90bf43e">
+<p>
+The Linq Contains Method in C# is used to check whether a sequence or collection (i.e. data
+source) contains a specified element or not. If the data source contains the specified
+element, then it returns true else return false.
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+namespace LINQDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] IntArray = { 11, 22, 33, 44, 55 };
+
+            //Using Method Syntax
+            var IsExistsMS = IntArray.Contains(33);
+
+            //Using Query Syntax
+            var IsExistsQS = (from num in IntArray
+                              select num).Contains(33);
+
+            Console.WriteLine(IsExistsMS);
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf06d225" class="outline-3">
+<h3 id="orgf06d225"><span class="done DONE">DONE</span> <code>Contains</code> or <code>Any</code>?</h3>
+<div class="outline-text-3" id="text-orgf06d225">
+<p>
+<code>Contains</code> takes an object, <code>Any</code> takes a predicate.
+</p>
+
+<p>
+Contains:
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">listOFInts.Contains(1);
+</pre>
+</div>
+<p>
+Any:
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">listOfInts.Any(i =&gt; i == 1);
+listOfInts.Any(i =&gt; i % 2 == 0); // Check if any element is an Even Number
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org34db34e" class="outline-3">
+<h3 id="org34db34e"><span class="done DONE">DONE</span> <code>GroupBy</code></h3>
+<div class="outline-text-3" id="text-org34db34e">
+<p>
+The Linq GroupBy in C# belongs to the Grouping Operators category and exactly does the same
+thing as the Group By clause does in SQL Query. This method takes a flat sequence of
+elements and then organizes the elements into groups (i.e. <code>IGrouping&lt;TKey, TSource&gt;</code>) based
+on a given key.
+</p>
+
+<p>
+If you go the definition of <code>GroupBy</code> method then you will see that it return an
+<code>IEnumerable&lt;IGrouping&lt;TKey, TSource&gt;&gt;</code> where TKey is nothing but the Key value on which the
+grouping has been formed and <code>TSource</code> is the collection of elements that matches the grouping
+key value.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace GroupByDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Using Method Syntax
+            var GroupByMS = Student.GetStudents().GroupBy(s =&gt; s.Barnch);
+
+            //Using Query Syntax
+            IEnumerable&lt;IGrouping&lt;string, Student&gt;&gt; GroupByQS = (from std in Student.GetStudents()
+                             group std by std.Barnch);
+
+            //It will iterate through each groups
+            foreach(var group in GroupByMS)
+            {
+                Console.WriteLine(group.Key +" : " + group.Count());
+
+                //Iterate through each student of a group
+                foreach(var student in group)
+                {
+                    Console.WriteLine("  Name :" + student.Name + ", Age: " + student.Age + ", Gender :" + student.Gender);
+                }
+            }
+
+            Console.Read();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8930294" class="outline-3">
+<h3 id="org8930294"><span class="done DONE">DONE</span> <code>Zip</code></h3>
+<div class="outline-text-3" id="text-org8930294">
+<p>
+The Linq Zip Method in C# is used to apply a specified function to the corresponding
+elements of two sequences and producing a sequence of the results.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+int[] numbersSequence = { 10, 20, 30, 40, 50 };
+string[] wordsSequence = { "Ten", "Twenty", "Thirty", "Fourty" };
+var resultSequence = numbersSequence.Zip(wordsSequence, (first, second) =&gt; first + " - " + second);
+foreach (var item in resultSequence)
+{
+    Console.WriteLine(item);
+}
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">10  -  Ten</td>
+</tr>
+
+<tr>
+<td class="org-left">20  -  Twenty</td>
+</tr>
+
+<tr>
+<td class="org-left">30  -  Thirty</td>
+</tr>
+
+<tr>
+<td class="org-left">40  -  Fourty</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf361fe2" class="outline-3">
+<h3 id="orgf361fe2"><span class="todo TODO">TODO</span> <code>GroupBy</code> By Multiple Keys</h3>
+</div>
+<div id="outline-container-orgc326b3b" class="outline-3">
+<h3 id="orgc326b3b"><span class="done DONE">DONE</span> Deferred Execution vs Immediate Execution</h3>
+<div class="outline-text-3" id="text-orgc326b3b">
+<p>
+The LINQ queries are executed in two different ways as follows.
+</p>
+
+<ul class="org-ul">
+<li>Deferred execution</li>
+<li>Immediate execution</li>
+</ul>
+
+<p>
+Based on the above two types of execution, the LINQ operators are divided into 2 categories.
+They are as follows:
+</p>
+
+<ol class="org-ol">
+<li>Deferred or Lazy Operators:  These query operators are used for deferred execution. For example – <code>select</code>, <code>SelectMany</code>, <code>where</code>, <code>Take</code>, <code>Skip</code>, etc. are belongs to Deferred or Lazy Operators category.</li>
+<li>Immediate or Greedy Operators: These query operators are used for immediate execution. For Example – <code>count</code>, <code>average</code>, <code>min</code>, <code>max</code>, <code>First</code>, <code>Last</code>, <code>ToArray</code>, <code>ToList</code>, etc. are belongs to the Immediate or Greedy Operators category.</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgca7d719" class="outline-4">
+<h4 id="orgca7d719">Deferred Execution</h4>
+<div class="outline-text-4" id="text-orgca7d719">
+<p>
+In this case, the LINQ Query is not executed at the point of its declaration. That means,
+when we write a LINQ query, it doesn’t execute by itself. It executes only when we access
+the query results. So, here the execution of the query is deferred until the query variable
+is iterated over using for each loop.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    public class Employee
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Salary { get; set; }
+    }
+
+    class Program
+    {
+        public static void Main()
+        {
+            List&lt;Employee&gt; listEmployees = new List&lt;Employee&gt;
+            {
+                new Employee { ID= 1001, Name = "Priyanka", Salary = 80000 },
+                new Employee { ID= 1002, Name = "Anurag", Salary = 90000 },
+                new Employee { ID= 1003, Name = "Preety", Salary = 80000 }
+            };
+
+            // In the below statement the LINQ Query is only defined and not executed
+            // If the query is executed here, then the result should not display Santosh
+            IEnumerable&lt;Employee&gt; result = from emp in listEmployees
+                                           where emp.Salary == 80000
+                                           select emp;
+
+            // Adding a new employee with Salary = 80000 to the collection listEmployees
+            listEmployees.Add(new Employee { ID = 1004, Name = "Santosh", Salary = 80000 });
+
+            // The LINQ query is actually executed when we iterate thru using a for each loop
+            // This is proved because Santosh is also included in the result
+            foreach (Employee emp in result)
+            {
+                Console.WriteLine($" {emp.ID} {emp.Name} {emp.Salary}");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+
+<p>
+We will get the following advantages
+</p>
+
+<ol class="org-ol">
+<li>It avoids unnecessary query execution which improves the performance of the application.</li>
+<li>The Query creation and the Query execution are decoupled which provide us the flexibility to create the query in several steps.</li>
+<li>A Linq deferred execution query is always re-evaluated when we re-enumerate. As a result, we always get the updated data.</li>
+</ol>
+
+<p>
+In the case of Immediate Execution, the LINQ query is executed at the point of its
+declaration. So, it forces the query to execute and gets the result immediately. Let us
+see an example for a better understanding. The following example is self-explained. So,
+please go through the comment lines.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfd90e0e" class="outline-4">
+<h4 id="orgfd90e0e">Immediate Execution</h4>
+<div class="outline-text-4" id="text-orgfd90e0e">
+<p>
+In the case of Immediate Execution, the LINQ query is executed at the point of its
+declaration. So, it forces the query to execute and gets the result immediately. Let us see
+an example for a better understanding. The following example is self-explained. So, please
+go through the comment lines.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LINQDemo
+{
+    public class Employee
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public int Salary { get; set; }
+    }
+
+    class Program
+    {
+        public static void Main()
+        {
+            List&lt;Employee&gt; listEmployees = new List&lt;Employee&gt;
+            {
+                new Employee { ID= 1001, Name = "Priyanka", Salary = 80000 },
+                new Employee { ID= 1002, Name = "Anurag", Salary = 90000 },
+                new Employee { ID= 1003, Name = "Preety", Salary = 80000 }
+            };
+
+            // In the following statement, the LINQ Query is executed immediately as we are
+            // Using the ToList() method which is a greedy operator which forces the query
+            // to be executed immediately
+            IEnumerable&lt;Employee&gt; result = (from emp in listEmployees
+                                           where emp.Salary == 80000
+                                           select emp).ToList();
+
+            // Adding a new employee with Salary = 80000 to the collection listEmployees
+            // will not have any effect on the result as the query is already executed
+            listEmployees.Add(new Employee { ID = 1004, Name = "Santosh", Salary = 80000 });
+
+            // The above LINQ query is executed at the time of its creation.
+            // This is proved because Santosh is not included in the result
+            foreach (Employee emp in result)
+            {
+                Console.WriteLine($" {emp.ID} {emp.Name} {emp.Salary}");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5ad3e0b" class="outline-3">
+<h3 id="org5ad3e0b"><span class="done DONE">DONE</span> <code>ToLookup</code></h3>
+<div class="outline-text-3" id="text-org5ad3e0b">
+<p>
+The Linq <code>ToLookup</code> Method in C# exactly does the same thing as the <code>GroupBy</code> Operator does in
+Linq. The only difference between these two methods is the GroupBy method uses deferred
+execution whereas the execution of the <code>ToLookup</code> method is immediate.
+</p>
+<div class="org-src-container">
+<pre class="src src-csharp">using System;
+using System.Linq;
+
+namespace GroupByDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Using Method Syntax
+            var GroupByMS = Student.GetStudents().ToLookup(s =&gt; s.Barnch);
+
+            //Using Query Syntax
+            var GroupByQS = (from std in Student.GetStudents()
+                             select std).ToLookup(x =&gt; x.Barnch);
+
+            //It will iterate through each group
+            foreach (var group in GroupByMS)
+            {
+                Console.WriteLine(group.Key + " : " + group.Count());
+
+                //Iterate through each student of a group
+                foreach (var student in group)
+                {
+                    Console.WriteLine("  Name :" + student.Name + ", Age: " + student.Age + ", Gender :" + student.Gender);
+                }
+            }
+
+            Console.Read();
+        }
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgce67970" class="outline-3">
+<h3 id="orgce67970"><span class="todo TODO">TODO</span> Inner Join</h3>
+</div>
+<div id="outline-container-org496d93d" class="outline-3">
+<h3 id="org496d93d"><span class="todo TODO">TODO</span> Join with Multiple Data Sources</h3>
+</div>
+<div id="outline-container-orgbd426ec" class="outline-3">
+<h3 id="orgbd426ec"><span class="todo TODO">TODO</span> Group Join</h3>
+</div>
+<div id="outline-container-org8e54003" class="outline-3">
+<h3 id="org8e54003"><span class="todo TODO">TODO</span> Left Join</h3>
+</div>
+<div id="outline-container-orge82a4bb" class="outline-3">
+<h3 id="orge82a4bb"><span class="todo TODO">TODO</span> Cross Join</h3>
+</div>
+<div id="outline-container-org9ca1335" class="outline-3">
+<h3 id="org9ca1335"><span class="todo TODO">TODO</span> <code>ElementAt</code> and <code>ElementAtOrDefault</code></h3>
+</div>
+<div id="outline-container-orga467163" class="outline-3">
+<h3 id="orga467163"><span class="todo TODO">TODO</span> <code>First</code> and <code>FirstOrDefault</code></h3>
+</div>
+<div id="outline-container-org37f5805" class="outline-3">
+<h3 id="org37f5805"><span class="todo TODO">TODO</span> <code>Last</code> and <code>LastOrDefault</code></h3>
+</div>
+<div id="outline-container-orgdec7f8c" class="outline-3">
+<h3 id="orgdec7f8c"><span class="todo TODO">TODO</span> <code>Single</code> and <code>SingleOrDefault</code></h3>
+</div>
+<div id="outline-container-org47a1d81" class="outline-3">
+<h3 id="org47a1d81"><span class="todo TODO">TODO</span> <code>DefaultIfEmpty</code></h3>
+</div>
+<div id="outline-container-org22f7656" class="outline-3">
+<h3 id="org22f7656"><span class="todo TODO">TODO</span> <code>SequenceEqual</code></h3>
+</div>
+<div id="outline-container-orgf0c19bb" class="outline-3">
+<h3 id="orgf0c19bb"><span class="todo TODO">TODO</span> <code>Partitioning</code></h3>
+</div>
+<div id="outline-container-org814260b" class="outline-3">
+<h3 id="org814260b"><span class="todo TODO">TODO</span> <code>Take</code></h3>
+</div>
+<div id="outline-container-org37015b1" class="outline-3">
+<h3 id="org37015b1"><span class="todo TODO">TODO</span> <code>TakeWhile</code></h3>
+</div>
+<div id="outline-container-org0e72e72" class="outline-3">
+<h3 id="org0e72e72"><span class="todo TODO">TODO</span> <code>Skip</code></h3>
+</div>
+<div id="outline-container-org6cc129a" class="outline-3">
+<h3 id="org6cc129a"><span class="todo TODO">TODO</span> <code>SkipWhile</code></h3>
+</div>
+<div id="outline-container-orgd606f9c" class="outline-3">
+<h3 id="orgd606f9c"><span class="todo TODO">TODO</span> Paging Using Skip and Take</h3>
+</div>
+<div id="outline-container-org9cfffb4" class="outline-3">
+<h3 id="org9cfffb4"><span class="todo TODO">TODO</span> <code>Range</code></h3>
+</div>
+<div id="outline-container-org1a77e89" class="outline-3">
+<h3 id="org1a77e89"><span class="todo TODO">TODO</span> <code>Repeat</code></h3>
+</div>
+<div id="outline-container-org5d51d18" class="outline-3">
+<h3 id="org5d51d18"><span class="todo TODO">TODO</span> <code>Empty</code></h3>
+</div>
+<div id="outline-container-org56bfda0" class="outline-3">
+<h3 id="org56bfda0"><span class="todo TODO">TODO</span> <code>Append</code></h3>
+</div>
+<div id="outline-container-orge9273d6" class="outline-3">
+<h3 id="orge9273d6"><span class="todo TODO">TODO</span> <code>Prepend</code></h3>
+</div>
+<div id="outline-container-orgf4db2e4" class="outline-3">
+<h3 id="orgf4db2e4"><span class="todo TODO">TODO</span> <code>ToList</code> and <code>ToArray</code></h3>
+</div>
+<div id="outline-container-orga6bedcd" class="outline-3">
+<h3 id="orga6bedcd"><span class="todo TODO">TODO</span> <code>ToDictionary</code></h3>
+</div>
+<div id="outline-container-orge9fff85" class="outline-3">
+<h3 id="orge9fff85"><span class="todo TODO">TODO</span> Cast Operator</h3>
+</div>
+<div id="outline-container-org6acef79" class="outline-3">
+<h3 id="org6acef79"><span class="todo TODO">TODO</span> Difference between Cast and OfType Operators</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-01-09 Sun 00:00</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>

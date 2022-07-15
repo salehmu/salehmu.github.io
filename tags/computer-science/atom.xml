@@ -1,181 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Computer Science on Saleh Muhammed</title>
-    <link>https://salehmu.github.io/tags/computer-science/</link>
-    <description>Recent content in Computer Science on Saleh Muhammed</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 05:28:26 +0200</lastBuildDate><atom:link href="https://salehmu.github.io/tags/computer-science/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>.NET Notes in C#</title>
-      <link>https://salehmu.github.io/notes/csharp/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/csharp/</guid>
-      <description>Resources #Textbooks: Andrew Lock - ASP.NET Core in Action-Manning (2018). Concurrency in C# Cookbook: Asynchronous, Parallel, and Multithreaded Programming. LINQ in Action by Fabrice Marguerie, Steve Eichert, Jim Wooley. Websites: Npgsql Docs Speaking C# #Discover C# Compiler Version #With the C# 7.x generation, Microsoft decided to increase the cadence of language releases, releasing minor version numbers, also known as point releases, for the first time since C# 1.</description>
-    </item>
-    
-    <item>
-      <title>GO Notes</title>
-      <link>https://salehmu.github.io/notes/go/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/go/</guid>
-      <description>Introduction #GO programming language notes. Reading Adam Freeman&amp;rsquo;s Pro Go.
-get-go #Open a command prompt, navigate to a convenient location, and create a folder named partyinvites. Navigate to the partyinvites folder and run the command shown in Listing 1-2 to start a new Go project.
-go mod init partyinvites The go command is used for almost every development task. This command creates a file named go.mod, which is used to keep track of the packages a project depends on and can also be used to publish the project, if required.</description>
-    </item>
-    
-    <item>
-      <title>Language Built-in Feature Preview</title>
-      <link>https://salehmu.github.io/notes/language-built-in-feature-preview/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/language-built-in-feature-preview/</guid>
-      <description>C/C++ STD Notes #Sorting #Sorting Custom Objects #You can sort array of custom objects using the std::sort like this:
-struct MyStruct { int key; std::string stringValue; MyStruct(int k, const std::string&amp;amp; s) : key(k), stringValue(s) {} }; struct less_than_key { inline bool operator() (const MyStruct&amp;amp; struct1, const MyStruct&amp;amp; struct2) { return (struct1.key &amp;lt; struct2.key); } }; std::vector &amp;lt; MyStruct &amp;gt; vec; vec.push_back(MyStruct(4, &amp;#34;test&amp;#34;)); vec.push_back(MyStruct(3, &amp;#34;a&amp;#34;)); vec.push_back(MyStruct(2, &amp;#34;is&amp;#34;)); vec.push_back(MyStruct(1, &amp;#34;this&amp;#34;)); std::sort(vec.</description>
-    </item>
-    
-    <item>
-      <title>LINQ Notes</title>
-      <link>https://salehmu.github.io/notes/linq/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/linq/</guid>
-      <description>Motivation #What is LINQ?
-Suppose you are writing an application using .NET. Chances are high that at some point you’ll need to persist objects to a database, query the database, and load the results back into objects. The problem is that in most cases, at least with relational databases, there is a gap between your programming language and the database. Good attempts have been made to provide object-oriented databases, which would be closer to object-oriented platforms and imperative programming lan- guages such as C# and VB.</description>
-    </item>
-    
-    <item>
-      <title>PostgreSQL Notes</title>
-      <link>https://salehmu.github.io/notes/psql/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/psql/</guid>
-      <description>Introduction into PostgreSQL #Notes:
-SQL commands is not case sensitive, therefore SELECT = select = SeLeCt Selecting #Regular Selection #Select syntax is being like this:
-SELECT * -- Everything FROM real_person -- Table Name LIMIT 10; -- Getting only they very first 5 IDs. This will print all email (s) from the customer table.
-Select distinct rows using distinct operator #DISTINCT clause is used to remove duplicates rows from the result output, it keeps only one row for each group if duplicated.</description>
-    </item>
-    
-    <item>
-      <title>System Analysis &amp; Design</title>
-      <link>https://salehmu.github.io/notes/s-a-d/</link>
-      <pubDate>Sat, 08 Jan 2022 05:28:26 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/s-a-d/</guid>
-      <description>Introduction #The systems development life cycle (SDLC), contains the fundamental four- phase model (planning, analysis, design, and implementation) common to all information systems development projects. It describes the evolution of system development method- ologies and discusses the roles and skills required of a systems analyst. Th e chapter then overviews the basic characteristics of object-oriented systems and the fundamentals of object-oriented systems analysis and design and closes with a description of the Unified Process and its extentions and Unified Modeling Language</description>
-    </item>
-    
-    <item>
-      <title>  &#34;Representations, Implementations and Algorithms of Graphs (and Trees)&#34;
-  </title>
-      <link>https://salehmu.github.io/notes/representations-implementations-and-algorithms-of-graphs-and-trees/</link>
-      <pubDate>Mon, 03 Jan 2022 14:56:42 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/representations-implementations-and-algorithms-of-graphs-and-trees/</guid>
-      <description>Terminology #A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge in \(E\) is a connection between a pair of vertices in \(V\)1 The number of vertices is written \(|V|\), and the number of edges is written \(|E|\). \(|E|\) can range from zero to a maximum of \(|V|^{2} - |V|\). A graph with relatively few edges is called sparse, while a graph with many edges is called dense.</description>
-    </item>
-    
-    <item>
-      <title>Introduction to Non-theoretical Computational Geometry</title>
-      <link>https://salehmu.github.io/notes/introduction-to-non-theoretical-computational-geometry/</link>
-      <pubDate>Fri, 17 Dec 2021 19:57:19 +0200</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/introduction-to-non-theoretical-computational-geometry/</guid>
-      <description>Based on TopCoder&amp;rsquo;s thrive and Computational Geometry (252-1425-00L) HS13 lecture notes. (Problems mostly from LeetCode)
-Introduction #I&amp;rsquo;m not sure how to properly introduce this long plain text —or even how to put it—. You can easily consider it as a small handbook that contains some computational problems solutions, or like Nietzsche says in his Dawn of Day:
-&amp;ldquo;A DIGRESSION.—A book like this is not intended to be read through at once, or to be read aloud.</description>
-    </item>
-    
-    <item>
-      <title>Binary Tree Algorithms</title>
-      <link>https://salehmu.github.io/notes/binary-tree-algorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/binary-tree-algorithms/</guid>
-      <description>Binart Tree Traversal #DFS #Often we wish to process a binary tree by “visiting” each of its nodes, each time performing a specific action such as printing the contents of the node. Any process for visiting all of the nodes in some order is called a traversal. Any traversal that lists every node in the tree exactly once is called an enumeration of the tree’s nodes. Some applications do not require that the nodes be visited in any particular order as long as each node is visited precisely once.</description>
-    </item>
-    
-    <item>
-      <title>Building a RESTful API with ASP.NET Core</title>
-      <link>https://salehmu.github.io/notes/buildingapi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/buildingapi/</guid>
-      <description>Check: Designing RESTful APIs
-Introduction, The Richardson Maturity Model #The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you will, APIs by the their RESTful maturity. So it&amp;rsquo;s interesting to look at it, as it shows us how we can go from a simple API that doesn&amp;rsquo;t really care about protocol, nor standards. To an API, that can be considered RESTful.
-The first level is level 0, the Swamp of POX, or Plain Old XML.</description>
-    </item>
-    
-    <item>
-      <title>Design Patterns</title>
-      <link>https://salehmu.github.io/notes/ptrn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/ptrn/</guid>
-      <description>Based on Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides
-Introduction &amp;amp; Basic Definition #Christopher Alexander says, &amp;ldquo;Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice&amp;rdquo; [AIS+77, page x}.</description>
-    </item>
-    
-    <item>
-      <title>Designing RESTful APIs</title>
-      <link>https://salehmu.github.io/notes/designing-restful-api/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/designing-restful-api/</guid>
-      <description>Representational State Transfer APIs: Basics to Design #Introduction and History #I&amp;rsquo;m not going to talk about how to implement these web APIs, but talk about the design aspects of how to design them so that they&amp;rsquo;re easier to use and easier to maintain. The goal here is for you to understand REST&amp;rsquo;s role in creation of this API, not to simply adhere to the dogma that surrounds REST. I want to introduce you to a way of designing APIs that&amp;rsquo;s pragmatic and simple.</description>
-    </item>
-    
-    <item>
-      <title>Dynamic Programming</title>
-      <link>https://salehmu.github.io/notes/dp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/dp/</guid>
-      <description>Introduction #Follows: Roofgarden, T. (2019). Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic Programming (Illustrated ed.). Soundlikeyourself Publishing, LLC. Channel @ YouTube.com
-Objectives #Understanding functions (from memory perspective). Optimal Substructure. Overlapping Subproblems. Memoization. Understanding Dynamic Programming. Strategies for DP problems Solving DP problems. Memory And Functions #Consider the following C code:
-int g = 5; int main() { static int a; int b; int *p; p = (int*) malloc (sizeof(int)); *p = 10; } The process of compiling this file should look like this using a standard C compiler:</description>
-    </item>
-    
-    <item>
-      <title>Entity Framework</title>
-      <link>https://salehmu.github.io/notes/ef/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/ef/</guid>
-      <description>Introduction #Entity Framework Core, or EF Core, is a library that software developers can use to access databases. There are many ways to build such a library, but EF Core is designed as an object-relational mapper (O/RM). O/RMs work by mapping between two worlds: the relational database, with its own API, and the object-oriented soft- ware world of classes and software code. EF Core’s main strength is allowing software developers to write database access code quickly in a language that you may know better than SQL.</description>
-    </item>
-    
-    <item>
-      <title>JSON in C# Using Json.NET</title>
-      <link>https://salehmu.github.io/notes/json/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/json/</guid>
-      <description>One of the most popular .NET libraries for working with the JSON serialization format is Newtonsoft.Json, known as Json.NET. It is mature and powerful.
-Introduction #Let&amp;rsquo;s start by defining what JSON is. JSON stands for JavaScript Object Notation. It is a data interchange format that is used to transmit and store serialized information. One example can be from a web page to a server, or to store data in a large object repository.</description>
-    </item>
-    
-    <item>
-      <title>Problem Solving Tracking Map</title>
-      <link>https://salehmu.github.io/notes/ps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/ps/</guid>
-      <description>Map #Problem in built directory are either not completed or wrong answers. The Main OJ is leetcode, all CF problems from the last reposotiery are removed.
-Problem Tags Difficulty Judge Statue 116. Populating Next Right Pointers in Each Node Tree Medium LC Accepted 628. Maximum Product of Three Numbers Math Easy LC Accepted 268. Missing Number Math Easy LC Accepted 20. Valid Parentheses Stack Easy LC Accepted 1019. Next Greater Node In Linked List Stack Medium LC Accepted 53.</description>
-    </item>
-    
-    <item>
-      <title>Working With Files and Streams in C#</title>
-      <link>https://salehmu.github.io/notes/files/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/notes/files/</guid>
-      <description>Introduction #I was thinking in the first place to make this file just a part of the major C# note file, but I believe that I might and will face a lot of filesystem topics, however I&amp;rsquo;m sure I will not ever solve such a problem using C# (don&amp;rsquo;t shout, microsoft kid), but surely it will be useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn&amp;rsquo;t know it).</description>
-    </item>
-    
-  </channel>
-</rss>

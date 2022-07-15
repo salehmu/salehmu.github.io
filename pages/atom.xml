@@ -1,20 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on Saleh Muhammed</title>
-    <link>https://salehmu.github.io/pages/</link>
-    <description>Recent content in Pages on Saleh Muhammed</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://salehmu.github.io/pages/atom.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://salehmu.github.io/pages/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://salehmu.github.io/pages/about/</guid>
-      <description>Lines #Lines is a minimalistic Hugo blogging theme.
-Features #Minimalistic, clean and simple design Responsive design Inline CSS Anchor headings Tags 404 page Compressed CSS and HTML 100/100 score on Lighthouse, Page Speed Insights &amp;amp; Webpagetest Robots.txt Atom &amp;amp; Json feeds Sass Seo optimized (Twitter cards, Facebook Open Graph, Schema.org) Ultra fast (Only ~2kb of CSS) </description>
-    </item>
-    
-  </channel>
-</rss>
