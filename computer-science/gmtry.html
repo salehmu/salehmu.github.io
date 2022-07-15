@@ -47,45 +47,45 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org9e59d02">Introduction</a></li>
-<li><a href="#org8a9dac9">Vectors</a>
+<li><a href="#org9f68c69">Introduction</a></li>
+<li><a href="#orgad72f9a">Vectors</a>
 <ul>
-<li><a href="#orgeeb7eef">Operations on Vectors</a>
+<li><a href="#org51e5dc1">Operations on Vectors</a>
 <ul>
-<li><a href="#org2fdc260">Addition</a></li>
-<li><a href="#org2ca1700">Dot Product</a></li>
-<li><a href="#org1ea3616">Cross Product</a></li>
-<li><a href="#orga90c123">Line-Point Distance</a></li>
+<li><a href="#orgce5d5a9">Addition</a></li>
+<li><a href="#orge1a9c39">Dot Product</a></li>
+<li><a href="#org4ddeedd">Cross Product</a></li>
+<li><a href="#org9ccaa10">Line-Point Distance</a></li>
 </ul>
 </li>
-<li><a href="#org61959af">Polygon Area</a></li>
+<li><a href="#org8fb976e">Polygon Area</a></li>
 </ul>
 </li>
-<li><a href="#orgf663523">Intersection</a></li>
-<li><a href="#org74301f3">Finding The Equation of a Line for a Segment</a>
+<li><a href="#org32e7bf7">Intersection</a></li>
+<li><a href="#org458ea3f">Finding The Equation of a Line for a Segment</a>
 <ul>
-<li><a href="#orga38c8c3"><span class="todo TODO">TODO</span> Real Case vs. Integer Case</a></li>
+<li><a href="#org5ab31a0"><span class="todo TODO">TODO</span> Real Case vs. Integer Case</a></li>
 </ul>
 </li>
-<li><a href="#orgcc38ffa">Orientation of 3 Points</a></li>
-<li><a href="#org2037552">Finding a Circle From 3 Points</a></li>
-<li><a href="#org3e6281e">Convex Hull</a>
+<li><a href="#org9fed08a">Orientation of 3 Points</a></li>
+<li><a href="#orgc2744dc">Finding a Circle From 3 Points</a></li>
+<li><a href="#org34f8ce9">Convex Hull</a>
 <ul>
-<li><a href="#orgef09fea">Jarvi's algorithm</a>
+<li><a href="#orga0d249b">Jarvi's algorithm</a>
 <ul>
-<li><a href="#org0e5bc30">Trace</a></li>
-<li><a href="#org138caad">Complexity</a></li>
-<li><a href="#org80e30d4">Further Reading</a></li>
+<li><a href="#org5ed4f36">Trace</a></li>
+<li><a href="#orgc78333d">Complexity</a></li>
+<li><a href="#org4b84e27">Further Reading</a></li>
 </ul>
 </li>
-<li><a href="#orgbaadad5">Grahm Scan</a></li>
-<li><a href="#org2da3dd0"><span class="todo TODO">TODO</span> Monotone chain Algorithm</a></li>
+<li><a href="#org9ca1726">Grahm Scan</a></li>
+<li><a href="#org3b577e9"><span class="todo TODO">TODO</span> Monotone chain Algorithm</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="PREVIEW" id="orgd1c5290">
+<div class="PREVIEW" id="orgfde0e99">
 <p>
 Based on TopCoder's thrive and <a href="https://www.ti.inf.ethz.ch/ew/courses/CG13/index.html">Computational Geometry (252-1425-00L) HS13</a> lecture notes.
 </p>
@@ -95,9 +95,9 @@ Based on TopCoder's thrive and <a href="https://www.ti.inf.ethz.ch/ew/courses/CG
 <p>
 (Problems mostly from <a href="https://leetcode.com/tag/geometry">LeetCode</a>)
 </p>
-<div id="outline-container-org9e59d02" class="outline-2">
-<h2 id="org9e59d02">Introduction</h2>
-<div class="outline-text-2" id="text-org9e59d02">
+<div id="outline-container-org9f68c69" class="outline-2">
+<h2 id="org9f68c69">Introduction</h2>
+<div class="outline-text-2" id="text-org9f68c69">
 <p>
 I'm not sure how to properly introduce this long plain text —or even how to put it—. You can
 easily consider it as a small handbook that contains some computational problems solutions,
@@ -124,9 +124,9 @@ aloud but I liked to put the quote😎).
 </div>
 </div>
 
-<div id="outline-container-org8a9dac9" class="outline-2">
-<h2 id="org8a9dac9">Vectors</h2>
-<div class="outline-text-2" id="text-org8a9dac9">
+<div id="outline-container-orgad72f9a" class="outline-2">
+<h2 id="orgad72f9a">Vectors</h2>
+<div class="outline-text-2" id="text-orgad72f9a">
 <p>
 Basically, a vector is a geometric object with length and direction (direction and
 magnitude). In the case of two-dimension geometry, we represent vectors as a pair of numbers
@@ -138,13 +138,13 @@ segment, but it can't define the starting and the ending locations.
 </p>
 </div>
 
-<div id="outline-container-orgeeb7eef" class="outline-3">
-<h3 id="orgeeb7eef">Operations on Vectors</h3>
-<div class="outline-text-3" id="text-orgeeb7eef">
+<div id="outline-container-org51e5dc1" class="outline-3">
+<h3 id="org51e5dc1">Operations on Vectors</h3>
+<div class="outline-text-3" id="text-org51e5dc1">
 </div>
-<div id="outline-container-org2fdc260" class="outline-4">
-<h4 id="org2fdc260">Addition</h4>
-<div class="outline-text-4" id="text-org2fdc260">
+<div id="outline-container-orgce5d5a9" class="outline-4">
+<h4 id="orgce5d5a9">Addition</h4>
+<div class="outline-text-4" id="text-orgce5d5a9">
 <p>
 The most beloved operation in which authors wastes ~3 pages in their textbook to explain
 it. You can add two vector together and as a result you get a new vector, if you have two
@@ -154,9 +154,9 @@ y_2)\)
 </div>
 </div>
 
-<div id="outline-container-org2ca1700" class="outline-4">
-<h4 id="org2ca1700">Dot Product</h4>
-<div class="outline-text-4" id="text-org2ca1700">
+<div id="outline-container-orge1a9c39" class="outline-4">
+<h4 id="orge1a9c39">Dot Product</h4>
+<div class="outline-text-4" id="text-orge1a9c39">
 <p>
 The dot product is <b>the sum of the corresponding element</b>, notice that it is not a vector,
 but a number. For example, if we have the two vector \((x_1, y_1)\) and \((x_2, y_2)\) then
@@ -178,9 +178,9 @@ angle between two vectors simply using two steps:
 </ol>
 </div>
 </div>
-<div id="outline-container-org1ea3616" class="outline-4">
-<h4 id="org1ea3616">Cross Product</h4>
-<div class="outline-text-4" id="text-org1ea3616">
+<div id="outline-container-org4ddeedd" class="outline-4">
+<h4 id="org4ddeedd">Cross Product</h4>
+<div class="outline-text-4" id="text-org4ddeedd">
 <p>
 This is more like the regular product: the cross product of 2D vectors \((x_1, y_1)\) and
 \((x_2, y_2)\) is \(x_{1} \cdot y_{2} - y_{1} \cdot x_{2}\), and its formula \(A \cdot B = |A|
@@ -191,9 +191,9 @@ it is negative or positive based on the right-hand rule.
 </p>
 </div>
 </div>
-<div id="outline-container-orga90c123" class="outline-4">
-<h4 id="orga90c123">Line-Point Distance</h4>
-<div class="outline-text-4" id="text-orga90c123">
+<div id="outline-container-org9ccaa10" class="outline-4">
+<h4 id="org9ccaa10">Line-Point Distance</h4>
+<div class="outline-text-4" id="text-org9ccaa10">
 <p>
 Lets say that you are given 3 points, \(A\), \(B\), and \(C\), and you want to find the distance
 from the point $C$to the line defined by \(A\) and \(B\).The first step is to find the two
@@ -206,7 +206,7 @@ Now, take the cross product \(AB \cdot AC\), and divide by \(|AB|\). This gives 
 </p>
 
 
-<div id="org4e674b6" class="figure">
+<div id="orgc5c4ad5" class="figure">
 <p><img src="Vectors/2022-01-19_04-58-41_screenshot.png" alt="2022-01-19_04-58-41_screenshot.png" />
 </p>
 </div>
@@ -271,15 +271,15 @@ Let's repeat in C(++):
 </div>
 </div>
 </div>
-<div id="outline-container-org61959af" class="outline-3">
-<h3 id="org61959af">Polygon Area</h3>
-<div class="outline-text-3" id="text-org61959af">
+<div id="outline-container-org8fb976e" class="outline-3">
+<h3 id="org8fb976e">Polygon Area</h3>
+<div class="outline-text-3" id="text-org8fb976e">
 <p>
 Consider this non-convex:
 </p>
 
 
-<div id="org804f734" class="figure">
+<div id="orged01f79" class="figure">
 <p><img src="Vectors/2022-01-19_04-59-01_screenshot.png" alt="2022-01-19_04-59-01_screenshot.png" />
 </p>
 </div>
@@ -337,9 +337,9 @@ it is obvious that the area of the polygon is the area of \(ABCD\) (which is the
 </div>
 </div>
 </div>
-<div id="outline-container-orgf663523" class="outline-2">
-<h2 id="orgf663523">Intersection</h2>
-<div class="outline-text-2" id="text-orgf663523">
+<div id="outline-container-org32e7bf7" class="outline-2">
+<h2 id="org32e7bf7">Intersection</h2>
+<div class="outline-text-2" id="text-org32e7bf7">
 <p>
 The first thing to think about in line-line intersection problem is what form we given our
 lines in, and what form would we like them in? In the best cases, each line will be in such
@@ -375,7 +375,7 @@ This basic formula is called <i>slope-intercept form</i>:
 </p>
 
 
-<div id="orgeb6a65a" class="figure">
+<div id="org425b375" class="figure">
 <p><img src="Intersection/2022-01-19_04-59-48_screenshot.png" alt="2022-01-19_04-59-48_screenshot.png" />
 </p>
 </div>
@@ -446,7 +446,7 @@ Now, let's define what we mean by intersection, let's say we have the following 
 
 
 
-<div id="org6373b07" class="figure">
+<div id="org159ca1a" class="figure">
 <p><img src="Intersection/2022-01-19_05-00-07_screenshot.png" alt="2022-01-19_05-00-07_screenshot.png" />
 </p>
 </div>
@@ -537,9 +537,9 @@ Now, we can repeat easily in C:
 </div>
 </div>
 </div>
-<div id="outline-container-org74301f3" class="outline-2">
-<h2 id="org74301f3">Finding The Equation of a Line for a Segment</h2>
-<div class="outline-text-2" id="text-org74301f3">
+<div id="outline-container-org458ea3f" class="outline-2">
+<h2 id="org458ea3f">Finding The Equation of a Line for a Segment</h2>
+<div class="outline-text-2" id="text-org458ea3f">
 <p>
 Let the given segment be \(PQ\)  i.e. the known coordinates of its ends \(P_x, P_y, Q_x, Q_y\)
 </p>
@@ -569,19 +569,19 @@ C &= - A P_x - B P_y.
 </div>
 
 
-<div id="outline-container-orga38c8c3" class="outline-3">
-<h3 id="orga38c8c3"><span class="todo TODO">TODO</span> Real Case vs. Integer Case</h3>
+<div id="outline-container-org5ab31a0" class="outline-3">
+<h3 id="org5ab31a0"><span class="todo TODO">TODO</span> Real Case vs. Integer Case</h3>
 </div>
 </div>
-<div id="outline-container-orgcc38ffa" class="outline-2">
-<h2 id="orgcc38ffa">Orientation of 3 Points</h2>
-<div class="outline-text-2" id="text-orgcc38ffa">
+<div id="outline-container-org9fed08a" class="outline-2">
+<h2 id="org9fed08a">Orientation of 3 Points</h2>
+<div class="outline-text-2" id="text-org9fed08a">
 <p>
 To get the intuition of what is left and what is right turn, consider an example shown below.
 </p>
 
 
-<div id="orgba5baf4" class="figure">
+<div id="orgc9c39f9" class="figure">
 <p><img src="Orientation_of_3_Points/2022-02-10_21-33-40_screenshot.png" alt="2022-02-10_21-33-40_screenshot.png" />
 </p>
 </div>
@@ -624,9 +624,9 @@ them into the vectors. This can be done in the following way.
 
 
 
-<div id="outline-container-org2037552" class="outline-2">
-<h2 id="org2037552">Finding a Circle From 3 Points</h2>
-<div class="outline-text-2" id="text-org2037552">
+<div id="outline-container-orgc2744dc" class="outline-2">
+<h2 id="orgc2744dc">Finding a Circle From 3 Points</h2>
+<div class="outline-text-2" id="text-orgc2744dc">
 <p>
 Given 3 points which are not colinear (all on the same line) those three points uniquely
 define a circle. But, how do you find the center and radius of that circle? This task turns
@@ -636,7 +636,7 @@ the center of the circle.
 </p>
 
 
-<div id="org0f9bd9c" class="figure">
+<div id="org8e8facf" class="figure">
 <p><img src="Finding_a_Circle_From_3_Points/2022-01-19_05-00-24_screenshot.png" alt="2022-01-19_05-00-24_screenshot.png" />
 </p>
 </div>
@@ -709,9 +709,9 @@ the equation of circle in general form is x² + y² + 2gx + 2fy + c = 0 and in r
 </div>
 </div>
 
-<div id="outline-container-org3e6281e" class="outline-2">
-<h2 id="org3e6281e">Convex Hull</h2>
-<div class="outline-text-2" id="text-org3e6281e">
+<div id="outline-container-org34f8ce9" class="outline-2">
+<h2 id="org34f8ce9">Convex Hull</h2>
+<div class="outline-text-2" id="text-org34f8ce9">
 <p>
 A convex hull of a set of points is the smallest convex polygon that contains every one of
 the points. It is defined by a subset of all the points in the original set. One way to
@@ -721,9 +721,9 @@ the rubber band is a convex hull.
 </p>
 </div>
 
-<div id="outline-container-orgef09fea" class="outline-3">
-<h3 id="orgef09fea">Jarvi's algorithm</h3>
-<div class="outline-text-3" id="text-orgef09fea">
+<div id="outline-container-orga0d249b" class="outline-3">
+<h3 id="orga0d249b">Jarvi's algorithm</h3>
+<div class="outline-text-3" id="text-orga0d249b">
 <p>
 \(O(n^2)\)
 \(O(n \cdot h)\)
@@ -755,7 +755,7 @@ How to check if point is more counterclockwise? We can use orientation checker:
 </p>
 
 
-<div id="orgd4f2aa8" class="figure">
+<div id="orgfbc1751" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-00-40_screenshot.png" alt="2022-01-19_05-00-40_screenshot.png" />
 </p>
 </div>
@@ -927,22 +927,22 @@ A visualization:
 </p>
 
 
-<div id="org18ae69e" class="figure">
+<div id="orgf3b15ed" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-01-38_Animation_depicting_the_gift_wrapping_algorithm.gif" alt="2022-01-19_05-01-38_Animation_depicting_the_gift_wrapping_algorithm.gif" />
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0e5bc30" class="outline-4">
-<h4 id="org0e5bc30">Trace</h4>
-<div class="outline-text-4" id="text-org0e5bc30">
+<div id="outline-container-org5ed4f36" class="outline-4">
+<h4 id="org5ed4f36">Trace</h4>
+<div class="outline-text-4" id="text-org5ed4f36">
 <p>
 Let's try to trace the C(++) program above with the very same given points in the program:
 </p>
 
 
 
-<div id="org873adaf" class="figure">
+<div id="org39cb603" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-01-56_screenshot.png" alt="2022-01-19_05-01-56_screenshot.png" />
 </p>
 </div>
@@ -954,7 +954,7 @@ convex hull vertices as shown by the green circle in the figure below.
 </p>
 
 
-<div id="orgce86c7e" class="figure">
+<div id="org4132024" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-02-14_screenshot.png" alt="2022-01-19_05-02-14_screenshot.png" />
 </p>
 </div>
@@ -988,7 +988,7 @@ We add point \((1,4)\) to the convex hull.
 </p>
 
 
-<div id="org15998ab" class="figure">
+<div id="org7c0e9fd" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-02-31_screenshot.png" alt="2022-01-19_05-02-31_screenshot.png" />
 </p>
 </div>
@@ -1000,7 +1000,7 @@ above. If we follow all the steps, the leftmost point will be \((9,6)\).
 
 
 
-<div id="org98c0d41" class="figure">
+<div id="org9b97907" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-02-42_screenshot.png" alt="2022-01-19_05-02-42_screenshot.png" />
 </p>
 </div>
@@ -1012,7 +1012,7 @@ Using the same process, the leftmost point from \((9,6)\) will be the point \((7
 </p>
 
 
-<div id="org0917ebb" class="figure">
+<div id="orgb5590f0" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-02-53_screenshot.png" alt="2022-01-19_05-02-53_screenshot.png" />
 </p>
 </div>
@@ -1024,9 +1024,9 @@ Finally from \((7,0)\) we compute the leftmost point. The leftmost point from \(
 </div>
 </div>
 
-<div id="outline-container-org138caad" class="outline-4">
-<h4 id="org138caad">Complexity</h4>
-<div class="outline-text-4" id="text-org138caad">
+<div id="outline-container-orgc78333d" class="outline-4">
+<h4 id="orgc78333d">Complexity</h4>
+<div class="outline-text-4" id="text-orgc78333d">
 <p>
 The algorithm spends \(O(n)\) time on each convex hull vertex. If there are h convex hull
 vertices, the total time complexity of the algorithm would be \(O(nh)\). Since h is the number
@@ -1036,9 +1036,9 @@ the complexity also depends on the number of output.
 </div>
 </div>
 
-<div id="outline-container-org80e30d4" class="outline-4">
-<h4 id="org80e30d4">Further Reading</h4>
-<div class="outline-text-4" id="text-org80e30d4">
+<div id="outline-container-org4b84e27" class="outline-4">
+<h4 id="org4b84e27">Further Reading</h4>
+<div class="outline-text-4" id="text-org4b84e27">
 <ul class="org-ul">
 <li>Briquet, C. (n.d.). Introduction to Convex Hull Applications. Lecture. Retrieved August 23, 2018, from <a href="http://www.montefiore.ulg.ac.be/~briquet/algo3-chull-20070206.pdf">http://www.montefiore.ulg.ac.be/~briquet/algo3-chull-20070206.pdf</a></li>
 <li>Erickson, J. (n.d.). Convex Hulls. Lecture. Retrieved August 23, 2018, from <a href="http://jeffe.cs.illinois.edu/teaching/373/notes/x05-convexhull.pdf">http://jeffe.cs.illinois.edu/teaching/373/notes/x05-convexhull.pdf</a></li>
@@ -1048,9 +1048,9 @@ the complexity also depends on the number of output.
 </div>
 </div>
 
-<div id="outline-container-orgbaadad5" class="outline-3">
-<h3 id="orgbaadad5">Grahm Scan</h3>
-<div class="outline-text-3" id="text-orgbaadad5">
+<div id="outline-container-org9ca1726" class="outline-3">
+<h3 id="org9ca1726">Grahm Scan</h3>
+<div class="outline-text-3" id="text-org9ca1726">
 <p>
 \(O(n \cdot log(n))\)
 </p>
@@ -1073,7 +1073,7 @@ Sort the points based on the polar angle i.e. the angle made by the line with th
 </p>
 
 
-<div id="orga88c708" class="figure">
+<div id="org473063c" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-03-08_screenshot.png" alt="2022-01-19_05-03-08_screenshot.png" />
 </p>
 </div></li>
@@ -1090,7 +1090,7 @@ has complexity \(O(n \log n)\).
 </p>
 
 
-<div id="org33de2c1" class="figure">
+<div id="org528a5a9" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-03-21_screenshot.png" alt="2022-01-19_05-03-21_screenshot.png" />
 </p>
 </div>
@@ -1106,7 +1106,7 @@ It looks like this:
 </p>
 
 
-<div id="org1fa0e95" class="figure">
+<div id="org591e911" class="figure">
 <p><img src="Convex_Hull/2022-01-19_05-03-40_screenshot.png" alt="2022-01-19_05-03-40_screenshot.png" />
 </p>
 </div>
@@ -1246,9 +1246,9 @@ Python implementation:
 </div>
 </div>
 
-<div id="outline-container-org2da3dd0" class="outline-3">
-<h3 id="org2da3dd0"><span class="todo TODO">TODO</span> Monotone chain Algorithm</h3>
-<div class="outline-text-3" id="text-org2da3dd0">
+<div id="outline-container-org3b577e9" class="outline-3">
+<h3 id="org3b577e9"><span class="todo TODO">TODO</span> Monotone chain Algorithm</h3>
+<div class="outline-text-3" id="text-org3b577e9">
 <p>
 \(O(n \cdot log(n))\)
 </p>

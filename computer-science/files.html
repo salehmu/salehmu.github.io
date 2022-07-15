@@ -25,34 +25,34 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf6df518">Introduction</a></li>
-<li><a href="#org5ed07e1">Managing Files and Directories</a>
+<li><a href="#org68392bd">Introduction</a></li>
+<li><a href="#org7722ea8">Managing Files and Directories</a>
 <ul>
-<li><a href="#orgea55483">Check if a File Exist</a></li>
-<li><a href="#orgdf5370c">Getting the Parent Directory</a></li>
-<li><a href="#orgeb22f73">Checking if a Directory Exist and Creating New Ones</a></li>
-<li><a href="#org60e6264">Copying a File</a></li>
-<li><a href="#org976c0ea">Moving a File</a></li>
-<li><a href="#orgbda5cfc">Getting the File Extension from a File Name</a></li>
-<li><a href="#orgb423d06">Deleting a Directory</a></li>
+<li><a href="#org18b9bfe">Check if a File Exist</a></li>
+<li><a href="#orgad032a3">Getting the Parent Directory</a></li>
+<li><a href="#org2064cbc">Checking if a Directory Exist and Creating New Ones</a></li>
+<li><a href="#orgce62699">Copying a File</a></li>
+<li><a href="#org72af9c0">Moving a File</a></li>
+<li><a href="#org2442637">Getting the File Extension from a File Name</a></li>
+<li><a href="#org87474fb">Deleting a Directory</a></li>
 </ul>
 </li>
-<li><a href="#orgd88d17a">Monitoring the File System for Changes</a>
+<li><a href="#org53b706e">Monitoring the File System for Changes</a>
 <ul>
-<li><a href="#org9cc9806">The <code>FileSystemWatcher</code> Class</a></li>
-<li><a href="#org36b18b5">Buffer and <code>BufferSize</code></a></li>
-<li><a href="#orgd5c8ded">Notification Filters</a></li>
-<li><a href="#orgd063606">Other Properties</a></li>
-<li><a href="#orga802d0a"><span class="todo TODO">TODO</span> Refactoring to Use a FileSystemWatcher</a></li>
+<li><a href="#org55e5248">The <code>FileSystemWatcher</code> Class</a></li>
+<li><a href="#orgd682c93">Buffer and <code>BufferSize</code></a></li>
+<li><a href="#org4584b5b">Notification Filters</a></li>
+<li><a href="#orga4ec69b">Other Properties</a></li>
+<li><a href="#orga90e8d3"><span class="todo TODO">TODO</span> Refactoring to Use a FileSystemWatcher</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf6df518" class="outline-2">
-<h2 id="orgf6df518">Introduction</h2>
-<div class="outline-text-2" id="text-orgf6df518">
-<div class="PREVIEW" id="org0034935">
+<div id="outline-container-org68392bd" class="outline-2">
+<h2 id="org68392bd">Introduction</h2>
+<div class="outline-text-2" id="text-org68392bd">
+<div class="PREVIEW" id="orgf761128">
 <p>
 I was thinking in the first place to make this file just a part of the major C# note file,
 but I believe that I might and will face a lot of filesystem topics, however I'm sure I will
@@ -65,13 +65,13 @@ it).
 </div>
 </div>
 
-<div id="outline-container-org5ed07e1" class="outline-2">
-<h2 id="org5ed07e1">Managing Files and Directories</h2>
-<div class="outline-text-2" id="text-org5ed07e1">
+<div id="outline-container-org7722ea8" class="outline-2">
+<h2 id="org7722ea8">Managing Files and Directories</h2>
+<div class="outline-text-2" id="text-org7722ea8">
 </div>
-<div id="outline-container-orgea55483" class="outline-3">
-<h3 id="orgea55483">Check if a File Exist</h3>
-<div class="outline-text-3" id="text-orgea55483">
+<div id="outline-container-org18b9bfe" class="outline-3">
+<h3 id="org18b9bfe">Check if a File Exist</h3>
+<div class="outline-text-3" id="text-org18b9bfe">
 <p>
 Sometimes when we're processing a file, we don't want to process a file that doesn't exist,
 so before we start processing anything, let's check if the user really knows the statue of
@@ -103,9 +103,9 @@ You can also check if the path is qualified or not<sup><a id="fnr.1" class="foot
 </div>
 </div>
 
-<div id="outline-container-orgdf5370c" class="outline-3">
-<h3 id="orgdf5370c">Getting the Parent Directory</h3>
-<div class="outline-text-3" id="text-orgdf5370c">
+<div id="outline-container-orgad032a3" class="outline-3">
+<h3 id="orgad032a3">Getting the Parent Directory</h3>
+<div class="outline-text-3" id="text-orgad032a3">
 <p>
 The application we're building is going to make use of a specific directory structure. We've
 already seen that we've got this in directory. This is a child directory in this case of the
@@ -139,9 +139,9 @@ can use the FullName property here to get the full path to this parent directory
 </div>
 </div>
 
-<div id="outline-container-orgeb22f73" class="outline-3">
-<h3 id="orgeb22f73">Checking if a Directory Exist and Creating New Ones</h3>
-<div class="outline-text-3" id="text-orgeb22f73">
+<div id="outline-container-org2064cbc" class="outline-3">
+<h3 id="org2064cbc">Checking if a Directory Exist and Creating New Ones</h3>
+<div class="outline-text-3" id="text-org2064cbc">
 <p>
 As part of the processing of a file, this application is going to make a backup copy of the
 original file in case something goes wrong during processing. So here we are in the
@@ -213,9 +213,9 @@ to the CreateDirectory method, we provide the path.
 </div>
 </div>
 </div>
-<div id="outline-container-org60e6264" class="outline-3">
-<h3 id="org60e6264">Copying a File</h3>
-<div class="outline-text-3" id="text-org60e6264">
+<div id="outline-container-orgce62699" class="outline-3">
+<h3 id="orgce62699">Copying a File</h3>
+<div class="outline-text-3" id="text-orgce62699">
 <p>
 So now we've got our backup directory created, we can go and copy the original input file to
 it. In this way, we're going to make sure we have a backup copy of the original file in case
@@ -265,9 +265,9 @@ being thrown.
 </div>
 </div>
 
-<div id="outline-container-org976c0ea" class="outline-3">
-<h3 id="org976c0ea">Moving a File</h3>
-<div class="outline-text-3" id="text-org976c0ea">
+<div id="outline-container-org72af9c0" class="outline-3">
+<h3 id="org72af9c0">Moving a File</h3>
+<div class="outline-text-3" id="text-org72af9c0">
 <p>
 Moving files is just like copying, the but you only need to change "copy" to "move".
 </p>
@@ -281,9 +281,9 @@ else WriteLine("Processing file already exist.");
 </div>
 </div>
 
-<div id="outline-container-orgbda5cfc" class="outline-3">
-<h3 id="orgbda5cfc">Getting the File Extension from a File Name</h3>
-<div class="outline-text-3" id="text-orgbda5cfc">
+<div id="outline-container-org2442637" class="outline-3">
+<h3 id="org2442637">Getting the File Extension from a File Name</h3>
+<div class="outline-text-3" id="text-org2442637">
 <p>
 We may want to process files differently depending on their file extension. For example, we
 might want to process .txt files differently from .csv files. To do so, use the
@@ -300,9 +300,9 @@ output to the completed directory.
 </div>
 </div>
 
-<div id="outline-container-orgb423d06" class="outline-3">
-<h3 id="orgb423d06">Deleting a Directory</h3>
-<div class="outline-text-3" id="text-orgb423d06">
+<div id="outline-container-org87474fb" class="outline-3">
+<h3 id="org87474fb">Deleting a Directory</h3>
+<div class="outline-text-3" id="text-org87474fb">
 <p>
 The final thing we're going to do in this process method is to delete the
 inProgressDirectory once the processing of the file is complete.
@@ -320,13 +320,13 @@ To delete a file you use the <code>Delete</code> method in the <code>Directory</
 </div>
 </div>
 
-<div id="outline-container-orgd88d17a" class="outline-2">
-<h2 id="orgd88d17a">Monitoring the File System for Changes</h2>
-<div class="outline-text-2" id="text-orgd88d17a">
+<div id="outline-container-org53b706e" class="outline-2">
+<h2 id="org53b706e">Monitoring the File System for Changes</h2>
+<div class="outline-text-2" id="text-org53b706e">
 </div>
-<div id="outline-container-org9cc9806" class="outline-3">
-<h3 id="org9cc9806">The <code>FileSystemWatcher</code> Class</h3>
-<div class="outline-text-3" id="text-org9cc9806">
+<div id="outline-container-org55e5248" class="outline-3">
+<h3 id="org55e5248">The <code>FileSystemWatcher</code> Class</h3>
+<div class="outline-text-3" id="text-org55e5248">
 <p>
 The Microsoft documentation says that the FileSystemWatcher class listens to the file system
 change notifications and raises events when a directory or file in a directory changes. So
@@ -351,9 +351,9 @@ times.
 </div>
 </div>
 
-<div id="outline-container-org36b18b5" class="outline-3">
-<h3 id="org36b18b5">Buffer and <code>BufferSize</code></h3>
-<div class="outline-text-3" id="text-org36b18b5">
+<div id="outline-container-orgd682c93" class="outline-3">
+<h3 id="orgd682c93">Buffer and <code>BufferSize</code></h3>
+<div class="outline-text-3" id="text-orgd682c93">
 <p>
 Internally, the FileSystemWatcher makes use of a buffer. When file or directory operations
 are detected by the FileSystemWatcher instance, they go into this buffer, and then the
@@ -387,9 +387,9 @@ notification filters.
 </div>
 </div>
 
-<div id="outline-container-orgd5c8ded" class="outline-3">
-<h3 id="orgd5c8ded">Notification Filters</h3>
-<div class="outline-text-3" id="text-orgd5c8ded">
+<div id="outline-container-org4584b5b" class="outline-3">
+<h3 id="org4584b5b">Notification Filters</h3>
+<div class="outline-text-3" id="text-org4584b5b">
 <p>
 We can configure the types of changes that we want to receive notifications for. To do this,
 we set the NotifyFilter property on the FileSystemWatcher object. This NotifyFilter property
@@ -412,9 +412,9 @@ change types.
 </div>
 </div>
 
-<div id="outline-container-orgd063606" class="outline-3">
-<h3 id="orgd063606">Other Properties</h3>
-<div class="outline-text-3" id="text-orgd063606">
+<div id="outline-container-orga4ec69b" class="outline-3">
+<h3 id="orga4ec69b">Other Properties</h3>
+<div class="outline-text-3" id="text-orga4ec69b">
 <p>
 There's a number of additional properties that we can make use of on the FileSystemWatcher.
 The first is the Path property. This allows us to specify a path to a directory or file to
@@ -431,8 +431,8 @@ start receiving events from the FileSystemWatcher, we simply set this property t
 </div>
 </div>
 
-<div id="outline-container-orga802d0a" class="outline-3">
-<h3 id="orga802d0a"><span class="todo TODO">TODO</span> Refactoring to Use a FileSystemWatcher</h3>
+<div id="outline-container-orga90e8d3" class="outline-3">
+<h3 id="orga90e8d3"><span class="todo TODO">TODO</span> Refactoring to Use a FileSystemWatcher</h3>
 </div>
 </div>
 <div id="footnotes">

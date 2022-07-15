@@ -25,41 +25,41 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3f37b0f">Introduction into PostgreSQL</a>
+<li><a href="#org5cbd502">Introduction into PostgreSQL</a>
 <ul>
-<li><a href="#orge123b67">Selecting</a>
+<li><a href="#orgba361d1">Selecting</a>
 <ul>
 <li><a href="#regular_selecting">Regular Selection</a></li>
 <li><a href="#distinct">Select distinct rows using <code>distinct</code> operator</a></li>
-<li><a href="#org68cf0fc">Sort rows using <code>order by</code></a></li>
+<li><a href="#org9d6fe1b">Sort rows using <code>order by</code></a></li>
 <li><a href="#where">Filter rows using <code>where</code></a></li>
-<li><a href="#org3060168">IN</a></li>
-<li><a href="#orge6eae9c">Group using <code>group by</code></a></li>
+<li><a href="#orgcd7c939">IN</a></li>
+<li><a href="#orgb9a83e5">Group using <code>group by</code></a></li>
 <li><a href="#having">Filter group using <code>having</code></a></li>
-<li><a href="#orgf801b17">Perform set operations using <code>UNION</code>, <code>intersect</code> and <code>except</code></a></li>
-<li><a href="#org5806b0d">Grouping Sets</a></li>
-<li><a href="#orgcae22f8">Joins</a></li>
-<li><a href="#org57400f4">Sub-queries</a></li>
-<li><a href="#orgd0052d7">Exist</a></li>
+<li><a href="#org6d28163">Perform set operations using <code>UNION</code>, <code>intersect</code> and <code>except</code></a></li>
+<li><a href="#org34a3959">Grouping Sets</a></li>
+<li><a href="#org4d40967">Joins</a></li>
+<li><a href="#org89a5c38">Sub-queries</a></li>
+<li><a href="#org83b12b6">Exist</a></li>
 </ul>
 </li>
-<li><a href="#orgf798ced">Tables Management</a>
+<li><a href="#orgc1c0574">Tables Management</a>
 <ul>
-<li><a href="#org9b8df19">Upsert</a></li>
-<li><a href="#org9199578">Alert</a></li>
-<li><a href="#org741340a">Truncate</a></li>
-<li><a href="#org957b1e8">Temporary Tables</a></li>
-<li><a href="#org9eabbc2">Other Utilities</a></li>
+<li><a href="#org81982af">Upsert</a></li>
+<li><a href="#orgf028848">Alert</a></li>
+<li><a href="#org7042e40">Truncate</a></li>
+<li><a href="#org2b58328">Temporary Tables</a></li>
+<li><a href="#org75e6798">Other Utilities</a></li>
 </ul>
 </li>
-<li><a href="#orgd137664">Logging</a></li>
-<li><a href="#org8f431b4">Check</a></li>
+<li><a href="#org6ee71e9">Logging</a></li>
+<li><a href="#org471fdcd">Check</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="PREVIEW" id="org82f14ec">
+<div class="PREVIEW" id="org7444685">
 <p>
 PostgreSQL mini-cookbook
 </p>
@@ -67,9 +67,9 @@ PostgreSQL mini-cookbook
 </div>
 
 
-<div id="outline-container-org3f37b0f" class="outline-2">
-<h2 id="org3f37b0f">Introduction into PostgreSQL</h2>
-<div class="outline-text-2" id="text-org3f37b0f">
+<div id="outline-container-org5cbd502" class="outline-2">
+<h2 id="org5cbd502">Introduction into PostgreSQL</h2>
+<div class="outline-text-2" id="text-org5cbd502">
 <p>
 Notes:
 </p>
@@ -77,9 +77,9 @@ Notes:
 <li>SQL commands is not case sensitive, therefore <code>SELECT</code> = <code>select</code> = <code>SeLeCt</code></li>
 </ul>
 </div>
-<div id="outline-container-orge123b67" class="outline-3">
-<h3 id="orge123b67">Selecting</h3>
-<div class="outline-text-3" id="text-orge123b67">
+<div id="outline-container-orgba361d1" class="outline-3">
+<h3 id="orgba361d1">Selecting</h3>
+<div class="outline-text-3" id="text-orgba361d1">
 </div>
 <div id="outline-container-regular_selecting" class="outline-4">
 <h4 id="regular_selecting">Regular Selection</h4>
@@ -125,7 +125,7 @@ one row for each group if duplicated. Consider the following example:
 <p>
 If we evaluate this we get:
 </p>
-<pre class="example" id="org568814c">
+<pre class="example" id="org26a60ec">
 | id | first_name  | last_name  | email                      | gender      | country |
 |----+-------------+------------+----------------------------+-------------+---------|
 | 1  | Ernestine   | Dobrowolny | edobrowolny0@google.com.hk | Male        | CN      |
@@ -155,7 +155,7 @@ duplicated. We can use the <code>distinct</code> clause to get rid of this, for 
 </pre>
 </div>
 
-<pre class="example" id="orgf2a87aa">
+<pre class="example" id="orga663bdd">
 | id  | first_name | last_name   | email                   | gender      | country |
 |-----+------------+-------------+-------------------------+-------------+---------|
 | 843 | Sigismund  | Revance     |                         | Bigender    | BR      |
@@ -171,8 +171,8 @@ duplicated. We can use the <code>distinct</code> clause to get rid of this, for 
 </pre>
 </div>
 <ul class="org-ul">
-<li><a id="org8009897"></a>Distinct on<br />
-<div class="outline-text-5" id="text-org8009897">
+<li><a id="org0d23bd4"></a>Distinct on<br />
+<div class="outline-text-5" id="text-org0d23bd4">
 <p>
 Consider the following example:
 </p>
@@ -186,7 +186,7 @@ Consider the following example:
 </pre>
 </div>
 
-<pre class="example" id="org68e8602">
+<pre class="example" id="org3d026f0">
 | gender      | country |
 |-------------+---------|
 | Female      | GR      |
@@ -216,7 +216,7 @@ example:
 </pre>
 </div>
 
-<pre class="example" id="orgcdd9fef">
+<pre class="example" id="org15ede0d">
 | gender      | country |
 |-------------+---------|
 | Agender     | UA      |
@@ -233,9 +233,9 @@ example:
 </ul>
 </div>
 
-<div id="outline-container-org68cf0fc" class="outline-4">
-<h4 id="org68cf0fc">Sort rows using <code>order by</code></h4>
-<div class="outline-text-4" id="text-org68cf0fc">
+<div id="outline-container-org9d6fe1b" class="outline-4">
+<h4 id="org9d6fe1b">Sort rows using <code>order by</code></h4>
+<div class="outline-text-4" id="text-org9d6fe1b">
 <p>
 We use the clause <code>order by</code> to order selection output. Example:
 </p>
@@ -253,7 +253,7 @@ We use the clause <code>order by</code> to order selection output. Example:
 </pre>
 </div>
 
-<pre class="example" id="org1bac23d">
+<pre class="example" id="orge149959">
 | id  | first_name | last_name |
 |-----+------------+-----------|
 | 596 | Ab         | McCaghan  |
@@ -270,8 +270,8 @@ We use the clause <code>order by</code> to order selection output. Example:
 </div>
 
 <ul class="org-ul">
-<li><a id="org84b6f8c"></a>Order by String Length<br />
-<div class="outline-text-5" id="text-org84b6f8c">
+<li><a id="orgd6b712a"></a>Order by String Length<br />
+<div class="outline-text-5" id="text-orgd6b712a">
 <p>
 You can use the <code>Length()</code> function with the <code>order by</code> clause to sort by the
 string length:
@@ -309,7 +309,7 @@ using the following syntax:
 </pre>
 </div>
 
-<pre class="example" id="org0984b97">
+<pre class="example" id="org0863284">
 | first_name  | country |
 |-------------+---------|
 | Ernestine   | CN      |
@@ -337,7 +337,7 @@ first name that is less than 9 letters.
 </pre>
 </div>
 
-<pre class="example" id="orga1ff808">
+<pre class="example" id="orgf1f9597">
 | full_name |
 |-----------|
 | Nap Algie |
@@ -429,9 +429,9 @@ You can use any of the following operators:
 </div>
 </div>
 
-<div id="outline-container-org3060168" class="outline-4">
-<h4 id="org3060168">IN</h4>
-<div class="outline-text-4" id="text-org3060168">
+<div id="outline-container-orgcd7c939" class="outline-4">
+<h4 id="orgcd7c939">IN</h4>
+<div class="outline-text-4" id="text-orgcd7c939">
 <p>
 You use <code>IN</code> operator in the WHERE clause to check if a value matches any value in a list of values.
 </p>
@@ -452,7 +452,7 @@ operator in the WHERE clause as follows:
 </pre>
 </div>
 
-<pre class="example" id="org117c5a3">
+<pre class="example" id="org869fca9">
 | customer_id | rental_id | return_date           |
 |-------------+-----------+-----------------------|
 | 2           | 15907     | 2005-08-25 23:23:35.0 |
@@ -516,9 +516,9 @@ Notice that you can also use <code>=</code> and <code>OR</code> operators instea
 </div>
 </div>
 
-<div id="outline-container-orge6eae9c" class="outline-4">
-<h4 id="orge6eae9c">Group using <code>group by</code></h4>
-<div class="outline-text-4" id="text-orge6eae9c">
+<div id="outline-container-orgb9a83e5" class="outline-4">
+<h4 id="orgb9a83e5">Group using <code>group by</code></h4>
+<div class="outline-text-4" id="text-orgb9a83e5">
 <p>
 :CUSTOM<sub>ID</sub>: group<sub>by</sub>
 </p>
@@ -542,7 +542,7 @@ This statement divide the rows by its <code>count</code> values and then group i
 of the total occurrence for each country, the result should be like:
 </p>
 
-<pre class="example" id="org65ae840">
+<pre class="example" id="org6cf6d9c">
 | country | count |
 |---------+-------|
 | CN      | 173   |
@@ -602,7 +602,7 @@ Consider the following example using group by to get the count numbers of each c
 </pre>
 </div>
 
-<pre class="example" id="org79bc1f6">
+<pre class="example" id="org1dfe947">
 | country | count |
 |---------+-------|
 | CN      | 173   |
@@ -643,13 +643,13 @@ countries with more than 100 count:
 </div>
 </div>
 
-<div id="outline-container-orgf801b17" class="outline-4">
-<h4 id="orgf801b17">Perform set operations using <code>UNION</code>, <code>intersect</code> and <code>except</code></h4>
-<div class="outline-text-4" id="text-orgf801b17">
+<div id="outline-container-org6d28163" class="outline-4">
+<h4 id="org6d28163">Perform set operations using <code>UNION</code>, <code>intersect</code> and <code>except</code></h4>
+<div class="outline-text-4" id="text-org6d28163">
 </div>
 <ul class="org-ul">
-<li><a id="org0f4cac4"></a><code>UNION</code><br />
-<div class="outline-text-5" id="text-org0f4cac4">
+<li><a id="orgcebac4b"></a><code>UNION</code><br />
+<div class="outline-text-5" id="text-orgcebac4b">
 <p>
 Consider the following two tables:
 </p>
@@ -742,8 +742,8 @@ that and get all the duplicated rows togother, use <code>UNION ALL</code> instea
 </pre>
 </div>
 </li>
-<li><a id="org9752e30"></a><code>INTERSENCT</code><br />
-<div class="outline-text-5" id="text-org9752e30">
+<li><a id="orgf95d4ba"></a><code>INTERSENCT</code><br />
+<div class="outline-text-5" id="text-orgf95d4ba">
 <p>
 The <code>INTERSECT</code> operator returns any rows that are available in both result sets:
 </p>
@@ -765,8 +765,8 @@ We got "The Godfather" as it is the only value that is available in both results
 </p>
 </div>
 </li>
-<li><a id="orged84430"></a><code>EXCEPT</code><br />
-<div class="outline-text-5" id="text-orged84430">
+<li><a id="org4270593"></a><code>EXCEPT</code><br />
+<div class="outline-text-5" id="text-org4270593">
 <p>
 The <code>EXCEPT</code> operator returns distinct rows from the first (left) query that are not in the
 output of the second (right) query.
@@ -793,9 +793,9 @@ The following statement uses the <code>EXCEPT</code> operator to find the top-ra
 </li>
 </ul>
 </div>
-<div id="outline-container-org5806b0d" class="outline-4">
-<h4 id="org5806b0d">Grouping Sets</h4>
-<div class="outline-text-4" id="text-org5806b0d">
+<div id="outline-container-org34a3959" class="outline-4">
+<h4 id="org34a3959">Grouping Sets</h4>
+<div class="outline-text-4" id="text-org34a3959">
 <p>
 Consider the following table:
 </p>
@@ -918,7 +918,7 @@ Suppose we need to get all of those tables in the same query, we can use the <co
 </pre>
 </div>
 
-<pre class="example" id="orgd4ece37">
+<pre class="example" id="org05bb451">
 | brand | segment | sum |
 |-------+---------+-----|
 | XYZ   | Basic   | 300 |
@@ -967,7 +967,7 @@ The <code>GROUPING SETS</code> allows you to define multiple grouping sets in th
 </pre>
 </div>
 
-<pre class="example" id="org6bac43f">
+<pre class="example" id="org07ebd04">
 | brand | segment | sum |
 |-------+---------+-----|
 |       |         | 700 |
@@ -982,8 +982,8 @@ The <code>GROUPING SETS</code> allows you to define multiple grouping sets in th
 </pre>
 </div>
 <ul class="org-ul">
-<li><a id="org36f4e58"></a>The <code>GROUPING()</code> Function<br />
-<div class="outline-text-5" id="text-org36f4e58">
+<li><a id="org9b2a0a1"></a>The <code>GROUPING()</code> Function<br />
+<div class="outline-text-5" id="text-org9b2a0a1">
 <p>
 The GROUPING() function accepts an argument which can be a column name or an expression:
 </p>
@@ -1024,8 +1024,8 @@ consider the following example:
 </pre>
 </div>
 </li>
-<li><a id="orgc27fa9a"></a><code>ROLLUP</code> and <code>CUBE</code><br />
-<div class="outline-text-5" id="text-orgc27fa9a">
+<li><a id="org360edff"></a><code>ROLLUP</code> and <code>CUBE</code><br />
+<div class="outline-text-5" id="text-org360edff">
 <p>
 However we have saved some times using the <code>grouping sets</code> clause, it could be even better
 if we didn't need to write all these argument to get the <code>grouping by</code> result for each
@@ -1083,9 +1083,9 @@ generate all possible grouping sets:
 </li>
 </ul>
 </div>
-<div id="outline-container-orgcae22f8" class="outline-4">
-<h4 id="orgcae22f8">Joins</h4>
-<div class="outline-text-4" id="text-orgcae22f8">
+<div id="outline-container-org4d40967" class="outline-4">
+<h4 id="org4d40967">Joins</h4>
+<div class="outline-text-4" id="text-org4d40967">
 <p>
 PostgreSQL join is used to combine columns from one (self-join) or more tables based on the
 values of the common columns between related tables. The common columns are typically the
@@ -1127,8 +1127,8 @@ Consider those tables:
 </div>
 
 <ul class="org-ul">
-<li><a id="org260ee6a"></a>Inner Join<br />
-<div class="outline-text-5" id="text-org260ee6a">
+<li><a id="org945a235"></a>Inner Join<br />
+<div class="outline-text-5" id="text-org945a235">
 <p>
 The following statement joins the first table (<code>basket_a</code>) with the second table (<code>basket_b</code>) by
 matching the values in the <code>fruit_a</code> and <code>fruit_b</code> columns:
@@ -1176,8 +1176,8 @@ following syntax:
 </div>
 </li>
 
-<li><a id="orgf978f51"></a>Left Join<br />
-<div class="outline-text-5" id="text-orgf978f51">
+<li><a id="org5821330"></a>Left Join<br />
+<div class="outline-text-5" id="text-org5821330">
 <p>
 The following statement uses the left join clause to join the <code>basket_a</code> table with the
 <code>basket_b</code> table. In the left join context, the first table is called the left table and the
@@ -1230,15 +1230,15 @@ The following Venn diagram illustrates the left join:
 </div>
 </li>
 
-<li><a id="orge4dacc5"></a>Right Join<br />
-<div class="outline-text-5" id="text-orge4dacc5">
+<li><a id="org1ad2c76"></a>Right Join<br />
+<div class="outline-text-5" id="text-org1ad2c76">
 <p>
 Just like above, but right.
 </p>
 </div>
 </li>
-<li><a id="org709eedb"></a>Full Outer Join<br />
-<div class="outline-text-5" id="text-org709eedb">
+<li><a id="org76c4dd5"></a>Full Outer Join<br />
+<div class="outline-text-5" id="text-org76c4dd5">
 <p>
 Consider the following two tables:
 </p>
@@ -1311,13 +1311,13 @@ employee:
 </div>
 </li>
 
-<li><a id="orgd80825e"></a>Cross Join<br /></li>
+<li><a id="orgd6ffafb"></a>Cross Join<br /></li>
 </ul>
 </div>
 
-<div id="outline-container-org57400f4" class="outline-4">
-<h4 id="org57400f4">Sub-queries</h4>
-<div class="outline-text-4" id="text-org57400f4">
+<div id="outline-container-org89a5c38" class="outline-4">
+<h4 id="org89a5c38">Sub-queries</h4>
+<div class="outline-text-4" id="text-org89a5c38">
 <p>
 Suppose we want to find the films whose rental rate is higher than the average rental rate.
 We can do it in two steps:
@@ -1357,7 +1357,7 @@ Find the average rental rate by using the SELECT statement and average function 
 </pre>
 </div>
 
-<pre class="example" id="org46424ff">
+<pre class="example" id="org91d50ac">
 | film_id | title             | rental_rate |
 |---------+-------------------+-------------|
 | 133     | Chamber Italian   | 4.99        |
@@ -1397,7 +1397,7 @@ as an expression:
 </pre>
 </div>
 
-<pre class="example" id="org77bd059">
+<pre class="example" id="orgaa64756">
 | film_id | title             | rental_rate |
 |---------+-------------------+-------------|
 | 133     | Chamber Italian   | 4.99        |
@@ -1414,8 +1414,8 @@ as an expression:
 </div>
 
 <ul class="org-ul">
-<li><a id="org70b7727"></a>Subquery using <code>IN</code><br />
-<div class="outline-text-5" id="text-org70b7727">
+<li><a id="org24c7d79"></a>Subquery using <code>IN</code><br />
+<div class="outline-text-5" id="text-org24c7d79">
 <p>
 We as a subquery can return a table as well, we can use the table output in another query,
 for example, consider the following query to get the movies that returned date better
@@ -1433,7 +1433,7 @@ for example, consider the following query to get the movies that returned date b
 </pre>
 </div>
 
-<pre class="example" id="org5039dd6">
+<pre class="example" id="org89e6292">
 | film_id |
 |---------|
 | 870     |
@@ -1473,7 +1473,7 @@ those fimls:
 </pre>
 </div>
 
-<pre class="example" id="orgd674935">
+<pre class="example" id="orgb5e8572">
 | film_id | title             |
 |---------+-------------------|
 | 307     | Fellowship Autumn |
@@ -1492,9 +1492,9 @@ those fimls:
 </ul>
 </div>
 
-<div id="outline-container-orgd0052d7" class="outline-4">
-<h4 id="orgd0052d7">Exist</h4>
-<div class="outline-text-4" id="text-orgd0052d7">
+<div id="outline-container-org83b12b6" class="outline-4">
+<h4 id="org83b12b6">Exist</h4>
+<div class="outline-text-4" id="text-org83b12b6">
 <p>
 The <code>EXIST</code> operator is a boolean operator that returns the existence or rows in a subquery,
 its syntax looks like the following:
@@ -1529,7 +1529,7 @@ than 11:
 </pre>
 </div>
 
-<pre class="example" id="org2d6542f">
+<pre class="example" id="org753517e">
 | first_name | last_name |
 |------------+-----------|
 | Kent       | Arsenault |
@@ -1554,7 +1554,7 @@ Of course we can implement it using <code>inner join</code>:
 </pre>
 </div>
 
-<pre class="example" id="org81ac284">
+<pre class="example" id="org2271d36">
 | first_name | last_name |
 |------------+-----------|
 | Kent       | Arsenault |
@@ -1570,13 +1570,13 @@ Of course we can implement it using <code>inner join</code>:
 </div>
 </div>
 
-<div id="outline-container-orgf798ced" class="outline-3">
-<h3 id="orgf798ced">Tables Management</h3>
-<div class="outline-text-3" id="text-orgf798ced">
+<div id="outline-container-orgc1c0574" class="outline-3">
+<h3 id="orgc1c0574">Tables Management</h3>
+<div class="outline-text-3" id="text-orgc1c0574">
 </div>
-<div id="outline-container-org9b8df19" class="outline-4">
-<h4 id="org9b8df19">Upsert</h4>
-<div class="outline-text-4" id="text-org9b8df19">
+<div id="outline-container-org81982af" class="outline-4">
+<h4 id="org81982af">Upsert</h4>
+<div class="outline-text-4" id="text-org81982af">
 <p>
 The idea of Upsert in PostgreSQL is that when you insert a new row into a table, PostgreSQL
 will update the row if it already exists, otherwise it will insert the new row.
@@ -1644,9 +1644,9 @@ DO <span style="font-weight: bold;">UPDATE</span> <span style="font-weight: bold
 </div>
 </div>
 
-<div id="outline-container-org9199578" class="outline-4">
-<h4 id="org9199578">Alert</h4>
-<div class="outline-text-4" id="text-org9199578">
+<div id="outline-container-orgf028848" class="outline-4">
+<h4 id="orgf028848">Alert</h4>
+<div class="outline-text-4" id="text-orgf028848">
 <p>
 To change the structure of an existing table, you use PostgreSQL <code>ALTER TABLE</code> statement
 with the following
@@ -1660,8 +1660,8 @@ Using <code>ALERT</code> we can do many actions:
 </p>
 </div>
 <ul class="org-ul">
-<li><a id="org1da0b84"></a>Add a column<br />
-<div class="outline-text-5" id="text-org1da0b84">
+<li><a id="orgae8d0e6"></a>Add a column<br />
+<div class="outline-text-5" id="text-orgae8d0e6">
 <p>
 To add a new column to an existing table, you use the <code>ALTER TABLE ADD COLUMN</code> statement as
 follows:
@@ -1674,8 +1674,8 @@ follows:
 </div>
 </li>
 
-<li><a id="org8f79fa8"></a>Drop a Column<br />
-<div class="outline-text-5" id="text-org8f79fa8">
+<li><a id="orgab67f9d"></a>Drop a Column<br />
+<div class="outline-text-5" id="text-orgab67f9d">
 <p>
 To drop a column from a table, you use <code>ALTER TABLE DROP COLUMN</code> statement:
 </p>
@@ -1687,8 +1687,8 @@ To drop a column from a table, you use <code>ALTER TABLE DROP COLUMN</code> stat
 </div>
 </li>
 
-<li><a id="org9b05c70"></a>Rename a Column<br />
-<div class="outline-text-5" id="text-org9b05c70">
+<li><a id="org95be01c"></a>Rename a Column<br />
+<div class="outline-text-5" id="text-org95be01c">
 <p>
 To rename a column, you use the <code>ALTER TABLE RENAME COLUMN TO</code> statement:
 </p>
@@ -1701,16 +1701,16 @@ RENAME <span style="font-weight: bold;">COLUMN</span> <span style="font-weight: 
 </div>
 </li>
 
-<li><a id="orgdfcfe07"></a>Rename a Table<br />
-<div class="outline-text-5" id="text-orgdfcfe07">
+<li><a id="org2ba854f"></a>Rename a Table<br />
+<div class="outline-text-5" id="text-org2ba854f">
 <p>
 ALTER TABLE table<sub>name</sub>
 RENAME TO new<sub>table</sub><sub>name</sub>;
 </p>
 </div>
 </li>
-<li><a id="org1890961"></a>Change The Type of a Column<br />
-<div class="outline-text-5" id="text-org1890961">
+<li><a id="org2668d4e"></a>Change The Type of a Column<br />
+<div class="outline-text-5" id="text-org2668d4e">
 <p>
 To change the data type of a column, you use the <code>ALTER TABLE</code> statement as follows:
 </p>
@@ -1722,8 +1722,8 @@ To change the data type of a column, you use the <code>ALTER TABLE</code> statem
 </div>
 </li>
 
-<li><a id="orgdd37e11"></a>Change The Default Value of a Column<br />
-<div class="outline-text-5" id="text-orgdd37e11">
+<li><a id="org55685f6"></a>Change The Default Value of a Column<br />
+<div class="outline-text-5" id="text-org55685f6">
 <p>
 To change a default value of the column, you use ALTER TABLE ALTER COLUMN SET DEFAULT or
 DROP DEFAULT:
@@ -1737,8 +1737,8 @@ DROP DEFAULT:
 </div>
 </li>
 
-<li><a id="org725c192"></a>Change <code>NOT NULL</code> Constrain<br />
-<div class="outline-text-5" id="text-org725c192">
+<li><a id="org7a621d5"></a>Change <code>NOT NULL</code> Constrain<br />
+<div class="outline-text-5" id="text-org7a621d5">
 <div class="org-src-container">
 <pre class="src src-sql"><span style="font-weight: bold;">ALTER</span> <span style="font-weight: bold;">TABLE</span> <span style="font-weight: bold;">table_name</span>
 <span style="font-weight: bold;">ALTER</span> <span style="font-weight: bold;">COLUMN</span> <span style="font-weight: bold;">column_name</span>
@@ -1747,8 +1747,8 @@ DROP DEFAULT:
 </div>
 </div>
 </li>
-<li><a id="orgd6bf51c"></a>Add Constrain<br />
-<div class="outline-text-5" id="text-orgd6bf51c">
+<li><a id="org760297d"></a>Add Constrain<br />
+<div class="outline-text-5" id="text-org760297d">
 <div class="org-src-container">
 <pre class="src src-sql"><span style="font-weight: bold;">ALTER</span> <span style="font-weight: bold;">TABLE</span> <span style="font-weight: bold;">table_name</span>
 <span style="font-weight: bold;">ADD</span> <span style="font-weight: bold;">CONSTRAINT</span> <span style="font-weight: bold;">constraint_name</span> constraint_definition;
@@ -1757,8 +1757,8 @@ DROP DEFAULT:
 </div>
 </li>
 
-<li><a id="orgf0747f3"></a>Importing<br />
-<div class="outline-text-5" id="text-orgf0747f3">
+<li><a id="orgc4a0cdc"></a>Importing<br />
+<div class="outline-text-5" id="text-orgc4a0cdc">
 <p>
 To import <code>CVS</code>
 <a href="https://www.postgresqltutorial.com/export-postgresql-table-to-csv-file/">https://www.postgresqltutorial.com/export-postgresql-table-to-csv-file/</a>
@@ -1767,17 +1767,17 @@ To import <code>CVS</code>
 </li>
 </ul>
 </div>
-<div id="outline-container-org741340a" class="outline-4">
-<h4 id="org741340a">Truncate</h4>
-<div class="outline-text-4" id="text-org741340a">
+<div id="outline-container-org7042e40" class="outline-4">
+<h4 id="org7042e40">Truncate</h4>
+<div class="outline-text-4" id="text-org7042e40">
 <p>
 <a href="https://www.postgresqltutorial.com/postgresql-truncate-table/">https://www.postgresqltutorial.com/postgresql-truncate-table/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org957b1e8" class="outline-4">
-<h4 id="org957b1e8">Temporary Tables</h4>
-<div class="outline-text-4" id="text-org957b1e8">
+<div id="outline-container-org2b58328" class="outline-4">
+<h4 id="org2b58328">Temporary Tables</h4>
+<div class="outline-text-4" id="text-org2b58328">
 <p>
 <a href="https://www.postgresqltutorial.com/postgresql-temporary-table/">https://www.postgresqltutorial.com/postgresql-temporary-table/</a>
 To remove all data from a table, you use the DELETE statement. However, when you use the
@@ -1790,13 +1790,13 @@ efficient. In this case, you need to use the TRUNCATE TABLE statement:
 </div>
 </div>
 </div>
-<div id="outline-container-org9eabbc2" class="outline-4">
-<h4 id="org9eabbc2">Other Utilities</h4>
-<div class="outline-text-4" id="text-org9eabbc2">
+<div id="outline-container-org75e6798" class="outline-4">
+<h4 id="org75e6798">Other Utilities</h4>
+<div class="outline-text-4" id="text-org75e6798">
 </div>
 <ul class="org-ul">
-<li><a id="org821dc5d"></a>Delete<br />
-<div class="outline-text-5" id="text-org821dc5d">
+<li><a id="orge5ba7a0"></a>Delete<br />
+<div class="outline-text-5" id="text-orge5ba7a0">
 <p>
 The PostgreSQL DELETE statement allows you to delete one or more rows from a table with the
 following syntax:
@@ -1809,8 +1809,8 @@ following syntax:
 </div>
 </li>
 
-<li><a id="org7edaf75"></a>Update<br />
-<div class="outline-text-5" id="text-org7edaf75">
+<li><a id="org4ad8b8a"></a>Update<br />
+<div class="outline-text-5" id="text-org4ad8b8a">
 <p>
 We use the <code>UPDATE</code> statement to modify data in a table with the following syntax:
 </p>
@@ -1839,16 +1839,16 @@ RETURNING * | output_expression <span style="font-weight: bold;">AS</span> outpu
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="org54fbbb4"></a><span class="todo TODO">TODO</span> Update Join<br /></li>
+<li><a id="org1c28c07"></a><span class="todo TODO">TODO</span> Update Join<br /></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd137664" class="outline-3">
-<h3 id="orgd137664">Logging</h3>
-<div class="outline-text-3" id="text-orgd137664">
+<div id="outline-container-org6ee71e9" class="outline-3">
+<h3 id="org6ee71e9">Logging</h3>
+<div class="outline-text-3" id="text-org6ee71e9">
 <p>
 PostgreSQL log<sub>statement</sub> parameter is basically related to error and reporting to log error,
 warning and database queries, we can log<sub>statement</sub> in PostgreSQL as per options we
@@ -1870,7 +1870,7 @@ queries of database server. Log<sub>statement</sub> is important parameter in Po
 </div>
 
 
-<div id="orgff0f999" class="figure">
+<div id="org0d6c7af" class="figure">
 <p><img src="Introduction_into_PostgreSQL/2022-03-14_01-46-27_screenshot.png" alt="2022-03-14_01-46-27_screenshot.png" />
 </p>
 </div>
@@ -1891,16 +1891,16 @@ show log_statement;
 
 
 
-<div id="org373a7a9" class="figure">
+<div id="orga41d898" class="figure">
 <p><img src="Introduction_into_PostgreSQL/2022-03-14_01-47-23_screenshot.png" alt="2022-03-14_01-47-23_screenshot.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org8f431b4" class="outline-3">
-<h3 id="org8f431b4">Check</h3>
-<div class="outline-text-3" id="text-org8f431b4">
+<div id="outline-container-org471fdcd" class="outline-3">
+<h3 id="org471fdcd">Check</h3>
+<div class="outline-text-3" id="text-org471fdcd">
 <ul class="org-ul">
 <li><a href="https://www.postgresql.org/docs/current/datatype.html">Data Types</a></li>
 <li><a href="https://www.postgresql.org/docs/9.5/sql-createsequence.html">Sequence</a></li>

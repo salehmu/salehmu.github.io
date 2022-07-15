@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Computer Science</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Computer Science</h1>
+
+<div id="outline-container-orgf08f537" class="outline-2">
+<h2 id="orgf08f537"><a href="computer-science/buildAPI.html">(2022-04-02) Building a RESTful API with ASP.NET Core</a></h2>
+<div class="outline-text-2" id="text-orgf08f537">
+<p>
+The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you
+will, APIs by the their RESTful maturity. So it's interesting to look at it, as it shows us
+how we can go from a simple API that doesn't really care about protocol, nor standards. To
+an API, that can be considered RESTful.
+</p>
+</div>
+</div>
+<div id="outline-container-org829752d" class="outline-2">
+<h2 id="org829752d"><a href="computer-science/ef.html">(2022-03-21) Entity Framework</a></h2>
+<div class="outline-text-2" id="text-org829752d">
+<p>
+Entity Framework Core, or EF Core, is a library that software developers can use to
+access databases. There are many ways to build such a library, but EF Core is
+designed as an object-relational mapper (O/RM). O/RMs work by mapping between
+two worlds: the relational database, with its own API, and the object-oriented soft-
+ware world of classes and software code. EF Core’s main strength is allowing software
+developers to write database access code quickly in a language that you may know
+better than SQL.
+</p>
+</div>
+</div>
+<div id="outline-container-org4dc2fe2" class="outline-2">
+<h2 id="org4dc2fe2"><a href="computer-science/files.html">(2022-02-28) Working With Files and Streams in C#</a></h2>
+<div class="outline-text-2" id="text-org4dc2fe2">
+<p>
+I was thinking in the first place to make this file just a part of the major C# note file,
+but I believe that I might and will face a lot of filesystem topics, however I'm sure I will
+not ever solve such a problem using C# (don't shout, microsoft kid), but surely it will be
+useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn't know
+it).
+</p>
+</div>
+</div>
+<div id="outline-container-org7fb8bf9" class="outline-2">
+<h2 id="org7fb8bf9"><a href="computer-science/json.html">(2022-02-14) JSON in C# Using Json.NET</a></h2>
+<div class="outline-text-2" id="text-org7fb8bf9">
+<p>
+One of the most popular .NET libraries for working with the JSON serialization
+format is Newtonsoft.Json, known as Json.NET. It is mature and powerful.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd9ec274" class="outline-2">
+<h2 id="orgd9ec274"><a href="computer-science/ptrns.html">(2022-01-15) Design Patterns</a></h2>
+<div class="outline-text-2" id="text-orgd9ec274">
+<p>
+<i>Based on  Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph
+Johnson and John Vlissides</i>
+</p>
+</div>
+</div>
+<div id="outline-container-orgf7468c8" class="outline-2">
+<h2 id="orgf7468c8"><a href="computer-science/s.html">(2022-01-10) System Analysis &amp; Design</a></h2>
+<div class="outline-text-2" id="text-orgf7468c8">
+<p>
+The systems development life cycle (SDLC), contains the fundamental four- phase model
+(planning, analysis, design, and implementation) common to all information  systems
+development projects. It describes the evolution of system development method- ologies and
+discusses the roles and skills required of a systems analyst. Th e chapter then  overviews
+the basic characteristics of object-oriented systems and the fundamentals of object-oriented
+systems analysis and design and closes with a description of the Unified Process and its
+extentions and Unified Modeling Language
+</p>
+</div>
+</div>
+<div id="outline-container-orgc9778a1" class="outline-2">
+<h2 id="orgc9778a1"><a href="computer-science/csharp.html">(2022-01-09) .NET Notes in C#</a></h2>
+<div class="outline-text-2" id="text-orgc9778a1">
+<p>
+C# indicates the end of a statement with a semicolon. A statement can be composed of
+multiple variables and expressions. For example, in the following statement, <code>totalPrice</code> is a
+variable and <code>subtotal + salesTax</code> is an expression:
+</p>
+</div>
+</div>
+<div id="outline-container-org7ef7e94" class="outline-2">
+<h2 id="org7ef7e94"><a href="computer-science/psql.html">(2022-01-09) PostgreSQL Notes</a></h2>
+<div class="outline-text-2" id="text-org7ef7e94">
+<p>
+PostgreSQL mini-cookbook
+</p>
+</div>
+</div>
+<div id="outline-container-orgba2778e" class="outline-2">
+<h2 id="orgba2778e"><a href="computer-science/linq.html">(2022-01-09) LINQ Notes</a></h2>
+<div class="outline-text-2" id="text-orgba2778e">
+<p>
+The original motivation behind LINQ was to address the conceptual and tech- nical
+difficulties encountered when using databases with .NET programming lan- guages. With LINQ,
+Microsoft’s intention was to provide a solution for the problem of object-relational
+mapping, as well as to simplify the interaction between objects and data sources. LINQ
+eventually evolved into a general-purpose language-integrated querying toolset. This toolset
+can be used to access data com- ing from in-memory objects (LINQ to Objects), databases
+(LINQ to SQL), XML documents (LINQ to XML), a file-system, or any other source.
+</p>
+</div>
+</div>
+<div id="outline-container-org443d3b2" class="outline-2">
+<h2 id="org443d3b2"><a href="computer-science/concruncy.html">(2022-01-09) Concurrency in C#</a></h2>
+<div class="outline-text-2" id="text-org443d3b2">
+<p>
+The following text is based on <i>Concurrency in C# Cookbook: Asynchronous, Parallel, and
+Multithreaded Programming</i> by Stephen Cleary
+</p>
+</div>
+</div>
+<div id="outline-container-org9871474" class="outline-2">
+<h2 id="org9871474"><a href="computer-science/go.html">(2022-01-09) GO Notes</a></h2>
+<div class="outline-text-2" id="text-org9871474">
+<p>
+GO programming language notes. Reading Adam Freeman's Pro Go.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf989ee1" class="outline-2">
+<h2 id="orgf989ee1"><a href="computer-science/graph.html">(2022-01-04) Representations, Implementations and Algorithms of Graphs (and Trees)</a></h2>
+<div class="outline-text-2" id="text-orgf989ee1">
+<p>
+Introduction to Grahps
+</p>
+</div>
+</div>
+<div id="outline-container-org2bc9328" class="outline-2">
+<h2 id="org2bc9328"><a href="computer-science/gmtry.html">(2021-12-18) Introduction to Non-theoretical Computational Geometry</a></h2>
+<div class="outline-text-2" id="text-org2bc9328">
+<p>
+Based on TopCoder's thrive and <a href="https://www.ti.inf.ethz.ch/ew/courses/CG13/index.html">Computational Geometry (252-1425-00L) HS13</a> lecture notes.
+</p>
+</div>
+</div>
+<div id="outline-container-org53a633d" class="outline-2">
+<h2 id="org53a633d"><a href="computer-science/dp.html">(2021-05-31) Dynamic Programming</a></h2>
+<div class="outline-text-2" id="text-org53a633d">
+<p>
+Follows:
+Roofgarden, T. (2019). <i>Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic
+Programming</i> (Illustrated ed.). Soundlikeyourself Publishing, LLC. <a href="https://www.youtube.com/channel/UCcH4Ga14Y4ELFKrEYM1vXCg/videos">Channel @ YouTube.com</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org8a8ae45" class="outline-2">
+<h2 id="org8a8ae45"><a href="computer-science/API.html">(2021-03-22) Designing RESTful APIs</a></h2>
+<div class="outline-text-2" id="text-org8a8ae45">
+<p>
+I'm not going to talk about how to implement these web APIs, but talk about the design
+aspects of how to design them so that they're easier to use and easier to maintain. The goal
+here is for you to understand REST's role in creation of this API, not to simply adhere to
+the dogma that surrounds REST. I want to introduce you to a way of designing APIs that's
+pragmatic and simple.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcb8179f" class="outline-2">
+<h2 id="orgcb8179f"><a href="computer-science/db.html">(2021-03-05) Relational Database Design &amp; Modeling</a></h2>
+<div class="outline-text-2" id="text-orgcb8179f">
+<p>
+Nowadays, when people talk about a database, they usually refer to a Relational database,
+but that has not always been the case. In fact, the term database is defined, by the Merriam
+Webster English dictionary as, a "usually large collection of data organized especially for
+rapid search and retrieval (as by a computer)". The Relational model is one way to organize
+a large collection of data, but not the only one.
+</p>
+</div>
+</div>
+<div id="outline-container-org8486fe0" class="outline-2">
+<h2 id="org8486fe0"><a href="computer-science/tree.html">(2021-01-04) Binary Tree Algorithms</a></h2>
+<div class="outline-text-2" id="text-org8486fe0">
+<p>
+Introduction into binary trees algorithms
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>
