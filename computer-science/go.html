@@ -26,83 +26,83 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5111a30">Introduction</a></li>
-<li><a href="#orgd1db7cf">get-go</a>
+<li><a href="#org8773a33">Introduction</a></li>
+<li><a href="#org6ee6663">get-go</a>
 <ul>
-<li><a href="#orgf9773dc">Define a Data Type</a></li>
-<li><a href="#org28d8aa5">Using The Go Tools</a>
+<li><a href="#orga313027">Define a Data Type</a></li>
+<li><a href="#orgcb220ec">Using The Go Tools</a>
 <ul>
-<li><a href="#org832ebe2">Creating a Go Project</a></li>
-<li><a href="#orgac753f0">Semicolons and Errors in Go Code</a></li>
-<li><a href="#orgeb0e6fd">Defining a Module</a></li>
-<li><a href="#orgf0388f4">Linting Go Code</a></li>
-<li><a href="#org8aa20c2">Fixing Common Problems in Go</a></li>
+<li><a href="#orge7b177d">Creating a Go Project</a></li>
+<li><a href="#org67cb0ef">Semicolons and Errors in Go Code</a></li>
+<li><a href="#org6791b22">Defining a Module</a></li>
+<li><a href="#orga2dc939">Linting Go Code</a></li>
+<li><a href="#org4d4c996">Fixing Common Problems in Go</a></li>
 </ul>
 </li>
-<li><a href="#org1b8671d">Types, Values, Pointers</a>
+<li><a href="#orgb5bbc34">Types, Values, Pointers</a>
 <ul>
-<li><a href="#org365dfd5">Basic Data Types</a></li>
-<li><a href="#org2823c9e">Variables</a></li>
-<li><a href="#org25285f1">Pointers</a></li>
-<li><a href="#orgafaaabc">Flow Control</a></li>
+<li><a href="#org69ea99b">Basic Data Types</a></li>
+<li><a href="#org85c1212">Variables</a></li>
+<li><a href="#orge7a9c15">Pointers</a></li>
+<li><a href="#orgc488502">Flow Control</a></li>
 </ul>
 </li>
-<li><a href="#orgbb5a157">Collection Types</a>
+<li><a href="#org568c0fb">Collection Types</a>
 <ul>
-<li><a href="#org808caab">Slices</a></li>
+<li><a href="#org9d4874d">Slices</a></li>
 </ul>
 </li>
-<li><a href="#org0146003">Functions</a>
+<li><a href="#orgf79bea4">Functions</a>
 <ul>
-<li><a href="#org6d4b0e1"><code>defer</code></a></li>
+<li><a href="#org0365cd7"><code>defer</code></a></li>
 </ul>
 </li>
-<li><a href="#org16979f2">Struct</a></li>
-<li><a href="#org1ffda6f"><span class="todo TODO">TODO</span> Interfaces</a></li>
-<li><a href="#org5cc15a8">Packages</a>
+<li><a href="#org104771c">Struct</a></li>
+<li><a href="#orgf14c1ea"><span class="todo TODO">TODO</span> Interfaces</a></li>
+<li><a href="#org3496c52">Packages</a>
 <ul>
-<li><a href="#org8d6f223">Package Conflicts</a></li>
-<li><a href="#org2bd5ebe">Package Initialization</a></li>
+<li><a href="#org6181268">Package Conflicts</a></li>
+<li><a href="#orgbef284b">Package Initialization</a></li>
 </ul>
 </li>
-<li><a href="#org15bbc69">Interface Composition</a></li>
-<li><a href="#org863e9d0">Goroutines</a>
+<li><a href="#org5473775">Interface Composition</a></li>
+<li><a href="#org312563d">Goroutines</a>
 <ul>
-<li><a href="#org2abe530">Receiving Without Blocking</a></li>
+<li><a href="#org1b62d7c">Receiving Without Blocking</a></li>
 </ul>
 </li>
-<li><a href="#orgc4a3dfa">Error Handling</a></li>
+<li><a href="#orgd26a005">Error Handling</a></li>
 </ul>
 </li>
-<li><a href="#orga6881a0"><span class="todo TODO">TODO</span> Go Standard Library</a>
+<li><a href="#org5e12789"><span class="todo TODO">TODO</span> Go Standard Library</a>
 <ul>
-<li><a href="#org9d2c6bf">String</a>
+<li><a href="#org8d2b606">String</a>
 <ul>
-<li><a href="#org29a1c38">Compare Strings</a></li>
-<li><a href="#org397f114">Builder</a></li>
+<li><a href="#org04d321c">Compare Strings</a></li>
+<li><a href="#org3f4c2d1">Builder</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org277a010">Misc</a>
+<li><a href="#org9c1d485">Misc</a>
 <ul>
-<li><a href="#org2c291ac">Type Converting</a>
+<li><a href="#org4bc0a44">Type Converting</a>
 <ul>
-<li><a href="#org250f238">Converting Numbers to Strings</a></li>
-<li><a href="#org2f05ccf">Converting Strings to Intgers</a></li>
+<li><a href="#orgc7d0e64">Converting Numbers to Strings</a></li>
+<li><a href="#org40bd2e6">Converting Strings to Intgers</a></li>
 </ul>
 </li>
-<li><a href="#org4ea6b88">Type Assertions vs Type Conversion</a></li>
+<li><a href="#org0c70b65">Type Assertions vs Type Conversion</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5111a30" class="outline-2">
-<h2 id="org5111a30">Introduction</h2>
-<div class="outline-text-2" id="text-org5111a30">
-<div class="PREVIEW" id="org328e522">
+<div id="outline-container-org8773a33" class="outline-2">
+<h2 id="org8773a33">Introduction</h2>
+<div class="outline-text-2" id="text-org8773a33">
+<div class="PREVIEW" id="orgfc1c3e8">
 <p>
 GO programming language notes. Reading Adam Freeman's Pro Go.
 </p>
@@ -112,9 +112,9 @@ GO programming language notes. Reading Adam Freeman's Pro Go.
 </div>
 
 
-<div id="outline-container-orgd1db7cf" class="outline-2">
-<h2 id="orgd1db7cf">get-go</h2>
-<div class="outline-text-2" id="text-orgd1db7cf">
+<div id="outline-container-org6ee6663" class="outline-2">
+<h2 id="org6ee6663">get-go</h2>
+<div class="outline-text-2" id="text-org6ee6663">
 <p>
 Open a command prompt, navigate to a convenient location, and create a folder named
 partyinvites.  Navigate to the partyinvites folder and run the command shown in Listing 1-2
@@ -193,9 +193,9 @@ tasks in one step. The application produces the following output:
 </div>
 </div>
 
-<div id="outline-container-orgf9773dc" class="outline-3">
-<h3 id="orgf9773dc">Define a Data Type</h3>
-<div class="outline-text-3" id="text-orgf9773dc">
+<div id="outline-container-orga313027" class="outline-3">
+<h3 id="orga313027">Define a Data Type</h3>
+<div class="outline-text-3" id="text-orga313027">
 <p>
 The next step is to create a custom data type that will represent the RSVP responses, as
 shown:
@@ -294,9 +294,9 @@ it.
 </div>
 </div>
 
-<div id="outline-container-org28d8aa5" class="outline-3">
-<h3 id="org28d8aa5">Using The Go Tools</h3>
-<div class="outline-text-3" id="text-org28d8aa5">
+<div id="outline-container-orgcb220ec" class="outline-3">
+<h3 id="orgcb220ec">Using The Go Tools</h3>
+<div class="outline-text-3" id="text-orgcb220ec">
 <p>
 The go command provides access to all the features needed to compile and execute Go code and
 is used throughout this book. The argument used with the go command specifies the operation
@@ -374,9 +374,9 @@ most useful ones
 </table>
 </div>
 
-<div id="outline-container-org832ebe2" class="outline-4">
-<h4 id="org832ebe2">Creating a Go Project</h4>
-<div class="outline-text-4" id="text-org832ebe2">
+<div id="outline-container-orge7b177d" class="outline-4">
+<h4 id="orge7b177d">Creating a Go Project</h4>
+<div class="outline-text-4" id="text-orge7b177d">
 <p>
 Go projects don’t have an elaborate structure and are quick to set up. Open a new command
 prompt and create a folder named tools in a convenient location. Add a file named main.go to
@@ -402,7 +402,7 @@ The following figure illustrates the key elements in the main.go file
 </p>
 
 
-<div id="orga68af6a" class="figure">
+<div id="orgd882d60" class="figure">
 <p><img src="Using_The_Go_Tools/2022-06-17_14-21-51_screenshot.png" alt="2022-06-17_14-21-51_screenshot.png" />
 </p>
 </div>
@@ -430,9 +430,9 @@ execution begins in a command-line application
 </div>
 </div>
 
-<div id="outline-container-orgac753f0" class="outline-4">
-<h4 id="orgac753f0">Semicolons and Errors in Go Code</h4>
-<div class="outline-text-4" id="text-orgac753f0">
+<div id="outline-container-org67cb0ef" class="outline-4">
+<h4 id="org67cb0ef">Semicolons and Errors in Go Code</h4>
+<div class="outline-text-4" id="text-org67cb0ef">
 <p>
 You may have noticed that I didn't append a semicolon in the previous code.
 Go has an unusual approach to semicolons: they are required to terminate code statements, but they
@@ -499,9 +499,9 @@ remove semicolons and adjust other formatting issues.
 </div>
 </div>
 
-<div id="outline-container-orgeb0e6fd" class="outline-4">
-<h4 id="orgeb0e6fd">Defining a Module</h4>
-<div class="outline-text-4" id="text-orgeb0e6fd">
+<div id="outline-container-org6791b22" class="outline-4">
+<h4 id="org6791b22">Defining a Module</h4>
+<div class="outline-text-4" id="text-org6791b22">
 <p>
 The previous section demonstrated that you can get `tarted just by creating a code file, but
 a more common approach is to create a Go module, which is the conventional first step when
@@ -522,9 +522,9 @@ the project can be built and executed using a period, indicating the project in 
 </div>
 </div>
 
-<div id="outline-container-orgf0388f4" class="outline-4">
-<h4 id="orgf0388f4">Linting Go Code</h4>
-<div class="outline-text-4" id="text-orgf0388f4">
+<div id="outline-container-orga2dc939" class="outline-4">
+<h4 id="orga2dc939">Linting Go Code</h4>
+<div class="outline-text-4" id="text-orga2dc939">
 <p>
 A linter is a tool that checks code files using a set of rules that describe problems that
 cause confusion, produce unexpected results, or reduce the readability of the code. The most
@@ -549,8 +549,8 @@ the command shown:
 </div>
 
 <ul class="org-ul">
-<li><a id="org0e8c73f"></a>On Linting<br />
-<div class="outline-text-5" id="text-org0e8c73f">
+<li><a id="orgf20bd05"></a>On Linting<br />
+<div class="outline-text-5" id="text-orgf20bd05">
 <p>
 Linters can be a powerful tool for good, especially in a development team with mixed levels of skill and
 experience. Linters can detect common problems and subtle errors that lead to unexpected behavior
@@ -581,8 +581,8 @@ productivity is not achieved by slavishly enforcing arbitrary rules, however wel
 </div>
 </li>
 
-<li><a id="orgc155f25"></a>Using the Linter<br />
-<div class="outline-text-5" id="text-orgc155f25">
+<li><a id="org55e2910"></a>Using the Linter<br />
+<div class="outline-text-5" id="text-org55e2910">
 <p>
 The main.go file is so simple that it doesn’t have any problems for the linter to highlight.
 Add the following statements, which are legal Go code that does not comply with
@@ -660,8 +660,8 @@ Hello, Go01234
 </div>
 </li>
 
-<li><a id="orgf8b41d8"></a>Disabling Linter Rules<br />
-<div class="outline-text-5" id="text-orgf8b41d8">
+<li><a id="org8db66a7"></a>Disabling Linter Rules<br />
+<div class="outline-text-5" id="text-org8db66a7">
 <p>
 The revive package can be configured using comments in code files, disabling one or more
 rules for sections of code. I have used comments to disable the rule that causes the warning
@@ -750,9 +750,9 @@ character before the entry that enables the exported rule.
 </ul>
 </div>
 
-<div id="outline-container-org8aa20c2" class="outline-4">
-<h4 id="org8aa20c2">Fixing Common Problems in Go</h4>
-<div class="outline-text-4" id="text-org8aa20c2">
+<div id="outline-container-org4d4c996" class="outline-4">
+<h4 id="org4d4c996">Fixing Common Problems in Go</h4>
+<div class="outline-text-4" id="text-org4d4c996">
 <p>
 The go vet command identifies statements likely to be mistakes. Unlike a linter, which will
 often focus on style issues, the go vet command finds code that compiles but that probably
@@ -844,9 +844,9 @@ go vet -json .
 </div>
 </div>
 
-<div id="outline-container-org1b8671d" class="outline-3">
-<h3 id="org1b8671d">Types, Values, Pointers</h3>
-<div class="outline-text-3" id="text-org1b8671d">
+<div id="outline-container-orgb5bbc34" class="outline-3">
+<h3 id="orgb5bbc34">Types, Values, Pointers</h3>
+<div class="outline-text-3" id="text-orgb5bbc34">
 <p>
 The folloing table puts the basic Go features in context.
 </p>
@@ -931,9 +931,9 @@ The output from the code will always be the same value.
 </p>
 </div>
 
-<div id="outline-container-org365dfd5" class="outline-4">
-<h4 id="org365dfd5">Basic Data Types</h4>
-<div class="outline-text-4" id="text-org365dfd5">
+<div id="outline-container-org69ea99b" class="outline-4">
+<h4 id="org69ea99b">Basic Data Types</h4>
+<div class="outline-text-4" id="text-org69ea99b">
 <p>
 Go provides a set of basic data types, which are described in the table.
 These types are the foundation of Go development, and many of
@@ -1106,9 +1106,9 @@ func main() {
 </div>
 </div>
 
-<div id="outline-container-org2823c9e" class="outline-4">
-<h4 id="org2823c9e">Variables</h4>
-<div class="outline-text-4" id="text-org2823c9e">
+<div id="outline-container-org85c1212" class="outline-4">
+<h4 id="org85c1212">Variables</h4>
+<div class="outline-text-4" id="text-org85c1212">
 <p>
 Variables are defined using the var keyword, and, unlike constants, the value assigned to a
 variable can be changed, as shown:
@@ -1165,8 +1165,8 @@ func main() {
 </div>
 
 <ul class="org-ul">
-<li><a id="org3e6f45e"></a>Short Variable Declaration Syntax<br />
-<div class="outline-text-5" id="text-org3e6f45e">
+<li><a id="orgb39bbb4"></a>Short Variable Declaration Syntax<br />
+<div class="outline-text-5" id="text-orgb39bbb4">
 <p>
 The short variable declaration provides a shorthand for declaring variables, as shown:
 </p>
@@ -1245,8 +1245,8 @@ func main() {
 </div>
 </li>
 
-<li><a id="org5aa2fdb"></a>Blank Declaration<br />
-<div class="outline-text-5" id="text-org5aa2fdb">
+<li><a id="org040a294"></a>Blank Declaration<br />
+<div class="outline-text-5" id="text-org040a294">
 <p>
 It is illegal in Go to define a variable and not use it:
 </p>
@@ -1308,9 +1308,9 @@ func f() (int, int, int) {
 </ul>
 </div>
 
-<div id="outline-container-org25285f1" class="outline-4">
-<h4 id="org25285f1">Pointers</h4>
-<div class="outline-text-4" id="text-org25285f1">
+<div id="outline-container-orge7a9c15" class="outline-4">
+<h4 id="orge7a9c15">Pointers</h4>
+<div class="outline-text-4" id="text-orge7a9c15">
 <p>
 Pointers are often misunderstood, especially if you have come to Go from a language such as
 Java or C#, where pointers are used behind the scenes but carefully hidden from the
@@ -1362,8 +1362,8 @@ to access the wrong location or a location outside of the memory allocated to th
 </div>
 
 <ul class="org-ul">
-<li><a id="orgbe53897"></a>Some Operators<br />
-<div class="outline-text-5" id="text-orgbe53897">
+<li><a id="org88f187e"></a>Some Operators<br />
+<div class="outline-text-5" id="text-org88f187e">
 <p>
 Go doesn’t allow types to be mixed in operations and will not automatically convert types,
 except in the case of untyped constants. To show how the compiler responds to mixed data
@@ -1431,9 +1431,9 @@ combinations, such as converting int values to bool values, are not supported.
 </ul>
 </div>
 
-<div id="outline-container-orgafaaabc" class="outline-4">
-<h4 id="orgafaaabc">Flow Control</h4>
-<div class="outline-text-4" id="text-orgafaaabc">
+<div id="outline-container-orgc488502" class="outline-4">
+<h4 id="orgc488502">Flow Control</h4>
+<div class="outline-text-4" id="text-orgc488502">
 <p>
 The flow of execution in a Go application is simple to understand, especially when the
 application is as simple as the example. The statements defined in the special main
@@ -1487,9 +1487,9 @@ Price: 275
 </div>
 </div>
 
-<div id="outline-container-orgbb5a157" class="outline-3">
-<h3 id="orgbb5a157">Collection Types</h3>
-<div class="outline-text-3" id="text-orgbb5a157">
+<div id="outline-container-org568c0fb" class="outline-3">
+<h3 id="org568c0fb">Collection Types</h3>
+<div class="outline-text-3" id="text-org568c0fb">
 <p>
 Go arrays are a fixed length and contain elements of a single type, which are accessed by
 index,
@@ -1569,9 +1569,9 @@ func main() {
 </div>
 </div>
 
-<div id="outline-container-org808caab" class="outline-4">
-<h4 id="org808caab">Slices</h4>
-<div class="outline-text-4" id="text-org808caab">
+<div id="outline-container-org9d4874d" class="outline-4">
+<h4 id="org9d4874d">Slices</h4>
+<div class="outline-text-4" id="text-org9d4874d">
 <p>
 The best way to think of slices is as a variable-length array because they are useful when
 you don’t know how many values you need to store or when the number changes over time. One
@@ -1624,7 +1624,7 @@ both 3:
 </p>
 
 
-<div id="orgbdca71e" class="figure">
+<div id="orge02673f" class="figure">
 <p><img src="Collection_Types/2022-06-23_15-40-45_screenshot.png" alt="2022-06-23_15-40-45_screenshot.png" />
 </p>
 </div>
@@ -1699,8 +1699,8 @@ allNames [Shblanga Lifejacket Paddle Hat]
 </pre>
 </div>
 <ul class="org-ul">
-<li><a id="org9e2bf9e"></a>The Copy Function<br />
-<div class="outline-text-5" id="text-org9e2bf9e">
+<li><a id="orgbd71c33"></a>The Copy Function<br />
+<div class="outline-text-5" id="text-orgbd71c33">
 <div class="org-src-container">
 <pre class="src src-go">package main
 import "fmt"
@@ -1724,9 +1724,9 @@ allNames [Lifejacket Paddle Hat]
 </ul>
 </div>
 </div>
-<div id="outline-container-org0146003" class="outline-3">
-<h3 id="org0146003">Functions</h3>
-<div class="outline-text-3" id="text-org0146003">
+<div id="outline-container-orgf79bea4" class="outline-3">
+<h3 id="orgf79bea4">Functions</h3>
+<div class="outline-text-3" id="text-orgf79bea4">
 <p>
 Functions are groups of statements that can be used and reused as a single action. To get started
 define a simple function:
@@ -1753,9 +1753,9 @@ Price: 275 Tax: 55
 Function complete
 </pre>
 </div>
-<div id="outline-container-org6d4b0e1" class="outline-4">
-<h4 id="org6d4b0e1"><code>defer</code></h4>
-<div class="outline-text-4" id="text-org6d4b0e1">
+<div id="outline-container-org0365cd7" class="outline-4">
+<h4 id="org0365cd7"><code>defer</code></h4>
+<div class="outline-text-4" id="text-org0365cd7">
 <p>
 The defer keyword is used to schedule a function call that will be performed immediately before the current
 function returns, as shown
@@ -1795,9 +1795,9 @@ Total: 323.95
 </div>
 </div>
 </div>
-<div id="outline-container-org16979f2" class="outline-3">
-<h3 id="org16979f2">Struct</h3>
-<div class="outline-text-3" id="text-org16979f2">
+<div id="outline-container-org104771c" class="outline-3">
+<h3 id="org104771c">Struct</h3>
+<div class="outline-text-3" id="text-org104771c">
 <p>
 Custom data types are defined using the Go structs feature:
 </p>
@@ -1839,12 +1839,12 @@ choice during coding. Neither approach is better, and the results are essentiall
 </p>
 </div>
 </div>
-<div id="outline-container-org1ffda6f" class="outline-3">
-<h3 id="org1ffda6f"><span class="todo TODO">TODO</span> Interfaces</h3>
+<div id="outline-container-orgf14c1ea" class="outline-3">
+<h3 id="orgf14c1ea"><span class="todo TODO">TODO</span> Interfaces</h3>
 </div>
-<div id="outline-container-org5cc15a8" class="outline-3">
-<h3 id="org5cc15a8">Packages</h3>
-<div class="outline-text-3" id="text-org5cc15a8">
+<div id="outline-container-org3496c52" class="outline-3">
+<h3 id="org3496c52">Packages</h3>
+<div class="outline-text-3" id="text-org3496c52">
 <p>
 The first step for all the example projects in this book has been to create a module file,
 which was done with the command:
@@ -1975,9 +1975,9 @@ func (taxRate *taxRate) calcTax(product *Product) float64 {
 </pre>
 </div>
 </div>
-<div id="outline-container-org8d6f223" class="outline-4">
-<h4 id="org8d6f223">Package Conflicts</h4>
-<div class="outline-text-4" id="text-org8d6f223">
+<div id="outline-container-org6181268" class="outline-4">
+<h4 id="org6181268">Package Conflicts</h4>
+<div class="outline-text-4" id="text-org6181268">
 <p>
 When a package is imported, the combination of the module name and package name ensures that
 the package is uniquely identified. But only the package name is used when accessing the
@@ -2048,9 +2048,9 @@ func main() {
 </div>
 </div>
 </div>
-<div id="outline-container-org2bd5ebe" class="outline-4">
-<h4 id="org2bd5ebe">Package Initialization</h4>
-<div class="outline-text-4" id="text-org2bd5ebe">
+<div id="outline-container-orgbef284b" class="outline-4">
+<h4 id="orgbef284b">Package Initialization</h4>
+<div class="outline-text-4" id="text-orgbef284b">
 <p>
 Each code file can contain an initialization function that is executed only when all
 packages have been loaded and all other initialization—such as defining constants and
@@ -2093,8 +2093,8 @@ func (taxRate *taxRate) calcTax(product *Product) (price float64) {
 </div>
 </div>
 <ul class="org-ul">
-<li><a id="orgcaba2fb"></a>Import Package For Intialization<br />
-<div class="outline-text-5" id="text-orgcaba2fb">
+<li><a id="orge62366f"></a>Import Package For Intialization<br />
+<div class="outline-text-5" id="text-orge62366f">
 <p>
 Go prevents packages from being imported but not used, which can be a problem if you rely on
 the effect of an initialization function but don’t need to use any of the features the
@@ -2145,9 +2145,9 @@ func main() {
 </ul>
 </div>
 </div>
-<div id="outline-container-org15bbc69" class="outline-3">
-<h3 id="org15bbc69">Interface Composition</h3>
-<div class="outline-text-3" id="text-org15bbc69">
+<div id="outline-container-org5473775" class="outline-3">
+<h3 id="org5473775">Interface Composition</h3>
+<div class="outline-text-3" id="text-org5473775">
 <p>
 If you are used to languages such as C# or Java, then you will have created a base class and
 created subclasses to add more specific features. The subclasses inherit functionality from
@@ -2240,9 +2240,9 @@ type Boat struct {
 </div>
 </div>
 </div>
-<div id="outline-container-org863e9d0" class="outline-3">
-<h3 id="org863e9d0">Goroutines</h3>
-<div class="outline-text-3" id="text-org863e9d0">
+<div id="outline-container-org312563d" class="outline-3">
+<h3 id="org312563d">Goroutines</h3>
+<div class="outline-text-3" id="text-org312563d">
 <p>
 Go has excellent support for writing concurrent applications, using features that are
 simpler and more intuitive than any other language I have used. In this chapter, I describe
@@ -2344,7 +2344,7 @@ its path by executing one statement at a time.
 
 
 
-<div id="org5fbc4aa" class="figure">
+<div id="org9e547cd" class="figure">
 <p><img src="Goroutines/2022-07-10_18-02-28_screenshot.png" alt="2022-07-10_18-02-28_screenshot.png" />
 </p>
 </div>
@@ -2430,7 +2430,7 @@ be executed asynchronously, as shown in:
 </p>
 
 
-<div id="org35b5871" class="figure">
+<div id="org21ef3e8" class="figure">
 <p><img src="Goroutines/2022-07-10_18-25-31_screenshot.png" alt="2022-07-10_18-25-31_screenshot.png" />
 </p>
 </div>
@@ -2447,7 +2447,7 @@ shown:
 
 
 
-<div id="org87c3fc2" class="figure">
+<div id="org824b65b" class="figure">
 <p><img src="Goroutines/2022-07-10_18-30-17_screenshot.png" alt="2022-07-10_18-30-17_screenshot.png" />
 </p>
 </div>
@@ -2593,9 +2593,9 @@ channel. The direction of the arrow for a channel specifies the direction of flo
 <li><code>&lt;- chan</code>  :only reading from channel (input channel)</li>
 </ul>
 </div>
-<div id="outline-container-org2abe530" class="outline-4">
-<h4 id="org2abe530">Receiving Without Blocking</h4>
-<div class="outline-text-4" id="text-org2abe530">
+<div id="outline-container-org1b62d7c" class="outline-4">
+<h4 id="org1b62d7c">Receiving Without Blocking</h4>
+<div class="outline-text-4" id="text-org1b62d7c">
 <p>
 The simplest use for select statements is to receive from a channel without blocking,
 ensuring that a goroutine won’t have to wait when the channel is empty.
@@ -2641,9 +2641,9 @@ func main() {
 </div>
 </div>
 </div>
-<div id="outline-container-orgc4a3dfa" class="outline-3">
-<h3 id="orgc4a3dfa">Error Handling</h3>
-<div class="outline-text-3" id="text-orgc4a3dfa">
+<div id="outline-container-orgd26a005" class="outline-3">
+<h3 id="orgd26a005">Error Handling</h3>
+<div class="outline-text-3" id="text-orgd26a005">
 <p>
 This file defines a custom type named Product, an alias for a slice of *Product values, and
 a slice populated using the literal syntax. I have also defined a function to format float64
@@ -2725,22 +2725,22 @@ Running Total: $0.00
 </div>
 </div>
 
-<div id="outline-container-orga6881a0" class="outline-2">
-<h2 id="orga6881a0"><span class="todo TODO">TODO</span> Go Standard Library</h2>
-<div class="outline-text-2" id="text-orga6881a0">
+<div id="outline-container-org5e12789" class="outline-2">
+<h2 id="org5e12789"><span class="todo TODO">TODO</span> Go Standard Library</h2>
+<div class="outline-text-2" id="text-org5e12789">
 </div>
-<div id="outline-container-org9d2c6bf" class="outline-3">
-<h3 id="org9d2c6bf">String</h3>
-<div class="outline-text-3" id="text-org9d2c6bf">
+<div id="outline-container-org8d2b606" class="outline-3">
+<h3 id="org8d2b606">String</h3>
+<div class="outline-text-3" id="text-org8d2b606">
 <p>
 The strings package provides a set of functions for processing strings. In the sections that
 follow, I describe the most useful features of the strings package and demonstrate their
 use.
 </p>
 </div>
-<div id="outline-container-org29a1c38" class="outline-4">
-<h4 id="org29a1c38">Compare Strings</h4>
-<div class="outline-text-4" id="text-org29a1c38">
+<div id="outline-container-org04d321c" class="outline-4">
+<h4 id="org04d321c">Compare Strings</h4>
+<div class="outline-text-4" id="text-org04d321c">
 <p>
 The <code>strings</code> packages provides comparison functions;
 </p>
@@ -2793,9 +2793,9 @@ The <code>strings</code> packages provides comparison functions;
 </table>
 </div>
 </div>
-<div id="outline-container-org397f114" class="outline-4">
-<h4 id="org397f114">Builder</h4>
-<div class="outline-text-4" id="text-org397f114">
+<div id="outline-container-org3f4c2d1" class="outline-4">
+<h4 id="org3f4c2d1">Builder</h4>
+<div class="outline-text-4" id="text-org3f4c2d1">
 <div class="org-src-container">
 <pre class="src src-go">type Builder struct {
 	// contains filtered or unexported fields
@@ -2842,13 +2842,13 @@ func main() {
 </div>
 </div>
 </div>
-<div id="outline-container-org277a010" class="outline-2">
-<h2 id="org277a010">Misc</h2>
-<div class="outline-text-2" id="text-org277a010">
+<div id="outline-container-org9c1d485" class="outline-2">
+<h2 id="org9c1d485">Misc</h2>
+<div class="outline-text-2" id="text-org9c1d485">
 </div>
-<div id="outline-container-org2c291ac" class="outline-3">
-<h3 id="org2c291ac">Type Converting</h3>
-<div class="outline-text-3" id="text-org2c291ac">
+<div id="outline-container-org4bc0a44" class="outline-3">
+<h3 id="org4bc0a44">Type Converting</h3>
+<div class="outline-text-3" id="text-org4bc0a44">
 <p>
 In Go, data types are used to classify one particular type of data, determining the values
 that you can assign to the type and the operations you can perform on it. When programming,
@@ -2872,9 +2872,9 @@ Assume that you have an <code>int8</code> and you need to convert it to an <code
 wrapping it in the <code>int32()</code> type conversion:
 </p>
 </div>
-<div id="outline-container-org250f238" class="outline-4">
-<h4 id="org250f238">Converting Numbers to Strings</h4>
-<div class="outline-text-4" id="text-org250f238">
+<div id="outline-container-orgc7d0e64" class="outline-4">
+<h4 id="orgc7d0e64">Converting Numbers to Strings</h4>
+<div class="outline-text-4" id="text-orgc7d0e64">
 <p>
 You can convert numbers to strings by using the <code>strconv.Itoa</code> method from the strconv package
 in the Go standard libary. If you pass either a number or a variable into the parentheses of
@@ -2906,9 +2906,9 @@ func main() {
 </pre>
 </div>
 </div>
-<div id="outline-container-org2f05ccf" class="outline-4">
-<h4 id="org2f05ccf">Converting Strings to Intgers</h4>
-<div class="outline-text-4" id="text-org2f05ccf">
+<div id="outline-container-org40bd2e6" class="outline-4">
+<h4 id="org40bd2e6">Converting Strings to Intgers</h4>
+<div class="outline-text-4" id="text-org40bd2e6">
 <div class="org-src-container">
 <pre class="src src-go">package main
 
@@ -2956,9 +2956,9 @@ the error and exit the program.
 </div>
 </div>
 </div>
-<div id="outline-container-org4ea6b88" class="outline-3">
-<h3 id="org4ea6b88">Type Assertions vs Type Conversion</h3>
-<div class="outline-text-3" id="text-org4ea6b88">
+<div id="outline-container-org0c70b65" class="outline-3">
+<h3 id="org0c70b65">Type Assertions vs Type Conversion</h3>
+<div class="outline-text-3" id="text-org0c70b65">
 <p>
 Type assertions and type conversions seem to be a confusing topic in Go, since they both
 seem to do the same thing.
@@ -3015,7 +3015,7 @@ assertion returns its original <code>string</code> type.
 
 
 
-<div id="org7c1d4c2" class="figure">
+<div id="org4c5ed98" class="figure">
 <p><img src="Misc/2022-07-16_08-08-42_screenshot.png" alt="2022-07-16_08-08-42_screenshot.png" />
 </p>
 </div>
