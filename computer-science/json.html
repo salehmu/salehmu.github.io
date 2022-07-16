@@ -25,46 +25,46 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge4382de">Introduction</a>
+<li><a href="#org1868d66">Introduction</a>
 <ul>
-<li><a href="#orge3766c4">Json Specification</a></li>
+<li><a href="#org3552a29">Json Specification</a></li>
 </ul>
 </li>
-<li><a href="#orgd32a774">Serialization &amp; Deserialization</a>
+<li><a href="#org89f6518">Serialization &amp; Deserialization</a>
 <ul>
-<li><a href="#org40d5fe2">Basic Serialization</a></li>
-<li><a href="#org5865463"><code>PreserveReferencesHandling</code></a></li>
-<li><a href="#org4a7721f">Reading and Writing JSON</a>
+<li><a href="#org59a44fc">Basic Serialization</a></li>
+<li><a href="#orgd192c31"><code>PreserveReferencesHandling</code></a></li>
+<li><a href="#org7ab13da">Reading and Writing JSON</a>
 <ul>
-<li><a href="#orgb7e04b3"><code>JsonSerializer</code> Class</a></li>
-<li><a href="#org73381f4"><code>JsonTextReader</code> Class</a></li>
-<li><a href="#org0e65c12"><code>JsonTextWriter</code> Class</a></li>
-<li><a href="#org1810125">Date with JSON</a></li>
-<li><a href="#org486fc65">Error Handling</a></li>
+<li><a href="#orga0625a0"><code>JsonSerializer</code> Class</a></li>
+<li><a href="#orge40bd03"><code>JsonTextReader</code> Class</a></li>
+<li><a href="#org7813339"><code>JsonTextWriter</code> Class</a></li>
+<li><a href="#org1d49907">Date with JSON</a></li>
+<li><a href="#orge3f69ad">Error Handling</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org546d3cc">Settings &amp; Attributes</a>
+<li><a href="#org4d801a8">Settings &amp; Attributes</a>
 <ul>
-<li><a href="#org6d53077">Serialization Settings</a>
+<li><a href="#org7a43c0e">Serialization Settings</a>
 <ul>
-<li><a href="#orga0b7884"><code>MissingMemberHandling</code></a></li>
-<li><a href="#org6abfca4"><code>ReferenceLoopHandling</code></a></li>
-<li><a href="#orgf657f99"><code>DefaultValueHandling</code></a></li>
-<li><a href="#org18b3e13"><code>ObjectCreationHandling</code></a></li>
-<li><a href="#org7fa0e57"><code>TypeNameHandling</code></a></li>
-<li><a href="#orgd31bd27"><span class="todo TODO">TODO</span> <code>SerializationBinder</code></a></li>
+<li><a href="#org4a03721"><code>MissingMemberHandling</code></a></li>
+<li><a href="#orga88ed5c"><code>ReferenceLoopHandling</code></a></li>
+<li><a href="#org7dda0ea"><code>DefaultValueHandling</code></a></li>
+<li><a href="#org40e76ba"><code>ObjectCreationHandling</code></a></li>
+<li><a href="#org8beb7ec"><code>TypeNameHandling</code></a></li>
+<li><a href="#org4bf2c0c"><span class="todo TODO">TODO</span> <code>SerializationBinder</code></a></li>
 </ul>
 </li>
-<li><a href="#org3148368"><span class="todo TODO">TODO</span> Serialization Attributes</a></li>
+<li><a href="#org393df22"><span class="todo TODO">TODO</span> Serialization Attributes</a></li>
 </ul>
 </li>
-<li><a href="#org28f4e0c">See Also</a></li>
+<li><a href="#org95b7831">See Also</a></li>
 </ul>
 </div>
 </div>
-<div class="PREVIEW" id="org4afc27c">
+<div class="PREVIEW" id="orgf3317a3">
 <p>
 One of the most popular .NET libraries for working with the JSON serialization
 format is Newtonsoft.Json, known as Json.NET. It is mature and powerful.
@@ -72,9 +72,9 @@ format is Newtonsoft.Json, known as Json.NET. It is mature and powerful.
 
 </div>
 
-<div id="outline-container-orge4382de" class="outline-2">
-<h2 id="orge4382de">Introduction</h2>
-<div class="outline-text-2" id="text-orge4382de">
+<div id="outline-container-org1868d66" class="outline-2">
+<h2 id="org1868d66">Introduction</h2>
+<div class="outline-text-2" id="text-org1868d66">
 <p>
 Let's start by defining what JSON is. JSON stands for JavaScript Object Notation.  It is a
 data interchange format that is used to transmit and store serialized information.  One
@@ -130,9 +130,9 @@ quite lightweight make JSON very suitable and one of the preferred formats for d
 exchange, which is why JSON is used in a large number of APIs.
 </p>
 </div>
-<div id="outline-container-orge3766c4" class="outline-3">
-<h3 id="orge3766c4">Json Specification</h3>
-<div class="outline-text-3" id="text-orge3766c4">
+<div id="outline-container-org3552a29" class="outline-3">
+<h3 id="org3552a29">Json Specification</h3>
+<div class="outline-text-3" id="text-org3552a29">
 <p>
 JSON is a text format for the serialization of structured data as a collection of name‑value
 pairs.  JSON can represent four primitive types, which are strings, numbers, Booleans, and
@@ -166,13 +166,13 @@ comment syntax.
 </div>
 </div>
 </div>
-<div id="outline-container-orgd32a774" class="outline-2">
-<h2 id="orgd32a774">Serialization &amp; Deserialization</h2>
-<div class="outline-text-2" id="text-orgd32a774">
+<div id="outline-container-org89f6518" class="outline-2">
+<h2 id="org89f6518">Serialization &amp; Deserialization</h2>
+<div class="outline-text-2" id="text-org89f6518">
 </div>
-<div id="outline-container-org40d5fe2" class="outline-3">
-<h3 id="org40d5fe2">Basic Serialization</h3>
-<div class="outline-text-3" id="text-org40d5fe2">
+<div id="outline-container-org59a44fc" class="outline-3">
+<h3 id="org59a44fc">Basic Serialization</h3>
+<div class="outline-text-3" id="text-org59a44fc">
 <p>
 Serialization and deserialization involve taking a data structure or object and converting
 it back and forth between JSON text and .NET objects. A .NET object, when serialized,can be
@@ -378,9 +378,9 @@ Just like magic!
 </div>
 </div>
 
-<div id="outline-container-org5865463" class="outline-3">
-<h3 id="org5865463"><code>PreserveReferencesHandling</code></h3>
-<div class="outline-text-3" id="text-org5865463">
+<div id="outline-container-orgd192c31" class="outline-3">
+<h3 id="orgd192c31"><code>PreserveReferencesHandling</code></h3>
+<div class="outline-text-3" id="text-orgd192c31">
 <p>
 These settings can best be explained by example. Let's say that we want to represent a
 hierarchy of employees in a company. So we make a simple class like this:
@@ -629,9 +629,9 @@ We get:
 </div>
 </div>
 
-<div id="outline-container-org4a7721f" class="outline-3">
-<h3 id="org4a7721f">Reading and Writing JSON</h3>
-<div class="outline-text-3" id="text-org4a7721f">
+<div id="outline-container-org7ab13da" class="outline-3">
+<h3 id="org7ab13da">Reading and Writing JSON</h3>
+<div class="outline-text-3" id="text-org7ab13da">
 <p>
 I showed you how easy it is to convert between JSON text and .NET object using JsonConvert.
 I showed you a setting or two, but I didn't go into too many details. JsonConvert is very
@@ -646,9 +646,9 @@ generating JSON data. I will also cover now JsonTextWriter.
 </p>
 </div>
 
-<div id="outline-container-orgb7e04b3" class="outline-4">
-<h4 id="orgb7e04b3"><code>JsonSerializer</code> Class</h4>
-<div class="outline-text-4" id="text-orgb7e04b3">
+<div id="outline-container-orga0625a0" class="outline-4">
+<h4 id="orga0625a0"><code>JsonSerializer</code> Class</h4>
+<div class="outline-text-4" id="text-orga0625a0">
 <p>
 You can use JsonSerializer class with a StreamWriter. If you don't know what a StreamWriter
 is, it's a class that allows you to write to files.  Create a new StreamWriter and provide
@@ -678,9 +678,9 @@ null value. You should be able to find the file in the running directory.
 </div>
 </div>
 
-<div id="outline-container-org73381f4" class="outline-4">
-<h4 id="org73381f4"><code>JsonTextReader</code> Class</h4>
-<div class="outline-text-4" id="text-org73381f4">
+<div id="outline-container-orge40bd03" class="outline-4">
+<h4 id="orge40bd03"><code>JsonTextReader</code> Class</h4>
+<div class="outline-text-4" id="text-orge40bd03">
 <p>
 JsonConvert, and ultimately, the Json Serializer class
 used reflection to convert from JSON text to .NET classes. Even though Json.NET is very
@@ -726,9 +726,9 @@ property name.
 </p>
 </div>
 </div>
-<div id="outline-container-org0e65c12" class="outline-4">
-<h4 id="org0e65c12"><code>JsonTextWriter</code> Class</h4>
-<div class="outline-text-4" id="text-org0e65c12">
+<div id="outline-container-org7813339" class="outline-4">
+<h4 id="org7813339"><code>JsonTextWriter</code> Class</h4>
+<div class="outline-text-4" id="text-org7813339">
 <p>
 With JsonConvert, you take one class, you make one
 call, and you get a JSON text. But what happens if you want to write your JSON text in a
@@ -775,9 +775,9 @@ Console.WriteLine(sb.ToString());
 </div>
 </div>
 
-<div id="outline-container-org1810125" class="outline-4">
-<h4 id="org1810125">Date with JSON</h4>
-<div class="outline-text-4" id="text-org1810125">
+<div id="outline-container-org1d49907" class="outline-4">
+<h4 id="org1d49907">Date with JSON</h4>
+<div class="outline-text-4" id="text-org1d49907">
 <p>
 Let's talk about a topic that confuses developers all the time when working with JSON dates.
 The thing is, that dates in JSON are tricky mainly because there is no date type, but it's
@@ -848,9 +848,9 @@ public void WriteJsonDates()
 </div>
 </div>
 </div>
-<div id="outline-container-org486fc65" class="outline-4">
-<h4 id="org486fc65">Error Handling</h4>
-<div class="outline-text-4" id="text-org486fc65">
+<div id="outline-container-orge3f69ad" class="outline-4">
+<h4 id="orge3f69ad">Error Handling</h4>
+<div class="outline-text-4" id="text-orge3f69ad">
 <p>
 Errors happen all the time, especially with JSON generated by a third party or one that
 you're picking up on a log or an API or some storage location. What's really good is that in
@@ -924,21 +924,21 @@ parents.
 </div>
 </div>
 
-<div id="outline-container-org546d3cc" class="outline-2">
-<h2 id="org546d3cc">Settings &amp; Attributes</h2>
-<div class="outline-text-2" id="text-org546d3cc">
+<div id="outline-container-org4d801a8" class="outline-2">
+<h2 id="org4d801a8">Settings &amp; Attributes</h2>
+<div class="outline-text-2" id="text-org4d801a8">
 </div>
-<div id="outline-container-org6d53077" class="outline-3">
-<h3 id="org6d53077">Serialization Settings</h3>
-<div class="outline-text-3" id="text-org6d53077">
+<div id="outline-container-org7a43c0e" class="outline-3">
+<h3 id="org7a43c0e">Serialization Settings</h3>
+<div class="outline-text-3" id="text-org7a43c0e">
 <p>
 JsonSerializer has a number of properties on it to customize how it serializes JSON. These
 can also be used with the methods on JsonConvert via the JsonSerializerSettings overloads.
 </p>
 </div>
-<div id="outline-container-orga0b7884" class="outline-4">
-<h4 id="orga0b7884"><code>MissingMemberHandling</code></h4>
-<div class="outline-text-4" id="text-orga0b7884">
+<div id="outline-container-org4a03721" class="outline-4">
+<h4 id="org4a03721"><code>MissingMemberHandling</code></h4>
+<div class="outline-text-4" id="text-org4a03721">
 <p>
 MissingMemberHandling controls how missing members, e.g. JSON contains a property that isn't
 a member on the object, are handled during deserialization.
@@ -1000,9 +1000,9 @@ Newtonsoft.Json.JsonSerializationException: Could not find member 'name' on obje
 </pre>
 </div>
 </div>
-<div id="outline-container-org6abfca4" class="outline-4">
-<h4 id="org6abfca4"><code>ReferenceLoopHandling</code></h4>
-<div class="outline-text-4" id="text-org6abfca4">
+<div id="outline-container-orga88ed5c" class="outline-4">
+<h4 id="orga88ed5c"><code>ReferenceLoopHandling</code></h4>
+<div class="outline-text-4" id="text-orga88ed5c">
 <p>
 NullValueHandling controls how null values on .NET objects are handled during serialization
 and how null values in JSON are handled during deserialization.
@@ -1064,9 +1064,9 @@ string ignored = JsonConvert.SerializeObject(movie,
 </div>
 </div>
 
-<div id="outline-container-orgf657f99" class="outline-4">
-<h4 id="orgf657f99"><code>DefaultValueHandling</code></h4>
-<div class="outline-text-4" id="text-orgf657f99">
+<div id="outline-container-org7dda0ea" class="outline-4">
+<h4 id="org7dda0ea"><code>DefaultValueHandling</code></h4>
+<div class="outline-text-4" id="text-org7dda0ea">
 <p>
 DefaultValueHandling controls how Json.NET uses default values set using the .NET
 DefaultValueAttribute when serializing and deserializing.
@@ -1144,12 +1144,12 @@ string ignored = JsonConvert.SerializeObject(invoice,
 
 
 <ul class="org-ul">
-<li><a id="org01c5185"></a><span class="todo TODO">TODO</span> Populate<br /></li>
+<li><a id="org3fced93"></a><span class="todo TODO">TODO</span> Populate<br /></li>
 </ul>
 </div>
-<div id="outline-container-org18b3e13" class="outline-4">
-<h4 id="org18b3e13"><code>ObjectCreationHandling</code></h4>
-<div class="outline-text-4" id="text-org18b3e13">
+<div id="outline-container-org40e76ba" class="outline-4">
+<h4 id="org40e76ba"><code>ObjectCreationHandling</code></h4>
+<div class="outline-text-4" id="text-org40e76ba">
 <p>
 Specifies how object creation is handled by the JsonSerializer. ObjectCreationHandling
 controls how objects are created and deserialized to during deserialization.
@@ -1187,9 +1187,9 @@ them during deserialization.
 </div>
 </div>
 </div>
-<div id="outline-container-org7fa0e57" class="outline-4">
-<h4 id="org7fa0e57"><code>TypeNameHandling</code></h4>
-<div class="outline-text-4" id="text-org7fa0e57">
+<div id="outline-container-org8beb7ec" class="outline-4">
+<h4 id="org8beb7ec"><code>TypeNameHandling</code></h4>
+<div class="outline-text-4" id="text-org8beb7ec">
 <p>
 <b>None:</b> By default Json.NET does not read or write type names during deserialization.
 </p>
@@ -1228,17 +1228,17 @@ serializing/deserializing automatically without having to write type names for e
 </div>
 </div>
 
-<div id="outline-container-orgd31bd27" class="outline-4">
-<h4 id="orgd31bd27"><span class="todo TODO">TODO</span> <code>SerializationBinder</code></h4>
+<div id="outline-container-org4bf2c0c" class="outline-4">
+<h4 id="org4bf2c0c"><span class="todo TODO">TODO</span> <code>SerializationBinder</code></h4>
 </div>
 </div>
-<div id="outline-container-org3148368" class="outline-3">
-<h3 id="org3148368"><span class="todo TODO">TODO</span> Serialization Attributes</h3>
+<div id="outline-container-org393df22" class="outline-3">
+<h3 id="org393df22"><span class="todo TODO">TODO</span> Serialization Attributes</h3>
 </div>
 </div>
-<div id="outline-container-org28f4e0c" class="outline-2">
-<h2 id="org28f4e0c">See Also</h2>
-<div class="outline-text-2" id="text-org28f4e0c">
+<div id="outline-container-org95b7831" class="outline-2">
+<h2 id="org95b7831">See Also</h2>
+<div class="outline-text-2" id="text-org95b7831">
 <ul class="org-ul">
 <li><a href="https://www.newtonsoft.com/json/help/html/SerializingJSONFragments.htm">Deserializing Partial JSON Fragments</a></li>
 </ul>
