@@ -16,8 +16,8 @@
   <a href='/index.html'>Home</a> /
   <a href='/archive.html'>Blog</a> /
   <a href='/fullbooks.html'>Books</a> /
-  <a href='/cs.html'>school notebook</a> /
-  <a href='/cinema.html'>Cinema</a>
+  <a href='/cinema.html'>Cinema</a> /
+  <a href='/cs.html'>School</a>
 </div>
 </div>
 <div id="content" class="content">
@@ -26,19 +26,19 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org576cd3a">Introduction, The Richardson Maturity Model</a></li>
-<li><a href="#org9a7fff9">Structuring Outer Facing Contract</a>
+<li><a href="#orgdecf690">Introduction, The Richardson Maturity Model</a></li>
+<li><a href="#org45e45cc">Structuring Outer Facing Contract</a>
 <ul>
-<li><a href="#orgbedfd7e">Status Codes</a>
+<li><a href="#org984f458">Status Codes</a>
 <ul>
-<li><a href="#orgf462311">Level 200</a></li>
-<li><a href="#org429ae49">Level 400</a></li>
+<li><a href="#org837354f">Level 200</a></li>
+<li><a href="#orgcd0f15c">Level 400</a></li>
 </ul>
 </li>
-<li><a href="#org375c3a3">Errors vs. Faults</a></li>
+<li><a href="#org93ab63f">Errors vs. Faults</a></li>
 </ul>
 </li>
-<li><a href="#org8eb4b0c">Getting Resources</a></li>
+<li><a href="#orgc2b21aa">Getting Resources</a></li>
 </ul>
 </div>
 </div>
@@ -46,10 +46,10 @@
 Check: <a href="https://github.com/salehmu/leet/blob/main/API/Designing%20RESTful%20API.org">Designing RESTful APIs</a>
 </p>
 
-<div id="outline-container-org576cd3a" class="outline-2">
-<h2 id="org576cd3a">Introduction, The Richardson Maturity Model</h2>
-<div class="outline-text-2" id="text-org576cd3a">
-<div class="PREVIEW" id="org29a21cb">
+<div id="outline-container-orgdecf690" class="outline-2">
+<h2 id="orgdecf690">Introduction, The Richardson Maturity Model</h2>
+<div class="outline-text-2" id="text-orgdecf690">
+<div class="PREVIEW" id="org6debabd">
 <p>
 The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you
 will, APIs by the their RESTful maturity. So it's interesting to look at it, as it shows us
@@ -112,9 +112,9 @@ and only when you reach level 3, you can start talking about the RESTful API.
 </div>
 </div>
 
-<div id="outline-container-org9a7fff9" class="outline-2">
-<h2 id="org9a7fff9">Structuring Outer Facing Contract</h2>
-<div class="outline-text-2" id="text-org9a7fff9">
+<div id="outline-container-org45e45cc" class="outline-2">
+<h2 id="org45e45cc">Structuring Outer Facing Contract</h2>
+<div class="outline-text-2" id="text-org45e45cc">
 <p>
 It consists of three big concept consumer of an API uses to interact with that API. First,
 resource identifiers, ie. the URIs where the resources can be found. That's combined with
@@ -195,9 +195,9 @@ other approaches possible as well, by the way, for example, implementing a syste
 can choose which author fields are returned in a resource.
 </p>
 </div>
-<div id="outline-container-orgbedfd7e" class="outline-3">
-<h3 id="orgbedfd7e">Status Codes</h3>
-<div class="outline-text-3" id="text-orgbedfd7e">
+<div id="outline-container-org984f458" class="outline-3">
+<h3 id="org984f458">Status Codes</h3>
+<div class="outline-text-3" id="text-org984f458">
 <p>
 We know by now that REST isn't a standard, but it does use standards. Status codes and when
 to use them are part of the HTTP standard. It's really important to get this right because
@@ -278,9 +278,9 @@ codes, but there's no reason to learn them by heart. We'll look into them when w
 them.
 </p>
 </div>
-<div id="outline-container-orgf462311" class="outline-4">
-<h4 id="orgf462311">Level 200</h4>
-<div class="outline-text-4" id="text-orgf462311">
+<div id="outline-container-org837354f" class="outline-4">
+<h4 id="org837354f">Level 200</h4>
+<div class="outline-text-4" id="text-org837354f">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -314,9 +314,9 @@ them.
 </table>
 </div>
 </div>
-<div id="outline-container-org429ae49" class="outline-4">
-<h4 id="org429ae49">Level 400</h4>
-<div class="outline-text-4" id="text-org429ae49">
+<div id="outline-container-orgcd0f15c" class="outline-4">
+<h4 id="orgcd0f15c">Level 400</h4>
+<div class="outline-text-4" id="text-orgcd0f15c">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -370,9 +370,9 @@ them.
 </div>
 </div>
 </div>
-<div id="outline-container-org375c3a3" class="outline-3">
-<h3 id="org375c3a3">Errors vs. Faults</h3>
-<div class="outline-text-3" id="text-org375c3a3">
+<div id="outline-container-org93ab63f" class="outline-3">
+<h3 id="org93ab63f">Errors vs. Faults</h3>
+<div class="outline-text-3" id="text-org93ab63f">
 <p>
 So, mistakes happen. These mistakes are then categorized in two categories, errors and
 faults. Errors are defined as a consumer of an API, like a web application, passing invalid
@@ -387,9 +387,9 @@ the overall API availability.
 </div>
 </div>
 </div>
-<div id="outline-container-org8eb4b0c" class="outline-2">
-<h2 id="org8eb4b0c">Getting Resources</h2>
-<div class="outline-text-2" id="text-org8eb4b0c">
+<div id="outline-container-orgc2b21aa" class="outline-2">
+<h2 id="orgc2b21aa">Getting Resources</h2>
+<div class="outline-text-2" id="text-orgc2b21aa">
 <p>
 When we design the outer-facing contract, we already learned that REST stops at that level.
 What lies underneath that outer-facing contract is of no importance to REST. From that, we

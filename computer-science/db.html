@@ -16,8 +16,8 @@
   <a href='/index.html'>Home</a> /
   <a href='/archive.html'>Blog</a> /
   <a href='/fullbooks.html'>Books</a> /
-  <a href='/cs.html'>school notebook</a> /
-  <a href='/cinema.html'>Cinema</a>
+  <a href='/cinema.html'>Cinema</a> /
+  <a href='/cs.html'>School</a>
 </div>
 </div>
 <div id="content" class="content">
@@ -26,38 +26,38 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0c49ad1">Relational Language</a>
+<li><a href="#org7cf9e89">Relational Language</a>
 <ul>
-<li><a href="#org7ea0b3f">Note on Atomism</a>
+<li><a href="#orgdcca6fe">Note on Atomism</a>
 <ul>
-<li><a href="#org366ff32">1. Multiple Values in One Column (list columns)</a></li>
-<li><a href="#orgeda168b">2. Complex Multi-Part Columns</a></li>
+<li><a href="#orga869de1">1. Multiple Values in One Column (list columns)</a></li>
+<li><a href="#orgb10b0bc">2. Complex Multi-Part Columns</a></li>
 </ul>
 </li>
-<li><a href="#org9b15d04">Keys</a></li>
-<li><a href="#org82f4bbc">Basic Terminology Table:</a></li>
+<li><a href="#org2a49da5">Keys</a></li>
+<li><a href="#orgaadf4c4">Basic Terminology Table:</a></li>
 </ul>
 </li>
-<li><a href="#orga72979b">Design</a>
+<li><a href="#orgd1d1d2b">Design</a>
 <ul>
-<li><a href="#orga9bf093">Introduction</a></li>
-<li><a href="#orgabf7381">The Relational Model</a></li>
-<li><a href="#org0253950">Overview of the Design Process</a>
+<li><a href="#orgf42e213">Introduction</a></li>
+<li><a href="#orgedf9592">The Relational Model</a></li>
+<li><a href="#org396d6d0">Overview of the Design Process</a>
 <ul>
-<li><a href="#org026e43e">Design Phases</a></li>
-<li><a href="#org67581ea">The Entity-Relationship Model</a></li>
+<li><a href="#org81db1c8">Design Phases</a></li>
+<li><a href="#orgcd0bd47">The Entity-Relationship Model</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org05735a8">TBC&#x2026;</a></li>
+<li><a href="#orgd0de7e7">TBC&#x2026;</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0c49ad1" class="outline-2">
-<h2 id="org0c49ad1">Relational Language</h2>
-<div class="outline-text-2" id="text-org0c49ad1">
+<div id="outline-container-org7cf9e89" class="outline-2">
+<h2 id="org7cf9e89">Relational Language</h2>
+<div class="outline-text-2" id="text-org7cf9e89">
 <p>
 A data model is a collection of conceptual tools for describing data, data relationships,
 data semantics, and consistency constraints. The relational model uses a collection of
@@ -103,7 +103,7 @@ identiﬁers such that the second course is a prerequisite for the ﬁrst course
 </p>
 
 
-<div id="org6fd952a" class="figure">
+<div id="orgeaa688f" class="figure">
 <p><img src="Relational_Language/2022-06-20_15-02-05_screenshot.png" alt="2022-06-20_15-02-05_screenshot.png" />
 </p>
 </div>
@@ -150,9 +150,9 @@ namely, the individual phone numbers in the set.
 </p>
 </div>
 
-<div id="outline-container-org7ea0b3f" class="outline-3">
-<h3 id="org7ea0b3f">Note on Atomism</h3>
-<div class="outline-text-3" id="text-org7ea0b3f">
+<div id="outline-container-orgdcca6fe" class="outline-3">
+<h3 id="orgdcca6fe">Note on Atomism</h3>
+<div class="outline-text-3" id="text-orgdcca6fe">
 <p>
 "Atomic" means "cannot be divided or split in smaller parts". Applied to 1NF this means that
 a column should not contain more than one value. It should not compose or combine values
@@ -164,9 +164,9 @@ This tipically regards 2 very common mistakes made by database designers:
 </p>
 </div>
 
-<div id="outline-container-org366ff32" class="outline-4">
-<h4 id="org366ff32">1. Multiple Values in One Column (list columns)</h4>
-<div class="outline-text-4" id="text-org366ff32">
+<div id="outline-container-orga869de1" class="outline-4">
+<h4 id="orga869de1">1. Multiple Values in One Column (list columns)</h4>
+<div class="outline-text-4" id="text-orga869de1">
 <p>
 columns that contain a list of values, tipically space or comma separated, like this blog post table:
 </p>
@@ -201,9 +201,9 @@ instead of adding a normalized related table (which often breaks existing applic
 
 
 
-<div id="outline-container-orgeda168b" class="outline-4">
-<h4 id="orgeda168b">2. Complex Multi-Part Columns</h4>
-<div class="outline-text-4" id="text-orgeda168b">
+<div id="outline-container-orgb10b0bc" class="outline-4">
+<h4 id="orgb10b0bc">2. Complex Multi-Part Columns</h4>
+<div class="outline-text-4" id="text-orgb10b0bc">
 <p>
 In this case one column contains different bits of information and could maybe be designed
 as a set of separate columns.
@@ -281,9 +281,9 @@ data and those situations where a predetermined structure is limiting.
 </div>
 </div>
 
-<div id="outline-container-org9b15d04" class="outline-3">
-<h3 id="org9b15d04">Keys</h3>
-<div class="outline-text-3" id="text-org9b15d04">
+<div id="outline-container-org2a49da5" class="outline-3">
+<h3 id="org2a49da5">Keys</h3>
+<div class="outline-text-3" id="text-org2a49da5">
 <p>
 We must have a way to specify how tuples within a given relation are distinguished.  This is
 expressed in terms of their attributes. That is, the values of the attribute values of a
@@ -338,9 +338,9 @@ are also referred to as primary key constraints.
 </div>
 
 
-<div id="outline-container-org82f4bbc" class="outline-3">
-<h3 id="org82f4bbc">Basic Terminology Table:</h3>
-<div class="outline-text-3" id="text-org82f4bbc">
+<div id="outline-container-orgaadf4c4" class="outline-3">
+<h3 id="orgaadf4c4">Basic Terminology Table:</h3>
+<div class="outline-text-3" id="text-orgaadf4c4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -397,14 +397,14 @@ are also referred to as primary key constraints.
 </div>
 
 
-<div id="outline-container-orga72979b" class="outline-2">
-<h2 id="orga72979b">Design</h2>
-<div class="outline-text-2" id="text-orga72979b">
+<div id="outline-container-orgd1d1d2b" class="outline-2">
+<h2 id="orgd1d1d2b">Design</h2>
+<div class="outline-text-2" id="text-orgd1d1d2b">
 </div>
-<div id="outline-container-orga9bf093" class="outline-3">
-<h3 id="orga9bf093">Introduction</h3>
-<div class="outline-text-3" id="text-orga9bf093">
-<div class="PREVIEW" id="org4097030">
+<div id="outline-container-orgf42e213" class="outline-3">
+<h3 id="orgf42e213">Introduction</h3>
+<div class="outline-text-3" id="text-orgf42e213">
+<div class="PREVIEW" id="orgcab51df">
 <p>
 Nowadays, when people talk about a database, they usually refer to a Relational database,
 but that has not always been the case. In fact, the term database is defined, by the Merriam
@@ -503,9 +503,9 @@ become the defector standard for generic data storage.
 </div>
 </div>
 
-<div id="outline-container-orgabf7381" class="outline-3">
-<h3 id="orgabf7381">The Relational Model</h3>
-<div class="outline-text-3" id="text-orgabf7381">
+<div id="outline-container-orgedf9592" class="outline-3">
+<h3 id="orgedf9592">The Relational Model</h3>
+<div class="outline-text-3" id="text-orgedf9592">
 <p>
 The Relational Model is based on mathematics or to be more precise, on Set Theory and
 First-order predicate logic. That doesn't mean you have to be a mathematician to use a
@@ -577,9 +577,9 @@ are not violated.
 </div>
 </div>
 
-<div id="outline-container-org0253950" class="outline-3">
-<h3 id="org0253950">Overview of the Design Process</h3>
-<div class="outline-text-3" id="text-org0253950">
+<div id="outline-container-org396d6d0" class="outline-3">
+<h3 id="org396d6d0">Overview of the Design Process</h3>
+<div class="outline-text-3" id="text-org396d6d0">
 <p>
 The task of creating a database application is a complex one, involving design of the
 database schema, design of the programs that access and update the data, and design of a
@@ -588,9 +588,9 @@ design process.
 </p>
 </div>
 
-<div id="outline-container-org026e43e" class="outline-4">
-<h4 id="org026e43e">Design Phases</h4>
-<div class="outline-text-4" id="text-org026e43e">
+<div id="outline-container-org81db1c8" class="outline-4">
+<h4 id="org81db1c8">Design Phases</h4>
+<div class="outline-text-4" id="text-org81db1c8">
 <p>
 For small applications, it may be feasible for a database designer who understands the
 application requirements to decide directly on the relations to be created, their
@@ -654,9 +654,9 @@ rest of the database application.
 </p>
 </div>
 </div>
-<div id="outline-container-org67581ea" class="outline-4">
-<h4 id="org67581ea">The Entity-Relationship Model</h4>
-<div class="outline-text-4" id="text-org67581ea">
+<div id="outline-container-orgcd0bd47" class="outline-4">
+<h4 id="orgcd0bd47">The Entity-Relationship Model</h4>
+<div class="outline-text-4" id="text-orgcd0bd47">
 <p>
 The entity-relationship (E-R) data model was developed to facilitate database design by
 allowing speciﬁcation of an enterprise schema that represents the overall logical struc-
@@ -680,8 +680,8 @@ instance, a person may have a person id property whose value uniquely identiﬁe
 </div>
 
 <ul class="org-ul">
-<li><a id="orge99a302"></a>Entity Set<br />
-<div class="outline-text-5" id="text-orge99a302">
+<li><a id="orgda05a40"></a>Entity Set<br />
+<div class="outline-text-5" id="text-orgda05a40">
 <p>
 An entity is a “thing” or “object” in the real world that is distinguishable from all other
 objects. For example, each person in a university is an entity. An entity has a set of prop-
@@ -717,8 +717,8 @@ Possible attributes of the course entity set are <i>course id, title, dept name,
 </div>
 
 
-<div id="outline-container-org05735a8" class="outline-2">
-<h2 id="org05735a8">TBC&#x2026;</h2>
+<div id="outline-container-orgd0de7e7" class="outline-2">
+<h2 id="orgd0de7e7">TBC&#x2026;</h2>
 </div>
 </div>
 <div id="postamble" class="status">
