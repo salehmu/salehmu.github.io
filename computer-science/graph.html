@@ -37,6 +37,7 @@
   <a href='/index.html'>Home</a> /
   <a href='/archive.html'>Blog</a> /
   <a href='/fullbooks.html'>Books</a> /
+  <a href='/cs.html'>school notebook</a> /
   <a href='/cinema.html'>Cinema</a>
 </div>
 </div>
@@ -46,57 +47,57 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgb63f5cd">Terminology</a></li>
+<li><a href="#org3e98e41">Terminology</a></li>
 <li><a href="#directed">Direction Relationships</a></li>
 <li><a href="#adjacency">Adjacency Matrix vs. Adjacency List</a></li>
-<li><a href="#org5334f2a">Multigraph (Multi-edges graph)</a></li>
-<li><a href="#org9666e30">Weighted Graph</a></li>
+<li><a href="#org406a909">Multigraph (Multi-edges graph)</a></li>
+<li><a href="#orgd59d248">Weighted Graph</a></li>
 <li><a href="#transpose">Transpose Graph</a></li>
 <li><a href="#sheet">Definition Sheet</a></li>
-<li><a href="#org923c942">Graph Traversal</a>
+<li><a href="#orgb277069">Graph Traversal</a>
 <ul>
-<li><a href="#org069d745">Depth First Search (DFS)</a></li>
-<li><a href="#orgb737758">Strongly Connected Components (SCC)</a>
+<li><a href="#orgabf801f">Depth First Search (DFS)</a></li>
+<li><a href="#org33dd53c">Strongly Connected Components (SCC)</a>
 <ul>
 <li><a href="#scc">Kosarju's Algorithm</a></li>
-<li><a href="#orgcc04add"><span class="todo TODO">TODO</span> Tarjan's Algorithm</a></li>
+<li><a href="#org5c7eedb"><span class="todo TODO">TODO</span> Tarjan's Algorithm</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga397111">Detecting Cycles</a>
+<li><a href="#orgf0085f7">Detecting Cycles</a>
 <ul>
-<li><a href="#orgac9bad9">Directed Graphs</a>
+<li><a href="#org4afffca">Directed Graphs</a>
 <ul>
-<li><a href="#org31c8ca7">Using Depth First Search</a></li>
+<li><a href="#orgcc41f72">Using Depth First Search</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#biconnected">Biconnected Components</a></li>
-<li><a href="#orgef72b7a">Problems</a>
+<li><a href="#org507233d">Problems</a>
 <ul>
-<li><a href="#org2a5bb40">Reach The Mother Vertex</a></li>
+<li><a href="#org5665856">Reach The Mother Vertex</a></li>
 </ul>
 </li>
-<li><a href="#org82b1fc1">TODOs Topics <code>[0/10]</code></a>
+<li><a href="#orgc415e8f">TODOs Topics <code>[0/10]</code></a>
 <ul>
-<li><a href="#org36a33ba"><span class="todo TODO">TODO</span> BFS</a></li>
-<li><a href="#orgdaf302f"><span class="todo TODO">TODO</span> Handling Disconnected graphs</a></li>
-<li><a href="#org0d7ed99"><span class="todo TODO">TODO</span> Bellman–Ford algorithm</a></li>
-<li><a href="#org8199828"><span class="todo TODO">TODO</span> Floyd–Warshall algorithm</a></li>
-<li><a href="#orgde3b53a"><span class="todo TODO">TODO</span> Union-Find Algorithm</a></li>
-<li><a href="#org0f2a8ec"><span class="todo TODO">TODO</span> Tarjan's strongly connected components algorithm</a></li>
-<li><a href="#orgd3c96a7"><span class="todo TODO">TODO</span> Shortest Path</a></li>
-<li><a href="#orge75d49c"><span class="todo TODO">TODO</span> Longest Path</a></li>
-<li><a href="#orgbe0c549"><span class="todo TODO">TODO</span> Tree</a></li>
-<li><a href="#org13562a1"><span class="todo TODO">TODO</span> Tree Diamteter <i>(aka. Logest Path)</i></a></li>
+<li><a href="#org1ba0cb3"><span class="todo TODO">TODO</span> BFS</a></li>
+<li><a href="#org7c07234"><span class="todo TODO">TODO</span> Handling Disconnected graphs</a></li>
+<li><a href="#org7083991"><span class="todo TODO">TODO</span> Bellman–Ford algorithm</a></li>
+<li><a href="#orgc5ddb6f"><span class="todo TODO">TODO</span> Floyd–Warshall algorithm</a></li>
+<li><a href="#orgee13692"><span class="todo TODO">TODO</span> Union-Find Algorithm</a></li>
+<li><a href="#orga75397b"><span class="todo TODO">TODO</span> Tarjan's strongly connected components algorithm</a></li>
+<li><a href="#org4b91d13"><span class="todo TODO">TODO</span> Shortest Path</a></li>
+<li><a href="#orga0b6680"><span class="todo TODO">TODO</span> Longest Path</a></li>
+<li><a href="#orgf482c80"><span class="todo TODO">TODO</span> Tree</a></li>
+<li><a href="#org90144c5"><span class="todo TODO">TODO</span> Tree Diamteter <i>(aka. Logest Path)</i></a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="PREVIEW" id="orga75bdf8">
+<div class="PREVIEW" id="orgd9e1c5b">
 <p>
 Introduction to Grahps
 </p>
@@ -104,9 +105,9 @@ Introduction to Grahps
 </div>
 
 
-<div id="outline-container-orgb63f5cd" class="outline-2">
-<h2 id="orgb63f5cd">Terminology</h2>
-<div class="outline-text-2" id="text-orgb63f5cd">
+<div id="outline-container-org3e98e41" class="outline-2">
+<h2 id="org3e98e41">Terminology</h2>
+<div class="outline-text-2" id="text-org3e98e41">
 <p>
 A graph \(G = (V, E)\) consists of a set of vertices \(V\) and a set of edges \(E\), such that each edge
 in \(E\) is a connection between a pair of vertices in \(V\)<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> The number of vertices is
@@ -117,7 +118,7 @@ edges is called dense. A graph containing all possible edges is said to be compl
 
 
 
-<div id="org61357e3" class="figure">
+<div id="orgeeb5698" class="figure">
 <p><img src="Terminology/2022-01-03_18-06-48_screenshot.png" alt="2022-01-03_18-06-48_screenshot.png" />
 </p>
 </div>
@@ -145,7 +146,7 @@ the path is simple, except for the first and last vertices being the same.
 
 
 
-<div id="orga54eb70" class="figure">
+<div id="orga9420cf" class="figure">
 <p><img src="Terminology/2022-01-03_18-10-42_screenshot.png" alt="2022-01-03_18-10-42_screenshot.png" />
 </p>
 </div>
@@ -188,7 +189,7 @@ matrix are \(O (|V|^2)\).
 </p>
 
 
-<div id="orgb4289b1" class="figure">
+<div id="org2228bb6" class="figure">
 <p><img src="Terminology/2022-01-03_18-30-11_screenshot.png" alt="2022-01-03_18-30-11_screenshot.png" />
 </p>
 </div>
@@ -224,7 +225,7 @@ like:
 </p>
 
 
-<div id="org7ad4832" class="figure">
+<div id="org0718f2b" class="figure">
 <p><img src="Direction_Relationships/2022-01-03_19-11-01_screenshot.png" alt="2022-01-03_19-11-01_screenshot.png" />
 </p>
 </div>
@@ -237,7 +238,7 @@ linked to the other one:
 </p>
 
 
-<div id="orgbd26f32" class="figure">
+<div id="orgb1f2e87" class="figure">
 <p><img src="Direction_Relationships/2022-01-03_19-16-44_screenshot.png" alt="2022-01-03_19-16-44_screenshot.png" />
 </p>
 </div>
@@ -455,9 +456,9 @@ Here's a comparison between each representation:
 </div>
 </div>
 
-<div id="outline-container-org5334f2a" class="outline-2">
-<h2 id="org5334f2a">Multigraph (Multi-edges graph)</h2>
-<div class="outline-text-2" id="text-org5334f2a">
+<div id="outline-container-org406a909" class="outline-2">
+<h2 id="org406a909">Multigraph (Multi-edges graph)</h2>
+<div class="outline-text-2" id="text-org406a909">
 <p>
 Multigraph is an obscure data structure, since it can be represented in some other ways
 using complex forms of regular undirected graph, however it is not hard to implement. In
@@ -466,7 +467,7 @@ than one roads therefore we have to have this roads recorded within an adjacency
 </p>
 
 
-<div id="org5ae822f" class="figure">
+<div id="org8ff2483" class="figure">
 <p><img src="Multigraph_(Multi-edges_Graph)/2022-01-03_20-14-47_screenshot.png" alt="2022-01-03_20-14-47_screenshot.png" />
 </p>
 </div>
@@ -502,9 +503,9 @@ list in the "to" node).
 </div>
 </div>
 
-<div id="outline-container-org9666e30" class="outline-2">
-<h2 id="org9666e30">Weighted Graph</h2>
-<div class="outline-text-2" id="text-org9666e30">
+<div id="outline-container-orgd59d248" class="outline-2">
+<h2 id="orgd59d248">Weighted Graph</h2>
+<div class="outline-text-2" id="text-orgd59d248">
 <p>
 We can consider all of the last implementations as an unweghted graph representations, we
 don't really care about the specifications of an edge between two nodes. However, in a lot
@@ -515,7 +516,7 @@ graph i.e. a graph with a value within edges.
 </p>
 
 
-<div id="orgdfad7e4" class="figure">
+<div id="org0fa7697" class="figure">
 <p><img src="Weighted_Graph/2022-01-04_00-40-13_screenshot.png" alt="2022-01-04_00-40-13_screenshot.png" />
 </p>
 </div>
@@ -580,7 +581,7 @@ Consider the following figure:
 </p>
 
 
-<div id="org57f3f8d" class="figure">
+<div id="org6f0c53e" class="figure">
 <p><img src="Transpose_Graph/2022-01-06_14-45-44_screenshot.png" alt="2022-01-06_14-45-44_screenshot.png" />
 </p>
 </div>
@@ -760,18 +761,18 @@ graphs, in the case of ambiguity you can backtrack the definitions from here.
 </div>
 </div>
 
-<div id="outline-container-org923c942" class="outline-2">
-<h2 id="org923c942">Graph Traversal</h2>
-<div class="outline-text-2" id="text-org923c942">
+<div id="outline-container-orgb277069" class="outline-2">
+<h2 id="orgb277069">Graph Traversal</h2>
+<div class="outline-text-2" id="text-orgb277069">
 <p>
 Given any starting vertex, we can find all the reachable vertices from the start point,
 there are many algorithms that can do this, the simplest of which is depth-frist search.
 </p>
 </div>
 
-<div id="outline-container-org069d745" class="outline-3">
-<h3 id="org069d745">Depth First Search (DFS)</h3>
-<div class="outline-text-3" id="text-org069d745">
+<div id="outline-container-orgabf801f" class="outline-3">
+<h3 id="orgabf801f">Depth First Search (DFS)</h3>
+<div class="outline-text-3" id="text-orgabf801f">
 <p>
 As the name implies, DFS enumerate the deepest paths and only backtracking when it reaches a
 dead end or an already-visited section of the graph. We can simplify the process of the
@@ -910,9 +911,9 @@ handle is the first child:
 </div>
 </div>
 
-<div id="outline-container-orgb737758" class="outline-3">
-<h3 id="orgb737758">Strongly Connected Components (SCC)</h3>
-<div class="outline-text-3" id="text-orgb737758">
+<div id="outline-container-org33dd53c" class="outline-3">
+<h3 id="org33dd53c">Strongly Connected Components (SCC)</h3>
+<div class="outline-text-3" id="text-org33dd53c">
 <p>
 We will see that any graph \(G = (V, E)\) can be partitioned into strongly connected
 components. For a component to be strongly connected, every vertex in the component must be
@@ -1007,25 +1008,25 @@ Implementations in C(++):
 </div>
 </div>
 </div>
-<div id="outline-container-orgcc04add" class="outline-4">
-<h4 id="orgcc04add"><span class="todo TODO">TODO</span> Tarjan's Algorithm</h4>
+<div id="outline-container-org5c7eedb" class="outline-4">
+<h4 id="org5c7eedb"><span class="todo TODO">TODO</span> Tarjan's Algorithm</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orga397111" class="outline-2">
-<h2 id="orga397111">Detecting Cycles</h2>
-<div class="outline-text-2" id="text-orga397111">
+<div id="outline-container-orgf0085f7" class="outline-2">
+<h2 id="orgf0085f7">Detecting Cycles</h2>
+<div class="outline-text-2" id="text-orgf0085f7">
 <p>
 <i>Hint: Review cycle definition in the <a href="#sheet">definition sheet</a> above</i>
 </p>
 </div>
-<div id="outline-container-orgac9bad9" class="outline-3">
-<h3 id="orgac9bad9">Directed Graphs</h3>
-<div class="outline-text-3" id="text-orgac9bad9">
+<div id="outline-container-org4afffca" class="outline-3">
+<h3 id="org4afffca">Directed Graphs</h3>
+<div class="outline-text-3" id="text-org4afffca">
 </div>
-<div id="outline-container-org31c8ca7" class="outline-4">
-<h4 id="org31c8ca7">Using Depth First Search</h4>
-<div class="outline-text-4" id="text-org31c8ca7">
+<div id="outline-container-orgcc41f72" class="outline-4">
+<h4 id="orgcc41f72">Using Depth First Search</h4>
+<div class="outline-text-4" id="text-orgcc41f72">
 <p>
 We can detect cycles in directed graphs using DFS. This is based on the fact that there is a
 cycle in a graph only if there is a back edge present in the graph. A back edge is an edge
@@ -1131,7 +1132,7 @@ points, vertices 1,3,5, and 7.
 </p>
 
 
-<div id="orgb5ea948" class="figure">
+<div id="orgad8c834" class="figure">
 <p><img src="Biconnected_Components/2022-04-08_07-58-38_screenshot.png" alt="2022-04-08_07-58-38_screenshot.png" />
 </p>
 </div>
@@ -1165,7 +1166,7 @@ the graph of the last graph produces the spanning tree of the following figure:
 </p>
 
 
-<div id="orgf02bd8b" class="figure">
+<div id="org316b802" class="figure">
 <p><img src="Biconnected_Components/2022-04-08_08-06-21_screenshot.png" alt="2022-04-08_08-06-21_screenshot.png" />
 </p>
 </div>
@@ -1175,7 +1176,7 @@ If redrawn the tree in the following figure:
 </p>
 
 
-<div id="orge7881e2" class="figure">
+<div id="orgc4f545d" class="figure">
 <p><img src="Biconnected_Components/2022-04-08_08-07-57_screenshot.png" alt="2022-04-08_08-07-57_screenshot.png" />
 </p>
 </div>
@@ -1199,7 +1200,7 @@ using a path of descendants followed by at most one back edge:
 </p>
 
 
-<div id="org09356ad" class="figure">
+<div id="org5e16aa0" class="figure">
 <p><img src="Biconnected_Components/2022-04-08_08-23-12_screenshot.png" alt="2022-04-08_08-23-12_screenshot.png" />
 </p>
 </div>
@@ -1370,20 +1371,20 @@ vertex 3, is an articulation point because it has more than one child.
 </div>
 </div>
 
-<div id="outline-container-orgef72b7a" class="outline-2">
-<h2 id="orgef72b7a">Problems</h2>
-<div class="outline-text-2" id="text-orgef72b7a">
+<div id="outline-container-org507233d" class="outline-2">
+<h2 id="org507233d">Problems</h2>
+<div class="outline-text-2" id="text-org507233d">
 </div>
-<div id="outline-container-org2a5bb40" class="outline-3">
-<h3 id="org2a5bb40">Reach The Mother Vertex</h3>
-<div class="outline-text-3" id="text-org2a5bb40">
+<div id="outline-container-org5665856" class="outline-3">
+<h3 id="org5665856">Reach The Mother Vertex</h3>
+<div class="outline-text-3" id="text-org5665856">
 <p>
 <i>Hint: Review the Mother Vertex in the <a href="#sheet">definition sheet</a> above</i>
 The mother vertex in the following graph is <code>[1, 3, 4]</code>:
 </p>
 
 
-<div id="org54351d7" class="figure">
+<div id="org4e88203" class="figure">
 <p><img src="Problems/2022-01-06_12-41-32_screenshot.png" alt="2022-01-06_12-41-32_screenshot.png" />
 </p>
 </div>
@@ -1458,40 +1459,40 @@ them.
 </div>
 </div>
 
-<div id="outline-container-org82b1fc1" class="outline-2">
-<h2 id="org82b1fc1">TODOs Topics <code>[0/10]</code></h2>
-<div class="outline-text-2" id="text-org82b1fc1">
+<div id="outline-container-orgc415e8f" class="outline-2">
+<h2 id="orgc415e8f">TODOs Topics <code>[0/10]</code></h2>
+<div class="outline-text-2" id="text-orgc415e8f">
 </div>
-<div id="outline-container-org36a33ba" class="outline-3">
-<h3 id="org36a33ba"><span class="todo TODO">TODO</span> BFS</h3>
+<div id="outline-container-org1ba0cb3" class="outline-3">
+<h3 id="org1ba0cb3"><span class="todo TODO">TODO</span> BFS</h3>
 </div>
-<div id="outline-container-orgdaf302f" class="outline-3">
-<h3 id="orgdaf302f"><span class="todo TODO">TODO</span> Handling Disconnected graphs</h3>
+<div id="outline-container-org7c07234" class="outline-3">
+<h3 id="org7c07234"><span class="todo TODO">TODO</span> Handling Disconnected graphs</h3>
 </div>
-<div id="outline-container-org0d7ed99" class="outline-3">
-<h3 id="org0d7ed99"><span class="todo TODO">TODO</span> Bellman–Ford algorithm</h3>
+<div id="outline-container-org7083991" class="outline-3">
+<h3 id="org7083991"><span class="todo TODO">TODO</span> Bellman–Ford algorithm</h3>
 </div>
-<div id="outline-container-org8199828" class="outline-3">
-<h3 id="org8199828"><span class="todo TODO">TODO</span> Floyd–Warshall algorithm</h3>
+<div id="outline-container-orgc5ddb6f" class="outline-3">
+<h3 id="orgc5ddb6f"><span class="todo TODO">TODO</span> Floyd–Warshall algorithm</h3>
 </div>
-<div id="outline-container-orgde3b53a" class="outline-3">
-<h3 id="orgde3b53a"><span class="todo TODO">TODO</span> Union-Find Algorithm</h3>
+<div id="outline-container-orgee13692" class="outline-3">
+<h3 id="orgee13692"><span class="todo TODO">TODO</span> Union-Find Algorithm</h3>
 </div>
-<div id="outline-container-org0f2a8ec" class="outline-3">
-<h3 id="org0f2a8ec"><span class="todo TODO">TODO</span> Tarjan's strongly connected components algorithm</h3>
+<div id="outline-container-orga75397b" class="outline-3">
+<h3 id="orga75397b"><span class="todo TODO">TODO</span> Tarjan's strongly connected components algorithm</h3>
 </div>
 
-<div id="outline-container-orgd3c96a7" class="outline-3">
-<h3 id="orgd3c96a7"><span class="todo TODO">TODO</span> Shortest Path</h3>
+<div id="outline-container-org4b91d13" class="outline-3">
+<h3 id="org4b91d13"><span class="todo TODO">TODO</span> Shortest Path</h3>
 </div>
-<div id="outline-container-orge75d49c" class="outline-3">
-<h3 id="orge75d49c"><span class="todo TODO">TODO</span> Longest Path</h3>
+<div id="outline-container-orga0b6680" class="outline-3">
+<h3 id="orga0b6680"><span class="todo TODO">TODO</span> Longest Path</h3>
 </div>
-<div id="outline-container-orgbe0c549" class="outline-3">
-<h3 id="orgbe0c549"><span class="todo TODO">TODO</span> Tree</h3>
+<div id="outline-container-orgf482c80" class="outline-3">
+<h3 id="orgf482c80"><span class="todo TODO">TODO</span> Tree</h3>
 </div>
-<div id="outline-container-org13562a1" class="outline-3">
-<h3 id="org13562a1"><span class="todo TODO">TODO</span> Tree Diamteter <i>(aka. Logest Path)</i></h3>
+<div id="outline-container-org90144c5" class="outline-3">
+<h3 id="org90144c5"><span class="todo TODO">TODO</span> Tree Diamteter <i>(aka. Logest Path)</i></h3>
 </div>
 </div>
 <div id="footnotes">
