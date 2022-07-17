@@ -47,37 +47,37 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0d8c826">Introduction</a></li>
-<li><a href="#orgac2e2fc">Objectives</a></li>
-<li><a href="#org91bef2c">Memory And Functions</a>
+<li><a href="#org53cd98d">Introduction</a></li>
+<li><a href="#orgb0400d6">Objectives</a></li>
+<li><a href="#org57a540e">Memory And Functions</a>
 <ul>
-<li><a href="#orgbe53c2d">Code Segment</a></li>
-<li><a href="#org2b87da8">Data Segment</a></li>
-<li><a href="#org59fd6cb">Stack Segment</a></li>
-<li><a href="#orgb2421b5">Heap Segment</a></li>
-<li><a href="#org8231516">Running</a></li>
-<li><a href="#org48b97e9">Conclusion</a></li>
+<li><a href="#orgc6a1959">Code Segment</a></li>
+<li><a href="#org85e9dc7">Data Segment</a></li>
+<li><a href="#org56f73a9">Stack Segment</a></li>
+<li><a href="#org0f875eb">Heap Segment</a></li>
+<li><a href="#org39ed379">Running</a></li>
+<li><a href="#org87a1c9a">Conclusion</a></li>
 </ul>
 </li>
-<li><a href="#org23af22e">Optimal Substructure</a></li>
-<li><a href="#org330022f">Overlapping Subproblems</a></li>
-<li><a href="#org3a25757">Memoization</a></li>
-<li><a href="#orge0089b2">Dynamic Programming</a></li>
-<li><a href="#orgf6af051">Problems <code>[1/4]</code></a>
+<li><a href="#org054e492">Optimal Substructure</a></li>
+<li><a href="#orgd880867">Overlapping Subproblems</a></li>
+<li><a href="#org2828b14">Memoization</a></li>
+<li><a href="#orgba04b73">Dynamic Programming</a></li>
+<li><a href="#org30bae8a">Problems <code>[1/4]</code></a>
 <ul>
-<li><a href="#orgff53066">[X] INT replacement</a></li>
-<li><a href="#orgb609e0f">[ ] https://leetcode.com/problems/longest-increasing-subsequence/</a></li>
-<li><a href="#orgba524d5">[ ] https://leetcode.com/problems/is-subsequence/</a></li>
-<li><a href="#org58b9c1e">[ ] https://leetcode.com/problems/maximum-subarray/</a></li>
+<li><a href="#org038d2f0">[X] INT replacement</a></li>
+<li><a href="#orge34ade1">[ ] https://leetcode.com/problems/longest-increasing-subsequence/</a></li>
+<li><a href="#orga69df49">[ ] https://leetcode.com/problems/is-subsequence/</a></li>
+<li><a href="#orgd0cb205">[ ] https://leetcode.com/problems/maximum-subarray/</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0d8c826" class="outline-2">
-<h2 id="org0d8c826">Introduction</h2>
-<div class="outline-text-2" id="text-org0d8c826">
-<div class="PREVIEW" id="orge2a7df1">
+<div id="outline-container-org53cd98d" class="outline-2">
+<h2 id="org53cd98d">Introduction</h2>
+<div class="outline-text-2" id="text-org53cd98d">
+<div class="PREVIEW" id="org176349c">
 <p>
 Follows:
 Roofgarden, T. (2019). <i>Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic
@@ -89,9 +89,9 @@ Programming</i> (Illustrated ed.). Soundlikeyourself Publishing, LLC. <a href="h
 </div>
 
 
-<div id="outline-container-orgac2e2fc" class="outline-2">
-<h2 id="orgac2e2fc">Objectives</h2>
-<div class="outline-text-2" id="text-orgac2e2fc">
+<div id="outline-container-orgb0400d6" class="outline-2">
+<h2 id="orgb0400d6">Objectives</h2>
+<div class="outline-text-2" id="text-orgb0400d6">
 <ul class="org-ul">
 <li>Understanding functions (from memory perspective).</li>
 <li>Optimal Substructure.</li>
@@ -106,9 +106,9 @@ Programming</i> (Illustrated ed.). Soundlikeyourself Publishing, LLC. <a href="h
 </div>
 </div>
 
-<div id="outline-container-org91bef2c" class="outline-2">
-<h2 id="org91bef2c">Memory And Functions</h2>
-<div class="outline-text-2" id="text-org91bef2c">
+<div id="outline-container-org57a540e" class="outline-2">
+<h2 id="org57a540e">Memory And Functions</h2>
+<div class="outline-text-2" id="text-org57a540e">
 <p>
 Consider the following C code:
 </p>
@@ -131,7 +131,7 @@ The process of compiling this file should look like this using a standard C comp
 </p>
 
 
-<div id="org6f27e31" class="figure">
+<div id="orgda1dcc6" class="figure">
 <p><img src="Memory_And_Functions/2021-12-06_14-19-10_screenshot.png" alt="2021-12-06_14-19-10_screenshot.png" />
 </p>
 </div>
@@ -143,18 +143,18 @@ the following segments:
 </p>
 </div>
 
-<div id="outline-container-orgbe53c2d" class="outline-3">
-<h3 id="orgbe53c2d">Code Segment</h3>
-<div class="outline-text-3" id="text-orgbe53c2d">
+<div id="outline-container-orgc6a1959" class="outline-3">
+<h3 id="orgc6a1959">Code Segment</h3>
+<div class="outline-text-3" id="text-orgc6a1959">
 <ul class="org-ul">
 <li>Contains the machine code of the executable file.</li>
 <li>Read-Only segment.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2b87da8" class="outline-3">
-<h3 id="org2b87da8">Data Segment</h3>
-<div class="outline-text-3" id="text-org2b87da8">
+<div id="outline-container-org85e9dc7" class="outline-3">
+<h3 id="org85e9dc7">Data Segment</h3>
+<div class="outline-text-3" id="text-org85e9dc7">
 <ul class="org-ul">
 <li>Contains all global and static data variable (henceforward <i>load-time</i> variables).</li>
 <li>Loaded before <code>main</code> function is called.</li>
@@ -168,9 +168,9 @@ the following segments:
 </ul>
 </div>
 </div>
-<div id="outline-container-org59fd6cb" class="outline-3">
-<h3 id="org59fd6cb">Stack Segment</h3>
-<div class="outline-text-3" id="text-org59fd6cb">
+<div id="outline-container-org56f73a9" class="outline-3">
+<h3 id="org56f73a9">Stack Segment</h3>
+<div class="outline-text-3" id="text-org56f73a9">
 <ul class="org-ul">
 <li>Contains an <i>Activation Records</i> of all active functions</li>
 </ul>
@@ -198,7 +198,7 @@ When the program is executed, <code>main()</code> is the only active function, w
 </p>
 
 
-<div id="orga19a1ab" class="figure">
+<div id="orgc943a4f" class="figure">
 <p><img src="Memory_And_Functions/2021-12-06_15-05-44_New Project.png" alt="2021-12-06_15-05-44_New Project.png" />
 </p>
 </div>
@@ -214,18 +214,18 @@ execution is back in <code>function_I</code>, and so on with <code>function_II</
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb2421b5" class="outline-3">
-<h3 id="orgb2421b5">Heap Segment</h3>
-<div class="outline-text-3" id="text-orgb2421b5">
+<div id="outline-container-org0f875eb" class="outline-3">
+<h3 id="org0f875eb">Heap Segment</h3>
+<div class="outline-text-3" id="text-org0f875eb">
 <ul class="org-ul">
 <li>This is where new memory is allocated (using either <code>new</code> in C++ or C's <code>malloc()</code>), it's
 also called <i>dynamic memory</i> and <i>run-time memory</i>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8231516" class="outline-3">
-<h3 id="org8231516">Running</h3>
-<div class="outline-text-3" id="text-org8231516">
+<div id="outline-container-org39ed379" class="outline-3">
+<h3 id="org39ed379">Running</h3>
+<div class="outline-text-3" id="text-org39ed379">
 <p>
 Consider the following code:
 </p>
@@ -262,7 +262,7 @@ function is not called yet and the memory looks like this:
 </p>
 
 
-<div id="org66f5a90" class="figure">
+<div id="orgac7471e" class="figure">
 <p><img src="Memory_And_Functions/2021-12-06_16-28-23_screenshot.png" alt="2021-12-06_16-28-23_screenshot.png" />
 </p>
 </div>
@@ -273,7 +273,7 @@ called, the memory looks as follows:
 </p>
 
 
-<div id="org626e38f" class="figure">
+<div id="org66c2f74" class="figure">
 <p><img src="Memory_And_Functions/2021-12-06_16-31-52_screenshot.png" alt="2021-12-06_16-31-52_screenshot.png" />
 </p>
 </div>
@@ -326,9 +326,9 @@ function.
 </div>
 </div>
 
-<div id="outline-container-org48b97e9" class="outline-3">
-<h3 id="org48b97e9">Conclusion</h3>
-<div class="outline-text-3" id="text-org48b97e9">
+<div id="outline-container-org87a1c9a" class="outline-3">
+<h3 id="org87a1c9a">Conclusion</h3>
+<div class="outline-text-3" id="text-org87a1c9a">
 <p>
 Function call is a lot of overhead in both terms of time and memory. This is why macros
 using is ubiquitous in C.
@@ -384,7 +384,7 @@ them having a local variable n:
 </p>
 
 
-<div id="orgac567a0" class="figure">
+<div id="org03aced0" class="figure">
 <p><img src="Memory_And_Functions/2021-12-07_08-18-54_screenshot.png" alt="2021-12-07_08-18-54_screenshot.png" />
 </p>
 </div>
@@ -395,7 +395,7 @@ variables:
 </p>
 
 
-<div id="org41d4c5e" class="figure">
+<div id="orgb7dbe30" class="figure">
 <p><img src="Memory_And_Functions/2021-12-07_08-19-55_screenshot.png" alt="2021-12-07_08-19-55_screenshot.png" />
 </p>
 </div>
@@ -403,9 +403,9 @@ variables:
 </div>
 </div>
 
-<div id="outline-container-org23af22e" class="outline-2">
-<h2 id="org23af22e">Optimal Substructure</h2>
-<div class="outline-text-2" id="text-org23af22e">
+<div id="outline-container-org054e492" class="outline-2">
+<h2 id="org054e492">Optimal Substructure</h2>
+<div class="outline-text-2" id="text-org054e492">
 <p>
 Optimal substructure means, that optimal solution to a problem of size n (having n elements)
 is based on an optimal solution to the same problem of smaller size (less than n elements).
@@ -420,7 +420,7 @@ drive from city A to city C, city B lies in between the two cities.
 </p>
 
 
-<div id="orgd93ad1b" class="figure">
+<div id="org02d0e89" class="figure">
 <p><img src="Optimal_Substructure/2021-12-07_13-59-52_screenshot.png" alt="2021-12-07_13-59-52_screenshot.png" />
 </p>
 </div>
@@ -432,9 +432,9 @@ from A to B and shortest path from B to C.
 </div>
 </div>
 
-<div id="outline-container-org330022f" class="outline-2">
-<h2 id="org330022f">Overlapping Subproblems</h2>
-<div class="outline-text-2" id="text-org330022f">
+<div id="outline-container-orgd880867" class="outline-2">
+<h2 id="orgd880867">Overlapping Subproblems</h2>
+<div class="outline-text-2" id="text-orgd880867">
 <p>
 Here is a new kind of problems, in which subproblems are not solved just once (not like
 singular recursion). Consider the example of finding the \(n^{th}\) from a Fibonacci series
@@ -467,7 +467,7 @@ multiple times.
 </p>
 
 
-<div id="orgb45bad5" class="figure">
+<div id="org219fce7" class="figure">
 <p><img src="Overlapping_Subproblems/2021-12-07_14-24-11_screenshot.png" alt="2021-12-07_14-24-11_screenshot.png" />
 </p>
 </div>
@@ -562,9 +562,9 @@ This is \(O(n)\) solution.
 </div>
 </div>
 
-<div id="outline-container-org3a25757" class="outline-2">
-<h2 id="org3a25757">Memoization</h2>
-<div class="outline-text-2" id="text-org3a25757">
+<div id="outline-container-org2828b14" class="outline-2">
+<h2 id="org2828b14">Memoization</h2>
+<div class="outline-text-2" id="text-org2828b14">
 <p>
 Consider the <a href="https://leetcode.com/problems/climbing-stairs/">Climbing Stairs</a> problem.
 </p>
@@ -595,7 +595,7 @@ result is returned from the cache
 
 
 
-<div id="orgb2fdadb" class="figure">
+<div id="org89c023f" class="figure">
 <p><img src="Memoization/2021-12-07_15-39-27_screenshot.png" alt="2021-12-07_15-39-27_screenshot.png" />
 </p>
 </div>
@@ -691,9 +691,9 @@ computed).
 </div>
 </div>
 
-<div id="outline-container-orge0089b2" class="outline-2">
-<h2 id="orge0089b2">Dynamic Programming</h2>
-<div class="outline-text-2" id="text-orge0089b2">
+<div id="outline-container-orgba04b73" class="outline-2">
+<h2 id="orgba04b73">Dynamic Programming</h2>
+<div class="outline-text-2" id="text-orgba04b73">
 <p>
 Dynamic programming is "A method for solving a complex problem by breaking
 it down into a collection of simpler subproblems, solving each of those subproblems just
@@ -726,22 +726,22 @@ solution to the Fibonacci problem:
 </div>
 </div>
 
-<div id="outline-container-orgf6af051" class="outline-2">
-<h2 id="orgf6af051">Problems <code>[1/4]</code></h2>
-<div class="outline-text-2" id="text-orgf6af051">
+<div id="outline-container-org30bae8a" class="outline-2">
+<h2 id="org30bae8a">Problems <code>[1/4]</code></h2>
+<div class="outline-text-2" id="text-org30bae8a">
 </div>
-<div id="outline-container-orgff53066" class="outline-3">
-<h3 id="orgff53066">[X] <a href="https://leetcode.com/problems/integer-replacement/">INT replacement</a></h3>
+<div id="outline-container-org038d2f0" class="outline-3">
+<h3 id="org038d2f0">[X] <a href="https://leetcode.com/problems/integer-replacement/">INT replacement</a></h3>
 </div>
-<div id="outline-container-orgb609e0f" class="outline-3">
-<h3 id="orgb609e0f">[ ] <a href="https://leetcode.com/problems/longest-increasing-subsequence/">https://leetcode.com/problems/longest-increasing-subsequence/</a></h3>
+<div id="outline-container-orge34ade1" class="outline-3">
+<h3 id="orge34ade1">[ ] <a href="https://leetcode.com/problems/longest-increasing-subsequence/">https://leetcode.com/problems/longest-increasing-subsequence/</a></h3>
 </div>
 
-<div id="outline-container-orgba524d5" class="outline-3">
-<h3 id="orgba524d5">[ ] <a href="https://leetcode.com/problems/is-subsequence/">https://leetcode.com/problems/is-subsequence/</a></h3>
+<div id="outline-container-orga69df49" class="outline-3">
+<h3 id="orga69df49">[ ] <a href="https://leetcode.com/problems/is-subsequence/">https://leetcode.com/problems/is-subsequence/</a></h3>
 </div>
-<div id="outline-container-org58b9c1e" class="outline-3">
-<h3 id="org58b9c1e">[ ] <a href="https://leetcode.com/problems/maximum-subarray/">https://leetcode.com/problems/maximum-subarray/</a></h3>
+<div id="outline-container-orgd0cb205" class="outline-3">
+<h3 id="orgd0cb205">[ ] <a href="https://leetcode.com/problems/maximum-subarray/">https://leetcode.com/problems/maximum-subarray/</a></h3>
 </div>
 </div>
 </div>
