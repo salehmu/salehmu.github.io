@@ -26,38 +26,38 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga3e2dca">Representational State Transfer APIs: Basics to Design</a>
+<li><a href="#org58df654">Representational State Transfer APIs: Basics to Design</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org5e6eb1d">Introduction and History</a></li>
-<li><a href="#org1c65235">Oversimplified HTTP</a></li>
-<li><a href="#orgc4c8eb5">What is REST</a></li>
-<li><a href="#orge0f226c">Designing REST</a></li>
-<li><a href="#orga99802f">Designing Results</a></li>
-<li><a href="#org12c4492"><span class="todo TODO">TODO</span> Check HTTP Responses List</a></li>
-<li><a href="#org6ae1db4"><span class="todo TODO">TODO</span> Check HTTP Full Requests List</a></li>
+<li><a href="#org5dc4aaa">Introduction and History</a></li>
+<li><a href="#org24a9e7f">Oversimplified HTTP</a></li>
+<li><a href="#org78665d1">What is REST</a></li>
+<li><a href="#orgef63a84">Designing REST</a></li>
+<li><a href="#orgeaca0bc">Designing Results</a></li>
+<li><a href="#org09531bc"><span class="todo TODO">TODO</span> Check HTTP Responses List</a></li>
+<li><a href="#org6c2d295"><span class="todo TODO">TODO</span> Check HTTP Full Requests List</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgbc818e1">Going Complex</a>
+<li><a href="#org9b47ea5">Going Complex</a>
 <ul>
-<li><a href="#org3dacdef">Associations</a></li>
-<li><a href="#org5f46912">Paging</a></li>
-<li><a href="#org7a89f10">Error Handling</a></li>
-<li><a href="#org7720ff6">Caching</a></li>
-<li><a href="#orgb6e0c4b">Functional APIs</a></li>
+<li><a href="#orga680852">Associations</a></li>
+<li><a href="#orge5e8579">Paging</a></li>
+<li><a href="#org3ee246c">Error Handling</a></li>
+<li><a href="#org46956eb">Caching</a></li>
+<li><a href="#orgccebedd">Functional APIs</a></li>
 </ul>
 </li>
-<li><a href="#orgb423c72">Versioning REST</a>
+<li><a href="#org397aa7b">Versioning REST</a>
 <ul>
-<li><a href="#orgb0c2264">Designing Versioning</a>
+<li><a href="#orgfe1888e">Designing Versioning</a>
 <ul>
-<li><a href="#org1c084a2">Versioning with The URI Path</a></li>
-<li><a href="#orge87a050">Versioning with Query String</a></li>
-<li><a href="#orgb6e4fb8">Versioning with Headers</a></li>
-<li><a href="#org995d64e">Versioning with Content Type</a></li>
+<li><a href="#orgb957453">Versioning with The URI Path</a></li>
+<li><a href="#orgec2bc7f">Versioning with Query String</a></li>
+<li><a href="#org149cd52">Versioning with Headers</a></li>
+<li><a href="#org997d776">Versioning with Content Type</a></li>
 </ul>
 </li>
 </ul>
@@ -65,14 +65,14 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orga3e2dca" class="outline-2">
-<h2 id="orga3e2dca">Representational State Transfer APIs: Basics to Design</h2>
-<div class="outline-text-2" id="text-orga3e2dca">
+<div id="outline-container-org58df654" class="outline-2">
+<h2 id="org58df654">Representational State Transfer APIs: Basics to Design</h2>
+<div class="outline-text-2" id="text-org58df654">
 </div>
-<div id="outline-container-org5e6eb1d" class="outline-4">
-<h4 id="org5e6eb1d">Introduction and History</h4>
-<div class="outline-text-4" id="text-org5e6eb1d">
-<div class="PREVIEW" id="org085bbf2">
+<div id="outline-container-org5dc4aaa" class="outline-4">
+<h4 id="org5dc4aaa">Introduction and History</h4>
+<div class="outline-text-4" id="text-org5dc4aaa">
+<div class="PREVIEW" id="orgf881de7">
 <p>
 I'm not going to talk about how to implement these web APIs, but talk about the design
 aspects of how to design them so that they're easier to use and easier to maintain. The goal
@@ -128,9 +128,9 @@ specific use cases.
 </div>
 </div>
 
-<div id="outline-container-org1c65235" class="outline-4">
-<h4 id="org1c65235">Oversimplified HTTP</h4>
-<div class="outline-text-4" id="text-org1c65235">
+<div id="outline-container-org24a9e7f" class="outline-4">
+<h4 id="org24a9e7f">Oversimplified HTTP</h4>
+<div class="outline-text-4" id="text-org24a9e7f">
 <p>
 In many ways, we take the web for granted. When we open up a browser, go to a webpage, we
 expect it to open up and work. What's going on under the covers is a ballet of simplicity.
@@ -260,9 +260,9 @@ over the wire.
 </div>
 </div>
 
-<div id="outline-container-orgc4c8eb5" class="outline-4">
-<h4 id="orgc4c8eb5">What is REST</h4>
-<div class="outline-text-4" id="text-orgc4c8eb5">
+<div id="outline-container-org78665d1" class="outline-4">
+<h4 id="org78665d1">What is REST</h4>
+<div class="outline-text-4" id="text-org78665d1">
 <p>
 The term RESTful really means they are a pragmatic approach to using REST. We may not be
 100% REST-based in what we're doing, but we're going to lean on the benefits of REST as much
@@ -296,9 +296,9 @@ REST versus the pragmatism. I'm very much on the pragmatic side.
 </div>
 </div>
 
-<div id="outline-container-orge0f226c" class="outline-4">
-<h4 id="orge0f226c">Designing REST</h4>
-<div class="outline-text-4" id="text-orge0f226c">
+<div id="outline-container-orgef63a84" class="outline-4">
+<h4 id="orgef63a84">Designing REST</h4>
+<div class="outline-text-4" id="text-orgef63a84">
 <p>
 I think it's important when you're building an API to design it first. That should be the
 first step in the creation of a new API, instead of just starting to write code and getting
@@ -473,8 +473,8 @@ the nouns that are part of our API.
 
 
 <ul class="org-ul">
-<li><a id="org42b2ed6"></a>Verbs<br />
-<div class="outline-text-5" id="text-org42b2ed6">
+<li><a id="org58025c2"></a>Verbs<br />
+<div class="outline-text-5" id="text-org58025c2">
 <ul class="org-ul">
 <li><i>GET</i> wants to retrieve a resource, whether that's a collection of resources, as in the case of sites in our example, or it might be an individual site.</li>
 <li><i>POST</i> is adding a new resource, or you could think about it as creating a resource.</li>
@@ -533,8 +533,8 @@ developing complex systems.
 </p>
 </div>
 </li>
-<li><a id="orgde9f0fb"></a>Idempotency<br />
-<div class="outline-text-5" id="text-orgde9f0fb">
+<li><a id="orgd2f10d4"></a>Idempotency<br />
+<div class="outline-text-5" id="text-orgd2f10d4">
 <p>
 So one of the constraints that REST tells you when you're going to create an API that you
 need to deal with is idempotency. And at first, if you're not familiar with the term, I want
@@ -555,9 +555,9 @@ idempotency in the case of POST.
 </ul>
 </div>
 
-<div id="outline-container-orga99802f" class="outline-4">
-<h4 id="orga99802f">Designing Results</h4>
-<div class="outline-text-4" id="text-orga99802f">
+<div id="outline-container-orgeaca0bc" class="outline-4">
+<h4 id="orgeaca0bc">Designing Results</h4>
+<div class="outline-text-4" id="text-orgeaca0bc">
 <p>
 Now so far in our examples, we've simply been returning the
 data that we saw, right? And this is an example of the structuredness, right? It's just a
@@ -633,8 +633,8 @@ useful in that way.
 </div>
 
 <ul class="org-ul">
-<li><a id="org5f612df"></a>Hyber Media<br />
-<div class="outline-text-5" id="text-org5f612df">
+<li><a id="orgae382e2"></a>Hyber Media<br />
+<div class="outline-text-5" id="text-orgae382e2">
 <p>
 Hypermedia is an idea that is part of what REST wants you to do. And I think it's useful in
 some cases and really not useful in others. The idea behind hypermedia is simple, it wants
@@ -673,20 +673,20 @@ RESTful. Again, I want to error on pragmatism versus dogma. Let's wrap up this m
 </ul>
 </div>
 
-<div id="outline-container-org12c4492" class="outline-4">
-<h4 id="org12c4492"><span class="todo TODO">TODO</span> Check HTTP Responses List</h4>
+<div id="outline-container-org09531bc" class="outline-4">
+<h4 id="org09531bc"><span class="todo TODO">TODO</span> Check HTTP Responses List</h4>
 </div>
-<div id="outline-container-org6ae1db4" class="outline-4">
-<h4 id="org6ae1db4"><span class="todo TODO">TODO</span> Check HTTP Full Requests List</h4>
+<div id="outline-container-org6c2d295" class="outline-4">
+<h4 id="org6c2d295"><span class="todo TODO">TODO</span> Check HTTP Full Requests List</h4>
 </div>
 </div>
-<div id="outline-container-orgbc818e1" class="outline-2">
-<h2 id="orgbc818e1">Going Complex</h2>
-<div class="outline-text-2" id="text-orgbc818e1">
+<div id="outline-container-org9b47ea5" class="outline-2">
+<h2 id="org9b47ea5">Going Complex</h2>
+<div class="outline-text-2" id="text-org9b47ea5">
 </div>
-<div id="outline-container-org3dacdef" class="outline-3">
-<h3 id="org3dacdef">Associations</h3>
-<div class="outline-text-3" id="text-org3dacdef">
+<div id="outline-container-orga680852" class="outline-3">
+<h3 id="orga680852">Associations</h3>
+<div class="outline-text-3" id="text-orga680852">
 <p>
 When I talk about associations, I typically mean sub-objects for existing APIs. For example,
 I might have the invoices related to a specific customer, I might have the ratings related
@@ -714,9 +714,9 @@ instead.
 </p>
 </div>
 </div>
-<div id="outline-container-org5f46912" class="outline-3">
-<h3 id="org5f46912">Paging</h3>
-<div class="outline-text-3" id="text-org5f46912">
+<div id="outline-container-orge5e8579" class="outline-3">
+<h3 id="orge5e8579">Paging</h3>
+<div class="outline-text-3" id="text-orge5e8579">
 <p>
 Now let's look at paging. Most lists that you're going to be dealing with inside of your API
 should probably support paging, and the idea here is pretty simple, that unless your list is
@@ -748,9 +748,9 @@ solution.
 </p>
 </div>
 </div>
-<div id="outline-container-org7a89f10" class="outline-3">
-<h3 id="org7a89f10">Error Handling</h3>
-<div class="outline-text-3" id="text-org7a89f10">
+<div id="outline-container-org3ee246c" class="outline-3">
+<h3 id="org3ee246c">Error Handling</h3>
+<div class="outline-text-3" id="text-org3ee246c">
 <p>
 Now let's talk about error handling. In your API, you certainly can just return status
 codes, and most developers will be able to make sense of that, but it's often helpful to
@@ -778,9 +778,9 @@ authentication errors. Let's see this in practice next.
 </p>
 </div>
 </div>
-<div id="outline-container-org7720ff6" class="outline-3">
-<h3 id="org7720ff6">Caching</h3>
-<div class="outline-text-3" id="text-org7720ff6">
+<div id="outline-container-org46956eb" class="outline-3">
+<h3 id="org46956eb">Caching</h3>
+<div class="outline-text-3" id="text-org46956eb">
 <p>
 So now let's talk about caching. Caching is one of those ideas that is required to be truly
 RESTful. It's a basic tenant of the way that you would build REST APIs. Now not every API
@@ -840,9 +840,9 @@ still doing the right thing.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb6e0c4b" class="outline-3">
-<h3 id="orgb6e0c4b">Functional APIs</h3>
-<div class="outline-text-3" id="text-orgb6e0c4b">
+<div id="outline-container-orgccebedd" class="outline-3">
+<h3 id="orgccebedd">Functional APIs</h3>
+<div class="outline-text-3" id="text-orgccebedd">
 <p>
 Ultimately when I'm building a RESTful API, again, I want to be
 pragmatic about it. Ultimately the goal of a REST-based API is to fulfill some set of
@@ -879,9 +879,9 @@ these might be very useful to your IT team.
 </div>
 </div>
 </div>
-<div id="outline-container-orgb423c72" class="outline-2">
-<h2 id="orgb423c72">Versioning REST</h2>
-<div class="outline-text-2" id="text-orgb423c72">
+<div id="outline-container-org397aa7b" class="outline-2">
+<h2 id="org397aa7b">Versioning REST</h2>
+<div class="outline-text-2" id="text-org397aa7b">
 <p>
 So the first question you're going to want to ask yourself is whether you should version
 your API at all. It's a good thing to think about because once you publish an API, it is set
@@ -916,9 +916,9 @@ front will make maintenance of your API easier longer term. So let's look at som
 strategies for versioning so you can decide which ones, if any, are ones you want to choose.
 </p>
 </div>
-<div id="outline-container-orgb0c2264" class="outline-3">
-<h3 id="orgb0c2264">Designing Versioning</h3>
-<div class="outline-text-3" id="text-orgb0c2264">
+<div id="outline-container-orgfe1888e" class="outline-3">
+<h3 id="orgfe1888e">Designing Versioning</h3>
+<div class="outline-text-3" id="text-orgfe1888e">
 <p>
 There are a lot of ways to version an API. Not all of them are ones I would recommend.
 You're going to want to find the mechanism or the way of doing versioning that makes the
@@ -927,9 +927,9 @@ Ultimately you're serving your clients, not yourselves. Making versioning easy t
 your clients is way more important than making it easier on your development staff.
 </p>
 </div>
-<div id="outline-container-org1c084a2" class="outline-4">
-<h4 id="org1c084a2">Versioning with The URI Path</h4>
-<div class="outline-text-4" id="text-org1c084a2">
+<div id="outline-container-orgb957453" class="outline-4">
+<h4 id="orgb957453">Versioning with The URI Path</h4>
+<div class="outline-text-4" id="text-orgb957453">
 <p>
 The first option for versioning that I will talk about is one that I see pretty commonly
 used, and that is versioning in the URI path. We can see in this example:
@@ -943,9 +943,9 @@ path.
 </div>
 
 
-<div id="outline-container-orge87a050" class="outline-4">
-<h4 id="orge87a050">Versioning with Query String</h4>
-<div class="outline-text-4" id="text-orge87a050">
+<div id="outline-container-orgec2bc7f" class="outline-4">
+<h4 id="orgec2bc7f">Versioning with Query String</h4>
+<div class="outline-text-4" id="text-orgec2bc7f">
 <p>
 Another versioning strategy is query string versioning. In this case, we can simply add a
 query string that asks for a specific version of our API. The benefit here is that we can
@@ -960,9 +960,9 @@ to be problematic.
 </div>
 
 
-<div id="outline-container-orgb6e4fb8" class="outline-4">
-<h4 id="orgb6e4fb8">Versioning with Headers</h4>
-<div class="outline-text-4" id="text-orgb6e4fb8">
+<div id="outline-container-org149cd52" class="outline-4">
+<h4 id="org149cd52">Versioning with Headers</h4>
+<div class="outline-text-4" id="text-org149cd52">
 <p>
 The next type of versioning is
 something called versioning with headers. You can see the X-Version here is a header that
@@ -992,9 +992,9 @@ headers do, and that is, requires a little bit more sophistication to use.
 </div>
 
 
-<div id="outline-container-org995d64e" class="outline-4">
-<h4 id="org995d64e">Versioning with Content Type</h4>
-<div class="outline-text-4" id="text-org995d64e">
+<div id="outline-container-org997d776" class="outline-4">
+<h4 id="org997d776">Versioning with Content Type</h4>
+<div class="outline-text-4" id="text-org997d776">
 <p>
 The last one I'll talk about is versioning with content type. And this is the most complex
 of them all to implement. But if you need it, it's really useful. The idea here is that you
