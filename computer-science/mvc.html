@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Introduction Into ASP.NET Core</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a> /
+  <a href='/youtube.html'>Youtube</a> /
+  <a href='/cs.html'>Notes</a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Introduction Into ASP.NET Core</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org064bdef">A First Project of ASP.NET Core</a>
+<ul>
+<li><a href="#orgf9ce07a">Overview</a></li>
+<li><a href="#org58582a1"><code>csproj</code>: Dependencies</a></li>
+<li><a href="#orgfeede91">The Program Class</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org064bdef" class="outline-2">
+<h2 id="org064bdef">A First Project of ASP.NET Core</h2>
+<div class="outline-text-2" id="text-org064bdef">
+<p>
+Creating a project shouldn't be a controversial thing, there is already predefined
+templates in tools like <code>dotnet</code>, or embedded in IDEs. I'm going to use the one that
+Jetbrains' Rider provides in this notebook, however, it's identical to the most of other
+templates.
+</p>
+
+<p>
+If you are Unix-like user, it's recommended not to use any symbolic links in the project/solution
+path, use the full path.
+</p>
+
+<p>
+When you’re new to a framework, creating an application from a template like this can
+be a mixed blessing. On the one hand, you can get an application up and running
+quickly, with little input required on your part. Conversely, the number of files can
+sometimes be overwhelming, leaving you scratching your head working out where to
+start. The basic web application template doesn’t contain a huge number of files and
+folders, as shown in the following figure, but I’ll run through the major ones to get you oriented.
+</p>
+
+
+<div id="org1d90386" class="figure">
+<p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_07-05-06_screenshot.png" alt="2022-03-03_07-05-06_screenshot.png" />
+</p>
+</div>
+
+<p>
+Inside the solution folder, you’ll find your project folder, which in turn contains five
+subfolders—Models, Controllers, Views, Properties, and wwwroot. Models, Control-
+lers, and Views (unsurprisingly) contain the MVC Model, Controller, and View files
+you’ll use to build your application. The Properties folder contains a single file,
+launchSettings.json, which controls how Visual Studio will run and debug the applica-
+tion. The wwwroot folder is special, in that it’s the only folder in your application that
+browsers are allowed to directly access when browsing your web app. You can store
+your CSS, JavaScript, images, or static HTML files in here and browsers will be able to
+access them. They won’t be able to access any file that lives outside of wwwroot.
+</p>
+
+<p>
+Although the wwwroot and Properties folders exist on disk, you can see that Solution
+Explorer shows them as special nodes, out of alphabetical order, near the top of
+your project. You’ve got two more special nodes in the project, Dependencies and
+Connected Services, but they don’t have a corresponding folder on disk. Instead, they
+show a collection of all the dependencies, such as NuGet packages, client-side dependencies,
+and remote services that the project relies on.
+</p>
+
+<p>
+In the root of your project folder, you’ll find several <code>JSON</code> files, such as appsettings
+<code>.json, bundleconfig.json</code>, and bower.json. These provide various configuration set-
+tings, some of which are used at runtime, and others which are used to build your app at
+compile time.
+</p>
+</div>
+<div id="outline-container-orgf9ce07a" class="outline-3">
+<h3 id="orgf9ce07a">Overview</h3>
+<div class="outline-text-3" id="text-orgf9ce07a">
+<p>
+The request and response, the reverse proxy, and the ASP.NET Core web server are all still
+there, but you’ll notice that I’ve expanded the ASP.NET Core application itself to show the
+middleware pipeline and the MVC middleware. This is the main custom part
+of your app that goes into generating the response from a request.
+</p>
+
+
+<div id="orgff5b185" class="figure">
+<p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_19-28-59_uUqiA73.png" alt="2022-03-03_19-28-59_uUqiA73.png" />
+</p>
+</div>
+
+<p>
+ The first port of call after the reverse proxy forwards a request is the ASP.NET
+Core web server, which is the default cross-platform Kestrel server. Kestrel takes the
+raw incoming request and uses it to generate an HttpContext object the rest of the
+application to use.
+</p>
+
+<p>
+Kestrel is responsible for receiving the request data and constructing a C# representa-
+tion of the request, but it doesn’t attempt to handle the request directly. For that, Kes-
+trel hands the HttpContext to the middleware pipeline found in every ASP.NET Core
+application. This is a series of components that processes the incoming request to per-
+form common operations such as logging, handling exceptions, or serving static files.
+</p>
+
+<p>
+After the middleware pipeline comes the MVC block. This is responsible for generat-
+ing the HTML that makes up the pages of a typical ASP.NET Core web app. It’s also
+typically where you find most of the business logic of your app, by calling out to vari-
+ous services in response to the data contained in the original request. Not every app
+needs an MVC block, but it’s typically how you’ll build most apps that display HTML
+to a user.
+</p>
+
+<p>
+Most ASP.NET Core applications follow this basic architecture, and the example in
+this chapter is no different. First, you’ll see how to create and run your application,
+then we’ll look at how the code corresponds to the outline in figure 2.1. Without fur-
+ther ado, let’s create an application!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org58582a1" class="outline-3">
+<h3 id="org58582a1"><code>csproj</code>: Dependencies</h3>
+<div class="outline-text-3" id="text-org58582a1">
+<p>
+The csproj file is the project file for .NET applications and contains the details
+required for the .NET tooling to build your project. It defines the type of project
+being built (web app, console app, or library), which platform the project targets
+(.NET Core, .NET Framework 4.5, Mono, and so on), and which NuGet packages the
+project depends on.
+</p>
+
+<p>
+ The project file has been a mainstay of .NET applications, but in ASP.NET Core it
+has had a facelift to make it easier to read and edit. These changes include:
+</p>
+
+<ul class="org-ul">
+<li>No GUIDs—Previously, Global Unique Identifiers (GUIDs) were used for many things, now they’re rarely used in the project file.</li>
+<li>Implicit file includes—Previously, every file in the project had to be listed in the csproj file for it to be included in the build. Now, files are automatically com- piled.</li>
+<li>No paths to NuGet package dlls—Previously, you had to include the path to the dll files contained in NuGet packages in the csproj, as well as listing the dependen- cies in a packages.xml file. Now, you can reference the NuGet package directly in your csproj, and don’t need to specify the path on disk.</li>
+</ul>
+
+<p>
+All of these changes combine to make the project file far more compact than you’ll be
+used to from previous .NET projects. The following listing shows the entire csproj file
+for your small app.
+</p>
+
+<p>
+For simple applications, you probably won’t need to change the project file much. The
+Sdk attribute on the Project element includes default settings that describe how to build
+your project, whereas the TargetFramework element describes the framework your appli-
+cation will run on. For .NET Core 2.0 projects, this will have the netcoreapp2.0 value; if
+you’re running on the full .NET Framework, 4.6.1, this would be net461.
+</p>
+
+<p>
+The most common changes you’ll make to the project file are to add additional
+NuGet packages using the PackageReference element. By default, your app refer-
+ences a single NuGet package,  Microsoft.AspNetCore.All. This is a metapackage that
+includes all of the packages associated with ASP.NET Core 2.0. It’s only available when
+you’re targeting .NET Core.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfeede91" class="outline-3">
+<h3 id="orgfeede91">The Program Class</h3>
+<div class="outline-text-3" id="text-orgfeede91">
+<p>
+All ASP.NET Core applications start in the same way as .NET Console applications—
+with a Program.cs file. This file contains a static void Main function, which is a stan-
+dard characteristic of console apps. This method must exist and is called whenever
+you start your web application. In ASP.NET Core applications, it’s used to build and
+run an IWebHost instance, as shown in the following listing, which shows the default
+Program.cs file. The IWebHost is the core of your ASP.NET Core application, contain-
+ing the application configuration and the Kestrel server that listens for requests and
+send response.
+</p>
+
+<p>
+The Main function contains all the basic initialization code required to create a web
+server and to start listening for requests. It uses a WebHostBuilder, created by the call
+to CreateDefaultBuilder, to define how the IWebHost is configured, before instantiating the
+<code>IWebHost</code> with a call to <code>Build()</code>.
+</p>
+
+
+<div id="orgfaacb80" class="figure">
+<p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_19-43-42_4BtBon3.png" alt="2022-03-03_19-43-42_4BtBon3.png" />
+</p>
+</div>
+
+<p>
+The Main function contains all the basic initialization code required to create a web
+server and to start listening for requests. It uses a WebHostBuilder, created by the call
+to CreateDefaultBuilder, to define how the IWebHost is configured, before instantiating the
+<code>IWebHost</code> with a call to <code>Build()</code>.
+</p>
+
+<p>
+ASP.NET Core uses small, modular components for each distinct feature. This allows
+individual features to evolve separately, with only a loose coupling to others, and is
+generally considered good design practice. The downside to this approach is that it
+places the burden on the consumer of a feature to correctly instantiate it. Within your
+application, these modular components are exposed as one or more services that are
+used by the application.
+</p>
+
+<p>
+For example, in an e-commerce app, you might have a <code>TaxCalculator</code> that calculates
+the tax due on a particular product, taking into account the user’s location in the
+world. Or you might have a <code>ShippingCostService</code> that calculates the cost of shipping
+to a user’s location. A third service, <code>OrderTotalCalculatorService</code>, might use both
+of these services to work out the total price the user must pay for an order. Each ser
+vice provides a small piece of independent functionality, but you can combine them to
+create a complete application. This is known as the single responsibility principle.
+</p>
+
+<p>
+In an ASP.NET Core application, this registration is performed in the Configure-
+Services method. Whenever you use a new ASP.NET Core feature in your application,
+you’ll need to come back to this method and add in the necessary services.
+</p>
+
+
+<p>
+The OrderTotalCalculatorService needs access to an instance of ShippingCost-
+Service and TaxCalculator. A naïve approach to this problem is to use the new key-
+word and create an instance of a service whenever you need it. Unfortunately, this
+tightly couples your code to the specific implementation you’re using and can com-
+pletely undo all the good work achieved by modularizing the features in the first
+place. In some cases, it may break the SRP by making you perform initialization code
+as well as using the service you created.
+</p>
+
+
+<p>
+ One solution to this problem is to make it somebody else’s problem. When writing
+a service, you can declare your dependencies and let another class fill those depen-
+dencies for you. Your service can then focus on the functionality for which it was
+designed, instead of trying to work out
+how to build its dependencies.
+</p>
+
+
+<p>
+Typically, you’ll register the dependencies of your application into a “container,”
+which can then be used to create any service. This is true for both your own custom
+application services and the framework services used by ASP.NET Core. You must register
+each service with the container before it can be used in your application.
+</p>
+
+<p>
+In an ASP.NET Core application, this registration is performed in the Configure-
+Services method. Whenever you use a new ASP.NET Core feature in your applica-
+tion, you’ll need to come back to this method and add in the necessary services. This
+is not arduous as it sounds, as shown in the next example:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-csharp">public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllersWithViews();
+}
+</pre>
+</div>
+
+<p>
+You may be surprised that a complete MVC application only includes a single call to
+add the necessary services, but the <code>AddMvc()</code> method is an extension method that
+encapsulates all the code required to set up the MVC services. Behind the scenes, it
+adds various Razor services for rendering HTML, formatter services, routing services,
+and many more!
+</p>
+
+
+<p>
+ As well as registering framework-related services, this method is where you’d register
+any custom services you have in your application, such as the example TaxCalculator
+discussed previously. The <code>IServiceCollection</code> is a list of every known service that your
+application will need to use. By adding a new service to it, you ensure that whenever a
+class declares a dependency on your service, the IoC container knows how to provide it.
+</p>
+
+<p>
+Defining how requests are handled with middleware
+So far, in the <code>WebHostBuilder</code> and Startup class, you’ve defined the infrastructure of
+the application and registered your services with the IoC container. In the final config-
+uration method of Startup, Configure, you define the middleware pipeline for the
+application, which is what defines the app’s behavior.
+</p>
+
+
+<p>
+In development, DeveloperExceptionPageMiddleware (added by the <code>UseDeveloperExceptionPage()</code>
+call) ensures that, if your application throws an exception that isn’t caught, you’ll be
+presented with as much information as possible in the browser to diagnose the problem, as
+shown in figure 2.10. It’s akin to the “yellow screen of death”
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-01-08T05:28:26+02:00</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>

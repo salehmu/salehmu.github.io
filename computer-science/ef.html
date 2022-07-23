@@ -27,31 +27,31 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org88cab92">Introduction</a>
+<li><a href="#org787ae7c">Introduction</a>
 <ul>
-<li><a href="#orge3289dc">Where the Database Will Come From?</a></li>
+<li><a href="#org7e2dda2">Where the Database Will Come From?</a></li>
 </ul>
 </li>
-<li><a href="#org2245e1a">Querying The Database</a>
+<li><a href="#orge7806e7">Querying The Database</a>
 <ul>
-<li><a href="#org67acff7">The Classes the EF Core Maps to the Database</a></li>
+<li><a href="#org068bbb9">The Classes the EF Core Maps to the Database</a></li>
 </ul>
 </li>
-<li><a href="#orge476c06">Understanding Migrations</a>
+<li><a href="#orgfc58358">Understanding Migrations</a>
 <ul>
-<li><a href="#org750e8c9">Trying Migrate</a></li>
-<li><a href="#org96de412">Reverse Engineering an Existing Database</a></li>
+<li><a href="#org6884666">Trying Migrate</a></li>
+<li><a href="#orgd565b68">Reverse Engineering an Existing Database</a></li>
 </ul>
 </li>
-<li><a href="#orge41428d"><span class="todo TODO">TODO</span> Migrate Commands</a></li>
+<li><a href="#orgce7294f"><span class="todo TODO">TODO</span> Migrate Commands</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org88cab92" class="outline-2">
-<h2 id="org88cab92">Introduction</h2>
-<div class="outline-text-2" id="text-org88cab92">
-<div class="PREVIEW" id="org29800d2">
+<div id="outline-container-org787ae7c" class="outline-2">
+<h2 id="org787ae7c">Introduction</h2>
+<div class="outline-text-2" id="text-org787ae7c">
+<div class="PREVIEW" id="org6e1d0b3">
 <p>
 Entity Framework Core, or EF Core, is a library that software developers can use to
 access databases. There are many ways to build such a library, but EF Core is
@@ -118,9 +118,9 @@ between a database and .NET software:
 </table>
 </div>
 
-<div id="outline-container-orge3289dc" class="outline-3">
-<h3 id="orge3289dc">Where the Database Will Come From?</h3>
-<div class="outline-text-3" id="text-orge3289dc">
+<div id="outline-container-org7e2dda2" class="outline-3">
+<h3 id="org7e2dda2">Where the Database Will Come From?</h3>
+<div class="outline-text-3" id="text-org7e2dda2">
 <p>
 EF Core is about accessing databases, but where does that database come from? EF Core gives
 you two options: EF Core can create it for you, in what’s known as a code-first approach, or
@@ -133,7 +133,7 @@ For the first application I'm going to use the simple relational database:
 </p>
 
 
-<div id="orga11b2f6" class="figure">
+<div id="org067e484" class="figure">
 <p><img src="Introduction/2022-03-08_21-08-48_g0qh9Kr.png" alt="2022-03-08_21-08-48_g0qh9Kr.png" />
 </p>
 </div>
@@ -156,7 +156,7 @@ Lots of rules and configurations exist.
 </p>
 
 
-<div id="org7313fd4" class="figure">
+<div id="org03d8770" class="figure">
 <p><img src="Introduction/2022-03-08_21-11-07_Zc8Hkbe.png" alt="2022-03-08_21-11-07_Zc8Hkbe.png" />
 </p>
 </div>
@@ -211,7 +211,7 @@ access the database:
 </p>
 
 
-<div id="org00732e5" class="figure">
+<div id="org4af6c5d" class="figure">
 <p><img src="Introduction/2022-03-09_00-37-01_d3NxMwt.png" alt="2022-03-09_00-37-01_d3NxMwt.png" />
 </p>
 </div>
@@ -288,9 +288,9 @@ from the database:
 </div>
 </div>
 
-<div id="outline-container-org2245e1a" class="outline-2">
-<h2 id="org2245e1a">Querying The Database</h2>
-<div class="outline-text-2" id="text-org2245e1a">
+<div id="outline-container-orge7806e7" class="outline-2">
+<h2 id="orge7806e7">Querying The Database</h2>
+<div class="outline-text-2" id="text-orge7806e7">
 <p>
 Although we could have created a database with all the data about a book, its author(s),
 and its reviews in one table, that wouldn’t have worked well in a relational database,
@@ -327,16 +327,16 @@ achieve this relationship..
 </p>
 
 
-<div id="org937207a" class="figure">
+<div id="org54679ba" class="figure">
 <p><img src="Querying_The_Database/2022-03-09_21-37-18_GkRjIC1.png" alt="2022-03-09_21-37-18_GkRjIC1.png" />
 </p>
 </div></li>
 <li>Many-to-many relationship—Books linked to Authors and Books linked to Tags</li>
 </ul>
 </div>
-<div id="outline-container-org67acff7" class="outline-3">
-<h3 id="org67acff7">The Classes the EF Core Maps to the Database</h3>
-<div class="outline-text-3" id="text-org67acff7">
+<div id="outline-container-org068bbb9" class="outline-3">
+<h3 id="org068bbb9">The Classes the EF Core Maps to the Database</h3>
+<div class="outline-text-3" id="text-org068bbb9">
 <p>
 I’ve created five .NET classes to map to the six tables in the database. These classes are
 called Book, PriceOffer, Review, Tag, Author, and BookAuthor for the many-to-many-
@@ -397,9 +397,9 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 </div>
 </div>
 
-<div id="outline-container-orge476c06" class="outline-2">
-<h2 id="orge476c06">Understanding Migrations</h2>
-<div class="outline-text-2" id="text-orge476c06">
+<div id="outline-container-orgfc58358" class="outline-2">
+<h2 id="orgfc58358">Understanding Migrations</h2>
+<div class="outline-text-2" id="text-orgfc58358">
 <p>
 Entity Framework needs to be able to comprehend how to build
 queries that work with your database schema, how to reshape data that's returned from the
@@ -427,9 +427,9 @@ database.
 </p>
 </div>
 
-<div id="outline-container-org750e8c9" class="outline-3">
-<h3 id="org750e8c9">Trying Migrate</h3>
-<div class="outline-text-3" id="text-org750e8c9">
+<div id="outline-container-org6884666" class="outline-3">
+<h3 id="org6884666">Trying Migrate</h3>
+<div class="outline-text-3" id="text-org6884666">
 <p>
 It's time to create the first migration for the Samurai context. In order to create and
 execute migrations, we'll need access to the migrations commands and to the migrations
@@ -513,9 +513,9 @@ EF Core's script‑migration command will build up the relevant SQL:
 </div>
 </div>
 
-<div id="outline-container-org96de412" class="outline-3">
-<h3 id="org96de412">Reverse Engineering an Existing Database</h3>
-<div class="outline-text-3" id="text-org96de412">
+<div id="outline-container-orgd565b68" class="outline-3">
+<h3 id="orgd565b68">Reverse Engineering an Existing Database</h3>
+<div class="outline-text-3" id="text-orgd565b68">
 <p>
 You've seen me use migrations to create a database from a DbContext in classes. It's also
 possible to reverse engineer an existing database into a DbContext in classes. Typically,
@@ -543,12 +543,11 @@ Let's give it a try:
 </div>
 </div>
 
-<div id="outline-container-orge41428d" class="outline-2">
-<h2 id="orge41428d"><span class="todo TODO">TODO</span> Migrate Commands</h2>
+<div id="outline-container-orgce7294f" class="outline-2">
+<h2 id="orgce7294f"><span class="todo TODO">TODO</span> Migrate Commands</h2>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Date: 2022-03-21 Mon 00:00</p>
 <p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
 </div>
 </body>
