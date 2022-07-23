@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Me</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a> /
+  <a href='/youtube.html'>Youtube Channels</a> /
+  <a href='/cs.html'>Notes</a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">About Me</h1>
+<div class="PREVIEW" id="orgec88049">
+<p>
+I'm Saleh.
+</p>
+
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>

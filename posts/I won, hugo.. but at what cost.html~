@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>I Won, Hugo But at What Cost?</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a> /
+  <a href='/youtube.html'>Youtube Channels</a> /
+  <a href='/cs.html'>Notes</a>
+</div>
+</div>
+<div id="content" class="content">
+<h1 class="title">I Won, Hugo But at What Cost?</h1>
+<div class="PREVIEW" id="org365bd4a">
+<p>
+Finally, I did it. I manged to migrate from go devs' robe (جلباب).. no more hugo no more
+shitty mices.
+</p>
+
+</div>
+
+<p>
+I might have lost some posts, will many posts. And time. but I'm really glad I did it. I
+replaced 58.41 MiB binary with just a simple emacs lisp one file code.
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp"><span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">packages</span>
+<span style="font-weight: bold; font-style: italic;">;;;; </span><span style="font-weight: bold; font-style: italic;">Initialize the package system</span>
+(<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">package</span>)
+(<span style="font-weight: bold;">setq</span> package-user-dir (expand-file-name <span style="font-style: italic;">"./.packages"</span>))
+(<span style="font-weight: bold;">setq</span> package-archives '((<span style="font-style: italic;">"melpa"</span> . <span style="font-style: italic;">"https://melpa.org/packages/"</span>)
+                         (<span style="font-style: italic;">"elpa"</span> . <span style="font-style: italic;">"https://elpa.gnu.org/packages/"</span>)))
+(package-initialize)
+(<span style="font-weight: bold;">unless</span> package-archive-contents
+  (package-refresh-contents))
+
+<span style="font-weight: bold; font-style: italic;">;;;; </span><span style="font-weight: bold; font-style: italic;">Install dependencies</span>
+(package-install 'htmlize)
+
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Load publishing system</span>
+(<span style="font-weight: bold;">require</span> '<span style="font-weight: bold; text-decoration: underline;">ox-publish</span>)
+
+
+<span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">Sitemap preprocessing</span>
+<span style="font-weight: bold; font-style: italic;">;;;; </span><span style="font-weight: bold; font-style: italic;">Get Preview</span>
+
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">modify with an "if error skip" logic</span>
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">still need conditional</span>
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/get-preview</span> (file)
+  <span style="font-style: italic;">"get preview text from a file</span>
+
+<span style="font-style: italic;">Uses the function here as a starting point:</span>
+<span style="font-style: italic;">https://ogbe.net/blog/blogging_with_org.html"</span>
+  (<span style="font-weight: bold;">with-temp-buffer</span>
+    (insert-file-contents file)
+    (goto-char (point-min))
+    (<span style="font-weight: bold;">when</span> (re-search-forward <span style="font-style: italic;">"^#\\+BEGIN_PREVIEW$"</span> nil 1)
+      (goto-char (point-min))
+      (<span style="font-weight: bold;">let</span> ((beg (+ 1 (re-search-forward <span style="font-style: italic;">"^#\\+BEGIN_PREVIEW$"</span> nil 1)))
+            (end (<span style="font-weight: bold;">progn</span> (re-search-forward <span style="font-style: italic;">"^#\\+END_PREVIEW$"</span> nil 1)
+                        (match-beginning 0))))
+        (buffer-substring beg end)))))
+
+<span style="font-weight: bold; font-style: italic;">;;;; </span><span style="font-weight: bold; font-style: italic;">Format sitemap entries</span>
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/sitemap-entry</span> (entry style project)
+  <span style="font-style: italic;">"sitemap entry formatter</span>
+
+<span style="font-style: italic;">See code here for foundation:</span>
+<span style="font-style: italic;">https://loomcom.com/blog/0110_emacs_blogging_for_fun_and_profit.html"</span>
+  (print entry)
+  (<span style="font-weight: bold;">when</span> (not (directory-name-p entry)) <span style="font-weight: bold; font-style: italic;">; </span><span style="font-weight: bold; font-style: italic;">when not a directory</span>
+    (format (string-join
+             '(<span style="font-style: italic;">"*[[file:%s][%s]]\n"</span>
+               <span style="font-style: italic;">"#+BEGIN_published\n\n"</span>
+               <span style="font-style: italic;">"%s\n"</span>
+               <span style="font-style: italic;">"#END_published\n\n"</span>
+               <span style="font-style: italic;">"%s\n"</span>
+               <span style="font-style: italic;">"----------\n"</span>))
+            entry
+            (org-publish-find-title entry project)
+            (format-time-string <span style="font-style: italic;">"%A, %B %_d %Y at %l:%M %p %Z"</span> (org-publish-find-date entry project))
+            (<span style="font-weight: bold;">let</span> ((preview (my/get-preview (concat <span style="font-style: italic;">"content/"</span> entry))))
+              (insert preview))
+            )))
+<span style="font-weight: bold; font-style: italic;">;;;; </span><span style="font-weight: bold; font-style: italic;">Format Sitemap</span>
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">modify this one! (if necessary)</span>
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-publish-org-sitemap</span> (title list)
+  <span style="font-style: italic;">"Sitemap generation function."</span>
+  (concat <span style="font-style: italic;">"#+OPTIONS: toc:nil"</span>)
+  (org-list-to-subtree list))
+
+<span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">modify this one!</span>
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">my/org-publish-org-sitemap-format</span> (entry style project)
+  <span style="font-style: italic;">"Custom sitemap entry formatting: add date"</span>
+  (<span style="font-weight: bold;">cond</span> ((not (directory-name-p entry))
+         (<span style="font-weight: bold;">let</span> ((preview (<span style="font-weight: bold;">if</span> (my/get-preview (concat <span style="font-style: italic;">"content/"</span> entry))
+                            (my/get-preview (concat <span style="font-style: italic;">"content/"</span> entry))
+                          <span style="font-style: italic;">"(No preview)"</span>)))
+         (format <span style="font-style: italic;">"[[file:%s][(%s) %s]]\n%s"</span>
+                 entry
+                 (format-time-string <span style="font-style: italic;">"%Y-%m-%d"</span>
+                                     (org-publish-find-date entry project))
+                 (org-publish-find-title entry project)
+                 preview)))
+        ((eq style 'tree)
+         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">Return only last subdir.</span>
+         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">ends up as a headline at higher level than the posts</span>
+         <span style="font-weight: bold; font-style: italic;">;; </span><span style="font-weight: bold; font-style: italic;">it contains</span>
+         (file-name-nondirectory (directory-file-name entry)))
+        (t entry)))
+
+(<span style="font-weight: bold;">defun</span> <span style="font-weight: bold;">file-contents</span> (file)
+  (<span style="font-weight: bold;">with-temp-buffer</span>
+    (insert-file-contents file)
+    (buffer-string)))
+
+<span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">define publishing project</span>
+(<span style="font-weight: bold;">setq</span> org-publish-project-alist
+      (list
+       (list <span style="font-style: italic;">"org-site:main"</span>
+             <span style="font-weight: bold;">:recursive</span> t
+             <span style="font-weight: bold;">:base-directory</span> <span style="font-style: italic;">"./content"</span>
+             <span style="font-weight: bold;">:publishing-directory</span> <span style="font-style: italic;">"./public"</span>
+             <span style="font-weight: bold;">:publishing-function</span> 'org-html-publish-to-html
+             <span style="font-weight: bold;">:html-preamble</span> (file-contents <span style="font-style: italic;">"assets/html_preamble.html"</span>)
+             <span style="font-weight: bold;">:with-author</span> nil
+             <span style="font-weight: bold;">:with-creator</span> t
+             <span style="font-weight: bold;">:with-toc</span> t
+             <span style="font-weight: bold;">:section-numbers</span> nil
+             <span style="font-weight: bold;">:time-stamp-file</span> nil
+             <span style="font-weight: bold;">:auto-sitemap</span> t
+             <span style="font-weight: bold;">:sitemap-title</span> nil<span style="font-weight: bold; font-style: italic;">;</span><span style="font-weight: bold; font-style: italic;">"Daniel Liden's Blog"</span>
+             <span style="font-weight: bold;">:sitemap-format-entry</span> 'my/org-publish-org-sitemap-format
+             <span style="font-weight: bold;">:sitemap-function</span> 'my/org-publish-org-sitemap
+             <span style="font-weight: bold;">:sitemap-sort-files</span> 'anti-chronologically
+             <span style="font-weight: bold;">:sitemap-filename</span> <span style="font-style: italic;">"sitemap.org"</span>
+             <span style="font-weight: bold;">:sitemap-style</span> 'tree)
+       (list <span style="font-style: italic;">"org-site:static"</span>
+             <span style="font-weight: bold;">:base-directory</span> <span style="font-style: italic;">"./content/"</span>
+             <span style="font-weight: bold;">:base-extension</span> <span style="font-style: italic;">"css</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">js</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">png</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">jpg</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">gif</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">pdf</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">mp3</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">ogg</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">swf"</span>
+             <span style="font-weight: bold;">:publishing-directory</span> <span style="font-style: italic;">"./public"</span>
+             <span style="font-weight: bold;">:recursive</span> t
+             <span style="font-weight: bold;">:publishing-function</span> 'org-publish-attachment
+             )
+       (list <span style="font-style: italic;">"org-site:assets"</span>
+             <span style="font-weight: bold;">:base-directory</span> <span style="font-style: italic;">"./assets/"</span>
+             <span style="font-weight: bold;">:base-extension</span> <span style="font-style: italic;">"css</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">js</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">png</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">jpg</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">gif</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">pdf</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">mp3</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">ogg</span><span style="font-weight: bold; font-style: italic;">\\</span><span style="font-weight: bold; font-style: italic;">|</span><span style="font-style: italic;">swf"</span>
+             <span style="font-weight: bold;">:publishing-directory</span> <span style="font-style: italic;">"./public/"</span>
+             <span style="font-weight: bold;">:recursive</span> t
+             <span style="font-weight: bold;">:publishing-function</span> 'org-publish-attachment)))
+
+
+<span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">additional settings</span>
+(<span style="font-weight: bold;">setq</span> org-html-validation-link nil
+      org-html-htmlize-output-type 'inline-css
+      org-html-style-default (file-contents <span style="font-style: italic;">"assets/head.html"</span>)
+      org-export-use-babel nil)
+
+<span style="font-weight: bold; font-style: italic;">;;; </span><span style="font-weight: bold; font-style: italic;">generate site output</span>
+(org-publish-all t)
+
+(message <span style="font-style: italic;">"Build Complete!"</span>)
+
+
+</pre>
+</div>
+
+
+
+<div id="orgef142b5" class="figure">
+<p><img src="2022-07-15_16-11-32_screenshot.png" alt="2022-07-15_16-11-32_screenshot.png" />
+</p>
+</div>
+
+
+<p>
+Now I feel like I can do anything. I can link directly my org-files without caring about any
+linking issues, also I like the new minimal look, a lot.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-07-15 Fri 00:00</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>
