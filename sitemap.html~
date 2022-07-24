@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class='topnav'>
+  <a href='/index.html'>Home</a> /
+  <a href='/archive.html'>Blog</a> /
+  <a href='/fullbooks.html'>Books</a> /
+  <a href='/cinema.html'>Cinema</a> /
+  <a href='/youtube.html'>Youtube</a> /
+  <a href='/cs.html'>Notes</a>
+</div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgab79dd4">(2022-07-23) Youtube</a></li>
+<li><a href="#orga5d574b">(2022-07-23) Cinema</a></li>
+<li><a href="#org9710128">(2022-07-22) Books</a></li>
+<li><a href="#org39a071f">(2022-07-17) Posts Archive</a></li>
+<li><a href="#org1cc151e">(2022-07-17) Saleh's Home Page</a></li>
+<li><a href="#org6b920c8">(2022-07-15) Computer Science</a></li>
+<li><a href="#org0c040bb">(2022-07-15) About Me</a></li>
+<li><a href="#org6a6a0f3">computer-science</a>
+<ul>
+<li><a href="#org1cf7964">(2022-07-24) Language Built-in Feature Preview</a></li>
+<li><a href="#orge37de39">(2022-07-23) Design Patterns</a></li>
+<li><a href="#org68d0f11">(2022-07-23) Relational Database Design &amp; Modeling</a></li>
+<li><a href="#org0eb9626">(2022-07-23) Working With Files and Streams in C#</a></li>
+<li><a href="#org06a2154">(2022-07-23) Entity Framework</a></li>
+<li><a href="#org06b8091">(2022-07-23) Introduction Into ASP.NET Core</a></li>
+<li><a href="#org7723d82">(2022-07-23) Building a RESTful API with ASP.NET Core</a></li>
+<li><a href="#org35caa31">(2022-02-14) JSON in C# Using Json.NET</a></li>
+<li><a href="#orgcf57d7f">(2022-01-10) System Analysis &amp; Design</a></li>
+<li><a href="#orgfd49968">(2022-01-09) .NET Notes in C#</a></li>
+<li><a href="#org95f73b0">(2022-01-09) PostgreSQL Notes</a></li>
+<li><a href="#org9509dd8">(2022-01-09) LINQ Notes</a></li>
+<li><a href="#org906628a">(2022-01-09) Concurrency in C#</a></li>
+<li><a href="#org5c3d064">(2022-01-09) GO Notes</a></li>
+<li><a href="#orge5fd51c">(2022-01-04) Representations, Implementations and Algorithms of Graphs (and Trees)</a></li>
+<li><a href="#orgb15097e">(2021-12-18) Introduction to Non-theoretical Computational Geometry</a></li>
+<li><a href="#org9fd4950">(2021-05-31) Dynamic Programming</a></li>
+<li><a href="#orga0a0c08">(2021-03-22) Designing RESTful APIs</a></li>
+<li><a href="#org5e65836">(2021-01-04) Binary Tree Algorithms</a></li>
+</ul>
+</li>
+<li><a href="#orgafcccf8">posts</a>
+<ul>
+<li><a href="#orgf9d37d2">(2022-07-20) Intellectual Vomiting</a></li>
+<li><a href="#orgf8c0bdc">(2022-07-15) I Won, Hugo But at What Cost?</a></li>
+<li><a href="#org182ec95">(2022-04-05) Game and Pornography and Instant Gratification</a></li>
+<li><a href="#orgeb95677">(2022-03-22) Childe Harold's Pilgrimage</a></li>
+<li><a href="#orgea1bd03">(2022-03-14) Back to the Origins</a></li>
+<li><a href="#org17a699c">(2021-11-07) Pervez Hoodbhoy's Islam and Science: How Not to Read History</a></li>
+<li><a href="#org605a36f">(2021-09-29) Beyond Decliamists and Intellectuals</a></li>
+<li><a href="#org2b75169">(2021-08-15) Regarding the 'Neo-Democracy', Media, and the Public Opinion in the United States</a></li>
+<li><a href="#org5ef9333">(2021-08-05) On Social Media Neoconditioning or Why Redditor is a NPC?</a></li>
+<li><a href="#org3e79ca8">(2021-05-22) “Connection” and “Meant-To-Be”</a></li>
+<li><a href="#org955d288">(2020-12-11) Humiliated and Insulted by Fyodor Dostoevsky</a></li>
+</ul>
+</li>
+<li><a href="#org6005fc2">books</a>
+<ul>
+<li><a href="#orgbd0d56a">(2022-07-16) Capitalism, Socialism and Democracy</a></li>
+<li><a href="#org3db5e79">(2022-07-16) The Open Socity and Its Enemies</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab79dd4" class="outline-2">
+<h2 id="orgab79dd4"><a href="youtube.html">(2022-07-23) Youtube</a></h2>
+<div class="outline-text-2" id="text-orgab79dd4">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-orga5d574b" class="outline-2">
+<h2 id="orga5d574b"><a href="cinema.html">(2022-07-23) Cinema</a></h2>
+<div class="outline-text-2" id="text-orga5d574b">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org9710128" class="outline-2">
+<h2 id="org9710128"><a href="fullbooks.html">(2022-07-22) Books</a></h2>
+<div class="outline-text-2" id="text-org9710128">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org39a071f" class="outline-2">
+<h2 id="org39a071f"><a href="archive.html">(2022-07-17) Posts Archive</a></h2>
+<div class="outline-text-2" id="text-org39a071f">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org1cc151e" class="outline-2">
+<h2 id="org1cc151e"><a href="index.html">(2022-07-17) Saleh's Home Page</a></h2>
+<div class="outline-text-2" id="text-org1cc151e">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org6b920c8" class="outline-2">
+<h2 id="org6b920c8"><a href="cs.html">(2022-07-15) Computer Science</a></h2>
+<div class="outline-text-2" id="text-org6b920c8">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org0c040bb" class="outline-2">
+<h2 id="org0c040bb"><a href="about.html">(2022-07-15) About Me</a></h2>
+<div class="outline-text-2" id="text-org0c040bb">
+<p>
+I'm Saleh.
+</p>
+</div>
+</div>
+<div id="outline-container-org6a6a0f3" class="outline-2">
+<h2 id="org6a6a0f3">computer-science</h2>
+<div class="outline-text-2" id="text-org6a6a0f3">
+</div>
+<div id="outline-container-org1cf7964" class="outline-3">
+<h3 id="org1cf7964"><a href="computer-science/std.html">(2022-07-24) Language Built-in Feature Preview</a></h3>
+<div class="outline-text-3" id="text-org1cf7964">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-orge37de39" class="outline-3">
+<h3 id="orge37de39"><a href="computer-science/ptrns.html">(2022-07-23) Design Patterns</a></h3>
+<div class="outline-text-3" id="text-orge37de39">
+<p>
+<i>Based on  Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph
+Johnson and John Vlissides</i>
+</p>
+</div>
+</div>
+<div id="outline-container-org68d0f11" class="outline-3">
+<h3 id="org68d0f11"><a href="computer-science/db.html">(2022-07-23) Relational Database Design &amp; Modeling</a></h3>
+<div class="outline-text-3" id="text-org68d0f11">
+<p>
+Nowadays, when people talk about a database, they usually refer to a Relational database,
+but that has not always been the case. In fact, the term database is defined, by the Merriam
+Webster English dictionary as, a "usually large collection of data organized especially for
+rapid search and retrieval (as by a computer)". The Relational model is one way to organize
+a large collection of data, but not the only one.
+</p>
+</div>
+</div>
+<div id="outline-container-org0eb9626" class="outline-3">
+<h3 id="org0eb9626"><a href="computer-science/f.html">(2022-07-23) Working With Files and Streams in C#</a></h3>
+<div class="outline-text-3" id="text-org0eb9626">
+<p>
+I was thinking in the first place to make this file just a part of the major C# note file,
+but I believe that I might and will face a lot of filesystem topics, however I'm sure I will
+not ever solve such a problem using C# (don't shout, microsoft kid), but surely it will be
+useful to know. (Actually no, it probably will not but I Wall feel insecure if I didn't know
+it).
+</p>
+</div>
+</div>
+<div id="outline-container-org06a2154" class="outline-3">
+<h3 id="org06a2154"><a href="computer-science/ef.html">(2022-07-23) Entity Framework</a></h3>
+<div class="outline-text-3" id="text-org06a2154">
+<p>
+Entity Framework Core, or EF Core, is a library that software developers can use to
+access databases. There are many ways to build such a library, but EF Core is
+designed as an object-relational mapper (O/RM). O/RMs work by mapping between
+two worlds: the relational database, with its own API, and the object-oriented soft-
+ware world of classes and software code. EF Core’s main strength is allowing software
+developers to write database access code quickly in a language that you may know
+better than SQL.
+</p>
+</div>
+</div>
+<div id="outline-container-org06b8091" class="outline-3">
+<h3 id="org06b8091"><a href="computer-science/mvc.html">(2022-07-23) Introduction Into ASP.NET Core</a></h3>
+<div class="outline-text-3" id="text-org06b8091">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org7723d82" class="outline-3">
+<h3 id="org7723d82"><a href="computer-science/buildapi.html">(2022-07-23) Building a RESTful API with ASP.NET Core</a></h3>
+<div class="outline-text-3" id="text-org7723d82">
+<p>
+The Richardson Maturity Model is a model developed by Leonard Richardson. It grades, if you
+will, APIs by the their RESTful maturity. So it's interesting to look at it, as it shows us
+how we can go from a simple API that doesn't really care about protocol, nor standards. To
+an API, that can be considered RESTful.
+</p>
+</div>
+</div>
+<div id="outline-container-org35caa31" class="outline-3">
+<h3 id="org35caa31"><a href="computer-science/json.html">(2022-02-14) JSON in C# Using Json.NET</a></h3>
+<div class="outline-text-3" id="text-org35caa31">
+<p>
+One of the most popular .NET libraries for working with the JSON serialization
+format is Newtonsoft.Json, known as Json.NET. It is mature and powerful.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcf57d7f" class="outline-3">
+<h3 id="orgcf57d7f"><a href="computer-science/s.html">(2022-01-10) System Analysis &amp; Design</a></h3>
+<div class="outline-text-3" id="text-orgcf57d7f">
+<p>
+The systems development life cycle (SDLC), contains the fundamental four- phase model
+(planning, analysis, design, and implementation) common to all information  systems
+development projects. It describes the evolution of system development method- ologies and
+discusses the roles and skills required of a systems analyst. Th e chapter then  overviews
+the basic characteristics of object-oriented systems and the fundamentals of object-oriented
+systems analysis and design and closes with a description of the Unified Process and its
+extentions and Unified Modeling Language
+</p>
+</div>
+</div>
+<div id="outline-container-orgfd49968" class="outline-3">
+<h3 id="orgfd49968"><a href="computer-science/csharp.html">(2022-01-09) .NET Notes in C#</a></h3>
+<div class="outline-text-3" id="text-orgfd49968">
+<p>
+C# indicates the end of a statement with a semicolon. A statement can be composed of
+multiple variables and expressions. For example, in the following statement, <code>totalPrice</code> is a
+variable and <code>subtotal + salesTax</code> is an expression:
+</p>
+</div>
+</div>
+<div id="outline-container-org95f73b0" class="outline-3">
+<h3 id="org95f73b0"><a href="computer-science/psql.html">(2022-01-09) PostgreSQL Notes</a></h3>
+<div class="outline-text-3" id="text-org95f73b0">
+<p>
+PostgreSQL mini-cookbook
+</p>
+</div>
+</div>
+<div id="outline-container-org9509dd8" class="outline-3">
+<h3 id="org9509dd8"><a href="computer-science/linq.html">(2022-01-09) LINQ Notes</a></h3>
+<div class="outline-text-3" id="text-org9509dd8">
+<p>
+The original motivation behind LINQ was to address the conceptual and tech- nical
+difficulties encountered when using databases with .NET programming lan- guages. With LINQ,
+Microsoft’s intention was to provide a solution for the problem of object-relational
+mapping, as well as to simplify the interaction between objects and data sources. LINQ
+eventually evolved into a general-purpose language-integrated querying toolset. This toolset
+can be used to access data com- ing from in-memory objects (LINQ to Objects), databases
+(LINQ to SQL), XML documents (LINQ to XML), a file-system, or any other source.
+</p>
+</div>
+</div>
+<div id="outline-container-org906628a" class="outline-3">
+<h3 id="org906628a"><a href="computer-science/con.html">(2022-01-09) Concurrency in C#</a></h3>
+<div class="outline-text-3" id="text-org906628a">
+<p>
+The following text is based on <i>Concurrency in C# Cookbook: Asynchronous, Parallel, and
+Multithreaded Programming</i> by Stephen Cleary
+</p>
+</div>
+</div>
+<div id="outline-container-org5c3d064" class="outline-3">
+<h3 id="org5c3d064"><a href="computer-science/go.html">(2022-01-09) GO Notes</a></h3>
+<div class="outline-text-3" id="text-org5c3d064">
+<p>
+GO programming language notes. Reading Adam Freeman's Pro Go.
+</p>
+</div>
+</div>
+<div id="outline-container-orge5fd51c" class="outline-3">
+<h3 id="orge5fd51c"><a href="computer-science/graph.html">(2022-01-04) Representations, Implementations and Algorithms of Graphs (and Trees)</a></h3>
+<div class="outline-text-3" id="text-orge5fd51c">
+<p>
+Graph theory random notations
+</p>
+</div>
+</div>
+<div id="outline-container-orgb15097e" class="outline-3">
+<h3 id="orgb15097e"><a href="computer-science/gmtry.html">(2021-12-18) Introduction to Non-theoretical Computational Geometry</a></h3>
+<div class="outline-text-3" id="text-orgb15097e">
+<p>
+Based on TopCoder's thrive and <a href="https://www.ti.inf.ethz.ch/ew/courses/CG13/index.html">Computational Geometry (252-1425-00L) HS13</a> lecture notes.
+</p>
+</div>
+</div>
+<div id="outline-container-org9fd4950" class="outline-3">
+<h3 id="org9fd4950"><a href="computer-science/dp.html">(2021-05-31) Dynamic Programming</a></h3>
+<div class="outline-text-3" id="text-org9fd4950">
+<p>
+Follows:
+Roofgarden, T. (2019). <i>Algorithms Illuminated (Part 3): Greedy Algorithms and Dynamic
+Programming</i> (Illustrated ed.). Soundlikeyourself Publishing, LLC. <a href="https://www.youtube.com/channel/UCcH4Ga14Y4ELFKrEYM1vXCg/videos">Channel @ YouTube.com</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orga0a0c08" class="outline-3">
+<h3 id="orga0a0c08"><a href="computer-science/api.html">(2021-03-22) Designing RESTful APIs</a></h3>
+<div class="outline-text-3" id="text-orga0a0c08">
+<p>
+I'm not going to talk about how to implement these web APIs, but talk about the design
+aspects of how to design them so that they're easier to use and easier to maintain. The goal
+here is for you to understand REST's role in creation of this API, not to simply adhere to
+the dogma that surrounds REST. I want to introduce you to a way of designing APIs that's
+pragmatic and simple.
+</p>
+</div>
+</div>
+<div id="outline-container-org5e65836" class="outline-3">
+<h3 id="org5e65836"><a href="computer-science/oltree.html">(2021-01-04) Binary Tree Algorithms</a></h3>
+<div class="outline-text-3" id="text-org5e65836">
+<p>
+Introduction into binary trees algorithms
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgafcccf8" class="outline-2">
+<h2 id="orgafcccf8">posts</h2>
+<div class="outline-text-2" id="text-orgafcccf8">
+</div>
+<div id="outline-container-orgf9d37d2" class="outline-3">
+<h3 id="orgf9d37d2"><a href="posts/vomiting.html">(2022-07-20) Intellectual Vomiting</a></h3>
+<div class="outline-text-3" id="text-orgf9d37d2">
+<p>
+I want to "vomit" some thoughts. Or I wanted, once I get my hands upon a keyboard,
+everything evaporates.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf8c0bdc" class="outline-3">
+<h3 id="orgf8c0bdc"><a href="posts/I won, hugo.. but at what cost.html">(2022-07-15) I Won, Hugo But at What Cost?</a></h3>
+<div class="outline-text-3" id="text-orgf8c0bdc">
+<p>
+Finally, I did it. I manged to migrate from go devs' robe (جلباب).. no more hugo no more
+shitty mices.
+</p>
+</div>
+</div>
+<div id="outline-container-org182ec95" class="outline-3">
+<h3 id="org182ec95"><a href="posts/Game and Pornography and Instant Gratification.html">(2022-04-05) Game and Pornography and Instant Gratification</a></h3>
+<div class="outline-text-3" id="text-org182ec95">
+<p>
+I believe that gaming is a very fine art, in narrative game story you may find plots and
+values that you will not find in a lot of literature books. We all know a lot of games that
+have been turned into books and movies because of how much ingenuine it was. And this
+encounter the first 2 points. Games need a lot too much time than a movie, novel, even
+sometimes more than a TV show (which I also have concerns about) to rummage the values
+inside the game story. For me this is an adequate reason to quit.
+</p>
+</div>
+</div>
+<div id="outline-container-orgeb95677" class="outline-3">
+<h3 id="orgeb95677"><a href="posts/Childe Harold's Pilgrimage.html">(2022-03-22) Childe Harold's Pilgrimage</a></h3>
+<div class="outline-text-3" id="text-orgeb95677">
+<p>
+Perhaps Daingerfield couldn't show the same 'proclamation of opprobrium' for those who will
+never sense the toils nor the summits, as Byron did. However, I could discern every iota of
+pride and glory in the painting very well, just as in Byron's words.
+</p>
+</div>
+</div>
+<div id="outline-container-orgea1bd03" class="outline-3">
+<h3 id="orgea1bd03"><a href="posts/Back to The Origins.html">(2022-03-14) Back to the Origins</a></h3>
+<div class="outline-text-3" id="text-orgea1bd03">
+<p>
+Or possibly it was because of the darkness. Why did I write all of this.
+</p>
+</div>
+</div>
+<div id="outline-container-org17a699c" class="outline-3">
+<h3 id="org17a699c"><a href="posts/Islam and Science.html">(2021-11-07) Pervez Hoodbhoy's Islam and Science: How Not to Read History</a></h3>
+<div class="outline-text-3" id="text-org17a699c">
+<p>
+There are a lot of examples of this, American creationists exert a lot of efforts based on
+false beliefs, they even created a fully so called 'scientific journal' called
+<i><a href="https://bio-complexity.org/ojs/index.php/main">biocomplexity</a></i> which tries to prove that bio-objects are too complicated to be created by a
+blind watch maker. This is led by the misunderstanding to every evolutionary fact, all of
+the creationists claims however in how many pages it is descried, it is probably can be
+refuted in a few paragraphs which might sounds insanity to someone who watching this happens
+from afar.
+</p>
+</div>
+</div>
+<div id="outline-container-org605a36f" class="outline-3">
+<h3 id="org605a36f"><a href="posts/kalam.html">(2021-09-29) Beyond Decliamists and Intellectuals</a></h3>
+<div class="outline-text-3" id="text-org605a36f">
+<p>
+There is a common ground between the meaning of a 'declaimist' and a
+non-intellectual that you see on daily basis especially in average
+social media site, I don't want to single out a live example but let's
+take \(x\) and \(let\) \(x\) be right-wing social media intellectual who
+has more than 100k loyal follower of his medieval instructions about
+miscarriage or the sexual orientations, if one day \(x\) figured out, or
+even less revolutionary, let's say he'd found that some of his beliefs
+are either wrong or obsolete, what would he do? I can tell the answer is
+cognitive dissonance tends to be ended by denial of facts, trying to
+stick to what he already believes (just like Chatelier's principle
+object), he is not only required to comprehend whatever he believes in,
+but his loyal fellows also are waiting for his directive, he won't let
+them down. It's getting worse in cases in which x has already a lot of
+bestselling publications which in he insures his points. Of course,
+within time numerous intellectuals are getting a cognitive flexibility
+enables them to change their thoughts smoothly, however, the majority
+won't.
+</p>
+</div>
+</div>
+<div id="outline-container-org2b75169" class="outline-3">
+<h3 id="org2b75169"><a href="posts/mediacontrol.html">(2021-08-15) Regarding the 'Neo-Democracy', Media, and the Public Opinion in the United States</a></h3>
+<div class="outline-text-3" id="text-org2b75169">
+<p>
+The role of the media in contemporary politics forces us to ask what
+kind of a world and what kind of a society we want to live in, and in
+particular in what sense of democracy do we want this to be a democratic
+society? Let me begin by counter-posing two different conceptions of
+democracy. One conception of democracy has it that a democratic society
+is one in which the public has the means to participate in some
+meaningful way in the management of their own affairs and the means of
+information are open and free. If you look up democracy in the
+dictionary you'll get a definition something like that.
+</p>
+</div>
+</div>
+<div id="outline-container-org5ef9333" class="outline-3">
+<h3 id="org5ef9333"><a href="posts/conditioning1.html">(2021-08-05) On Social Media Neoconditioning or Why Redditor is a NPC?</a></h3>
+<div class="outline-text-3" id="text-org5ef9333">
+<p>
+I hope I'm not updogging the definition of "NPCs" but I think that
+nothing can explain what does it mean (even what the words that it
+stands for) more than reddit users or the so-called, "the redditors"
+actually I think that designation supports the argument I'm about to
+make.
+</p>
+</div>
+</div>
+<div id="outline-container-org3e79ca8" class="outline-3">
+<h3 id="org3e79ca8"><a href="posts/conection.html">(2021-05-22) “Connection” and “Meant-To-Be”</a></h3>
+<div class="outline-text-3" id="text-org3e79ca8">
+<p>
+2 concepts that seem really nice and agreeable, but I find are psychically terrible, are
+“connection” and “meant-to-be”.
+</p>
+</div>
+</div>
+<div id="outline-container-org955d288" class="outline-3">
+<h3 id="org955d288"><a href="posts/desto.html">(2020-12-11) Humiliated and Insulted by Fyodor Dostoevsky</a></h3>
+<div class="outline-text-3" id="text-org955d288">
+<p>
+This is my re-reading of "The Insulted and Injured" as part of my
+attempt to complete the complete work of Feydor Dostoyevsky. I had read
+the novel for a very long time, when I began reading Dostoevsky, and at
+that time I did not have the literary interest that makes me search
+about this novel, and I get enough for saying: It is a good novel.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6005fc2" class="outline-2">
+<h2 id="org6005fc2">books</h2>
+<div class="outline-text-2" id="text-org6005fc2">
+</div>
+<div id="outline-container-orgbd0d56a" class="outline-3">
+<h3 id="orgbd0d56a"><a href="books/Capitalism, Socialism and Democracy.html">(2022-07-16) Capitalism, Socialism and Democracy</a></h3>
+<div class="outline-text-3" id="text-orgbd0d56a">
+<p>
+(No preview)
+</p>
+</div>
+</div>
+<div id="outline-container-org3db5e79" class="outline-3">
+<h3 id="org3db5e79"><a href="books/opensocity.html">(2022-07-16) The Open Socity and Its Enemies</a></h3>
+<div class="outline-text-3" id="text-org3db5e79">
+<p>
+(No preview)</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>
