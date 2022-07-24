@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Introduction Into ASP.NET Core</title>
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/f.css"/>
 <link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
 </head>
 <body>
@@ -27,20 +27,20 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org27a1b7d">A First Project of ASP.NET Core</a>
+<li><a href="#org291f030">A First Project of ASP.NET Core</a>
 <ul>
-<li><a href="#orgb328ed9">Overview</a></li>
-<li><a href="#orge78a2b8"><code>csproj</code>: Dependencies</a></li>
-<li><a href="#org03479c8">The Program Class</a></li>
+<li><a href="#org1f4cd66">Overview</a></li>
+<li><a href="#orgf2cacba"><code>csproj</code>: Dependencies</a></li>
+<li><a href="#org475a9a5">The Program Class</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org27a1b7d" class="outline-2">
-<h2 id="org27a1b7d">A First Project of ASP.NET Core</h2>
-<div class="outline-text-2" id="text-org27a1b7d">
+<div id="outline-container-org291f030" class="outline-2">
+<h2 id="org291f030">A First Project of ASP.NET Core</h2>
+<div class="outline-text-2" id="text-org291f030">
 <p>
 Creating a project shouldn't be a controversial thing, there is already predefined
 templates in tools like <code>dotnet</code>, or embedded in IDEs. I'm going to use the one that
@@ -63,7 +63,7 @@ folders, as shown in the following figure, but I’ll run through the major ones
 </p>
 
 
-<div id="orgdf28677" class="figure">
+<div id="org8bfd950" class="figure">
 <p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_07-05-06_screenshot.png" alt="2022-03-03_07-05-06_screenshot.png" />
 </p>
 </div>
@@ -96,9 +96,9 @@ tings, some of which are used at runtime, and others which are used to build you
 compile time.
 </p>
 </div>
-<div id="outline-container-orgb328ed9" class="outline-3">
-<h3 id="orgb328ed9">Overview</h3>
-<div class="outline-text-3" id="text-orgb328ed9">
+<div id="outline-container-org1f4cd66" class="outline-3">
+<h3 id="org1f4cd66">Overview</h3>
+<div class="outline-text-3" id="text-org1f4cd66">
 <p>
 The request and response, the reverse proxy, and the ASP.NET Core web server are all still
 there, but you’ll notice that I’ve expanded the ASP.NET Core application itself to show the
@@ -107,7 +107,7 @@ of your app that goes into generating the response from a request.
 </p>
 
 
-<div id="orge124deb" class="figure">
+<div id="org5282a97" class="figure">
 <p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_19-28-59_uUqiA73.png" alt="2022-03-03_19-28-59_uUqiA73.png" />
 </p>
 </div>
@@ -145,9 +145,9 @@ ther ado, let’s create an application!
 </div>
 </div>
 
-<div id="outline-container-orge78a2b8" class="outline-3">
-<h3 id="orge78a2b8"><code>csproj</code>: Dependencies</h3>
-<div class="outline-text-3" id="text-orge78a2b8">
+<div id="outline-container-orgf2cacba" class="outline-3">
+<h3 id="orgf2cacba"><code>csproj</code>: Dependencies</h3>
+<div class="outline-text-3" id="text-orgf2cacba">
 <p>
 The csproj file is the project file for .NET applications and contains the details
 required for the .NET tooling to build your project. It defines the type of project
@@ -190,9 +190,9 @@ you’re targeting .NET Core.
 </p>
 </div>
 </div>
-<div id="outline-container-org03479c8" class="outline-3">
-<h3 id="org03479c8">The Program Class</h3>
-<div class="outline-text-3" id="text-org03479c8">
+<div id="outline-container-org475a9a5" class="outline-3">
+<h3 id="org475a9a5">The Program Class</h3>
+<div class="outline-text-3" id="text-org475a9a5">
 <p>
 All ASP.NET Core applications start in the same way as .NET Console applications—
 with a Program.cs file. This file contains a static void Main function, which is a stan-
@@ -212,7 +212,7 @@ to CreateDefaultBuilder, to define how the IWebHost is configured, before instan
 </p>
 
 
-<div id="org04d3bed" class="figure">
+<div id="org6545ce0" class="figure">
 <p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_19-43-42_4BtBon3.png" alt="2022-03-03_19-43-42_4BtBon3.png" />
 </p>
 </div>

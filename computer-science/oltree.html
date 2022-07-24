@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Binary Tree Algorithms</title>
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<link rel="stylesheet" type="text/css" href="/f.css"/>
 <link rel="stylesheet" type="text/css" href="/orgstyle.css"/>
 </head>
 <body>
@@ -27,30 +27,30 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org089b861">Binart Tree Traversal</a>
+<li><a href="#org092a24f">Binart Tree Traversal</a>
 <ul>
-<li><a href="#orgeac03f0">DFS</a></li>
-<li><a href="#org552896b">BFS</a></li>
+<li><a href="#orgd173aa4">DFS</a></li>
+<li><a href="#orgfd455fa">BFS</a></li>
 </ul>
 </li>
-<li><a href="#orgb13e9de">Counting</a></li>
+<li><a href="#org99c6222">Counting</a></li>
 </ul>
 </div>
 </div>
-<div class="PREVIEW" id="orgc5cffaf">
+<div class="PREVIEW" id="org2a6e7b1">
 <p>
 Introduction into binary trees algorithms
 </p>
 
 </div>
 
-<div id="outline-container-org089b861" class="outline-2">
-<h2 id="org089b861">Binart Tree Traversal</h2>
-<div class="outline-text-2" id="text-org089b861">
+<div id="outline-container-org092a24f" class="outline-2">
+<h2 id="org092a24f">Binart Tree Traversal</h2>
+<div class="outline-text-2" id="text-org092a24f">
 </div>
-<div id="outline-container-orgeac03f0" class="outline-3">
-<h3 id="orgeac03f0">DFS</h3>
-<div class="outline-text-3" id="text-orgeac03f0">
+<div id="outline-container-orgd173aa4" class="outline-3">
+<h3 id="orgd173aa4">DFS</h3>
+<div class="outline-text-3" id="text-orgd173aa4">
 <p>
 Often we wish to process a binary tree by “visiting” each of its nodes, each time
 performing a specific action such as printing the contents of the node. Any process
@@ -148,9 +148,9 @@ access to the BinNode class.
 </div>
 </div>
 
-<div id="outline-container-org552896b" class="outline-3">
-<h3 id="org552896b">BFS</h3>
-<div class="outline-text-3" id="text-org552896b">
+<div id="outline-container-orgfd455fa" class="outline-3">
+<h3 id="orgfd455fa">BFS</h3>
+<div class="outline-text-3" id="text-orgfd455fa">
 <div class="org-src-container">
 <pre class="src src-c++"><span style="font-weight: bold;">while</span> (q.empty() == <span style="font-weight: bold; text-decoration: underline;">false</span>) {
    <span style="font-weight: bold; text-decoration: underline;">Node</span> *<span style="font-weight: bold; font-style: italic;">node</span> = q.front();
@@ -167,9 +167,9 @@ access to the BinNode class.
 </div>
 </div>
 
-<div id="outline-container-orgb13e9de" class="outline-2">
-<h2 id="orgb13e9de">Counting</h2>
-<div class="outline-text-2" id="text-orgb13e9de">
+<div id="outline-container-org99c6222" class="outline-2">
+<h2 id="org99c6222">Counting</h2>
+<div class="outline-text-2" id="text-org99c6222">
 <p>
 If we wish to count the number of nodes in a binary tree. The
 key insight is that the total count for any (non-empty) subtree is one for the
