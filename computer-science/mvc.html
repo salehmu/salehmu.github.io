@@ -27,20 +27,20 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga4020c3">A First Project of ASP.NET Core</a>
+<li><a href="#org5e0aa07">A First Project of ASP.NET Core</a>
 <ul>
-<li><a href="#org9ba60bb">Overview</a></li>
-<li><a href="#orgace344d"><code>csproj</code>: Dependencies</a></li>
-<li><a href="#orgfe6e330">The Program Class</a></li>
+<li><a href="#org98352e9">Overview</a></li>
+<li><a href="#org5b7593b"><code>csproj</code>: Dependencies</a></li>
+<li><a href="#org3997d93">The Program Class</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga4020c3" class="outline-2">
-<h2 id="orga4020c3">A First Project of ASP.NET Core</h2>
-<div class="outline-text-2" id="text-orga4020c3">
+<div id="outline-container-org5e0aa07" class="outline-2">
+<h2 id="org5e0aa07">A First Project of ASP.NET Core</h2>
+<div class="outline-text-2" id="text-org5e0aa07">
 <p>
 Creating a project shouldn't be a controversial thing, there is already predefined
 templates in tools like <code>dotnet</code>, or embedded in IDEs. I'm going to use the one that
@@ -63,7 +63,7 @@ folders, as shown in the following figure, but I’ll run through the major ones
 </p>
 
 
-<div id="org75981ff" class="figure">
+<div id="orgefd0b53" class="figure">
 <p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_07-05-06_screenshot.png" alt="2022-03-03_07-05-06_screenshot.png" />
 </p>
 </div>
@@ -96,9 +96,9 @@ tings, some of which are used at runtime, and others which are used to build you
 compile time.
 </p>
 </div>
-<div id="outline-container-org9ba60bb" class="outline-3">
-<h3 id="org9ba60bb">Overview</h3>
-<div class="outline-text-3" id="text-org9ba60bb">
+<div id="outline-container-org98352e9" class="outline-3">
+<h3 id="org98352e9">Overview</h3>
+<div class="outline-text-3" id="text-org98352e9">
 <p>
 The request and response, the reverse proxy, and the ASP.NET Core web server are all still
 there, but you’ll notice that I’ve expanded the ASP.NET Core application itself to show the
@@ -107,7 +107,7 @@ of your app that goes into generating the response from a request.
 </p>
 
 
-<div id="orgd6a5c90" class="figure">
+<div id="orgb3e00f2" class="figure">
 <p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_19-28-59_uUqiA73.png" alt="2022-03-03_19-28-59_uUqiA73.png" />
 </p>
 </div>
@@ -145,9 +145,9 @@ ther ado, let’s create an application!
 </div>
 </div>
 
-<div id="outline-container-orgace344d" class="outline-3">
-<h3 id="orgace344d"><code>csproj</code>: Dependencies</h3>
-<div class="outline-text-3" id="text-orgace344d">
+<div id="outline-container-org5b7593b" class="outline-3">
+<h3 id="org5b7593b"><code>csproj</code>: Dependencies</h3>
+<div class="outline-text-3" id="text-org5b7593b">
 <p>
 The csproj file is the project file for .NET applications and contains the details
 required for the .NET tooling to build your project. It defines the type of project
@@ -190,9 +190,9 @@ you’re targeting .NET Core.
 </p>
 </div>
 </div>
-<div id="outline-container-orgfe6e330" class="outline-3">
-<h3 id="orgfe6e330">The Program Class</h3>
-<div class="outline-text-3" id="text-orgfe6e330">
+<div id="outline-container-org3997d93" class="outline-3">
+<h3 id="org3997d93">The Program Class</h3>
+<div class="outline-text-3" id="text-org3997d93">
 <p>
 All ASP.NET Core applications start in the same way as .NET Console applications—
 with a Program.cs file. This file contains a static void Main function, which is a stan-
@@ -212,7 +212,7 @@ to CreateDefaultBuilder, to define how the IWebHost is configured, before instan
 </p>
 
 
-<div id="org74f45a8" class="figure">
+<div id="org1443aff" class="figure">
 <p><img src="A_First_Project_of_ASP.NET_Core/2022-03-03_19-43-42_4BtBon3.png" alt="2022-03-03_19-43-42_4BtBon3.png" />
 </p>
 </div>
