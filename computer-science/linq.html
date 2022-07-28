@@ -27,74 +27,74 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org103a2dc">Motivation</a></li>
-<li><a href="#orgbca286e">Hello LINQ to Object</a></li>
-<li><a href="#org8012a7c">LINQ to SQL</a></li>
-<li><a href="#org61847d9">LINQ in Depth <code>[22/49]</code></a>
+<li><a href="#orga43b3b5">Motivation</a></li>
+<li><a href="#org8ccdb7e">Hello LINQ to Object</a></li>
+<li><a href="#org30683e2">LINQ to SQL</a></li>
+<li><a href="#orgb0d5196">LINQ in Depth <code>[22/49]</code></a>
 <ul>
-<li><a href="#org942fb08"><span class="done DONE">DONE</span> <code>IEnumerable</code> and <code>IQueryable</code></a></li>
-<li><a href="#org9f42ab3"><span class="done DONE">DONE</span> Differences between <code>IEnumerable</code> and <code>IQueryable</code></a></li>
-<li><a href="#org847b682"><span class="done DONE">DONE</span> <code>OfType</code></a></li>
-<li><a href="#orgeaecd55"><span class="done DONE">DONE</span> <code>Distinct</code></a></li>
-<li><a href="#orge944194"><span class="done DONE">DONE</span> <code>Except</code></a></li>
-<li><a href="#org8e8ed77"><span class="done DONE">DONE</span> <code>Intersect</code></a></li>
-<li><a href="#org03be32c"><span class="done DONE">DONE</span> <code>Union</code></a></li>
-<li><a href="#org35f2689"><span class="done DONE">DONE</span> <code>SelectMany</code></a></li>
-<li><a href="#orge5968b1"><span class="done DONE">DONE</span> <code>Concat</code></a></li>
-<li><a href="#orgd0ee988"><span class="done DONE">DONE</span> <code>OrderBy</code></a></li>
-<li><a href="#orgdedc753"><span class="done DONE">DONE</span> <code>OrderByDescending</code></a></li>
-<li><a href="#orgcfc5038"><span class="done DONE">DONE</span> <code>ThenBy</code> and <code>ThenByDescending</code></a></li>
-<li><a href="#orgabf9136"><span class="done DONE">DONE</span> <code>Reverse</code></a></li>
-<li><a href="#orga23e885"><span class="done DONE">DONE</span> <code>Aggregate</code></a></li>
-<li><a href="#orgc922174"><span class="done DONE">DONE</span> <code>All</code></a></li>
-<li><a href="#org5c5c3db"><span class="done DONE">DONE</span> <code>Any</code></a></li>
-<li><a href="#orgf46c667"><span class="done DONE">DONE</span> <code>Contains</code></a></li>
-<li><a href="#org1f7fcfd"><span class="done DONE">DONE</span> <code>Contains</code> or <code>Any</code>?</a></li>
-<li><a href="#org9e16613"><span class="done DONE">DONE</span> <code>GroupBy</code></a></li>
-<li><a href="#orgabcd9e8"><span class="done DONE">DONE</span> <code>Zip</code></a></li>
-<li><a href="#org0c7ef1b"><span class="todo TODO">TODO</span> <code>GroupBy</code> By Multiple Keys</a></li>
-<li><a href="#orgb48c114"><span class="done DONE">DONE</span> Deferred Execution vs Immediate Execution</a>
+<li><a href="#org7618996"><span class="done DONE">DONE</span> <code>IEnumerable</code> and <code>IQueryable</code></a></li>
+<li><a href="#org004e58d"><span class="done DONE">DONE</span> Differences between <code>IEnumerable</code> and <code>IQueryable</code></a></li>
+<li><a href="#org3a5246f"><span class="done DONE">DONE</span> <code>OfType</code></a></li>
+<li><a href="#org465d835"><span class="done DONE">DONE</span> <code>Distinct</code></a></li>
+<li><a href="#orgd057d06"><span class="done DONE">DONE</span> <code>Except</code></a></li>
+<li><a href="#org60c7ebe"><span class="done DONE">DONE</span> <code>Intersect</code></a></li>
+<li><a href="#org75b2f1d"><span class="done DONE">DONE</span> <code>Union</code></a></li>
+<li><a href="#org21abe8e"><span class="done DONE">DONE</span> <code>SelectMany</code></a></li>
+<li><a href="#org68f7545"><span class="done DONE">DONE</span> <code>Concat</code></a></li>
+<li><a href="#orgec1dfe7"><span class="done DONE">DONE</span> <code>OrderBy</code></a></li>
+<li><a href="#org4d2468c"><span class="done DONE">DONE</span> <code>OrderByDescending</code></a></li>
+<li><a href="#orgad67844"><span class="done DONE">DONE</span> <code>ThenBy</code> and <code>ThenByDescending</code></a></li>
+<li><a href="#org82b2c6e"><span class="done DONE">DONE</span> <code>Reverse</code></a></li>
+<li><a href="#org7bbed04"><span class="done DONE">DONE</span> <code>Aggregate</code></a></li>
+<li><a href="#org370a922"><span class="done DONE">DONE</span> <code>All</code></a></li>
+<li><a href="#org5aeb88f"><span class="done DONE">DONE</span> <code>Any</code></a></li>
+<li><a href="#org37f1dfe"><span class="done DONE">DONE</span> <code>Contains</code></a></li>
+<li><a href="#orgebaff78"><span class="done DONE">DONE</span> <code>Contains</code> or <code>Any</code>?</a></li>
+<li><a href="#org46a4bb1"><span class="done DONE">DONE</span> <code>GroupBy</code></a></li>
+<li><a href="#org831579c"><span class="done DONE">DONE</span> <code>Zip</code></a></li>
+<li><a href="#orgd3131de"><span class="todo TODO">TODO</span> <code>GroupBy</code> By Multiple Keys</a></li>
+<li><a href="#org1ef80d7"><span class="done DONE">DONE</span> Deferred Execution vs Immediate Execution</a>
 <ul>
-<li><a href="#org8647af9">Deferred Execution</a></li>
-<li><a href="#org8d280c8">Immediate Execution</a></li>
+<li><a href="#org7764b62">Deferred Execution</a></li>
+<li><a href="#org3e0866e">Immediate Execution</a></li>
 </ul>
 </li>
-<li><a href="#org67adc66"><span class="done DONE">DONE</span> <code>ToLookup</code></a></li>
-<li><a href="#org8b8543f"><span class="todo TODO">TODO</span> Inner Join</a></li>
-<li><a href="#orgcd410f6"><span class="todo TODO">TODO</span> Join with Multiple Data Sources</a></li>
-<li><a href="#org63b7a92"><span class="todo TODO">TODO</span> Group Join</a></li>
-<li><a href="#org40faed7"><span class="todo TODO">TODO</span> Left Join</a></li>
-<li><a href="#org2f3659c"><span class="todo TODO">TODO</span> Cross Join</a></li>
-<li><a href="#org81dc2af"><span class="todo TODO">TODO</span> <code>ElementAt</code> and <code>ElementAtOrDefault</code></a></li>
-<li><a href="#org275b040"><span class="todo TODO">TODO</span> <code>First</code> and <code>FirstOrDefault</code></a></li>
-<li><a href="#org72586cc"><span class="todo TODO">TODO</span> <code>Last</code> and <code>LastOrDefault</code></a></li>
-<li><a href="#orgbd7e133"><span class="todo TODO">TODO</span> <code>Single</code> and <code>SingleOrDefault</code></a></li>
-<li><a href="#orgd4aa3bb"><span class="todo TODO">TODO</span> <code>DefaultIfEmpty</code></a></li>
-<li><a href="#org469f2a2"><span class="todo TODO">TODO</span> <code>SequenceEqual</code></a></li>
-<li><a href="#org6b34713"><span class="todo TODO">TODO</span> <code>Partitioning</code></a></li>
-<li><a href="#orgb2157a5"><span class="todo TODO">TODO</span> <code>Take</code></a></li>
-<li><a href="#orgfdf3311"><span class="todo TODO">TODO</span> <code>TakeWhile</code></a></li>
-<li><a href="#org8973f37"><span class="todo TODO">TODO</span> <code>Skip</code></a></li>
-<li><a href="#org78d3ca7"><span class="todo TODO">TODO</span> <code>SkipWhile</code></a></li>
-<li><a href="#org4f7ebe8"><span class="todo TODO">TODO</span> Paging Using Skip and Take</a></li>
-<li><a href="#orgcd6437e"><span class="todo TODO">TODO</span> <code>Range</code></a></li>
-<li><a href="#org2da8d63"><span class="todo TODO">TODO</span> <code>Repeat</code></a></li>
-<li><a href="#org6a0dcb8"><span class="todo TODO">TODO</span> <code>Empty</code></a></li>
-<li><a href="#org166bf57"><span class="todo TODO">TODO</span> <code>Append</code></a></li>
-<li><a href="#orgb0791f1"><span class="todo TODO">TODO</span> <code>Prepend</code></a></li>
-<li><a href="#org70f1f2e"><span class="todo TODO">TODO</span> <code>ToList</code> and <code>ToArray</code></a></li>
-<li><a href="#orge7ae08e"><span class="todo TODO">TODO</span> <code>ToDictionary</code></a></li>
-<li><a href="#org661e116"><span class="todo TODO">TODO</span> Cast Operator</a></li>
-<li><a href="#orgb5c0ead"><span class="todo TODO">TODO</span> Difference between Cast and OfType Operators</a></li>
+<li><a href="#org9470406"><span class="done DONE">DONE</span> <code>ToLookup</code></a></li>
+<li><a href="#org6794b91"><span class="todo TODO">TODO</span> Inner Join</a></li>
+<li><a href="#org0cef36a"><span class="todo TODO">TODO</span> Join with Multiple Data Sources</a></li>
+<li><a href="#orgd3b493b"><span class="todo TODO">TODO</span> Group Join</a></li>
+<li><a href="#orgfa29063"><span class="todo TODO">TODO</span> Left Join</a></li>
+<li><a href="#org91bb0c4"><span class="todo TODO">TODO</span> Cross Join</a></li>
+<li><a href="#orgef190ff"><span class="todo TODO">TODO</span> <code>ElementAt</code> and <code>ElementAtOrDefault</code></a></li>
+<li><a href="#orgf9e8ea1"><span class="todo TODO">TODO</span> <code>First</code> and <code>FirstOrDefault</code></a></li>
+<li><a href="#org051a3ea"><span class="todo TODO">TODO</span> <code>Last</code> and <code>LastOrDefault</code></a></li>
+<li><a href="#orgbac4240"><span class="todo TODO">TODO</span> <code>Single</code> and <code>SingleOrDefault</code></a></li>
+<li><a href="#orgba2ad63"><span class="todo TODO">TODO</span> <code>DefaultIfEmpty</code></a></li>
+<li><a href="#orgf223c01"><span class="todo TODO">TODO</span> <code>SequenceEqual</code></a></li>
+<li><a href="#org05a5cdd"><span class="todo TODO">TODO</span> <code>Partitioning</code></a></li>
+<li><a href="#orge39667f"><span class="todo TODO">TODO</span> <code>Take</code></a></li>
+<li><a href="#org966d10c"><span class="todo TODO">TODO</span> <code>TakeWhile</code></a></li>
+<li><a href="#orgf3a8cd4"><span class="todo TODO">TODO</span> <code>Skip</code></a></li>
+<li><a href="#org1963a78"><span class="todo TODO">TODO</span> <code>SkipWhile</code></a></li>
+<li><a href="#org4528da7"><span class="todo TODO">TODO</span> Paging Using Skip and Take</a></li>
+<li><a href="#org39a02f6"><span class="todo TODO">TODO</span> <code>Range</code></a></li>
+<li><a href="#orgbeeffeb"><span class="todo TODO">TODO</span> <code>Repeat</code></a></li>
+<li><a href="#org591b2d7"><span class="todo TODO">TODO</span> <code>Empty</code></a></li>
+<li><a href="#org4e948de"><span class="todo TODO">TODO</span> <code>Append</code></a></li>
+<li><a href="#org4855cef"><span class="todo TODO">TODO</span> <code>Prepend</code></a></li>
+<li><a href="#org7adb8d5"><span class="todo TODO">TODO</span> <code>ToList</code> and <code>ToArray</code></a></li>
+<li><a href="#org8939699"><span class="todo TODO">TODO</span> <code>ToDictionary</code></a></li>
+<li><a href="#org8d9c8f7"><span class="todo TODO">TODO</span> Cast Operator</a></li>
+<li><a href="#org8626b77"><span class="todo TODO">TODO</span> Difference between Cast and OfType Operators</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org103a2dc" class="outline-2">
-<h2 id="org103a2dc">Motivation</h2>
-<div class="outline-text-2" id="text-org103a2dc">
+<div id="outline-container-orga43b3b5" class="outline-2">
+<h2 id="orga43b3b5">Motivation</h2>
+<div class="outline-text-2" id="text-orga43b3b5">
 <p>
 <b>What is LINQ?</b>
 </p>
@@ -111,7 +111,7 @@ However, after all these years, relational databases are still pervasive, and yo
 to struggle with data access and persistence in all of your programs.
 </p>
 
-<div class="PREVIEW" id="orgc877d8f">
+<div class="PREVIEW" id="org86df873">
 <p>
 The original motivation behind LINQ was to address the conceptual and tech- nical
 difficulties encountered when using databases with .NET programming lan- guages. With LINQ,
@@ -203,9 +203,9 @@ performance.
 </div>
 </div>
 
-<div id="outline-container-orgbca286e" class="outline-2">
-<h2 id="orgbca286e">Hello LINQ to Object</h2>
-<div class="outline-text-2" id="text-orgbca286e">
+<div id="outline-container-org8ccdb7e" class="outline-2">
+<h2 id="org8ccdb7e">Hello LINQ to Object</h2>
+<div class="outline-text-2" id="text-org8ccdb7e">
 <div class="org-src-container">
 <pre class="src src-csharp">string[] words = new string[] { "Hello", "Wonderful", "Linq", "Beatiful", "World" };
 var shortWords =
@@ -259,9 +259,9 @@ foreach (string word in words)
 </div>
 </div>
 
-<div id="outline-container-org8012a7c" class="outline-2">
-<h2 id="org8012a7c">LINQ to SQL</h2>
-<div class="outline-text-2" id="text-org8012a7c">
+<div id="outline-container-org30683e2" class="outline-2">
+<h2 id="org30683e2">LINQ to SQL</h2>
+<div class="outline-text-2" id="text-org30683e2">
 <p>
 The time has come to look at some code using LINQ to SQL. As you saw in our
 Hello LINQ example, we are able to write queries against a collection of objects.
@@ -301,9 +301,9 @@ you’re probably wondering what <code>db.GetTable&lt;Contact&gt;()</code> means
 </div>
 </div>
 
-<div id="outline-container-org61847d9" class="outline-2">
-<h2 id="org61847d9">LINQ in Depth <code>[22/49]</code></h2>
-<div class="outline-text-2" id="text-org61847d9">
+<div id="outline-container-orgb0d5196" class="outline-2">
+<h2 id="orgb0d5196">LINQ in Depth <code>[22/49]</code></h2>
+<div class="outline-text-2" id="text-orgb0d5196">
 <p>
 After being familiar with LINQ basic syntax, you should be able to write queries using old
 knowledge in querying any quaring language (i.e SQL) and use it with LINQ intuitively,
@@ -314,9 +314,9 @@ therefore I will not include the banal basic querying methods.
 You may want to read <a href="https://salehmu.github.io/notes/psql/">Introduction into PostgreSQL</a>.
 </p>
 </div>
-<div id="outline-container-org942fb08" class="outline-3">
-<h3 id="org942fb08"><span class="done DONE">DONE</span> <code>IEnumerable</code> and <code>IQueryable</code></h3>
-<div class="outline-text-3" id="text-org942fb08">
+<div id="outline-container-org7618996" class="outline-3">
+<h3 id="org7618996"><span class="done DONE">DONE</span> <code>IEnumerable</code> and <code>IQueryable</code></h3>
+<div class="outline-text-3" id="text-org7618996">
 <p>
 Consider the following program:
 </p>
@@ -470,16 +470,16 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-org9f42ab3" class="outline-3">
-<h3 id="org9f42ab3"><span class="done DONE">DONE</span> Differences between <code>IEnumerable</code> and <code>IQueryable</code></h3>
-<div class="outline-text-3" id="text-org9f42ab3">
+<div id="outline-container-org004e58d" class="outline-3">
+<h3 id="org004e58d"><span class="done DONE">DONE</span> Differences between <code>IEnumerable</code> and <code>IQueryable</code></h3>
+<div class="outline-text-3" id="text-org004e58d">
 <p>
 The <code>IEnumerable</code> and <code>IQueryable</code> are used to hold a collection of data and also used to
 perform data manipulation operations such as filtering, Ordering, Grouping, etc.
 </p>
 
 
-<div id="org1bd40a0" class="figure">
+<div id="orgccc4b54" class="figure">
 <p><img src="LINQ_in_Depth/2022-03-14_00-56-04_screenshot.png" alt="2022-03-14_00-56-04_screenshot.png" />
 </p>
 </div>
@@ -493,7 +493,7 @@ the following Student information from the Student table.
 
 
 
-<div id="org46f4a63" class="figure">
+<div id="org855552b" class="figure">
 <p><img src="LINQ_in_Depth/2022-03-14_00-57-20_c-users-pranaya-pictures-student-data-png.png" alt="2022-03-14_00-57-20_c-users-pranaya-pictures-student-data-png.png" />
 </p>
 </div>
@@ -685,9 +685,9 @@ the database.
 </div>
 </div>
 
-<div id="outline-container-org847b682" class="outline-3">
-<h3 id="org847b682"><span class="done DONE">DONE</span> <code>OfType</code></h3>
-<div class="outline-text-3" id="text-org847b682">
+<div id="outline-container-org3a5246f" class="outline-3">
+<h3 id="org3a5246f"><span class="done DONE">DONE</span> <code>OfType</code></h3>
+<div class="outline-text-3" id="text-org3a5246f">
 <p>
 The <code>OfType</code> Operator in LINQ is used to filter specific type data from a data source based on
 the data type we passed to this operator. For example, if we have a collection that stores
@@ -737,9 +737,9 @@ In querying syntax:
 </div>
 </div>
 </div>
-<div id="outline-container-orgeaecd55" class="outline-3">
-<h3 id="orgeaecd55"><span class="done DONE">DONE</span> <code>Distinct</code></h3>
-<div class="outline-text-3" id="text-orgeaecd55">
+<div id="outline-container-org465d835" class="outline-3">
+<h3 id="org465d835"><span class="done DONE">DONE</span> <code>Distinct</code></h3>
+<div class="outline-text-3" id="text-org465d835">
 <p>
 The LINQ Distinct Method in C# is used to return the distinct elements from a single data
 source.
@@ -789,9 +789,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-orge944194" class="outline-3">
-<h3 id="orge944194"><span class="done DONE">DONE</span> <code>Except</code></h3>
-<div class="outline-text-3" id="text-orge944194">
+<div id="outline-container-orgd057d06" class="outline-3">
+<h3 id="orgd057d06"><span class="done DONE">DONE</span> <code>Except</code></h3>
+<div class="outline-text-3" id="text-orgd057d06">
 <p>
 The LINQ Except Method in C# is used to return the elements which are present in the first data source but not in the second data source.
 </p>
@@ -828,9 +828,9 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-org8e8ed77" class="outline-3">
-<h3 id="org8e8ed77"><span class="done DONE">DONE</span> <code>Intersect</code></h3>
-<div class="outline-text-3" id="text-org8e8ed77">
+<div id="outline-container-org60c7ebe" class="outline-3">
+<h3 id="org60c7ebe"><span class="done DONE">DONE</span> <code>Intersect</code></h3>
+<div class="outline-text-3" id="text-org60c7ebe">
 <p>
 The LINQ Intersect Method in C# is used to return the common elements from both the
 collections. The elements that are present in both the data sources.
@@ -877,9 +877,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-org03be32c" class="outline-3">
-<h3 id="org03be32c"><span class="done DONE">DONE</span> <code>Union</code></h3>
-<div class="outline-text-3" id="text-org03be32c">
+<div id="outline-container-org75b2f1d" class="outline-3">
+<h3 id="org75b2f1d"><span class="done DONE">DONE</span> <code>Union</code></h3>
+<div class="outline-text-3" id="text-org75b2f1d">
 <p>
 The LINQ Union Method in C# is used to combine the multiple data sources into one data
 source by removing the duplicate elements.
@@ -919,9 +919,9 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-org35f2689" class="outline-3">
-<h3 id="org35f2689"><span class="done DONE">DONE</span> <code>SelectMany</code></h3>
-<div class="outline-text-3" id="text-org35f2689">
+<div id="outline-container-org21abe8e" class="outline-3">
+<h3 id="org21abe8e"><span class="done DONE">DONE</span> <code>SelectMany</code></h3>
+<div class="outline-text-3" id="text-org21abe8e">
 <p>
 The <code>SelectMany</code> in LINQ is used to project each element of a sequence to an IEnumerable&lt;T&gt;
 and then flatten the resulting sequences into one sequence. That means the <code>SelectMany</code>
@@ -942,9 +942,9 @@ P r a n a y a K u m a r
 </div>
 </div>
 
-<div id="outline-container-orge5968b1" class="outline-3">
-<h3 id="orge5968b1"><span class="done DONE">DONE</span> <code>Concat</code></h3>
-<div class="outline-text-3" id="text-orge5968b1">
+<div id="outline-container-org68f7545" class="outline-3">
+<h3 id="org68f7545"><span class="done DONE">DONE</span> <code>Concat</code></h3>
+<div class="outline-text-3" id="text-org68f7545">
 <p>
 The Linq Concat Method in C# is used to concatenate two sequences into one sequence.
 </p>
@@ -976,9 +976,9 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-orgd0ee988" class="outline-3">
-<h3 id="orgd0ee988"><span class="done DONE">DONE</span> <code>OrderBy</code></h3>
-<div class="outline-text-3" id="text-orgd0ee988">
+<div id="outline-container-orgec1dfe7" class="outline-3">
+<h3 id="orgec1dfe7"><span class="done DONE">DONE</span> <code>OrderBy</code></h3>
+<div class="outline-text-3" id="text-orgec1dfe7">
 <p>
 The Linq OrderBy method in C# is used to sort the data in ascending order. The most
 important point that you need to keep in mind is this method is not going to change the data
@@ -1033,9 +1033,9 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-orgdedc753" class="outline-3">
-<h3 id="orgdedc753"><span class="done DONE">DONE</span> <code>OrderByDescending</code></h3>
-<div class="outline-text-3" id="text-orgdedc753">
+<div id="outline-container-org4d2468c" class="outline-3">
+<h3 id="org4d2468c"><span class="done DONE">DONE</span> <code>OrderByDescending</code></h3>
+<div class="outline-text-3" id="text-org4d2468c">
 <p>
 The LINQ OrderByDescending method in C# is used to sort the data in descending order. The
 point that you need to remember is, the OrderByDescending method is not going to change the
@@ -1092,9 +1092,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-orgcfc5038" class="outline-3">
-<h3 id="orgcfc5038"><span class="done DONE">DONE</span> <code>ThenBy</code> and <code>ThenByDescending</code></h3>
-<div class="outline-text-3" id="text-orgcfc5038">
+<div id="outline-container-orgad67844" class="outline-3">
+<h3 id="orgad67844"><span class="done DONE">DONE</span> <code>ThenBy</code> and <code>ThenByDescending</code></h3>
+<div class="outline-text-3" id="text-orgad67844">
 <p>
 The LINQ OrderBy or OrderByDescending method works fine when you want to sort the data based
 on a single value or a single expression. But if you want to sort the data based on multiple
@@ -1182,9 +1182,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-orgabf9136" class="outline-3">
-<h3 id="orgabf9136"><span class="done DONE">DONE</span> <code>Reverse</code></h3>
-<div class="outline-text-3" id="text-orgabf9136">
+<div id="outline-container-org82b2c6e" class="outline-3">
+<h3 id="org82b2c6e"><span class="done DONE">DONE</span> <code>Reverse</code></h3>
+<div class="outline-text-3" id="text-org82b2c6e">
 <p>
 The LINQ Reverse method is used to reverse the data stored in a data source. That means this
 method will not change the data rather it simple reverse the data stored in the data source.
@@ -1230,9 +1230,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-orga23e885" class="outline-3">
-<h3 id="orga23e885"><span class="done DONE">DONE</span> <code>Aggregate</code></h3>
-<div class="outline-text-3" id="text-orga23e885">
+<div id="outline-container-org7bbed04" class="outline-3">
+<h3 id="org7bbed04"><span class="done DONE">DONE</span> <code>Aggregate</code></h3>
+<div class="outline-text-3" id="text-org7bbed04">
 <p>
 The Linq Aggregate extension method performs an accumulative operation.
 </p>
@@ -1258,9 +1258,9 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-orgc922174" class="outline-3">
-<h3 id="orgc922174"><span class="done DONE">DONE</span> <code>All</code></h3>
-<div class="outline-text-3" id="text-orgc922174">
+<div id="outline-container-org370a922" class="outline-3">
+<h3 id="org370a922"><span class="done DONE">DONE</span> <code>All</code></h3>
+<div class="outline-text-3" id="text-org370a922">
 <p>
 The Linq All Operator in C# is used to check whether all the elements of a data source
 satisfy a given condition or not. If all the elements satisfy the condition, then it returns
@@ -1288,9 +1288,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-org5c5c3db" class="outline-3">
-<h3 id="org5c5c3db"><span class="done DONE">DONE</span> <code>Any</code></h3>
-<div class="outline-text-3" id="text-org5c5c3db">
+<div id="outline-container-org5aeb88f" class="outline-3">
+<h3 id="org5aeb88f"><span class="done DONE">DONE</span> <code>Any</code></h3>
+<div class="outline-text-3" id="text-org5aeb88f">
 <p>
 The C# Linq Any Operator is used to check whether at least one of the elements of a data
 source satisfies a given condition or not. If any of the elements satisfy the given
@@ -1331,9 +1331,9 @@ namespace LINQDemo
 </div>
 </div>
 </div>
-<div id="outline-container-orgf46c667" class="outline-3">
-<h3 id="orgf46c667"><span class="done DONE">DONE</span> <code>Contains</code></h3>
-<div class="outline-text-3" id="text-orgf46c667">
+<div id="outline-container-org37f1dfe" class="outline-3">
+<h3 id="org37f1dfe"><span class="done DONE">DONE</span> <code>Contains</code></h3>
+<div class="outline-text-3" id="text-org37f1dfe">
 <p>
 The Linq Contains Method in C# is used to check whether a sequence or collection (i.e. data
 source) contains a specified element or not. If the data source contains the specified
@@ -1367,9 +1367,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-org1f7fcfd" class="outline-3">
-<h3 id="org1f7fcfd"><span class="done DONE">DONE</span> <code>Contains</code> or <code>Any</code>?</h3>
-<div class="outline-text-3" id="text-org1f7fcfd">
+<div id="outline-container-orgebaff78" class="outline-3">
+<h3 id="orgebaff78"><span class="done DONE">DONE</span> <code>Contains</code> or <code>Any</code>?</h3>
+<div class="outline-text-3" id="text-orgebaff78">
 <p>
 <code>Contains</code> takes an object, <code>Any</code> takes a predicate.
 </p>
@@ -1392,9 +1392,9 @@ listOfInts.Any(i =&gt; i % 2 == 0); // Check if any element is an Even Number
 </div>
 </div>
 
-<div id="outline-container-org9e16613" class="outline-3">
-<h3 id="org9e16613"><span class="done DONE">DONE</span> <code>GroupBy</code></h3>
-<div class="outline-text-3" id="text-org9e16613">
+<div id="outline-container-org46a4bb1" class="outline-3">
+<h3 id="org46a4bb1"><span class="done DONE">DONE</span> <code>GroupBy</code></h3>
+<div class="outline-text-3" id="text-org46a4bb1">
 <p>
 The Linq GroupBy in C# belongs to the Grouping Operators category and exactly does the same
 thing as the Group By clause does in SQL Query. This method takes a flat sequence of
@@ -1448,9 +1448,9 @@ namespace GroupByDemo
 </div>
 </div>
 
-<div id="outline-container-orgabcd9e8" class="outline-3">
-<h3 id="orgabcd9e8"><span class="done DONE">DONE</span> <code>Zip</code></h3>
-<div class="outline-text-3" id="text-orgabcd9e8">
+<div id="outline-container-org831579c" class="outline-3">
+<h3 id="org831579c"><span class="done DONE">DONE</span> <code>Zip</code></h3>
+<div class="outline-text-3" id="text-org831579c">
 <p>
 The Linq Zip Method in C# is used to apply a specified function to the corresponding
 elements of two sequences and producing a sequence of the results.
@@ -1496,12 +1496,12 @@ foreach (var item in resultSequence)
 </div>
 </div>
 
-<div id="outline-container-org0c7ef1b" class="outline-3">
-<h3 id="org0c7ef1b"><span class="todo TODO">TODO</span> <code>GroupBy</code> By Multiple Keys</h3>
+<div id="outline-container-orgd3131de" class="outline-3">
+<h3 id="orgd3131de"><span class="todo TODO">TODO</span> <code>GroupBy</code> By Multiple Keys</h3>
 </div>
-<div id="outline-container-orgb48c114" class="outline-3">
-<h3 id="orgb48c114"><span class="done DONE">DONE</span> Deferred Execution vs Immediate Execution</h3>
-<div class="outline-text-3" id="text-orgb48c114">
+<div id="outline-container-org1ef80d7" class="outline-3">
+<h3 id="org1ef80d7"><span class="done DONE">DONE</span> Deferred Execution vs Immediate Execution</h3>
+<div class="outline-text-3" id="text-org1ef80d7">
 <p>
 The LINQ queries are executed in two different ways as follows.
 </p>
@@ -1523,9 +1523,9 @@ They are as follows:
 </div>
 
 
-<div id="outline-container-org8647af9" class="outline-4">
-<h4 id="org8647af9">Deferred Execution</h4>
-<div class="outline-text-4" id="text-org8647af9">
+<div id="outline-container-org7764b62" class="outline-4">
+<h4 id="org7764b62">Deferred Execution</h4>
+<div class="outline-text-4" id="text-org7764b62">
 <p>
 In this case, the LINQ Query is not executed at the point of its declaration. That means,
 when we write a LINQ query, it doesn’t execute by itself. It executes only when we access
@@ -1600,9 +1600,9 @@ please go through the comment lines.
 </div>
 
 
-<div id="outline-container-org8d280c8" class="outline-4">
-<h4 id="org8d280c8">Immediate Execution</h4>
-<div class="outline-text-4" id="text-org8d280c8">
+<div id="outline-container-org3e0866e" class="outline-4">
+<h4 id="org3e0866e">Immediate Execution</h4>
+<div class="outline-text-4" id="text-org3e0866e">
 <p>
 In the case of Immediate Execution, the LINQ query is executed at the point of its
 declaration. So, it forces the query to execute and gets the result immediately. Let us see
@@ -1663,9 +1663,9 @@ namespace LINQDemo
 </div>
 </div>
 
-<div id="outline-container-org67adc66" class="outline-3">
-<h3 id="org67adc66"><span class="done DONE">DONE</span> <code>ToLookup</code></h3>
-<div class="outline-text-3" id="text-org67adc66">
+<div id="outline-container-org9470406" class="outline-3">
+<h3 id="org9470406"><span class="done DONE">DONE</span> <code>ToLookup</code></h3>
+<div class="outline-text-3" id="text-org9470406">
 <p>
 The Linq <code>ToLookup</code> Method in C# exactly does the same thing as the <code>GroupBy</code> Operator does in
 Linq. The only difference between these two methods is the GroupBy method uses deferred
@@ -1708,83 +1708,83 @@ namespace GroupByDemo
 </div>
 </div>
 </div>
-<div id="outline-container-org8b8543f" class="outline-3">
-<h3 id="org8b8543f"><span class="todo TODO">TODO</span> Inner Join</h3>
+<div id="outline-container-org6794b91" class="outline-3">
+<h3 id="org6794b91"><span class="todo TODO">TODO</span> Inner Join</h3>
 </div>
-<div id="outline-container-orgcd410f6" class="outline-3">
-<h3 id="orgcd410f6"><span class="todo TODO">TODO</span> Join with Multiple Data Sources</h3>
+<div id="outline-container-org0cef36a" class="outline-3">
+<h3 id="org0cef36a"><span class="todo TODO">TODO</span> Join with Multiple Data Sources</h3>
 </div>
-<div id="outline-container-org63b7a92" class="outline-3">
-<h3 id="org63b7a92"><span class="todo TODO">TODO</span> Group Join</h3>
+<div id="outline-container-orgd3b493b" class="outline-3">
+<h3 id="orgd3b493b"><span class="todo TODO">TODO</span> Group Join</h3>
 </div>
-<div id="outline-container-org40faed7" class="outline-3">
-<h3 id="org40faed7"><span class="todo TODO">TODO</span> Left Join</h3>
+<div id="outline-container-orgfa29063" class="outline-3">
+<h3 id="orgfa29063"><span class="todo TODO">TODO</span> Left Join</h3>
 </div>
-<div id="outline-container-org2f3659c" class="outline-3">
-<h3 id="org2f3659c"><span class="todo TODO">TODO</span> Cross Join</h3>
+<div id="outline-container-org91bb0c4" class="outline-3">
+<h3 id="org91bb0c4"><span class="todo TODO">TODO</span> Cross Join</h3>
 </div>
-<div id="outline-container-org81dc2af" class="outline-3">
-<h3 id="org81dc2af"><span class="todo TODO">TODO</span> <code>ElementAt</code> and <code>ElementAtOrDefault</code></h3>
+<div id="outline-container-orgef190ff" class="outline-3">
+<h3 id="orgef190ff"><span class="todo TODO">TODO</span> <code>ElementAt</code> and <code>ElementAtOrDefault</code></h3>
 </div>
-<div id="outline-container-org275b040" class="outline-3">
-<h3 id="org275b040"><span class="todo TODO">TODO</span> <code>First</code> and <code>FirstOrDefault</code></h3>
+<div id="outline-container-orgf9e8ea1" class="outline-3">
+<h3 id="orgf9e8ea1"><span class="todo TODO">TODO</span> <code>First</code> and <code>FirstOrDefault</code></h3>
 </div>
-<div id="outline-container-org72586cc" class="outline-3">
-<h3 id="org72586cc"><span class="todo TODO">TODO</span> <code>Last</code> and <code>LastOrDefault</code></h3>
+<div id="outline-container-org051a3ea" class="outline-3">
+<h3 id="org051a3ea"><span class="todo TODO">TODO</span> <code>Last</code> and <code>LastOrDefault</code></h3>
 </div>
-<div id="outline-container-orgbd7e133" class="outline-3">
-<h3 id="orgbd7e133"><span class="todo TODO">TODO</span> <code>Single</code> and <code>SingleOrDefault</code></h3>
+<div id="outline-container-orgbac4240" class="outline-3">
+<h3 id="orgbac4240"><span class="todo TODO">TODO</span> <code>Single</code> and <code>SingleOrDefault</code></h3>
 </div>
-<div id="outline-container-orgd4aa3bb" class="outline-3">
-<h3 id="orgd4aa3bb"><span class="todo TODO">TODO</span> <code>DefaultIfEmpty</code></h3>
+<div id="outline-container-orgba2ad63" class="outline-3">
+<h3 id="orgba2ad63"><span class="todo TODO">TODO</span> <code>DefaultIfEmpty</code></h3>
 </div>
-<div id="outline-container-org469f2a2" class="outline-3">
-<h3 id="org469f2a2"><span class="todo TODO">TODO</span> <code>SequenceEqual</code></h3>
+<div id="outline-container-orgf223c01" class="outline-3">
+<h3 id="orgf223c01"><span class="todo TODO">TODO</span> <code>SequenceEqual</code></h3>
 </div>
-<div id="outline-container-org6b34713" class="outline-3">
-<h3 id="org6b34713"><span class="todo TODO">TODO</span> <code>Partitioning</code></h3>
+<div id="outline-container-org05a5cdd" class="outline-3">
+<h3 id="org05a5cdd"><span class="todo TODO">TODO</span> <code>Partitioning</code></h3>
 </div>
-<div id="outline-container-orgb2157a5" class="outline-3">
-<h3 id="orgb2157a5"><span class="todo TODO">TODO</span> <code>Take</code></h3>
+<div id="outline-container-orge39667f" class="outline-3">
+<h3 id="orge39667f"><span class="todo TODO">TODO</span> <code>Take</code></h3>
 </div>
-<div id="outline-container-orgfdf3311" class="outline-3">
-<h3 id="orgfdf3311"><span class="todo TODO">TODO</span> <code>TakeWhile</code></h3>
+<div id="outline-container-org966d10c" class="outline-3">
+<h3 id="org966d10c"><span class="todo TODO">TODO</span> <code>TakeWhile</code></h3>
 </div>
-<div id="outline-container-org8973f37" class="outline-3">
-<h3 id="org8973f37"><span class="todo TODO">TODO</span> <code>Skip</code></h3>
+<div id="outline-container-orgf3a8cd4" class="outline-3">
+<h3 id="orgf3a8cd4"><span class="todo TODO">TODO</span> <code>Skip</code></h3>
 </div>
-<div id="outline-container-org78d3ca7" class="outline-3">
-<h3 id="org78d3ca7"><span class="todo TODO">TODO</span> <code>SkipWhile</code></h3>
+<div id="outline-container-org1963a78" class="outline-3">
+<h3 id="org1963a78"><span class="todo TODO">TODO</span> <code>SkipWhile</code></h3>
 </div>
-<div id="outline-container-org4f7ebe8" class="outline-3">
-<h3 id="org4f7ebe8"><span class="todo TODO">TODO</span> Paging Using Skip and Take</h3>
+<div id="outline-container-org4528da7" class="outline-3">
+<h3 id="org4528da7"><span class="todo TODO">TODO</span> Paging Using Skip and Take</h3>
 </div>
-<div id="outline-container-orgcd6437e" class="outline-3">
-<h3 id="orgcd6437e"><span class="todo TODO">TODO</span> <code>Range</code></h3>
+<div id="outline-container-org39a02f6" class="outline-3">
+<h3 id="org39a02f6"><span class="todo TODO">TODO</span> <code>Range</code></h3>
 </div>
-<div id="outline-container-org2da8d63" class="outline-3">
-<h3 id="org2da8d63"><span class="todo TODO">TODO</span> <code>Repeat</code></h3>
+<div id="outline-container-orgbeeffeb" class="outline-3">
+<h3 id="orgbeeffeb"><span class="todo TODO">TODO</span> <code>Repeat</code></h3>
 </div>
-<div id="outline-container-org6a0dcb8" class="outline-3">
-<h3 id="org6a0dcb8"><span class="todo TODO">TODO</span> <code>Empty</code></h3>
+<div id="outline-container-org591b2d7" class="outline-3">
+<h3 id="org591b2d7"><span class="todo TODO">TODO</span> <code>Empty</code></h3>
 </div>
-<div id="outline-container-org166bf57" class="outline-3">
-<h3 id="org166bf57"><span class="todo TODO">TODO</span> <code>Append</code></h3>
+<div id="outline-container-org4e948de" class="outline-3">
+<h3 id="org4e948de"><span class="todo TODO">TODO</span> <code>Append</code></h3>
 </div>
-<div id="outline-container-orgb0791f1" class="outline-3">
-<h3 id="orgb0791f1"><span class="todo TODO">TODO</span> <code>Prepend</code></h3>
+<div id="outline-container-org4855cef" class="outline-3">
+<h3 id="org4855cef"><span class="todo TODO">TODO</span> <code>Prepend</code></h3>
 </div>
-<div id="outline-container-org70f1f2e" class="outline-3">
-<h3 id="org70f1f2e"><span class="todo TODO">TODO</span> <code>ToList</code> and <code>ToArray</code></h3>
+<div id="outline-container-org7adb8d5" class="outline-3">
+<h3 id="org7adb8d5"><span class="todo TODO">TODO</span> <code>ToList</code> and <code>ToArray</code></h3>
 </div>
-<div id="outline-container-orge7ae08e" class="outline-3">
-<h3 id="orge7ae08e"><span class="todo TODO">TODO</span> <code>ToDictionary</code></h3>
+<div id="outline-container-org8939699" class="outline-3">
+<h3 id="org8939699"><span class="todo TODO">TODO</span> <code>ToDictionary</code></h3>
 </div>
-<div id="outline-container-org661e116" class="outline-3">
-<h3 id="org661e116"><span class="todo TODO">TODO</span> Cast Operator</h3>
+<div id="outline-container-org8d9c8f7" class="outline-3">
+<h3 id="org8d9c8f7"><span class="todo TODO">TODO</span> Cast Operator</h3>
 </div>
-<div id="outline-container-orgb5c0ead" class="outline-3">
-<h3 id="orgb5c0ead"><span class="todo TODO">TODO</span> Difference between Cast and OfType Operators</h3>
+<div id="outline-container-org8626b77" class="outline-3">
+<h3 id="org8626b77"><span class="todo TODO">TODO</span> Difference between Cast and OfType Operators</h3>
 </div>
 </div>
 </div>
